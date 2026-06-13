@@ -13,6 +13,10 @@ async function requestJson(url) {
   });
 
   if (!response.ok) {
+    if (response.status === 403 && response.headers.get('x-ratelimit-remaining') === '0') {
+      throw new Error(`RATE_LIMITED: GitHub API rate limit exhausted for ${url}`);
+    }
+
     throw new Error(`Request failed ${response.status} for ${url}`);
   }
 

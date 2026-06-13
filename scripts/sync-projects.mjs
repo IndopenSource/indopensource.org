@@ -15,6 +15,10 @@ async function requestJson(url) {
   });
 
   if (!response.ok) {
+    if (response.status === 403 && response.headers.get('x-ratelimit-remaining') === '0') {
+      throw new Error(`RATE_LIMITED: GitHub API rate limit exhausted for ${url}`);
+    }
+
     throw new Error(`Request failed ${response.status} for ${url}`);
   }
 
@@ -56,7 +60,11 @@ async function getLatestRelease(fullName) {
       url: release.html_url,
       publishedAt: release.published_at
     };
-  } catch {
+  } catch (error) {
+    if (error.message.startsWith('RATE_LIMITED:')) {
+      throw error;
+    }
+
     return null;
   }
 }
@@ -84,6 +92,10 @@ async function getRepo(fullName) {
       archived: Boolean(repo.archived)
     };
   } catch (error) {
+    if (error.message.startsWith('RATE_LIMITED:')) {
+      throw error;
+    }
+
     console.warn(`Using fallback for ${fullName}: ${error.message}`);
     return fallbackProject(fullName);
   }
