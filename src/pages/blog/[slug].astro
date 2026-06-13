@@ -16,18 +16,22 @@ const html = marked.parse(post.content);
 const authorDate = post.author?.committedAt
   ? new Intl.DateTimeFormat('id-ID', { dateStyle: 'long' }).format(new Date(post.author.committedAt))
   : '';
+const releaseDate = post.releasedAt
+  ? new Intl.DateTimeFormat('id-ID', { dateStyle: 'long' }).format(new Date(post.releasedAt))
+  : '';
 ---
 
 <BaseLayout title={`${post.title} - IndopenSource`}>
   <PageHeader eyebrow="Blog" title={post.title}>
     <p>{post.description}</p>
     <div class="mt-4 flex flex-wrap gap-2 text-sm text-muted">
+      {releaseDate && <span class="rounded-full border border-line px-2 py-1">Rilis {releaseDate}</span>}
       {post.tags.map((tag) => <span class="rounded-full border border-line px-2 py-1">{tag}</span>)}
       <span class="rounded-full border border-line px-2 py-1">{post.status}</span>
     </div>
   </PageHeader>
 
-  <article class="mx-auto w-[min(820px,calc(100%-32px))] py-12">
+  <article class="mx-auto w-[min(820px,calc(100%-32px))] pt-7 pb-12">
     <div class="article-body" set:html={html} />
 
     <footer class="mt-12 rounded-lg border border-line bg-paper p-5">

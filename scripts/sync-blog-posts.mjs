@@ -63,16 +63,20 @@ function slugFromPath(path) {
   return path.split('/').pop().replace(/\.md$/, '');
 }
 
-async function getAuthor(path) {
+async function getCommitMeta(path) {
   const commits = await requestJson(`https://api.github.com/repos/${BLOG_REPO}/commits?path=${encodeURIComponent(path)}&per_page=100`);
   const firstCommit = commits.at(-1);
+  const latestCommit = commits.at(0);
   const author = firstCommit?.author;
 
   return {
-    name: author?.login || firstCommit?.commit?.author?.name || 'IndopenSource Maintainers',
-    avatarUrl: author?.avatar_url || '',
-    url: author?.html_url || firstCommit?.html_url || `https://github.com/${BLOG_REPO}`,
-    committedAt: firstCommit?.commit?.author?.date || ''
+    author: {
+      name: author?.login || firstCommit?.commit?.author?.name || 'IndopenSource Maintainers',
+      avatarUrl: author?.avatar_url || '',
+      url: author?.html_url || firstCommit?.html_url || `https://github.com/${BLOG_REPO}`,
+      committedAt: firstCommit?.commit?.author?.date || ''
+    },
+    releasedAt: latestCommit?.commit?.committer?.date || latestCommit?.commit?.author?.date || ''
   };
 }
 
@@ -88,6 +92,7 @@ for (const path of articleFiles) {
   const raw = Buffer.from(file.content, 'base64').toString('utf8');
   const { data, content } = parseFrontmatter(raw);
   const [year, month] = path.split('/').slice(1, 3);
+  const commitMeta = await getCommitMeta(path);
 
   posts.push({
     slug: slugFromPath(path),
@@ -101,7 +106,8 @@ for (const path of articleFiles) {
     status: data.status || 'draft',
     content,
     sourceUrl: file.html_url,
-    author: await getAuthor(path)
+    releasedAt: commitMeta.releasedAt,
+    author: commitMeta.author
   });
 }
 
