@@ -82,6 +82,26 @@ lalu mengambil metadata repo dari GitHub API dan menulis hasilnya ke
 
 Gunakan `GITHUB_TOKEN` atau `GH_TOKEN` untuk rate limit yang lebih lega.
 
+## Blog Sync
+
+`npm run sync:blog` membaca artikel Markdown dari
+`IndopenSource/Blog-IndopenSource`, mengambil metadata commit penulis/rilis,
+dan menulis hasilnya ke `src/data/blog-posts.json`.
+
+## Auto Sync
+
+Workflow `.github/workflows/sync-content.yml` memperbarui data secara otomatis.
+
+- Manual: jalankan workflow `Sync content data`.
+- Schedule: berjalan setiap 6 jam.
+- Dispatch dari repo lain:
+  - `sync-projects`
+  - `sync-blog`
+  - `sync-content`
+
+Jika data berubah, workflow membuat commit `Sync content data`. Setelah commit
+masuk `main`, workflow GitHub Pages akan deploy ulang website.
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md).
