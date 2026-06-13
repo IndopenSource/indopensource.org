@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Forum - IndopenSource">
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow">Forum</p>
+      <h1>Diskusi publik via GitHub Discussions.</h1>
+      <p>
+        Forum direncanakan mengambil sumber dari organization discussions supaya percakapan
+        tetap dekat dengan repo, issue, project board, dan kontributor.
+      </p>
+      <div class="actions">
+        <a class="button" href="https://github.com/orgs/IndopenSource/discussions">Buka discussions</a>
+        <a class="button secondary" href="https://github.com/orgs/IndopenSource/projects">Buka project board</a>
+      </div>
+    </div>
+  </section>
+  <section class="section alt">
+    <div class="container">
+      <div class="notice">
+        Integrasi tahap lanjut dapat membaca GraphQL GitHub Discussions untuk menampilkan kategori,
+        thread terbaru, dan status jawaban langsung di situs.
+      </div>
+    </div>
+  </section>
+</BaseLayout>

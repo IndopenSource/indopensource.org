@@ -1,0 +1,41 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import projects from '../data/projects.json';
+
+const languages = [...new Set(projects.map((project) => project.language).filter(Boolean))].slice(0, 12);
+---
+
+<BaseLayout title="Projects - IndopenSource">
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow">Projects</p>
+      <h1>Direktori proyek Indonesia.</h1>
+      <p>
+        Daftar awal halaman ini disinkronkan dari
+        <a href="https://github.com/IndopenSource/awesome-indonesia">IndopenSource/awesome-indonesia</a>.
+      </p>
+      <div class="project-meta">
+        <span>{projects.length} projects</span>
+        {languages.map((language) => <span>{language}</span>)}
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container project-list">
+      {
+        projects.map((project) => (
+          <article class="project-card">
+            <span class="status">{project.archived ? 'Archived' : project.language || 'Project'}</span>
+            <h3><a href={project.url}>{project.fullName}</a></h3>
+            <p>{project.description}</p>
+            <div class="project-meta">
+              <span>{project.stars.toLocaleString('id-ID')} stars</span>
+              <span>{project.forks.toLocaleString('id-ID')} forks</span>
+              {project.homepage && <span><a href={project.homepage}>Homepage</a></span>}
+            </div>
+          </article>
+        ))
+      }
+    </div>
+  </section>
+</BaseLayout>

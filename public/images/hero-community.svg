@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-label="Open source community map of Indonesia">
+  <rect width="1600" height="1000" fill="#0f6f5c"/>
+  <path d="M0 710c182-84 330-110 494-72 144 34 229 116 380 129 213 19 321-118 519-118 86 0 151 23 207 58v293H0Z" fill="#1d2528" opacity=".62"/>
+  <path d="M0 0h1600v1000H0Z" fill="#0a4f43" opacity=".36"/>
+  <g fill="none" stroke="#fffdf8" stroke-width="5" opacity=".72">
+    <path d="M235 508c92-29 168-31 259-7 94 25 136 71 218 58 84-13 123-76 218-82 88-6 146 39 223 72 113 49 210 33 302-29"/>
+    <path d="M180 360c88-48 178-59 283-32 141 37 183 141 323 132 89-6 126-51 224-52 130-1 196 78 326 73 45-2 87-14 127-35"/>
+    <path d="M323 663c73-23 134-24 208-6 77 19 111 56 178 46 69-10 100-62 178-67 71-5 119 32 182 59 92 40 171 27 246-24"/>
+  </g>
+  <g>
+    <circle cx="270" cy="492" r="18" fill="#f0b94f"/>
+    <circle cx="526" cy="501" r="15" fill="#fffdf8"/>
+    <circle cx="742" cy="558" r="18" fill="#c84f31"/>
+    <circle cx="960" cy="478" r="16" fill="#f0b94f"/>
+    <circle cx="1190" cy="567" r="18" fill="#fffdf8"/>
+    <circle cx="1416" cy="525" r="15" fill="#c84f31"/>
+    <circle cx="433" cy="324" r="14" fill="#c84f31"/>
+    <circle cx="789" cy="459" r="15" fill="#f0b94f"/>
+    <circle cx="1040" cy="409" r="13" fill="#fffdf8"/>
+  </g>
+  <g fill="#fffdf8" opacity=".18">
+    <rect x="102" y="124" width="220" height="112" rx="8"/>
+    <rect x="1148" y="142" width="278" height="126" rx="8"/>
+    <rect x="718" y="174" width="166" height="88" rx="8"/>
+  </g>
+</svg>

@@ -1,0 +1,62 @@
+---
+import '../styles/global.css';
+
+const {
+  title = 'IndopenSource',
+  description = 'Roadmap website IndopenSource untuk proyek open source Indonesia.'
+} = Astro.props;
+
+const navItems = [
+  ['Home', '/'],
+  ['Falsafah', '/falsafah/'],
+  ['Projects', '/projects/'],
+  ['Blog', '/blog/'],
+  ['Forum', '/forum/'],
+  ['Contact', '/contact/']
+];
+
+const currentPath = Astro.url.pathname;
+---
+
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.svg" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="container nav" aria-label="Navigasi utama">
+        <a class="brand" href="/">
+          <span class="brand-mark">ID</span>
+          <span>IndopenSource</span>
+        </a>
+        <div class="nav-links">
+          {
+            navItems.map(([label, href]) => (
+              <a href={href} aria-current={currentPath === href ? 'page' : undefined}>
+                {label}
+              </a>
+            ))
+          }
+        </div>
+      </nav>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <span>IndopenSource.org adalah ruang kerja terbuka untuk ekosistem open source Indonesia.</span>
+        <div class="footer-links">
+          <a href="https://github.com/IndopenSource">GitHub</a>
+          <a href="https://github.com/orgs/IndopenSource/discussions">Discussions</a>
+          <a href="https://github.com/orgs/IndopenSource/projects">Roadmap</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

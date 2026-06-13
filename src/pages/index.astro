@@ -1,0 +1,132 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import projects from '../data/projects.json';
+
+const totalProjects = projects.length;
+const topProjects = projects.slice(0, 3);
+---
+
+<BaseLayout
+  title="IndopenSource.org"
+  description="Roadmap website IndopenSource untuk falsafah, direktori proyek, blog, forum, dan kolaborasi open source Indonesia."
+>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <p class="eyebrow">Roadmap website komunitas</p>
+        <h1>IndopenSource.org</h1>
+        <p class="lead">
+          Rumah terbuka untuk merawat daftar proyek, mendokumentasikan falsafah,
+          menulis pembelajaran, dan menghubungkan kontributor open source Indonesia.
+        </p>
+        <div class="hero-actions">
+          <a class="button light" href="/projects/">Lihat projects</a>
+          <a class="button secondary" href="https://github.com/orgs/IndopenSource/projects">Roadmap GitHub</a>
+        </div>
+      </div>
+      <aside class="roadmap-panel" aria-label="Tahap roadmap">
+        <strong>Fase awal</strong>
+        <ol>
+          <li>Bangun halaman inti dan narasi IndopenSource.</li>
+          <li>Sinkronkan direktori dari awesome-indonesia.</li>
+          <li>Siapkan blog repo dan forum berbasis GitHub Discussions.</li>
+          <li>Publish milestone publik untuk kolaborator.</li>
+        </ol>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Arsitektur konten</p>
+          <h2>Halaman yang dibangun bertahap</h2>
+        </div>
+        <p>
+          Situs ini disiapkan sebagai dashboard komunitas: stabil untuk pengunjung,
+          tapi tetap dekat dengan alur kerja GitHub yang dipakai IndopenSource.
+        </p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <span class="status">Live scaffold</span>
+          <h3>Home dan Falsafah</h3>
+          <p>Memperkenalkan misi, prinsip kurasi, dan cara kontribusi komunitas.</p>
+        </article>
+        <article class="card">
+          <span class="status">{totalProjects} repo</span>
+          <h3>Projects</h3>
+          <p>Direktori awal mengambil daftar dari IndopenSource/awesome-indonesia.</p>
+        </article>
+        <article class="card">
+          <span class="status">Planned</span>
+          <h3>Blog dan Forum</h3>
+          <p>Blog direncanakan sebagai repo khusus, forum dari GitHub Discussions.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Roadmap</p>
+          <h2>Urutan pekerjaan</h2>
+        </div>
+        <a class="button" href="/contact/">Gabung diskusi</a>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <strong>Milestone 1</strong>
+          <div>
+            <h3>Foundation website</h3>
+            <p>Setup repo, desain halaman inti, SEO dasar, dan build statis.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <strong>Milestone 2</strong>
+          <div>
+            <h3>Project directory</h3>
+            <p>Sinkronisasi dari awesome-indonesia, filter, pencarian, dan detail proyek.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <strong>Milestone 3</strong>
+          <div>
+            <h3>Knowledge dan forum</h3>
+            <p>Blog repo, editorial flow, dan integrasi GitHub Discussions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Contoh projects</p>
+          <h2>Dari awesome-indonesia</h2>
+        </div>
+        <a class="button secondary" href="/projects/">Buka semua</a>
+      </div>
+      <div class="project-list">
+        {
+          topProjects.map((project) => (
+            <article class="project-card">
+              <h3><a href={project.url}>{project.fullName}</a></h3>
+              <p>{project.description}</p>
+              <div class="project-meta">
+                {project.language && <span>{project.language}</span>}
+                <span>{project.stars.toLocaleString('id-ID')} stars</span>
+                <span>{project.forks.toLocaleString('id-ID')} forks</span>
+              </div>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+</BaseLayout>
