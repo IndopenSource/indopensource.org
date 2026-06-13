@@ -29,6 +29,8 @@ MVP awal berfokus pada homepage sebagai pintu masuk roadmap IndopenSource:
 - Deployment memakai GitHub Pages bawaan repo lewat GitHub Actions.
 
 Rilis pre-release bisa dibuat dari tag `v0.1.0-mvp` setelah workflow Pages hijau.
+URL default sebelum custom domain aktif adalah
+`https://indopensource.github.io/indopensource.org/`.
 
 ## Deployment
 
@@ -37,6 +39,7 @@ GitHub Pages memakai workflow `.github/workflows/deploy-pages.yml`.
 - Build command: `npm run build`
 - Output directory: `dist`
 - Source: GitHub Actions
+- Default Pages base path: `/indopensource.org`
 
 Aktifkan Pages di repository settings dengan source `GitHub Actions`, lalu push ke
 `main` atau jalankan workflow `Deploy to GitHub Pages` secara manual.
