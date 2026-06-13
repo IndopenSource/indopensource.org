@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import InfoCard from '../components/InfoCard.astro';
+import LightSvgMotion from '../components/LightSvgMotion.astro';
 import PageHeader from '../components/PageHeader.astro';
 ---
 
@@ -11,7 +12,8 @@ import PageHeader from '../components/PageHeader.astro';
       punya jejak terbuka yang bisa ditindaklanjuti komunitas.
     </p>
   </PageHeader>
-  <section class="py-18">
+  <section class="relative overflow-hidden py-18">
+    <LightSvgMotion variant="network" />
     <div class="mx-auto grid w-[min(1120px,calc(100%-32px))] grid-cols-3 gap-4 max-lg:grid-cols-1">
       <InfoCard title="Organization">
         <p><a href="https://github.com/IndopenSource">github.com/IndopenSource</a></p>

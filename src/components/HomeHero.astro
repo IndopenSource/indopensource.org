@@ -1,5 +1,6 @@
 ---
 import BaseButton from './BaseButton.astro';
+import LightSvgMotion from './LightSvgMotion.astro';
 import { withBase } from '../lib/urls';
 ---
 
@@ -7,7 +8,8 @@ import { withBase } from '../lib/urls';
   class="relative min-h-[calc(100vh-68px)] overflow-hidden bg-[image:linear-gradient(115deg,rgba(15,111,92,0.9),rgba(29,37,40,0.68)),var(--hero-image)] bg-cover bg-center py-20 text-paper max-lg:min-h-0 max-lg:py-14"
   style={`--hero-image: url("${withBase('/images/hero-community.svg')}")`}
 >
-  <div class="mx-auto grid w-[min(1120px,calc(100%-32px))] grid-cols-[minmax(0,1fr)_360px] items-end gap-10 max-lg:grid-cols-1">
+  <LightSvgMotion variant="network" />
+  <div class="relative mx-auto grid w-[min(1120px,calc(100%-32px))] grid-cols-[minmax(0,1fr)_240px] items-center gap-10 max-lg:grid-cols-1">
     <div>
       <p class="mb-3.5 text-xs font-black uppercase tracking-[0.08em] text-sun">Roadmap website komunitas</p>
       <h1 class="m-0 max-w-3xl text-[clamp(3rem,8vw,6.6rem)] leading-[0.96] max-sm:text-[clamp(2.7rem,15vw,4.5rem)]">
@@ -22,14 +24,6 @@ import { withBase } from '../lib/urls';
         <BaseButton href="https://github.com/orgs/IndopenSource/projects" variant="secondary">Roadmap GitHub</BaseButton>
       </div>
     </div>
-    <aside class="rounded-lg border border-paper/25 bg-ink/35 p-5" aria-label="Tahap roadmap">
-      <strong>Fase awal</strong>
-      <ol class="mt-4 grid list-decimal gap-3 pl-5">
-        <li>Bangun halaman inti dan narasi IndopenSource.</li>
-        <li>Sinkronkan direktori dari awesome-indonesia.</li>
-        <li>Siapkan blog repo dan forum berbasis GitHub Discussions.</li>
-        <li>Publish milestone publik untuk kolaborator.</li>
-      </ol>
-    </aside>
+    <img class="hidden w-60 justify-self-end rounded-[28px] bg-paper/95 p-5 shadow-2xl shadow-ink/20 md:block motion-float" src={withBase('/brand/indopensource-logo.png')} alt="IndopenSource" />
   </div>
 </section>

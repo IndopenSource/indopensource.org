@@ -66,4 +66,79 @@
   .article-body a {
     @apply font-bold text-brand hover:text-brand-dark;
   }
+
+  .motion-line {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 4;
+    stroke-linecap: round;
+    color: rgba(255, 253, 248, 0.55);
+    stroke-dasharray: 18 18;
+    animation: dash-flow 18s linear infinite;
+  }
+
+  .motion-delay {
+    animation-delay: -7s;
+  }
+
+  .motion-dots,
+  .motion-pulse {
+    fill: #f0b94f;
+  }
+
+  .motion-pulse {
+    transform-origin: center;
+    animation: pulse-soft 3.8s ease-in-out infinite;
+  }
+
+  .motion-orbit {
+    fill: none;
+    stroke: #0f6f5c;
+    stroke-width: 2;
+    stroke-dasharray: 10 12;
+    animation: dash-flow 22s linear infinite;
+  }
+
+  .motion-float {
+    animation: float-soft 6s ease-in-out infinite;
+  }
+}
+
+@keyframes dash-flow {
+  to {
+    stroke-dashoffset: -180;
+  }
+}
+
+@keyframes pulse-soft {
+  0%,
+  100% {
+    opacity: 0.55;
+    transform: scale(0.9);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+@keyframes float-soft {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .motion-line,
+  .motion-pulse,
+  .motion-orbit,
+  .motion-float {
+    animation: none;
+  }
 }

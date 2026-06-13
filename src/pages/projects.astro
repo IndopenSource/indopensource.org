@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import LightSvgMotion from '../components/LightSvgMotion.astro';
 import PageHeader from '../components/PageHeader.astro';
 import ProjectsDirectory from '../components/ProjectsDirectory.astro';
 import projects from '../data/projects.json';
@@ -43,5 +44,8 @@ const latestUpdateLabel = latestUpdate
       </div>
     </div>
   </PageHeader>
+  <div class="relative h-0 overflow-visible">
+    <LightSvgMotion variant="steps" class="text-brand" />
+  </div>
   <ProjectsDirectory projects={projects} />
 </BaseLayout>

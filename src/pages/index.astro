@@ -6,6 +6,7 @@ import ProjectCard from '../components/ProjectCard.astro';
 import RoadmapTimeline from '../components/RoadmapTimeline.astro';
 import SectionHeader from '../components/SectionHeader.astro';
 import BaseButton from '../components/BaseButton.astro';
+import LightSvgMotion from '../components/LightSvgMotion.astro';
 import projects from '../data/projects.json';
 
 const totalProjects = projects.length;
@@ -18,7 +19,8 @@ const topProjects = projects.slice(0, 3);
 >
   <HomeHero />
 
-  <section class="bg-paper py-18">
+  <section class="relative overflow-hidden bg-paper py-18">
+    <LightSvgMotion variant="orbit" />
     <div class="mx-auto w-[min(1120px,calc(100%-32px))]">
       <SectionHeader eyebrow="Arsitektur konten" title="Halaman yang dibangun bertahap">
         Situs ini disiapkan sebagai dashboard komunitas: stabil untuk pengunjung,
@@ -38,7 +40,8 @@ const topProjects = projects.slice(0, 3);
     </div>
   </section>
 
-  <section class="py-18">
+  <section class="relative overflow-hidden py-18">
+    <LightSvgMotion variant="steps" />
     <div class="mx-auto w-[min(1120px,calc(100%-32px))]">
       <div class="mb-7 flex items-end justify-between gap-6 max-md:flex-col max-md:items-start">
         <SectionHeader eyebrow="Roadmap" title="Urutan pekerjaan" />
