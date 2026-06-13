@@ -3,6 +3,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import BaseButton from '../components/BaseButton.astro';
 import InfoCard from '../components/InfoCard.astro';
 import PageHeader from '../components/PageHeader.astro';
+import blogPosts from '../data/blog-posts.json';
+
+const featuredPost = blogPosts[0];
 ---
 
 <BaseLayout title="Blog - IndopenSource">
@@ -19,7 +22,48 @@ import PageHeader from '../components/PageHeader.astro';
   </PageHeader>
 
   <section class="pt-8 pb-18">
-    <div class="mx-auto grid w-[min(1120px,calc(100%-32px))] grid-cols-[minmax(0,1.2fr)_minmax(320px,0.8fr)] gap-4 max-lg:grid-cols-1">
+    <div class="mx-auto w-[min(1120px,calc(100%-32px))]">
+      <article class="rounded-lg border border-line bg-paper p-5">
+        <span class="inline-flex rounded-full bg-sun/25 px-2.5 py-1 text-xs font-extrabold text-ink">Artikel terbaru</span>
+        <h2 class="mt-3 text-2xl font-extrabold">{featuredPost?.title || 'Memperkenalkan Blog IndopenSource'}</h2>
+        <p class="mt-3 leading-7 text-muted">
+          {featuredPost?.description || 'Draft pertama sudah tersedia di repo sebagai contoh format artikel komunitas.'}
+        </p>
+        <div class="mt-4 flex flex-wrap gap-2 text-sm text-muted">
+          {featuredPost?.tags?.map((tag) => <span class="rounded-full border border-line px-2 py-1">{tag}</span>)}
+          {featuredPost?.status && <span class="rounded-full border border-line px-2 py-1">{featuredPost.status}</span>}
+        </div>
+        <div class="mt-5">
+          <BaseButton href={`/blog/${featuredPost?.slug || 'memperkenalkan-blog-indopensource'}/`} variant="secondary">
+            Baca artikel
+          </BaseButton>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="bg-paper py-18">
+    <div class="mx-auto w-[min(1120px,calc(100%-32px))]">
+      <div class="mb-7">
+        <p class="mb-3.5 text-xs font-black uppercase tracking-[0.08em] text-accent">Submit</p>
+        <h2 class="text-[clamp(2rem,4vw,3.4rem)] leading-none">Alur kontribusi artikel</h2>
+      </div>
+      <div class="grid grid-cols-3 gap-4 max-lg:grid-cols-1">
+      <InfoCard status="Step 1" title="Pilih format">
+        <p>Salin `templates/article.md`, lalu simpan sebagai `content/YYYY/MM/slug-artikel.md`.</p>
+      </InfoCard>
+      <InfoCard status="Step 2" title="Tulis clean Markdown">
+        <p>Gunakan frontmatter lengkap, heading berurutan, paragraf pendek, dan referensi yang jelas.</p>
+      </InfoCard>
+      <InfoCard status="Step 3" title="Review via PR">
+        <p>Submit pull request agar maintainer bisa mengecek struktur, sumber, dan kesiapan publikasi.</p>
+      </InfoCard>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-18">
+    <div class="mx-auto w-[min(1120px,calc(100%-32px))]">
       <article class="rounded-lg border border-line bg-paper p-5">
         <span class="inline-flex rounded-full bg-brand/10 px-2.5 py-1 text-xs font-extrabold text-brand-dark">Markdown repo</span>
         <h2 class="mt-3 text-2xl font-extrabold">Struktur artikel</h2>
@@ -48,44 +92,6 @@ templates/
           </div>
         </div>
       </article>
-
-      <article class="rounded-lg border border-line bg-paper p-5">
-        <span class="inline-flex rounded-full bg-sun/25 px-2.5 py-1 text-xs font-extrabold text-ink">Contoh artikel</span>
-        <h2 class="mt-3 text-2xl font-extrabold">Memperkenalkan Blog IndopenSource</h2>
-        <p class="mt-3 leading-7 text-muted">
-          Draft pertama sudah tersedia di repo sebagai contoh format artikel komunitas.
-        </p>
-        <div class="mt-4 flex flex-wrap gap-2 text-sm text-muted">
-          <span class="rounded-full border border-line px-2 py-1">community</span>
-          <span class="rounded-full border border-line px-2 py-1">roadmap</span>
-          <span class="rounded-full border border-line px-2 py-1">draft</span>
-        </div>
-        <div class="mt-5">
-          <BaseButton href="https://github.com/IndopenSource/Blog-IndopenSource/blob/main/content/2026/06/memperkenalkan-blog-indopensource.md" variant="secondary">
-            Baca file Markdown
-          </BaseButton>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <section class="bg-paper py-18">
-    <div class="mx-auto w-[min(1120px,calc(100%-32px))]">
-      <div class="mb-7">
-        <p class="mb-3.5 text-xs font-black uppercase tracking-[0.08em] text-accent">Submit</p>
-        <h2 class="text-[clamp(2rem,4vw,3.4rem)] leading-none">Alur kontribusi artikel</h2>
-      </div>
-      <div class="grid grid-cols-3 gap-4 max-lg:grid-cols-1">
-      <InfoCard status="Step 1" title="Pilih format">
-        <p>Salin `templates/article.md`, lalu simpan sebagai `content/YYYY/MM/slug-artikel.md`.</p>
-      </InfoCard>
-      <InfoCard status="Step 2" title="Tulis clean Markdown">
-        <p>Gunakan frontmatter lengkap, heading berurutan, paragraf pendek, dan referensi yang jelas.</p>
-      </InfoCard>
-      <InfoCard status="Step 3" title="Review via PR">
-        <p>Submit pull request agar maintainer bisa mengecek struktur, sumber, dan kesiapan publikasi.</p>
-      </InfoCard>
-      </div>
     </div>
   </section>
 </BaseLayout>

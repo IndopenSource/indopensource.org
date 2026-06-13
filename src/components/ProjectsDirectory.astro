@@ -69,7 +69,7 @@ const topics = [...new Set(projects.flatMap((project) => project.topics || []))]
       </label>
     </div>
 
-    <div class="mb-4 flex flex-wrap items-center justify-between gap-3 text-sm text-muted">
+    <div class="mb-4 flex flex-wrap items-center justify-between gap-3 text-sm text-muted" data-project-pagination>
       <p class="font-bold"><span data-project-count>{projects.length}</span> project ditemukan</p>
       <div class="flex items-center gap-2">
         <button class="rounded-lg border border-line px-3 py-2 font-bold hover:border-brand hover:text-brand disabled:cursor-not-allowed disabled:opacity-40" type="button" data-project-prev>
@@ -89,6 +89,19 @@ const topics = [...new Set(projects.flatMap((project) => project.topics || []))]
     <div class="mt-8 hidden rounded-lg border border-line bg-paper p-5 text-center text-muted" data-project-empty>
       Tidak ada project yang cocok dengan filter ini.
     </div>
+
+    <div class="mt-6 flex flex-wrap items-center justify-between gap-3 text-sm text-muted" data-project-pagination>
+      <p class="font-bold"><span data-project-count>{projects.length}</span> project ditemukan</p>
+      <div class="flex items-center gap-2">
+        <button class="rounded-lg border border-line px-3 py-2 font-bold hover:border-brand hover:text-brand disabled:cursor-not-allowed disabled:opacity-40" type="button" data-project-prev>
+          Sebelumnya
+        </button>
+        <span class="font-bold text-ink" data-project-page>1 / 1</span>
+        <button class="rounded-lg border border-line px-3 py-2 font-bold hover:border-brand hover:text-brand disabled:cursor-not-allowed disabled:opacity-40" type="button" data-project-next>
+          Berikutnya
+        </button>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -103,10 +116,10 @@ const topics = [...new Set(projects.flatMap((project) => project.topics || []))]
     const languageInput = root.querySelector('[data-project-language]');
     const topicInput = root.querySelector('[data-project-topic]');
     const sortInput = root.querySelector('[data-project-sort]');
-    const countOutput = root.querySelector('[data-project-count]');
-    const pageOutput = root.querySelector('[data-project-page]');
-    const prevButton = root.querySelector('[data-project-prev]');
-    const nextButton = root.querySelector('[data-project-next]');
+    const countOutputs = Array.from(root.querySelectorAll('[data-project-count]'));
+    const pageOutputs = Array.from(root.querySelectorAll('[data-project-page]'));
+    const prevButtons = Array.from(root.querySelectorAll<HTMLButtonElement>('[data-project-prev]'));
+    const nextButtons = Array.from(root.querySelectorAll<HTMLButtonElement>('[data-project-next]'));
     const emptyState = root.querySelector('[data-project-empty]');
     const list = root.querySelector('[data-project-list]');
 
@@ -152,10 +165,10 @@ const topics = [...new Set(projects.flatMap((project) => project.topics || []))]
 
       filtered.forEach((card) => list?.appendChild(card));
 
-      if (countOutput) countOutput.textContent = String(filtered.length);
-      if (pageOutput) pageOutput.textContent = `${page} / ${totalPages}`;
-      if (prevButton instanceof HTMLButtonElement) prevButton.disabled = page <= 1;
-      if (nextButton instanceof HTMLButtonElement) nextButton.disabled = page >= totalPages;
+      countOutputs.forEach((output) => output.textContent = String(filtered.length));
+      pageOutputs.forEach((output) => output.textContent = `${page} / ${totalPages}`);
+      prevButtons.forEach((button) => button.disabled = page <= 1);
+      nextButtons.forEach((button) => button.disabled = page >= totalPages);
       emptyState?.classList.toggle('hidden', filtered.length > 0);
     }
 
@@ -166,15 +179,15 @@ const topics = [...new Set(projects.flatMap((project) => project.topics || []))]
       });
     });
 
-    prevButton?.addEventListener('click', () => {
+    prevButtons.forEach((button) => button.addEventListener('click', () => {
       page = Math.max(1, page - 1);
       render();
-    });
+    }));
 
-    nextButton?.addEventListener('click', () => {
+    nextButtons.forEach((button) => button.addEventListener('click', () => {
       page += 1;
       render();
-    });
+    }));
 
     render();
   }

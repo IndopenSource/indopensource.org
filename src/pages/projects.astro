@@ -5,6 +5,16 @@ import ProjectsDirectory from '../components/ProjectsDirectory.astro';
 import projects from '../data/projects.json';
 
 const languages = [...new Set(projects.map((project) => project.language).filter(Boolean))].slice(0, 12);
+const totalStars = projects.reduce((sum, project) => sum + project.stars, 0);
+const totalForks = projects.reduce((sum, project) => sum + project.forks, 0);
+const latestUpdate = projects
+  .map((project) => project.pushedAt || project.updatedAt)
+  .filter(Boolean)
+  .sort()
+  .at(-1);
+const latestUpdateLabel = latestUpdate
+  ? new Intl.DateTimeFormat('id-ID', { dateStyle: 'medium' }).format(new Date(latestUpdate))
+  : '';
 ---
 
 <BaseLayout title="Projects - IndopenSource">
@@ -15,7 +25,22 @@ const languages = [...new Set(projects.map((project) => project.language).filter
     </p>
     <div class="mt-4 flex flex-wrap gap-2 text-sm">
       <span class="rounded-full border border-line px-2 py-1">{projects.length} projects</span>
+      <span class="rounded-full border border-line px-2 py-1">{totalStars.toLocaleString('id-ID')} total stars</span>
       {languages.map((language) => <span class="rounded-full border border-line px-2 py-1">{language}</span>)}
+    </div>
+    <div class="mt-6 grid gap-3 sm:grid-cols-3">
+      <div class="rounded-lg border border-line bg-canvas p-4">
+        <span class="text-sm font-bold text-muted">Akumulasi stars</span>
+        <strong class="mt-1 block text-2xl text-ink">{totalStars.toLocaleString('id-ID')}</strong>
+      </div>
+      <div class="rounded-lg border border-line bg-canvas p-4">
+        <span class="text-sm font-bold text-muted">Akumulasi forks</span>
+        <strong class="mt-1 block text-2xl text-ink">{totalForks.toLocaleString('id-ID')}</strong>
+      </div>
+      <div class="rounded-lg border border-line bg-canvas p-4">
+        <span class="text-sm font-bold text-muted">Update terbaru</span>
+        <strong class="mt-1 block text-2xl text-ink">{latestUpdateLabel || '-'}</strong>
+      </div>
     </div>
   </PageHeader>
   <ProjectsDirectory projects={projects} />

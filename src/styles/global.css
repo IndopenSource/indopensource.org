@@ -33,3 +33,37 @@
     overflow-wrap: anywhere;
   }
 }
+
+@layer components {
+  .article-body {
+    @apply text-lg leading-8 text-muted;
+  }
+
+  .article-body h2 {
+    @apply mt-10 mb-3 text-3xl font-extrabold leading-tight text-ink;
+  }
+
+  .article-body p {
+    @apply my-4;
+  }
+
+  .article-body ul {
+    @apply my-4 list-disc space-y-2 pl-6;
+  }
+
+  .article-body code {
+    @apply rounded bg-paper px-1.5 py-0.5 text-base text-ink;
+  }
+
+  .article-body pre {
+    @apply my-5 overflow-x-auto rounded-lg bg-ink p-4 text-base leading-7 text-paper;
+  }
+
+  .article-body pre code {
+    @apply bg-transparent p-0 text-paper;
+  }
+
+  .article-body a {
+    @apply font-bold text-brand hover:text-brand-dark;
+  }
+}
