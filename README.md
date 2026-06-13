@@ -100,7 +100,8 @@ Workflow `.github/workflows/sync-content.yml` memperbarui data secara otomatis.
   - `sync-content`
 
 Jika data berubah, workflow membuat commit `Sync content data`. Setelah commit
-masuk `main`, workflow GitHub Pages akan deploy ulang website.
+masuk `main`, workflow yang sama akan upload artifact dan deploy ulang GitHub
+Pages agar perubahan data langsung tayang.
 
 ## Contributing
 
