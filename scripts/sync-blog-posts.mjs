@@ -108,6 +108,7 @@ for (const path of articleFiles) {
     date: data.date || '',
     tags: data.tags || [],
     status: data.status || 'draft',
+    thumbnail: data.thumbnail || data.image || data.cover || '',
     content,
     sourceUrl: file.html_url,
     releasedAt: commitMeta.releasedAt,

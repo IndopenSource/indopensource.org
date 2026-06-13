@@ -1,0 +1,122 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BaseButton from '../../components/BaseButton.astro';
+import ProjectCard from '../../components/ProjectCard.astro';
+import projects from '../../data/projects.json';
+import { projectSlug } from '../../lib/projects';
+
+export function getStaticPaths() {
+  return projects.map((project) => ({
+    params: { slug: projectSlug(project.fullName) },
+    props: { project }
+  }));
+}
+
+const { project } = Astro.props;
+const updatedDate = project.pushedAt || project.updatedAt;
+const updatedLabel = updatedDate
+  ? new Intl.DateTimeFormat('id-ID', { dateStyle: 'medium' }).format(new Date(updatedDate))
+  : '';
+const starHistoryUrl = `https://api.star-history.com/svg?repos=${encodeURIComponent(project.fullName)}&type=Date`;
+const readmeApiUrl = `https://api.github.com/repos/${project.fullName}/readme`;
+const repoName = project.fullName.split('/').at(-1) || project.fullName;
+---
+
+<BaseLayout
+  title={`${project.fullName} - Project IndopenSource`}
+  description={project.description}
+>
+  <section class="border-b border-line bg-paper py-14">
+    <div class="mx-auto grid w-[min(1040px,calc(100%-40px))] grid-cols-[minmax(0,1fr)_320px] gap-8 max-lg:grid-cols-1">
+      <div>
+        <p class="mb-3 text-xs font-black uppercase tracking-[0.08em] text-accent">Project detail</p>
+        <div class="flex items-start gap-4">
+          {project.ownerAvatarUrl && <img class="size-14 rounded-lg border border-line bg-canvas" src={project.ownerAvatarUrl} alt={`${project.owner} avatar`} />}
+          <div class="min-w-0">
+            {project.owner && <p class="mb-2 text-lg font-extrabold text-brand-dark">{project.owner}</p>}
+            <h1 class="m-0 text-balance text-[clamp(2.3rem,5vw,4.8rem)] leading-[1.02]">{repoName}</h1>
+            <p class="mt-4 max-w-3xl text-lg leading-8 text-muted">{project.description}</p>
+          </div>
+        </div>
+        <div class="mt-6 flex flex-wrap gap-2 text-sm text-muted">
+          {project.language && <span class="rounded-full border border-line px-2.5 py-1">{project.language}</span>}
+          <span class="rounded-full border border-line px-2.5 py-1">{project.stars.toLocaleString('id-ID')} stars</span>
+          <span class="rounded-full border border-line px-2.5 py-1">{project.forks.toLocaleString('id-ID')} forks</span>
+          {updatedLabel && <span class="rounded-full border border-line px-2.5 py-1">Update {updatedLabel}</span>}
+          {project.latestRelease && <a class="rounded-full border border-line px-2.5 py-1 hover:text-brand" href={project.latestRelease.url}>Latest {project.latestRelease.tagName}</a>}
+        </div>
+        <div class="mt-7 flex flex-wrap gap-3">
+          <BaseButton href={project.url}>Buka GitHub</BaseButton>
+          {project.homepage && <BaseButton href={project.homepage} variant="secondary">Homepage</BaseButton>}
+          <BaseButton href="/projects/" variant="secondary">Kembali</BaseButton>
+        </div>
+      </div>
+      <ProjectCard project={project} compact />
+    </div>
+  </section>
+
+  <section class="py-14">
+    <div class="mx-auto grid w-[min(1040px,calc(100%-40px))] gap-6 lg:grid-cols-[minmax(0,1fr)_360px]">
+      <article class="min-w-0 overflow-hidden rounded-lg border border-line bg-paper p-5">
+        <div class="mb-5 flex items-center justify-between gap-3">
+          <div>
+            <p class="mb-2 text-xs font-black uppercase tracking-[0.08em] text-accent">README</p>
+            <h2 class="text-2xl font-extrabold">Dokumentasi repo</h2>
+          </div>
+          <a class="text-sm font-bold text-brand hover:text-brand-dark" href={`${project.url}#readme`}>GitHub</a>
+        </div>
+        <div
+          class="prose-readme max-w-none text-muted"
+          data-readme-root
+          data-readme-api={readmeApiUrl}
+        >
+          <p>Memuat README dari GitHub...</p>
+        </div>
+      </article>
+
+      <aside class="grid content-start gap-6">
+        <article class="rounded-lg border border-line bg-paper p-5">
+          <p class="mb-2 text-xs font-black uppercase tracking-[0.08em] text-accent">Stars</p>
+          <h2 class="text-2xl font-extrabold">History stars</h2>
+          <img class="mt-5 w-full rounded-lg border border-line bg-white" src={starHistoryUrl} alt={`Star history ${project.fullName}`} loading="lazy" />
+        </article>
+        {
+          project.topics?.length > 0 && (
+            <article class="rounded-lg border border-line bg-paper p-5">
+              <p class="mb-2 text-xs font-black uppercase tracking-[0.08em] text-accent">Tags</p>
+              <div class="flex flex-wrap gap-2 text-sm font-bold text-brand-dark">
+                {project.topics.map((topic) => <span class="rounded-full bg-brand/10 px-2.5 py-1">#{topic}</span>)}
+              </div>
+            </article>
+          )
+        }
+      </aside>
+    </div>
+  </section>
+</BaseLayout>
+
+<script>
+  import { marked } from 'marked';
+
+  const root = document.querySelector('[data-readme-root]');
+  const apiUrl = root?.getAttribute('data-readme-api');
+
+  async function loadReadme() {
+    if (!root || !apiUrl) return;
+
+    try {
+      const response = await fetch(apiUrl, { headers: { Accept: 'application/vnd.github+json' } });
+      if (!response.ok) throw new Error(`GitHub response ${response.status}`);
+
+      const data = await response.json();
+      const binary = atob(data.content.replace(/\n/g, ''));
+      const bytes = Uint8Array.from(binary, (char) => char.charCodeAt(0));
+      const markdown = new TextDecoder().decode(bytes);
+      root.innerHTML = await marked.parse(markdown);
+    } catch (error) {
+      root.innerHTML = '<p>README belum bisa dimuat otomatis. Buka README langsung dari GitHub.</p>';
+    }
+  }
+
+  loadReadme();
+</script>

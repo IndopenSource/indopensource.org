@@ -10,12 +10,12 @@ import LightSvgMotion from '../components/LightSvgMotion.astro';
 import projects from '../data/projects.json';
 
 const totalProjects = projects.length;
-const topProjects = projects.slice(0, 3);
+const topProjects = projects.slice(0, 5);
 ---
 
 <BaseLayout
-  title="IndopenSource.org"
-  description="Roadmap website IndopenSource untuk falsafah, direktori proyek, blog, forum, dan kolaborasi open source Indonesia."
+  title="Komunitas Open Source Indonesia"
+  description="IndopenSource adalah komunitas open source Indonesia untuk direktori proyek, falsafah, blog, forum, dan kolaborasi publik."
 >
   <HomeHero />
 
@@ -57,8 +57,16 @@ const topProjects = projects.slice(0, 3);
         <SectionHeader eyebrow="Contoh projects" title="Dari awesome-indonesia" />
         <BaseButton href="/projects/" variant="secondary">Buka semua</BaseButton>
       </div>
-      <div class="grid grid-cols-2 gap-4 max-lg:grid-cols-1">
-        {topProjects.map((project) => <ProjectCard project={project} />)}
+      <div class="-mx-4 overflow-x-auto px-4 pb-4 [scrollbar-width:thin]">
+        <div class="flex min-w-full snap-x gap-4">
+          {
+            topProjects.map((project) => (
+              <div class="w-[min(420px,82vw)] shrink-0 snap-start">
+                <ProjectCard project={project} />
+              </div>
+            ))
+          }
+        </div>
       </div>
     </div>
   </section>

@@ -34,11 +34,19 @@ const topics = [...new Set(projects.flatMap((project) => project.topics || []))]
 
 <section class="pt-8 pb-18" data-projects-directory>
   <div class="mx-auto w-[min(1120px,calc(100%-32px))]">
-    <div class="mb-5 grid gap-3 rounded-lg border border-line bg-paper p-4 md:grid-cols-[minmax(0,1fr)_180px_180px_170px]">
-      <label class="grid gap-1.5 text-sm font-bold text-ink">
-        Cari
+    <div class="mb-6 rounded-lg border border-line bg-paper p-4 shadow-sm shadow-ink/5">
+      <div class="mb-4 flex flex-wrap items-end justify-between gap-3">
+        <div>
+          <p class="text-xs font-black uppercase tracking-[0.08em] text-accent">Filter</p>
+          <h2 class="mt-1 text-xl font-extrabold">Temukan project</h2>
+        </div>
+        <span class="rounded-full bg-brand/10 px-3 py-1 text-sm font-bold text-brand-dark">{projects.length} repo tersedia</span>
+      </div>
+      <div class="grid gap-3 lg:grid-cols-[minmax(260px,1fr)_180px_180px_170px]">
+      <label class="grid gap-1.5 text-sm font-bold text-ink lg:col-span-1">
+        Cari repo
         <input
-          class="min-h-11 rounded-lg border border-line bg-white px-3 font-normal text-muted outline-none focus:border-brand"
+          class="min-h-12 rounded-lg border border-line bg-white px-3 font-normal text-muted outline-none transition focus:border-brand focus:ring-2 focus:ring-brand/10"
           type="search"
           placeholder="Nama repo, owner, deskripsi..."
           data-project-search
@@ -46,27 +54,28 @@ const topics = [...new Set(projects.flatMap((project) => project.topics || []))]
       </label>
       <label class="grid gap-1.5 text-sm font-bold text-ink">
         Bahasa
-        <select class="min-h-11 rounded-lg border border-line bg-white px-3 font-normal text-muted outline-none focus:border-brand" data-project-language>
+        <select class="min-h-12 rounded-lg border border-line bg-white px-3 font-normal text-muted outline-none transition focus:border-brand focus:ring-2 focus:ring-brand/10" data-project-language>
           <option value="">Semua</option>
           {languages.map((language) => <option value={language.toLowerCase()}>{language}</option>)}
         </select>
       </label>
       <label class="grid gap-1.5 text-sm font-bold text-ink">
         Tag
-        <select class="min-h-11 rounded-lg border border-line bg-white px-3 font-normal text-muted outline-none focus:border-brand" data-project-topic>
+        <select class="min-h-12 rounded-lg border border-line bg-white px-3 font-normal text-muted outline-none transition focus:border-brand focus:ring-2 focus:ring-brand/10" data-project-topic>
           <option value="">Semua</option>
           {topics.map((topic) => <option value={topic.toLowerCase()}>{topic}</option>)}
         </select>
       </label>
       <label class="grid gap-1.5 text-sm font-bold text-ink">
         Urutkan
-        <select class="min-h-11 rounded-lg border border-line bg-white px-3 font-normal text-muted outline-none focus:border-brand" data-project-sort>
+        <select class="min-h-12 rounded-lg border border-line bg-white px-3 font-normal text-muted outline-none transition focus:border-brand focus:ring-2 focus:ring-brand/10" data-project-sort>
           <option value="stars">Stars</option>
           <option value="updated">Update terbaru</option>
           <option value="release">Release terbaru</option>
           <option value="name">Nama</option>
         </select>
       </label>
+      </div>
     </div>
 
     <div class="mb-4 flex flex-wrap items-center justify-between gap-3 text-sm text-muted" data-project-pagination>

@@ -5,8 +5,11 @@ import InfoCard from '../components/InfoCard.astro';
 import LightSvgMotion from '../components/LightSvgMotion.astro';
 import PageHeader from '../components/PageHeader.astro';
 import blogPosts from '../data/blog-posts.json';
+import { withBase } from '../lib/urls';
 
 const featuredPost = blogPosts[0];
+const featuredThumbnail = featuredPost?.thumbnail || '/brand/indopensource-hero.jpg';
+const featuredThumbnailUrl = /^https?:\/\//.test(featuredThumbnail) ? featuredThumbnail : withBase(featuredThumbnail);
 ---
 
 <BaseLayout
@@ -28,20 +31,30 @@ const featuredPost = blogPosts[0];
   <section class="relative overflow-hidden pt-8 pb-18">
     <LightSvgMotion variant="orbit" />
     <div class="mx-auto w-[min(1120px,calc(100%-32px))]">
-      <article class="rounded-lg border border-line bg-paper p-5">
-        <span class="inline-flex rounded-full bg-sun/25 px-2.5 py-1 text-xs font-extrabold text-ink">Artikel terbaru</span>
-        <h2 class="mt-3 text-2xl font-extrabold">{featuredPost?.title || 'Memperkenalkan Blog IndopenSource'}</h2>
-        <p class="mt-3 leading-7 text-muted">
-          {featuredPost?.description || 'Draft pertama sudah tersedia di repo sebagai contoh format artikel komunitas.'}
-        </p>
-        <div class="mt-4 flex flex-wrap gap-2 text-sm text-muted">
-          {featuredPost?.tags?.map((tag) => <span class="rounded-full border border-line px-2 py-1">{tag}</span>)}
-          {featuredPost?.status && <span class="rounded-full border border-line px-2 py-1">{featuredPost.status}</span>}
+      <article class="grid overflow-hidden rounded-lg border border-line bg-paper md:grid-cols-[minmax(0,1fr)_360px]">
+        <div class="p-5">
+          <span class="inline-flex rounded-full bg-sun/25 px-2.5 py-1 text-xs font-extrabold text-ink">Artikel terbaru</span>
+          <h2 class="mt-3 text-2xl font-extrabold">{featuredPost?.title || 'Memperkenalkan Blog IndopenSource'}</h2>
+          <p class="mt-3 leading-7 text-muted">
+            {featuredPost?.description || 'Draft pertama sudah tersedia di repo sebagai contoh format artikel komunitas.'}
+          </p>
+          <div class="mt-4 flex flex-wrap gap-2 text-sm text-muted">
+            {featuredPost?.tags?.map((tag) => <span class="rounded-full border border-line px-2 py-1">{tag}</span>)}
+            {featuredPost?.status && <span class="rounded-full border border-line px-2 py-1">{featuredPost.status}</span>}
+          </div>
+          <div class="mt-5">
+            <BaseButton href={`/blog/${featuredPost?.slug || 'memperkenalkan-blog-indopensource'}/`} variant="secondary">
+              Baca artikel
+            </BaseButton>
+          </div>
         </div>
-        <div class="mt-5">
-          <BaseButton href={`/blog/${featuredPost?.slug || 'memperkenalkan-blog-indopensource'}/`} variant="secondary">
-            Baca artikel
-          </BaseButton>
+        <div class="min-h-64 bg-ink">
+          <img
+            class="h-full min-h-64 w-full object-cover"
+            src={featuredThumbnailUrl}
+            alt=""
+            loading="lazy"
+          />
         </div>
       </article>
     </div>
