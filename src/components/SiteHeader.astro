@@ -10,6 +10,13 @@ const navItems = [
   ['Contact', '/contact/']
 ];
 
+const mobileNavItems = [
+  ['Home', '/'],
+  ['Projects', '/projects/'],
+  ['Blog', '/blog/'],
+  ['Forum', '/forum/']
+];
+
 const currentPath = Astro.url.pathname;
 const baseUrl = import.meta.env.BASE_URL.replace(/\/?$/, '/');
 const currentPathWithoutBase = currentPath.replace(new RegExp(`^${baseUrl.replace(/\/$/, '')}`), '') || '/';
@@ -21,7 +28,7 @@ const currentPathWithoutBase = currentPath.replace(new RegExp(`^${baseUrl.replac
       <img class="size-9 rounded-lg object-contain" src={withBase('/brand/icon-192.png')} alt="" />
       <span>IndopenSource</span>
     </a>
-    <div class="flex flex-wrap justify-end gap-1.5 max-sm:justify-start">
+    <div class="flex flex-wrap justify-end gap-1.5 max-md:hidden">
       {
         navItems.map(([label, href]) => (
           <a
@@ -36,3 +43,17 @@ const currentPathWithoutBase = currentPath.replace(new RegExp(`^${baseUrl.replac
     </div>
   </nav>
 </header>
+
+<nav class="fixed inset-x-4 bottom-4 z-30 hidden rounded-2xl border border-line bg-paper/95 p-2 shadow-2xl shadow-ink/20 backdrop-blur-xl max-md:grid max-md:grid-cols-4" aria-label="Navigasi mobile">
+  {
+    mobileNavItems.map(([label, href]) => (
+      <a
+        class="rounded-xl px-2 py-2 text-center text-xs font-extrabold text-muted hover:bg-brand/10 hover:text-brand-dark aria-[current=page]:bg-brand aria-[current=page]:text-white"
+        href={withBase(href)}
+        aria-current={currentPathWithoutBase === href ? 'page' : undefined}
+      >
+        {label}
+      </a>
+    ))
+  }
+</nav>

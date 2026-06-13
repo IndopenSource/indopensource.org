@@ -21,7 +21,7 @@ const releaseDate = post.releasedAt
   : '';
 ---
 
-<BaseLayout title={`${post.title} - IndopenSource`}>
+<BaseLayout title={`${post.title} - IndopenSource`} description={post.description} type="article">
   <PageHeader eyebrow="Blog" title={post.title}>
     <p>{post.description}</p>
     <div class="mt-4 flex flex-wrap gap-2 text-sm text-muted">
