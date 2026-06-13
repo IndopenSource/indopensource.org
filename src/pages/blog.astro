@@ -1,36 +1,28 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import InfoCard from '../components/InfoCard.astro';
+import PageHeader from '../components/PageHeader.astro';
 ---
 
 <BaseLayout title="Blog - IndopenSource">
-  <section class="page-hero">
-    <div class="container">
-      <p class="eyebrow">Blog</p>
-      <h1>Catatan kerja open source Indonesia.</h1>
-      <p>
-        Blog direncanakan memakai repo khusus seperti
-        <a href="https://github.com/IndopenSource/Blog-IndopenSource">IndopenSource/Blog-IndopenSource</a>
-        agar tulisan, review, dan publikasi bisa punya alur kontribusi sendiri.
-      </p>
-    </div>
-  </section>
-  <section class="section">
-    <div class="container grid">
-      <article class="post-card">
-        <span class="status">Planned</span>
-        <h3>Editorial workflow</h3>
+  <PageHeader eyebrow="Blog" title="Catatan kerja open source Indonesia.">
+    <p>
+      Blog direncanakan memakai repo khusus seperti
+      <a class="font-bold text-brand hover:text-brand-dark" href="https://github.com/IndopenSource/Blog-IndopenSource">IndopenSource/Blog-IndopenSource</a>
+      agar tulisan, review, dan publikasi bisa punya alur kontribusi sendiri.
+    </p>
+  </PageHeader>
+  <section class="py-18">
+    <div class="mx-auto grid w-[min(1120px,calc(100%-32px))] grid-cols-3 gap-4 max-lg:grid-cols-1">
+      <InfoCard status="Planned" title="Editorial workflow">
         <p>Template issue, draft PR, reviewer, dan label publikasi.</p>
-      </article>
-      <article class="post-card">
-        <span class="status">Planned</span>
-        <h3>Project spotlight</h3>
+      </InfoCard>
+      <InfoCard status="Planned" title="Project spotlight">
         <p>Profil proyek Indonesia yang aktif, berguna, dan mudah diikuti kontributor baru.</p>
-      </article>
-      <article class="post-card">
-        <span class="status">Planned</span>
-        <h3>Learning notes</h3>
+      </InfoCard>
+      <InfoCard status="Planned" title="Learning notes">
         <p>Catatan praktis tentang maintenance, release, dokumentasi, dan komunitas.</p>
-      </article>
+      </InfoCard>
     </div>
   </section>
 </BaseLayout>

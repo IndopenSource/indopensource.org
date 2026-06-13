@@ -1,6 +1,17 @@
 # IndopenSource.org
 
+[![Deploy to GitHub Pages](https://github.com/IndopenSource/indopensource.org/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/IndopenSource/indopensource.org/actions/workflows/deploy-pages.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
 Website roadmap untuk `https://indopensource.org`.
+
+## Tech Stack
+
+- Astro
+- Tailwind CSS
+- TypeScript
+- GitHub Pages
+- GitHub Actions
 
 ## Pages
 
@@ -17,6 +28,25 @@ Website roadmap untuk `https://indopensource.org`.
 npm install
 npm run sync:projects
 npm run dev
+```
+
+## Project Structure
+
+```txt
+src/
+  components/   Reusable Astro UI components
+  data/         Synced project directory data
+  layouts/      Shared page layout
+  lib/          Small shared helpers
+  pages/        Route files
+  styles/       Tailwind entrypoint and theme tokens
+```
+
+## Checks
+
+```bash
+npm run check
+npm run build
 ```
 
 ## MVP Pre-release
@@ -51,3 +81,7 @@ lalu mengambil metadata repo dari GitHub API dan menulis hasilnya ke
 `src/data/projects.json`.
 
 Gunakan `GITHUB_TOKEN` atau `GH_TOKEN` untuk rate limit yang lebih lega.
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md).

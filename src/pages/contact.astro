@@ -1,32 +1,27 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import InfoCard from '../components/InfoCard.astro';
+import PageHeader from '../components/PageHeader.astro';
 ---
 
 <BaseLayout title="Contact - IndopenSource">
-  <section class="page-hero">
-    <div class="container">
-      <p class="eyebrow">Contact</p>
-      <h1>Mulai dari GitHub.</h1>
-      <p>
-        Kontak awal diarahkan ke GitHub agar semua permintaan, kontribusi, dan ide roadmap
-        punya jejak terbuka yang bisa ditindaklanjuti komunitas.
-      </p>
-    </div>
-  </section>
-  <section class="section">
-    <div class="container grid">
-      <article class="card">
-        <h3>Organization</h3>
+  <PageHeader eyebrow="Contact" title="Mulai dari GitHub.">
+    <p>
+      Kontak awal diarahkan ke GitHub agar semua permintaan, kontribusi, dan ide roadmap
+      punya jejak terbuka yang bisa ditindaklanjuti komunitas.
+    </p>
+  </PageHeader>
+  <section class="py-18">
+    <div class="mx-auto grid w-[min(1120px,calc(100%-32px))] grid-cols-3 gap-4 max-lg:grid-cols-1">
+      <InfoCard title="Organization">
         <p><a href="https://github.com/IndopenSource">github.com/IndopenSource</a></p>
-      </article>
-      <article class="card">
-        <h3>Roadmap</h3>
+      </InfoCard>
+      <InfoCard title="Roadmap">
         <p><a href="https://github.com/orgs/IndopenSource/projects">GitHub Projects IndopenSource</a></p>
-      </article>
-      <article class="card">
-        <h3>Forum</h3>
+      </InfoCard>
+      <InfoCard title="Forum">
         <p><a href="https://github.com/orgs/IndopenSource/discussions">GitHub Discussions IndopenSource</a></p>
-      </article>
+      </InfoCard>
     </div>
   </section>
 </BaseLayout>
