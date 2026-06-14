@@ -9,7 +9,7 @@
     "homepage": "",
     "language": "PHP",
     "stars": 1199,
-    "forks": 1141,
+    "forks": 1142,
     "topics": [
       "opensid",
       "sistem-informasi-desa"
@@ -128,11 +128,11 @@
     "name": "omni",
     "owner": "fajarhide",
     "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/4769529?v=4",
-    "description": "A high-performance Semantic Signal Engine with Context OS for Agentic AI. Run your AI with zero noise, pure context, and 90% lower token costs.",
+    "description": "The Context OS for Autonomous AI Agents. Distill terminal noise into pure semantic signal, stop agent hallucinations, and cut token costs by up to 90%.",
     "url": "https://github.com/fajarhide/omni",
     "homepage": "https://omni.weekndlabs.com",
     "language": "Rust",
-    "stars": 245,
+    "stars": 246,
     "forks": 25,
     "topics": [
       "ai-agents",
@@ -151,13 +151,13 @@
       "token-reduction",
       "token-savings"
     ],
-    "updatedAt": "2026-06-13T14:27:42Z",
-    "pushedAt": "2026-06-08T22:39:53Z",
+    "updatedAt": "2026-06-14T14:25:29Z",
+    "pushedAt": "2026-06-14T14:24:07Z",
     "latestRelease": {
-      "name": "v0.5.9",
-      "tagName": "v0.5.9",
-      "url": "https://github.com/fajarhide/omni/releases/tag/v0.5.9",
-      "publishedAt": "2026-06-04T04:28:40Z"
+      "name": "v0.6.0",
+      "tagName": "v0.6.0",
+      "url": "https://github.com/fajarhide/omni/releases/tag/v0.6.0",
+      "publishedAt": "2026-06-14T13:30:54Z"
     },
     "archived": false
   },
@@ -183,7 +183,7 @@
       "tiptap-editor"
     ],
     "updatedAt": "2026-06-14T08:19:20Z",
-    "pushedAt": "2026-06-14T06:10:15Z",
+    "pushedAt": "2026-06-14T11:51:13Z",
     "latestRelease": {
       "name": "v2.1.3",
       "tagName": "v2.1.3",
@@ -307,10 +307,10 @@
     "url": "https://github.com/jipraks/kasirgratisan",
     "homepage": "",
     "language": "TypeScript",
-    "stars": 78,
+    "stars": 79,
     "forks": 37,
     "topics": [],
-    "updatedAt": "2026-06-14T06:56:34Z",
+    "updatedAt": "2026-06-14T11:59:35Z",
     "pushedAt": "2026-06-14T02:27:51Z",
     "latestRelease": null,
     "archived": false
@@ -534,8 +534,8 @@
     "stars": 24,
     "forks": 1,
     "topics": [],
-    "updatedAt": "2026-06-13T13:34:33Z",
-    "pushedAt": "2026-06-13T13:34:29Z",
+    "updatedAt": "2026-06-14T14:16:47Z",
+    "pushedAt": "2026-06-14T14:16:43Z",
     "latestRelease": {
       "name": "Tycho v0.5.0",
       "tagName": "v0.5.0",
@@ -573,6 +573,23 @@
     "archived": false
   },
   {
+    "fullName": "raymondchins/agentmap",
+    "name": "agentmap",
+    "owner": "raymondchins",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/12913191?v=4",
+    "description": "The repo map your coding agent is forced to use — ~98% fewer tokens (up to 99.9% per task) to understand a TS/JS codebase. PageRank hubs, Aider-style symbol ranking, token-budgeted digest, --any router, wired into the agent loop.",
+    "url": "https://github.com/raymondchins/agentmap",
+    "homepage": "",
+    "language": "JavaScript",
+    "stars": 22,
+    "forks": 6,
+    "topics": [],
+    "updatedAt": "2026-06-14T14:16:13Z",
+    "pushedAt": "2026-06-14T10:20:57Z",
+    "latestRelease": null,
+    "archived": false
+  },
+  {
     "fullName": "rayasabari/yntk-ts",
     "name": "yntk-ts",
     "owner": "rayasabari",
@@ -601,8 +618,8 @@
     "stars": 19,
     "forks": 3,
     "topics": [],
-    "updatedAt": "2026-06-14T00:39:36Z",
-    "pushedAt": "2026-06-11T10:58:48Z",
+    "updatedAt": "2026-06-14T12:42:48Z",
+    "pushedAt": "2026-06-14T12:42:44Z",
     "latestRelease": null,
     "archived": false
   },
@@ -635,25 +652,8 @@
     "stars": 15,
     "forks": 1,
     "topics": [],
-    "updatedAt": "2026-06-14T07:03:31Z",
-    "pushedAt": "2026-06-14T06:25:12Z",
-    "latestRelease": null,
-    "archived": false
-  },
-  {
-    "fullName": "raymondchins/agentmap",
-    "name": "agentmap",
-    "owner": "raymondchins",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/12913191?v=4",
-    "description": "The repo map your coding agent is forced to use — ~98% fewer tokens (up to 99.9% per task) to understand a TS/JS codebase. PageRank hubs, Aider-style symbol ranking, token-budgeted digest, --any router, wired into the agent loop.",
-    "url": "https://github.com/raymondchins/agentmap",
-    "homepage": "",
-    "language": "JavaScript",
-    "stars": 14,
-    "forks": 5,
-    "topics": [],
-    "updatedAt": "2026-06-14T09:53:17Z",
-    "pushedAt": "2026-06-14T09:53:36Z",
+    "updatedAt": "2026-06-14T12:08:13Z",
+    "pushedAt": "2026-06-14T11:21:15Z",
     "latestRelease": null,
     "archived": false
   },
@@ -764,6 +764,33 @@
     "archived": false
   },
   {
+    "fullName": "abilfida/OmniDrive",
+    "name": "OmniDrive",
+    "owner": "abilfida",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/38366329?v=4",
+    "description": "Omnidrive lets you connect multiple Google Drive accounts and manage all your files from a single dashboard. It runs entirely on Cloudflare's edge network — Workers for the API, D1 for the database, and KV for session storage — so there's no traditional server to maintain.",
+    "url": "https://github.com/abilfida/OmniDrive",
+    "homepage": "",
+    "language": "JavaScript",
+    "stars": 10,
+    "forks": 2,
+    "topics": [
+      "cloudflare",
+      "google-drive",
+      "reactjs",
+      "vitejs"
+    ],
+    "updatedAt": "2026-06-14T13:03:10Z",
+    "pushedAt": "2026-06-14T04:45:09Z",
+    "latestRelease": {
+      "name": "v0.8.14",
+      "tagName": "v0.8.14",
+      "url": "https://github.com/abilfida/OmniDrive/releases/tag/v0.8.14",
+      "publishedAt": "2026-06-14T04:45:58Z"
+    },
+    "archived": false
+  },
+  {
     "fullName": "rizukirr/muslimtify",
     "name": "muslimtify",
     "owner": "rizukirr",
@@ -820,8 +847,8 @@
       "static-site",
       "sveltekit"
     ],
-    "updatedAt": "2026-06-14T08:58:17Z",
-    "pushedAt": "2026-06-14T09:45:18Z",
+    "updatedAt": "2026-06-14T12:58:53Z",
+    "pushedAt": "2026-06-14T12:58:50Z",
     "latestRelease": {
       "name": "Bansos v0.0.11",
       "tagName": "v0.0.11",
@@ -908,33 +935,6 @@
     "archived": false
   },
   {
-    "fullName": "abilfida/OmniDrive",
-    "name": "OmniDrive",
-    "owner": "abilfida",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/38366329?v=4",
-    "description": "Omnidrive lets you connect multiple Google Drive accounts and manage all your files from a single dashboard. It runs entirely on Cloudflare's edge network — Workers for the API, D1 for the database, and KV for session storage — so there's no traditional server to maintain.",
-    "url": "https://github.com/abilfida/OmniDrive",
-    "homepage": "",
-    "language": "JavaScript",
-    "stars": 7,
-    "forks": 2,
-    "topics": [
-      "cloudflare",
-      "google-drive",
-      "reactjs",
-      "vitejs"
-    ],
-    "updatedAt": "2026-06-14T07:55:24Z",
-    "pushedAt": "2026-06-14T04:45:09Z",
-    "latestRelease": {
-      "name": "v0.8.14",
-      "tagName": "v0.8.14",
-      "url": "https://github.com/abilfida/OmniDrive/releases/tag/v0.8.14",
-      "publishedAt": "2026-06-14T04:45:58Z"
-    },
-    "archived": false
-  },
-  {
     "fullName": "anandazp/tempa-ui",
     "name": "tempa-ui",
     "owner": "anandazp",
@@ -981,8 +981,8 @@
       "zero-trust",
       "zod"
     ],
-    "updatedAt": "2026-06-14T08:46:48Z",
-    "pushedAt": "2026-06-14T08:46:44Z",
+    "updatedAt": "2026-06-14T13:17:14Z",
+    "pushedAt": "2026-06-14T13:17:10Z",
     "latestRelease": {
       "name": "v1.8.1 — Security & Compat Patch",
       "tagName": "v1.8.1",
@@ -1013,15 +1013,28 @@
     "name": "si-coder-agent",
     "owner": "rahmanef63",
     "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/71124675?v=4",
-    "description": "Zero-Human full-stack deployment automation skill for AI agents using Dokploy, Convex, and Hostinger.",
+    "description": "Zero-human full-stack deployment skill bundle for AI agents — GitHub + Dokploy + Convex (self-hosted & Cloud) + Vercel + Hostinger DNS, via modular /sc-* slash commands.",
     "url": "https://github.com/rahmanef63/si-coder-agent",
     "homepage": "",
     "language": "JavaScript",
     "stars": 6,
     "forks": 0,
-    "topics": [],
-    "updatedAt": "2026-06-11T17:23:52Z",
-    "pushedAt": "2026-05-28T21:51:44Z",
+    "topics": [
+      "ai-agent",
+      "claude-code",
+      "claude-skills",
+      "convex",
+      "deployment-automation",
+      "devops",
+      "dokploy",
+      "hostinger",
+      "nextjs",
+      "self-hosted",
+      "vercel",
+      "zero-human"
+    ],
+    "updatedAt": "2026-06-14T13:45:16Z",
+    "pushedAt": "2026-06-14T13:45:12Z",
     "latestRelease": null,
     "archived": false
   },
@@ -1054,8 +1067,8 @@
     "stars": 5,
     "forks": 1,
     "topics": [],
-    "updatedAt": "2026-06-14T05:40:50Z",
-    "pushedAt": "2026-06-14T05:40:47Z",
+    "updatedAt": "2026-06-14T12:44:06Z",
+    "pushedAt": "2026-06-14T12:44:02Z",
     "latestRelease": {
       "name": "v1.1.35",
       "tagName": "v1.1.35",
@@ -1157,8 +1170,8 @@
       "disqus-alternative",
       "open-source"
     ],
-    "updatedAt": "2026-06-14T09:56:38Z",
-    "pushedAt": "2026-06-14T09:56:34Z",
+    "updatedAt": "2026-06-14T14:13:40Z",
+    "pushedAt": "2026-06-14T14:13:37Z",
     "latestRelease": null,
     "archived": false
   },
