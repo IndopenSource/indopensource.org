@@ -39,7 +39,7 @@ jobs:
 
       - name: Build site
         env:
-          ASTRO_BASE: /indopensource.org
+          ASTRO_BASE: /
         run: npm run build
 
       - name: Upload artifact
