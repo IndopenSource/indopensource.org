@@ -115,4 +115,4 @@ jobs:
       - name: Deploy synced data to GitHub Pages
         if: ${{ steps.commit.outputs.changed == 'true' && github.ref == 'refs/heads/main' }}
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
