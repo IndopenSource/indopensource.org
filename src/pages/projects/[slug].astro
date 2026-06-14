@@ -117,11 +117,21 @@ const repoName = project.fullName.split('/').at(-1) || project.fullName;
     'select'
   ].join(',');
 
-  function safeUrl(value: string, baseUrl: string) {
+  function repositoryRootUrl(fileUrl: string) {
+    const githubMatch = fileUrl.match(/^(https:\/\/github\.com\/[^/]+\/[^/]+)\/blob\/([^/]+)\//);
+    if (githubMatch) return `${githubMatch[1]}/blob/${githubMatch[2]}/`;
+
+    const rawMatch = fileUrl.match(/^(https:\/\/raw\.githubusercontent\.com\/[^/]+\/[^/]+\/[^/]+)\//);
+    if (rawMatch) return `${rawMatch[1]}/`;
+
+    return fileUrl;
+  }
+
+  function safeUrl(value: string, baseUrl: string, rootBaseUrl: string) {
     if (!value || value.startsWith('#')) return value;
 
     try {
-      const url = new URL(value, baseUrl);
+      const url = new URL(value, value.startsWith('/') ? rootBaseUrl : baseUrl);
       if (!['http:', 'https:', 'mailto:'].includes(url.protocol)) return '';
       return url.toString();
     } catch {
@@ -131,6 +141,8 @@ const repoName = project.fullName.split('/').at(-1) || project.fullName;
 
   function sanitizeReadme(html: string, linkBaseUrl: string, assetBaseUrl: string) {
     const document = new DOMParser().parseFromString(html, 'text/html');
+    const linkRootBaseUrl = repositoryRootUrl(linkBaseUrl);
+    const assetRootBaseUrl = repositoryRootUrl(assetBaseUrl);
     document.querySelectorAll(unsafeSelectors).forEach((element) => element.remove());
 
     document.body.querySelectorAll('*').forEach((element) => {
@@ -143,12 +155,12 @@ const repoName = project.fullName.split('/').at(-1) || project.fullName;
         }
 
         if (name === 'href') {
-          const nextUrl = safeUrl(attribute.value, linkBaseUrl);
+          const nextUrl = safeUrl(attribute.value, linkBaseUrl, linkRootBaseUrl);
           nextUrl ? element.setAttribute(attribute.name, nextUrl) : element.removeAttribute(attribute.name);
         }
 
         if (name === 'src') {
-          const nextUrl = safeUrl(attribute.value, assetBaseUrl);
+          const nextUrl = safeUrl(attribute.value, assetBaseUrl, assetRootBaseUrl);
           nextUrl ? element.setAttribute(attribute.name, nextUrl) : element.removeAttribute(attribute.name);
         }
       });
