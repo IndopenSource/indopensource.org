@@ -55,10 +55,12 @@ const homepageUrl = project.homepage ? normalizeHref(project.homepage) : '';
   data-stars={project.stars}
   data-updated={updatedDate}
   data-release={project.latestRelease?.publishedAt || ''}
-  data-card-link={detailUrl}
-  tabindex="0"
-  role="link"
 >
+  <a
+    class="absolute inset-0 z-0 rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-brand/40"
+    href={detailUrl}
+    aria-label={`Buka detail ${project.fullName}`}
+  ></a>
   <div class="flex items-start gap-3">
     {
       project.ownerAvatarUrl && (
@@ -104,40 +106,3 @@ const homepageUrl = project.homepage ? normalizeHref(project.homepage) : '';
     {homepageUrl && <a class="relative z-20 rounded-full border border-line px-2 py-1 hover:text-brand" href={homepageUrl}>Homepage</a>}
   </div>
 </article>
-
-<script>
-  document.querySelectorAll<HTMLElement>('[data-card-link]').forEach((card) => {
-    card.addEventListener('click', (event) => {
-      if (event.defaultPrevented || event.button !== 0) return;
-      if ((event.target as HTMLElement).closest('a')) return;
-      const detailUrl = card.dataset.cardLink || '';
-      if (!detailUrl) return;
-
-      if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) {
-        window.open(detailUrl, '_blank', 'noopener');
-        return;
-      }
-
-      window.location.assign(detailUrl);
-    });
-
-    card.addEventListener('auxclick', (event) => {
-      if (event.defaultPrevented || event.button !== 1) return;
-      if ((event.target as HTMLElement).closest('a')) return;
-      const detailUrl = card.dataset.cardLink || '';
-      if (!detailUrl) return;
-
-      window.open(detailUrl, '_blank', 'noopener');
-    });
-
-    card.addEventListener('keydown', (event) => {
-      if (event.key !== 'Enter' && event.key !== ' ') return;
-      if ((event.target as HTMLElement).closest('a')) return;
-      event.preventDefault();
-      const detailUrl = card.dataset.cardLink || '';
-      if (!detailUrl) return;
-
-      window.location.assign(detailUrl);
-    });
-  });
-</script>
