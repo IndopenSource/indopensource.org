@@ -1,5 +1,5 @@
 ---
-import { withBase } from '../lib/urls';
+import { normalizeHref } from '../lib/urls';
 
 interface Props {
   href: string;
@@ -7,8 +7,7 @@ interface Props {
 }
 
 const { href, variant = 'primary' } = Astro.props;
-const isExternal = /^https?:\/\//.test(href);
-const targetHref = isExternal ? href : withBase(href);
+const targetHref = normalizeHref(href);
 
 const variants = {
   primary: 'border-brand bg-brand text-white hover:bg-brand-dark',

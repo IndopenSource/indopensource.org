@@ -26,7 +26,7 @@ interface Props {
   compact?: boolean;
 }
 
-import { withBase } from '../lib/urls';
+import { normalizeHref, withBase } from '../lib/urls';
 import { projectSlug } from '../lib/projects';
 
 const { project, compact = false } = Astro.props;
@@ -38,6 +38,7 @@ const updatedLabel = updatedDate
 const visibleTopics = (project.topics || []).slice(0, 4);
 const detailUrl = withBase(`/projects/${projectSlug(project.fullName)}/`);
 const repoName = project.fullName.split('/').at(-1) || project.fullName;
+const homepageUrl = project.homepage ? normalizeHref(project.homepage) : '';
 ---
 
 <article
@@ -98,6 +99,6 @@ const repoName = project.fullName.split('/').at(-1) || project.fullName;
     <span class="rounded-full border border-line px-2 py-1">{project.stars.toLocaleString('id-ID')} stars</span>
     <span class="rounded-full border border-line px-2 py-1">{project.forks.toLocaleString('id-ID')} forks</span>
     {updatedLabel && <span class="rounded-full border border-line px-2 py-1">Update {updatedLabel}</span>}
-    {project.homepage && <a class="relative z-20 rounded-full border border-line px-2 py-1 hover:text-brand" href={project.homepage}>Homepage</a>}
+    {homepageUrl && <a class="relative z-20 rounded-full border border-line px-2 py-1 hover:text-brand" href={homepageUrl}>Homepage</a>}
   </div>
 </article>
