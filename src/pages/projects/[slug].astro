@@ -100,6 +100,62 @@ const repoName = project.fullName.split('/').at(-1) || project.fullName;
 
   const root = document.querySelector('[data-readme-root]');
   const apiUrl = root?.getAttribute('data-readme-api');
+  const unsafeSelectors = [
+    'script',
+    'style',
+    'iframe',
+    'object',
+    'embed',
+    'link',
+    'meta',
+    'svg',
+    'math',
+    'form',
+    'input',
+    'button',
+    'textarea',
+    'select'
+  ].join(',');
+
+  function safeUrl(value: string, baseUrl: string) {
+    if (!value || value.startsWith('#')) return value;
+
+    try {
+      const url = new URL(value, baseUrl);
+      if (!['http:', 'https:', 'mailto:'].includes(url.protocol)) return '';
+      return url.toString();
+    } catch {
+      return '';
+    }
+  }
+
+  function sanitizeReadme(html: string, linkBaseUrl: string, assetBaseUrl: string) {
+    const document = new DOMParser().parseFromString(html, 'text/html');
+    document.querySelectorAll(unsafeSelectors).forEach((element) => element.remove());
+
+    document.body.querySelectorAll('*').forEach((element) => {
+      Array.from(element.attributes).forEach((attribute) => {
+        const name = attribute.name.toLowerCase();
+
+        if (name.startsWith('on') || name === 'style' || name === 'srcdoc') {
+          element.removeAttribute(attribute.name);
+          return;
+        }
+
+        if (name === 'href') {
+          const nextUrl = safeUrl(attribute.value, linkBaseUrl);
+          nextUrl ? element.setAttribute(attribute.name, nextUrl) : element.removeAttribute(attribute.name);
+        }
+
+        if (name === 'src') {
+          const nextUrl = safeUrl(attribute.value, assetBaseUrl);
+          nextUrl ? element.setAttribute(attribute.name, nextUrl) : element.removeAttribute(attribute.name);
+        }
+      });
+    });
+
+    return document.body.innerHTML;
+  }
 
   async function loadReadme() {
     if (!root || !apiUrl) return;
@@ -112,7 +168,8 @@ const repoName = project.fullName.split('/').at(-1) || project.fullName;
       const binary = atob(data.content.replace(/\n/g, ''));
       const bytes = Uint8Array.from(binary, (char) => char.charCodeAt(0));
       const markdown = new TextDecoder().decode(bytes);
-      root.innerHTML = await marked.parse(markdown);
+      const html = await marked.parse(markdown);
+      root.innerHTML = sanitizeReadme(html, data.html_url, data.download_url);
     } catch (error) {
       root.innerHTML = '<p>README belum bisa dimuat otomatis. Buka README langsung dari GitHub.</p>';
     }

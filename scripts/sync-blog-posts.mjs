@@ -67,6 +67,13 @@ function slugFromPath(path) {
   return path.split('/').pop().replace(/\.md$/, '');
 }
 
+function resolveThumbnail(value, articlePath) {
+  if (!value || /^https?:\/\//.test(value) || value.startsWith('/')) return value || '';
+
+  const articleDirectory = articlePath.split('/').slice(0, -1).join('/');
+  return new URL(value, `https://raw.githubusercontent.com/${BLOG_REPO}/main/${articleDirectory}/`).toString();
+}
+
 async function getCommitMeta(path) {
   const commits = await requestJson(`https://api.github.com/repos/${BLOG_REPO}/commits?path=${encodeURIComponent(path)}&per_page=100`);
   const firstCommit = commits.at(-1);
@@ -108,7 +115,7 @@ for (const path of articleFiles) {
     date: data.date || '',
     tags: data.tags || [],
     status: data.status || 'draft',
-    thumbnail: data.thumbnail || data.image || data.cover || '',
+    thumbnail: resolveThumbnail(data.thumbnail || data.image || data.cover || '', path),
     content,
     sourceUrl: file.html_url,
     releasedAt: commitMeta.releasedAt,
