@@ -132,7 +132,7 @@
     "url": "https://github.com/fajarhide/omni",
     "homepage": "https://omni.weekndlabs.com",
     "language": "Rust",
-    "stars": 246,
+    "stars": 248,
     "forks": 25,
     "topics": [
       "ai-agents",
@@ -151,8 +151,8 @@
       "token-reduction",
       "token-savings"
     ],
-    "updatedAt": "2026-06-14T14:25:29Z",
-    "pushedAt": "2026-06-14T14:24:07Z",
+    "updatedAt": "2026-06-14T18:30:00Z",
+    "pushedAt": "2026-06-14T17:05:59Z",
     "latestRelease": {
       "name": "v0.6.0",
       "tagName": "v0.6.0",
@@ -450,8 +450,8 @@
       "vps",
       "web-desktop"
     ],
-    "updatedAt": "2026-06-14T09:34:10Z",
-    "pushedAt": "2026-06-14T09:34:06Z",
+    "updatedAt": "2026-06-14T19:51:16Z",
+    "pushedAt": "2026-06-14T19:51:12Z",
     "latestRelease": null,
     "archived": false
   },
@@ -523,6 +523,23 @@
     "archived": false
   },
   {
+    "fullName": "raymondchins/agentmap",
+    "name": "agentmap",
+    "owner": "raymondchins",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/12913191?v=4",
+    "description": "The repo map your coding agent is forced to use — ~98% fewer tokens (up to 99.9% per task) to understand a TS/JS codebase. PageRank hubs, Aider-style symbol ranking, token-budgeted digest, --any router, wired into the agent loop.",
+    "url": "https://github.com/raymondchins/agentmap",
+    "homepage": "",
+    "language": "JavaScript",
+    "stars": 26,
+    "forks": 7,
+    "topics": [],
+    "updatedAt": "2026-06-14T18:51:33Z",
+    "pushedAt": "2026-06-14T17:25:11Z",
+    "latestRelease": null,
+    "archived": false
+  },
+  {
     "fullName": "firewalker06/tycho",
     "name": "tycho",
     "owner": "firewalker06",
@@ -570,23 +587,6 @@
       "url": "https://github.com/ardli-firman/sha-print/releases/tag/v1.4.7-stable",
       "publishedAt": "2026-06-04T03:25:35Z"
     },
-    "archived": false
-  },
-  {
-    "fullName": "raymondchins/agentmap",
-    "name": "agentmap",
-    "owner": "raymondchins",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/12913191?v=4",
-    "description": "The repo map your coding agent is forced to use — ~98% fewer tokens (up to 99.9% per task) to understand a TS/JS codebase. PageRank hubs, Aider-style symbol ranking, token-budgeted digest, --any router, wired into the agent loop.",
-    "url": "https://github.com/raymondchins/agentmap",
-    "homepage": "",
-    "language": "JavaScript",
-    "stars": 22,
-    "forks": 6,
-    "topics": [],
-    "updatedAt": "2026-06-14T14:16:13Z",
-    "pushedAt": "2026-06-14T10:20:57Z",
-    "latestRelease": null,
     "archived": false
   },
   {
@@ -691,6 +691,33 @@
     "archived": false
   },
   {
+    "fullName": "abilfida/OmniDrive",
+    "name": "OmniDrive",
+    "owner": "abilfida",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/38366329?v=4",
+    "description": "Omnidrive lets you connect multiple Google Drive accounts and manage all your files from a single dashboard. It runs entirely on Cloudflare's edge network — Workers for the API, D1 for the database, and KV for session storage — so there's no traditional server to maintain.",
+    "url": "https://github.com/abilfida/OmniDrive",
+    "homepage": "",
+    "language": "JavaScript",
+    "stars": 13,
+    "forks": 2,
+    "topics": [
+      "cloudflare",
+      "google-drive",
+      "reactjs",
+      "vitejs"
+    ],
+    "updatedAt": "2026-06-14T19:38:44Z",
+    "pushedAt": "2026-06-14T17:12:45Z",
+    "latestRelease": {
+      "name": "v0.8.15",
+      "tagName": "v0.8.15",
+      "url": "https://github.com/abilfida/OmniDrive/releases/tag/v0.8.15",
+      "publishedAt": "2026-06-14T17:13:50Z"
+    },
+    "archived": false
+  },
+  {
     "fullName": "rahmanef63/open-silong",
     "name": "open-silong",
     "owner": "rahmanef63",
@@ -764,29 +791,106 @@
     "archived": false
   },
   {
-    "fullName": "abilfida/OmniDrive",
-    "name": "OmniDrive",
-    "owner": "abilfida",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/38366329?v=4",
-    "description": "Omnidrive lets you connect multiple Google Drive accounts and manage all your files from a single dashboard. It runs entirely on Cloudflare's edge network — Workers for the API, D1 for the database, and KV for session storage — so there's no traditional server to maintain.",
-    "url": "https://github.com/abilfida/OmniDrive",
-    "homepage": "",
-    "language": "JavaScript",
+    "fullName": "wauputr4/bansos",
+    "name": "bansos",
+    "owner": "wauputr4",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/103489788?v=4",
+    "description": "Bansos for jelata developers, check it out bansos.dev",
+    "url": "https://github.com/wauputr4/bansos",
+    "homepage": "https://bansos.dev",
+    "language": "Svelte",
+    "stars": 11,
+    "forks": 2,
+    "topics": [
+      "bansos",
+      "cli",
+      "cloudflare-pages",
+      "developer-resources",
+      "developer-tools",
+      "freebies",
+      "indonesia",
+      "open-source",
+      "static-site",
+      "sveltekit"
+    ],
+    "updatedAt": "2026-06-14T15:35:13Z",
+    "pushedAt": "2026-06-14T15:18:16Z",
+    "latestRelease": {
+      "name": "Bansos v0.0.11",
+      "tagName": "v0.0.11",
+      "url": "https://github.com/wauputr4/bansos/releases/tag/v0.0.11",
+      "publishedAt": "2026-06-13T14:38:59Z"
+    },
+    "archived": false
+  },
+  {
+    "fullName": "codecoradev/cora-cli",
+    "name": "cora-cli",
+    "owner": "codecoradev",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/289767358?v=4",
+    "description": "CLI-first AI code review — BYOK, diff/scan/branch, pre-commit hooks. 100% open source (MIT).",
+    "url": "https://github.com/codecoradev/cora-cli",
+    "homepage": "https://codecora.dev",
+    "language": "Rust",
     "stars": 10,
     "forks": 2,
     "topics": [
-      "cloudflare",
-      "google-drive",
-      "reactjs",
-      "vitejs"
+      "ai",
+      "byok",
+      "cli",
+      "code-analysis",
+      "code-quality",
+      "code-review",
+      "developer-tools",
+      "github-actions",
+      "llm",
+      "pre-commit",
+      "rust",
+      "sarif"
     ],
-    "updatedAt": "2026-06-14T13:03:10Z",
-    "pushedAt": "2026-06-14T04:45:09Z",
+    "updatedAt": "2026-06-14T15:18:50Z",
+    "pushedAt": "2026-06-14T15:18:45Z",
     "latestRelease": {
-      "name": "v0.8.14",
-      "tagName": "v0.8.14",
-      "url": "https://github.com/abilfida/OmniDrive/releases/tag/v0.8.14",
-      "publishedAt": "2026-06-14T04:45:58Z"
+      "name": "Release v0.6.0",
+      "tagName": "v0.6.0",
+      "url": "https://github.com/codecoradev/cora-cli/releases/tag/v0.6.0",
+      "publishedAt": "2026-06-14T13:17:45Z"
+    },
+    "archived": false
+  },
+  {
+    "fullName": "codecoradev/uteke",
+    "name": "uteke",
+    "owner": "codecoradev",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/289767358?v=4",
+    "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
+    "url": "https://github.com/codecoradev/uteke",
+    "homepage": "https://codecora.dev",
+    "language": "Rust",
+    "stars": 10,
+    "forks": 1,
+    "topics": [
+      "ai",
+      "cli",
+      "cli-tool",
+      "embeddings",
+      "hnsw",
+      "local-first",
+      "memory",
+      "onnx",
+      "onnxruntime",
+      "rust",
+      "semantic-search",
+      "sqlite",
+      "vector-database"
+    ],
+    "updatedAt": "2026-06-14T15:18:56Z",
+    "pushedAt": "2026-06-14T15:20:47Z",
+    "latestRelease": {
+      "name": "Release v0.2.0",
+      "tagName": "v0.2.0",
+      "url": "https://github.com/codecoradev/uteke/releases/tag/v0.2.0",
+      "publishedAt": "2026-06-14T14:09:47Z"
     },
     "archived": false
   },
@@ -821,39 +925,6 @@
       "tagName": "v0.2.3",
       "url": "https://github.com/rizukirr/muslimtify/releases/tag/v0.2.3",
       "publishedAt": "2026-05-26T02:38:49Z"
-    },
-    "archived": false
-  },
-  {
-    "fullName": "wauputr4/bansos",
-    "name": "bansos",
-    "owner": "wauputr4",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/103489788?v=4",
-    "description": "Bansos for jelata developers, check it out bansos.dev",
-    "url": "https://github.com/wauputr4/bansos",
-    "homepage": "https://bansos.dev",
-    "language": "Svelte",
-    "stars": 10,
-    "forks": 2,
-    "topics": [
-      "bansos",
-      "cli",
-      "cloudflare-pages",
-      "developer-resources",
-      "developer-tools",
-      "freebies",
-      "indonesia",
-      "open-source",
-      "static-site",
-      "sveltekit"
-    ],
-    "updatedAt": "2026-06-14T12:58:53Z",
-    "pushedAt": "2026-06-14T12:58:50Z",
-    "latestRelease": {
-      "name": "Bansos v0.0.11",
-      "tagName": "v0.0.11",
-      "url": "https://github.com/wauputr4/bansos/releases/tag/v0.0.11",
-      "publishedAt": "2026-06-13T14:38:59Z"
     },
     "archived": false
   },
@@ -957,6 +1028,36 @@
     "archived": false
   },
   {
+    "fullName": "rahmanef63/si-coder-agent",
+    "name": "si-coder-agent",
+    "owner": "rahmanef63",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/71124675?v=4",
+    "description": "Zero-human full-stack deployment skill bundle for AI agents — GitHub + Dokploy + Convex (self-hosted & Cloud) + Vercel + Hostinger DNS, via modular /sc-* slash commands.",
+    "url": "https://github.com/rahmanef63/si-coder-agent",
+    "homepage": "",
+    "language": "JavaScript",
+    "stars": 7,
+    "forks": 0,
+    "topics": [
+      "ai-agent",
+      "claude-code",
+      "claude-skills",
+      "convex",
+      "deployment-automation",
+      "devops",
+      "dokploy",
+      "hostinger",
+      "nextjs",
+      "self-hosted",
+      "vercel",
+      "zero-human"
+    ],
+    "updatedAt": "2026-06-14T19:54:24Z",
+    "pushedAt": "2026-06-14T19:54:20Z",
+    "latestRelease": null,
+    "archived": false
+  },
+  {
     "fullName": "achmdfzn/hippocrates",
     "name": "hippocrates",
     "owner": "achmdfzn",
@@ -1009,36 +1110,6 @@
     "archived": false
   },
   {
-    "fullName": "rahmanef63/si-coder-agent",
-    "name": "si-coder-agent",
-    "owner": "rahmanef63",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/71124675?v=4",
-    "description": "Zero-human full-stack deployment skill bundle for AI agents — GitHub + Dokploy + Convex (self-hosted & Cloud) + Vercel + Hostinger DNS, via modular /sc-* slash commands.",
-    "url": "https://github.com/rahmanef63/si-coder-agent",
-    "homepage": "",
-    "language": "JavaScript",
-    "stars": 6,
-    "forks": 0,
-    "topics": [
-      "ai-agent",
-      "claude-code",
-      "claude-skills",
-      "convex",
-      "deployment-automation",
-      "devops",
-      "dokploy",
-      "hostinger",
-      "nextjs",
-      "self-hosted",
-      "vercel",
-      "zero-human"
-    ],
-    "updatedAt": "2026-06-14T13:45:16Z",
-    "pushedAt": "2026-06-14T13:45:12Z",
-    "latestRelease": null,
-    "archived": false
-  },
-  {
     "fullName": "RamaAditya49/ai-agentic",
     "name": "ai-agentic",
     "owner": "RamaAditya49",
@@ -1067,8 +1138,8 @@
     "stars": 5,
     "forks": 1,
     "topics": [],
-    "updatedAt": "2026-06-14T12:44:06Z",
-    "pushedAt": "2026-06-14T12:44:02Z",
+    "updatedAt": "2026-06-14T16:04:50Z",
+    "pushedAt": "2026-06-14T16:04:46Z",
     "latestRelease": {
       "name": "v1.1.35",
       "tagName": "v1.1.35",
@@ -1101,7 +1172,7 @@
       "sveltekit"
     ],
     "updatedAt": "2026-06-13T21:37:11Z",
-    "pushedAt": "2026-06-13T11:36:57Z",
+    "pushedAt": "2026-06-14T15:31:38Z",
     "latestRelease": {
       "name": "skill-bansos v0.1.1",
       "tagName": "v0.1.1",
@@ -1187,8 +1258,8 @@
     "stars": 2,
     "forks": 0,
     "topics": [],
-    "updatedAt": "2026-06-14T08:42:57Z",
-    "pushedAt": "2026-06-14T08:20:27Z",
+    "updatedAt": "2026-06-14T17:38:26Z",
+    "pushedAt": "2026-06-14T17:38:22Z",
     "latestRelease": null,
     "archived": false
   },
@@ -1245,6 +1316,45 @@
     "updatedAt": "2026-06-13T07:08:57Z",
     "pushedAt": "2026-06-10T01:56:59Z",
     "latestRelease": null,
+    "archived": false
+  },
+  {
+    "fullName": "codecoradev/trapfall",
+    "name": "trapfall",
+    "owner": "codecoradev",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/289767358?v=4",
+    "description": "TrapFall — Lightweight self-hosted error capture engine. Sentry-compatible, Rust + SvelteKit 5.",
+    "url": "https://github.com/codecoradev/trapfall",
+    "homepage": "https://codecora.dev",
+    "language": "Rust",
+    "stars": 1,
+    "forks": 0,
+    "topics": [
+      "axum",
+      "blake3",
+      "dashboard",
+      "docker",
+      "error-capture",
+      "error-tracking",
+      "monitoring",
+      "rust",
+      "self-hosted",
+      "sentry",
+      "sentry-compatible",
+      "sqlite",
+      "svelte",
+      "sveltekit",
+      "tailwindcss",
+      "websockets"
+    ],
+    "updatedAt": "2026-06-14T15:15:20Z",
+    "pushedAt": "2026-06-14T15:28:45Z",
+    "latestRelease": {
+      "name": "Release v0.0.4",
+      "tagName": "v0.0.4",
+      "url": "https://github.com/codecoradev/trapfall/releases/tag/v0.0.4",
+      "publishedAt": "2026-06-12T09:24:01Z"
+    },
     "archived": false
   },
   {
