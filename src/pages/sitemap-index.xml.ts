@@ -1,4 +1,6 @@
 import blogPosts from '../data/blog-posts.json';
+import projects from '../data/projects.json';
+import { projectSlug } from '../lib/projects';
 
 const pages = [
   '/',
@@ -10,12 +12,13 @@ const pages = [
 ];
 
 const blogPages = blogPosts.map((post) => `/blog/${post.slug}/`);
+const projectPages = projects.map((project) => `/projects/${projectSlug(project.fullName)}/`);
 
 export function GET() {
   const body = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${pages
-  .concat(blogPages)
+  .concat(blogPages, projectPages)
   .map((page) => `  <url>
     <loc>${new URL(page, 'https://indopensource.org').toString()}</loc>
   </url>`)

@@ -67,6 +67,76 @@
     @apply font-bold text-brand hover:text-brand-dark;
   }
 
+  .prose-readme {
+    @apply max-w-full overflow-hidden leading-7;
+  }
+
+  .prose-readme h1,
+  .prose-readme h2,
+  .prose-readme h3 {
+    @apply mt-8 mb-3 leading-tight text-ink;
+  }
+
+  .prose-readme h1 {
+    @apply text-3xl font-extrabold;
+  }
+
+  .prose-readme h2 {
+    @apply border-b border-line pb-2 text-2xl font-extrabold;
+  }
+
+  .prose-readme h3 {
+    @apply text-xl font-bold;
+  }
+
+  .prose-readme p {
+    @apply my-4;
+  }
+
+  .prose-readme img,
+  .prose-readme svg,
+  .prose-readme video {
+    @apply max-w-full;
+  }
+
+  .prose-readme ul,
+  .prose-readme ol {
+    @apply my-4 space-y-2 pl-6;
+  }
+
+  .prose-readme ul {
+    @apply list-disc;
+  }
+
+  .prose-readme ol {
+    @apply list-decimal;
+  }
+
+  .prose-readme a {
+    @apply font-bold text-brand hover:text-brand-dark;
+  }
+
+  .prose-readme code {
+    @apply rounded bg-canvas px-1.5 py-0.5 text-sm text-ink;
+  }
+
+  .prose-readme pre {
+    @apply my-5 max-w-full overflow-x-auto rounded-lg bg-ink p-4 text-sm leading-6 text-paper;
+  }
+
+  .prose-readme pre code {
+    @apply bg-transparent p-0 text-paper;
+  }
+
+  .prose-readme table {
+    @apply my-5 block max-w-full overflow-x-auto text-sm;
+  }
+
+  .prose-readme th,
+  .prose-readme td {
+    @apply border border-line px-3 py-2;
+  }
+
   .motion-line {
     fill: none;
     stroke: currentColor;

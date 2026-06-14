@@ -23,19 +23,28 @@ interface Project {
 
 interface Props {
   project: Project;
+  compact?: boolean;
 }
 
-const { project } = Astro.props;
+import { withBase } from '../lib/urls';
+import { projectSlug } from '../lib/projects';
+
+const { project, compact = false } = Astro.props;
 const status = project.archived ? 'Archived' : project.language || 'Project';
 const updatedDate = project.pushedAt || project.updatedAt;
 const updatedLabel = updatedDate
   ? new Intl.DateTimeFormat('id-ID', { dateStyle: 'medium' }).format(new Date(updatedDate))
   : '';
 const visibleTopics = (project.topics || []).slice(0, 4);
+const detailUrl = withBase(`/projects/${projectSlug(project.fullName)}/`);
+const repoName = project.fullName.split('/').at(-1) || project.fullName;
 ---
 
 <article
-  class="project-card rounded-lg border border-line bg-paper p-5"
+  class:list={[
+    'project-card group relative rounded-lg border border-line bg-paper p-5 transition hover:-translate-y-0.5 hover:border-brand/40 hover:shadow-lg hover:shadow-ink/5',
+    compact && 'h-full'
+  ]}
   data-project-card
   data-name={project.fullName.toLowerCase()}
   data-description={project.description.toLowerCase()}
@@ -46,6 +55,7 @@ const visibleTopics = (project.topics || []).slice(0, 4);
   data-updated={updatedDate}
   data-release={project.latestRelease?.publishedAt || ''}
 >
+  <a class="absolute inset-0 z-0 rounded-lg" href={detailUrl} aria-label={`Buka detail ${project.fullName}`}></a>
   <div class="flex items-start gap-3">
     {
       project.ownerAvatarUrl && (
@@ -57,12 +67,12 @@ const visibleTopics = (project.topics || []).slice(0, 4);
         />
       )
     }
-    <div class="min-w-0">
+    <div class="relative z-10 min-w-0">
       <div class="flex flex-wrap gap-2">
         <span class="inline-flex rounded-full bg-brand/10 px-2.5 py-1 text-xs font-extrabold text-brand-dark">{status}</span>
         {
           project.latestRelease ? (
-            <a class="inline-flex rounded-full bg-sun/25 px-2.5 py-1 text-xs font-extrabold text-ink hover:text-brand" href={project.latestRelease.url}>
+            <a class="relative z-20 inline-flex rounded-full bg-sun/25 px-2.5 py-1 text-xs font-extrabold text-ink hover:text-brand" href={project.latestRelease.url}>
               Latest {project.latestRelease.tagName}
             </a>
           ) : updatedLabel ? (
@@ -70,23 +80,24 @@ const visibleTopics = (project.topics || []).slice(0, 4);
           ) : null
         }
       </div>
-      <h3 class="mt-3 text-lg font-bold">
-        <a class="hover:text-brand" href={project.url}>{project.fullName}</a>
+      {project.owner && <p class="mt-3 text-sm font-extrabold text-brand-dark">{project.owner}</p>}
+      <h3 class="mt-1 text-lg font-bold">
+        <a class="relative z-20 hover:text-brand" href={detailUrl}>{repoName}</a>
       </h3>
       <p class="mt-3 leading-7 text-muted">{project.description}</p>
     </div>
   </div>
   {
     visibleTopics.length > 0 && (
-      <div class="mt-4 flex flex-wrap gap-2 text-xs font-bold text-brand-dark">
+      <div class="relative z-10 mt-4 flex flex-wrap gap-2 text-xs font-bold text-brand-dark">
         {visibleTopics.map((topic) => <span class="rounded-full bg-brand/10 px-2.5 py-1">#{topic}</span>)}
       </div>
     )
   }
-  <div class="mt-4 flex flex-wrap gap-2 text-sm text-muted">
+  <div class="relative z-10 mt-4 flex flex-wrap gap-2 text-sm text-muted">
     <span class="rounded-full border border-line px-2 py-1">{project.stars.toLocaleString('id-ID')} stars</span>
     <span class="rounded-full border border-line px-2 py-1">{project.forks.toLocaleString('id-ID')} forks</span>
     {updatedLabel && <span class="rounded-full border border-line px-2 py-1">Update {updatedLabel}</span>}
-    {project.homepage && <a class="rounded-full border border-line px-2 py-1 hover:text-brand" href={project.homepage}>Homepage</a>}
+    {project.homepage && <a class="relative z-20 rounded-full border border-line px-2 py-1 hover:text-brand" href={project.homepage}>Homepage</a>}
   </div>
 </article>

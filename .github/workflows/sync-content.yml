@@ -85,7 +85,7 @@ jobs:
 
       - name: Validate build
         env:
-          ASTRO_BASE: /indopensource.org
+          ASTRO_BASE: /
         run: npm run build
 
       - name: Commit synced data
