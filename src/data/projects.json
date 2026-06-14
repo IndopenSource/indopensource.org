@@ -401,7 +401,7 @@
     "homepage": "https://tediapp.dev",
     "language": "TypeScript",
     "stars": 37,
-    "forks": 2,
+    "forks": 3,
     "topics": [
       "ai",
       "ai-agent",
@@ -450,8 +450,8 @@
       "vps",
       "web-desktop"
     ],
-    "updatedAt": "2026-06-13T21:41:53Z",
-    "pushedAt": "2026-06-13T21:41:50Z",
+    "updatedAt": "2026-06-14T09:34:10Z",
+    "pushedAt": "2026-06-14T09:34:06Z",
     "latestRelease": null,
     "archived": false
   },
@@ -641,6 +641,23 @@
     "archived": false
   },
   {
+    "fullName": "raymondchins/agentmap",
+    "name": "agentmap",
+    "owner": "raymondchins",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/12913191?v=4",
+    "description": "The repo map your coding agent is forced to use — ~98% fewer tokens (up to 99.9% per task) to understand a TS/JS codebase. PageRank hubs, Aider-style symbol ranking, token-budgeted digest, --any router, wired into the agent loop.",
+    "url": "https://github.com/raymondchins/agentmap",
+    "homepage": "",
+    "language": "JavaScript",
+    "stars": 14,
+    "forks": 5,
+    "topics": [],
+    "updatedAt": "2026-06-14T09:53:17Z",
+    "pushedAt": "2026-06-14T09:53:36Z",
+    "latestRelease": null,
+    "archived": false
+  },
+  {
     "fullName": "rizukirr/vibekit",
     "name": "vibekit",
     "owner": "rizukirr",
@@ -747,23 +764,6 @@
     "archived": false
   },
   {
-    "fullName": "raymondchins/agentmap",
-    "name": "agentmap",
-    "owner": "raymondchins",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/12913191?v=4",
-    "description": "The repo map your coding agent is forced to use — ~98% fewer tokens (up to 99.9% per task) to understand a TS/JS codebase. PageRank hubs, Aider-style symbol ranking, token-budgeted digest, --any router, wired into the agent loop.",
-    "url": "https://github.com/raymondchins/agentmap",
-    "homepage": "",
-    "language": "JavaScript",
-    "stars": 11,
-    "forks": 4,
-    "topics": [],
-    "updatedAt": "2026-06-14T08:17:42Z",
-    "pushedAt": "2026-06-14T05:40:54Z",
-    "latestRelease": null,
-    "archived": false
-  },
-  {
     "fullName": "rizukirr/muslimtify",
     "name": "muslimtify",
     "owner": "rizukirr",
@@ -820,8 +820,8 @@
       "static-site",
       "sveltekit"
     ],
-    "updatedAt": "2026-06-14T04:22:04Z",
-    "pushedAt": "2026-06-14T08:04:17Z",
+    "updatedAt": "2026-06-14T08:58:17Z",
+    "pushedAt": "2026-06-14T09:45:18Z",
     "latestRelease": {
       "name": "Bansos v0.0.11",
       "tagName": "v0.0.11",
@@ -957,6 +957,41 @@
     "archived": false
   },
   {
+    "fullName": "achmdfzn/hippocrates",
+    "name": "hippocrates",
+    "owner": "achmdfzn",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/288616154?v=4",
+    "description": "Next.js security middleware with Redis-backed threat scoring, honeypot decoy routing, and Python ML engine for advanced detection.",
+    "url": "https://github.com/achmdfzn/hippocrates",
+    "homepage": "https://www.npmjs.com/package/hippocrates-middleware",
+    "language": "TypeScript",
+    "stars": 6,
+    "forks": 0,
+    "topics": [
+      "ai-security",
+      "api-security",
+      "bot-detection",
+      "edge-computing",
+      "honeypot",
+      "middleware",
+      "nextjs",
+      "rate-limiting",
+      "redis",
+      "security",
+      "zero-trust",
+      "zod"
+    ],
+    "updatedAt": "2026-06-14T08:46:48Z",
+    "pushedAt": "2026-06-14T08:46:44Z",
+    "latestRelease": {
+      "name": "v1.8.1 — Security & Compat Patch",
+      "tagName": "v1.8.1",
+      "url": "https://github.com/achmdfzn/hippocrates/releases/tag/v1.8.1",
+      "publishedAt": "2026-06-14T08:37:41Z"
+    },
+    "archived": false
+  },
+  {
     "fullName": "muhfauziazhar/nusakit-api",
     "name": "nusakit-api",
     "owner": "muhfauziazhar",
@@ -1005,41 +1040,6 @@
     "updatedAt": "2026-06-13T07:21:54Z",
     "pushedAt": "2026-06-09T15:51:19Z",
     "latestRelease": null,
-    "archived": false
-  },
-  {
-    "fullName": "achmdfzn/hippocrates",
-    "name": "hippocrates",
-    "owner": "achmdfzn",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/288616154?v=4",
-    "description": "Next.js security middleware with Redis-backed threat scoring, honeypot decoy routing, and Python ML engine for advanced detection.",
-    "url": "https://github.com/achmdfzn/hippocrates",
-    "homepage": "https://www.npmjs.com/package/hippocrates-middleware",
-    "language": "TypeScript",
-    "stars": 5,
-    "forks": 0,
-    "topics": [
-      "ai-security",
-      "api-security",
-      "bot-detection",
-      "edge-computing",
-      "honeypot",
-      "middleware",
-      "nextjs",
-      "rate-limiting",
-      "redis",
-      "security",
-      "zero-trust",
-      "zod"
-    ],
-    "updatedAt": "2026-06-14T08:20:22Z",
-    "pushedAt": "2026-06-14T08:20:19Z",
-    "latestRelease": {
-      "name": "v1.8.0",
-      "tagName": "v1.8.0",
-      "url": "https://github.com/achmdfzn/hippocrates/releases/tag/v1.8.0",
-      "publishedAt": "2026-06-13T18:44:22Z"
-    },
     "archived": false
   },
   {
@@ -1157,8 +1157,25 @@
       "disqus-alternative",
       "open-source"
     ],
-    "updatedAt": "2026-06-14T05:50:10Z",
-    "pushedAt": "2026-06-14T05:50:06Z",
+    "updatedAt": "2026-06-14T09:56:38Z",
+    "pushedAt": "2026-06-14T09:56:34Z",
+    "latestRelease": null,
+    "archived": false
+  },
+  {
+    "fullName": "raymondchins/tokengratis-id",
+    "name": "tokengratis-id",
+    "owner": "raymondchins",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/12913191?v=4",
+    "description": "Directory free AI credits & free tier, Indonesia-first, auto-aggregated dari sumber komunitas. Aggregator transparan (bukan verifier), anti-halusinasi, maintenance nyaris nol.",
+    "url": "https://github.com/raymondchins/tokengratis-id",
+    "homepage": "https://tokengratis.id",
+    "language": "JavaScript",
+    "stars": 2,
+    "forks": 0,
+    "topics": [],
+    "updatedAt": "2026-06-14T08:42:57Z",
+    "pushedAt": "2026-06-14T08:20:27Z",
     "latestRelease": null,
     "archived": false
   },
@@ -1237,23 +1254,6 @@
       "url": "https://github.com/dayartcrew-web/masday-workflow-rust/releases/tag/v0.3.69",
       "publishedAt": "2026-06-12T12:15:32Z"
     },
-    "archived": false
-  },
-  {
-    "fullName": "raymondchins/tokengratis-id",
-    "name": "tokengratis-id",
-    "owner": "raymondchins",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/12913191?v=4",
-    "description": "Directory free AI credits & free tier, Indonesia-first, auto-aggregated dari sumber komunitas. Aggregator transparan (bukan verifier), anti-halusinasi, maintenance nyaris nol.",
-    "url": "https://github.com/raymondchins/tokengratis-id",
-    "homepage": "https://tokengratis.id",
-    "language": "JavaScript",
-    "stars": 1,
-    "forks": 0,
-    "topics": [],
-    "updatedAt": "2026-06-14T08:20:31Z",
-    "pushedAt": "2026-06-14T08:20:27Z",
-    "latestRelease": null,
     "archived": false
   },
   {
