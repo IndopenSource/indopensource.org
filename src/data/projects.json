@@ -33,10 +33,10 @@
     "url": "https://github.com/jipraks/yt-short-clipper",
     "homepage": "",
     "language": "Python",
-    "stars": 816,
+    "stars": 817,
     "forks": 253,
     "topics": [],
-    "updatedAt": "2026-06-15T12:36:34Z",
+    "updatedAt": "2026-06-15T18:26:44Z",
     "pushedAt": "2026-05-29T12:39:38Z",
     "latestRelease": {
       "name": "YT Short Clipper v0.1.2",
@@ -132,7 +132,7 @@
     "url": "https://github.com/fajarhide/omni",
     "homepage": "https://omni.weekndlabs.com",
     "language": "Rust",
-    "stars": 249,
+    "stars": 250,
     "forks": 25,
     "topics": [
       "ai-agents",
@@ -151,8 +151,8 @@
       "token-reduction",
       "token-savings"
     ],
-    "updatedAt": "2026-06-15T02:39:11Z",
-    "pushedAt": "2026-06-15T04:38:44Z",
+    "updatedAt": "2026-06-15T21:04:07Z",
+    "pushedAt": "2026-06-15T14:06:43Z",
     "latestRelease": {
       "name": "v0.6.0",
       "tagName": "v0.6.0",
@@ -488,6 +488,23 @@
     "archived": false
   },
   {
+    "fullName": "raymondchins/agentmap",
+    "name": "agentmap",
+    "owner": "raymondchins",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/12913191?v=4",
+    "description": "The repo map your coding agent is forced to use — ~98% fewer tokens (up to 99.9% per task) to understand a TS/JS codebase. PageRank hubs, Aider-style symbol ranking, token-budgeted digest, --any router, wired into the agent loop.",
+    "url": "https://github.com/raymondchins/agentmap",
+    "homepage": "",
+    "language": "JavaScript",
+    "stars": 31,
+    "forks": 9,
+    "topics": [],
+    "updatedAt": "2026-06-15T14:44:42Z",
+    "pushedAt": "2026-06-15T02:23:32Z",
+    "latestRelease": null,
+    "archived": false
+  },
+  {
     "fullName": "rizukirr/no-vibe",
     "name": "no-vibe",
     "owner": "rizukirr",
@@ -520,23 +537,6 @@
       "url": "https://github.com/rizukirr/no-vibe/releases/tag/v2.0.3",
       "publishedAt": "2026-05-23T02:59:01Z"
     },
-    "archived": false
-  },
-  {
-    "fullName": "raymondchins/agentmap",
-    "name": "agentmap",
-    "owner": "raymondchins",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/12913191?v=4",
-    "description": "The repo map your coding agent is forced to use — ~98% fewer tokens (up to 99.9% per task) to understand a TS/JS codebase. PageRank hubs, Aider-style symbol ranking, token-budgeted digest, --any router, wired into the agent loop.",
-    "url": "https://github.com/raymondchins/agentmap",
-    "homepage": "",
-    "language": "JavaScript",
-    "stars": 30,
-    "forks": 9,
-    "topics": [],
-    "updatedAt": "2026-06-15T12:09:06Z",
-    "pushedAt": "2026-06-15T02:23:32Z",
-    "latestRelease": null,
     "archived": false
   },
   {
@@ -652,8 +652,8 @@
     "stars": 15,
     "forks": 1,
     "topics": [],
-    "updatedAt": "2026-06-15T11:32:10Z",
-    "pushedAt": "2026-06-15T11:32:04Z",
+    "updatedAt": "2026-06-15T14:40:26Z",
+    "pushedAt": "2026-06-15T14:39:49Z",
     "latestRelease": null,
     "archived": false
   },
@@ -699,7 +699,7 @@
     "url": "https://github.com/abilfida/OmniDrive",
     "homepage": "",
     "language": "JavaScript",
-    "stars": 13,
+    "stars": 14,
     "forks": 2,
     "topics": [
       "cloudflare",
@@ -707,13 +707,46 @@
       "reactjs",
       "vitejs"
     ],
-    "updatedAt": "2026-06-14T19:38:44Z",
+    "updatedAt": "2026-06-15T14:23:38Z",
     "pushedAt": "2026-06-14T17:12:45Z",
     "latestRelease": {
       "name": "v0.8.15",
       "tagName": "v0.8.15",
       "url": "https://github.com/abilfida/OmniDrive/releases/tag/v0.8.15",
       "publishedAt": "2026-06-14T17:13:50Z"
+    },
+    "archived": false
+  },
+  {
+    "fullName": "wauputr4/bansos",
+    "name": "bansos",
+    "owner": "wauputr4",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/103489788?v=4",
+    "description": "Bansos for jelata developers, check it out bansos.dev",
+    "url": "https://github.com/wauputr4/bansos",
+    "homepage": "https://bansos.dev",
+    "language": "Svelte",
+    "stars": 14,
+    "forks": 3,
+    "topics": [
+      "bansos",
+      "cli",
+      "cloudflare-pages",
+      "developer-resources",
+      "developer-tools",
+      "freebies",
+      "indonesia",
+      "open-source",
+      "static-site",
+      "sveltekit"
+    ],
+    "updatedAt": "2026-06-15T18:19:44Z",
+    "pushedAt": "2026-06-15T15:08:15Z",
+    "latestRelease": {
+      "name": "Bansos v0.0.11",
+      "tagName": "v0.0.11",
+      "url": "https://github.com/wauputr4/bansos/releases/tag/v0.0.11",
+      "publishedAt": "2026-06-13T14:38:59Z"
     },
     "archived": false
   },
@@ -771,39 +804,6 @@
     "updatedAt": "2026-06-12T08:39:52Z",
     "pushedAt": "2026-06-12T08:39:48Z",
     "latestRelease": null,
-    "archived": false
-  },
-  {
-    "fullName": "wauputr4/bansos",
-    "name": "bansos",
-    "owner": "wauputr4",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/103489788?v=4",
-    "description": "Bansos for jelata developers, check it out bansos.dev",
-    "url": "https://github.com/wauputr4/bansos",
-    "homepage": "https://bansos.dev",
-    "language": "Svelte",
-    "stars": 12,
-    "forks": 2,
-    "topics": [
-      "bansos",
-      "cli",
-      "cloudflare-pages",
-      "developer-resources",
-      "developer-tools",
-      "freebies",
-      "indonesia",
-      "open-source",
-      "static-site",
-      "sveltekit"
-    ],
-    "updatedAt": "2026-06-15T12:32:24Z",
-    "pushedAt": "2026-06-15T12:32:19Z",
-    "latestRelease": {
-      "name": "Bansos v0.0.11",
-      "tagName": "v0.0.11",
-      "url": "https://github.com/wauputr4/bansos/releases/tag/v0.0.11",
-      "publishedAt": "2026-06-13T14:38:59Z"
-    },
     "archived": false
   },
   {
@@ -895,6 +895,36 @@
     "archived": false
   },
   {
+    "fullName": "rahmanef63/si-coder-agent",
+    "name": "si-coder-agent",
+    "owner": "rahmanef63",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/71124675?v=4",
+    "description": "Zero-human full-stack deployment skill bundle for AI agents — GitHub + Dokploy + Convex (self-hosted & Cloud) + Vercel + Hostinger DNS, via modular /sc-* slash commands.",
+    "url": "https://github.com/rahmanef63/si-coder-agent",
+    "homepage": "",
+    "language": "JavaScript",
+    "stars": 10,
+    "forks": 1,
+    "topics": [
+      "ai-agent",
+      "claude-code",
+      "claude-skills",
+      "convex",
+      "deployment-automation",
+      "devops",
+      "dokploy",
+      "hostinger",
+      "nextjs",
+      "self-hosted",
+      "vercel",
+      "zero-human"
+    ],
+    "updatedAt": "2026-06-15T15:40:50Z",
+    "pushedAt": "2026-06-15T04:20:37Z",
+    "latestRelease": null,
+    "archived": false
+  },
+  {
     "fullName": "rizukirr/muslimtify",
     "name": "muslimtify",
     "owner": "rizukirr",
@@ -981,36 +1011,6 @@
       "url": "https://github.com/fajarhide/heimsense/releases/tag/v0.1.3",
       "publishedAt": "2026-04-01T03:08:28Z"
     },
-    "archived": false
-  },
-  {
-    "fullName": "rahmanef63/si-coder-agent",
-    "name": "si-coder-agent",
-    "owner": "rahmanef63",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/71124675?v=4",
-    "description": "Zero-human full-stack deployment skill bundle for AI agents — GitHub + Dokploy + Convex (self-hosted & Cloud) + Vercel + Hostinger DNS, via modular /sc-* slash commands.",
-    "url": "https://github.com/rahmanef63/si-coder-agent",
-    "homepage": "",
-    "language": "JavaScript",
-    "stars": 9,
-    "forks": 0,
-    "topics": [
-      "ai-agent",
-      "claude-code",
-      "claude-skills",
-      "convex",
-      "deployment-automation",
-      "devops",
-      "dokploy",
-      "hostinger",
-      "nextjs",
-      "self-hosted",
-      "vercel",
-      "zero-human"
-    ],
-    "updatedAt": "2026-06-15T04:20:41Z",
-    "pushedAt": "2026-06-15T04:20:37Z",
-    "latestRelease": null,
     "archived": false
   },
   {
@@ -1138,8 +1138,8 @@
     "stars": 6,
     "forks": 1,
     "topics": [],
-    "updatedAt": "2026-06-15T11:13:04Z",
-    "pushedAt": "2026-06-15T11:13:00Z",
+    "updatedAt": "2026-06-15T15:19:45Z",
+    "pushedAt": "2026-06-15T15:16:18Z",
     "latestRelease": {
       "name": "v1.1.35",
       "tagName": "v1.1.35",
@@ -1238,6 +1238,28 @@
     "archived": false
   },
   {
+    "fullName": "dayartcrew-web/masday-workflow-rust",
+    "name": "masday-workflow-rust",
+    "owner": "dayartcrew-web",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/245359298?v=4",
+    "description": "Rust MVC MCP Server — Unified AI coding agent platform built with Axum, SQLx, and tokio. 90 MCP tools, 4-layer memory, PostgreSQL.",
+    "url": "https://github.com/dayartcrew-web/masday-workflow-rust",
+    "homepage": "",
+    "language": "Rust",
+    "stars": 2,
+    "forks": 0,
+    "topics": [],
+    "updatedAt": "2026-06-15T19:26:48Z",
+    "pushedAt": "2026-06-15T19:26:42Z",
+    "latestRelease": {
+      "name": "Masday CLI v0.3.71",
+      "tagName": "v0.3.71",
+      "url": "https://github.com/dayartcrew-web/masday-workflow-rust/releases/tag/v0.3.71",
+      "publishedAt": "2026-06-15T16:14:06Z"
+    },
+    "archived": false
+  },
+  {
     "fullName": "fadhilbarkah/diskus",
     "name": "diskus",
     "owner": "fadhilbarkah",
@@ -1258,8 +1280,8 @@
       "disqus-alternative",
       "open-source"
     ],
-    "updatedAt": "2026-06-14T14:13:40Z",
-    "pushedAt": "2026-06-14T14:13:37Z",
+    "updatedAt": "2026-06-15T14:44:02Z",
+    "pushedAt": "2026-06-15T14:42:44Z",
     "latestRelease": null,
     "archived": false
   },
@@ -1369,35 +1391,13 @@
       "tailwindcss",
       "websockets"
     ],
-    "updatedAt": "2026-06-15T09:31:31Z",
-    "pushedAt": "2026-06-15T09:31:27Z",
+    "updatedAt": "2026-06-15T19:27:02Z",
+    "pushedAt": "2026-06-15T19:26:23Z",
     "latestRelease": {
-      "name": "Release v0.0.4",
-      "tagName": "v0.0.4",
-      "url": "https://github.com/codecoradev/trapfall/releases/tag/v0.0.4",
-      "publishedAt": "2026-06-12T09:24:01Z"
-    },
-    "archived": false
-  },
-  {
-    "fullName": "dayartcrew-web/masday-workflow-rust",
-    "name": "masday-workflow-rust",
-    "owner": "dayartcrew-web",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/245359298?v=4",
-    "description": "Rust MVC MCP Server — Unified AI coding agent platform built with Axum, SQLx, and tokio. 90 MCP tools, 4-layer memory, PostgreSQL.",
-    "url": "https://github.com/dayartcrew-web/masday-workflow-rust",
-    "homepage": "",
-    "language": "Rust",
-    "stars": 1,
-    "forks": 0,
-    "topics": [],
-    "updatedAt": "2026-06-15T12:26:41Z",
-    "pushedAt": "2026-06-15T12:26:30Z",
-    "latestRelease": {
-      "name": "Masday CLI v0.3.69",
-      "tagName": "v0.3.69",
-      "url": "https://github.com/dayartcrew-web/masday-workflow-rust/releases/tag/v0.3.69",
-      "publishedAt": "2026-06-12T12:15:32Z"
+      "name": "Release v0.0.5",
+      "tagName": "v0.0.5",
+      "url": "https://github.com/codecoradev/trapfall/releases/tag/v0.0.5",
+      "publishedAt": "2026-06-15T16:15:42Z"
     },
     "archived": false
   },
