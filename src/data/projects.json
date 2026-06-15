@@ -9,7 +9,7 @@
     "homepage": "",
     "language": "PHP",
     "stars": 1199,
-    "forks": 1142,
+    "forks": 1143,
     "topics": [
       "opensid",
       "sistem-informasi-desa"
@@ -34,7 +34,7 @@
     "homepage": "",
     "language": "Python",
     "stars": 816,
-    "forks": 250,
+    "forks": 252,
     "topics": [],
     "updatedAt": "2026-06-14T06:54:35Z",
     "pushedAt": "2026-05-29T12:39:38Z",
@@ -56,7 +56,7 @@
     "homepage": "https://jokoui.web.id",
     "language": "TypeScript",
     "stars": 403,
-    "forks": 25,
+    "forks": 26,
     "topics": [
       "css",
       "ui",
@@ -84,14 +84,14 @@
     "url": "https://github.com/bellshade/Javascript",
     "homepage": "",
     "language": "JavaScript",
-    "stars": 397,
+    "stars": 398,
     "forks": 180,
     "topics": [
       "hacktoberfest",
       "indonesia",
       "javascript"
     ],
-    "updatedAt": "2026-06-14T06:55:28Z",
+    "updatedAt": "2026-06-15T02:38:46Z",
     "pushedAt": "2026-06-12T19:58:07Z",
     "latestRelease": null,
     "archived": false
@@ -132,7 +132,7 @@
     "url": "https://github.com/fajarhide/omni",
     "homepage": "https://omni.weekndlabs.com",
     "language": "Rust",
-    "stars": 248,
+    "stars": 249,
     "forks": 25,
     "topics": [
       "ai-agents",
@@ -151,8 +151,8 @@
       "token-reduction",
       "token-savings"
     ],
-    "updatedAt": "2026-06-14T18:30:00Z",
-    "pushedAt": "2026-06-14T17:05:59Z",
+    "updatedAt": "2026-06-15T02:39:11Z",
+    "pushedAt": "2026-06-15T04:38:44Z",
     "latestRelease": {
       "name": "v0.6.0",
       "tagName": "v0.6.0",
@@ -171,7 +171,7 @@
     "homepage": "https://demo.erdbuilderpro.com",
     "language": "TypeScript",
     "stars": 141,
-    "forks": 26,
+    "forks": 27,
     "topics": [
       "coding",
       "developer-tools",
@@ -202,7 +202,7 @@
     "homepage": "https://termul.dev",
     "language": "TypeScript",
     "stars": 138,
-    "forks": 28,
+    "forks": 29,
     "topics": [
       "cross-platform",
       "desktop-app",
@@ -218,13 +218,13 @@
       "terminal-emulator",
       "workspace-manager"
     ],
-    "updatedAt": "2026-06-14T04:36:52Z",
-    "pushedAt": "2026-06-14T04:36:47Z",
+    "updatedAt": "2026-06-15T04:45:23Z",
+    "pushedAt": "2026-06-15T05:24:34Z",
     "latestRelease": {
-      "name": "Termul Manager v0.4.5",
-      "tagName": "v0.4.5",
-      "url": "https://github.com/gnoviawan/termul/releases/tag/v0.4.5",
-      "publishedAt": "2026-06-06T16:04:21Z"
+      "name": "Termul Manager v0.4.6",
+      "tagName": "v0.4.6",
+      "url": "https://github.com/gnoviawan/termul/releases/tag/v0.4.6",
+      "publishedAt": "2026-06-15T00:09:37Z"
     },
     "archived": false
   },
@@ -254,14 +254,14 @@
     "url": "https://github.com/IlhamriSKY/PDDIKTI-kemdikbud-API",
     "homepage": "https://pddikti.kemdiktisaintek.go.id/",
     "language": "Python",
-    "stars": 107,
+    "stars": 108,
     "forks": 25,
     "topics": [
       "api-wrapper",
       "package",
       "python3"
     ],
-    "updatedAt": "2026-06-13T15:26:51Z",
+    "updatedAt": "2026-06-15T03:02:05Z",
     "pushedAt": "2025-07-30T13:28:14Z",
     "latestRelease": {
       "name": "V.2.0.6",
@@ -307,11 +307,11 @@
     "url": "https://github.com/jipraks/kasirgratisan",
     "homepage": "",
     "language": "TypeScript",
-    "stars": 79,
+    "stars": 80,
     "forks": 37,
     "topics": [],
-    "updatedAt": "2026-06-14T11:59:35Z",
-    "pushedAt": "2026-06-14T02:27:51Z",
+    "updatedAt": "2026-06-15T03:01:17Z",
+    "pushedAt": "2026-06-15T03:01:13Z",
     "latestRelease": null,
     "archived": false
   },
@@ -324,7 +324,7 @@
     "url": "https://github.com/ddtamn/svelte-audio-ui",
     "homepage": "https://svelte-audio-ui.vercel.app/",
     "language": "Svelte",
-    "stars": 72,
+    "stars": 73,
     "forks": 4,
     "topics": [
       "audio",
@@ -335,7 +335,7 @@
       "svelte-components",
       "sveltekit"
     ],
-    "updatedAt": "2026-06-14T05:35:52Z",
+    "updatedAt": "2026-06-15T02:44:50Z",
     "pushedAt": "2026-06-13T07:26:24Z",
     "latestRelease": {
       "name": "svelte-audio-ui@1.0.1",
@@ -438,7 +438,7 @@
     "url": "https://github.com/rahmanef63/os-vps",
     "homepage": "",
     "language": "TypeScript",
-    "stars": 33,
+    "stars": 34,
     "forks": 6,
     "topics": [
       "file-manager",
@@ -450,8 +450,8 @@
       "vps",
       "web-desktop"
     ],
-    "updatedAt": "2026-06-14T19:51:16Z",
-    "pushedAt": "2026-06-14T19:51:12Z",
+    "updatedAt": "2026-06-15T03:49:44Z",
+    "pushedAt": "2026-06-15T03:49:41Z",
     "latestRelease": null,
     "archived": false
   },
@@ -464,8 +464,8 @@
     "url": "https://github.com/pendig/rute-bayar",
     "homepage": "http://rutebayar.id/",
     "language": "Go",
-    "stars": 31,
-    "forks": 6,
+    "stars": 32,
+    "forks": 7,
     "topics": [
       "cli",
       "go",
@@ -477,7 +477,7 @@
       "webhook",
       "xendit"
     ],
-    "updatedAt": "2026-06-14T02:23:43Z",
+    "updatedAt": "2026-06-15T02:46:23Z",
     "pushedAt": "2026-06-12T22:43:58Z",
     "latestRelease": {
       "name": "v0.1.9",
@@ -496,7 +496,7 @@
     "url": "https://github.com/rizukirr/no-vibe",
     "homepage": "",
     "language": "Shell",
-    "stars": 30,
+    "stars": 31,
     "forks": 1,
     "topics": [
       "ai-agents",
@@ -512,7 +512,7 @@
       "vibe-coding",
       "vibecoding"
     ],
-    "updatedAt": "2026-06-13T14:32:28Z",
+    "updatedAt": "2026-06-15T02:46:51Z",
     "pushedAt": "2026-06-12T15:10:29Z",
     "latestRelease": {
       "name": "v2.0.3",
@@ -531,11 +531,11 @@
     "url": "https://github.com/raymondchins/agentmap",
     "homepage": "",
     "language": "JavaScript",
-    "stars": 26,
+    "stars": 27,
     "forks": 7,
     "topics": [],
-    "updatedAt": "2026-06-14T18:51:33Z",
-    "pushedAt": "2026-06-14T17:25:11Z",
+    "updatedAt": "2026-06-15T02:23:35Z",
+    "pushedAt": "2026-06-15T02:23:32Z",
     "latestRelease": null,
     "archived": false
   },
@@ -548,10 +548,10 @@
     "url": "https://github.com/firewalker06/tycho",
     "homepage": "",
     "language": "Ruby",
-    "stars": 24,
+    "stars": 25,
     "forks": 1,
     "topics": [],
-    "updatedAt": "2026-06-14T14:16:47Z",
+    "updatedAt": "2026-06-15T02:47:20Z",
     "pushedAt": "2026-06-14T14:16:43Z",
     "latestRelease": {
       "name": "Tycho v0.5.0",
@@ -652,8 +652,8 @@
     "stars": 15,
     "forks": 1,
     "topics": [],
-    "updatedAt": "2026-06-14T12:08:13Z",
-    "pushedAt": "2026-06-14T11:21:15Z",
+    "updatedAt": "2026-06-14T22:49:39Z",
+    "pushedAt": "2026-06-14T22:49:35Z",
     "latestRelease": null,
     "archived": false
   },
@@ -666,7 +666,7 @@
     "url": "https://github.com/rizukirr/vibekit",
     "homepage": "",
     "language": "JavaScript",
-    "stars": 14,
+    "stars": 15,
     "forks": 1,
     "topics": [
       "claude-code",
@@ -680,7 +680,7 @@
       "vibe-coding",
       "vibecoding"
     ],
-    "updatedAt": "2026-06-13T14:36:36Z",
+    "updatedAt": "2026-06-15T02:56:55Z",
     "pushedAt": "2026-06-12T17:42:03Z",
     "latestRelease": {
       "name": "v0.4.0",
@@ -774,23 +774,6 @@
     "archived": false
   },
   {
-    "fullName": "hellodit/OpenMasjid",
-    "name": "OpenMasjid",
-    "owner": "hellodit",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/32544683?v=4",
-    "description": "Proyek dari daftar awesome-indonesia.",
-    "url": "https://github.com/hellodit/OpenMasjid",
-    "homepage": "",
-    "language": "Vue",
-    "stars": 11,
-    "forks": 0,
-    "topics": [],
-    "updatedAt": "2026-06-14T01:27:25Z",
-    "pushedAt": "2026-05-21T12:29:21Z",
-    "latestRelease": null,
-    "archived": false
-  },
-  {
     "fullName": "wauputr4/bansos",
     "name": "bansos",
     "owner": "wauputr4",
@@ -799,7 +782,7 @@
     "url": "https://github.com/wauputr4/bansos",
     "homepage": "https://bansos.dev",
     "language": "Svelte",
-    "stars": 11,
+    "stars": 12,
     "forks": 2,
     "topics": [
       "bansos",
@@ -813,8 +796,8 @@
       "static-site",
       "sveltekit"
     ],
-    "updatedAt": "2026-06-14T15:35:13Z",
-    "pushedAt": "2026-06-14T15:18:16Z",
+    "updatedAt": "2026-06-15T01:53:58Z",
+    "pushedAt": "2026-06-14T21:16:52Z",
     "latestRelease": {
       "name": "Bansos v0.0.11",
       "tagName": "v0.0.11",
@@ -832,7 +815,7 @@
     "url": "https://github.com/codecoradev/cora-cli",
     "homepage": "https://codecora.dev",
     "language": "Rust",
-    "stars": 10,
+    "stars": 11,
     "forks": 2,
     "topics": [
       "ai",
@@ -848,7 +831,7 @@
       "rust",
       "sarif"
     ],
-    "updatedAt": "2026-06-14T15:18:50Z",
+    "updatedAt": "2026-06-15T02:58:38Z",
     "pushedAt": "2026-06-14T15:18:45Z",
     "latestRelease": {
       "name": "Release v0.6.0",
@@ -867,7 +850,7 @@
     "url": "https://github.com/codecoradev/uteke",
     "homepage": "https://codecora.dev",
     "language": "Rust",
-    "stars": 10,
+    "stars": 11,
     "forks": 1,
     "topics": [
       "ai",
@@ -884,7 +867,7 @@
       "sqlite",
       "vector-database"
     ],
-    "updatedAt": "2026-06-14T15:18:56Z",
+    "updatedAt": "2026-06-15T02:58:43Z",
     "pushedAt": "2026-06-14T15:20:47Z",
     "latestRelease": {
       "name": "Release v0.2.0",
@@ -892,6 +875,23 @@
       "url": "https://github.com/codecoradev/uteke/releases/tag/v0.2.0",
       "publishedAt": "2026-06-14T14:09:47Z"
     },
+    "archived": false
+  },
+  {
+    "fullName": "hellodit/OpenMasjid",
+    "name": "OpenMasjid",
+    "owner": "hellodit",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/32544683?v=4",
+    "description": "Proyek dari daftar awesome-indonesia.",
+    "url": "https://github.com/hellodit/OpenMasjid",
+    "homepage": "",
+    "language": "Vue",
+    "stars": 11,
+    "forks": 0,
+    "topics": [],
+    "updatedAt": "2026-06-14T01:27:25Z",
+    "pushedAt": "2026-05-21T12:29:21Z",
+    "latestRelease": null,
     "archived": false
   },
   {
@@ -984,6 +984,36 @@
     "archived": false
   },
   {
+    "fullName": "rahmanef63/si-coder-agent",
+    "name": "si-coder-agent",
+    "owner": "rahmanef63",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/71124675?v=4",
+    "description": "Zero-human full-stack deployment skill bundle for AI agents — GitHub + Dokploy + Convex (self-hosted & Cloud) + Vercel + Hostinger DNS, via modular /sc-* slash commands.",
+    "url": "https://github.com/rahmanef63/si-coder-agent",
+    "homepage": "",
+    "language": "JavaScript",
+    "stars": 9,
+    "forks": 0,
+    "topics": [
+      "ai-agent",
+      "claude-code",
+      "claude-skills",
+      "convex",
+      "deployment-automation",
+      "devops",
+      "dokploy",
+      "hostinger",
+      "nextjs",
+      "self-hosted",
+      "vercel",
+      "zero-human"
+    ],
+    "updatedAt": "2026-06-15T04:20:41Z",
+    "pushedAt": "2026-06-15T04:20:37Z",
+    "latestRelease": null,
+    "archived": false
+  },
+  {
     "fullName": "RRNDev/app-permission-analyzer",
     "name": "app-permission-analyzer",
     "owner": "RRNDev",
@@ -1014,7 +1044,7 @@
     "url": "https://github.com/anandazp/tempa-ui",
     "homepage": "https://tempaui.pages.dev",
     "language": "Astro",
-    "stars": 7,
+    "stars": 8,
     "forks": 0,
     "topics": [
       "astro",
@@ -1022,38 +1052,8 @@
       "components-l",
       "tailwindcss"
     ],
-    "updatedAt": "2026-06-14T07:56:05Z",
+    "updatedAt": "2026-06-15T02:59:54Z",
     "pushedAt": "2026-06-13T03:47:11Z",
-    "latestRelease": null,
-    "archived": false
-  },
-  {
-    "fullName": "rahmanef63/si-coder-agent",
-    "name": "si-coder-agent",
-    "owner": "rahmanef63",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/71124675?v=4",
-    "description": "Zero-human full-stack deployment skill bundle for AI agents — GitHub + Dokploy + Convex (self-hosted & Cloud) + Vercel + Hostinger DNS, via modular /sc-* slash commands.",
-    "url": "https://github.com/rahmanef63/si-coder-agent",
-    "homepage": "",
-    "language": "JavaScript",
-    "stars": 7,
-    "forks": 0,
-    "topics": [
-      "ai-agent",
-      "claude-code",
-      "claude-skills",
-      "convex",
-      "deployment-automation",
-      "devops",
-      "dokploy",
-      "hostinger",
-      "nextjs",
-      "self-hosted",
-      "vercel",
-      "zero-human"
-    ],
-    "updatedAt": "2026-06-14T19:54:24Z",
-    "pushedAt": "2026-06-14T19:54:20Z",
     "latestRelease": null,
     "archived": false
   },
@@ -1135,11 +1135,11 @@
     "url": "https://github.com/RudyCity/superagent",
     "homepage": "",
     "language": "TypeScript",
-    "stars": 5,
+    "stars": 6,
     "forks": 1,
     "topics": [],
-    "updatedAt": "2026-06-14T16:04:50Z",
-    "pushedAt": "2026-06-14T16:04:46Z",
+    "updatedAt": "2026-06-15T04:46:50Z",
+    "pushedAt": "2026-06-15T04:46:46Z",
     "latestRelease": {
       "name": "v1.1.35",
       "tagName": "v1.1.35",
@@ -1157,7 +1157,7 @@
     "url": "https://github.com/wauputr4/skill-bansos",
     "homepage": "https://skills.sh/wauputr4/skill-bansos",
     "language": "",
-    "stars": 5,
+    "stars": 6,
     "forks": 0,
     "topics": [
       "agent-skills",
@@ -1171,8 +1171,8 @@
       "static-site",
       "sveltekit"
     ],
-    "updatedAt": "2026-06-13T21:37:11Z",
-    "pushedAt": "2026-06-14T15:31:38Z",
+    "updatedAt": "2026-06-15T03:01:45Z",
+    "pushedAt": "2026-06-14T21:13:08Z",
     "latestRelease": {
       "name": "skill-bansos v0.1.1",
       "tagName": "v0.1.1",
@@ -1292,7 +1292,7 @@
       "semantic-search"
     ],
     "updatedAt": "2026-06-13T21:37:31Z",
-    "pushedAt": "2026-06-12T22:19:29Z",
+    "pushedAt": "2026-06-15T04:33:28Z",
     "latestRelease": {
       "name": "OpenEmpiric v0.97.1",
       "tagName": "v0.97.1",
