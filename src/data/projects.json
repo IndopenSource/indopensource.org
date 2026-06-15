@@ -9,7 +9,7 @@
     "homepage": "",
     "language": "PHP",
     "stars": 1199,
-    "forks": 1143,
+    "forks": 1144,
     "topics": [
       "opensid",
       "sistem-informasi-desa"
@@ -34,9 +34,9 @@
     "homepage": "",
     "language": "Python",
     "stars": 816,
-    "forks": 252,
+    "forks": 253,
     "topics": [],
-    "updatedAt": "2026-06-14T06:54:35Z",
+    "updatedAt": "2026-06-15T12:36:34Z",
     "pushedAt": "2026-05-29T12:39:38Z",
     "latestRelease": {
       "name": "YT Short Clipper v0.1.2",
@@ -105,7 +105,7 @@
     "url": "https://github.com/Drenzzz/ADBKit",
     "homepage": "",
     "language": "TypeScript",
-    "stars": 313,
+    "stars": 314,
     "forks": 36,
     "topics": [
       "astrojs",
@@ -113,7 +113,7 @@
       "wails",
       "wails-app"
     ],
-    "updatedAt": "2026-06-14T06:20:43Z",
+    "updatedAt": "2026-06-15T12:34:56Z",
     "pushedAt": "2026-04-04T02:31:28Z",
     "latestRelease": {
       "name": "v1.3",
@@ -201,8 +201,8 @@
     "url": "https://github.com/gnoviawan/termul",
     "homepage": "https://termul.dev",
     "language": "TypeScript",
-    "stars": 138,
-    "forks": 29,
+    "stars": 137,
+    "forks": 28,
     "topics": [
       "cross-platform",
       "desktop-app",
@@ -218,13 +218,13 @@
       "terminal-emulator",
       "workspace-manager"
     ],
-    "updatedAt": "2026-06-15T04:45:23Z",
-    "pushedAt": "2026-06-15T05:24:34Z",
+    "updatedAt": "2026-06-15T11:55:18Z",
+    "pushedAt": "2026-06-15T05:40:27Z",
     "latestRelease": {
-      "name": "Termul Manager v0.4.6",
-      "tagName": "v0.4.6",
-      "url": "https://github.com/gnoviawan/termul/releases/tag/v0.4.6",
-      "publishedAt": "2026-06-15T00:09:37Z"
+      "name": "Termul Manager v0.4.7",
+      "tagName": "v0.4.7",
+      "url": "https://github.com/gnoviawan/termul/releases/tag/v0.4.7",
+      "publishedAt": "2026-06-15T05:59:31Z"
     },
     "archived": false
   },
@@ -310,8 +310,8 @@
     "stars": 80,
     "forks": 37,
     "topics": [],
-    "updatedAt": "2026-06-15T03:01:17Z",
-    "pushedAt": "2026-06-15T03:01:13Z",
+    "updatedAt": "2026-06-15T12:29:10Z",
+    "pushedAt": "2026-06-15T12:29:05Z",
     "latestRelease": null,
     "archived": false
   },
@@ -324,7 +324,7 @@
     "url": "https://github.com/ddtamn/svelte-audio-ui",
     "homepage": "https://svelte-audio-ui.vercel.app/",
     "language": "Svelte",
-    "stars": 73,
+    "stars": 74,
     "forks": 4,
     "topics": [
       "audio",
@@ -335,7 +335,7 @@
       "svelte-components",
       "sveltekit"
     ],
-    "updatedAt": "2026-06-15T02:44:50Z",
+    "updatedAt": "2026-06-15T10:14:32Z",
     "pushedAt": "2026-06-13T07:26:24Z",
     "latestRelease": {
       "name": "svelte-audio-ui@1.0.1",
@@ -450,8 +450,8 @@
       "vps",
       "web-desktop"
     ],
-    "updatedAt": "2026-06-15T03:49:44Z",
-    "pushedAt": "2026-06-15T03:49:41Z",
+    "updatedAt": "2026-06-15T07:38:57Z",
+    "pushedAt": "2026-06-15T07:38:53Z",
     "latestRelease": null,
     "archived": false
   },
@@ -477,13 +477,13 @@
       "webhook",
       "xendit"
     ],
-    "updatedAt": "2026-06-15T02:46:23Z",
-    "pushedAt": "2026-06-12T22:43:58Z",
+    "updatedAt": "2026-06-15T11:45:43Z",
+    "pushedAt": "2026-06-15T11:45:41Z",
     "latestRelease": {
-      "name": "v0.1.9",
-      "tagName": "v0.1.9",
-      "url": "https://github.com/pendig/rute-bayar/releases/tag/v0.1.9",
-      "publishedAt": "2026-06-11T21:08:32Z"
+      "name": "v0.1.11",
+      "tagName": "v0.1.11",
+      "url": "https://github.com/pendig/rute-bayar/releases/tag/v0.1.11",
+      "publishedAt": "2026-06-15T11:39:59Z"
     },
     "archived": false
   },
@@ -531,10 +531,10 @@
     "url": "https://github.com/raymondchins/agentmap",
     "homepage": "",
     "language": "JavaScript",
-    "stars": 27,
-    "forks": 7,
+    "stars": 30,
+    "forks": 9,
     "topics": [],
-    "updatedAt": "2026-06-15T02:23:35Z",
+    "updatedAt": "2026-06-15T12:09:06Z",
     "pushedAt": "2026-06-15T02:23:32Z",
     "latestRelease": null,
     "archived": false
@@ -548,11 +548,11 @@
     "url": "https://github.com/firewalker06/tycho",
     "homepage": "",
     "language": "Ruby",
-    "stars": 25,
+    "stars": 26,
     "forks": 1,
     "topics": [],
-    "updatedAt": "2026-06-15T02:47:20Z",
-    "pushedAt": "2026-06-14T14:16:43Z",
+    "updatedAt": "2026-06-15T11:25:35Z",
+    "pushedAt": "2026-06-15T11:25:31Z",
     "latestRelease": {
       "name": "Tycho v0.5.0",
       "tagName": "v0.5.0",
@@ -652,8 +652,8 @@
     "stars": 15,
     "forks": 1,
     "topics": [],
-    "updatedAt": "2026-06-14T22:49:39Z",
-    "pushedAt": "2026-06-14T22:49:35Z",
+    "updatedAt": "2026-06-15T11:32:10Z",
+    "pushedAt": "2026-06-15T11:32:04Z",
     "latestRelease": null,
     "archived": false
   },
@@ -796,8 +796,8 @@
       "static-site",
       "sveltekit"
     ],
-    "updatedAt": "2026-06-15T01:53:58Z",
-    "pushedAt": "2026-06-14T21:16:52Z",
+    "updatedAt": "2026-06-15T12:32:24Z",
+    "pushedAt": "2026-06-15T12:32:19Z",
     "latestRelease": {
       "name": "Bansos v0.0.11",
       "tagName": "v0.0.11",
@@ -1058,6 +1058,23 @@
     "archived": false
   },
   {
+    "fullName": "muhfauziazhar/nusakit-api",
+    "name": "nusakit-api",
+    "owner": "muhfauziazhar",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/72305833?v=4",
+    "description": "🇮🇩 Indonesian Data Validation API — NIK, NPWP, Phone, Rupiah, Bank, Wilayah. Live: nusakit.my.id",
+    "url": "https://github.com/muhfauziazhar/nusakit-api",
+    "homepage": "https://nusakit.my.id",
+    "language": "TypeScript",
+    "stars": 7,
+    "forks": 1,
+    "topics": [],
+    "updatedAt": "2026-06-15T08:07:06Z",
+    "pushedAt": "2026-06-13T16:18:08Z",
+    "latestRelease": null,
+    "archived": false
+  },
+  {
     "fullName": "achmdfzn/hippocrates",
     "name": "hippocrates",
     "owner": "achmdfzn",
@@ -1093,23 +1110,6 @@
     "archived": false
   },
   {
-    "fullName": "muhfauziazhar/nusakit-api",
-    "name": "nusakit-api",
-    "owner": "muhfauziazhar",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/72305833?v=4",
-    "description": "🇮🇩 Indonesian Data Validation API — NIK, NPWP, Phone, Rupiah, Bank, Wilayah. Live: nusakit.my.id",
-    "url": "https://github.com/muhfauziazhar/nusakit-api",
-    "homepage": "https://nusakit.my.id",
-    "language": "TypeScript",
-    "stars": 6,
-    "forks": 1,
-    "topics": [],
-    "updatedAt": "2026-06-13T16:18:07Z",
-    "pushedAt": "2026-06-13T16:18:08Z",
-    "latestRelease": null,
-    "archived": false
-  },
-  {
     "fullName": "RamaAditya49/ai-agentic",
     "name": "ai-agentic",
     "owner": "RamaAditya49",
@@ -1138,8 +1138,8 @@
     "stars": 6,
     "forks": 1,
     "topics": [],
-    "updatedAt": "2026-06-15T04:46:50Z",
-    "pushedAt": "2026-06-15T04:46:46Z",
+    "updatedAt": "2026-06-15T11:13:04Z",
+    "pushedAt": "2026-06-15T11:13:00Z",
     "latestRelease": {
       "name": "v1.1.35",
       "tagName": "v1.1.35",
@@ -1199,6 +1199,23 @@
     "archived": false
   },
   {
+    "fullName": "raymondchins/tokengratis-id",
+    "name": "tokengratis-id",
+    "owner": "raymondchins",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/12913191?v=4",
+    "description": "Directory free AI credits & free tier, Indonesia-first, auto-aggregated dari sumber komunitas. Aggregator transparan (bukan verifier), anti-halusinasi, maintenance nyaris nol.",
+    "url": "https://github.com/raymondchins/tokengratis-id",
+    "homepage": "https://tokengratis.id",
+    "language": "JavaScript",
+    "stars": 3,
+    "forks": 0,
+    "topics": [],
+    "updatedAt": "2026-06-15T06:52:56Z",
+    "pushedAt": "2026-06-15T10:31:11Z",
+    "latestRelease": null,
+    "archived": false
+  },
+  {
     "fullName": "AdityaZxxx/sheltermark",
     "name": "sheltermark",
     "owner": "AdityaZxxx",
@@ -1247,20 +1264,25 @@
     "archived": false
   },
   {
-    "fullName": "raymondchins/tokengratis-id",
-    "name": "tokengratis-id",
-    "owner": "raymondchins",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/12913191?v=4",
-    "description": "Directory free AI credits & free tier, Indonesia-first, auto-aggregated dari sumber komunitas. Aggregator transparan (bukan verifier), anti-halusinasi, maintenance nyaris nol.",
-    "url": "https://github.com/raymondchins/tokengratis-id",
-    "homepage": "https://tokengratis.id",
-    "language": "JavaScript",
+    "fullName": "jutionck/tahlil-tracker",
+    "name": "tahlil-tracker",
+    "owner": "jutionck",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/30655440?v=4",
+    "description": "Aplikasi untuk menghitung hari selamatan orang meninggal (tahlilan) dan panduan bacaan Yasin & Tahlil lengkap, serta tata cara pengurusan jenazah.",
+    "url": "https://github.com/jutionck/tahlil-tracker",
+    "homepage": "https://tahlil-tracker.vercel.app/",
+    "language": "TypeScript",
     "stars": 2,
     "forks": 0,
     "topics": [],
-    "updatedAt": "2026-06-14T17:38:26Z",
-    "pushedAt": "2026-06-14T17:38:22Z",
-    "latestRelease": null,
+    "updatedAt": "2026-06-15T05:20:56Z",
+    "pushedAt": "2026-06-02T07:13:42Z",
+    "latestRelease": {
+      "name": "v1.2.0",
+      "tagName": "v1.2.0",
+      "url": "https://github.com/jutionck/tahlil-tracker/releases/tag/v1.2.0",
+      "publishedAt": "2025-12-12T03:24:46Z"
+    },
     "archived": false
   },
   {
@@ -1292,7 +1314,7 @@
       "semantic-search"
     ],
     "updatedAt": "2026-06-13T21:37:31Z",
-    "pushedAt": "2026-06-15T04:33:28Z",
+    "pushedAt": "2026-06-15T10:34:36Z",
     "latestRelease": {
       "name": "OpenEmpiric v0.97.1",
       "tagName": "v0.97.1",
@@ -1347,8 +1369,8 @@
       "tailwindcss",
       "websockets"
     ],
-    "updatedAt": "2026-06-14T15:15:20Z",
-    "pushedAt": "2026-06-14T15:28:45Z",
+    "updatedAt": "2026-06-15T09:31:31Z",
+    "pushedAt": "2026-06-15T09:31:27Z",
     "latestRelease": {
       "name": "Release v0.0.4",
       "tagName": "v0.0.4",
@@ -1369,8 +1391,8 @@
     "stars": 1,
     "forks": 0,
     "topics": [],
-    "updatedAt": "2026-06-13T07:08:03Z",
-    "pushedAt": "2026-06-12T13:02:51Z",
+    "updatedAt": "2026-06-15T12:26:41Z",
+    "pushedAt": "2026-06-15T12:26:30Z",
     "latestRelease": {
       "name": "Masday CLI v0.3.69",
       "tagName": "v0.3.69",
