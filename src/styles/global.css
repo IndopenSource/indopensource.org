@@ -1,16 +1,70 @@
+/*
+ * Self-hosted variable fonts (NO Google CDN). @fontsource-variable bundles the
+ * woff2 files, which Vite emits to /_astro/* (same origin), so `font-src 'self'
+ * data:` in the CSP holds and there is no third-party request. Imported FIRST
+ * because CSS @import must precede all other statements except @charset.
+ *   DISPLAY = Bricolage Grotesque Variable  -> 'Bricolage Grotesque Variable'
+ *   BODY    = Newsreader Variable           -> 'Newsreader Variable'
+ *   MONO    = Spline Sans Mono Variable     -> 'Spline Sans Mono Variable'
+ */
+@import "@fontsource-variable/bricolage-grotesque";
+@import "@fontsource-variable/newsreader";
+@import "@fontsource-variable/spline-sans-mono";
+
 @import "tailwindcss";
 
 @theme {
-  --font-sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --color-paper: #fffdf8;
-  --color-canvas: #f7f4ec;
-  --color-ink: #1d2528;
-  --color-muted: #667272;
-  --color-line: #ddd6c7;
-  --color-brand: #0f6f5c;
-  --color-brand-dark: #0a4f43;
-  --color-accent: #c84f31;
-  --color-sun: #f0b94f;
+  /*
+   * RISOGRAPH EDITORIAL type stack — self-hosted variable fonts, no system
+   * sans fallback as the primary voice. `--font-sans` is retained (mapped to
+   * the body serif) so any legacy `font-sans` utility still resolves to a
+   * loaded face rather than the OS default.
+   */
+  --font-display: 'Bricolage Grotesque Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-body: 'Newsreader Variable', ui-serif, Georgia, 'Times New Roman', serif;
+  --font-mono: 'Spline Sans Mono Variable', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+  --font-sans: var(--font-body);
+
+  /*
+   * REFINED RISO SPOT-INK PALETTE — flat fills, 2-3 inks per composition.
+   * Every TEXT token is verified >= 4.5:1 (WCAG AA) on its real background;
+   * ratios computed with the WCAG relative-luminance formula and stated below.
+   * Token NAMES are preserved verbatim (paper/canvas/ink/muted/line/brand/
+   * brand-dark/accent/sun) because page files lean on these utility names.
+   *
+   *   TEXT-ON-SURFACE ratios (must be >= 4.5):
+   *     ink        on paper  15.59 : 1   |  on canvas 14.41 : 1   PASS
+   *     muted      on paper   6.70 : 1   |  on canvas  6.20 : 1   PASS
+   *     brand      on paper   6.80 : 1   |  on canvas  6.29 : 1   PASS
+   *     brand-dark on paper  10.93 : 1   |  on canvas 10.10 : 1   PASS
+   *     accent     on paper   5.16 : 1   |  on canvas  4.77 : 1   PASS (tightest)
+   *   REVERSED (light text on ink fields):
+   *     paper on brand 6.80 | paper on brand-dark 10.93 | paper on accent 5.16
+   *     paper on ink  15.59 | white on brand 7.27 | white on accent 5.52    PASS
+   *   SUN is a sticker/highlight spot ONLY — never carries body text.
+   *     ink on sun 8.87 (PASS) and brand-dark on sun 6.22 (PASS) cover the
+   *     only legible-text-on-sun cases (sticker labels); accent-on-sun is
+   *     2.94 and is intentionally NEVER used as text.
+   */
+  --color-paper: #fbf7ee;       /* cream paper base */
+  --color-canvas: #f4eee0;      /* deeper cream surface / 2nd paper tone */
+  --color-ink: #16201e;         /* deep ink near-black */
+  --color-muted: #4f5a56;       /* muted body / metadata ink */
+  --color-line: #d8cfba;        /* hairline -> upgraded to thick rules in use */
+  --color-brand: #0c6253;       /* riso TEAL-GREEN (deepened for punch) */
+  --color-brand-dark: #084036;  /* deepest teal for reversed fills / hover */
+  --color-accent: #bd3b1c;      /* riso VERMILION (AA text on cream: 5.16:1) */
+  --color-sun: #f3b13f;         /* riso SUN yellow — sticker/highlight ONLY */
+
+  /*
+   * Expressive editorial type scale (clamp). DISPLAY sizes carry tight leading
+   * + negative tracking via the base element rules below; these are the raw
+   * font-size steps exposed as `text-display-*` utilities.
+   */
+  --text-display-xl: clamp(3.25rem, 9vw, 7.5rem);   /* grid-breaking hero */
+  --text-display-lg: clamp(2.6rem, 6vw, 5.25rem);   /* page H1 */
+  --text-display-md: clamp(2rem, 4vw, 3.6rem);      /* section H2 */
+  --text-display-sm: clamp(1.5rem, 2.4vw, 2.2rem);  /* card / sub heads */
 }
 
 @layer base {
@@ -19,11 +73,86 @@
   }
 
   body {
-    @apply m-0 min-w-80 font-sans;
+    /*
+     * Body = warm Newsreader serif on cream. No `min-width` floor so content
+     * reflows to 320 CSS px (WCAG 1.4.10). The `.grain` paper-texture overlay
+     * is attached to body::before below (in the stylesheet, never inline — so
+     * `style-src 'self'` holds). `position: relative` anchors that overlay.
+     */
+    @apply relative m-0 font-body text-ink antialiased;
   }
 
+  /*
+   * PAPER GRAIN — a low-opacity SVG fractal-noise tile painted over the whole
+   * page as a fixed overlay. Lives in CSS as a data-URI background-image (CSP:
+   * this is a stylesheet rule, not an inline style attribute). pointer-events
+   * off so it never blocks interaction; sits under content (z-index 0) while
+   * the page wrappers establish their own stacking above it.
+   */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.5;
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.32'/%3E%3C/svg%3E");
+    background-size: 160px 160px;
+  }
+
+  /* Keep page content above the grain overlay. */
+  body > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  /*
+   * Underlines stripped only as a chrome default for nav/button/badge links,
+   * which carry their own shape/background. Content/prose links restore
+   * underline below (WCAG 1.4.1 Use of Color). (A11Y-2)
+   */
   a {
     @apply text-inherit no-underline;
+  }
+
+  /*
+   * Headings speak in the DISPLAY voice: oversized Bricolage Grotesque, tight
+   * tracking, tight leading. The expressive editorial hierarchy.
+   */
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display font-bold text-ink;
+    letter-spacing: -0.02em;
+    line-height: 0.96;
+    text-wrap: balance;
+  }
+
+  /*
+   * Visible keyboard focus for every interactive element. `:focus-visible` so
+   * it only shows for keyboard/AT users; `outline` (not box-shadow) so it is
+   * not clipped by `overflow:hidden`. 2px accent outline meets 3:1 non-text
+   * contrast on the paper/canvas surfaces. (A11Y-4)
+   */
+  a:focus-visible,
+  button:focus-visible,
+  [tabindex]:focus-visible,
+  [role='button']:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  /*
+   * `#main-content` carries `tabindex="-1"` only so the skip link can move
+   * focus to it; it is a landing target, not a control. Suppress its ring.
+   * (A11Y-4)
+   */
+  #main-content:focus,
+  #main-content:focus-visible {
+    outline: none;
   }
 
   h1,
@@ -32,15 +161,506 @@
   p {
     overflow-wrap: anywhere;
   }
+
+  /*
+   * Footer text links are content links (not buttons/badges), so they must not
+   * rely on colour alone. Restore the underline the base reset strips. (A11Y-2)
+   */
+  footer a {
+    @apply underline;
+    text-underline-offset: 0.15em;
+  }
+
+  /*
+   * Visually-hidden utility for screen-reader-only text and the skip link's
+   * resting state. Standard clip pattern.
+   */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  /*
+   * Skip-to-content link (WCAG 2.4.1). Visually hidden until focused, then it
+   * appears top-left as a riso sticker: flat ink fill, thick border, hard
+   * offset shadow, mono label. (A11Y-1)
+   */
+  .skip-link {
+    position: absolute;
+    left: 1rem;
+    top: -4rem;
+    z-index: 50;
+    border: 2px solid var(--color-ink);
+    border-radius: 0;
+    background: var(--color-sun);
+    padding: 0.6rem 1rem;
+    color: var(--color-ink);
+    font-family: var(--font-mono);
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 4px 4px 0 var(--color-ink);
+    transition: top 0.15s ease-in-out;
+  }
+
+  .skip-link:focus,
+  .skip-link:focus-visible {
+    top: 1rem;
+    outline: 2px solid var(--color-ink);
+    outline-offset: 2px;
+  }
 }
 
 @layer components {
+  /*
+   * ====================================================================
+   * RISO TEXTURE & DEPTH UTILITIES — the shared design-system vocabulary.
+   * Downstream agents compose pages from these class names.
+   * ====================================================================
+   */
+
+  /*
+   * .grain — opt-in extra grain panel (the global page grain is on body::before).
+   * Use on a dark ink/brand field to give it printed tooth. Self-contained
+   * data-URI noise so no inline style is needed.
+   */
+  .grain {
+    position: relative;
+    isolation: isolate;
+  }
+
+  .grain::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0.18;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23g)'/%3E%3C/svg%3E");
+    background-size: 140px 140px;
+  }
+
+  /*
+   * .grain-coarse — a SECOND, lower-frequency tooth so the page is not one
+   * uniform noise everywhere. Larger tile + lower baseFrequency reads as a
+   * heavier press / cheaper paper. Pair on a hero or a feature panel to break
+   * the grain monotony against the fine global body::before grain. Self-
+   * contained data-URI (CSP-safe), screened over a dark field.
+   */
+  .grain-coarse {
+    position: relative;
+    isolation: isolate;
+  }
+
+  .grain-coarse::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0.22;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='260'%3E%3Cfilter id='gc'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.38' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='260' height='260' filter='url(%23gc)'/%3E%3C/svg%3E");
+    background-size: 260px 260px;
+  }
+
+  /*
+   * .halftone — riso halftone dot field as a decorative accent (radial-gradient
+   * dot grid). Use behind/beside headings or as a poster panel. Currentcolor so
+   * it inherits the surrounding ink/brand/accent.
+   */
+  .halftone {
+    background-image: radial-gradient(currentColor 1.4px, transparent 1.5px);
+    background-size: 9px 9px;
+    background-position: 0 0;
+  }
+
+  /*
+   * .halftone-coarse — the SAME radial dot screen at a markedly larger gauge
+   * (bigger dot + wider pitch). Used alongside `.halftone` so a composition can
+   * carry two screen frequencies — the editorial "two-pass" print feel — rather
+   * than one uniform dot field across the whole page. Still currentColor, so it
+   * inherits the surrounding spot ink.
+   */
+  .halftone-coarse {
+    background-image: radial-gradient(currentColor 2.6px, transparent 2.8px);
+    background-size: 18px 18px;
+    background-position: 0 0;
+  }
+
+  /*
+   * .riso-shadow — HARD offset block shadow (print/sticker feel, NO blur).
+   * Pair with a thick ink border for the signature stamped look.
+   */
+  .riso-shadow {
+    box-shadow: 4px 4px 0 var(--color-ink);
+  }
+
+  .riso-shadow-sm {
+    box-shadow: 3px 3px 0 var(--color-ink);
+  }
+
+  .riso-shadow-brand {
+    box-shadow: 4px 4px 0 var(--color-brand);
+  }
+
+  /*
+   * .riso-hover — print "misregistration": on hover the element nudges up-left
+   * into its shadow and the shadow grows, simulating a 2nd-ink offset. Requires
+   * a transition; reduced-motion catch-all neutralises it.
+   */
+  .riso-hover {
+    transition:
+      transform 0.14s ease,
+      box-shadow 0.14s ease,
+      background-color 0.14s ease,
+      color 0.14s ease,
+      border-color 0.14s ease;
+  }
+
+  .riso-hover:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0 var(--color-ink);
+  }
+
+  /*
+   * .riso-shift — the print-MISREGISTRATION signature. A 2nd-ink (vermilion)
+   * and 3rd-ink (teal) ghost of the glyph is offset AT REST by a CLEARLY VISIBLE
+   * amount (2px vermilion + 1.5px teal on opposing diagonals), so the headline
+   * carries the off-register spot-colour look of a riso pull for EVERY reader —
+   * touch, mobile and keyboard — not only on mouse :hover. On hover the offsets
+   * widen further (4px) and the shift becomes overt, so the interaction still
+   * pays off without being the only place the signature appears.
+   *
+   * The shadow is a decorative edge only; the glyph FILL stays paper/ink at full
+   * AA contrast, so this adds zero text-legibility cost on either field. The
+   * reduced-motion catch-all only neutralises the transition (the at-rest offset
+   * is a static text-shadow, not motion, so it remains — the brand look holds).
+   */
+  .riso-shift {
+    text-shadow:
+      2px 2px 0 color-mix(in srgb, var(--color-accent) 88%, transparent),
+      -1.5px -1px 0 color-mix(in srgb, var(--color-brand) 62%, transparent);
+    transition: text-shadow 0.16s ease;
+  }
+
+  .riso-shift:hover {
+    text-shadow:
+      4px 4px 0 var(--color-accent),
+      -3px -2px 0 color-mix(in srgb, var(--color-brand) 78%, transparent);
+  }
+
+  /*
+   * .riso-shift-sm — lighter signature for small / mono type (card titles).
+   * A ~1px at-rest ghost reads as misregistration without overpowering 20px
+   * text; widens slightly on hover. Glyph fill unchanged -> zero AA cost.
+   */
+  .riso-shift-sm {
+    text-shadow: 1px 1px 0 color-mix(in srgb, var(--color-accent) 70%, transparent);
+    transition: text-shadow 0.16s ease;
+  }
+
+  .riso-shift-sm:hover {
+    text-shadow:
+      2px 2px 0 var(--color-accent),
+      -1px -1px 0 color-mix(in srgb, var(--color-brand) 60%, transparent);
+  }
+
+  /*
+   * .riso-focus — shared focus state for form controls (search + selects):
+   * white field + hard 3px brand offset, plus a real keyboard outline on
+   * :focus-visible. Replaces the repeated arbitrary focus:shadow utilities.
+   */
+  .riso-focus:focus {
+    background-color: #fff;
+    box-shadow: 3px 3px 0 var(--color-brand);
+    outline: none;
+  }
+
+  .riso-focus:focus-visible {
+    box-shadow: 3px 3px 0 var(--color-brand);
+    outline: 2px solid var(--color-ink);
+    outline-offset: 2px;
+  }
+
+  /*
+   * .rule — THICK ink divider (3px). Replaces the old hairline `border-line`
+   * dividers wherever the editorial structure wants a printed rule.
+   */
+  .rule {
+    border: 0;
+    border-top: 3px solid var(--color-ink);
+    margin: 0;
+  }
+
+  .rule-brand {
+    border: 0;
+    border-top: 3px solid var(--color-brand);
+    margin: 0;
+  }
+
+  /*
+   * ====================================================================
+   * TONAL PANELS — let a section be OWNED by an ink other than teal, so the
+   * page does not read as one continuous teal/cream wash. Each panel sets a
+   * flat spot-ink field AND the legible default text colour for that field
+   * (every default verified >= 4.5:1 against the contract's measured ratios),
+   * so dropping `<p>`/`<h2>` inside Just Works at AA without per-element colour.
+   *
+   *   .panel-vermilion  accent #bd3b1c field -> PAPER text  (5.16:1 PASS)
+   *   .panel-ink        ink    #16201e field -> PAPER text (15.59:1 PASS) + grain
+   *   .panel-sun        sun    #f3b13f field -> INK text    (8.87:1 PASS)
+   *
+   * SUN remains a fill-only ink: on .panel-sun ONLY ink (or brand-dark, 6.22:1)
+   * is legible — never paper/accent. Accents/links inside a panel must re-assert
+   * an AA-safe colour; these defaults cover plain prose.
+   * ====================================================================
+   */
+  .panel-vermilion {
+    background-color: var(--color-accent);
+    color: var(--color-paper);
+  }
+
+  .panel-vermilion :is(h1, h2, h3, h4) {
+    color: var(--color-paper);
+  }
+
+  .panel-ink {
+    position: relative;
+    isolation: isolate;
+    background-color: var(--color-ink);
+    color: var(--color-paper);
+  }
+
+  .panel-ink :is(h1, h2, h3, h4) {
+    color: var(--color-paper);
+  }
+
+  /* Printed tooth on the dark field — reuses the fine grain texture. */
+  .panel-ink::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0.2;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='pg'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23pg)'/%3E%3C/svg%3E");
+    background-size: 140px 140px;
+  }
+
+  .panel-sun {
+    background-color: var(--color-sun);
+    color: var(--color-ink);
+  }
+
+  .panel-sun :is(h1, h2, h3, h4) {
+    color: var(--color-ink);
+  }
+
+  /*
+   * .sticker — small riso badge/label: flat fill, thick ink border, hard offset
+   * shadow, mono uppercase text. The status/tag chip of the system (replaces
+   * generic pills). Slap onto cards and metadata.
+   */
+  .sticker {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4ch;
+    border: 2px solid var(--color-ink);
+    background: var(--color-sun);
+    color: var(--color-ink);
+    padding: 0.2rem 0.6rem;
+    font-family: var(--font-mono);
+    font-weight: 600;
+    font-size: 0.7rem;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    box-shadow: 3px 3px 0 var(--color-ink);
+  }
+
+  /*
+   * .stamp — rotated rubber-stamp badge: thick brand border, transparent fill,
+   * mono caps, slight tilt. For "stamped" accents (e.g. NEW / OPEN SOURCE).
+   */
+  .stamp {
+    display: inline-flex;
+    align-items: center;
+    border: 2.5px solid var(--color-brand);
+    background: transparent;
+    color: var(--color-brand);
+    padding: 0.25rem 0.7rem;
+    font-family: var(--font-mono);
+    font-weight: 700;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    transform: rotate(-3deg);
+  }
+
+  /*
+   * .section-number — oversized editorial section index (01 / 02 / 03). Display
+   * face, big, low-contrast brand fill so it reads as a printed page number,
+   * not a heading. NOT a text-content element with semantic meaning.
+   */
+  .section-number {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    line-height: 1;
+    letter-spacing: -0.04em;
+    color: var(--color-brand);
+  }
+
+  /*
+   * .meta-row — mono metadata line (slugs, stats, dates). The code-culture nod.
+   */
+  .meta-row {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    letter-spacing: 0.02em;
+    color: var(--color-muted);
+  }
+
+  /*
+   * .pull-quote — oversized editorial pull-quote (esp. /falsafah). Display face,
+   * thick brand rule on the left, big tight type.
+   */
+  .pull-quote {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: clamp(1.6rem, 3.4vw, 2.8rem);
+    line-height: 1.08;
+    letter-spacing: -0.015em;
+    color: var(--color-ink);
+    border-left: 5px solid var(--color-accent);
+    padding-left: clamp(1rem, 2vw, 1.75rem);
+  }
+
+  /*
+   * .display-xl / -lg / -md / -sm — the editorial display heading sizes with
+   * the correct tight leading + negative tracking baked in, so pages get the
+   * voice from one class instead of re-deriving clamp + tracking each time.
+   */
+  .display-xl {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: var(--text-display-xl);
+    line-height: 0.9;
+    letter-spacing: -0.03em;
+  }
+
+  .display-lg {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: var(--text-display-lg);
+    line-height: 0.94;
+    letter-spacing: -0.025em;
+  }
+
+  .display-md {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: var(--text-display-md);
+    line-height: 0.98;
+    letter-spacing: -0.02em;
+  }
+
+  .display-sm {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: var(--text-display-sm);
+    line-height: 1.02;
+    letter-spacing: -0.015em;
+  }
+
+  /*
+   * ====================================================================
+   * SCROLL-AWARE REVEAL — staggered fade-up that fires WHEN a section
+   * scrolls into view, not all at once on page load.
+   *
+   * Mechanics (CSP-safe, no inline anything):
+   *   1. The bundled module script in BaseLayout adds `js-reveal` to <html>
+   *      the instant it runs, then attaches an IntersectionObserver that
+   *      stamps `.in-view` onto each `.reveal` / `.reveal-stagger` as it
+   *      enters the viewport. Above-the-fold elements (the hero) are already
+   *      intersecting on first callback, so they get `.in-view` immediately
+   *      and reveal at once — preserving the orchestrated hero entrance.
+   *   2. The hidden resting state is SCOPED to `html.js-reveal`. If JS is
+   *      disabled the class never lands, so every `.reveal` stays fully
+   *      visible (progressive enhancement — no blank page without JS).
+   *   3. The animation only runs once `.in-view` is present; the staggered
+   *      `animation-delay` then cascades the children of a section in.
+   *   4. The reduced-motion catch-all below forces opacity:1 / no transform.
+   * ====================================================================
+   */
+  html.js-reveal .reveal,
+  html.js-reveal .reveal-stagger > * {
+    opacity: 0;
+    transform: translateY(18px);
+    will-change: opacity, transform;
+    /*
+     * Set the timing sub-properties as LONGHAND (never the `animation`
+     * shorthand) so the staggered `.reveal-1..6` / `:nth-child` delay rules
+     * below — which are lower-specificity — are NOT reset to 0 by a higher-
+     * specificity shorthand on the `.in-view` selector. The element stays
+     * hidden because `animation-name` is `none` until `.in-view` flips it on.
+     */
+    animation-name: none;
+    animation-duration: 0.62s;
+    animation-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
+    animation-fill-mode: forwards;
+  }
+
+  html.js-reveal .reveal.in-view,
+  html.js-reveal .reveal-stagger.in-view > * {
+    animation-name: riso-reveal;
+  }
+
+  .reveal-1 { animation-delay: 0.05s; }
+  .reveal-2 { animation-delay: 0.14s; }
+  .reveal-3 { animation-delay: 0.23s; }
+  .reveal-4 { animation-delay: 0.32s; }
+  .reveal-5 { animation-delay: 0.41s; }
+  .reveal-6 { animation-delay: 0.5s; }
+
+  .reveal-stagger > *:nth-child(1) { animation-delay: 0.05s; }
+  .reveal-stagger > *:nth-child(2) { animation-delay: 0.14s; }
+  .reveal-stagger > *:nth-child(3) { animation-delay: 0.23s; }
+  .reveal-stagger > *:nth-child(4) { animation-delay: 0.32s; }
+  .reveal-stagger > *:nth-child(5) { animation-delay: 0.41s; }
+  .reveal-stagger > *:nth-child(6) { animation-delay: 0.5s; }
+  .reveal-stagger > *:nth-child(n + 7) { animation-delay: 0.58s; }
+
+  /*
+   * ====================================================================
+   * ARTICLE / README PROSE — restyled to the riso editorial voice, function
+   * preserved (set:html sanitized blog body + GitHub README rendering).
+   * ====================================================================
+   */
   .article-body {
-    @apply text-lg leading-8 text-muted;
+    @apply font-body text-lg leading-8 text-ink;
   }
 
   .article-body h2 {
-    @apply mt-10 mb-3 text-3xl font-extrabold leading-tight text-ink;
+    @apply mt-12 mb-4 font-display text-3xl font-bold leading-tight text-ink;
+    letter-spacing: -0.02em;
+  }
+
+  .article-body h3 {
+    @apply mt-8 mb-3 font-display text-2xl font-bold leading-tight text-ink;
+    letter-spacing: -0.015em;
   }
 
   .article-body p {
@@ -48,41 +668,57 @@
   }
 
   .article-body ul {
-    @apply my-4 list-disc space-y-2 pl-6;
+    @apply my-4 list-disc space-y-2 pl-6 marker:text-accent;
   }
 
   .article-body code {
-    @apply rounded bg-paper px-1.5 py-0.5 text-base text-ink;
+    @apply border border-ink/15 bg-canvas px-1.5 py-0.5 font-mono text-base text-ink;
   }
 
   .article-body pre {
-    @apply my-5 overflow-x-auto rounded-lg bg-ink p-4 text-base leading-7 text-paper;
+    @apply my-5 overflow-x-auto border-2 border-ink bg-ink p-4 font-mono text-base leading-7 text-paper;
+    box-shadow: 4px 4px 0 var(--color-brand);
   }
 
   .article-body pre code {
-    @apply bg-transparent p-0 text-paper;
+    @apply border-0 bg-transparent p-0 text-paper;
+  }
+
+  .article-body blockquote {
+    @apply my-6;
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: clamp(1.3rem, 2.4vw, 1.85rem);
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    color: var(--color-ink);
+    border-left: 5px solid var(--color-accent);
+    padding-left: 1.25rem;
   }
 
   .article-body a {
-    @apply font-bold text-brand hover:text-brand-dark;
+    @apply font-semibold text-brand underline decoration-2 hover:text-accent;
+    text-underline-offset: 0.18em;
   }
 
   .prose-readme {
-    @apply max-w-full overflow-hidden leading-7;
+    @apply max-w-full overflow-hidden font-body leading-7 text-ink;
   }
 
   .prose-readme h1,
   .prose-readme h2,
   .prose-readme h3 {
-    @apply mt-8 mb-3 leading-tight text-ink;
+    @apply mt-8 mb-3 font-display leading-tight text-ink;
+    letter-spacing: -0.02em;
   }
 
   .prose-readme h1 {
-    @apply text-3xl font-extrabold;
+    @apply text-3xl font-bold;
   }
 
   .prose-readme h2 {
-    @apply border-b border-line pb-2 text-2xl font-extrabold;
+    @apply pb-2 text-2xl font-bold;
+    border-bottom: 3px solid var(--color-ink);
   }
 
   .prose-readme h3 {
@@ -105,7 +741,7 @@
   }
 
   .prose-readme ul {
-    @apply list-disc;
+    @apply list-disc marker:text-accent;
   }
 
   .prose-readme ol {
@@ -113,19 +749,20 @@
   }
 
   .prose-readme a {
-    @apply font-bold text-brand hover:text-brand-dark;
+    @apply font-semibold text-brand underline decoration-2 hover:text-accent;
+    text-underline-offset: 0.15em;
   }
 
   .prose-readme code {
-    @apply rounded bg-canvas px-1.5 py-0.5 text-sm text-ink;
+    @apply border border-ink/15 bg-canvas px-1.5 py-0.5 font-mono text-sm text-ink;
   }
 
   .prose-readme pre {
-    @apply my-5 max-w-full overflow-x-auto rounded-lg bg-ink p-4 text-sm leading-6 text-paper;
+    @apply my-5 max-w-full overflow-x-auto border-2 border-ink bg-ink p-4 font-mono text-sm leading-6 text-paper;
   }
 
   .prose-readme pre code {
-    @apply bg-transparent p-0 text-paper;
+    @apply border-0 bg-transparent p-0 text-paper;
   }
 
   .prose-readme table {
@@ -134,17 +771,35 @@
 
   .prose-readme th,
   .prose-readme td {
-    @apply border border-line px-3 py-2;
+    @apply border-2 border-ink px-3 py-2;
   }
 
+  .prose-readme th {
+    @apply bg-canvas font-mono uppercase;
+    letter-spacing: 0.03em;
+  }
+
+  /*
+   * ====================================================================
+   * AMBIENT SVG DECORATION (LightSvgMotion). On-brand RISO motion, not generic
+   * ambient loops: the connector rule "prints" by rolling its dash (a press
+   * feeding paper), the dot fields SHIMMER like a halftone screen catching ink,
+   * the satellites JITTER on a tiny sub-pixel off-register wobble (the plate
+   * misregistration), and the orbit ring rolls its stamped dashes. All keep the
+   * `.motion-*` hooks so the reduced-motion catch-all below neutralises them.
+   * ====================================================================
+   */
+
+  /* Connector rule — a slow PRINT-ROLL: the dash pattern feeds through like a
+     press pulling paper, rather than a generic marching-ants flow. */
   .motion-line {
     fill: none;
     stroke: currentColor;
     stroke-width: 4;
     stroke-linecap: round;
-    color: rgba(255, 253, 248, 0.55);
-    stroke-dasharray: 18 18;
-    animation: dash-flow 18s linear infinite;
+    color: rgba(251, 247, 238, 0.55);
+    stroke-dasharray: 26 14;
+    animation: riso-roll 9s linear infinite;
   }
 
   .motion-delay {
@@ -153,62 +808,156 @@
 
   .motion-dots,
   .motion-pulse {
-    fill: #f0b94f;
+    fill: var(--color-sun);
   }
 
+  /* Stamped satellites — a tiny MISREGISTRATION jitter (sub-pixel off-register
+     wobble + faint ink-density flicker), the signature riso plate drift. */
   .motion-pulse {
     transform-origin: center;
-    animation: pulse-soft 3.8s ease-in-out infinite;
+    transform-box: fill-box;
+    animation: riso-jitter 1.9s steps(1, end) infinite;
   }
 
+  /* Stamped concentric orbit — its dash rolls like the connector (print-roll),
+     reading as a ring being pulled off the drum. */
   .motion-orbit {
     fill: none;
-    stroke: #0f6f5c;
+    stroke: var(--color-brand);
     stroke-width: 2;
-    stroke-dasharray: 10 12;
-    animation: dash-flow 22s linear infinite;
+    stroke-dasharray: 14 10;
+    animation: riso-roll 14s linear infinite;
   }
 
+  /* Misregistration frame — drifts on a diagonal so the stacked 3-ink outlines
+     visibly slip out of and back into register (the off-press signature). */
   .motion-float {
-    animation: float-soft 6s ease-in-out infinite;
+    transform-box: fill-box;
+    animation: riso-misregister 7s ease-in-out infinite;
+  }
+
+  /* Halftone dot screens that should SHIMMER (ink catching the screen). Opt-in
+     via this hook on a <rect> filled with a dot pattern. */
+  .motion-screen {
+    animation: riso-shimmer 4.2s ease-in-out infinite;
   }
 }
 
-@keyframes dash-flow {
+@keyframes riso-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
   to {
-    stroke-dashoffset: -180;
-  }
-}
-
-@keyframes pulse-soft {
-  0%,
-  100% {
-    opacity: 0.55;
-    transform: scale(0.9);
-  }
-
-  50% {
     opacity: 1;
-    transform: scale(1.1);
-  }
-}
-
-@keyframes float-soft {
-  0%,
-  100% {
     transform: translateY(0);
   }
+}
 
+/*
+ * RISO PRINT-ROLL — the dash pattern feeds through like paper pulled past a
+ * drum. One full dash period (40px = 26+14) so the roll is seamless.
+ */
+@keyframes riso-roll {
+  to {
+    stroke-dashoffset: -40;
+  }
+}
+
+/*
+ * MISREGISTRATION JITTER — a stamped satellite drifts a sub-pixel off-register
+ * and the ink density flickers, like a plate that never quite lands true.
+ * `steps()` timing makes it snap between registers (print stutter), not glide.
+ */
+@keyframes riso-jitter {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0.85;
+  }
+  25% {
+    transform: translate(0.6px, -0.5px);
+    opacity: 1;
+  }
   50% {
-    transform: translateY(-10px);
+    transform: translate(-0.5px, 0.4px);
+    opacity: 0.7;
+  }
+  75% {
+    transform: translate(0.4px, 0.6px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 0.85;
+  }
+}
+
+/*
+ * MISREGISTER DRIFT — the stacked 3-ink outline slips out of and back into
+ * register on a slow diagonal, the off-press look of a riso pull.
+ */
+@keyframes riso-misregister {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-3px, 2.5px);
+  }
+}
+
+/*
+ * HALFTONE SHIMMER — the dot screen breathes its ink density, like a screen
+ * catching slightly more or less ink across a pull. Opacity only, so no layout.
+ */
+@keyframes riso-shimmer {
+  0%,
+  100% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
+  /*
+   * Robust catch-all so any current OR future animation/transition is
+   * neutralised for users who request reduced motion. Because the reveal
+   * keyframe's final frame is the visible state, killing the animation leaves
+   * `.reveal` content fully shown — but force opacity:1 explicitly so a paused
+   * pre-animation frame can never leave content invisible. (A11Y-15)
+   */
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .reveal,
+  .reveal-stagger > *,
+  html.js-reveal .reveal,
+  html.js-reveal .reveal-stagger > * {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+    will-change: auto !important;
+  }
+
+  /*
+   * The decorative SVG loops have no meaningful end frame, so stop them
+   * outright. Kept explicit as documentation of the intentionally-animated
+   * classes.
+   */
   .motion-line,
   .motion-pulse,
   .motion-orbit,
-  .motion-float {
-    animation: none;
+  .motion-float,
+  .motion-screen {
+    animation: none !important;
   }
 }
