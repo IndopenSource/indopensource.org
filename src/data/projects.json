@@ -33,10 +33,10 @@
     "url": "https://github.com/jipraks/yt-short-clipper",
     "homepage": "",
     "language": "Python",
-    "stars": 820,
+    "stars": 821,
     "forks": 254,
     "topics": [],
-    "updatedAt": "2026-06-16T15:55:32Z",
+    "updatedAt": "2026-06-16T19:12:21Z",
     "pushedAt": "2026-05-29T12:39:38Z",
     "latestRelease": {
       "name": "YT Short Clipper v0.1.2",
@@ -84,7 +84,7 @@
     "url": "https://github.com/Drenzzz/ADBKit",
     "homepage": "",
     "language": "TypeScript",
-    "stars": 316,
+    "stars": 317,
     "forks": 36,
     "topics": [
       "astrojs",
@@ -92,7 +92,7 @@
       "wails",
       "wails-app"
     ],
-    "updatedAt": "2026-06-16T13:22:39Z",
+    "updatedAt": "2026-06-16T17:34:03Z",
     "pushedAt": "2026-04-04T02:31:28Z",
     "latestRelease": {
       "name": "v1.3",
@@ -111,8 +111,8 @@
     "url": "https://github.com/fajarhide/omni",
     "homepage": "https://omni.weekndlabs.com",
     "language": "Rust",
-    "stars": 249,
-    "forks": 25,
+    "stars": 250,
+    "forks": 26,
     "topics": [
       "ai-agents",
       "antigravity",
@@ -130,7 +130,7 @@
       "token-reduction",
       "token-savings"
     ],
-    "updatedAt": "2026-06-16T06:30:16Z",
+    "updatedAt": "2026-06-16T18:49:23Z",
     "pushedAt": "2026-06-15T14:06:43Z",
     "latestRelease": {
       "name": "v0.6.0",
@@ -198,7 +198,7 @@
       "workspace-manager"
     ],
     "updatedAt": "2026-06-16T16:00:55Z",
-    "pushedAt": "2026-06-16T16:00:21Z",
+    "pushedAt": "2026-06-16T17:27:25Z",
     "latestRelease": {
       "name": "Termul Manager v0.4.7",
       "tagName": "v0.4.7",
@@ -426,10 +426,10 @@
     "updatedAt": "2026-06-16T14:50:46Z",
     "pushedAt": "2026-06-16T14:47:01Z",
     "latestRelease": {
-      "name": "TEDI v0.3.36",
-      "tagName": "v0.3.36",
-      "url": "https://github.com/IlhamriSKY/TEDI/releases/tag/v0.3.36",
-      "publishedAt": "2026-06-13T13:16:24Z"
+      "name": "TEDI v0.3.37",
+      "tagName": "v0.3.37",
+      "url": "https://github.com/IlhamriSKY/TEDI/releases/tag/v0.3.37",
+      "publishedAt": "2026-06-16T21:15:54Z"
     },
     "archived": false
   },
@@ -661,13 +661,13 @@
       "reactjs",
       "vitejs"
     ],
-    "updatedAt": "2026-06-16T16:30:53Z",
-    "pushedAt": "2026-06-16T16:29:20Z",
+    "updatedAt": "2026-06-16T18:49:40Z",
+    "pushedAt": "2026-06-16T18:48:48Z",
     "latestRelease": {
-      "name": "v0.8.16",
-      "tagName": "v0.8.16",
-      "url": "https://github.com/abilfida/OmniDrive/releases/tag/v0.8.16",
-      "publishedAt": "2026-06-16T14:23:24Z"
+      "name": "v0.8.17",
+      "tagName": "v0.8.17",
+      "url": "https://github.com/abilfida/OmniDrive/releases/tag/v0.8.17",
+      "publishedAt": "2026-06-16T18:49:50Z"
     },
     "archived": false
   },
@@ -744,8 +744,8 @@
       "static-site",
       "sveltekit"
     ],
-    "updatedAt": "2026-06-16T17:01:41Z",
-    "pushedAt": "2026-06-16T17:21:41Z",
+    "updatedAt": "2026-06-16T17:48:45Z",
+    "pushedAt": "2026-06-16T17:48:25Z",
     "latestRelease": {
       "name": "Bansos v0.0.11",
       "tagName": "v0.0.11",
@@ -837,7 +837,7 @@
       "vector-database"
     ],
     "updatedAt": "2026-06-16T07:59:36Z",
-    "pushedAt": "2026-06-14T15:20:47Z",
+    "pushedAt": "2026-06-16T18:56:01Z",
     "latestRelease": {
       "name": "Release v0.2.0",
       "tagName": "v0.2.0",
@@ -894,6 +894,39 @@
     "archived": false
   },
   {
+    "fullName": "fajarhide/heimsense",
+    "name": "heimsense",
+    "owner": "fajarhide",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/4769529?v=4",
+    "description": "Unlock Your Claude Code for Any LLM",
+    "url": "https://github.com/fajarhide/heimsense",
+    "homepage": "",
+    "language": "Go",
+    "stars": 10,
+    "forks": 1,
+    "topics": [
+      "antrophic",
+      "api-adapter",
+      "claude-code",
+      "cli",
+      "deepseek",
+      "golang",
+      "groq",
+      "llm",
+      "openai",
+      "proxy"
+    ],
+    "updatedAt": "2026-06-16T18:53:10Z",
+    "pushedAt": "2026-05-03T11:25:37Z",
+    "latestRelease": {
+      "name": "Release v0.1.3",
+      "tagName": "v0.1.3",
+      "url": "https://github.com/fajarhide/heimsense/releases/tag/v0.1.3",
+      "publishedAt": "2026-04-01T03:08:28Z"
+    },
+    "archived": false
+  },
+  {
     "fullName": "rizukirr/muslimtify",
     "name": "muslimtify",
     "owner": "rizukirr",
@@ -946,39 +979,6 @@
       "tagName": "v0.1.17",
       "url": "https://github.com/ahmadghaisanfad2/absen-kelas/releases/tag/v0.1.17",
       "publishedAt": "2026-06-11T16:42:59Z"
-    },
-    "archived": false
-  },
-  {
-    "fullName": "fajarhide/heimsense",
-    "name": "heimsense",
-    "owner": "fajarhide",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/4769529?v=4",
-    "description": "Unlock Your Claude Code for Any LLM",
-    "url": "https://github.com/fajarhide/heimsense",
-    "homepage": "",
-    "language": "Go",
-    "stars": 9,
-    "forks": 0,
-    "topics": [
-      "antrophic",
-      "api-adapter",
-      "claude-code",
-      "cli",
-      "deepseek",
-      "golang",
-      "groq",
-      "llm",
-      "openai",
-      "proxy"
-    ],
-    "updatedAt": "2026-06-13T09:04:29Z",
-    "pushedAt": "2026-05-03T11:25:37Z",
-    "latestRelease": {
-      "name": "Release v0.1.3",
-      "tagName": "v0.1.3",
-      "url": "https://github.com/fajarhide/heimsense/releases/tag/v0.1.3",
-      "publishedAt": "2026-04-01T03:08:28Z"
     },
     "archived": false
   },
@@ -1123,8 +1123,8 @@
       "zero-trust",
       "zod"
     ],
-    "updatedAt": "2026-06-14T13:17:14Z",
-    "pushedAt": "2026-06-14T13:17:10Z",
+    "updatedAt": "2026-06-16T21:08:39Z",
+    "pushedAt": "2026-06-16T21:07:35Z",
     "latestRelease": {
       "name": "v1.8.1 — Security & Compat Patch",
       "tagName": "v1.8.1",
