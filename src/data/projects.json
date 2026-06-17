@@ -33,10 +33,10 @@
     "url": "https://github.com/jipraks/yt-short-clipper",
     "homepage": "",
     "language": "Python",
-    "stars": 821,
+    "stars": 822,
     "forks": 254,
     "topics": [],
-    "updatedAt": "2026-06-16T19:12:21Z",
+    "updatedAt": "2026-06-17T13:00:07Z",
     "pushedAt": "2026-05-29T12:39:38Z",
     "latestRelease": {
       "name": "YT Short Clipper v0.1.2",
@@ -55,7 +55,7 @@
     "url": "https://github.com/rayasabari/joko-ui",
     "homepage": "https://jokoui.web.id",
     "language": "TypeScript",
-    "stars": 404,
+    "stars": 405,
     "forks": 26,
     "topics": [
       "css",
@@ -65,7 +65,7 @@
       "ui-framework",
       "uikit"
     ],
-    "updatedAt": "2026-06-15T22:33:54Z",
+    "updatedAt": "2026-06-17T14:35:52Z",
     "pushedAt": "2026-06-06T06:51:25Z",
     "latestRelease": {
       "name": "v0.8.0",
@@ -111,7 +111,7 @@
     "url": "https://github.com/fajarhide/omni",
     "homepage": "https://omni.weekndlabs.com",
     "language": "Rust",
-    "stars": 253,
+    "stars": 256,
     "forks": 26,
     "topics": [
       "ai-agents",
@@ -130,7 +130,7 @@
       "token-reduction",
       "token-savings"
     ],
-    "updatedAt": "2026-06-17T11:08:58Z",
+    "updatedAt": "2026-06-17T15:41:38Z",
     "pushedAt": "2026-06-15T14:06:43Z",
     "latestRelease": {
       "name": "v0.6.0",
@@ -181,7 +181,7 @@
     "homepage": "https://termul.dev",
     "language": "TypeScript",
     "stars": 138,
-    "forks": 29,
+    "forks": 30,
     "topics": [
       "cross-platform",
       "desktop-app",
@@ -315,7 +315,7 @@
       "sveltekit"
     ],
     "updatedAt": "2026-06-16T10:59:45Z",
-    "pushedAt": "2026-06-17T05:02:13Z",
+    "pushedAt": "2026-06-17T15:03:34Z",
     "latestRelease": {
       "name": "svelte-audio-ui@1.0.1",
       "tagName": "v1.0.1",
@@ -477,6 +477,28 @@
     "archived": false
   },
   {
+    "fullName": "firewalker06/tycho",
+    "name": "tycho",
+    "owner": "firewalker06",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/157515?v=4",
+    "description": "Its Factorio for coding agents",
+    "url": "https://github.com/firewalker06/tycho",
+    "homepage": "",
+    "language": "Ruby",
+    "stars": 33,
+    "forks": 1,
+    "topics": [],
+    "updatedAt": "2026-06-17T14:25:12Z",
+    "pushedAt": "2026-06-16T10:41:59Z",
+    "latestRelease": {
+      "name": "Tycho v0.5.0",
+      "tagName": "v0.5.0",
+      "url": "https://github.com/firewalker06/tycho/releases/tag/v0.5.0",
+      "publishedAt": "2026-06-13T04:05:24Z"
+    },
+    "archived": false
+  },
+  {
     "fullName": "pendig/rute-bayar",
     "name": "rute-bayar",
     "owner": "pendig",
@@ -544,28 +566,6 @@
     "archived": false
   },
   {
-    "fullName": "firewalker06/tycho",
-    "name": "tycho",
-    "owner": "firewalker06",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/157515?v=4",
-    "description": "Its Factorio for coding agents",
-    "url": "https://github.com/firewalker06/tycho",
-    "homepage": "",
-    "language": "Ruby",
-    "stars": 26,
-    "forks": 1,
-    "topics": [],
-    "updatedAt": "2026-06-16T10:42:04Z",
-    "pushedAt": "2026-06-16T10:41:59Z",
-    "latestRelease": {
-      "name": "Tycho v0.5.0",
-      "tagName": "v0.5.0",
-      "url": "https://github.com/firewalker06/tycho/releases/tag/v0.5.0",
-      "publishedAt": "2026-06-13T04:05:24Z"
-    },
-    "archived": false
-  },
-  {
     "fullName": "ardli-firman/sha-print",
     "name": "sha-print",
     "owner": "ardli-firman",
@@ -628,6 +628,39 @@
     "archived": false
   },
   {
+    "fullName": "wauputr4/bansos",
+    "name": "bansos",
+    "owner": "wauputr4",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/103489788?v=4",
+    "description": "bansos.dev — Promo developer Indonesia: domain gratis, AI credits, cloud credits, hosting free-tier, API credits, database credits, startup credits, diskon tools coding & hosting gratis. Open source.",
+    "url": "https://github.com/wauputr4/bansos",
+    "homepage": "https://bansos.dev",
+    "language": "Svelte",
+    "stars": 19,
+    "forks": 3,
+    "topics": [
+      "bansos",
+      "cli",
+      "cloudflare-pages",
+      "developer-resources",
+      "developer-tools",
+      "freebies",
+      "indonesia",
+      "open-source",
+      "static-site",
+      "sveltekit"
+    ],
+    "updatedAt": "2026-06-17T13:07:34Z",
+    "pushedAt": "2026-06-17T12:47:51Z",
+    "latestRelease": {
+      "name": "v0.0.12 - Web Form & UI Improvements",
+      "tagName": "v0.0.12",
+      "url": "https://github.com/wauputr4/bansos/releases/tag/v0.0.12",
+      "publishedAt": "2026-06-16T22:24:26Z"
+    },
+    "archived": false
+  },
+  {
     "fullName": "RafiulM/warungos",
     "name": "warungos",
     "owner": "RafiulM",
@@ -642,39 +675,6 @@
     "updatedAt": "2026-06-11T17:23:43Z",
     "pushedAt": "2026-05-21T16:51:06Z",
     "latestRelease": null,
-    "archived": false
-  },
-  {
-    "fullName": "wauputr4/bansos",
-    "name": "bansos",
-    "owner": "wauputr4",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/103489788?v=4",
-    "description": "bansos.dev — Promo developer Indonesia: domain gratis, AI credits, cloud credits, hosting free-tier, API credits, database credits, startup credits, diskon tools coding & hosting gratis. Open source.",
-    "url": "https://github.com/wauputr4/bansos",
-    "homepage": "https://bansos.dev",
-    "language": "Svelte",
-    "stars": 18,
-    "forks": 3,
-    "topics": [
-      "bansos",
-      "cli",
-      "cloudflare-pages",
-      "developer-resources",
-      "developer-tools",
-      "freebies",
-      "indonesia",
-      "open-source",
-      "static-site",
-      "sveltekit"
-    ],
-    "updatedAt": "2026-06-17T10:56:35Z",
-    "pushedAt": "2026-06-17T11:00:19Z",
-    "latestRelease": {
-      "name": "v0.0.12 - Web Form & UI Improvements",
-      "tagName": "v0.0.12",
-      "url": "https://github.com/wauputr4/bansos/releases/tag/v0.0.12",
-      "publishedAt": "2026-06-16T22:24:26Z"
-    },
     "archived": false
   },
   {
@@ -711,13 +711,13 @@
     "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/3317904?v=4",
     "description": "NATS | Open Source Business and Accounting Software",
     "url": "https://github.com/maziyank/nats",
-    "homepage": "",
+    "homepage": "https://maziyank.github.io/nats",
     "language": "TypeScript",
     "stars": 15,
     "forks": 1,
     "topics": [],
-    "updatedAt": "2026-06-16T00:01:25Z",
-    "pushedAt": "2026-06-16T00:01:21Z",
+    "updatedAt": "2026-06-17T14:05:50Z",
+    "pushedAt": "2026-06-17T13:55:10Z",
     "latestRelease": null,
     "archived": false
   },
@@ -1296,13 +1296,13 @@
       "rest-api",
       "rust"
     ],
-    "updatedAt": "2026-06-17T11:14:29Z",
-    "pushedAt": "2026-06-17T11:16:21Z",
+    "updatedAt": "2026-06-17T15:43:12Z",
+    "pushedAt": "2026-06-17T15:42:09Z",
     "latestRelease": {
-      "name": "v0.2.4",
-      "tagName": "v0.2.4",
-      "url": "https://github.com/rizukirr/apic/releases/tag/v0.2.4",
-      "publishedAt": "2026-06-16T09:11:51Z"
+      "name": "v0.2.5",
+      "tagName": "v0.2.5",
+      "url": "https://github.com/rizukirr/apic/releases/tag/v0.2.5",
+      "publishedAt": "2026-06-17T15:42:23Z"
     },
     "archived": false
   },
@@ -1373,8 +1373,8 @@
     "stars": 2,
     "forks": 0,
     "topics": [],
-    "updatedAt": "2026-06-17T06:40:56Z",
-    "pushedAt": "2026-06-17T06:40:52Z",
+    "updatedAt": "2026-06-17T13:21:26Z",
+    "pushedAt": "2026-06-17T13:21:12Z",
     "latestRelease": {
       "name": "v1.1.0",
       "tagName": "v1.1.0",
@@ -1434,13 +1434,13 @@
     "stars": 2,
     "forks": 0,
     "topics": [],
-    "updatedAt": "2026-06-16T08:57:03Z",
-    "pushedAt": "2026-06-16T08:56:59Z",
+    "updatedAt": "2026-06-17T15:57:58Z",
+    "pushedAt": "2026-06-17T15:57:56Z",
     "latestRelease": {
-      "name": "Masday CLI v0.3.71",
-      "tagName": "v0.3.71",
-      "url": "https://github.com/dayartcrew-web/masday-workflow-rust/releases/tag/v0.3.71",
-      "publishedAt": "2026-06-15T16:14:06Z"
+      "name": "Masday CLI v0.3.74",
+      "tagName": "v0.3.74",
+      "url": "https://github.com/dayartcrew-web/masday-workflow-rust/releases/tag/v0.3.74",
+      "publishedAt": "2026-06-17T16:04:25Z"
     },
     "archived": false
   },
@@ -1465,8 +1465,8 @@
       "disqus-alternative",
       "open-source"
     ],
-    "updatedAt": "2026-06-16T07:51:04Z",
-    "pushedAt": "2026-06-16T07:50:59Z",
+    "updatedAt": "2026-06-17T15:59:12Z",
+    "pushedAt": "2026-06-17T15:59:06Z",
     "latestRelease": null,
     "archived": false
   },
