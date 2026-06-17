@@ -111,7 +111,7 @@
     "url": "https://github.com/fajarhide/omni",
     "homepage": "https://omni.weekndlabs.com",
     "language": "Rust",
-    "stars": 256,
+    "stars": 259,
     "forks": 26,
     "topics": [
       "ai-agents",
@@ -130,7 +130,7 @@
       "token-reduction",
       "token-savings"
     ],
-    "updatedAt": "2026-06-17T15:41:38Z",
+    "updatedAt": "2026-06-17T18:23:39Z",
     "pushedAt": "2026-06-15T14:06:43Z",
     "latestRelease": {
       "name": "v0.6.0",
@@ -197,7 +197,7 @@
       "terminal-emulator",
       "workspace-manager"
     ],
-    "updatedAt": "2026-06-17T09:26:04Z",
+    "updatedAt": "2026-06-17T18:37:55Z",
     "pushedAt": "2026-06-17T09:26:00Z",
     "latestRelease": {
       "name": "Termul Manager v0.4.7",
@@ -287,7 +287,7 @@
     "homepage": "",
     "language": "TypeScript",
     "stars": 82,
-    "forks": 38,
+    "forks": 39,
     "topics": [],
     "updatedAt": "2026-06-17T02:40:14Z",
     "pushedAt": "2026-06-17T02:40:10Z",
@@ -1228,6 +1228,44 @@
     "archived": false
   },
   {
+    "fullName": "xpajonx/openempiric",
+    "name": "openempiric",
+    "owner": "xpajonx",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/55011516?v=4",
+    "description": "An event-sourced knowledge runtime for coding agents.",
+    "url": "https://github.com/xpajonx/openempiric",
+    "homepage": "",
+    "language": "Python",
+    "stars": 5,
+    "forks": 0,
+    "topics": [
+      "agent-memory",
+      "agentic-ai",
+      "ai-agents",
+      "context-engineering",
+      "developer-tools",
+      "event-sourcing",
+      "knowledge-engine",
+      "knowledge-graph",
+      "knowledge-management",
+      "knowledge-runtime",
+      "local-first",
+      "mcp",
+      "organizational-learning",
+      "python",
+      "semantic-search"
+    ],
+    "updatedAt": "2026-06-17T18:48:33Z",
+    "pushedAt": "2026-06-15T10:34:36Z",
+    "latestRelease": {
+      "name": "OpenEmpiric v0.97.1",
+      "tagName": "v0.97.1",
+      "url": "https://github.com/xpajonx/openempiric/releases/tag/v0.97.1",
+      "publishedAt": "2026-06-10T10:35:39Z"
+    },
+    "archived": false
+  },
+  {
     "fullName": "faisalaffan/ragi-instant",
     "name": "ragi-instant",
     "owner": "faisalaffan",
@@ -1296,8 +1334,8 @@
       "rest-api",
       "rust"
     ],
-    "updatedAt": "2026-06-17T15:43:12Z",
-    "pushedAt": "2026-06-17T15:42:09Z",
+    "updatedAt": "2026-06-17T17:08:41Z",
+    "pushedAt": "2026-06-17T17:10:37Z",
     "latestRelease": {
       "name": "v0.2.5",
       "tagName": "v0.2.5",
@@ -1321,44 +1359,6 @@
     "updatedAt": "2026-06-14T02:23:20Z",
     "pushedAt": "2026-06-06T19:03:01Z",
     "latestRelease": null,
-    "archived": false
-  },
-  {
-    "fullName": "xpajonx/openempiric",
-    "name": "openempiric",
-    "owner": "xpajonx",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/55011516?v=4",
-    "description": "An event-sourced knowledge runtime for coding agents.",
-    "url": "https://github.com/xpajonx/openempiric",
-    "homepage": "",
-    "language": "Python",
-    "stars": 4,
-    "forks": 0,
-    "topics": [
-      "agent-memory",
-      "agentic-ai",
-      "ai-agents",
-      "context-engineering",
-      "developer-tools",
-      "event-sourcing",
-      "knowledge-engine",
-      "knowledge-graph",
-      "knowledge-management",
-      "knowledge-runtime",
-      "local-first",
-      "mcp",
-      "organizational-learning",
-      "python",
-      "semantic-search"
-    ],
-    "updatedAt": "2026-06-17T10:10:21Z",
-    "pushedAt": "2026-06-15T10:34:36Z",
-    "latestRelease": {
-      "name": "OpenEmpiric v0.97.1",
-      "tagName": "v0.97.1",
-      "url": "https://github.com/xpajonx/openempiric/releases/tag/v0.97.1",
-      "publishedAt": "2026-06-10T10:35:39Z"
-    },
     "archived": false
   },
   {
@@ -1435,7 +1435,7 @@
     "forks": 0,
     "topics": [],
     "updatedAt": "2026-06-17T15:57:58Z",
-    "pushedAt": "2026-06-17T15:57:56Z",
+    "pushedAt": "2026-06-17T20:30:01Z",
     "latestRelease": {
       "name": "Masday CLI v0.3.74",
       "tagName": "v0.3.74",
@@ -1465,8 +1465,8 @@
       "disqus-alternative",
       "open-source"
     ],
-    "updatedAt": "2026-06-17T15:59:12Z",
-    "pushedAt": "2026-06-17T15:59:06Z",
+    "updatedAt": "2026-06-17T16:11:34Z",
+    "pushedAt": "2026-06-17T16:11:24Z",
     "latestRelease": null,
     "archived": false
   },
