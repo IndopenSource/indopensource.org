@@ -111,7 +111,7 @@
     "url": "https://github.com/fajarhide/omni",
     "homepage": "https://omni.weekndlabs.com",
     "language": "Rust",
-    "stars": 250,
+    "stars": 253,
     "forks": 26,
     "topics": [
       "ai-agents",
@@ -130,7 +130,7 @@
       "token-reduction",
       "token-savings"
     ],
-    "updatedAt": "2026-06-16T18:49:23Z",
+    "updatedAt": "2026-06-17T11:08:58Z",
     "pushedAt": "2026-06-15T14:06:43Z",
     "latestRelease": {
       "name": "v0.6.0",
@@ -161,13 +161,13 @@
       "productivity",
       "tiptap-editor"
     ],
-    "updatedAt": "2026-06-14T08:19:20Z",
-    "pushedAt": "2026-06-16T14:59:13Z",
+    "updatedAt": "2026-06-17T08:37:17Z",
+    "pushedAt": "2026-06-17T10:52:53Z",
     "latestRelease": {
-      "name": "v2.1.3",
-      "tagName": "v2.1.3",
-      "url": "https://github.com/hadziqmtqn/erd-builder-pro/releases/tag/v2.1.3",
-      "publishedAt": "2026-05-30T15:02:52Z"
+      "name": "v2.2.0",
+      "tagName": "v2.2.0",
+      "url": "https://github.com/hadziqmtqn/erd-builder-pro/releases/tag/v2.2.0",
+      "publishedAt": "2026-06-17T10:21:46Z"
     },
     "archived": false
   },
@@ -197,8 +197,8 @@
       "terminal-emulator",
       "workspace-manager"
     ],
-    "updatedAt": "2026-06-16T16:00:55Z",
-    "pushedAt": "2026-06-16T17:27:25Z",
+    "updatedAt": "2026-06-17T09:26:04Z",
+    "pushedAt": "2026-06-17T09:26:00Z",
     "latestRelease": {
       "name": "Termul Manager v0.4.7",
       "tagName": "v0.4.7",
@@ -333,14 +333,14 @@
     "url": "https://github.com/mydisha/keirouter",
     "homepage": "https://keirouter.app",
     "language": "Go",
-    "stars": 57,
+    "stars": 58,
     "forks": 19,
     "topics": [
       "ai",
       "airouter"
     ],
-    "updatedAt": "2026-06-17T03:53:58Z",
-    "pushedAt": "2026-06-16T11:16:30Z",
+    "updatedAt": "2026-06-17T06:25:21Z",
+    "pushedAt": "2026-06-17T06:11:55Z",
     "latestRelease": {
       "name": "v0.1.18",
       "tagName": "v0.1.18",
@@ -405,7 +405,7 @@
     "homepage": "https://tedi.ilhamriski.com",
     "language": "TypeScript",
     "stars": 37,
-    "forks": 3,
+    "forks": 4,
     "topics": [
       "ai",
       "ai-agent",
@@ -423,7 +423,7 @@
       "tauri",
       "terminal"
     ],
-    "updatedAt": "2026-06-17T04:25:23Z",
+    "updatedAt": "2026-06-17T11:04:10Z",
     "pushedAt": "2026-06-17T04:25:21Z",
     "latestRelease": {
       "name": "TEDI v0.3.39",
@@ -460,6 +460,23 @@
     "archived": false
   },
   {
+    "fullName": "raymondchins/agentmap",
+    "name": "agentmap",
+    "owner": "raymondchins",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/12913191?v=4",
+    "description": "The repo map your coding agent is forced to use — ~98% fewer tokens (up to 99.9% per task) to understand a TS/JS codebase. PageRank hubs, Aider-style symbol ranking, token-budgeted digest, --any router, wired into the agent loop.",
+    "url": "https://github.com/raymondchins/agentmap",
+    "homepage": "",
+    "language": "JavaScript",
+    "stars": 34,
+    "forks": 9,
+    "topics": [],
+    "updatedAt": "2026-06-17T08:24:08Z",
+    "pushedAt": "2026-06-16T04:08:21Z",
+    "latestRelease": null,
+    "archived": false
+  },
+  {
     "fullName": "pendig/rute-bayar",
     "name": "rute-bayar",
     "owner": "pendig",
@@ -489,23 +506,6 @@
       "url": "https://github.com/pendig/rute-bayar/releases/tag/v0.1.11",
       "publishedAt": "2026-06-15T11:39:59Z"
     },
-    "archived": false
-  },
-  {
-    "fullName": "raymondchins/agentmap",
-    "name": "agentmap",
-    "owner": "raymondchins",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/12913191?v=4",
-    "description": "The repo map your coding agent is forced to use — ~98% fewer tokens (up to 99.9% per task) to understand a TS/JS codebase. PageRank hubs, Aider-style symbol ranking, token-budgeted digest, --any router, wired into the agent loop.",
-    "url": "https://github.com/raymondchins/agentmap",
-    "homepage": "",
-    "language": "JavaScript",
-    "stars": 33,
-    "forks": 9,
-    "topics": [],
-    "updatedAt": "2026-06-16T05:09:54Z",
-    "pushedAt": "2026-06-16T04:08:21Z",
-    "latestRelease": null,
     "archived": false
   },
   {
@@ -653,7 +653,7 @@
     "url": "https://github.com/wauputr4/bansos",
     "homepage": "https://bansos.dev",
     "language": "Svelte",
-    "stars": 16,
+    "stars": 18,
     "forks": 3,
     "topics": [
       "bansos",
@@ -667,8 +667,8 @@
       "static-site",
       "sveltekit"
     ],
-    "updatedAt": "2026-06-17T04:32:14Z",
-    "pushedAt": "2026-06-17T01:40:46Z",
+    "updatedAt": "2026-06-17T10:56:35Z",
+    "pushedAt": "2026-06-17T11:00:19Z",
     "latestRelease": {
       "name": "v0.0.12 - Web Form & UI Improvements",
       "tagName": "v0.0.12",
@@ -836,8 +836,8 @@
       "sqlite",
       "vector-database"
     ],
-    "updatedAt": "2026-06-17T03:17:41Z",
-    "pushedAt": "2026-06-17T03:17:38Z",
+    "updatedAt": "2026-06-17T07:56:27Z",
+    "pushedAt": "2026-06-17T07:56:23Z",
     "latestRelease": {
       "name": "Release v0.2.0",
       "tagName": "v0.2.0",
@@ -1088,8 +1088,8 @@
       "goigniter",
       "golang"
     ],
-    "updatedAt": "2026-06-17T04:25:54Z",
-    "pushedAt": "2026-03-26T03:02:59Z",
+    "updatedAt": "2026-06-17T07:59:28Z",
+    "pushedAt": "2026-06-17T07:59:23Z",
     "latestRelease": {
       "name": "v0.2.0",
       "tagName": "v0.2.0",
@@ -1162,8 +1162,8 @@
     "stars": 6,
     "forks": 1,
     "topics": [],
-    "updatedAt": "2026-06-17T04:37:29Z",
-    "pushedAt": "2026-06-17T04:37:25Z",
+    "updatedAt": "2026-06-17T07:31:45Z",
+    "pushedAt": "2026-06-17T07:31:41Z",
     "latestRelease": {
       "name": "v1.1.35",
       "tagName": "v1.1.35",
@@ -1296,8 +1296,8 @@
       "rest-api",
       "rust"
     ],
-    "updatedAt": "2026-06-17T04:14:26Z",
-    "pushedAt": "2026-06-17T04:14:23Z",
+    "updatedAt": "2026-06-17T11:14:29Z",
+    "pushedAt": "2026-06-17T11:16:21Z",
     "latestRelease": {
       "name": "v0.2.4",
       "tagName": "v0.2.4",
@@ -1324,6 +1324,44 @@
     "archived": false
   },
   {
+    "fullName": "xpajonx/openempiric",
+    "name": "openempiric",
+    "owner": "xpajonx",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/55011516?v=4",
+    "description": "An event-sourced knowledge runtime for coding agents.",
+    "url": "https://github.com/xpajonx/openempiric",
+    "homepage": "",
+    "language": "Python",
+    "stars": 4,
+    "forks": 0,
+    "topics": [
+      "agent-memory",
+      "agentic-ai",
+      "ai-agents",
+      "context-engineering",
+      "developer-tools",
+      "event-sourcing",
+      "knowledge-engine",
+      "knowledge-graph",
+      "knowledge-management",
+      "knowledge-runtime",
+      "local-first",
+      "mcp",
+      "organizational-learning",
+      "python",
+      "semantic-search"
+    ],
+    "updatedAt": "2026-06-17T10:10:21Z",
+    "pushedAt": "2026-06-15T10:34:36Z",
+    "latestRelease": {
+      "name": "OpenEmpiric v0.97.1",
+      "tagName": "v0.97.1",
+      "url": "https://github.com/xpajonx/openempiric/releases/tag/v0.97.1",
+      "publishedAt": "2026-06-10T10:35:39Z"
+    },
+    "archived": false
+  },
+  {
     "fullName": "AdityaZxxx/sheltermark",
     "name": "sheltermark",
     "owner": "AdityaZxxx",
@@ -1335,8 +1373,8 @@
     "stars": 2,
     "forks": 0,
     "topics": [],
-    "updatedAt": "2026-06-16T04:25:20Z",
-    "pushedAt": "2026-06-16T04:25:20Z",
+    "updatedAt": "2026-06-17T06:40:56Z",
+    "pushedAt": "2026-06-17T06:40:52Z",
     "latestRelease": {
       "name": "v1.1.0",
       "tagName": "v1.1.0",
@@ -1451,44 +1489,6 @@
       "tagName": "v1.2.0",
       "url": "https://github.com/jutionck/tahlil-tracker/releases/tag/v1.2.0",
       "publishedAt": "2025-12-12T03:24:46Z"
-    },
-    "archived": false
-  },
-  {
-    "fullName": "xpajonx/openempiric",
-    "name": "openempiric",
-    "owner": "xpajonx",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/55011516?v=4",
-    "description": "An event-sourced knowledge runtime for coding agents.",
-    "url": "https://github.com/xpajonx/openempiric",
-    "homepage": "",
-    "language": "Python",
-    "stars": 2,
-    "forks": 0,
-    "topics": [
-      "agent-memory",
-      "agentic-ai",
-      "ai-agents",
-      "context-engineering",
-      "developer-tools",
-      "event-sourcing",
-      "knowledge-engine",
-      "knowledge-graph",
-      "knowledge-management",
-      "knowledge-runtime",
-      "local-first",
-      "mcp",
-      "organizational-learning",
-      "python",
-      "semantic-search"
-    ],
-    "updatedAt": "2026-06-13T21:37:31Z",
-    "pushedAt": "2026-06-15T10:34:36Z",
-    "latestRelease": {
-      "name": "OpenEmpiric v0.97.1",
-      "tagName": "v0.97.1",
-      "url": "https://github.com/xpajonx/openempiric/releases/tag/v0.97.1",
-      "publishedAt": "2026-06-10T10:35:39Z"
     },
     "archived": false
   },
