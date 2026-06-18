@@ -34,7 +34,7 @@
     "homepage": "",
     "language": "Python",
     "stars": 822,
-    "forks": 256,
+    "forks": 257,
     "topics": [],
     "updatedAt": "2026-06-17T13:00:07Z",
     "pushedAt": "2026-05-29T12:39:38Z",
@@ -111,7 +111,7 @@
     "url": "https://github.com/fajarhide/omni",
     "homepage": "https://omni.weekndlabs.com",
     "language": "Rust",
-    "stars": 271,
+    "stars": 272,
     "forks": 26,
     "topics": [
       "ai-agents",
@@ -130,7 +130,7 @@
       "token-reduction",
       "token-savings"
     ],
-    "updatedAt": "2026-06-18T14:27:01Z",
+    "updatedAt": "2026-06-18T18:59:38Z",
     "pushedAt": "2026-06-15T14:06:43Z",
     "latestRelease": {
       "name": "v0.6.0",
@@ -180,7 +180,7 @@
     "url": "https://github.com/gnoviawan/termul",
     "homepage": "https://termul.dev",
     "language": "TypeScript",
-    "stars": 138,
+    "stars": 139,
     "forks": 31,
     "topics": [
       "cross-platform",
@@ -197,7 +197,7 @@
       "terminal-emulator",
       "workspace-manager"
     ],
-    "updatedAt": "2026-06-18T15:52:05Z",
+    "updatedAt": "2026-06-18T17:31:43Z",
     "pushedAt": "2026-06-18T15:51:54Z",
     "latestRelease": {
       "name": "Termul Manager v0.4.8",
@@ -442,10 +442,10 @@
     "url": "https://github.com/raymondchins/agentmap",
     "homepage": "",
     "language": "JavaScript",
-    "stars": 35,
+    "stars": 37,
     "forks": 9,
     "topics": [],
-    "updatedAt": "2026-06-18T06:39:55Z",
+    "updatedAt": "2026-06-18T16:32:06Z",
     "pushedAt": "2026-06-16T04:08:21Z",
     "latestRelease": null,
     "archived": false
@@ -619,7 +619,7 @@
     "url": "https://github.com/wauputr4/bansos",
     "homepage": "https://bansos.dev",
     "language": "Svelte",
-    "stars": 20,
+    "stars": 21,
     "forks": 3,
     "topics": [
       "bansos",
@@ -633,8 +633,8 @@
       "static-site",
       "sveltekit"
     ],
-    "updatedAt": "2026-06-18T15:45:05Z",
-    "pushedAt": "2026-06-18T15:55:54Z",
+    "updatedAt": "2026-06-18T16:59:04Z",
+    "pushedAt": "2026-06-18T17:43:47Z",
     "latestRelease": {
       "name": "v0.0.12 - Web Form & UI Improvements",
       "tagName": "v0.0.12",
@@ -837,7 +837,7 @@
       "vector-database"
     ],
     "updatedAt": "2026-06-18T14:38:52Z",
-    "pushedAt": "2026-06-18T15:21:57Z",
+    "pushedAt": "2026-06-18T16:24:23Z",
     "latestRelease": {
       "name": "Release v0.2.0",
       "tagName": "v0.2.0",
@@ -972,8 +972,8 @@
       "windows-app",
       "windows-desktop"
     ],
-    "updatedAt": "2026-06-18T00:21:34Z",
-    "pushedAt": "2026-06-18T00:21:30Z",
+    "updatedAt": "2026-06-18T16:47:31Z",
+    "pushedAt": "2026-06-18T16:47:27Z",
     "latestRelease": {
       "name": "v0.2.3",
       "tagName": "v0.2.3",
@@ -1334,8 +1334,8 @@
       "rest-api",
       "rust"
     ],
-    "updatedAt": "2026-06-18T12:32:33Z",
-    "pushedAt": "2026-06-18T12:32:29Z",
+    "updatedAt": "2026-06-18T16:15:33Z",
+    "pushedAt": "2026-06-18T16:19:37Z",
     "latestRelease": {
       "name": "v0.2.5",
       "tagName": "v0.2.5",
