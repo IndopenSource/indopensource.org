@@ -34,7 +34,7 @@
     "homepage": "",
     "language": "Python",
     "stars": 822,
-    "forks": 254,
+    "forks": 255,
     "topics": [],
     "updatedAt": "2026-06-17T13:00:07Z",
     "pushedAt": "2026-05-29T12:39:38Z",
@@ -111,7 +111,7 @@
     "url": "https://github.com/fajarhide/omni",
     "homepage": "https://omni.weekndlabs.com",
     "language": "Rust",
-    "stars": 259,
+    "stars": 266,
     "forks": 26,
     "topics": [
       "ai-agents",
@@ -130,7 +130,7 @@
       "token-reduction",
       "token-savings"
     ],
-    "updatedAt": "2026-06-17T18:23:39Z",
+    "updatedAt": "2026-06-18T04:41:05Z",
     "pushedAt": "2026-06-15T14:06:43Z",
     "latestRelease": {
       "name": "v0.6.0",
@@ -149,7 +149,7 @@
     "url": "https://github.com/hadziqmtqn/erd-builder-pro",
     "homepage": "https://demo.erdbuilderpro.com",
     "language": "TypeScript",
-    "stars": 141,
+    "stars": 142,
     "forks": 27,
     "topics": [
       "coding",
@@ -161,7 +161,7 @@
       "productivity",
       "tiptap-editor"
     ],
-    "updatedAt": "2026-06-17T08:37:17Z",
+    "updatedAt": "2026-06-17T20:51:23Z",
     "pushedAt": "2026-06-17T10:52:53Z",
     "latestRelease": {
       "name": "v2.2.0",
@@ -181,7 +181,7 @@
     "homepage": "https://termul.dev",
     "language": "TypeScript",
     "stars": 138,
-    "forks": 30,
+    "forks": 31,
     "topics": [
       "cross-platform",
       "desktop-app",
@@ -197,8 +197,8 @@
       "terminal-emulator",
       "workspace-manager"
     ],
-    "updatedAt": "2026-06-17T18:37:55Z",
-    "pushedAt": "2026-06-17T09:26:00Z",
+    "updatedAt": "2026-06-18T04:50:17Z",
+    "pushedAt": "2026-06-18T04:53:04Z",
     "latestRelease": {
       "name": "Termul Manager v0.4.7",
       "tagName": "v0.4.7",
@@ -289,8 +289,8 @@
     "stars": 82,
     "forks": 39,
     "topics": [],
-    "updatedAt": "2026-06-17T02:40:14Z",
-    "pushedAt": "2026-06-17T02:40:10Z",
+    "updatedAt": "2026-06-18T05:01:13Z",
+    "pushedAt": "2026-06-18T05:00:57Z",
     "latestRelease": null,
     "archived": false
   },
@@ -315,7 +315,7 @@
       "sveltekit"
     ],
     "updatedAt": "2026-06-16T10:59:45Z",
-    "pushedAt": "2026-06-17T15:03:34Z",
+    "pushedAt": "2026-06-17T23:01:57Z",
     "latestRelease": {
       "name": "svelte-audio-ui@1.0.1",
       "tagName": "v1.0.1",
@@ -434,32 +434,6 @@
     "archived": false
   },
   {
-    "fullName": "rahmanef63/os-vps",
-    "name": "os-vps",
-    "owner": "rahmanef63",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/71124675?v=4",
-    "description": "Topside — mobile-first web cockpit for a headless Linux VPS. Terminal, files, monitor, media + a real remote browser in a desktop-style UI. Single Next.js app, no database, no agent.",
-    "url": "https://github.com/rahmanef63/os-vps",
-    "homepage": "",
-    "language": "TypeScript",
-    "stars": 34,
-    "forks": 6,
-    "topics": [
-      "file-manager",
-      "nextjs",
-      "playwright",
-      "self-hosted",
-      "shadcn-ui",
-      "terminal",
-      "vps",
-      "web-desktop"
-    ],
-    "updatedAt": "2026-06-15T07:38:57Z",
-    "pushedAt": "2026-06-15T07:38:53Z",
-    "latestRelease": null,
-    "archived": false
-  },
-  {
     "fullName": "raymondchins/agentmap",
     "name": "agentmap",
     "owner": "raymondchins",
@@ -528,6 +502,32 @@
       "url": "https://github.com/pendig/rute-bayar/releases/tag/v0.1.11",
       "publishedAt": "2026-06-15T11:39:59Z"
     },
+    "archived": false
+  },
+  {
+    "fullName": "rahmanef63/os-vps",
+    "name": "os-vps",
+    "owner": "rahmanef63",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/71124675?v=4",
+    "description": "Topside — mobile-first web cockpit for a headless Linux VPS. Terminal, files, monitor, media + a real remote browser in a desktop-style UI. Single Next.js app, no database, no agent.",
+    "url": "https://github.com/rahmanef63/os-vps",
+    "homepage": "",
+    "language": "TypeScript",
+    "stars": 33,
+    "forks": 6,
+    "topics": [
+      "file-manager",
+      "nextjs",
+      "playwright",
+      "self-hosted",
+      "shadcn-ui",
+      "terminal",
+      "vps",
+      "web-desktop"
+    ],
+    "updatedAt": "2026-06-17T23:28:58Z",
+    "pushedAt": "2026-06-15T07:38:53Z",
+    "latestRelease": null,
     "archived": false
   },
   {
@@ -651,7 +651,7 @@
       "sveltekit"
     ],
     "updatedAt": "2026-06-17T13:07:34Z",
-    "pushedAt": "2026-06-17T12:47:51Z",
+    "pushedAt": "2026-06-18T04:17:41Z",
     "latestRelease": {
       "name": "v0.0.12 - Web Form & UI Improvements",
       "tagName": "v0.0.12",
@@ -716,8 +716,8 @@
     "stars": 15,
     "forks": 1,
     "topics": [],
-    "updatedAt": "2026-06-17T14:05:50Z",
-    "pushedAt": "2026-06-17T13:55:10Z",
+    "updatedAt": "2026-06-18T01:27:13Z",
+    "pushedAt": "2026-06-18T01:27:09Z",
     "latestRelease": null,
     "archived": false
   },
@@ -894,6 +894,28 @@
     "archived": false
   },
   {
+    "fullName": "ahmadghaisanfad2/absen-kelas",
+    "name": "absen-kelas",
+    "owner": "ahmadghaisanfad2",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/82021575?v=4",
+    "description": "Proyek dari daftar awesome-indonesia.",
+    "url": "https://github.com/ahmadghaisanfad2/absen-kelas",
+    "homepage": "",
+    "language": "TypeScript",
+    "stars": 10,
+    "forks": 3,
+    "topics": [],
+    "updatedAt": "2026-06-18T01:22:04Z",
+    "pushedAt": "2026-06-11T16:34:43Z",
+    "latestRelease": {
+      "name": "Absen Kelas v0.1.17",
+      "tagName": "v0.1.17",
+      "url": "https://github.com/ahmadghaisanfad2/absen-kelas/releases/tag/v0.1.17",
+      "publishedAt": "2026-06-11T16:42:59Z"
+    },
+    "archived": false
+  },
+  {
     "fullName": "fajarhide/heimsense",
     "name": "heimsense",
     "owner": "fajarhide",
@@ -950,35 +972,13 @@
       "windows-app",
       "windows-desktop"
     ],
-    "updatedAt": "2026-06-13T19:04:43Z",
-    "pushedAt": "2026-06-13T19:04:39Z",
+    "updatedAt": "2026-06-18T00:21:34Z",
+    "pushedAt": "2026-06-18T00:21:30Z",
     "latestRelease": {
       "name": "v0.2.3",
       "tagName": "v0.2.3",
       "url": "https://github.com/rizukirr/muslimtify/releases/tag/v0.2.3",
       "publishedAt": "2026-05-26T02:38:49Z"
-    },
-    "archived": false
-  },
-  {
-    "fullName": "ahmadghaisanfad2/absen-kelas",
-    "name": "absen-kelas",
-    "owner": "ahmadghaisanfad2",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/82021575?v=4",
-    "description": "Proyek dari daftar awesome-indonesia.",
-    "url": "https://github.com/ahmadghaisanfad2/absen-kelas",
-    "homepage": "",
-    "language": "TypeScript",
-    "stars": 9,
-    "forks": 3,
-    "topics": [],
-    "updatedAt": "2026-06-13T17:25:47Z",
-    "pushedAt": "2026-06-11T16:34:43Z",
-    "latestRelease": {
-      "name": "Absen Kelas v0.1.17",
-      "tagName": "v0.1.17",
-      "url": "https://github.com/ahmadghaisanfad2/absen-kelas/releases/tag/v0.1.17",
-      "publishedAt": "2026-06-11T16:42:59Z"
     },
     "archived": false
   },
@@ -1162,8 +1162,8 @@
     "stars": 6,
     "forks": 1,
     "topics": [],
-    "updatedAt": "2026-06-17T07:31:45Z",
-    "pushedAt": "2026-06-17T07:31:41Z",
+    "updatedAt": "2026-06-18T02:55:03Z",
+    "pushedAt": "2026-06-18T02:55:00Z",
     "latestRelease": {
       "name": "v1.1.35",
       "tagName": "v1.1.35",
@@ -1203,6 +1203,23 @@
       "url": "https://github.com/wauputr4/skill-bansos/releases/tag/v0.1.1",
       "publishedAt": "2026-06-13T11:36:57Z"
     },
+    "archived": false
+  },
+  {
+    "fullName": "raymondchins/tokengratis-id",
+    "name": "tokengratis-id",
+    "owner": "raymondchins",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/12913191?v=4",
+    "description": "Directory free AI credits & free tier, Indonesia-first, auto-aggregated dari sumber komunitas. Aggregator transparan (bukan verifier), anti-halusinasi, maintenance nyaris nol.",
+    "url": "https://github.com/raymondchins/tokengratis-id",
+    "homepage": "https://tokengratis.id",
+    "language": "JavaScript",
+    "stars": 5,
+    "forks": 0,
+    "topics": [],
+    "updatedAt": "2026-06-18T03:37:30Z",
+    "pushedAt": "2026-06-15T10:31:11Z",
+    "latestRelease": null,
     "archived": false
   },
   {
@@ -1256,7 +1273,7 @@
       "semantic-search"
     ],
     "updatedAt": "2026-06-17T18:48:33Z",
-    "pushedAt": "2026-06-15T10:34:36Z",
+    "pushedAt": "2026-06-18T02:55:57Z",
     "latestRelease": {
       "name": "OpenEmpiric v0.97.1",
       "tagName": "v0.97.1",
@@ -1294,23 +1311,6 @@
     ],
     "updatedAt": "2026-06-14T11:42:34Z",
     "pushedAt": "2026-06-15T01:37:21Z",
-    "latestRelease": null,
-    "archived": false
-  },
-  {
-    "fullName": "raymondchins/tokengratis-id",
-    "name": "tokengratis-id",
-    "owner": "raymondchins",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/12913191?v=4",
-    "description": "Directory free AI credits & free tier, Indonesia-first, auto-aggregated dari sumber komunitas. Aggregator transparan (bukan verifier), anti-halusinasi, maintenance nyaris nol.",
-    "url": "https://github.com/raymondchins/tokengratis-id",
-    "homepage": "https://tokengratis.id",
-    "language": "JavaScript",
-    "stars": 4,
-    "forks": 0,
-    "topics": [],
-    "updatedAt": "2026-06-16T05:19:57Z",
-    "pushedAt": "2026-06-15T10:31:11Z",
     "latestRelease": null,
     "archived": false
   },
@@ -1435,7 +1435,7 @@
     "forks": 0,
     "topics": [],
     "updatedAt": "2026-06-17T15:57:58Z",
-    "pushedAt": "2026-06-17T20:30:01Z",
+    "pushedAt": "2026-06-17T22:03:55Z",
     "latestRelease": {
       "name": "Masday CLI v0.3.74",
       "tagName": "v0.3.74",
