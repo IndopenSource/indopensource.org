@@ -111,7 +111,7 @@
     "url": "https://github.com/fajarhide/omni",
     "homepage": "https://omni.weekndlabs.com",
     "language": "Rust",
-    "stars": 266,
+    "stars": 270,
     "forks": 26,
     "topics": [
       "ai-agents",
@@ -130,7 +130,7 @@
       "token-reduction",
       "token-savings"
     ],
-    "updatedAt": "2026-06-18T04:41:05Z",
+    "updatedAt": "2026-06-18T08:39:59Z",
     "pushedAt": "2026-06-15T14:06:43Z",
     "latestRelease": {
       "name": "v0.6.0",
@@ -197,8 +197,8 @@
       "terminal-emulator",
       "workspace-manager"
     ],
-    "updatedAt": "2026-06-18T04:50:17Z",
-    "pushedAt": "2026-06-18T04:53:04Z",
+    "updatedAt": "2026-06-18T09:42:26Z",
+    "pushedAt": "2026-06-18T09:42:21Z",
     "latestRelease": {
       "name": "Termul Manager v0.4.7",
       "tagName": "v0.4.7",
@@ -287,10 +287,10 @@
     "homepage": "",
     "language": "TypeScript",
     "stars": 82,
-    "forks": 39,
+    "forks": 40,
     "topics": [],
-    "updatedAt": "2026-06-18T05:01:13Z",
-    "pushedAt": "2026-06-18T05:00:57Z",
+    "updatedAt": "2026-06-18T05:25:26Z",
+    "pushedAt": "2026-06-18T05:25:23Z",
     "latestRelease": null,
     "archived": false
   },
@@ -303,7 +303,7 @@
     "url": "https://github.com/ddtamn/svelte-audio-ui",
     "homepage": "https://svelte-audio-ui.vercel.app/",
     "language": "Svelte",
-    "stars": 75,
+    "stars": 76,
     "forks": 4,
     "topics": [
       "audio",
@@ -314,7 +314,7 @@
       "svelte-components",
       "sveltekit"
     ],
-    "updatedAt": "2026-06-16T10:59:45Z",
+    "updatedAt": "2026-06-18T10:21:12Z",
     "pushedAt": "2026-06-17T23:01:57Z",
     "latestRelease": {
       "name": "svelte-audio-ui@1.0.1",
@@ -423,13 +423,13 @@
       "tauri",
       "terminal"
     ],
-    "updatedAt": "2026-06-17T11:04:10Z",
-    "pushedAt": "2026-06-17T04:25:21Z",
+    "updatedAt": "2026-06-18T08:08:57Z",
+    "pushedAt": "2026-06-18T08:08:55Z",
     "latestRelease": {
-      "name": "TEDI v0.3.39",
-      "tagName": "v0.3.39",
-      "url": "https://github.com/IlhamriSKY/TEDI/releases/tag/v0.3.39",
-      "publishedAt": "2026-06-17T05:09:26Z"
+      "name": "TEDI v0.3.41",
+      "tagName": "v0.3.41",
+      "url": "https://github.com/IlhamriSKY/TEDI/releases/tag/v0.3.41",
+      "publishedAt": "2026-06-18T08:25:55Z"
     },
     "archived": false
   },
@@ -442,10 +442,10 @@
     "url": "https://github.com/raymondchins/agentmap",
     "homepage": "",
     "language": "JavaScript",
-    "stars": 34,
+    "stars": 35,
     "forks": 9,
     "topics": [],
-    "updatedAt": "2026-06-17T08:24:08Z",
+    "updatedAt": "2026-06-18T06:39:55Z",
     "pushedAt": "2026-06-16T04:08:21Z",
     "latestRelease": null,
     "archived": false
@@ -462,8 +462,8 @@
     "stars": 33,
     "forks": 1,
     "topics": [],
-    "updatedAt": "2026-06-17T14:25:12Z",
-    "pushedAt": "2026-06-16T10:41:59Z",
+    "updatedAt": "2026-06-18T05:08:00Z",
+    "pushedAt": "2026-06-18T05:07:56Z",
     "latestRelease": {
       "name": "Tycho v0.5.0",
       "tagName": "v0.5.0",
@@ -611,6 +611,39 @@
     "archived": false
   },
   {
+    "fullName": "wauputr4/bansos",
+    "name": "bansos",
+    "owner": "wauputr4",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/103489788?v=4",
+    "description": "bansos.dev — Promo developer Indonesia: domain gratis, AI credits, cloud credits, hosting free-tier, API credits, database credits, startup credits, diskon tools coding & hosting gratis. Open source.",
+    "url": "https://github.com/wauputr4/bansos",
+    "homepage": "https://bansos.dev",
+    "language": "Svelte",
+    "stars": 20,
+    "forks": 3,
+    "topics": [
+      "bansos",
+      "cli",
+      "cloudflare-pages",
+      "developer-resources",
+      "developer-tools",
+      "freebies",
+      "indonesia",
+      "open-source",
+      "static-site",
+      "sveltekit"
+    ],
+    "updatedAt": "2026-06-18T07:06:45Z",
+    "pushedAt": "2026-06-18T05:56:07Z",
+    "latestRelease": {
+      "name": "v0.0.12 - Web Form & UI Improvements",
+      "tagName": "v0.0.12",
+      "url": "https://github.com/wauputr4/bansos/releases/tag/v0.0.12",
+      "publishedAt": "2026-06-16T22:24:26Z"
+    },
+    "archived": false
+  },
+  {
     "fullName": "rahmanef63/control-room",
     "name": "control-room",
     "owner": "rahmanef63",
@@ -625,39 +658,6 @@
     "updatedAt": "2026-06-14T12:42:48Z",
     "pushedAt": "2026-06-14T12:42:44Z",
     "latestRelease": null,
-    "archived": false
-  },
-  {
-    "fullName": "wauputr4/bansos",
-    "name": "bansos",
-    "owner": "wauputr4",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/103489788?v=4",
-    "description": "bansos.dev — Promo developer Indonesia: domain gratis, AI credits, cloud credits, hosting free-tier, API credits, database credits, startup credits, diskon tools coding & hosting gratis. Open source.",
-    "url": "https://github.com/wauputr4/bansos",
-    "homepage": "https://bansos.dev",
-    "language": "Svelte",
-    "stars": 19,
-    "forks": 3,
-    "topics": [
-      "bansos",
-      "cli",
-      "cloudflare-pages",
-      "developer-resources",
-      "developer-tools",
-      "freebies",
-      "indonesia",
-      "open-source",
-      "static-site",
-      "sveltekit"
-    ],
-    "updatedAt": "2026-06-17T13:07:34Z",
-    "pushedAt": "2026-06-18T04:17:41Z",
-    "latestRelease": {
-      "name": "v0.0.12 - Web Form & UI Improvements",
-      "tagName": "v0.0.12",
-      "url": "https://github.com/wauputr4/bansos/releases/tag/v0.0.12",
-      "publishedAt": "2026-06-16T22:24:26Z"
-    },
     "archived": false
   },
   {
@@ -836,8 +836,8 @@
       "sqlite",
       "vector-database"
     ],
-    "updatedAt": "2026-06-17T07:56:27Z",
-    "pushedAt": "2026-06-17T07:56:23Z",
+    "updatedAt": "2026-06-18T09:27:22Z",
+    "pushedAt": "2026-06-18T09:27:19Z",
     "latestRelease": {
       "name": "Release v0.2.0",
       "tagName": "v0.2.0",
@@ -1088,8 +1088,8 @@
       "goigniter",
       "golang"
     ],
-    "updatedAt": "2026-06-17T07:59:28Z",
-    "pushedAt": "2026-06-17T07:59:23Z",
+    "updatedAt": "2026-06-18T08:31:44Z",
+    "pushedAt": "2026-06-18T08:31:38Z",
     "latestRelease": {
       "name": "v0.2.0",
       "tagName": "v0.2.0",
@@ -1162,8 +1162,8 @@
     "stars": 6,
     "forks": 1,
     "topics": [],
-    "updatedAt": "2026-06-18T02:55:03Z",
-    "pushedAt": "2026-06-18T02:55:00Z",
+    "updatedAt": "2026-06-18T08:23:29Z",
+    "pushedAt": "2026-06-18T08:23:26Z",
     "latestRelease": {
       "name": "v1.1.35",
       "tagName": "v1.1.35",
@@ -1217,8 +1217,8 @@
     "stars": 5,
     "forks": 0,
     "topics": [],
-    "updatedAt": "2026-06-18T03:37:30Z",
-    "pushedAt": "2026-06-15T10:31:11Z",
+    "updatedAt": "2026-06-18T05:37:33Z",
+    "pushedAt": "2026-06-18T05:37:29Z",
     "latestRelease": null,
     "archived": false
   },
@@ -1272,13 +1272,13 @@
       "python",
       "semantic-search"
     ],
-    "updatedAt": "2026-06-17T18:48:33Z",
-    "pushedAt": "2026-06-18T02:55:57Z",
+    "updatedAt": "2026-06-18T07:58:31Z",
+    "pushedAt": "2026-06-18T08:08:33Z",
     "latestRelease": {
-      "name": "OpenEmpiric v0.97.1",
-      "tagName": "v0.97.1",
-      "url": "https://github.com/xpajonx/openempiric/releases/tag/v0.97.1",
-      "publishedAt": "2026-06-10T10:35:39Z"
+      "name": "OpenEmpiric v1.0.0",
+      "tagName": "v1.0.0",
+      "url": "https://github.com/xpajonx/openempiric/releases/tag/v1.0.0",
+      "publishedAt": "2026-06-18T08:08:33Z"
     },
     "archived": false
   },
@@ -1335,7 +1335,7 @@
       "rust"
     ],
     "updatedAt": "2026-06-17T17:08:41Z",
-    "pushedAt": "2026-06-17T17:10:37Z",
+    "pushedAt": "2026-06-18T07:33:42Z",
     "latestRelease": {
       "name": "v0.2.5",
       "tagName": "v0.2.5",
@@ -1465,8 +1465,8 @@
       "disqus-alternative",
       "open-source"
     ],
-    "updatedAt": "2026-06-17T16:11:34Z",
-    "pushedAt": "2026-06-17T16:11:24Z",
+    "updatedAt": "2026-06-18T09:33:29Z",
+    "pushedAt": "2026-06-18T09:33:23Z",
     "latestRelease": null,
     "archived": false
   },
