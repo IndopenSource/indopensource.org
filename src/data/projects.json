@@ -9,7 +9,7 @@
     "homepage": "",
     "language": "PHP",
     "stars": 1201,
-    "forks": 1145,
+    "forks": 1144,
     "topics": [
       "opensid",
       "sistem-informasi-desa"
@@ -34,7 +34,7 @@
     "homepage": "",
     "language": "Python",
     "stars": 822,
-    "forks": 255,
+    "forks": 256,
     "topics": [],
     "updatedAt": "2026-06-17T13:00:07Z",
     "pushedAt": "2026-05-29T12:39:38Z",
@@ -111,7 +111,7 @@
     "url": "https://github.com/fajarhide/omni",
     "homepage": "https://omni.weekndlabs.com",
     "language": "Rust",
-    "stars": 270,
+    "stars": 271,
     "forks": 26,
     "topics": [
       "ai-agents",
@@ -130,7 +130,7 @@
       "token-reduction",
       "token-savings"
     ],
-    "updatedAt": "2026-06-18T08:39:59Z",
+    "updatedAt": "2026-06-18T14:27:01Z",
     "pushedAt": "2026-06-15T14:06:43Z",
     "latestRelease": {
       "name": "v0.6.0",
@@ -149,7 +149,7 @@
     "url": "https://github.com/hadziqmtqn/erd-builder-pro",
     "homepage": "https://demo.erdbuilderpro.com",
     "language": "TypeScript",
-    "stars": 142,
+    "stars": 144,
     "forks": 27,
     "topics": [
       "coding",
@@ -161,7 +161,7 @@
       "productivity",
       "tiptap-editor"
     ],
-    "updatedAt": "2026-06-17T20:51:23Z",
+    "updatedAt": "2026-06-18T15:11:29Z",
     "pushedAt": "2026-06-17T10:52:53Z",
     "latestRelease": {
       "name": "v2.2.0",
@@ -197,13 +197,13 @@
       "terminal-emulator",
       "workspace-manager"
     ],
-    "updatedAt": "2026-06-18T09:42:26Z",
-    "pushedAt": "2026-06-18T09:42:21Z",
+    "updatedAt": "2026-06-18T15:52:05Z",
+    "pushedAt": "2026-06-18T15:51:54Z",
     "latestRelease": {
-      "name": "Termul Manager v0.4.7",
-      "tagName": "v0.4.7",
-      "url": "https://github.com/gnoviawan/termul/releases/tag/v0.4.7",
-      "publishedAt": "2026-06-15T05:59:31Z"
+      "name": "Termul Manager v0.4.8",
+      "tagName": "v0.4.8",
+      "url": "https://github.com/gnoviawan/termul/releases/tag/v0.4.8",
+      "publishedAt": "2026-06-18T14:29:13Z"
     },
     "archived": false
   },
@@ -286,10 +286,10 @@
     "url": "https://github.com/jipraks/kasirgratisan",
     "homepage": "",
     "language": "TypeScript",
-    "stars": 82,
+    "stars": 83,
     "forks": 40,
     "topics": [],
-    "updatedAt": "2026-06-18T05:25:26Z",
+    "updatedAt": "2026-06-18T14:13:58Z",
     "pushedAt": "2026-06-18T05:25:23Z",
     "latestRelease": null,
     "archived": false
@@ -333,13 +333,13 @@
     "url": "https://github.com/mydisha/keirouter",
     "homepage": "https://keirouter.app",
     "language": "Go",
-    "stars": 58,
-    "forks": 19,
+    "stars": 60,
+    "forks": 21,
     "topics": [
       "ai",
       "airouter"
     ],
-    "updatedAt": "2026-06-17T06:25:21Z",
+    "updatedAt": "2026-06-18T13:05:49Z",
     "pushedAt": "2026-06-17T06:11:55Z",
     "latestRelease": {
       "name": "v0.1.18",
@@ -423,13 +423,13 @@
       "tauri",
       "terminal"
     ],
-    "updatedAt": "2026-06-18T08:08:57Z",
-    "pushedAt": "2026-06-18T08:08:55Z",
+    "updatedAt": "2026-06-18T11:36:33Z",
+    "pushedAt": "2026-06-18T11:36:31Z",
     "latestRelease": {
-      "name": "TEDI v0.3.41",
-      "tagName": "v0.3.41",
-      "url": "https://github.com/IlhamriSKY/TEDI/releases/tag/v0.3.41",
-      "publishedAt": "2026-06-18T08:25:55Z"
+      "name": "TEDI v0.3.42",
+      "tagName": "v0.3.42",
+      "url": "https://github.com/IlhamriSKY/TEDI/releases/tag/v0.3.42",
+      "publishedAt": "2026-06-18T11:55:18Z"
     },
     "archived": false
   },
@@ -584,7 +584,7 @@
       "windows"
     ],
     "updatedAt": "2026-06-12T16:24:09Z",
-    "pushedAt": "2026-06-14T04:07:37Z",
+    "pushedAt": "2026-06-18T12:17:50Z",
     "latestRelease": {
       "name": "ShaPrint v1.4.7 (Stable)",
       "tagName": "v1.4.7-stable",
@@ -633,8 +633,8 @@
       "static-site",
       "sveltekit"
     ],
-    "updatedAt": "2026-06-18T07:06:45Z",
-    "pushedAt": "2026-06-18T05:56:07Z",
+    "updatedAt": "2026-06-18T15:45:05Z",
+    "pushedAt": "2026-06-18T15:55:54Z",
     "latestRelease": {
       "name": "v0.0.12 - Web Form & UI Improvements",
       "tagName": "v0.0.12",
@@ -836,8 +836,8 @@
       "sqlite",
       "vector-database"
     ],
-    "updatedAt": "2026-06-18T09:27:22Z",
-    "pushedAt": "2026-06-18T09:27:19Z",
+    "updatedAt": "2026-06-18T14:38:52Z",
+    "pushedAt": "2026-06-18T15:21:57Z",
     "latestRelease": {
       "name": "Release v0.2.0",
       "tagName": "v0.2.0",
@@ -1234,13 +1234,13 @@
     "stars": 5,
     "forks": 0,
     "topics": [],
-    "updatedAt": "2026-06-15T09:22:32Z",
-    "pushedAt": "2026-06-15T09:21:47Z",
+    "updatedAt": "2026-06-18T15:48:08Z",
+    "pushedAt": "2026-06-18T15:48:04Z",
     "latestRelease": {
-      "name": "v1.4.7 — works without a notch + Quit in Settings",
-      "tagName": "v1.4.7",
-      "url": "https://github.com/rifqiakrm/code-island/releases/tag/v1.4.7",
-      "publishedAt": "2026-06-15T09:00:34Z"
+      "name": "v1.4.8 — Plan-review window + Auto Mode",
+      "tagName": "v1.4.8",
+      "url": "https://github.com/rifqiakrm/code-island/releases/tag/v1.4.8",
+      "publishedAt": "2026-06-18T14:51:07Z"
     },
     "archived": false
   },
@@ -1334,8 +1334,8 @@
       "rest-api",
       "rust"
     ],
-    "updatedAt": "2026-06-17T17:08:41Z",
-    "pushedAt": "2026-06-18T07:33:42Z",
+    "updatedAt": "2026-06-18T12:32:33Z",
+    "pushedAt": "2026-06-18T12:32:29Z",
     "latestRelease": {
       "name": "v0.2.5",
       "tagName": "v0.2.5",
