@@ -8,13 +8,13 @@
     "url": "https://github.com/OpenSID/OpenSID",
     "homepage": "",
     "language": "PHP",
-    "stars": 1201,
+    "stars": 1202,
     "forks": 1144,
     "topics": [
       "opensid",
       "sistem-informasi-desa"
     ],
-    "updatedAt": "2026-06-16T15:27:10Z",
+    "updatedAt": "2026-06-18T23:29:41Z",
     "pushedAt": "2026-06-03T02:30:13Z",
     "latestRelease": {
       "name": "Rilis v2606.0.0",
@@ -180,7 +180,7 @@
     "url": "https://github.com/gnoviawan/termul",
     "homepage": "https://termul.dev",
     "language": "TypeScript",
-    "stars": 139,
+    "stars": 140,
     "forks": 31,
     "topics": [
       "cross-platform",
@@ -197,7 +197,7 @@
       "terminal-emulator",
       "workspace-manager"
     ],
-    "updatedAt": "2026-06-18T17:31:43Z",
+    "updatedAt": "2026-06-18T22:15:22Z",
     "pushedAt": "2026-06-18T15:51:54Z",
     "latestRelease": {
       "name": "Termul Manager v0.4.8",
@@ -423,13 +423,13 @@
       "tauri",
       "terminal"
     ],
-    "updatedAt": "2026-06-18T11:36:33Z",
-    "pushedAt": "2026-06-18T11:36:31Z",
+    "updatedAt": "2026-06-19T04:39:50Z",
+    "pushedAt": "2026-06-19T04:40:12Z",
     "latestRelease": {
-      "name": "TEDI v0.3.42",
-      "tagName": "v0.3.42",
-      "url": "https://github.com/IlhamriSKY/TEDI/releases/tag/v0.3.42",
-      "publishedAt": "2026-06-18T11:55:18Z"
+      "name": "TEDI v0.3.46",
+      "tagName": "v0.3.46",
+      "url": "https://github.com/IlhamriSKY/TEDI/releases/tag/v0.3.46",
+      "publishedAt": "2026-06-19T05:12:28Z"
     },
     "archived": false
   },
@@ -584,12 +584,45 @@
       "windows"
     ],
     "updatedAt": "2026-06-12T16:24:09Z",
-    "pushedAt": "2026-06-18T12:17:50Z",
+    "pushedAt": "2026-06-19T03:19:44Z",
     "latestRelease": {
       "name": "ShaPrint v1.4.7 (Stable)",
       "tagName": "v1.4.7-stable",
       "url": "https://github.com/ardli-firman/sha-print/releases/tag/v1.4.7-stable",
       "publishedAt": "2026-06-04T03:25:35Z"
+    },
+    "archived": false
+  },
+  {
+    "fullName": "wauputr4/bansos",
+    "name": "bansos",
+    "owner": "wauputr4",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/103489788?v=4",
+    "description": "bansos.dev — Promo developer Indonesia: domain gratis, AI credits, cloud credits, hosting free-tier, API credits, database credits, startup credits, diskon tools coding & hosting gratis. Open source.",
+    "url": "https://github.com/wauputr4/bansos",
+    "homepage": "https://bansos.dev",
+    "language": "Svelte",
+    "stars": 22,
+    "forks": 3,
+    "topics": [
+      "bansos",
+      "cli",
+      "cloudflare-pages",
+      "developer-resources",
+      "developer-tools",
+      "freebies",
+      "indonesia",
+      "open-source",
+      "static-site",
+      "sveltekit"
+    ],
+    "updatedAt": "2026-06-19T04:54:01Z",
+    "pushedAt": "2026-06-19T04:53:57Z",
+    "latestRelease": {
+      "name": "v0.0.12 - Web Form & UI Improvements",
+      "tagName": "v0.0.12",
+      "url": "https://github.com/wauputr4/bansos/releases/tag/v0.0.12",
+      "publishedAt": "2026-06-16T22:24:26Z"
     },
     "archived": false
   },
@@ -608,39 +641,6 @@
     "updatedAt": "2026-06-14T02:01:02Z",
     "pushedAt": "2026-04-08T09:29:42Z",
     "latestRelease": null,
-    "archived": false
-  },
-  {
-    "fullName": "wauputr4/bansos",
-    "name": "bansos",
-    "owner": "wauputr4",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/103489788?v=4",
-    "description": "bansos.dev — Promo developer Indonesia: domain gratis, AI credits, cloud credits, hosting free-tier, API credits, database credits, startup credits, diskon tools coding & hosting gratis. Open source.",
-    "url": "https://github.com/wauputr4/bansos",
-    "homepage": "https://bansos.dev",
-    "language": "Svelte",
-    "stars": 21,
-    "forks": 3,
-    "topics": [
-      "bansos",
-      "cli",
-      "cloudflare-pages",
-      "developer-resources",
-      "developer-tools",
-      "freebies",
-      "indonesia",
-      "open-source",
-      "static-site",
-      "sveltekit"
-    ],
-    "updatedAt": "2026-06-18T16:59:04Z",
-    "pushedAt": "2026-06-18T17:43:47Z",
-    "latestRelease": {
-      "name": "v0.0.12 - Web Form & UI Improvements",
-      "tagName": "v0.0.12",
-      "url": "https://github.com/wauputr4/bansos/releases/tag/v0.0.12",
-      "publishedAt": "2026-06-16T22:24:26Z"
-    },
     "archived": false
   },
   {
@@ -836,8 +836,8 @@
       "sqlite",
       "vector-database"
     ],
-    "updatedAt": "2026-06-18T14:38:52Z",
-    "pushedAt": "2026-06-18T16:24:23Z",
+    "updatedAt": "2026-06-19T05:15:09Z",
+    "pushedAt": "2026-06-19T05:15:04Z",
     "latestRelease": {
       "name": "Release v0.2.0",
       "tagName": "v0.2.0",
@@ -1021,8 +1021,8 @@
       "components-l",
       "tailwindcss"
     ],
-    "updatedAt": "2026-06-15T02:59:54Z",
-    "pushedAt": "2026-06-13T03:47:11Z",
+    "updatedAt": "2026-06-19T03:50:43Z",
+    "pushedAt": "2026-06-19T03:50:38Z",
     "latestRelease": null,
     "archived": false
   },
@@ -1041,6 +1041,32 @@
     "updatedAt": "2026-06-17T03:43:13Z",
     "pushedAt": "2026-06-13T16:18:08Z",
     "latestRelease": null,
+    "archived": false
+  },
+  {
+    "fullName": "semutdev/goigniter",
+    "name": "goigniter",
+    "owner": "semutdev",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/209312156?v=4",
+    "description": "Open Source GOLANG Framework with Codeigniter Flavour",
+    "url": "https://github.com/semutdev/goigniter",
+    "homepage": "https://goigniter.semutdev.my.id",
+    "language": "Go",
+    "stars": 8,
+    "forks": 2,
+    "topics": [
+      "codeigniter",
+      "goigniter",
+      "golang"
+    ],
+    "updatedAt": "2026-06-19T04:30:58Z",
+    "pushedAt": "2026-06-18T08:31:38Z",
+    "latestRelease": {
+      "name": "v0.2.0",
+      "tagName": "v0.2.0",
+      "url": "https://github.com/semutdev/goigniter/releases/tag/v0.2.0",
+      "publishedAt": "2026-03-26T02:30:23Z"
+    },
     "archived": false
   },
   {
@@ -1069,32 +1095,6 @@
       "tagName": "v0.2.0",
       "url": "https://github.com/rizukirr/hyprsimple/releases/tag/v0.2.0",
       "publishedAt": "2026-06-15T10:11:24Z"
-    },
-    "archived": false
-  },
-  {
-    "fullName": "semutdev/goigniter",
-    "name": "goigniter",
-    "owner": "semutdev",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/209312156?v=4",
-    "description": "Open Source GOLANG Framework with Codeigniter Flavour",
-    "url": "https://github.com/semutdev/goigniter",
-    "homepage": "https://goigniter.semutdev.my.id",
-    "language": "Go",
-    "stars": 7,
-    "forks": 2,
-    "topics": [
-      "codeigniter",
-      "goigniter",
-      "golang"
-    ],
-    "updatedAt": "2026-06-18T08:31:44Z",
-    "pushedAt": "2026-06-18T08:31:38Z",
-    "latestRelease": {
-      "name": "v0.2.0",
-      "tagName": "v0.2.0",
-      "url": "https://github.com/semutdev/goigniter/releases/tag/v0.2.0",
-      "publishedAt": "2026-03-26T02:30:23Z"
     },
     "archived": false
   },
@@ -1217,8 +1217,8 @@
     "stars": 5,
     "forks": 0,
     "topics": [],
-    "updatedAt": "2026-06-18T05:37:33Z",
-    "pushedAt": "2026-06-18T05:37:29Z",
+    "updatedAt": "2026-06-18T21:23:17Z",
+    "pushedAt": "2026-06-18T21:23:12Z",
     "latestRelease": null,
     "archived": false
   },
@@ -1334,8 +1334,8 @@
       "rest-api",
       "rust"
     ],
-    "updatedAt": "2026-06-18T16:15:33Z",
-    "pushedAt": "2026-06-18T16:19:37Z",
+    "updatedAt": "2026-06-19T00:06:37Z",
+    "pushedAt": "2026-06-19T02:38:35Z",
     "latestRelease": {
       "name": "v0.2.5",
       "tagName": "v0.2.5",
@@ -1413,7 +1413,7 @@
       "websockets"
     ],
     "updatedAt": "2026-06-16T11:41:29Z",
-    "pushedAt": "2026-06-16T11:50:28Z",
+    "pushedAt": "2026-06-19T04:42:37Z",
     "latestRelease": {
       "name": "Release v0.1.2",
       "tagName": "v0.1.2",
@@ -1434,8 +1434,8 @@
     "stars": 2,
     "forks": 0,
     "topics": [],
-    "updatedAt": "2026-06-17T15:57:58Z",
-    "pushedAt": "2026-06-17T22:03:55Z",
+    "updatedAt": "2026-06-19T04:36:05Z",
+    "pushedAt": "2026-06-19T05:20:41Z",
     "latestRelease": {
       "name": "Masday CLI v0.3.74",
       "tagName": "v0.3.74",
@@ -1504,8 +1504,8 @@
     "stars": 1,
     "forks": 0,
     "topics": [],
-    "updatedAt": "2026-06-13T07:08:57Z",
-    "pushedAt": "2026-06-10T01:56:59Z",
+    "updatedAt": "2026-06-19T01:29:23Z",
+    "pushedAt": "2026-06-19T01:29:20Z",
     "latestRelease": null,
     "archived": false
   },
