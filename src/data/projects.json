@@ -34,7 +34,7 @@
     "homepage": "",
     "language": "Python",
     "stars": 823,
-    "forks": 256,
+    "forks": 257,
     "topics": [],
     "updatedAt": "2026-06-19T12:36:15Z",
     "pushedAt": "2026-05-29T12:39:38Z",
@@ -84,7 +84,7 @@
     "url": "https://github.com/Drenzzz/ADBKit",
     "homepage": "",
     "language": "TypeScript",
-    "stars": 317,
+    "stars": 316,
     "forks": 36,
     "topics": [
       "astrojs",
@@ -92,7 +92,7 @@
       "wails",
       "wails-app"
     ],
-    "updatedAt": "2026-06-16T17:34:03Z",
+    "updatedAt": "2026-06-19T16:49:33Z",
     "pushedAt": "2026-04-04T02:31:28Z",
     "latestRelease": {
       "name": "v1.3",
@@ -111,7 +111,7 @@
     "url": "https://github.com/fajarhide/omni",
     "homepage": "https://omni.weekndlabs.com",
     "language": "Rust",
-    "stars": 273,
+    "stars": 275,
     "forks": 27,
     "topics": [
       "ai-agents",
@@ -130,7 +130,7 @@
       "token-reduction",
       "token-savings"
     ],
-    "updatedAt": "2026-06-19T15:38:02Z",
+    "updatedAt": "2026-06-19T17:35:44Z",
     "pushedAt": "2026-06-19T09:11:59Z",
     "latestRelease": {
       "name": "v0.6.0",
@@ -339,8 +339,8 @@
       "ai",
       "airouter"
     ],
-    "updatedAt": "2026-06-19T10:55:53Z",
-    "pushedAt": "2026-06-17T06:11:55Z",
+    "updatedAt": "2026-06-19T19:18:37Z",
+    "pushedAt": "2026-06-19T19:19:20Z",
     "latestRelease": {
       "name": "v0.1.18",
       "tagName": "v0.1.18",
@@ -396,6 +396,23 @@
     "archived": false
   },
   {
+    "fullName": "raymondchins/agentmap",
+    "name": "agentmap",
+    "owner": "raymondchins",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/12913191?v=4",
+    "description": "The repo map your coding agent is forced to use — ~98% fewer tokens (up to 99.9% per task) to understand a TS/JS codebase. PageRank hubs, Aider-style symbol ranking, token-budgeted digest, --any router, wired into the agent loop.",
+    "url": "https://github.com/raymondchins/agentmap",
+    "homepage": "",
+    "language": "JavaScript",
+    "stars": 38,
+    "forks": 10,
+    "topics": [],
+    "updatedAt": "2026-06-19T17:13:25Z",
+    "pushedAt": "2026-06-16T04:08:21Z",
+    "latestRelease": null,
+    "archived": false
+  },
+  {
     "fullName": "IlhamriSKY/TEDI",
     "name": "TEDI",
     "owner": "IlhamriSKY",
@@ -423,31 +440,14 @@
       "tauri",
       "terminal"
     ],
-    "updatedAt": "2026-06-19T15:06:30Z",
-    "pushedAt": "2026-06-19T15:06:27Z",
+    "updatedAt": "2026-06-19T18:34:20Z",
+    "pushedAt": "2026-06-19T18:34:18Z",
     "latestRelease": {
-      "name": "TEDI v0.3.48",
-      "tagName": "v0.3.48",
-      "url": "https://github.com/IlhamriSKY/TEDI/releases/tag/v0.3.48",
-      "publishedAt": "2026-06-19T15:25:38Z"
+      "name": "TEDI v0.3.49",
+      "tagName": "v0.3.49",
+      "url": "https://github.com/IlhamriSKY/TEDI/releases/tag/v0.3.49",
+      "publishedAt": "2026-06-19T16:23:44Z"
     },
-    "archived": false
-  },
-  {
-    "fullName": "raymondchins/agentmap",
-    "name": "agentmap",
-    "owner": "raymondchins",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/12913191?v=4",
-    "description": "The repo map your coding agent is forced to use — ~98% fewer tokens (up to 99.9% per task) to understand a TS/JS codebase. PageRank hubs, Aider-style symbol ranking, token-budgeted digest, --any router, wired into the agent loop.",
-    "url": "https://github.com/raymondchins/agentmap",
-    "homepage": "",
-    "language": "JavaScript",
-    "stars": 37,
-    "forks": 10,
-    "topics": [],
-    "updatedAt": "2026-06-18T16:32:06Z",
-    "pushedAt": "2026-06-16T04:08:21Z",
-    "latestRelease": null,
     "archived": false
   },
   {
@@ -617,7 +617,7 @@
       "sveltekit"
     ],
     "updatedAt": "2026-06-19T13:46:11Z",
-    "pushedAt": "2026-06-19T13:46:06Z",
+    "pushedAt": "2026-06-19T19:07:12Z",
     "latestRelease": {
       "name": "v0.0.12 - Web Form & UI Improvements",
       "tagName": "v0.0.12",
@@ -888,8 +888,8 @@
       "vercel",
       "zero-human"
     ],
-    "updatedAt": "2026-06-16T13:46:47Z",
-    "pushedAt": "2026-06-15T04:20:37Z",
+    "updatedAt": "2026-06-19T16:26:26Z",
+    "pushedAt": "2026-06-19T16:26:22Z",
     "latestRelease": null,
     "archived": false
   },
@@ -983,6 +983,32 @@
     "archived": false
   },
   {
+    "fullName": "fadhilbarkah/diskus",
+    "name": "diskus",
+    "owner": "fadhilbarkah",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/185883281?v=4",
+    "description": "An ultra-lightweight, privacy-first, and self-hosted Disqus alternative",
+    "url": "https://github.com/fadhilbarkah/diskus",
+    "homepage": "https://diskus.pages.dev",
+    "language": "TypeScript",
+    "stars": 9,
+    "forks": 0,
+    "topics": [
+      "blog-comments",
+      "comment",
+      "comment-system",
+      "comments",
+      "comments-system",
+      "comments-widget",
+      "disqus-alternative",
+      "open-source"
+    ],
+    "updatedAt": "2026-06-19T18:28:39Z",
+    "pushedAt": "2026-06-18T09:33:23Z",
+    "latestRelease": null,
+    "archived": false
+  },
+  {
     "fullName": "RRNDev/app-permission-analyzer",
     "name": "app-permission-analyzer",
     "owner": "RRNDev",
@@ -1070,32 +1096,6 @@
     "archived": false
   },
   {
-    "fullName": "fadhilbarkah/diskus",
-    "name": "diskus",
-    "owner": "fadhilbarkah",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/185883281?v=4",
-    "description": "An ultra-lightweight, privacy-first, and self-hosted Disqus alternative",
-    "url": "https://github.com/fadhilbarkah/diskus",
-    "homepage": "https://diskus.pages.dev",
-    "language": "TypeScript",
-    "stars": 7,
-    "forks": 0,
-    "topics": [
-      "blog-comments",
-      "comment",
-      "comment-system",
-      "comments",
-      "comments-system",
-      "comments-widget",
-      "disqus-alternative",
-      "open-source"
-    ],
-    "updatedAt": "2026-06-19T14:38:44Z",
-    "pushedAt": "2026-06-18T09:33:23Z",
-    "latestRelease": null,
-    "archived": false
-  },
-  {
     "fullName": "rizukirr/hyprsimple",
     "name": "hyprsimple",
     "owner": "rizukirr",
@@ -1160,6 +1160,23 @@
     "archived": false
   },
   {
+    "fullName": "MuhammadHasbiAshshiddieqy/OpenClawn",
+    "name": "OpenClawn",
+    "owner": "MuhammadHasbiAshshiddieqy",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/47019965?v=4",
+    "description": "Lightweight, safe, self-improving multi-role AI agent framework. Hybrid local + cloud LLMs with self-calibrating routing, decaying skills, and confidence-gated learning — 25 sandboxed tools for code, data, docs, git, and the web.",
+    "url": "https://github.com/MuhammadHasbiAshshiddieqy/OpenClawn",
+    "homepage": "",
+    "language": "Python",
+    "stars": 6,
+    "forks": 1,
+    "topics": [],
+    "updatedAt": "2026-06-19T19:09:14Z",
+    "pushedAt": "2026-06-19T11:19:17Z",
+    "latestRelease": null,
+    "archived": false
+  },
+  {
     "fullName": "RamaAditya49/ai-agentic",
     "name": "ai-agentic",
     "owner": "RamaAditya49",
@@ -1188,8 +1205,8 @@
     "stars": 6,
     "forks": 1,
     "topics": [],
-    "updatedAt": "2026-06-19T15:19:52Z",
-    "pushedAt": "2026-06-19T15:19:48Z",
+    "updatedAt": "2026-06-19T15:51:24Z",
+    "pushedAt": "2026-06-19T15:51:20Z",
     "latestRelease": {
       "name": "v1.1.35",
       "tagName": "v1.1.35",
@@ -1229,23 +1246,6 @@
       "url": "https://github.com/wauputr4/skill-bansos/releases/tag/v0.1.1",
       "publishedAt": "2026-06-13T11:36:57Z"
     },
-    "archived": false
-  },
-  {
-    "fullName": "MuhammadHasbiAshshiddieqy/OpenClawn",
-    "name": "OpenClawn",
-    "owner": "MuhammadHasbiAshshiddieqy",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/47019965?v=4",
-    "description": "Lightweight, safe, self-improving multi-role AI agent framework. Hybrid local + cloud LLMs with self-calibrating routing, decaying skills, and confidence-gated learning — 25 sandboxed tools for code, data, docs, git, and the web.",
-    "url": "https://github.com/MuhammadHasbiAshshiddieqy/OpenClawn",
-    "homepage": "",
-    "language": "Python",
-    "stars": 5,
-    "forks": 1,
-    "topics": [],
-    "updatedAt": "2026-06-19T15:28:35Z",
-    "pushedAt": "2026-06-19T11:19:17Z",
-    "latestRelease": null,
     "archived": false
   },
   {
@@ -1477,8 +1477,8 @@
     "stars": 2,
     "forks": 0,
     "topics": [],
-    "updatedAt": "2026-06-19T14:27:34Z",
-    "pushedAt": "2026-06-19T14:27:30Z",
+    "updatedAt": "2026-06-19T19:45:15Z",
+    "pushedAt": "2026-06-19T20:00:52Z",
     "latestRelease": {
       "name": "Masday CLI v0.3.74",
       "tagName": "v0.3.74",
