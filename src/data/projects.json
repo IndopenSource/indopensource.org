@@ -111,7 +111,7 @@
     "url": "https://github.com/fajarhide/omni",
     "homepage": "https://omni.weekndlabs.com",
     "language": "Rust",
-    "stars": 275,
+    "stars": 276,
     "forks": 27,
     "topics": [
       "ai-agents",
@@ -130,7 +130,7 @@
       "token-reduction",
       "token-savings"
     ],
-    "updatedAt": "2026-06-19T17:35:44Z",
+    "updatedAt": "2026-06-20T03:42:46Z",
     "pushedAt": "2026-06-19T09:11:59Z",
     "latestRelease": {
       "name": "v0.6.0",
@@ -197,8 +197,8 @@
       "terminal-emulator",
       "workspace-manager"
     ],
-    "updatedAt": "2026-06-18T22:15:22Z",
-    "pushedAt": "2026-06-18T15:51:54Z",
+    "updatedAt": "2026-06-20T03:14:29Z",
+    "pushedAt": "2026-06-20T03:14:25Z",
     "latestRelease": {
       "name": "Termul Manager v0.4.8",
       "tagName": "v0.4.8",
@@ -315,7 +315,7 @@
       "sveltekit"
     ],
     "updatedAt": "2026-06-18T10:21:12Z",
-    "pushedAt": "2026-06-17T23:01:57Z",
+    "pushedAt": "2026-06-19T21:46:40Z",
     "latestRelease": {
       "name": "svelte-audio-ui@1.0.1",
       "tagName": "v1.0.1",
@@ -340,7 +340,7 @@
       "airouter"
     ],
     "updatedAt": "2026-06-19T19:18:37Z",
-    "pushedAt": "2026-06-19T19:19:20Z",
+    "pushedAt": "2026-06-20T03:15:10Z",
     "latestRelease": {
       "name": "v0.1.18",
       "tagName": "v0.1.18",
@@ -422,7 +422,7 @@
     "homepage": "https://tedi.ilhamriski.com",
     "language": "TypeScript",
     "stars": 37,
-    "forks": 4,
+    "forks": 5,
     "topics": [
       "ai",
       "ai-agent",
@@ -440,13 +440,13 @@
       "tauri",
       "terminal"
     ],
-    "updatedAt": "2026-06-19T18:34:20Z",
-    "pushedAt": "2026-06-19T18:34:18Z",
+    "updatedAt": "2026-06-20T03:49:15Z",
+    "pushedAt": "2026-06-20T03:49:14Z",
     "latestRelease": {
-      "name": "TEDI v0.3.49",
-      "tagName": "v0.3.49",
-      "url": "https://github.com/IlhamriSKY/TEDI/releases/tag/v0.3.49",
-      "publishedAt": "2026-06-19T16:23:44Z"
+      "name": "TEDI v0.3.55",
+      "tagName": "v0.3.55",
+      "url": "https://github.com/IlhamriSKY/TEDI/releases/tag/v0.3.55",
+      "publishedAt": "2026-06-20T04:23:06Z"
     },
     "archived": false
   },
@@ -460,10 +460,10 @@
     "homepage": "",
     "language": "Ruby",
     "stars": 33,
-    "forks": 1,
+    "forks": 2,
     "topics": [],
-    "updatedAt": "2026-06-19T09:54:07Z",
-    "pushedAt": "2026-06-19T09:54:03Z",
+    "updatedAt": "2026-06-20T01:25:54Z",
+    "pushedAt": "2026-06-20T04:21:24Z",
     "latestRelease": {
       "name": "Tycho v0.5.0",
       "tagName": "v0.5.0",
@@ -495,7 +495,7 @@
       "xendit"
     ],
     "updatedAt": "2026-06-16T15:09:41Z",
-    "pushedAt": "2026-06-15T11:45:41Z",
+    "pushedAt": "2026-06-19T22:43:20Z",
     "latestRelease": {
       "name": "v0.1.11",
       "tagName": "v0.1.11",
@@ -616,8 +616,8 @@
       "static-site",
       "sveltekit"
     ],
-    "updatedAt": "2026-06-19T13:46:11Z",
-    "pushedAt": "2026-06-19T19:07:12Z",
+    "updatedAt": "2026-06-20T04:29:06Z",
+    "pushedAt": "2026-06-20T04:29:02Z",
     "latestRelease": {
       "name": "v0.0.12 - Web Form & UI Improvements",
       "tagName": "v0.0.12",
@@ -678,6 +678,65 @@
     "archived": false
   },
   {
+    "fullName": "fadhilbarkah/diskus",
+    "name": "diskus",
+    "owner": "fadhilbarkah",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/185883281?v=4",
+    "description": "An ultra-lightweight, privacy-first, and self-hosted Disqus alternative",
+    "url": "https://github.com/fadhilbarkah/diskus",
+    "homepage": "https://diskus.pages.dev",
+    "language": "TypeScript",
+    "stars": 16,
+    "forks": 0,
+    "topics": [
+      "blog-comments",
+      "comment",
+      "comment-system",
+      "comments",
+      "comments-system",
+      "comments-widget",
+      "disqus-alternative",
+      "open-source"
+    ],
+    "updatedAt": "2026-06-20T01:55:50Z",
+    "pushedAt": "2026-06-18T09:33:23Z",
+    "latestRelease": null,
+    "archived": false
+  },
+  {
+    "fullName": "rizukirr/vibekit",
+    "name": "vibekit",
+    "owner": "rizukirr",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/230007457?v=4",
+    "description": "Vibe-coding pipeline with halt-on-defect guardrails. RTCO-compressed briefs, evidence-based verification, bounded autonomous re-runs. CC / Pi / Codex / OpenCode / Gemini CLI.",
+    "url": "https://github.com/rizukirr/vibekit",
+    "homepage": "",
+    "language": "JavaScript",
+    "stars": 16,
+    "forks": 1,
+    "topics": [
+      "claude-code",
+      "claude-plugin",
+      "codex",
+      "codex-plugin",
+      "opencode",
+      "opencode-plugin",
+      "pi-mono",
+      "plugin",
+      "vibe-coding",
+      "vibecoding"
+    ],
+    "updatedAt": "2026-06-19T23:05:56Z",
+    "pushedAt": "2026-06-12T17:42:03Z",
+    "latestRelease": {
+      "name": "v0.4.0",
+      "tagName": "v0.4.0",
+      "url": "https://github.com/rizukirr/vibekit/releases/tag/v0.4.0",
+      "publishedAt": "2026-06-12T17:42:03Z"
+    },
+    "archived": false
+  },
+  {
     "fullName": "abilfida/OmniDrive",
     "name": "OmniDrive",
     "owner": "abilfida",
@@ -719,39 +778,6 @@
     "updatedAt": "2026-06-18T01:27:13Z",
     "pushedAt": "2026-06-18T01:27:09Z",
     "latestRelease": null,
-    "archived": false
-  },
-  {
-    "fullName": "rizukirr/vibekit",
-    "name": "vibekit",
-    "owner": "rizukirr",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/230007457?v=4",
-    "description": "Vibe-coding pipeline with halt-on-defect guardrails. RTCO-compressed briefs, evidence-based verification, bounded autonomous re-runs. CC / Pi / Codex / OpenCode / Gemini CLI.",
-    "url": "https://github.com/rizukirr/vibekit",
-    "homepage": "",
-    "language": "JavaScript",
-    "stars": 15,
-    "forks": 1,
-    "topics": [
-      "claude-code",
-      "claude-plugin",
-      "codex",
-      "codex-plugin",
-      "opencode",
-      "opencode-plugin",
-      "pi-mono",
-      "plugin",
-      "vibe-coding",
-      "vibecoding"
-    ],
-    "updatedAt": "2026-06-15T02:56:55Z",
-    "pushedAt": "2026-06-12T17:42:03Z",
-    "latestRelease": {
-      "name": "v0.4.0",
-      "tagName": "v0.4.0",
-      "url": "https://github.com/rizukirr/vibekit/releases/tag/v0.4.0",
-      "publishedAt": "2026-06-12T17:42:03Z"
-    },
     "archived": false
   },
   {
@@ -983,32 +1009,6 @@
     "archived": false
   },
   {
-    "fullName": "fadhilbarkah/diskus",
-    "name": "diskus",
-    "owner": "fadhilbarkah",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/185883281?v=4",
-    "description": "An ultra-lightweight, privacy-first, and self-hosted Disqus alternative",
-    "url": "https://github.com/fadhilbarkah/diskus",
-    "homepage": "https://diskus.pages.dev",
-    "language": "TypeScript",
-    "stars": 9,
-    "forks": 0,
-    "topics": [
-      "blog-comments",
-      "comment",
-      "comment-system",
-      "comments",
-      "comments-system",
-      "comments-widget",
-      "disqus-alternative",
-      "open-source"
-    ],
-    "updatedAt": "2026-06-19T18:28:39Z",
-    "pushedAt": "2026-06-18T09:33:23Z",
-    "latestRelease": null,
-    "archived": false
-  },
-  {
     "fullName": "RRNDev/app-permission-analyzer",
     "name": "app-permission-analyzer",
     "owner": "RRNDev",
@@ -1049,6 +1049,23 @@
     ],
     "updatedAt": "2026-06-19T03:50:43Z",
     "pushedAt": "2026-06-19T03:50:38Z",
+    "latestRelease": null,
+    "archived": false
+  },
+  {
+    "fullName": "MuhammadHasbiAshshiddieqy/OpenClawn",
+    "name": "OpenClawn",
+    "owner": "MuhammadHasbiAshshiddieqy",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/47019965?v=4",
+    "description": "Lightweight, safe, self-improving multi-role AI agent framework. Hybrid local + cloud LLMs with self-calibrating routing, decaying skills, and confidence-gated learning — 25 sandboxed tools for code, data, docs, git, and the web.",
+    "url": "https://github.com/MuhammadHasbiAshshiddieqy/OpenClawn",
+    "homepage": "",
+    "language": "Python",
+    "stars": 8,
+    "forks": 1,
+    "topics": [],
+    "updatedAt": "2026-06-20T03:34:55Z",
+    "pushedAt": "2026-06-20T03:34:52Z",
     "latestRelease": null,
     "archived": false
   },
@@ -1160,23 +1177,6 @@
     "archived": false
   },
   {
-    "fullName": "MuhammadHasbiAshshiddieqy/OpenClawn",
-    "name": "OpenClawn",
-    "owner": "MuhammadHasbiAshshiddieqy",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/47019965?v=4",
-    "description": "Lightweight, safe, self-improving multi-role AI agent framework. Hybrid local + cloud LLMs with self-calibrating routing, decaying skills, and confidence-gated learning — 25 sandboxed tools for code, data, docs, git, and the web.",
-    "url": "https://github.com/MuhammadHasbiAshshiddieqy/OpenClawn",
-    "homepage": "",
-    "language": "Python",
-    "stars": 6,
-    "forks": 1,
-    "topics": [],
-    "updatedAt": "2026-06-19T19:09:14Z",
-    "pushedAt": "2026-06-19T11:19:17Z",
-    "latestRelease": null,
-    "archived": false
-  },
-  {
     "fullName": "RamaAditya49/ai-agentic",
     "name": "ai-agentic",
     "owner": "RamaAditya49",
@@ -1205,8 +1205,8 @@
     "stars": 6,
     "forks": 1,
     "topics": [],
-    "updatedAt": "2026-06-19T15:51:24Z",
-    "pushedAt": "2026-06-19T15:51:20Z",
+    "updatedAt": "2026-06-20T02:57:02Z",
+    "pushedAt": "2026-06-20T02:56:58Z",
     "latestRelease": {
       "name": "v1.1.35",
       "tagName": "v1.1.35",
@@ -1260,8 +1260,8 @@
     "stars": 5,
     "forks": 0,
     "topics": [],
-    "updatedAt": "2026-06-18T21:23:17Z",
-    "pushedAt": "2026-06-18T21:23:12Z",
+    "updatedAt": "2026-06-19T20:27:04Z",
+    "pushedAt": "2026-06-19T20:27:00Z",
     "latestRelease": null,
     "archived": false
   },
@@ -1284,6 +1284,36 @@
       "tagName": "v1.4.9",
       "url": "https://github.com/rifqiakrm/code-island/releases/tag/v1.4.9",
       "publishedAt": "2026-06-19T05:47:11Z"
+    },
+    "archived": false
+  },
+  {
+    "fullName": "rizukirr/apic",
+    "name": "apic",
+    "owner": "rizukirr",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/230007457?v=4",
+    "description": "A lightweight, Git-friendly tool for designing and collaborating on API contracts written in Rust",
+    "url": "https://github.com/rizukirr/apic",
+    "homepage": "",
+    "language": "Rust",
+    "stars": 5,
+    "forks": 2,
+    "topics": [
+      "api",
+      "api-contract",
+      "cli-tool",
+      "colaboration",
+      "contracts",
+      "rest-api",
+      "rust"
+    ],
+    "updatedAt": "2026-06-19T20:43:29Z",
+    "pushedAt": "2026-06-19T15:29:40Z",
+    "latestRelease": {
+      "name": "v0.3.1",
+      "tagName": "v0.3.1",
+      "url": "https://github.com/rizukirr/apic/releases/tag/v0.3.1",
+      "publishedAt": "2026-06-19T10:25:31Z"
     },
     "archived": false
   },
@@ -1355,36 +1385,6 @@
     "updatedAt": "2026-06-14T11:42:34Z",
     "pushedAt": "2026-06-15T01:37:21Z",
     "latestRelease": null,
-    "archived": false
-  },
-  {
-    "fullName": "rizukirr/apic",
-    "name": "apic",
-    "owner": "rizukirr",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/230007457?v=4",
-    "description": "A lightweight, Git-friendly tool for designing and collaborating on API contracts written in Rust",
-    "url": "https://github.com/rizukirr/apic",
-    "homepage": "",
-    "language": "Rust",
-    "stars": 4,
-    "forks": 0,
-    "topics": [
-      "api",
-      "api-contract",
-      "cli-tool",
-      "colaboration",
-      "contracts",
-      "rest-api",
-      "rust"
-    ],
-    "updatedAt": "2026-06-19T13:54:58Z",
-    "pushedAt": "2026-06-19T15:29:40Z",
-    "latestRelease": {
-      "name": "v0.3.1",
-      "tagName": "v0.3.1",
-      "url": "https://github.com/rizukirr/apic/releases/tag/v0.3.1",
-      "publishedAt": "2026-06-19T10:25:31Z"
-    },
     "archived": false
   },
   {
@@ -1477,8 +1477,8 @@
     "stars": 2,
     "forks": 0,
     "topics": [],
-    "updatedAt": "2026-06-19T19:45:15Z",
-    "pushedAt": "2026-06-19T20:00:52Z",
+    "updatedAt": "2026-06-19T20:24:26Z",
+    "pushedAt": "2026-06-19T20:24:44Z",
     "latestRelease": {
       "name": "Masday CLI v0.3.74",
       "tagName": "v0.3.74",
