@@ -131,7 +131,7 @@
       "token-savings"
     ],
     "updatedAt": "2026-06-20T03:42:46Z",
-    "pushedAt": "2026-06-19T09:11:59Z",
+    "pushedAt": "2026-06-20T05:56:35Z",
     "latestRelease": {
       "name": "v0.6.0",
       "tagName": "v0.6.0",
@@ -404,10 +404,10 @@
     "url": "https://github.com/raymondchins/agentmap",
     "homepage": "",
     "language": "JavaScript",
-    "stars": 38,
+    "stars": 39,
     "forks": 10,
     "topics": [],
-    "updatedAt": "2026-06-19T17:13:25Z",
+    "updatedAt": "2026-06-20T08:11:32Z",
     "pushedAt": "2026-06-16T04:08:21Z",
     "latestRelease": null,
     "archived": false
@@ -459,10 +459,10 @@
     "url": "https://github.com/firewalker06/tycho",
     "homepage": "",
     "language": "Ruby",
-    "stars": 33,
+    "stars": 34,
     "forks": 2,
     "topics": [],
-    "updatedAt": "2026-06-20T01:25:54Z",
+    "updatedAt": "2026-06-20T08:59:01Z",
     "pushedAt": "2026-06-20T04:21:24Z",
     "latestRelease": {
       "name": "Tycho v0.5.0",
@@ -574,7 +574,7 @@
     "url": "https://github.com/ardli-firman/sha-print",
     "homepage": "",
     "language": "C#",
-    "stars": 23,
+    "stars": 24,
     "forks": 9,
     "topics": [
       "desktop-app",
@@ -583,7 +583,7 @@
       "sharing-printer",
       "windows"
     ],
-    "updatedAt": "2026-06-12T16:24:09Z",
+    "updatedAt": "2026-06-20T05:07:16Z",
     "pushedAt": "2026-06-19T03:19:44Z",
     "latestRelease": {
       "name": "ShaPrint v1.4.7 (Stable)",
@@ -602,7 +602,7 @@
     "url": "https://github.com/wauputr4/bansos",
     "homepage": "https://bansos.dev",
     "language": "Svelte",
-    "stars": 22,
+    "stars": 23,
     "forks": 3,
     "topics": [
       "bansos",
@@ -616,8 +616,8 @@
       "static-site",
       "sveltekit"
     ],
-    "updatedAt": "2026-06-20T04:29:06Z",
-    "pushedAt": "2026-06-20T04:29:02Z",
+    "updatedAt": "2026-06-20T09:10:19Z",
+    "pushedAt": "2026-06-20T08:31:05Z",
     "latestRelease": {
       "name": "v0.0.12 - Web Form & UI Improvements",
       "tagName": "v0.0.12",
@@ -640,6 +640,32 @@
     "topics": [],
     "updatedAt": "2026-06-14T02:01:02Z",
     "pushedAt": "2026-04-08T09:29:42Z",
+    "latestRelease": null,
+    "archived": false
+  },
+  {
+    "fullName": "fadhilbarkah/diskus",
+    "name": "diskus",
+    "owner": "fadhilbarkah",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/185883281?v=4",
+    "description": "An ultra-lightweight, privacy-first, and self-hosted Disqus alternative",
+    "url": "https://github.com/fadhilbarkah/diskus",
+    "homepage": "https://diskus.pages.dev",
+    "language": "TypeScript",
+    "stars": 19,
+    "forks": 0,
+    "topics": [
+      "blog-comments",
+      "comment",
+      "comment-system",
+      "comments",
+      "comments-system",
+      "comments-widget",
+      "disqus-alternative",
+      "open-source"
+    ],
+    "updatedAt": "2026-06-20T08:49:24Z",
+    "pushedAt": "2026-06-20T06:03:31Z",
     "latestRelease": null,
     "archived": false
   },
@@ -674,32 +700,6 @@
     "topics": [],
     "updatedAt": "2026-06-11T17:23:43Z",
     "pushedAt": "2026-05-21T16:51:06Z",
-    "latestRelease": null,
-    "archived": false
-  },
-  {
-    "fullName": "fadhilbarkah/diskus",
-    "name": "diskus",
-    "owner": "fadhilbarkah",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/185883281?v=4",
-    "description": "An ultra-lightweight, privacy-first, and self-hosted Disqus alternative",
-    "url": "https://github.com/fadhilbarkah/diskus",
-    "homepage": "https://diskus.pages.dev",
-    "language": "TypeScript",
-    "stars": 16,
-    "forks": 0,
-    "topics": [
-      "blog-comments",
-      "comment",
-      "comment-system",
-      "comments",
-      "comments-system",
-      "comments-widget",
-      "disqus-alternative",
-      "open-source"
-    ],
-    "updatedAt": "2026-06-20T01:55:50Z",
-    "pushedAt": "2026-06-18T09:33:23Z",
     "latestRelease": null,
     "archived": false
   },
@@ -781,6 +781,34 @@
     "archived": false
   },
   {
+    "fullName": "rahmanef63/open-silong",
+    "name": "open-silong",
+    "owner": "rahmanef63",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/71124675?v=4",
+    "description": "An open-source Notion-inspired workspace for teams and personal use",
+    "url": "https://github.com/rahmanef63/open-silong",
+    "homepage": "https://silong-os.vercel.app/",
+    "language": "TypeScript",
+    "stars": 14,
+    "forks": 2,
+    "topics": [
+      "block-editor",
+      "convex",
+      "indonesia",
+      "nextjs",
+      "notion-alternative",
+      "notion-clone",
+      "open-source",
+      "react",
+      "self-hosted",
+      "workspace"
+    ],
+    "updatedAt": "2026-06-20T08:20:39Z",
+    "pushedAt": "2026-06-09T05:19:33Z",
+    "latestRelease": null,
+    "archived": false
+  },
+  {
     "fullName": "codecoradev/uteke",
     "name": "uteke",
     "owner": "codecoradev",
@@ -814,34 +842,6 @@
       "url": "https://github.com/codecoradev/uteke/releases/tag/v0.2.0",
       "publishedAt": "2026-06-14T14:09:47Z"
     },
-    "archived": false
-  },
-  {
-    "fullName": "rahmanef63/open-silong",
-    "name": "open-silong",
-    "owner": "rahmanef63",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/71124675?v=4",
-    "description": "An open-source Notion-inspired workspace for teams and personal use",
-    "url": "https://github.com/rahmanef63/open-silong",
-    "homepage": "https://silong-os.vercel.app/",
-    "language": "TypeScript",
-    "stars": 13,
-    "forks": 2,
-    "topics": [
-      "block-editor",
-      "convex",
-      "indonesia",
-      "nextjs",
-      "notion-alternative",
-      "notion-clone",
-      "open-source",
-      "react",
-      "self-hosted",
-      "workspace"
-    ],
-    "updatedAt": "2026-06-14T07:54:23Z",
-    "pushedAt": "2026-06-09T05:19:33Z",
-    "latestRelease": null,
     "archived": false
   },
   {
@@ -1064,8 +1064,8 @@
     "stars": 8,
     "forks": 1,
     "topics": [],
-    "updatedAt": "2026-06-20T03:34:55Z",
-    "pushedAt": "2026-06-20T03:34:52Z",
+    "updatedAt": "2026-06-20T06:07:10Z",
+    "pushedAt": "2026-06-20T06:07:06Z",
     "latestRelease": null,
     "archived": false
   },
@@ -1205,8 +1205,8 @@
     "stars": 6,
     "forks": 1,
     "topics": [],
-    "updatedAt": "2026-06-20T02:57:02Z",
-    "pushedAt": "2026-06-20T02:56:58Z",
+    "updatedAt": "2026-06-20T09:00:25Z",
+    "pushedAt": "2026-06-20T09:00:20Z",
     "latestRelease": {
       "name": "v1.1.35",
       "tagName": "v1.1.35",
@@ -1307,8 +1307,8 @@
       "rest-api",
       "rust"
     ],
-    "updatedAt": "2026-06-19T20:43:29Z",
-    "pushedAt": "2026-06-19T15:29:40Z",
+    "updatedAt": "2026-06-20T07:33:41Z",
+    "pushedAt": "2026-06-20T07:35:26Z",
     "latestRelease": {
       "name": "v0.3.1",
       "tagName": "v0.3.1",
@@ -1477,8 +1477,8 @@
     "stars": 2,
     "forks": 0,
     "topics": [],
-    "updatedAt": "2026-06-19T20:24:26Z",
-    "pushedAt": "2026-06-19T20:24:44Z",
+    "updatedAt": "2026-06-20T09:18:23Z",
+    "pushedAt": "2026-06-20T09:38:58Z",
     "latestRelease": {
       "name": "Masday CLI v0.3.74",
       "tagName": "v0.3.74",
