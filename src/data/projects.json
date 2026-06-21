@@ -162,7 +162,7 @@
       "tiptap-editor"
     ],
     "updatedAt": "2026-06-20T10:36:21Z",
-    "pushedAt": "2026-06-21T14:13:31Z",
+    "pushedAt": "2026-06-21T16:52:32Z",
     "latestRelease": {
       "name": "v2.2.0",
       "tagName": "v2.2.0",
@@ -180,7 +180,7 @@
     "url": "https://github.com/gnoviawan/termul",
     "homepage": "https://termul.dev",
     "language": "TypeScript",
-    "stars": 142,
+    "stars": 143,
     "forks": 32,
     "topics": [
       "cross-platform",
@@ -197,7 +197,7 @@
       "terminal-emulator",
       "workspace-manager"
     ],
-    "updatedAt": "2026-06-21T09:19:43Z",
+    "updatedAt": "2026-06-21T15:36:50Z",
     "pushedAt": "2026-06-21T09:19:39Z",
     "latestRelease": {
       "name": "Termul Manager v0.4.8",
@@ -290,7 +290,7 @@
     "forks": 41,
     "topics": [],
     "updatedAt": "2026-06-21T06:12:07Z",
-    "pushedAt": "2026-06-21T06:12:03Z",
+    "pushedAt": "2026-06-21T16:06:28Z",
     "latestRelease": null,
     "archived": false
   },
@@ -405,7 +405,7 @@
     "homepage": "",
     "language": "JavaScript",
     "stars": 40,
-    "forks": 10,
+    "forks": 9,
     "topics": [],
     "updatedAt": "2026-06-21T00:57:09Z",
     "pushedAt": "2026-06-16T04:08:21Z",
@@ -566,6 +566,39 @@
     "archived": false
   },
   {
+    "fullName": "wauputr4/bansos",
+    "name": "bansos",
+    "owner": "wauputr4",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/103489788?v=4",
+    "description": "bansos.dev — Promo developer Indonesia: domain gratis, AI credits, cloud credits, hosting free-tier, API credits, database credits, startup credits, diskon tools coding & hosting gratis. Open source.",
+    "url": "https://github.com/wauputr4/bansos",
+    "homepage": "https://bansos.dev",
+    "language": "Svelte",
+    "stars": 27,
+    "forks": 3,
+    "topics": [
+      "bansos",
+      "cli",
+      "cloudflare-pages",
+      "developer-resources",
+      "developer-tools",
+      "freebies",
+      "indonesia",
+      "open-source",
+      "static-site",
+      "sveltekit"
+    ],
+    "updatedAt": "2026-06-21T19:39:14Z",
+    "pushedAt": "2026-06-21T16:06:24Z",
+    "latestRelease": {
+      "name": "Bansos v0.0.13",
+      "tagName": "v0.0.13",
+      "url": "https://github.com/wauputr4/bansos/releases/tag/v0.0.13",
+      "publishedAt": "2026-06-21T10:19:23Z"
+    },
+    "archived": false
+  },
+  {
     "fullName": "ardli-firman/sha-print",
     "name": "sha-print",
     "owner": "ardli-firman",
@@ -602,7 +635,7 @@
     "url": "https://github.com/fadhilbarkah/diskus",
     "homepage": "https://diskus.pages.dev",
     "language": "TypeScript",
-    "stars": 24,
+    "stars": 25,
     "forks": 0,
     "topics": [
       "blog-comments",
@@ -614,42 +647,9 @@
       "disqus-alternative",
       "open-source"
     ],
-    "updatedAt": "2026-06-20T23:29:11Z",
+    "updatedAt": "2026-06-21T19:10:34Z",
     "pushedAt": "2026-06-20T14:50:04Z",
     "latestRelease": null,
-    "archived": false
-  },
-  {
-    "fullName": "wauputr4/bansos",
-    "name": "bansos",
-    "owner": "wauputr4",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/103489788?v=4",
-    "description": "bansos.dev — Promo developer Indonesia: domain gratis, AI credits, cloud credits, hosting free-tier, API credits, database credits, startup credits, diskon tools coding & hosting gratis. Open source.",
-    "url": "https://github.com/wauputr4/bansos",
-    "homepage": "https://bansos.dev",
-    "language": "Svelte",
-    "stars": 24,
-    "forks": 3,
-    "topics": [
-      "bansos",
-      "cli",
-      "cloudflare-pages",
-      "developer-resources",
-      "developer-tools",
-      "freebies",
-      "indonesia",
-      "open-source",
-      "static-site",
-      "sveltekit"
-    ],
-    "updatedAt": "2026-06-21T13:43:50Z",
-    "pushedAt": "2026-06-21T10:19:23Z",
-    "latestRelease": {
-      "name": "Bansos v0.0.13",
-      "tagName": "v0.0.13",
-      "url": "https://github.com/wauputr4/bansos/releases/tag/v0.0.13",
-      "publishedAt": "2026-06-21T10:19:23Z"
-    },
     "archived": false
   },
   {
@@ -681,8 +681,8 @@
     "stars": 19,
     "forks": 3,
     "topics": [],
-    "updatedAt": "2026-06-14T12:42:48Z",
-    "pushedAt": "2026-06-14T12:42:44Z",
+    "updatedAt": "2026-06-21T15:30:39Z",
+    "pushedAt": "2026-06-21T15:30:35Z",
     "latestRelease": null,
     "archived": false
   },
@@ -720,13 +720,13 @@
       "reactjs",
       "vitejs"
     ],
-    "updatedAt": "2026-06-20T23:50:34Z",
-    "pushedAt": "2026-06-16T18:48:48Z",
+    "updatedAt": "2026-06-21T17:26:52Z",
+    "pushedAt": "2026-06-21T17:26:49Z",
     "latestRelease": {
-      "name": "v0.8.17",
-      "tagName": "v0.8.17",
-      "url": "https://github.com/abilfida/OmniDrive/releases/tag/v0.8.17",
-      "publishedAt": "2026-06-16T18:49:50Z"
+      "name": "v0.9.1",
+      "tagName": "v0.9.1",
+      "url": "https://github.com/abilfida/OmniDrive/releases/tag/v0.9.1",
+      "publishedAt": "2026-06-21T16:57:02Z"
     },
     "archived": false
   },
@@ -756,13 +756,13 @@
       "sqlite",
       "vector-database"
     ],
-    "updatedAt": "2026-06-21T13:38:31Z",
-    "pushedAt": "2026-06-21T14:24:37Z",
+    "updatedAt": "2026-06-21T15:39:08Z",
+    "pushedAt": "2026-06-21T15:47:38Z",
     "latestRelease": {
-      "name": "Release v0.2.1",
-      "tagName": "v0.2.1",
-      "url": "https://github.com/codecoradev/uteke/releases/tag/v0.2.1",
-      "publishedAt": "2026-06-21T11:05:48Z"
+      "name": "Release v0.3.0",
+      "tagName": "v0.3.0",
+      "url": "https://github.com/codecoradev/uteke/releases/tag/v0.3.0",
+      "publishedAt": "2026-06-21T15:55:36Z"
     },
     "archived": false
   },
@@ -1227,8 +1227,8 @@
     "stars": 6,
     "forks": 1,
     "topics": [],
-    "updatedAt": "2026-06-21T14:06:25Z",
-    "pushedAt": "2026-06-21T14:06:21Z",
+    "updatedAt": "2026-06-21T15:24:10Z",
+    "pushedAt": "2026-06-21T15:24:07Z",
     "latestRelease": {
       "name": "v1.1.71",
       "tagName": "v1.1.71",
@@ -1307,13 +1307,13 @@
       "rest-api",
       "rust"
     ],
-    "updatedAt": "2026-06-21T05:59:50Z",
-    "pushedAt": "2026-06-21T05:59:47Z",
+    "updatedAt": "2026-06-21T18:21:34Z",
+    "pushedAt": "2026-06-21T18:21:32Z",
     "latestRelease": {
-      "name": "v0.3.3",
-      "tagName": "v0.3.3",
-      "url": "https://github.com/rizukirr/apic/releases/tag/v0.3.3",
-      "publishedAt": "2026-06-21T01:22:25Z"
+      "name": "v0.3.4",
+      "tagName": "v0.3.4",
+      "url": "https://github.com/rizukirr/apic/releases/tag/v0.3.4",
+      "publishedAt": "2026-06-21T18:21:40Z"
     },
     "archived": false
   },
@@ -1516,13 +1516,13 @@
     "stars": 2,
     "forks": 0,
     "topics": [],
-    "updatedAt": "2026-06-21T14:03:33Z",
-    "pushedAt": "2026-06-21T14:03:43Z",
+    "updatedAt": "2026-06-21T17:42:52Z",
+    "pushedAt": "2026-06-21T17:42:50Z",
     "latestRelease": {
-      "name": "Masday CLI v0.3.78",
-      "tagName": "v0.3.78",
-      "url": "https://github.com/dayartcrew-web/masday-workflow-rust/releases/tag/v0.3.78",
-      "publishedAt": "2026-06-21T14:10:14Z"
+      "name": "Masday CLI v0.3.80",
+      "tagName": "v0.3.80",
+      "url": "https://github.com/dayartcrew-web/masday-workflow-rust/releases/tag/v0.3.80",
+      "publishedAt": "2026-06-21T17:50:02Z"
     },
     "archived": false
   },
