@@ -37,12 +37,12 @@
     "forks": 257,
     "topics": [],
     "updatedAt": "2026-06-20T23:40:28Z",
-    "pushedAt": "2026-05-29T12:39:38Z",
+    "pushedAt": "2026-06-21T09:47:06Z",
     "latestRelease": {
-      "name": "YT Short Clipper v0.1.2",
-      "tagName": "v0.1.2",
-      "url": "https://github.com/jipraks/yt-short-clipper/releases/tag/v0.1.2",
-      "publishedAt": "2026-05-29T12:39:38Z"
+      "name": "YT Short Clipper v2.0.0-beta",
+      "tagName": "v2.0.0-beta",
+      "url": "https://github.com/jipraks/yt-short-clipper/releases/tag/v2.0.0-beta",
+      "publishedAt": "2026-06-21T09:47:07Z"
     },
     "archived": false
   },
@@ -180,7 +180,7 @@
     "url": "https://github.com/gnoviawan/termul",
     "homepage": "https://termul.dev",
     "language": "TypeScript",
-    "stars": 141,
+    "stars": 142,
     "forks": 32,
     "topics": [
       "cross-platform",
@@ -197,8 +197,8 @@
       "terminal-emulator",
       "workspace-manager"
     ],
-    "updatedAt": "2026-06-20T23:51:51Z",
-    "pushedAt": "2026-06-20T03:14:25Z",
+    "updatedAt": "2026-06-21T09:19:43Z",
+    "pushedAt": "2026-06-21T09:19:39Z",
     "latestRelease": {
       "name": "Termul Manager v0.4.8",
       "tagName": "v0.4.8",
@@ -289,8 +289,8 @@
     "stars": 83,
     "forks": 41,
     "topics": [],
-    "updatedAt": "2026-06-20T13:17:44Z",
-    "pushedAt": "2026-06-20T13:17:40Z",
+    "updatedAt": "2026-06-21T06:12:07Z",
+    "pushedAt": "2026-06-21T06:12:03Z",
     "latestRelease": null,
     "archived": false
   },
@@ -642,8 +642,8 @@
       "static-site",
       "sveltekit"
     ],
-    "updatedAt": "2026-06-21T04:29:27Z",
-    "pushedAt": "2026-06-21T04:29:23Z",
+    "updatedAt": "2026-06-21T08:55:01Z",
+    "pushedAt": "2026-06-21T08:54:57Z",
     "latestRelease": {
       "name": "v0.0.12 - Web Form & UI Improvements",
       "tagName": "v0.0.12",
@@ -753,13 +753,13 @@
       "vibe-coding",
       "vibecoding"
     ],
-    "updatedAt": "2026-06-19T23:05:56Z",
-    "pushedAt": "2026-06-12T17:42:03Z",
+    "updatedAt": "2026-06-21T06:24:20Z",
+    "pushedAt": "2026-06-21T06:25:09Z",
     "latestRelease": {
-      "name": "v0.4.0",
-      "tagName": "v0.4.0",
-      "url": "https://github.com/rizukirr/vibekit/releases/tag/v0.4.0",
-      "publishedAt": "2026-06-12T17:42:03Z"
+      "name": "v0.5.0 — The Minimalism Guard",
+      "tagName": "v0.5.0",
+      "url": "https://github.com/rizukirr/vibekit/releases/tag/v0.5.0",
+      "publishedAt": "2026-06-21T06:25:09Z"
     },
     "archived": false
   },
@@ -789,8 +789,8 @@
       "sqlite",
       "vector-database"
     ],
-    "updatedAt": "2026-06-20T14:10:55Z",
-    "pushedAt": "2026-06-19T05:15:04Z",
+    "updatedAt": "2026-06-21T10:02:13Z",
+    "pushedAt": "2026-06-21T10:03:01Z",
     "latestRelease": {
       "name": "Release v0.2.0",
       "tagName": "v0.2.0",
@@ -845,6 +845,23 @@
     "archived": false
   },
   {
+    "fullName": "MuhammadHasbiAshshiddieqy/OpenClawn",
+    "name": "OpenClawn",
+    "owner": "MuhammadHasbiAshshiddieqy",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/47019965?v=4",
+    "description": "Lightweight, safe, self-improving multi-role AI agent framework. Hybrid local + cloud LLMs with self-calibrating routing, decaying skills, and confidence-gated learning — 25 sandboxed tools for code, data, docs, git, and the web.",
+    "url": "https://github.com/MuhammadHasbiAshshiddieqy/OpenClawn",
+    "homepage": "",
+    "language": "Python",
+    "stars": 13,
+    "forks": 1,
+    "topics": [],
+    "updatedAt": "2026-06-21T06:39:16Z",
+    "pushedAt": "2026-06-20T20:02:38Z",
+    "latestRelease": null,
+    "archived": false
+  },
+  {
     "fullName": "rizukirr/numc",
     "name": "numc",
     "owner": "rizukirr",
@@ -869,23 +886,6 @@
     ],
     "updatedAt": "2026-06-16T16:16:20Z",
     "pushedAt": "2026-06-16T16:14:20Z",
-    "latestRelease": null,
-    "archived": false
-  },
-  {
-    "fullName": "MuhammadHasbiAshshiddieqy/OpenClawn",
-    "name": "OpenClawn",
-    "owner": "MuhammadHasbiAshshiddieqy",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/47019965?v=4",
-    "description": "Lightweight, safe, self-improving multi-role AI agent framework. Hybrid local + cloud LLMs with self-calibrating routing, decaying skills, and confidence-gated learning — 25 sandboxed tools for code, data, docs, git, and the web.",
-    "url": "https://github.com/MuhammadHasbiAshshiddieqy/OpenClawn",
-    "homepage": "",
-    "language": "Python",
-    "stars": 12,
-    "forks": 1,
-    "topics": [],
-    "updatedAt": "2026-06-21T02:40:49Z",
-    "pushedAt": "2026-06-20T20:02:38Z",
     "latestRelease": null,
     "archived": false
   },
@@ -970,6 +970,40 @@
     "archived": false
   },
   {
+    "fullName": "rizukirr/muslimtify",
+    "name": "muslimtify",
+    "owner": "rizukirr",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/230007457?v=4",
+    "description": "A daily prayer notification daemon for Muslims on Windows and Linux, supporting 21 global standard calculation methods, all madzhab, all country.",
+    "url": "https://github.com/rizukirr/muslimtify",
+    "homepage": "",
+    "language": "C",
+    "stars": 11,
+    "forks": 1,
+    "topics": [
+      "c-language",
+      "cross-platform",
+      "daemon",
+      "linux",
+      "muslim-prayer-times",
+      "muslims-prayer",
+      "notification",
+      "systemd",
+      "windows",
+      "windows-app",
+      "windows-desktop"
+    ],
+    "updatedAt": "2026-06-21T07:21:20Z",
+    "pushedAt": "2026-06-18T16:47:27Z",
+    "latestRelease": {
+      "name": "v0.2.3",
+      "tagName": "v0.2.3",
+      "url": "https://github.com/rizukirr/muslimtify/releases/tag/v0.2.3",
+      "publishedAt": "2026-05-26T02:38:49Z"
+    },
+    "archived": false
+  },
+  {
     "fullName": "ahmadghaisanfad2/absen-kelas",
     "name": "absen-kelas",
     "owner": "ahmadghaisanfad2",
@@ -988,40 +1022,6 @@
       "tagName": "v0.1.17",
       "url": "https://github.com/ahmadghaisanfad2/absen-kelas/releases/tag/v0.1.17",
       "publishedAt": "2026-06-11T16:42:59Z"
-    },
-    "archived": false
-  },
-  {
-    "fullName": "rizukirr/muslimtify",
-    "name": "muslimtify",
-    "owner": "rizukirr",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/230007457?v=4",
-    "description": "A daily prayer notification daemon for Muslims on Windows and Linux, supporting 21 global standard calculation methods, all madzhab, all country.",
-    "url": "https://github.com/rizukirr/muslimtify",
-    "homepage": "",
-    "language": "C",
-    "stars": 10,
-    "forks": 1,
-    "topics": [
-      "c-language",
-      "cross-platform",
-      "daemon",
-      "linux",
-      "muslim-prayer-times",
-      "muslims-prayer",
-      "notification",
-      "systemd",
-      "windows",
-      "windows-app",
-      "windows-desktop"
-    ],
-    "updatedAt": "2026-06-18T16:47:31Z",
-    "pushedAt": "2026-06-18T16:47:27Z",
-    "latestRelease": {
-      "name": "v0.2.3",
-      "tagName": "v0.2.3",
-      "url": "https://github.com/rizukirr/muslimtify/releases/tag/v0.2.3",
-      "publishedAt": "2026-05-26T02:38:49Z"
     },
     "archived": false
   },
@@ -1194,6 +1194,28 @@
     "archived": false
   },
   {
+    "fullName": "rifqiakrm/code-island",
+    "name": "code-island",
+    "owner": "rifqiakrm",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/35358522?v=4",
+    "description": "macOS app that turns your MacBook's notch into a live dashboard for Claude Code, Codex, etc",
+    "url": "https://github.com/rifqiakrm/code-island",
+    "homepage": "https://rifqiakrm.github.io/code-island/",
+    "language": "Swift",
+    "stars": 6,
+    "forks": 0,
+    "topics": [],
+    "updatedAt": "2026-06-21T09:27:24Z",
+    "pushedAt": "2026-06-19T05:46:32Z",
+    "latestRelease": {
+      "name": "v1.4.9 — Codex & Qwen fixes",
+      "tagName": "v1.4.9",
+      "url": "https://github.com/rifqiakrm/code-island/releases/tag/v1.4.9",
+      "publishedAt": "2026-06-19T05:47:11Z"
+    },
+    "archived": false
+  },
+  {
     "fullName": "RudyCity/superagent",
     "name": "superagent",
     "owner": "RudyCity",
@@ -1205,14 +1227,9 @@
     "stars": 6,
     "forks": 1,
     "topics": [],
-    "updatedAt": "2026-06-21T04:47:24Z",
-    "pushedAt": "2026-06-21T04:47:21Z",
-    "latestRelease": {
-      "name": "v1.1.35",
-      "tagName": "v1.1.35",
-      "url": "https://github.com/RudyCity/superagent/releases/tag/v1.1.35",
-      "publishedAt": "2026-06-12T11:09:42Z"
-    },
+    "updatedAt": "2026-06-21T10:04:39Z",
+    "pushedAt": "2026-06-21T10:04:36Z",
+    "latestRelease": null,
     "archived": false
   },
   {
@@ -1266,28 +1283,6 @@
     "archived": false
   },
   {
-    "fullName": "rifqiakrm/code-island",
-    "name": "code-island",
-    "owner": "rifqiakrm",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/35358522?v=4",
-    "description": "macOS app that turns your MacBook's notch into a live dashboard for Claude Code, Codex, etc",
-    "url": "https://github.com/rifqiakrm/code-island",
-    "homepage": "https://rifqiakrm.github.io/code-island/",
-    "language": "Swift",
-    "stars": 5,
-    "forks": 0,
-    "topics": [],
-    "updatedAt": "2026-06-19T05:46:32Z",
-    "pushedAt": "2026-06-19T05:46:32Z",
-    "latestRelease": {
-      "name": "v1.4.9 — Codex & Qwen fixes",
-      "tagName": "v1.4.9",
-      "url": "https://github.com/rifqiakrm/code-island/releases/tag/v1.4.9",
-      "publishedAt": "2026-06-19T05:47:11Z"
-    },
-    "archived": false
-  },
-  {
     "fullName": "rizukirr/apic",
     "name": "apic",
     "owner": "rizukirr",
@@ -1307,8 +1302,8 @@
       "rest-api",
       "rust"
     ],
-    "updatedAt": "2026-06-21T01:20:36Z",
-    "pushedAt": "2026-06-21T01:22:18Z",
+    "updatedAt": "2026-06-21T05:59:50Z",
+    "pushedAt": "2026-06-21T05:59:47Z",
     "latestRelease": {
       "name": "v0.3.3",
       "tagName": "v0.3.3",
@@ -1456,7 +1451,7 @@
       "websockets"
     ],
     "updatedAt": "2026-06-19T09:39:43Z",
-    "pushedAt": "2026-06-19T09:39:47Z",
+    "pushedAt": "2026-06-21T10:02:34Z",
     "latestRelease": {
       "name": "Release v0.1.3",
       "tagName": "v0.1.3",
@@ -1477,13 +1472,13 @@
     "stars": 2,
     "forks": 0,
     "topics": [],
-    "updatedAt": "2026-06-21T01:44:16Z",
-    "pushedAt": "2026-06-21T01:44:14Z",
+    "updatedAt": "2026-06-21T09:06:49Z",
+    "pushedAt": "2026-06-21T09:58:44Z",
     "latestRelease": {
-      "name": "Masday CLI v0.3.75",
-      "tagName": "v0.3.75",
-      "url": "https://github.com/dayartcrew-web/masday-workflow-rust/releases/tag/v0.3.75",
-      "publishedAt": "2026-06-20T18:17:36Z"
+      "name": "Masday CLI v0.3.76",
+      "tagName": "v0.3.76",
+      "url": "https://github.com/dayartcrew-web/masday-workflow-rust/releases/tag/v0.3.76",
+      "publishedAt": "2026-06-21T08:26:38Z"
     },
     "archived": false
   },
