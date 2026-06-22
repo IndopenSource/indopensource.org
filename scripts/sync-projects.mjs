@@ -1,8 +1,18 @@
 import { mkdir, writeFile } from 'node:fs/promises';
 
-const AWESOME_REPOS_URL =
-  'https://raw.githubusercontent.com/IndopenSource/awesome-indonesia/main/repos.json';
+import { renderArticle } from '../src/lib/content.ts';
+
+const AWESOME_REPO = 'IndopenSource/awesome-indonesia';
+const REPOS_JSON_PATH = 'repos.json';
+const DEFAULT_BRANCH_FALLBACK = 'main';
 const OUT_FILE = new URL('../src/data/projects.json', import.meta.url);
+
+/**
+ * Length budget for `metaDescription` (SEO-6). ~155 chars is the common
+ * truncation point for search-result snippets; clamping here keeps generated
+ * `<meta name="description">` / Open Graph text from being cut mid-word.
+ */
+const META_DESCRIPTION_MAX = 155;
 
 const token = process.env.GITHUB_TOKEN || process.env.GH_TOKEN;
 
@@ -30,14 +40,117 @@ function parseRepo(fullName) {
   return { owner, name };
 }
 
+/**
+ * Resolve a repository's actual default branch via the GitHub API instead of
+ * pinning the literal `main` (CC-6). A `master->main` (or reverse) default
+ * branch rename on the upstream repo would otherwise silently break raw-content
+ * fetches. Falls back to `main` on any failure so sync never hard-stops on a
+ * branch lookup, except when the API rate limit is exhausted.
+ */
+async function resolveDefaultBranch(fullName) {
+  try {
+    const repo = await requestJson(`https://api.github.com/repos/${fullName}`);
+    return repo.default_branch || DEFAULT_BRANCH_FALLBACK;
+  } catch (error) {
+    if (error.message.startsWith('RATE_LIMITED:')) {
+      throw error;
+    }
+
+    console.warn(`Could not resolve default branch for ${fullName}, using "${DEFAULT_BRANCH_FALLBACK}": ${error.message}`);
+    return DEFAULT_BRANCH_FALLBACK;
+  }
+}
+
+function rawContentUrl(fullName, branch, path) {
+  return `https://raw.githubusercontent.com/${fullName}/${branch}/${path}`;
+}
+
+/**
+ * Clamp plain text to a snippet-friendly length on a word boundary (SEO-6).
+ * Collapses whitespace, then cuts to `max` chars and trims a dangling partial
+ * word so the description never ends mid-token.
+ */
+function clampMetaDescription(text, max = META_DESCRIPTION_MAX) {
+  const normalized = (text || '').replace(/\s+/g, ' ').trim();
+  if (normalized.length <= max) return normalized;
+
+  const slice = normalized.slice(0, max);
+  const lastSpace = slice.lastIndexOf(' ');
+  const trimmed = (lastSpace > max * 0.6 ? slice.slice(0, lastSpace) : slice).replace(/[\s.,;:!?-]+$/, '');
+  return `${trimmed}…`;
+}
+
+/**
+ * Resolve relative `href`/`src` targets in the (already sanitized) README HTML
+ * against the repository so links and images work on our own origin. Values
+ * that are absolute, anchors, or fail to resolve to http/https are left as-is
+ * or dropped. Operates on the sanitized string, so no unsafe scheme can be
+ * (re)introduced here.
+ */
+function absolutizeReadmeHtml(html, linkBase, assetBase) {
+  if (!html) return html;
+
+  const resolve = (value, base) => {
+    if (!value || value.startsWith('#') || /^(https?:|mailto:)/i.test(value)) return value;
+    try {
+      const url = new URL(value, base);
+      return ['http:', 'https:'].includes(url.protocol) ? url.toString() : value;
+    } catch {
+      return value;
+    }
+  };
+
+  return html
+    .replace(/(\shref=")([^"]*)(")/g, (_match, pre, value, post) => `${pre}${resolve(value, linkBase)}${post}`)
+    .replace(/(\ssrc=")([^"]*)(")/g, (_match, pre, value, post) => `${pre}${resolve(value, assetBase)}${post}`);
+}
+
+/**
+ * Fetch and pre-render the repo README to sanitized HTML at build time (PERF-1).
+ *
+ * Doing this during sync means the detail page ships static, XSS-safe HTML and
+ * the browser no longer fetches GitHub or parses Markdown at runtime. Markdown
+ * is rendered through the shared `renderArticle()` allowlist so README HTML
+ * goes through exactly the same audited sanitiser as blog content.
+ */
+async function getReadmeHtml(fullName) {
+  try {
+    const data = await requestJson(`https://api.github.com/repos/${fullName}/readme`);
+    if (!data?.content) return '';
+
+    const markdown = Buffer.from(data.content, 'base64').toString('utf8');
+    const html = renderArticle(markdown);
+    // `html_url` is the rendered-file URL (base for relative links); the raw
+    // `download_url` is the base for relative asset (image) paths.
+    return absolutizeReadmeHtml(html, data.html_url || '', data.download_url || '');
+  } catch (error) {
+    if (error.message.startsWith('RATE_LIMITED:')) {
+      throw error;
+    }
+
+    console.warn(`No README for ${fullName}: ${error.message}`);
+    return '';
+  }
+}
+
+/**
+ * Stub emitted when a repo's metadata fetch fails (non-rate-limit). The
+ * `syncFailed`/`partial` flags (CC-10) let consumers tell a genuinely empty
+ * (0-star/0-fork) repo apart from one whose data could not be refreshed, so
+ * aggregate totals are not silently understated and the failure is surfaced
+ * rather than masked. Its `stars: 0`/`forks: 0` are placeholders, NOT real
+ * counts, and should be excluded from accumulators.
+ */
 function fallbackProject(fullName) {
   const { owner, name } = parseRepo(fullName);
+  const description = 'Proyek dari daftar awesome-indonesia.';
   return {
     fullName,
     name,
     owner,
     ownerAvatarUrl: '',
-    description: 'Proyek dari daftar awesome-indonesia.',
+    description,
+    metaDescription: clampMetaDescription(description),
     url: `https://github.com/${fullName}`,
     homepage: '',
     language: '',
@@ -47,7 +160,10 @@ function fallbackProject(fullName) {
     updatedAt: '',
     pushedAt: '',
     latestRelease: null,
-    archived: false
+    archived: false,
+    readmeHtml: '',
+    syncFailed: true,
+    partial: true
   };
 }
 
@@ -73,13 +189,16 @@ async function getRepo(fullName) {
   try {
     const repo = await requestJson(`https://api.github.com/repos/${fullName}`);
     const latestRelease = await getLatestRelease(fullName);
+    const readmeHtml = await getReadmeHtml(fullName);
+    const description = repo.description || 'Proyek dari daftar awesome-indonesia.';
 
     return {
       fullName: repo.full_name,
       name: repo.name,
       owner: repo.owner?.login,
       ownerAvatarUrl: repo.owner?.avatar_url || '',
-      description: repo.description || 'Proyek dari daftar awesome-indonesia.',
+      description,
+      metaDescription: clampMetaDescription(description),
       url: repo.html_url,
       homepage: repo.homepage || '',
       language: repo.language || '',
@@ -89,7 +208,8 @@ async function getRepo(fullName) {
       updatedAt: repo.updated_at || '',
       pushedAt: repo.pushed_at || '',
       latestRelease,
-      archived: Boolean(repo.archived)
+      archived: Boolean(repo.archived),
+      readmeHtml
     };
   } catch (error) {
     if (error.message.startsWith('RATE_LIMITED:')) {
@@ -101,7 +221,11 @@ async function getRepo(fullName) {
   }
 }
 
-const repoNames = await requestJson(AWESOME_REPOS_URL);
+// Read the source list from the upstream repo's ACTUAL default branch (CC-6)
+// rather than a hardcoded `main`, so a default-branch rename does not silently
+// break the sync.
+const awesomeBranch = await resolveDefaultBranch(AWESOME_REPO);
+const repoNames = await requestJson(rawContentUrl(AWESOME_REPO, awesomeBranch, REPOS_JSON_PATH));
 const projects = [];
 
 for (const fullName of repoNames) {
@@ -109,6 +233,11 @@ for (const fullName of repoNames) {
 }
 
 projects.sort((a, b) => b.stars - a.stars || a.fullName.localeCompare(b.fullName));
+
+const failedCount = projects.filter((project) => project.syncFailed).length;
+if (failedCount > 0) {
+  console.warn(`${failedCount} repo(s) could not be refreshed and were flagged syncFailed (totals exclude them).`);
+}
 
 await mkdir(new URL('../src/data/', import.meta.url), { recursive: true });
 await writeFile(OUT_FILE, `${JSON.stringify(projects, null, 2)}\n`);
