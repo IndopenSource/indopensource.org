@@ -33,10 +33,10 @@
     "url": "https://github.com/jipraks/yt-short-clipper",
     "homepage": "",
     "language": "Python",
-    "stars": 825,
+    "stars": 827,
     "forks": 257,
     "topics": [],
-    "updatedAt": "2026-06-22T05:31:44Z",
+    "updatedAt": "2026-06-22T10:06:47Z",
     "pushedAt": "2026-06-21T09:47:06Z",
     "latestRelease": {
       "name": "YT Short Clipper v2.0.0-beta",
@@ -111,7 +111,7 @@
     "url": "https://github.com/fajarhide/omni",
     "homepage": "https://omni.weekndlabs.com",
     "language": "Rust",
-    "stars": 277,
+    "stars": 279,
     "forks": 28,
     "topics": [
       "ai-agents",
@@ -130,7 +130,7 @@
       "token-reduction",
       "token-savings"
     ],
-    "updatedAt": "2026-06-22T05:15:36Z",
+    "updatedAt": "2026-06-22T07:00:47Z",
     "pushedAt": "2026-06-20T16:10:09Z",
     "latestRelease": {
       "name": "v0.6.0",
@@ -225,6 +225,23 @@
     "archived": false
   },
   {
+    "fullName": "mallexibra-dev/clipforge",
+    "name": "clipforge",
+    "owner": "mallexibra-dev",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/210313485?v=4",
+    "description": "Proyek dari daftar awesome-indonesia.",
+    "url": "https://github.com/mallexibra-dev/clipforge",
+    "homepage": "",
+    "language": "Python",
+    "stars": 118,
+    "forks": 25,
+    "topics": [],
+    "updatedAt": "2026-06-22T11:42:26Z",
+    "pushedAt": "2026-06-20T10:12:10Z",
+    "latestRelease": null,
+    "archived": false
+  },
+  {
     "fullName": "IlhamriSKY/PDDIKTI-kemdikbud-API",
     "name": "PDDIKTI-kemdikbud-API",
     "owner": "IlhamriSKY",
@@ -278,6 +295,44 @@
     "archived": false
   },
   {
+    "fullName": "adenaufal/anti-slop-writing",
+    "name": "anti-slop-writing",
+    "owner": "adenaufal",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/4465236?v=4",
+    "description": "Stop your AI from writing like AI. A universal system prompt eliminating every known LLM style tell — works with Claude Code, Gemini CLI, Codex CLI, Copilot, Cursor, and any web AI.",
+    "url": "https://github.com/adenaufal/anti-slop-writing",
+    "homepage": "",
+    "language": "",
+    "stars": 83,
+    "forks": 6,
+    "topics": [
+      "agent-skill",
+      "ai",
+      "ai-detection",
+      "anti-slop",
+      "authentic-writing",
+      "chatgpt",
+      "claude",
+      "content-writing",
+      "copilot",
+      "gemini",
+      "llm",
+      "prompt-engineering",
+      "system-prompt",
+      "writing",
+      "writing-style"
+    ],
+    "updatedAt": "2026-06-21T21:14:41Z",
+    "pushedAt": "2026-04-17T13:12:24Z",
+    "latestRelease": {
+      "name": "v2.1.0: Installable .skill Files (Full & Lite, EN & ID)",
+      "tagName": "v2.1.0",
+      "url": "https://github.com/adenaufal/anti-slop-writing/releases/tag/v2.1.0",
+      "publishedAt": "2026-04-17T13:11:31Z"
+    },
+    "archived": false
+  },
+  {
     "fullName": "jipraks/kasirgratisan",
     "name": "kasirgratisan",
     "owner": "jipraks",
@@ -322,6 +377,23 @@
       "url": "https://github.com/ddtamn/svelte-audio-ui/releases/tag/v1.0.1",
       "publishedAt": "2026-04-01T05:12:08Z"
     },
+    "archived": false
+  },
+  {
+    "fullName": "njinlabs/njinattend-backend",
+    "name": "njinattend-backend",
+    "owner": "njinlabs",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/145111707?v=4",
+    "description": "The backend of NjinAttend is built using AdonisJS.",
+    "url": "https://github.com/njinlabs/njinattend-backend",
+    "homepage": "",
+    "language": "TypeScript",
+    "stars": 73,
+    "forks": 20,
+    "topics": [],
+    "updatedAt": "2026-06-19T17:09:04Z",
+    "pushedAt": "2023-10-04T21:50:13Z",
+    "latestRelease": null,
     "archived": false
   },
   {
@@ -451,6 +523,28 @@
     "archived": false
   },
   {
+    "fullName": "mmenghancurkan/dynaQRIS",
+    "name": "dynaQRIS",
+    "owner": "mmenghancurkan",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/68109330?v=4",
+    "description": "Dynamic QRIS Python-based generator program.",
+    "url": "https://github.com/mmenghancurkan/dynaQRIS",
+    "homepage": "",
+    "language": "Python",
+    "stars": 37,
+    "forks": 5,
+    "topics": [],
+    "updatedAt": "2026-06-21T13:40:29Z",
+    "pushedAt": "2026-06-20T14:24:38Z",
+    "latestRelease": {
+      "name": "dynaQRIS v1.1",
+      "tagName": "woah-first",
+      "url": "https://github.com/mmenghancurkan/dynaQRIS/releases/tag/woah-first",
+      "publishedAt": "2026-06-20T14:24:38Z"
+    },
+    "archived": false
+  },
+  {
     "fullName": "firewalker06/tycho",
     "name": "tycho",
     "owner": "firewalker06",
@@ -469,6 +563,39 @@
       "tagName": "v0.6.1",
       "url": "https://github.com/firewalker06/tycho/releases/tag/v0.6.1",
       "publishedAt": "2026-06-21T13:24:09Z"
+    },
+    "archived": false
+  },
+  {
+    "fullName": "wauputr4/bansos",
+    "name": "bansos",
+    "owner": "wauputr4",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/103489788?v=4",
+    "description": "bansos.dev — Promo developer Indonesia: domain gratis, AI credits, cloud credits, hosting free-tier, API credits, database credits, startup credits, diskon tools coding & hosting gratis. Open source.",
+    "url": "https://github.com/wauputr4/bansos",
+    "homepage": "https://bansos.dev",
+    "language": "Svelte",
+    "stars": 35,
+    "forks": 3,
+    "topics": [
+      "bansos",
+      "cli",
+      "cloudflare-pages",
+      "developer-resources",
+      "developer-tools",
+      "freebies",
+      "indonesia",
+      "open-source",
+      "static-site",
+      "sveltekit"
+    ],
+    "updatedAt": "2026-06-22T12:22:30Z",
+    "pushedAt": "2026-06-22T09:15:51Z",
+    "latestRelease": {
+      "name": "Bansos v0.0.13",
+      "tagName": "v0.0.13",
+      "url": "https://github.com/wauputr4/bansos/releases/tag/v0.0.13",
+      "publishedAt": "2026-06-21T10:19:23Z"
     },
     "archived": false
   },
@@ -566,36 +693,20 @@
     "archived": false
   },
   {
-    "fullName": "wauputr4/bansos",
-    "name": "bansos",
-    "owner": "wauputr4",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/103489788?v=4",
-    "description": "bansos.dev — Promo developer Indonesia: domain gratis, AI credits, cloud credits, hosting free-tier, API credits, database credits, startup credits, diskon tools coding & hosting gratis. Open source.",
-    "url": "https://github.com/wauputr4/bansos",
-    "homepage": "https://bansos.dev",
-    "language": "Svelte",
-    "stars": 31,
-    "forks": 3,
-    "topics": [
-      "bansos",
-      "cli",
-      "cloudflare-pages",
-      "developer-resources",
-      "developer-tools",
-      "freebies",
-      "indonesia",
-      "open-source",
-      "static-site",
-      "sveltekit"
-    ],
-    "updatedAt": "2026-06-22T05:09:32Z",
-    "pushedAt": "2026-06-21T16:06:24Z",
-    "latestRelease": {
-      "name": "Bansos v0.0.13",
-      "tagName": "v0.0.13",
-      "url": "https://github.com/wauputr4/bansos/releases/tag/v0.0.13",
-      "publishedAt": "2026-06-21T10:19:23Z"
-    },
+    "fullName": "galpratama/agent-cli",
+    "name": "agent-cli",
+    "owner": "galpratama",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/2271384?v=4",
+    "description": "A beautiful Terminal UI for launching multiple AI providers from a single command",
+    "url": "https://github.com/galpratama/agent-cli",
+    "homepage": "",
+    "language": "HTML",
+    "stars": 30,
+    "forks": 6,
+    "topics": [],
+    "updatedAt": "2026-06-19T07:50:23Z",
+    "pushedAt": "2025-12-27T17:13:26Z",
+    "latestRelease": null,
     "archived": false
   },
   {
@@ -756,13 +867,13 @@
       "sqlite",
       "vector-database"
     ],
-    "updatedAt": "2026-06-22T05:30:11Z",
-    "pushedAt": "2026-06-22T05:30:23Z",
+    "updatedAt": "2026-06-22T10:55:05Z",
+    "pushedAt": "2026-06-22T10:58:49Z",
     "latestRelease": {
-      "name": "Release v0.3.1",
-      "tagName": "v0.3.1",
-      "url": "https://github.com/codecoradev/uteke/releases/tag/v0.3.1",
-      "publishedAt": "2026-06-21T23:07:56Z"
+      "name": "Release v0.4.0",
+      "tagName": "v0.4.0",
+      "url": "https://github.com/codecoradev/uteke/releases/tag/v0.4.0",
+      "publishedAt": "2026-06-22T11:06:23Z"
     },
     "archived": false
   },
@@ -994,7 +1105,7 @@
       "windows-desktop"
     ],
     "updatedAt": "2026-06-21T07:21:20Z",
-    "pushedAt": "2026-06-18T16:47:27Z",
+    "pushedAt": "2026-06-22T10:46:38Z",
     "latestRelease": {
       "name": "v0.2.3",
       "tagName": "v0.2.3",
@@ -1044,6 +1155,23 @@
     ],
     "updatedAt": "2026-06-13T11:56:48Z",
     "pushedAt": "2026-05-23T13:14:20Z",
+    "latestRelease": null,
+    "archived": false
+  },
+  {
+    "fullName": "sipamungkas/subtrack",
+    "name": "subtrack",
+    "owner": "sipamungkas",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/43329321?v=4",
+    "description": "Proyek dari daftar awesome-indonesia.",
+    "url": "https://github.com/sipamungkas/subtrack",
+    "homepage": "",
+    "language": "TypeScript",
+    "stars": 9,
+    "forks": 0,
+    "topics": [],
+    "updatedAt": "2026-06-18T03:22:06Z",
+    "pushedAt": "2026-03-29T08:39:29Z",
     "latestRelease": null,
     "archived": false
   },
@@ -1113,6 +1241,44 @@
     "archived": false
   },
   {
+    "fullName": "xpajonx/openempiric",
+    "name": "openempiric",
+    "owner": "xpajonx",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/55011516?v=4",
+    "description": "An event-sourced knowledge runtime for coding agents.",
+    "url": "https://github.com/xpajonx/openempiric",
+    "homepage": "",
+    "language": "Python",
+    "stars": 8,
+    "forks": 1,
+    "topics": [
+      "agent-memory",
+      "agentic-ai",
+      "ai-agents",
+      "context-engineering",
+      "developer-tools",
+      "event-sourcing",
+      "knowledge-engine",
+      "knowledge-graph",
+      "knowledge-management",
+      "knowledge-runtime",
+      "local-first",
+      "mcp",
+      "organizational-learning",
+      "python",
+      "semantic-search"
+    ],
+    "updatedAt": "2026-06-22T11:06:39Z",
+    "pushedAt": "2026-06-19T09:43:51Z",
+    "latestRelease": {
+      "name": "OpenEmpiric v1.0.0",
+      "tagName": "v1.0.0",
+      "url": "https://github.com/xpajonx/openempiric/releases/tag/v1.0.0",
+      "publishedAt": "2026-06-18T08:08:33Z"
+    },
+    "archived": false
+  },
+  {
     "fullName": "rizukirr/hyprsimple",
     "name": "hyprsimple",
     "owner": "rizukirr",
@@ -1174,6 +1340,23 @@
       "url": "https://github.com/achmdfzn/hippocrates/releases/tag/v1.8.1",
       "publishedAt": "2026-06-14T08:37:41Z"
     },
+    "archived": false
+  },
+  {
+    "fullName": "Aofsnorth/Artidor",
+    "name": "Artidor",
+    "owner": "Aofsnorth",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/108259309?v=4",
+    "description": "Proyek dari daftar awesome-indonesia.",
+    "url": "https://github.com/Aofsnorth/Artidor",
+    "homepage": "https://artidor.vercel.app",
+    "language": "TypeScript",
+    "stars": 6,
+    "forks": 0,
+    "topics": [],
+    "updatedAt": "2026-06-22T06:10:52Z",
+    "pushedAt": "2026-06-22T06:10:48Z",
+    "latestRelease": null,
     "archived": false
   },
   {
@@ -1244,8 +1427,8 @@
     "stars": 6,
     "forks": 1,
     "topics": [],
-    "updatedAt": "2026-06-22T05:10:21Z",
-    "pushedAt": "2026-06-22T05:10:17Z",
+    "updatedAt": "2026-06-22T08:42:45Z",
+    "pushedAt": "2026-06-22T08:42:40Z",
     "latestRelease": {
       "name": "v1.1.71",
       "tagName": "v1.1.71",
@@ -1288,44 +1471,6 @@
     "archived": false
   },
   {
-    "fullName": "xpajonx/openempiric",
-    "name": "openempiric",
-    "owner": "xpajonx",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/55011516?v=4",
-    "description": "An event-sourced knowledge runtime for coding agents.",
-    "url": "https://github.com/xpajonx/openempiric",
-    "homepage": "",
-    "language": "Python",
-    "stars": 6,
-    "forks": 1,
-    "topics": [
-      "agent-memory",
-      "agentic-ai",
-      "ai-agents",
-      "context-engineering",
-      "developer-tools",
-      "event-sourcing",
-      "knowledge-engine",
-      "knowledge-graph",
-      "knowledge-management",
-      "knowledge-runtime",
-      "local-first",
-      "mcp",
-      "organizational-learning",
-      "python",
-      "semantic-search"
-    ],
-    "updatedAt": "2026-06-22T05:13:36Z",
-    "pushedAt": "2026-06-19T09:43:51Z",
-    "latestRelease": {
-      "name": "OpenEmpiric v1.0.0",
-      "tagName": "v1.0.0",
-      "url": "https://github.com/xpajonx/openempiric/releases/tag/v1.0.0",
-      "publishedAt": "2026-06-18T08:08:33Z"
-    },
-    "archived": false
-  },
-  {
     "fullName": "rizukirr/apic",
     "name": "apic",
     "owner": "rizukirr",
@@ -1353,6 +1498,36 @@
       "url": "https://github.com/rizukirr/apic/releases/tag/v0.3.4",
       "publishedAt": "2026-06-21T18:21:40Z"
     },
+    "archived": false
+  },
+  {
+    "fullName": "wauputr4/agent-proxmox",
+    "name": "agent-proxmox",
+    "owner": "wauputr4",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/103489788?v=4",
+    "description": "Reusable AI agent skill for safe Proxmox homelab production operations, LXC activity logging, backups, security, and migration runbooks.",
+    "url": "https://github.com/wauputr4/agent-proxmox",
+    "homepage": "https://skills.sh/wauputr4/agent-proxmox/proxmox-host-operator",
+    "language": "Python",
+    "stars": 5,
+    "forks": 1,
+    "topics": [
+      "ai-agent",
+      "backup",
+      "cloudflare",
+      "codex",
+      "devops",
+      "homelab",
+      "lxc",
+      "proxmox",
+      "proxmox-ve",
+      "skills",
+      "skills-sh",
+      "tailscale"
+    ],
+    "updatedAt": "2026-06-13T11:44:42Z",
+    "pushedAt": "2026-06-06T17:33:55Z",
+    "latestRelease": null,
     "archived": false
   },
   {
@@ -1516,8 +1691,8 @@
     "stars": 2,
     "forks": 0,
     "topics": [],
-    "updatedAt": "2026-06-22T03:07:09Z",
-    "pushedAt": "2026-06-22T03:07:08Z",
+    "updatedAt": "2026-06-22T07:59:39Z",
+    "pushedAt": "2026-06-22T08:00:28Z",
     "latestRelease": {
       "name": "Masday CLI v0.3.81",
       "tagName": "v0.3.81",
