@@ -9,7 +9,7 @@
     "homepage": "",
     "language": "PHP",
     "stars": 1202,
-    "forks": 1144,
+    "forks": 1145,
     "topics": [
       "opensid",
       "sistem-informasi-desa"
@@ -33,10 +33,10 @@
     "url": "https://github.com/jipraks/yt-short-clipper",
     "homepage": "",
     "language": "Python",
-    "stars": 827,
+    "stars": 828,
     "forks": 257,
     "topics": [],
-    "updatedAt": "2026-06-22T10:06:47Z",
+    "updatedAt": "2026-06-22T13:00:57Z",
     "pushedAt": "2026-06-21T09:47:06Z",
     "latestRelease": {
       "name": "YT Short Clipper v2.0.0-beta",
@@ -92,7 +92,7 @@
       "wails",
       "wails-app"
     ],
-    "updatedAt": "2026-06-19T16:49:33Z",
+    "updatedAt": "2026-06-22T18:32:27Z",
     "pushedAt": "2026-04-04T02:31:28Z",
     "latestRelease": {
       "name": "v1.3",
@@ -130,7 +130,7 @@
       "token-reduction",
       "token-savings"
     ],
-    "updatedAt": "2026-06-22T07:00:47Z",
+    "updatedAt": "2026-06-22T19:38:47Z",
     "pushedAt": "2026-06-20T16:10:09Z",
     "latestRelease": {
       "name": "v0.6.0",
@@ -197,13 +197,13 @@
       "productivity",
       "tiptap-editor"
     ],
-    "updatedAt": "2026-06-20T10:36:21Z",
-    "pushedAt": "2026-06-22T05:09:16Z",
+    "updatedAt": "2026-06-22T15:11:56Z",
+    "pushedAt": "2026-06-22T17:25:41Z",
     "latestRelease": {
-      "name": "v2.2.0",
-      "tagName": "v2.2.0",
-      "url": "https://github.com/hadziqmtqn/erd-builder-pro/releases/tag/v2.2.0",
-      "publishedAt": "2026-06-17T10:21:46Z"
+      "name": "v2.2.1",
+      "tagName": "v2.2.1",
+      "url": "https://github.com/hadziqmtqn/erd-builder-pro/releases/tag/v2.2.1",
+      "publishedAt": "2026-06-22T15:09:53Z"
     },
     "archived": false
   },
@@ -233,10 +233,10 @@
     "url": "https://github.com/mallexibra-dev/clipforge",
     "homepage": "",
     "language": "Python",
-    "stars": 118,
-    "forks": 25,
+    "stars": 122,
+    "forks": 26,
     "topics": [],
-    "updatedAt": "2026-06-22T11:42:26Z",
+    "updatedAt": "2026-06-22T17:54:46Z",
     "pushedAt": "2026-06-20T10:12:10Z",
     "latestRelease": null,
     "archived": false
@@ -285,7 +285,7 @@
       "hacktoberfest2023"
     ],
     "updatedAt": "2026-06-13T01:56:55Z",
-    "pushedAt": "2026-03-13T02:16:48Z",
+    "pushedAt": "2026-06-22T20:43:05Z",
     "latestRelease": {
       "name": "v1.0.0",
       "tagName": "v1.0.0",
@@ -545,6 +545,39 @@
     "archived": false
   },
   {
+    "fullName": "wauputr4/bansos",
+    "name": "bansos",
+    "owner": "wauputr4",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/103489788?v=4",
+    "description": "bansos.dev — Promo developer Indonesia: domain gratis, AI credits, cloud credits, hosting free-tier, API credits, database credits, startup credits, diskon tools coding & hosting gratis. Open source.",
+    "url": "https://github.com/wauputr4/bansos",
+    "homepage": "https://bansos.dev",
+    "language": "Svelte",
+    "stars": 37,
+    "forks": 3,
+    "topics": [
+      "bansos",
+      "cli",
+      "cloudflare-pages",
+      "developer-resources",
+      "developer-tools",
+      "freebies",
+      "indonesia",
+      "open-source",
+      "static-site",
+      "sveltekit"
+    ],
+    "updatedAt": "2026-06-22T18:32:55Z",
+    "pushedAt": "2026-06-22T18:17:54Z",
+    "latestRelease": {
+      "name": "Bansos v0.0.13",
+      "tagName": "v0.0.13",
+      "url": "https://github.com/wauputr4/bansos/releases/tag/v0.0.13",
+      "publishedAt": "2026-06-21T10:19:23Z"
+    },
+    "archived": false
+  },
+  {
     "fullName": "firewalker06/tycho",
     "name": "tycho",
     "owner": "firewalker06",
@@ -563,39 +596,6 @@
       "tagName": "v0.6.1",
       "url": "https://github.com/firewalker06/tycho/releases/tag/v0.6.1",
       "publishedAt": "2026-06-21T13:24:09Z"
-    },
-    "archived": false
-  },
-  {
-    "fullName": "wauputr4/bansos",
-    "name": "bansos",
-    "owner": "wauputr4",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/103489788?v=4",
-    "description": "bansos.dev — Promo developer Indonesia: domain gratis, AI credits, cloud credits, hosting free-tier, API credits, database credits, startup credits, diskon tools coding & hosting gratis. Open source.",
-    "url": "https://github.com/wauputr4/bansos",
-    "homepage": "https://bansos.dev",
-    "language": "Svelte",
-    "stars": 35,
-    "forks": 3,
-    "topics": [
-      "bansos",
-      "cli",
-      "cloudflare-pages",
-      "developer-resources",
-      "developer-tools",
-      "freebies",
-      "indonesia",
-      "open-source",
-      "static-site",
-      "sveltekit"
-    ],
-    "updatedAt": "2026-06-22T12:22:30Z",
-    "pushedAt": "2026-06-22T09:15:51Z",
-    "latestRelease": {
-      "name": "Bansos v0.0.13",
-      "tagName": "v0.0.13",
-      "url": "https://github.com/wauputr4/bansos/releases/tag/v0.0.13",
-      "publishedAt": "2026-06-21T10:19:23Z"
     },
     "archived": false
   },
@@ -710,6 +710,32 @@
     "archived": false
   },
   {
+    "fullName": "fadhilbarkah/diskus",
+    "name": "diskus",
+    "owner": "fadhilbarkah",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/185883281?v=4",
+    "description": "An ultra-lightweight, privacy-first, and self-hosted Disqus alternative",
+    "url": "https://github.com/fadhilbarkah/diskus",
+    "homepage": "https://diskus.pages.dev",
+    "language": "TypeScript",
+    "stars": 27,
+    "forks": 0,
+    "topics": [
+      "blog-comments",
+      "comment",
+      "comment-system",
+      "comments",
+      "comments-system",
+      "comments-widget",
+      "disqus-alternative",
+      "open-source"
+    ],
+    "updatedAt": "2026-06-22T19:21:50Z",
+    "pushedAt": "2026-06-20T14:50:04Z",
+    "latestRelease": null,
+    "archived": false
+  },
+  {
     "fullName": "ardli-firman/sha-print",
     "name": "sha-print",
     "owner": "ardli-firman",
@@ -735,32 +761,6 @@
       "url": "https://github.com/ardli-firman/sha-print/releases/tag/v1.4.7-stable",
       "publishedAt": "2026-06-04T03:25:35Z"
     },
-    "archived": false
-  },
-  {
-    "fullName": "fadhilbarkah/diskus",
-    "name": "diskus",
-    "owner": "fadhilbarkah",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/185883281?v=4",
-    "description": "An ultra-lightweight, privacy-first, and self-hosted Disqus alternative",
-    "url": "https://github.com/fadhilbarkah/diskus",
-    "homepage": "https://diskus.pages.dev",
-    "language": "TypeScript",
-    "stars": 25,
-    "forks": 0,
-    "topics": [
-      "blog-comments",
-      "comment",
-      "comment-system",
-      "comments",
-      "comments-system",
-      "comments-widget",
-      "disqus-alternative",
-      "open-source"
-    ],
-    "updatedAt": "2026-06-21T19:10:34Z",
-    "pushedAt": "2026-06-20T14:50:04Z",
-    "latestRelease": null,
     "archived": false
   },
   {
@@ -867,13 +867,13 @@
       "sqlite",
       "vector-database"
     ],
-    "updatedAt": "2026-06-22T10:55:05Z",
-    "pushedAt": "2026-06-22T10:58:49Z",
+    "updatedAt": "2026-06-22T15:49:13Z",
+    "pushedAt": "2026-06-22T15:49:48Z",
     "latestRelease": {
-      "name": "Release v0.4.0",
-      "tagName": "v0.4.0",
-      "url": "https://github.com/codecoradev/uteke/releases/tag/v0.4.0",
-      "publishedAt": "2026-06-22T11:06:23Z"
+      "name": "Release v0.4.2",
+      "tagName": "v0.4.2",
+      "url": "https://github.com/codecoradev/uteke/releases/tag/v0.4.2",
+      "publishedAt": "2026-06-22T15:55:51Z"
     },
     "archived": false
   },
@@ -1137,6 +1137,44 @@
     "archived": false
   },
   {
+    "fullName": "xpajonx/openempiric",
+    "name": "openempiric",
+    "owner": "xpajonx",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/55011516?v=4",
+    "description": "An event-sourced knowledge runtime for coding agents.",
+    "url": "https://github.com/xpajonx/openempiric",
+    "homepage": "",
+    "language": "Python",
+    "stars": 10,
+    "forks": 1,
+    "topics": [
+      "agent-memory",
+      "agentic-ai",
+      "ai-agents",
+      "context-engineering",
+      "developer-tools",
+      "event-sourcing",
+      "knowledge-engine",
+      "knowledge-graph",
+      "knowledge-management",
+      "knowledge-runtime",
+      "local-first",
+      "mcp",
+      "organizational-learning",
+      "python",
+      "semantic-search"
+    ],
+    "updatedAt": "2026-06-22T17:00:09Z",
+    "pushedAt": "2026-06-19T09:43:51Z",
+    "latestRelease": {
+      "name": "OpenEmpiric v1.0.0",
+      "tagName": "v1.0.0",
+      "url": "https://github.com/xpajonx/openempiric/releases/tag/v1.0.0",
+      "publishedAt": "2026-06-18T08:08:33Z"
+    },
+    "archived": false
+  },
+  {
     "fullName": "RRNDev/app-permission-analyzer",
     "name": "app-permission-analyzer",
     "owner": "RRNDev",
@@ -1241,44 +1279,6 @@
     "archived": false
   },
   {
-    "fullName": "xpajonx/openempiric",
-    "name": "openempiric",
-    "owner": "xpajonx",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/55011516?v=4",
-    "description": "An event-sourced knowledge runtime for coding agents.",
-    "url": "https://github.com/xpajonx/openempiric",
-    "homepage": "",
-    "language": "Python",
-    "stars": 8,
-    "forks": 1,
-    "topics": [
-      "agent-memory",
-      "agentic-ai",
-      "ai-agents",
-      "context-engineering",
-      "developer-tools",
-      "event-sourcing",
-      "knowledge-engine",
-      "knowledge-graph",
-      "knowledge-management",
-      "knowledge-runtime",
-      "local-first",
-      "mcp",
-      "organizational-learning",
-      "python",
-      "semantic-search"
-    ],
-    "updatedAt": "2026-06-22T11:06:39Z",
-    "pushedAt": "2026-06-19T09:43:51Z",
-    "latestRelease": {
-      "name": "OpenEmpiric v1.0.0",
-      "tagName": "v1.0.0",
-      "url": "https://github.com/xpajonx/openempiric/releases/tag/v1.0.0",
-      "publishedAt": "2026-06-18T08:08:33Z"
-    },
-    "archived": false
-  },
-  {
     "fullName": "rizukirr/hyprsimple",
     "name": "hyprsimple",
     "owner": "rizukirr",
@@ -1354,8 +1354,8 @@
     "stars": 6,
     "forks": 0,
     "topics": [],
-    "updatedAt": "2026-06-22T06:10:52Z",
-    "pushedAt": "2026-06-22T06:10:48Z",
+    "updatedAt": "2026-06-22T15:26:04Z",
+    "pushedAt": "2026-06-22T15:25:00Z",
     "latestRelease": null,
     "archived": false
   },
@@ -1427,8 +1427,8 @@
     "stars": 6,
     "forks": 1,
     "topics": [],
-    "updatedAt": "2026-06-22T08:42:45Z",
-    "pushedAt": "2026-06-22T08:42:40Z",
+    "updatedAt": "2026-06-22T15:13:53Z",
+    "pushedAt": "2026-06-22T15:11:45Z",
     "latestRelease": {
       "name": "v1.1.71",
       "tagName": "v1.1.71",
@@ -1490,8 +1490,8 @@
       "rest-api",
       "rust"
     ],
-    "updatedAt": "2026-06-22T05:07:51Z",
-    "pushedAt": "2026-06-22T05:07:47Z",
+    "updatedAt": "2026-06-22T15:45:31Z",
+    "pushedAt": "2026-06-22T15:45:26Z",
     "latestRelease": {
       "name": "v0.3.4",
       "tagName": "v0.3.4",
