@@ -198,7 +198,7 @@
       "tiptap-editor"
     ],
     "updatedAt": "2026-06-22T15:11:56Z",
-    "pushedAt": "2026-06-22T17:25:41Z",
+    "pushedAt": "2026-06-23T00:55:47Z",
     "latestRelease": {
       "name": "v2.2.1",
       "tagName": "v2.2.1",
@@ -233,10 +233,10 @@
     "url": "https://github.com/mallexibra-dev/clipforge",
     "homepage": "",
     "language": "Python",
-    "stars": 122,
-    "forks": 26,
+    "stars": 127,
+    "forks": 28,
     "topics": [],
-    "updatedAt": "2026-06-22T17:54:46Z",
+    "updatedAt": "2026-06-23T02:43:25Z",
     "pushedAt": "2026-06-20T10:12:10Z",
     "latestRelease": null,
     "archived": false
@@ -295,6 +295,23 @@
     "archived": false
   },
   {
+    "fullName": "jipraks/kasirgratisan",
+    "name": "kasirgratisan",
+    "owner": "jipraks",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/10278519?v=4",
+    "description": "Free, Open Source, Offline Point of Sales Apps",
+    "url": "https://github.com/jipraks/kasirgratisan",
+    "homepage": "",
+    "language": "TypeScript",
+    "stars": 84,
+    "forks": 41,
+    "topics": [],
+    "updatedAt": "2026-06-23T01:29:41Z",
+    "pushedAt": "2026-06-21T16:06:28Z",
+    "latestRelease": null,
+    "archived": false
+  },
+  {
     "fullName": "adenaufal/anti-slop-writing",
     "name": "anti-slop-writing",
     "owner": "adenaufal",
@@ -333,23 +350,6 @@
     "archived": false
   },
   {
-    "fullName": "jipraks/kasirgratisan",
-    "name": "kasirgratisan",
-    "owner": "jipraks",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/10278519?v=4",
-    "description": "Free, Open Source, Offline Point of Sales Apps",
-    "url": "https://github.com/jipraks/kasirgratisan",
-    "homepage": "",
-    "language": "TypeScript",
-    "stars": 83,
-    "forks": 41,
-    "topics": [],
-    "updatedAt": "2026-06-21T06:12:07Z",
-    "pushedAt": "2026-06-21T16:06:28Z",
-    "latestRelease": null,
-    "archived": false
-  },
-  {
     "fullName": "ddtamn/svelte-audio-ui",
     "name": "svelte-audio-ui",
     "owner": "ddtamn",
@@ -370,7 +370,7 @@
       "sveltekit"
     ],
     "updatedAt": "2026-06-18T10:21:12Z",
-    "pushedAt": "2026-06-19T21:46:40Z",
+    "pushedAt": "2026-06-23T03:45:48Z",
     "latestRelease": {
       "name": "svelte-audio-ui@1.0.1",
       "tagName": "v1.0.1",
@@ -523,6 +523,39 @@
     "archived": false
   },
   {
+    "fullName": "wauputr4/bansos",
+    "name": "bansos",
+    "owner": "wauputr4",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/103489788?v=4",
+    "description": "bansos.dev — Promo developer Indonesia: domain gratis, AI credits, cloud credits, hosting free-tier, API credits, database credits, startup credits, diskon tools coding & hosting gratis. Open source.",
+    "url": "https://github.com/wauputr4/bansos",
+    "homepage": "https://bansos.dev",
+    "language": "Svelte",
+    "stars": 38,
+    "forks": 3,
+    "topics": [
+      "bansos",
+      "cli",
+      "cloudflare-pages",
+      "developer-resources",
+      "developer-tools",
+      "freebies",
+      "indonesia",
+      "open-source",
+      "static-site",
+      "sveltekit"
+    ],
+    "updatedAt": "2026-06-23T02:52:24Z",
+    "pushedAt": "2026-06-23T02:52:20Z",
+    "latestRelease": {
+      "name": "Bansos v0.0.13",
+      "tagName": "v0.0.13",
+      "url": "https://github.com/wauputr4/bansos/releases/tag/v0.0.13",
+      "publishedAt": "2026-06-21T10:19:23Z"
+    },
+    "archived": false
+  },
+  {
     "fullName": "mmenghancurkan/dynaQRIS",
     "name": "dynaQRIS",
     "owner": "mmenghancurkan",
@@ -541,39 +574,6 @@
       "tagName": "woah-first",
       "url": "https://github.com/mmenghancurkan/dynaQRIS/releases/tag/woah-first",
       "publishedAt": "2026-06-20T14:24:38Z"
-    },
-    "archived": false
-  },
-  {
-    "fullName": "wauputr4/bansos",
-    "name": "bansos",
-    "owner": "wauputr4",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/103489788?v=4",
-    "description": "bansos.dev — Promo developer Indonesia: domain gratis, AI credits, cloud credits, hosting free-tier, API credits, database credits, startup credits, diskon tools coding & hosting gratis. Open source.",
-    "url": "https://github.com/wauputr4/bansos",
-    "homepage": "https://bansos.dev",
-    "language": "Svelte",
-    "stars": 37,
-    "forks": 3,
-    "topics": [
-      "bansos",
-      "cli",
-      "cloudflare-pages",
-      "developer-resources",
-      "developer-tools",
-      "freebies",
-      "indonesia",
-      "open-source",
-      "static-site",
-      "sveltekit"
-    ],
-    "updatedAt": "2026-06-22T18:32:55Z",
-    "pushedAt": "2026-06-22T18:17:54Z",
-    "latestRelease": {
-      "name": "Bansos v0.0.13",
-      "tagName": "v0.0.13",
-      "url": "https://github.com/wauputr4/bansos/releases/tag/v0.0.13",
-      "publishedAt": "2026-06-21T10:19:23Z"
     },
     "archived": false
   },
@@ -718,7 +718,7 @@
     "url": "https://github.com/fadhilbarkah/diskus",
     "homepage": "https://diskus.pages.dev",
     "language": "TypeScript",
-    "stars": 27,
+    "stars": 28,
     "forks": 0,
     "topics": [
       "blog-comments",
@@ -730,7 +730,7 @@
       "disqus-alternative",
       "open-source"
     ],
-    "updatedAt": "2026-06-22T19:21:50Z",
+    "updatedAt": "2026-06-22T23:57:10Z",
     "pushedAt": "2026-06-20T14:50:04Z",
     "latestRelease": null,
     "archived": false
@@ -823,7 +823,7 @@
     "url": "https://github.com/abilfida/OmniDrive",
     "homepage": "",
     "language": "TypeScript",
-    "stars": 16,
+    "stars": 17,
     "forks": 2,
     "topics": [
       "cloudflare",
@@ -831,7 +831,7 @@
       "reactjs",
       "vitejs"
     ],
-    "updatedAt": "2026-06-21T17:26:52Z",
+    "updatedAt": "2026-06-23T03:56:17Z",
     "pushedAt": "2026-06-21T17:26:49Z",
     "latestRelease": {
       "name": "v0.9.1",
@@ -867,8 +867,8 @@
       "sqlite",
       "vector-database"
     ],
-    "updatedAt": "2026-06-22T15:49:13Z",
-    "pushedAt": "2026-06-22T15:49:48Z",
+    "updatedAt": "2026-06-23T03:42:54Z",
+    "pushedAt": "2026-06-23T03:42:51Z",
     "latestRelease": {
       "name": "Release v0.4.2",
       "tagName": "v0.4.2",
@@ -928,6 +928,23 @@
     "archived": false
   },
   {
+    "fullName": "MuhammadHasbiAshshiddieqy/OpenClawn",
+    "name": "OpenClawn",
+    "owner": "MuhammadHasbiAshshiddieqy",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/47019965?v=4",
+    "description": "Lightweight, safe, self-improving multi-role AI agent framework. Hybrid local + cloud LLMs with self-calibrating routing, decaying skills, and confidence-gated learning — 25 sandboxed tools for code, data, docs, git, and the web.",
+    "url": "https://github.com/MuhammadHasbiAshshiddieqy/OpenClawn",
+    "homepage": "",
+    "language": "Python",
+    "stars": 14,
+    "forks": 1,
+    "topics": [],
+    "updatedAt": "2026-06-23T02:45:22Z",
+    "pushedAt": "2026-06-22T01:20:18Z",
+    "latestRelease": null,
+    "archived": false
+  },
+  {
     "fullName": "rahmanef63/open-silong",
     "name": "open-silong",
     "owner": "rahmanef63",
@@ -952,23 +969,6 @@
     ],
     "updatedAt": "2026-06-20T08:20:39Z",
     "pushedAt": "2026-06-09T05:19:33Z",
-    "latestRelease": null,
-    "archived": false
-  },
-  {
-    "fullName": "MuhammadHasbiAshshiddieqy/OpenClawn",
-    "name": "OpenClawn",
-    "owner": "MuhammadHasbiAshshiddieqy",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/47019965?v=4",
-    "description": "Lightweight, safe, self-improving multi-role AI agent framework. Hybrid local + cloud LLMs with self-calibrating routing, decaying skills, and confidence-gated learning — 25 sandboxed tools for code, data, docs, git, and the web.",
-    "url": "https://github.com/MuhammadHasbiAshshiddieqy/OpenClawn",
-    "homepage": "",
-    "language": "Python",
-    "stars": 13,
-    "forks": 1,
-    "topics": [],
-    "updatedAt": "2026-06-22T01:20:20Z",
-    "pushedAt": "2026-06-22T01:20:18Z",
     "latestRelease": null,
     "archived": false
   },
@@ -1279,6 +1279,23 @@
     "archived": false
   },
   {
+    "fullName": "Aofsnorth/Artidor",
+    "name": "Artidor",
+    "owner": "Aofsnorth",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/108259309?v=4",
+    "description": "Proyek dari daftar awesome-indonesia.",
+    "url": "https://github.com/Aofsnorth/Artidor",
+    "homepage": "https://artidor.vercel.app",
+    "language": "TypeScript",
+    "stars": 7,
+    "forks": 0,
+    "topics": [],
+    "updatedAt": "2026-06-23T03:48:26Z",
+    "pushedAt": "2026-06-23T03:48:22Z",
+    "latestRelease": null,
+    "archived": false
+  },
+  {
     "fullName": "rizukirr/hyprsimple",
     "name": "hyprsimple",
     "owner": "rizukirr",
@@ -1343,23 +1360,6 @@
     "archived": false
   },
   {
-    "fullName": "Aofsnorth/Artidor",
-    "name": "Artidor",
-    "owner": "Aofsnorth",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/108259309?v=4",
-    "description": "Proyek dari daftar awesome-indonesia.",
-    "url": "https://github.com/Aofsnorth/Artidor",
-    "homepage": "https://artidor.vercel.app",
-    "language": "TypeScript",
-    "stars": 6,
-    "forks": 0,
-    "topics": [],
-    "updatedAt": "2026-06-22T15:26:04Z",
-    "pushedAt": "2026-06-22T15:25:00Z",
-    "latestRelease": null,
-    "archived": false
-  },
-  {
     "fullName": "RamaAditya49/ai-agentic",
     "name": "ai-agentic",
     "owner": "RamaAditya49",
@@ -1388,8 +1388,8 @@
     "stars": 6,
     "forks": 0,
     "topics": [],
-    "updatedAt": "2026-06-22T02:45:25Z",
-    "pushedAt": "2026-06-21T20:26:58Z",
+    "updatedAt": "2026-06-22T21:32:53Z",
+    "pushedAt": "2026-06-22T21:32:48Z",
     "latestRelease": null,
     "archived": false
   },
@@ -1427,8 +1427,8 @@
     "stars": 6,
     "forks": 1,
     "topics": [],
-    "updatedAt": "2026-06-22T15:13:53Z",
-    "pushedAt": "2026-06-22T15:11:45Z",
+    "updatedAt": "2026-06-23T03:45:30Z",
+    "pushedAt": "2026-06-23T03:45:26Z",
     "latestRelease": {
       "name": "v1.1.71",
       "tagName": "v1.1.71",
