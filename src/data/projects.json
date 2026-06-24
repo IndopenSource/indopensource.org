@@ -8,13 +8,13 @@
     "url": "https://github.com/OpenSID/OpenSID",
     "homepage": "",
     "language": "PHP",
-    "stars": 1203,
+    "stars": 1204,
     "forks": 1149,
     "topics": [
       "opensid",
       "sistem-informasi-desa"
     ],
-    "updatedAt": "2026-06-23T12:41:56Z",
+    "updatedAt": "2026-06-24T04:45:54Z",
     "pushedAt": "2026-06-23T10:46:34Z",
     "latestRelease": {
       "name": "Rilis v2606.0.0",
@@ -33,10 +33,10 @@
     "url": "https://github.com/jipraks/yt-short-clipper",
     "homepage": "",
     "language": "Python",
-    "stars": 830,
-    "forks": 257,
+    "stars": 831,
+    "forks": 259,
     "topics": [],
-    "updatedAt": "2026-06-23T21:11:45Z",
+    "updatedAt": "2026-06-24T05:36:21Z",
     "pushedAt": "2026-06-21T09:47:06Z",
     "latestRelease": {
       "name": "YT Short Clipper v2.0.0-beta",
@@ -84,7 +84,7 @@
     "url": "https://github.com/Drenzzz/ADBKit",
     "homepage": "",
     "language": "TypeScript",
-    "stars": 317,
+    "stars": 318,
     "forks": 36,
     "topics": [
       "astrojs",
@@ -92,7 +92,7 @@
       "wails",
       "wails-app"
     ],
-    "updatedAt": "2026-06-24T00:10:23Z",
+    "updatedAt": "2026-06-24T08:27:25Z",
     "pushedAt": "2026-04-04T02:31:28Z",
     "latestRelease": {
       "name": "v1.3",
@@ -107,11 +107,11 @@
     "name": "omni",
     "owner": "fajarhide",
     "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/4769529?v=4",
-    "description": "The Context OS for Autonomous AI Agents. Distill terminal noise into pure semantic signal, stop agent hallucinations, and cut token costs by up to 90%.",
+    "description": "Noise-canceling headphones for your AI agent. Stop paying Claude to read 10,000 lines of terminal output just to find one error.",
     "url": "https://github.com/fajarhide/omni",
     "homepage": "https://omni.weekndlabs.com",
     "language": "Rust",
-    "stars": 281,
+    "stars": 282,
     "forks": 29,
     "topics": [
       "ai-agents",
@@ -130,8 +130,8 @@
       "token-reduction",
       "token-savings"
     ],
-    "updatedAt": "2026-06-24T01:55:27Z",
-    "pushedAt": "2026-06-24T01:55:25Z",
+    "updatedAt": "2026-06-24T07:45:02Z",
+    "pushedAt": "2026-06-24T06:42:34Z",
     "latestRelease": {
       "name": "v0.6.0",
       "tagName": "v0.6.0",
@@ -197,13 +197,13 @@
       "productivity",
       "tiptap-editor"
     ],
-    "updatedAt": "2026-06-22T15:11:56Z",
-    "pushedAt": "2026-06-23T17:48:29Z",
+    "updatedAt": "2026-06-24T07:30:43Z",
+    "pushedAt": "2026-06-24T07:49:55Z",
     "latestRelease": {
-      "name": "v2.2.1",
-      "tagName": "v2.2.1",
-      "url": "https://github.com/hadziqmtqn/erd-builder-pro/releases/tag/v2.2.1",
-      "publishedAt": "2026-06-22T15:09:53Z"
+      "name": "v2.2.2",
+      "tagName": "v2.2.2",
+      "url": "https://github.com/hadziqmtqn/erd-builder-pro/releases/tag/v2.2.2",
+      "publishedAt": "2026-06-24T07:32:17Z"
     },
     "archived": false
   },
@@ -233,10 +233,10 @@
     "url": "https://github.com/mallexibra-dev/clipforge",
     "homepage": "",
     "language": "Python",
-    "stars": 130,
+    "stars": 132,
     "forks": 28,
     "topics": [],
-    "updatedAt": "2026-06-23T17:36:26Z",
+    "updatedAt": "2026-06-24T06:54:13Z",
     "pushedAt": "2026-06-20T10:12:10Z",
     "latestRelease": null,
     "archived": false
@@ -344,8 +344,8 @@
     "stars": 84,
     "forks": 41,
     "topics": [],
-    "updatedAt": "2026-06-23T09:47:37Z",
-    "pushedAt": "2026-06-23T09:47:33Z",
+    "updatedAt": "2026-06-24T08:54:34Z",
+    "pushedAt": "2026-06-24T08:54:30Z",
     "latestRelease": null,
     "archived": false
   },
@@ -412,7 +412,7 @@
       "airouter"
     ],
     "updatedAt": "2026-06-24T04:09:17Z",
-    "pushedAt": "2026-06-24T04:09:13Z",
+    "pushedAt": "2026-06-24T05:33:06Z",
     "latestRelease": {
       "name": "v0.1.18",
       "tagName": "v0.1.18",
@@ -452,8 +452,8 @@
     "url": "https://github.com/wauputr4/bansos",
     "homepage": "https://bansos.dev",
     "language": "Svelte",
-    "stars": 43,
-    "forks": 4,
+    "stars": 44,
+    "forks": 5,
     "topics": [
       "bansos",
       "cli",
@@ -466,14 +466,31 @@
       "static-site",
       "sveltekit"
     ],
-    "updatedAt": "2026-06-24T02:11:00Z",
-    "pushedAt": "2026-06-23T22:56:14Z",
+    "updatedAt": "2026-06-24T09:16:27Z",
+    "pushedAt": "2026-06-24T09:16:38Z",
     "latestRelease": {
       "name": "Bansos v0.0.13",
       "tagName": "v0.0.13",
       "url": "https://github.com/wauputr4/bansos/releases/tag/v0.0.13",
       "publishedAt": "2026-06-21T10:19:23Z"
     },
+    "archived": false
+  },
+  {
+    "fullName": "raymondchins/agentmap",
+    "name": "agentmap",
+    "owner": "raymondchins",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/12913191?v=4",
+    "description": "The repo map your coding agent is forced to use — ~98% fewer tokens (up to 99.9% per task) to understand a TS/JS codebase. PageRank hubs, Aider-style symbol ranking, token-budgeted digest, --any router, wired into the agent loop.",
+    "url": "https://github.com/raymondchins/agentmap",
+    "homepage": "",
+    "language": "JavaScript",
+    "stars": 41,
+    "forks": 9,
+    "topics": [],
+    "updatedAt": "2026-06-24T05:22:37Z",
+    "pushedAt": "2026-06-16T04:08:21Z",
+    "latestRelease": null,
     "archived": false
   },
   {
@@ -539,20 +556,25 @@
     "archived": false
   },
   {
-    "fullName": "raymondchins/agentmap",
-    "name": "agentmap",
-    "owner": "raymondchins",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/12913191?v=4",
-    "description": "The repo map your coding agent is forced to use — ~98% fewer tokens (up to 99.9% per task) to understand a TS/JS codebase. PageRank hubs, Aider-style symbol ranking, token-budgeted digest, --any router, wired into the agent loop.",
-    "url": "https://github.com/raymondchins/agentmap",
+    "fullName": "firewalker06/tycho",
+    "name": "tycho",
+    "owner": "firewalker06",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/157515?v=4",
+    "description": "Its Factorio for coding agents",
+    "url": "https://github.com/firewalker06/tycho",
     "homepage": "",
-    "language": "JavaScript",
-    "stars": 40,
-    "forks": 9,
+    "language": "Ruby",
+    "stars": 37,
+    "forks": 3,
     "topics": [],
-    "updatedAt": "2026-06-21T00:57:09Z",
-    "pushedAt": "2026-06-16T04:08:21Z",
-    "latestRelease": null,
+    "updatedAt": "2026-06-24T08:43:28Z",
+    "pushedAt": "2026-06-23T13:06:58Z",
+    "latestRelease": {
+      "name": "Tycho v0.6.1",
+      "tagName": "v0.6.1",
+      "url": "https://github.com/firewalker06/tycho/releases/tag/v0.6.1",
+      "publishedAt": "2026-06-21T13:24:09Z"
+    },
     "archived": false
   },
   {
@@ -574,28 +596,6 @@
       "tagName": "woah-first",
       "url": "https://github.com/mmenghancurkan/dynaQRIS/releases/tag/woah-first",
       "publishedAt": "2026-06-20T14:24:38Z"
-    },
-    "archived": false
-  },
-  {
-    "fullName": "firewalker06/tycho",
-    "name": "tycho",
-    "owner": "firewalker06",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/157515?v=4",
-    "description": "Its Factorio for coding agents",
-    "url": "https://github.com/firewalker06/tycho",
-    "homepage": "",
-    "language": "Ruby",
-    "stars": 36,
-    "forks": 3,
-    "topics": [],
-    "updatedAt": "2026-06-23T13:07:55Z",
-    "pushedAt": "2026-06-23T13:06:58Z",
-    "latestRelease": {
-      "name": "Tycho v0.6.1",
-      "tagName": "v0.6.1",
-      "url": "https://github.com/firewalker06/tycho/releases/tag/v0.6.1",
-      "publishedAt": "2026-06-21T13:24:09Z"
     },
     "archived": false
   },
@@ -1115,28 +1115,6 @@
     "archived": false
   },
   {
-    "fullName": "ahmadghaisanfad2/absen-kelas",
-    "name": "absen-kelas",
-    "owner": "ahmadghaisanfad2",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/82021575?v=4",
-    "description": "Proyek dari daftar awesome-indonesia.",
-    "url": "https://github.com/ahmadghaisanfad2/absen-kelas",
-    "homepage": "",
-    "language": "TypeScript",
-    "stars": 10,
-    "forks": 3,
-    "topics": [],
-    "updatedAt": "2026-06-18T01:22:04Z",
-    "pushedAt": "2026-06-11T16:34:43Z",
-    "latestRelease": {
-      "name": "Absen Kelas v0.1.17",
-      "tagName": "v0.1.17",
-      "url": "https://github.com/ahmadghaisanfad2/absen-kelas/releases/tag/v0.1.17",
-      "publishedAt": "2026-06-11T16:42:59Z"
-    },
-    "archived": false
-  },
-  {
     "fullName": "xpajonx/openempiric",
     "name": "openempiric",
     "owner": "xpajonx",
@@ -1145,7 +1123,7 @@
     "url": "https://github.com/xpajonx/openempiric",
     "homepage": "",
     "language": "Python",
-    "stars": 10,
+    "stars": 11,
     "forks": 1,
     "topics": [
       "agent-memory",
@@ -1164,13 +1142,35 @@
       "python",
       "semantic-search"
     ],
-    "updatedAt": "2026-06-22T17:00:09Z",
-    "pushedAt": "2026-06-24T04:28:37Z",
+    "updatedAt": "2026-06-24T09:26:00Z",
+    "pushedAt": "2026-06-24T05:45:33Z",
     "latestRelease": {
       "name": "OpenEmpiric v1.0.0",
       "tagName": "v1.0.0",
       "url": "https://github.com/xpajonx/openempiric/releases/tag/v1.0.0",
       "publishedAt": "2026-06-18T08:08:33Z"
+    },
+    "archived": false
+  },
+  {
+    "fullName": "ahmadghaisanfad2/absen-kelas",
+    "name": "absen-kelas",
+    "owner": "ahmadghaisanfad2",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/82021575?v=4",
+    "description": "Proyek dari daftar awesome-indonesia.",
+    "url": "https://github.com/ahmadghaisanfad2/absen-kelas",
+    "homepage": "",
+    "language": "TypeScript",
+    "stars": 10,
+    "forks": 3,
+    "topics": [],
+    "updatedAt": "2026-06-18T01:22:04Z",
+    "pushedAt": "2026-06-11T16:34:43Z",
+    "latestRelease": {
+      "name": "Absen Kelas v0.1.17",
+      "tagName": "v0.1.17",
+      "url": "https://github.com/ahmadghaisanfad2/absen-kelas/releases/tag/v0.1.17",
+      "publishedAt": "2026-06-11T16:42:59Z"
     },
     "archived": false
   },
@@ -1290,8 +1290,25 @@
     "stars": 7,
     "forks": 0,
     "topics": [],
-    "updatedAt": "2026-06-24T01:05:13Z",
-    "pushedAt": "2026-06-24T01:05:09Z",
+    "updatedAt": "2026-06-24T09:19:08Z",
+    "pushedAt": "2026-06-24T09:19:03Z",
+    "latestRelease": null,
+    "archived": false
+  },
+  {
+    "fullName": "raymondchins/tokengratis-id",
+    "name": "tokengratis-id",
+    "owner": "raymondchins",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/12913191?v=4",
+    "description": "Directory free AI credits & free tier, Indonesia-first, auto-aggregated dari sumber komunitas. Aggregator transparan (bukan verifier), anti-halusinasi, maintenance nyaris nol.",
+    "url": "https://github.com/raymondchins/tokengratis-id",
+    "homepage": "https://tokengratis.id",
+    "language": "JavaScript",
+    "stars": 7,
+    "forks": 0,
+    "topics": [],
+    "updatedAt": "2026-06-24T05:23:13Z",
+    "pushedAt": "2026-06-23T21:01:18Z",
     "latestRelease": null,
     "archived": false
   },
@@ -1399,23 +1416,6 @@
     "archived": false
   },
   {
-    "fullName": "raymondchins/tokengratis-id",
-    "name": "tokengratis-id",
-    "owner": "raymondchins",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/12913191?v=4",
-    "description": "Directory free AI credits & free tier, Indonesia-first, auto-aggregated dari sumber komunitas. Aggregator transparan (bukan verifier), anti-halusinasi, maintenance nyaris nol.",
-    "url": "https://github.com/raymondchins/tokengratis-id",
-    "homepage": "https://tokengratis.id",
-    "language": "JavaScript",
-    "stars": 6,
-    "forks": 0,
-    "topics": [],
-    "updatedAt": "2026-06-23T21:01:29Z",
-    "pushedAt": "2026-06-23T21:01:18Z",
-    "latestRelease": null,
-    "archived": false
-  },
-  {
     "fullName": "RudyCity/superagent",
     "name": "superagent",
     "owner": "RudyCity",
@@ -1427,8 +1427,8 @@
     "stars": 6,
     "forks": 1,
     "topics": [],
-    "updatedAt": "2026-06-24T04:27:23Z",
-    "pushedAt": "2026-06-24T04:27:19Z",
+    "updatedAt": "2026-06-24T09:17:06Z",
+    "pushedAt": "2026-06-24T09:16:38Z",
     "latestRelease": {
       "name": "v1.1.101",
       "tagName": "v1.1.101",
@@ -1702,6 +1702,23 @@
     "archived": false
   },
   {
+    "fullName": "rizukirr/libmuslim",
+    "name": "libmuslim",
+    "owner": "rizukirr",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/230007457?v=4",
+    "description": "A lightweight C library for calculating Islamic prayer times, support 21 calculation method worldwide",
+    "url": "https://github.com/rizukirr/libmuslim",
+    "homepage": "",
+    "language": "C",
+    "stars": 2,
+    "forks": 0,
+    "topics": [],
+    "updatedAt": "2026-06-24T05:10:34Z",
+    "pushedAt": "2026-06-13T16:43:45Z",
+    "latestRelease": null,
+    "archived": false
+  },
+  {
     "fullName": "NzxCode/Hospital-Ai-Sales-Agent",
     "name": "Hospital-Ai-Sales-Agent",
     "owner": "NzxCode",
@@ -1715,23 +1732,6 @@
     "topics": [],
     "updatedAt": "2026-06-14T13:53:44Z",
     "pushedAt": "2026-06-14T13:53:40Z",
-    "latestRelease": null,
-    "archived": false
-  },
-  {
-    "fullName": "rizukirr/libmuslim",
-    "name": "libmuslim",
-    "owner": "rizukirr",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/230007457?v=4",
-    "description": "A lightweight C library for calculating Islamic prayer times, support 21 calculation method worldwide",
-    "url": "https://github.com/rizukirr/libmuslim",
-    "homepage": "",
-    "language": "C",
-    "stars": 1,
-    "forks": 0,
-    "topics": [],
-    "updatedAt": "2026-06-13T16:43:49Z",
-    "pushedAt": "2026-06-13T16:43:45Z",
     "latestRelease": null,
     "archived": false
   }
