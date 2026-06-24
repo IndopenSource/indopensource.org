@@ -9,7 +9,7 @@
     "homepage": "",
     "language": "PHP",
     "stars": 1203,
-    "forks": 1148,
+    "forks": 1149,
     "topics": [
       "opensid",
       "sistem-informasi-desa"
@@ -33,10 +33,10 @@
     "url": "https://github.com/jipraks/yt-short-clipper",
     "homepage": "",
     "language": "Python",
-    "stars": 829,
+    "stars": 830,
     "forks": 257,
     "topics": [],
-    "updatedAt": "2026-06-23T13:51:31Z",
+    "updatedAt": "2026-06-23T21:11:45Z",
     "pushedAt": "2026-06-21T09:47:06Z",
     "latestRelease": {
       "name": "YT Short Clipper v2.0.0-beta",
@@ -84,7 +84,7 @@
     "url": "https://github.com/Drenzzz/ADBKit",
     "homepage": "",
     "language": "TypeScript",
-    "stars": 316,
+    "stars": 317,
     "forks": 36,
     "topics": [
       "astrojs",
@@ -92,7 +92,7 @@
       "wails",
       "wails-app"
     ],
-    "updatedAt": "2026-06-22T18:32:27Z",
+    "updatedAt": "2026-06-24T00:10:23Z",
     "pushedAt": "2026-04-04T02:31:28Z",
     "latestRelease": {
       "name": "v1.3",
@@ -112,7 +112,7 @@
     "homepage": "https://omni.weekndlabs.com",
     "language": "Rust",
     "stars": 281,
-    "forks": 28,
+    "forks": 29,
     "topics": [
       "ai-agents",
       "antigravity",
@@ -130,8 +130,8 @@
       "token-reduction",
       "token-savings"
     ],
-    "updatedAt": "2026-06-23T06:50:16Z",
-    "pushedAt": "2026-06-23T16:53:55Z",
+    "updatedAt": "2026-06-24T01:55:27Z",
+    "pushedAt": "2026-06-24T01:55:25Z",
     "latestRelease": {
       "name": "v0.6.0",
       "tagName": "v0.6.0",
@@ -411,8 +411,8 @@
       "ai",
       "airouter"
     ],
-    "updatedAt": "2026-06-20T19:39:12Z",
-    "pushedAt": "2026-06-23T09:12:09Z",
+    "updatedAt": "2026-06-24T04:09:17Z",
+    "pushedAt": "2026-06-24T04:09:13Z",
     "latestRelease": {
       "name": "v0.1.18",
       "tagName": "v0.1.18",
@@ -452,7 +452,7 @@
     "url": "https://github.com/wauputr4/bansos",
     "homepage": "https://bansos.dev",
     "language": "Svelte",
-    "stars": 42,
+    "stars": 43,
     "forks": 4,
     "topics": [
       "bansos",
@@ -466,8 +466,8 @@
       "static-site",
       "sveltekit"
     ],
-    "updatedAt": "2026-06-23T17:36:58Z",
-    "pushedAt": "2026-06-23T17:36:44Z",
+    "updatedAt": "2026-06-24T02:11:00Z",
+    "pushedAt": "2026-06-23T22:56:14Z",
     "latestRelease": {
       "name": "Bansos v0.0.13",
       "tagName": "v0.0.13",
@@ -531,10 +531,10 @@
     "updatedAt": "2026-06-23T16:12:47Z",
     "pushedAt": "2026-06-23T12:55:54Z",
     "latestRelease": {
-      "name": "TEDI v0.3.55",
-      "tagName": "v0.3.55",
-      "url": "https://github.com/IlhamriSKY/TEDI/releases/tag/v0.3.55",
-      "publishedAt": "2026-06-20T04:23:06Z"
+      "name": "TEDI v0.3.56",
+      "tagName": "v0.3.56",
+      "url": "https://github.com/IlhamriSKY/TEDI/releases/tag/v0.3.56",
+      "publishedAt": "2026-06-24T00:27:26Z"
     },
     "archived": false
   },
@@ -600,6 +600,32 @@
     "archived": false
   },
   {
+    "fullName": "rahmanef63/os-vps",
+    "name": "os-vps",
+    "owner": "rahmanef63",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/71124675?v=4",
+    "description": "Topside — mobile-first web cockpit for a headless Linux VPS. Terminal, files, monitor, media + a real remote browser in a desktop-style UI. Single Next.js app, no database, no agent.",
+    "url": "https://github.com/rahmanef63/os-vps",
+    "homepage": "",
+    "language": "TypeScript",
+    "stars": 34,
+    "forks": 6,
+    "topics": [
+      "file-manager",
+      "nextjs",
+      "playwright",
+      "self-hosted",
+      "shadcn-ui",
+      "terminal",
+      "vps",
+      "web-desktop"
+    ],
+    "updatedAt": "2026-06-24T03:38:26Z",
+    "pushedAt": "2026-06-24T03:38:23Z",
+    "latestRelease": null,
+    "archived": false
+  },
+  {
     "fullName": "pendig/rute-bayar",
     "name": "rute-bayar",
     "owner": "pendig",
@@ -629,32 +655,6 @@
       "url": "https://github.com/pendig/rute-bayar/releases/tag/v0.1.11",
       "publishedAt": "2026-06-15T11:39:59Z"
     },
-    "archived": false
-  },
-  {
-    "fullName": "rahmanef63/os-vps",
-    "name": "os-vps",
-    "owner": "rahmanef63",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/71124675?v=4",
-    "description": "Topside — mobile-first web cockpit for a headless Linux VPS. Terminal, files, monitor, media + a real remote browser in a desktop-style UI. Single Next.js app, no database, no agent.",
-    "url": "https://github.com/rahmanef63/os-vps",
-    "homepage": "",
-    "language": "TypeScript",
-    "stars": 33,
-    "forks": 6,
-    "topics": [
-      "file-manager",
-      "nextjs",
-      "playwright",
-      "self-hosted",
-      "shadcn-ui",
-      "terminal",
-      "vps",
-      "web-desktop"
-    ],
-    "updatedAt": "2026-06-17T23:28:58Z",
-    "pushedAt": "2026-06-15T07:38:53Z",
-    "latestRelease": null,
     "archived": false
   },
   {
@@ -792,8 +792,8 @@
     "stars": 19,
     "forks": 3,
     "topics": [],
-    "updatedAt": "2026-06-21T15:30:39Z",
-    "pushedAt": "2026-06-21T15:30:35Z",
+    "updatedAt": "2026-06-24T04:28:43Z",
+    "pushedAt": "2026-06-24T04:28:39Z",
     "latestRelease": null,
     "archived": false
   },
@@ -831,13 +831,13 @@
       "reactjs",
       "vitejs"
     ],
-    "updatedAt": "2026-06-23T19:20:11Z",
-    "pushedAt": "2026-06-23T19:20:06Z",
+    "updatedAt": "2026-06-24T03:36:36Z",
+    "pushedAt": "2026-06-24T03:36:32Z",
     "latestRelease": {
-      "name": "v0.9.4",
-      "tagName": "v0.9.4",
-      "url": "https://github.com/abilfida/OmniDrive/releases/tag/v0.9.4",
-      "publishedAt": "2026-06-23T19:21:07Z"
+      "name": "v0.9.7",
+      "tagName": "v0.9.7",
+      "url": "https://github.com/abilfida/OmniDrive/releases/tag/v0.9.7",
+      "publishedAt": "2026-06-24T03:37:28Z"
     },
     "archived": false
   },
@@ -850,7 +850,7 @@
     "url": "https://github.com/codecoradev/uteke",
     "homepage": "https://codecora.dev",
     "language": "Rust",
-    "stars": 16,
+    "stars": 17,
     "forks": 2,
     "topics": [
       "ai",
@@ -867,7 +867,7 @@
       "sqlite",
       "vector-database"
     ],
-    "updatedAt": "2026-06-23T16:08:31Z",
+    "updatedAt": "2026-06-24T03:21:24Z",
     "pushedAt": "2026-06-23T18:54:02Z",
     "latestRelease": {
       "name": "Release v0.4.2",
@@ -1001,6 +1001,40 @@
     "archived": false
   },
   {
+    "fullName": "rizukirr/muslimtify",
+    "name": "muslimtify",
+    "owner": "rizukirr",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/230007457?v=4",
+    "description": "A daily prayer notification daemon for Muslims on Windows and Linux, supporting 21 global standard calculation methods, all madzhab, all country.",
+    "url": "https://github.com/rizukirr/muslimtify",
+    "homepage": "",
+    "language": "C",
+    "stars": 12,
+    "forks": 1,
+    "topics": [
+      "c-language",
+      "cross-platform",
+      "daemon",
+      "linux",
+      "muslim-prayer-times",
+      "muslims-prayer",
+      "notification",
+      "systemd",
+      "windows",
+      "windows-app",
+      "windows-desktop"
+    ],
+    "updatedAt": "2026-06-23T21:33:30Z",
+    "pushedAt": "2026-06-22T10:46:38Z",
+    "latestRelease": {
+      "name": "v0.2.3",
+      "tagName": "v0.2.3",
+      "url": "https://github.com/rizukirr/muslimtify/releases/tag/v0.2.3",
+      "publishedAt": "2026-05-26T02:38:49Z"
+    },
+    "archived": false
+  },
+  {
     "fullName": "fajarhide/heimsense",
     "name": "heimsense",
     "owner": "fajarhide",
@@ -1081,40 +1115,6 @@
     "archived": false
   },
   {
-    "fullName": "rizukirr/muslimtify",
-    "name": "muslimtify",
-    "owner": "rizukirr",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/230007457?v=4",
-    "description": "A daily prayer notification daemon for Muslims on Windows and Linux, supporting 21 global standard calculation methods, all madzhab, all country.",
-    "url": "https://github.com/rizukirr/muslimtify",
-    "homepage": "",
-    "language": "C",
-    "stars": 11,
-    "forks": 1,
-    "topics": [
-      "c-language",
-      "cross-platform",
-      "daemon",
-      "linux",
-      "muslim-prayer-times",
-      "muslims-prayer",
-      "notification",
-      "systemd",
-      "windows",
-      "windows-app",
-      "windows-desktop"
-    ],
-    "updatedAt": "2026-06-21T07:21:20Z",
-    "pushedAt": "2026-06-22T10:46:38Z",
-    "latestRelease": {
-      "name": "v0.2.3",
-      "tagName": "v0.2.3",
-      "url": "https://github.com/rizukirr/muslimtify/releases/tag/v0.2.3",
-      "publishedAt": "2026-05-26T02:38:49Z"
-    },
-    "archived": false
-  },
-  {
     "fullName": "ahmadghaisanfad2/absen-kelas",
     "name": "absen-kelas",
     "owner": "ahmadghaisanfad2",
@@ -1165,7 +1165,7 @@
       "semantic-search"
     ],
     "updatedAt": "2026-06-22T17:00:09Z",
-    "pushedAt": "2026-06-19T09:43:51Z",
+    "pushedAt": "2026-06-24T04:28:37Z",
     "latestRelease": {
       "name": "OpenEmpiric v1.0.0",
       "tagName": "v1.0.0",
@@ -1290,8 +1290,8 @@
     "stars": 7,
     "forks": 0,
     "topics": [],
-    "updatedAt": "2026-06-23T19:47:48Z",
-    "pushedAt": "2026-06-23T19:47:44Z",
+    "updatedAt": "2026-06-24T01:05:13Z",
+    "pushedAt": "2026-06-24T01:05:09Z",
     "latestRelease": null,
     "archived": false
   },
@@ -1410,8 +1410,8 @@
     "stars": 6,
     "forks": 0,
     "topics": [],
-    "updatedAt": "2026-06-22T21:32:53Z",
-    "pushedAt": "2026-06-22T21:32:48Z",
+    "updatedAt": "2026-06-23T21:01:29Z",
+    "pushedAt": "2026-06-23T21:01:18Z",
     "latestRelease": null,
     "archived": false
   },
@@ -1427,8 +1427,8 @@
     "stars": 6,
     "forks": 1,
     "topics": [],
-    "updatedAt": "2026-06-23T15:31:21Z",
-    "pushedAt": "2026-06-23T15:31:39Z",
+    "updatedAt": "2026-06-24T04:27:23Z",
+    "pushedAt": "2026-06-24T04:27:19Z",
     "latestRelease": {
       "name": "v1.1.101",
       "tagName": "v1.1.101",
@@ -1613,8 +1613,8 @@
     "stars": 2,
     "forks": 0,
     "topics": [],
-    "updatedAt": "2026-06-17T13:21:26Z",
-    "pushedAt": "2026-06-17T13:21:12Z",
+    "updatedAt": "2026-06-24T03:36:13Z",
+    "pushedAt": "2026-06-24T03:36:18Z",
     "latestRelease": {
       "name": "v1.1.0",
       "tagName": "v1.1.0",
