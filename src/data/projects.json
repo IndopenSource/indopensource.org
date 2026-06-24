@@ -9,12 +9,12 @@
     "homepage": "",
     "language": "PHP",
     "stars": 1204,
-    "forks": 1149,
+    "forks": 1151,
     "topics": [
       "opensid",
       "sistem-informasi-desa"
     ],
-    "updatedAt": "2026-06-24T04:45:54Z",
+    "updatedAt": "2026-06-24T15:05:31Z",
     "pushedAt": "2026-06-23T10:46:34Z",
     "latestRelease": {
       "name": "Rilis v2606.0.0",
@@ -34,7 +34,7 @@
     "homepage": "",
     "language": "Python",
     "stars": 831,
-    "forks": 259,
+    "forks": 260,
     "topics": [],
     "updatedAt": "2026-06-24T05:36:21Z",
     "pushedAt": "2026-06-21T09:47:06Z",
@@ -107,7 +107,7 @@
     "name": "omni",
     "owner": "fajarhide",
     "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/4769529?v=4",
-    "description": "Noise-canceling headphones for your AI agent. Stop paying Claude to read 10,000 lines of terminal output just to find one error.",
+    "description": "Noise-canceling context and long-term memory for your AI agent. Stop paying Claude to read 10,000 lines of terminal noise, and stop repeating yourself every time you restart a session.",
     "url": "https://github.com/fajarhide/omni",
     "homepage": "https://omni.weekndlabs.com",
     "language": "Rust",
@@ -124,14 +124,17 @@
       "homebrew",
       "hooks",
       "mcp",
+      "memory",
+      "memory-management",
+      "memory-system",
       "rust",
       "token-efficiency",
       "token-optimization",
       "token-reduction",
       "token-savings"
     ],
-    "updatedAt": "2026-06-24T07:45:02Z",
-    "pushedAt": "2026-06-24T06:42:34Z",
+    "updatedAt": "2026-06-24T14:48:46Z",
+    "pushedAt": "2026-06-24T14:26:22Z",
     "latestRelease": {
       "name": "v0.6.0",
       "tagName": "v0.6.0",
@@ -198,7 +201,7 @@
       "tiptap-editor"
     ],
     "updatedAt": "2026-06-24T07:30:43Z",
-    "pushedAt": "2026-06-24T07:49:55Z",
+    "pushedAt": "2026-06-24T12:55:17Z",
     "latestRelease": {
       "name": "v2.2.2",
       "tagName": "v2.2.2",
@@ -452,7 +455,7 @@
     "url": "https://github.com/wauputr4/bansos",
     "homepage": "https://bansos.dev",
     "language": "Svelte",
-    "stars": 44,
+    "stars": 46,
     "forks": 5,
     "topics": [
       "bansos",
@@ -466,8 +469,8 @@
       "static-site",
       "sveltekit"
     ],
-    "updatedAt": "2026-06-24T09:16:27Z",
-    "pushedAt": "2026-06-24T09:16:38Z",
+    "updatedAt": "2026-06-24T11:12:50Z",
+    "pushedAt": "2026-06-24T11:01:33Z",
     "latestRelease": {
       "name": "Bansos v0.0.13",
       "tagName": "v0.0.13",
@@ -798,6 +801,42 @@
     "archived": false
   },
   {
+    "fullName": "codecoradev/uteke",
+    "name": "uteke",
+    "owner": "codecoradev",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/289767358?v=4",
+    "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
+    "url": "https://github.com/codecoradev/uteke",
+    "homepage": "https://codecora.dev",
+    "language": "Rust",
+    "stars": 18,
+    "forks": 2,
+    "topics": [
+      "ai",
+      "cli",
+      "cli-tool",
+      "embeddings",
+      "hnsw",
+      "local-first",
+      "memory",
+      "onnx",
+      "onnxruntime",
+      "rust",
+      "semantic-search",
+      "sqlite",
+      "vector-database"
+    ],
+    "updatedAt": "2026-06-24T14:16:40Z",
+    "pushedAt": "2026-06-24T13:24:13Z",
+    "latestRelease": {
+      "name": "Release v0.4.3",
+      "tagName": "v0.4.3",
+      "url": "https://github.com/codecoradev/uteke/releases/tag/v0.4.3",
+      "publishedAt": "2026-06-24T13:32:31Z"
+    },
+    "archived": false
+  },
+  {
     "fullName": "RafiulM/warungos",
     "name": "warungos",
     "owner": "RafiulM",
@@ -838,42 +877,6 @@
       "tagName": "v0.9.7",
       "url": "https://github.com/abilfida/OmniDrive/releases/tag/v0.9.7",
       "publishedAt": "2026-06-24T03:37:28Z"
-    },
-    "archived": false
-  },
-  {
-    "fullName": "codecoradev/uteke",
-    "name": "uteke",
-    "owner": "codecoradev",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/289767358?v=4",
-    "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
-    "url": "https://github.com/codecoradev/uteke",
-    "homepage": "https://codecora.dev",
-    "language": "Rust",
-    "stars": 17,
-    "forks": 2,
-    "topics": [
-      "ai",
-      "cli",
-      "cli-tool",
-      "embeddings",
-      "hnsw",
-      "local-first",
-      "memory",
-      "onnx",
-      "onnxruntime",
-      "rust",
-      "semantic-search",
-      "sqlite",
-      "vector-database"
-    ],
-    "updatedAt": "2026-06-24T03:21:24Z",
-    "pushedAt": "2026-06-23T18:54:02Z",
-    "latestRelease": {
-      "name": "Release v0.4.2",
-      "tagName": "v0.4.2",
-      "url": "https://github.com/codecoradev/uteke/releases/tag/v0.4.2",
-      "publishedAt": "2026-06-22T15:55:51Z"
     },
     "archived": false
   },
@@ -1143,7 +1146,7 @@
       "semantic-search"
     ],
     "updatedAt": "2026-06-24T09:26:00Z",
-    "pushedAt": "2026-06-24T05:45:33Z",
+    "pushedAt": "2026-06-24T14:23:05Z",
     "latestRelease": {
       "name": "OpenEmpiric v1.0.0",
       "tagName": "v1.0.0",
@@ -1290,8 +1293,8 @@
     "stars": 7,
     "forks": 0,
     "topics": [],
-    "updatedAt": "2026-06-24T09:19:08Z",
-    "pushedAt": "2026-06-24T09:19:03Z",
+    "updatedAt": "2026-06-24T14:21:13Z",
+    "pushedAt": "2026-06-24T14:16:52Z",
     "latestRelease": null,
     "archived": false
   },
@@ -1427,8 +1430,8 @@
     "stars": 6,
     "forks": 1,
     "topics": [],
-    "updatedAt": "2026-06-24T09:17:06Z",
-    "pushedAt": "2026-06-24T09:16:38Z",
+    "updatedAt": "2026-06-24T14:51:03Z",
+    "pushedAt": "2026-06-24T14:50:00Z",
     "latestRelease": {
       "name": "v1.1.101",
       "tagName": "v1.1.101",
