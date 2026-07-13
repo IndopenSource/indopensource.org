@@ -34,7 +34,7 @@
     "homepage": "",
     "language": "Python",
     "stars": 876,
-    "forks": 273,
+    "forks": 274,
     "topics": [],
     "updatedAt": "2026-07-13T14:08:09Z",
     "pushedAt": "2026-07-04T05:05:52Z",
@@ -186,7 +186,7 @@
     "url": "https://github.com/gnoviawan/termul",
     "homepage": "https://termul.dev",
     "language": "TypeScript",
-    "stars": 161,
+    "stars": 162,
     "forks": 34,
     "topics": [
       "cross-platform",
@@ -203,7 +203,7 @@
       "terminal-emulator",
       "workspace-manager"
     ],
-    "updatedAt": "2026-07-12T19:17:10Z",
+    "updatedAt": "2026-07-13T16:44:09Z",
     "pushedAt": "2026-07-13T15:03:31Z",
     "latestRelease": {
       "name": "Termul Manager v0.4.8",
@@ -256,14 +256,14 @@
     "url": "https://github.com/IlhamriSKY/PDDIKTI-kemdikbud-API",
     "homepage": "https://pddikti.kemdiktisaintek.go.id/",
     "language": "Python",
-    "stars": 109,
+    "stars": 110,
     "forks": 25,
     "topics": [
       "api-wrapper",
       "package",
       "python3"
     ],
-    "updatedAt": "2026-07-13T09:56:39Z",
+    "updatedAt": "2026-07-13T18:00:36Z",
     "pushedAt": "2025-07-30T13:28:14Z",
     "latestRelease": {
       "name": "V.2.0.6",
@@ -282,12 +282,48 @@
     "url": "https://github.com/jipraks/kasirgratisan",
     "homepage": "",
     "language": "TypeScript",
-    "stars": 102,
+    "stars": 103,
     "forks": 53,
     "topics": [],
-    "updatedAt": "2026-07-13T02:45:10Z",
+    "updatedAt": "2026-07-13T17:28:08Z",
     "pushedAt": "2026-07-13T00:57:27Z",
     "latestRelease": null,
+    "archived": false
+  },
+  {
+    "fullName": "codecoradev/uteke",
+    "name": "uteke",
+    "owner": "codecoradev",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/289767358?v=4",
+    "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
+    "url": "https://github.com/codecoradev/uteke",
+    "homepage": "https://codecora.dev",
+    "language": "Rust",
+    "stars": 97,
+    "forks": 10,
+    "topics": [
+      "ai",
+      "cli",
+      "cli-tool",
+      "embeddings",
+      "hnsw",
+      "local-first",
+      "memory",
+      "onnx",
+      "onnxruntime",
+      "rust",
+      "semantic-search",
+      "sqlite",
+      "vector-database"
+    ],
+    "updatedAt": "2026-07-13T19:12:30Z",
+    "pushedAt": "2026-07-13T17:18:43Z",
+    "latestRelease": {
+      "name": "Release v0.7.2",
+      "tagName": "v0.7.2",
+      "url": "https://github.com/codecoradev/uteke/releases/tag/v0.7.2",
+      "publishedAt": "2026-07-10T09:45:00Z"
+    },
     "archived": false
   },
   {
@@ -314,42 +350,6 @@
       "tagName": "v1.0.0",
       "url": "https://github.com/depapp/IndoGitHubers/releases/tag/v1.0.0",
       "publishedAt": "2024-02-18T12:51:06Z"
-    },
-    "archived": false
-  },
-  {
-    "fullName": "codecoradev/uteke",
-    "name": "uteke",
-    "owner": "codecoradev",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/289767358?v=4",
-    "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
-    "url": "https://github.com/codecoradev/uteke",
-    "homepage": "https://codecora.dev",
-    "language": "Rust",
-    "stars": 94,
-    "forks": 9,
-    "topics": [
-      "ai",
-      "cli",
-      "cli-tool",
-      "embeddings",
-      "hnsw",
-      "local-first",
-      "memory",
-      "onnx",
-      "onnxruntime",
-      "rust",
-      "semantic-search",
-      "sqlite",
-      "vector-database"
-    ],
-    "updatedAt": "2026-07-13T13:14:27Z",
-    "pushedAt": "2026-07-11T16:45:58Z",
-    "latestRelease": {
-      "name": "Release v0.7.2",
-      "tagName": "v0.7.2",
-      "url": "https://github.com/codecoradev/uteke/releases/tag/v0.7.2",
-      "publishedAt": "2026-07-10T09:45:00Z"
     },
     "archived": false
   },
@@ -736,8 +736,8 @@
       "vps",
       "web-desktop"
     ],
-    "updatedAt": "2026-07-13T13:34:41Z",
-    "pushedAt": "2026-07-13T13:34:36Z",
+    "updatedAt": "2026-07-13T16:58:53Z",
+    "pushedAt": "2026-07-13T16:58:42Z",
     "latestRelease": null,
     "archived": false
   },
@@ -1375,8 +1375,8 @@
     "stars": 6,
     "forks": 1,
     "topics": [],
-    "updatedAt": "2026-07-13T11:21:41Z",
-    "pushedAt": "2026-07-13T11:21:38Z",
+    "updatedAt": "2026-07-13T16:24:20Z",
+    "pushedAt": "2026-07-13T16:24:15Z",
     "latestRelease": null,
     "archived": false
   },
