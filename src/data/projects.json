@@ -274,23 +274,6 @@
     "archived": false
   },
   {
-    "fullName": "jipraks/kasirgratisan",
-    "name": "kasirgratisan",
-    "owner": "jipraks",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/10278519?v=4",
-    "description": "Free, Open Source, Offline Point of Sales Apps",
-    "url": "https://github.com/jipraks/kasirgratisan",
-    "homepage": "",
-    "language": "TypeScript",
-    "stars": 103,
-    "forks": 53,
-    "topics": [],
-    "updatedAt": "2026-07-13T17:28:08Z",
-    "pushedAt": "2026-07-13T00:57:27Z",
-    "latestRelease": null,
-    "archived": false
-  },
-  {
     "fullName": "codecoradev/uteke",
     "name": "uteke",
     "owner": "codecoradev",
@@ -299,7 +282,7 @@
     "url": "https://github.com/codecoradev/uteke",
     "homepage": "https://codecora.dev",
     "language": "Rust",
-    "stars": 97,
+    "stars": 104,
     "forks": 10,
     "topics": [
       "ai",
@@ -316,14 +299,31 @@
       "sqlite",
       "vector-database"
     ],
-    "updatedAt": "2026-07-13T19:12:30Z",
-    "pushedAt": "2026-07-13T17:18:43Z",
+    "updatedAt": "2026-07-14T02:51:59Z",
+    "pushedAt": "2026-07-14T01:27:37Z",
     "latestRelease": {
-      "name": "Release v0.7.2",
-      "tagName": "v0.7.2",
-      "url": "https://github.com/codecoradev/uteke/releases/tag/v0.7.2",
-      "publishedAt": "2026-07-10T09:45:00Z"
+      "name": "Release v0.7.3",
+      "tagName": "v0.7.3",
+      "url": "https://github.com/codecoradev/uteke/releases/tag/v0.7.3",
+      "publishedAt": "2026-07-14T01:27:18Z"
     },
+    "archived": false
+  },
+  {
+    "fullName": "jipraks/kasirgratisan",
+    "name": "kasirgratisan",
+    "owner": "jipraks",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/10278519?v=4",
+    "description": "Free, Open Source, Offline Point of Sales Apps",
+    "url": "https://github.com/jipraks/kasirgratisan",
+    "homepage": "",
+    "language": "TypeScript",
+    "stars": 104,
+    "forks": 53,
+    "topics": [],
+    "updatedAt": "2026-07-14T02:44:19Z",
+    "pushedAt": "2026-07-13T00:57:27Z",
+    "latestRelease": null,
     "archived": false
   },
   {
@@ -507,13 +507,13 @@
       "tauri",
       "terminal"
     ],
-    "updatedAt": "2026-07-13T08:41:53Z",
-    "pushedAt": "2026-07-13T08:41:20Z",
+    "updatedAt": "2026-07-14T03:06:15Z",
+    "pushedAt": "2026-07-14T03:06:27Z",
     "latestRelease": {
-      "name": "TEDI v0.3.85",
-      "tagName": "v0.3.85",
-      "url": "https://github.com/IlhamriSKY/TEDI/releases/tag/v0.3.85",
-      "publishedAt": "2026-07-13T05:45:48Z"
+      "name": "TEDI v0.3.88",
+      "tagName": "v0.3.88",
+      "url": "https://github.com/IlhamriSKY/TEDI/releases/tag/v0.3.88",
+      "publishedAt": "2026-07-14T03:21:07Z"
     },
     "archived": false
   },
@@ -716,6 +716,34 @@
     "archived": false
   },
   {
+    "fullName": "ardli-firman/sha-print",
+    "name": "sha-print",
+    "owner": "ardli-firman",
+    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/48121202?v=4",
+    "description": "The Simplest & Most Reliable LAN / Cross-VLAN Virtual Printer Sharing Solution for Windows",
+    "url": "https://github.com/ardli-firman/sha-print",
+    "homepage": "",
+    "language": "C#",
+    "stars": 34,
+    "forks": 14,
+    "topics": [
+      "desktop-app",
+      "printer",
+      "sharing",
+      "sharing-printer",
+      "windows"
+    ],
+    "updatedAt": "2026-07-14T00:50:10Z",
+    "pushedAt": "2026-07-13T04:53:38Z",
+    "latestRelease": {
+      "name": "ShaPrint v1.6.0 (Stable)",
+      "tagName": "v1.6.0-stable",
+      "url": "https://github.com/ardli-firman/sha-print/releases/tag/v1.6.0-stable",
+      "publishedAt": "2026-07-13T04:40:11Z"
+    },
+    "archived": false
+  },
+  {
     "fullName": "rahmanef63/os-vps",
     "name": "os-vps",
     "owner": "rahmanef63",
@@ -777,34 +805,6 @@
     "archived": false
   },
   {
-    "fullName": "ardli-firman/sha-print",
-    "name": "sha-print",
-    "owner": "ardli-firman",
-    "ownerAvatarUrl": "https://avatars.githubusercontent.com/u/48121202?v=4",
-    "description": "The Simplest & Most Reliable LAN / Cross-VLAN Virtual Printer Sharing Solution for Windows",
-    "url": "https://github.com/ardli-firman/sha-print",
-    "homepage": "",
-    "language": "C#",
-    "stars": 33,
-    "forks": 14,
-    "topics": [
-      "desktop-app",
-      "printer",
-      "sharing",
-      "sharing-printer",
-      "windows"
-    ],
-    "updatedAt": "2026-07-13T04:37:19Z",
-    "pushedAt": "2026-07-13T04:53:38Z",
-    "latestRelease": {
-      "name": "ShaPrint v1.6.0 (Stable)",
-      "tagName": "v1.6.0-stable",
-      "url": "https://github.com/ardli-firman/sha-print/releases/tag/v1.6.0-stable",
-      "publishedAt": "2026-07-13T04:40:11Z"
-    },
-    "archived": false
-  },
-  {
     "fullName": "pendig/rute-bayar",
     "name": "rute-bayar",
     "owner": "pendig",
@@ -845,10 +845,10 @@
     "url": "https://github.com/galpratama/agent-cli",
     "homepage": "",
     "language": "HTML",
-    "stars": 29,
-    "forks": 6,
+    "stars": 30,
+    "forks": 7,
     "topics": [],
-    "updatedAt": "2026-06-25T07:10:39Z",
+    "updatedAt": "2026-07-14T02:43:00Z",
     "pushedAt": "2025-12-27T17:13:26Z",
     "latestRelease": null,
     "archived": false
@@ -1001,7 +1001,7 @@
       "windows-desktop"
     ],
     "updatedAt": "2026-07-13T13:10:27Z",
-    "pushedAt": "2026-07-13T13:09:32Z",
+    "pushedAt": "2026-07-14T02:21:20Z",
     "latestRelease": {
       "name": "v0.3.1",
       "tagName": "v0.3.1",
@@ -1375,8 +1375,8 @@
     "stars": 6,
     "forks": 1,
     "topics": [],
-    "updatedAt": "2026-07-13T16:24:20Z",
-    "pushedAt": "2026-07-13T16:24:15Z",
+    "updatedAt": "2026-07-13T23:17:24Z",
+    "pushedAt": "2026-07-13T23:17:20Z",
     "latestRelease": null,
     "archived": false
   },
@@ -1392,8 +1392,8 @@
     "stars": 6,
     "forks": 0,
     "topics": [],
-    "updatedAt": "2026-07-12T20:06:50Z",
-    "pushedAt": "2026-07-12T20:06:47Z",
+    "updatedAt": "2026-07-13T20:18:20Z",
+    "pushedAt": "2026-07-13T20:18:16Z",
     "latestRelease": null,
     "archived": false
   },
