@@ -33,10 +33,10 @@
     "url": "https://github.com/jipraks/yt-short-clipper",
     "homepage": "",
     "language": "Python",
-    "stars": 876,
-    "forks": 274,
+    "stars": 878,
+    "forks": 275,
     "topics": [],
-    "updatedAt": "2026-07-13T14:08:09Z",
+    "updatedAt": "2026-07-14T06:46:40Z",
     "pushedAt": "2026-07-04T05:05:52Z",
     "latestRelease": {
       "name": "YT Short Clipper v2.0.3-beta",
@@ -168,7 +168,7 @@
       "tiptap-editor"
     ],
     "updatedAt": "2026-07-13T14:09:00Z",
-    "pushedAt": "2026-07-13T14:05:13Z",
+    "pushedAt": "2026-07-14T05:45:09Z",
     "latestRelease": {
       "name": "v3.1.3",
       "tagName": "v3.1.3",
@@ -203,8 +203,8 @@
       "terminal-emulator",
       "workspace-manager"
     ],
-    "updatedAt": "2026-07-13T16:44:09Z",
-    "pushedAt": "2026-07-13T15:03:31Z",
+    "updatedAt": "2026-07-14T03:44:24Z",
+    "pushedAt": "2026-07-14T03:44:20Z",
     "latestRelease": {
       "name": "Termul Manager v0.4.8",
       "tagName": "v0.4.8",
@@ -282,7 +282,7 @@
     "url": "https://github.com/codecoradev/uteke",
     "homepage": "https://codecora.dev",
     "language": "Rust",
-    "stars": 104,
+    "stars": 106,
     "forks": 10,
     "topics": [
       "ai",
@@ -299,8 +299,8 @@
       "sqlite",
       "vector-database"
     ],
-    "updatedAt": "2026-07-14T02:51:59Z",
-    "pushedAt": "2026-07-14T01:27:37Z",
+    "updatedAt": "2026-07-14T06:44:48Z",
+    "pushedAt": "2026-07-14T08:25:23Z",
     "latestRelease": {
       "name": "Release v0.7.3",
       "tagName": "v0.7.3",
@@ -319,7 +319,7 @@
     "homepage": "",
     "language": "TypeScript",
     "stars": 104,
-    "forks": 53,
+    "forks": 54,
     "topics": [],
     "updatedAt": "2026-07-14T02:44:19Z",
     "pushedAt": "2026-07-13T00:57:27Z",
@@ -400,7 +400,7 @@
     "url": "https://github.com/mydisha/keirouter",
     "homepage": "https://keirouter.app",
     "language": "Go",
-    "stars": 84,
+    "stars": 85,
     "forks": 28,
     "topics": [
       "ai",
@@ -422,7 +422,7 @@
       "rtk",
       "zai"
     ],
-    "updatedAt": "2026-07-12T17:48:11Z",
+    "updatedAt": "2026-07-14T07:03:20Z",
     "pushedAt": "2026-07-10T19:22:36Z",
     "latestRelease": {
       "name": "v0.1.25",
@@ -488,7 +488,7 @@
     "url": "https://github.com/IlhamriSKY/TEDI",
     "homepage": "https://tedi.ilhamriski.com",
     "language": "TypeScript",
-    "stars": 49,
+    "stars": 51,
     "forks": 6,
     "topics": [
       "ai",
@@ -507,13 +507,13 @@
       "tauri",
       "terminal"
     ],
-    "updatedAt": "2026-07-14T03:06:15Z",
-    "pushedAt": "2026-07-14T03:06:27Z",
+    "updatedAt": "2026-07-14T05:23:20Z",
+    "pushedAt": "2026-07-14T04:29:49Z",
     "latestRelease": {
-      "name": "TEDI v0.3.88",
-      "tagName": "v0.3.88",
-      "url": "https://github.com/IlhamriSKY/TEDI/releases/tag/v0.3.88",
-      "publishedAt": "2026-07-14T03:21:07Z"
+      "name": "TEDI v0.3.89",
+      "tagName": "v0.3.89",
+      "url": "https://github.com/IlhamriSKY/TEDI/releases/tag/v0.3.89",
+      "publishedAt": "2026-07-14T04:54:48Z"
     },
     "archived": false
   },
@@ -679,8 +679,8 @@
     "stars": 37,
     "forks": 4,
     "topics": [],
-    "updatedAt": "2026-07-13T14:00:42Z",
-    "pushedAt": "2026-07-13T13:58:17Z",
+    "updatedAt": "2026-07-14T05:49:04Z",
+    "pushedAt": "2026-07-14T05:49:00Z",
     "latestRelease": {
       "name": "Tycho v0.7.4",
       "tagName": "v0.7.4",
@@ -764,8 +764,8 @@
       "vps",
       "web-desktop"
     ],
-    "updatedAt": "2026-07-13T16:58:53Z",
-    "pushedAt": "2026-07-13T16:58:42Z",
+    "updatedAt": "2026-07-14T07:33:03Z",
+    "pushedAt": "2026-07-14T07:32:58Z",
     "latestRelease": null,
     "archived": false
   },
@@ -1000,8 +1000,8 @@
       "windows-app",
       "windows-desktop"
     ],
-    "updatedAt": "2026-07-13T13:10:27Z",
-    "pushedAt": "2026-07-14T02:21:20Z",
+    "updatedAt": "2026-07-14T07:45:35Z",
+    "pushedAt": "2026-07-14T07:45:31Z",
     "latestRelease": {
       "name": "v0.3.1",
       "tagName": "v0.3.1",
@@ -1050,8 +1050,8 @@
     "stars": 13,
     "forks": 2,
     "topics": [],
-    "updatedAt": "2026-07-13T14:48:50Z",
-    "pushedAt": "2026-07-13T14:46:34Z",
+    "updatedAt": "2026-07-14T08:00:10Z",
+    "pushedAt": "2026-07-14T08:00:04Z",
     "latestRelease": {
       "name": "v1.2.54",
       "tagName": "v1.2.54",
@@ -1409,7 +1409,7 @@
     "stars": 6,
     "forks": 1,
     "topics": [],
-    "updatedAt": "2026-07-05T20:45:42Z",
+    "updatedAt": "2026-07-14T04:59:16Z",
     "pushedAt": "2026-06-19T05:46:32Z",
     "latestRelease": {
       "name": "v1.4.9 — Codex & Qwen fixes",
