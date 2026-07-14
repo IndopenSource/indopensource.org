@@ -10,6 +10,7 @@
 @import "@fontsource-variable/bricolage-grotesque";
 @import "@fontsource-variable/newsreader";
 @import "@fontsource-variable/spline-sans-mono";
+@import "@phosphor-icons/web/fill";
 
 @import "tailwindcss";
 
@@ -41,10 +42,7 @@
    *   REVERSED (light text on ink fields):
    *     paper on brand 6.80 | paper on brand-dark 10.93 | paper on accent 5.16
    *     paper on ink  15.59 | white on brand 7.27 | white on accent 5.52    PASS
-   *   SUN is a sticker/highlight spot ONLY — never carries body text.
-   *     ink on sun 8.87 (PASS) and brand-dark on sun 6.22 (PASS) cover the
-   *     only legible-text-on-sun cases (sticker labels); accent-on-sun is
-   *     2.94 and is intentionally NEVER used as text.
+   *   LIME is the logo-derived sticker/highlight spot and carries dark text.
    */
   --color-paper: #fbf7ee;       /* cream paper base */
   --color-canvas: #f4eee0;      /* deeper cream surface / 2nd paper tone */
@@ -54,7 +52,7 @@
   --color-brand: #0c6253;       /* riso TEAL-GREEN (deepened for punch) */
   --color-brand-dark: #084036;  /* deepest teal for reversed fills / hover */
   --color-accent: #bd3b1c;      /* riso VERMILION (AA text on cream: 5.16:1) */
-  --color-sun: #f3b13f;         /* riso SUN yellow — sticker/highlight ONLY */
+  --color-sun: #a8cf6a;         /* logo-derived lime — sticker/highlight */
 
   /*
    * Expressive editorial type scale (clamp). DISPLAY sizes carry tight leading
@@ -95,7 +93,7 @@
     inset: 0;
     z-index: 0;
     pointer-events: none;
-    opacity: 0.5;
+    opacity: 0.25;
     mix-blend-mode: multiply;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.32'/%3E%3C/svg%3E");
     background-size: 160px 160px;
@@ -303,15 +301,15 @@
    * Pair with a thick ink border for the signature stamped look.
    */
   .riso-shadow {
-    box-shadow: 4px 4px 0 var(--color-ink);
-  }
-
-  .riso-shadow-sm {
     box-shadow: 3px 3px 0 var(--color-ink);
   }
 
+  .riso-shadow-sm {
+    box-shadow: 2px 2px 0 var(--color-ink);
+  }
+
   .riso-shadow-brand {
-    box-shadow: 4px 4px 0 var(--color-brand);
+    box-shadow: 3px 3px 0 var(--color-brand);
   }
 
   /*
@@ -329,8 +327,8 @@
   }
 
   .riso-hover:hover {
-    transform: translate(-2px, -2px);
-    box-shadow: 6px 6px 0 var(--color-ink);
+    transform: translate(-1px, -1px);
+    box-shadow: 4px 4px 0 var(--color-ink);
   }
 
   /*
@@ -349,15 +347,15 @@
    */
   .riso-shift {
     text-shadow:
-      2px 2px 0 color-mix(in srgb, var(--color-accent) 88%, transparent),
-      -1.5px -1px 0 color-mix(in srgb, var(--color-brand) 62%, transparent);
+      1.5px 1.5px 0 color-mix(in srgb, var(--color-accent) 80%, transparent),
+      -1px -1px 0 color-mix(in srgb, var(--color-sun) 65%, transparent);
     transition: text-shadow 0.16s ease;
   }
 
   .riso-shift:hover {
     text-shadow:
-      4px 4px 0 var(--color-accent),
-      -3px -2px 0 color-mix(in srgb, var(--color-brand) 78%, transparent);
+      2.5px 2.5px 0 var(--color-accent),
+      -2px -1.5px 0 color-mix(in srgb, var(--color-sun) 75%, transparent);
   }
 
   /*

@@ -23,7 +23,7 @@ const hasCta = Boolean(ctaHref && ctaLabel);
     <span class="sticker">{eyebrow}</span>
     <span class="rule grow"></span>
   </div>
-  <h2 class="display-md riso-shift m-0 max-w-4xl text-balance text-ink">{title}</h2>
+  <h2 class="display-md m-0 max-w-4xl text-balance text-ink">{title}</h2>
   {
     (Astro.slots.has('default') || hasCta) && (
       <div class="mt-5 flex items-end justify-between gap-x-8 gap-y-5 max-md:flex-col max-md:items-start">

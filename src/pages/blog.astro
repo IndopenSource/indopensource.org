@@ -20,28 +20,28 @@ const featuredDate = featuredPost?.releasedAt
 const contributionSteps = [
   {
     number: '01',
-    status: 'Step 1',
+    status: 'Langkah 1',
     title: 'Pilih format',
     body: 'Salin templates/article.md, lalu simpan sebagai content/YYYY/MM/slug-artikel.md.'
   },
   {
     number: '02',
-    status: 'Step 2',
-    title: 'Tulis clean Markdown',
+    status: 'Langkah 2',
+    title: 'Tulis Markdown rapi',
     body: 'Gunakan frontmatter lengkap, heading berurutan, paragraf pendek, dan referensi yang jelas.'
   },
   {
     number: '03',
-    status: 'Step 3',
-    title: 'Review via PR',
-    body: 'Submit pull request agar maintainer bisa mengecek struktur, sumber, dan kesiapan publikasi.'
+    status: 'Langkah 3',
+    title: 'Ajukan pull request',
+    body: 'Ajukan pull request agar maintainer bisa mengecek struktur, sumber, dan kesiapan publikasi.'
   }
 ];
 
 const statusLegend = [
-  { label: 'draft', note: 'Masih direview.' },
-  { label: 'ready', note: 'Siap publish.' },
-  { label: 'published', note: 'Sudah tayang.' }
+  { label: 'draf', note: 'Masih ditinjau.' },
+  { label: 'siap', note: 'Siap diterbitkan.' },
+  { label: 'terbit', note: 'Sudah tayang.' }
 ];
 ---
 
@@ -56,9 +56,9 @@ const statusLegend = [
       untuk menyimpan artikel Markdown yang rapi, mudah direview, dan siap diintegrasikan ke website.
     </p>
     <div class="meta-row mt-5 flex flex-wrap items-center gap-x-3 gap-y-2 font-semibold text-ink">
-      <span class="border-2 border-ink bg-canvas px-2 py-1 text-xs">ZINE / MARKDOWN-FIRST</span>
-      <span class="border-2 border-ink bg-canvas px-2 py-1 text-xs">PR-REVIEWED</span>
-      <span class="text-brand-dark">git-as-editorial</span>
+      <span class="border-2 border-ink bg-canvas px-2 py-1 text-xs">ZINE / MARKDOWN</span>
+      <span class="border-2 border-ink bg-canvas px-2 py-1 text-xs">REVIEW VIA PR</span>
+      <span class="text-brand-dark">alur editorial via Git</span>
     </div>
     <div class="mt-7 flex flex-wrap gap-3 text-ink">
       <BaseButton href="https://github.com/IndopenSource/Blog-IndopenSource">Buka repo blog</BaseButton>
@@ -72,7 +72,7 @@ const statusLegend = [
         <div class="reveal reveal-1 mb-7 flex items-center gap-3">
           <span class="section-number" aria-hidden="true">01</span>
           <div class="min-w-0">
-            <span class="sticker">Cover story</span>
+            <span class="sticker">Artikel utama</span>
             <p class="meta-row mt-2 font-semibold text-brand-dark uppercase tracking-[0.06em]">Artikel terbaru</p>
           </div>
           <span class="rule grow"></span>
@@ -84,7 +84,7 @@ const statusLegend = [
               <span class="text-brand-dark">/blog/{featuredPost.slug}</span>
               {featuredDate && <><span aria-hidden="true">·</span><span>{featuredDate}</span></>}
             </div>
-            <h2 class="display-md riso-shift mt-4 max-w-2xl text-ink">{featuredPost.title}</h2>
+            <h2 class="display-md mt-4 max-w-2xl text-ink">{featuredPost.title}</h2>
             <p class="mt-4 max-w-xl font-body text-lg leading-8 text-muted">{featuredPost.description}</p>
             {featuredPost.tags?.length > 0 && (
               <div class="mt-5 flex flex-wrap gap-2">
@@ -122,8 +122,8 @@ const statusLegend = [
       <div class="reveal reveal-1 mb-8 flex items-center gap-3">
         <span class="section-number text-paper/30" aria-hidden="true">02</span>
         <div class="min-w-0">
-          <span class="sticker">Submit</span>
-          <h2 class="display-md riso-shift mt-3 text-paper">Alur kontribusi artikel</h2>
+          <span class="sticker">Kirim artikel</span>
+          <h2 class="display-md mt-3 text-paper">Alur kontribusi artikel</h2>
         </div>
         <span class="grow self-end border-t-[3px] border-paper max-md:hidden"></span>
       </div>
@@ -153,7 +153,7 @@ const statusLegend = [
         <span class="section-number" aria-hidden="true">03</span>
         <div class="min-w-0">
           <span class="sticker">Markdown repo</span>
-          <h2 class="display-md riso-shift mt-3 text-ink">Struktur artikel</h2>
+          <h2 class="display-md mt-3 text-ink">Struktur artikel</h2>
         </div>
         <span class="rule grow self-end max-md:hidden"></span>
       </div>

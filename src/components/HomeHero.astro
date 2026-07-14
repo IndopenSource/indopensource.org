@@ -90,7 +90,7 @@ import { heroImage, HERO_PRELOAD_WIDTH, HERO_QUALITY } from '../lib/hero';
   >
   </div>
   <div
-    class="pointer-events-none absolute bottom-0 left-0 -z-10 h-28 w-44 bg-accent max-md:h-16 max-md:w-28"
+    class="pointer-events-none absolute bottom-0 left-0 -z-10 h-28 w-44 bg-sun max-md:h-16 max-md:w-28"
     aria-hidden="true"
   >
   </div>
@@ -104,7 +104,7 @@ import { heroImage, HERO_PRELOAD_WIDTH, HERO_QUALITY } from '../lib/hero';
   <div class="relative mx-auto w-[min(1080px,calc(100%-80px))] max-md:w-[calc(100%-32px)]">
     <div class="max-w-[780px]">
       <!-- Mono kicker + sticker badge: zine masthead bits. -->
-      <div class="reveal reveal-1 mb-5 flex flex-wrap items-center gap-3">
+      <div class="mb-5 flex flex-wrap items-center gap-3">
         <span class="sticker">Roadmap · Komunitas</span>
         <span class="meta-row text-paper/80">indopensource.org / open-source · ID</span>
       </div>
@@ -115,26 +115,26 @@ import { heroImage, HERO_PRELOAD_WIDTH, HERO_QUALITY } from '../lib/hero';
         the headline's last line bleeds past the text column with a negative
         right margin (grid-break) on wide viewports.
       -->
-      <h1 class="reveal reveal-2 display-xl riso-shift m-0 text-paper">
+      <h1 class="display-xl riso-shift m-0 text-paper">
         Komunitas<br />Open&nbsp;Source<br /><span
-          class="mt-1 inline-block border-2 border-ink bg-accent px-3 text-paper riso-shadow md:-mr-16"
+          class="mt-1 inline-block border-2 border-ink bg-sun px-3 text-ink riso-shadow md:-mr-16"
           >Indonesia</span
         >
       </h1>
 
-      <p class="reveal reveal-3 mt-8 max-w-2xl font-body text-[clamp(1.1rem,1.9vw,1.35rem)] leading-8 text-paper/90">
+      <p class="mt-8 max-w-2xl font-body text-[clamp(1.1rem,1.9vw,1.35rem)] leading-8 text-paper/90">
         Rumah terbuka untuk merawat daftar proyek, mendokumentasikan falsafah,
         menulis pembelajaran, dan menghubungkan kontributor open source Indonesia.
       </p>
 
-      <div class="reveal reveal-4 mt-8 flex flex-wrap gap-3">
-        <BaseButton href="/projects/" variant="light">Lihat projects</BaseButton>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <BaseButton href="/projects/" variant="light">Lihat proyek</BaseButton>
         <BaseButton href="https://github.com/orgs/IndopenSource/projects" variant="secondary">Roadmap GitHub</BaseButton>
       </div>
 
       <!-- Mono stat strip with thick rule above — the metadata footer of the
            masthead. paper/85 on the ink wash stays well above AA. -->
-      <div class="reveal reveal-5 mt-10 max-w-xl">
+      <div class="mt-10 max-w-xl">
         <span class="block h-[3px] w-full bg-sun"></span>
         <dl class="mt-4 grid grid-cols-3 gap-4 font-mono text-paper/85 max-md:grid-cols-1 max-md:gap-2">
           <div>

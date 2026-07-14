@@ -54,13 +54,13 @@ const homepageUrl = project.homepage ? normalizeHref(project.homepage) : '';
         {
           project.latestRelease ? (
             <a class="stamp relative z-10 hover:bg-brand hover:text-paper" href={project.latestRelease.url}>
-              {project.latestRelease.tagName}
+              Rilis {project.latestRelease.tagName}
             </a>
           ) : null
         }
       </div>
       {project.owner && <p class="meta-row mt-3 font-semibold text-brand-dark">{project.owner}/</p>}
-      <h3 class="riso-shift-sm mt-1 font-mono text-xl font-bold text-ink">
+      <h3 class="mt-1 font-mono text-xl font-bold text-ink">
         <a
           class="hover:text-brand focus:outline-none focus-visible:underline after:absolute after:inset-0 after:z-0 focus-visible:after:ring-2 focus-visible:after:ring-accent"
           href={detailUrl}
@@ -90,7 +90,7 @@ const homepageUrl = project.homepage ? normalizeHref(project.homepage) : '';
     )}
     {homepageUrl && (
       <a class="riso-hover relative z-10 ml-auto border-2 border-ink bg-brand px-2 py-1 font-mono text-xs font-bold uppercase tracking-[0.04em] text-paper hover:bg-brand-dark" href={homepageUrl}>
-        Live ↗
+        Situs ↗
       </a>
     )}
   </div>

@@ -27,16 +27,16 @@ const latestUpdateLabel = latestUpdate
 ---
 
 <BaseLayout
-  title="Projects - IndopenSource"
+  title="Proyek - IndopenSource"
   description="Direktori proyek open source Indonesia dari awesome-indonesia dengan filter, pagination, release, topic, dan metadata repo."
 >
-  <PageHeader eyebrow="Projects" title="Direktori proyek Indonesia.">
+  <PageHeader eyebrow="Proyek" title="Direktori proyek Indonesia.">
     <p>
       Daftar awal halaman ini disinkronkan dari
       <a class="font-semibold text-brand underline decoration-2 underline-offset-2 hover:text-accent" href="https://github.com/IndopenSource/awesome-indonesia">IndopenSource/awesome-indonesia</a>.
     </p>
     <div class="meta-row mt-5 flex flex-wrap items-center gap-x-3 gap-y-2 font-semibold text-ink">
-      <span class="border-2 border-ink bg-canvas px-2 py-1 text-xs">{projects.length} projects</span>
+      <span class="border-2 border-ink bg-canvas px-2 py-1 text-xs">{projects.length} proyek</span>
       <span class="border-2 border-ink bg-canvas px-2 py-1 text-xs">★ {totalStars.toLocaleString('id-ID')}</span>
       {languages.map((language) => <span class="text-brand-dark">{language}</span>)}
     </div>
@@ -45,7 +45,7 @@ const latestUpdateLabel = latestUpdate
         {unavailableCount.toLocaleString('id-ID')} repo belum bisa diperbarui saat sinkronisasi terakhir, jadi tidak dihitung dalam akumulasi stars/forks di bawah.
       </p>
     )}
-    <div class="reveal-stagger mt-8 grid gap-4 sm:grid-cols-3">
+    <div class="mt-8 grid gap-4 sm:grid-cols-3">
       <div class="border-2 border-ink bg-canvas riso-shadow-brand p-4">
         <span class="meta-row block font-bold uppercase tracking-[0.06em] text-muted">Akumulasi stars</span>
         <strong class="mt-2 block font-mono text-3xl font-bold text-ink">{totalStars.toLocaleString('id-ID')}</strong>
