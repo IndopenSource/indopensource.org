@@ -9,7 +9,7 @@
     "homepage": "",
     "language": "PHP",
     "stars": 1213,
-    "forks": 1162,
+    "forks": 1163,
     "topics": [
       "opensid",
       "sistem-informasi-desa"
@@ -33,10 +33,10 @@
     "url": "https://github.com/jipraks/yt-short-clipper",
     "homepage": "",
     "language": "Python",
-    "stars": 879,
-    "forks": 275,
+    "stars": 882,
+    "forks": 276,
     "topics": [],
-    "updatedAt": "2026-07-14T09:03:50Z",
+    "updatedAt": "2026-07-14T19:16:47Z",
     "pushedAt": "2026-07-04T05:05:52Z",
     "latestRelease": {
       "name": "YT Short Clipper v2.0.3-beta",
@@ -274,7 +274,7 @@
       "vector-database"
     ],
     "updatedAt": "2026-07-14T13:50:26Z",
-    "pushedAt": "2026-07-14T12:00:28Z",
+    "pushedAt": "2026-07-14T18:54:58Z",
     "latestRelease": {
       "name": "Release v0.7.3",
       "tagName": "v0.7.3",
@@ -422,8 +422,8 @@
       "rtk",
       "zai"
     ],
-    "updatedAt": "2026-07-14T08:47:55Z",
-    "pushedAt": "2026-07-14T08:47:51Z",
+    "updatedAt": "2026-07-14T15:07:20Z",
+    "pushedAt": "2026-07-14T15:06:18Z",
     "latestRelease": {
       "name": "v0.1.25",
       "tagName": "v0.1.25",
@@ -764,8 +764,8 @@
       "vps",
       "web-desktop"
     ],
-    "updatedAt": "2026-07-14T13:55:47Z",
-    "pushedAt": "2026-07-14T13:54:18Z",
+    "updatedAt": "2026-07-14T17:53:31Z",
+    "pushedAt": "2026-07-14T17:53:28Z",
     "latestRelease": null,
     "archived": false
   },
@@ -1000,8 +1000,8 @@
       "windows-app",
       "windows-desktop"
     ],
-    "updatedAt": "2026-07-14T13:34:18Z",
-    "pushedAt": "2026-07-14T14:13:53Z",
+    "updatedAt": "2026-07-14T14:31:04Z",
+    "pushedAt": "2026-07-14T14:30:46Z",
     "latestRelease": {
       "name": "v0.3.1",
       "tagName": "v0.3.1",
@@ -1033,8 +1033,8 @@
       "self-hosted",
       "workspace"
     ],
-    "updatedAt": "2026-07-14T14:10:32Z",
-    "pushedAt": "2026-07-14T14:09:37Z",
+    "updatedAt": "2026-07-14T17:36:56Z",
+    "pushedAt": "2026-07-14T17:36:51Z",
     "latestRelease": null,
     "archived": false
   },
@@ -1376,7 +1376,7 @@
     "forks": 1,
     "topics": [],
     "updatedAt": "2026-07-13T23:17:24Z",
-    "pushedAt": "2026-07-13T23:17:20Z",
+    "pushedAt": "2026-07-14T15:06:12Z",
     "latestRelease": null,
     "archived": false
   },
