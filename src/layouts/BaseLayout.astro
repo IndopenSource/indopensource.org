@@ -49,7 +49,10 @@ const structuredData = jsonLd ?? {
   url: new URL('/', SITE_ORIGIN).toString(),
   description
 };
-const jsonLdString = JSON.stringify(structuredData);
+// Escape `<` so a `</script>` inside synced data (repo description, post
+// title) can't terminate the inline block. Escaped before hashing, so the CSP
+// SHA-256 still matches the emitted bytes.
+const jsonLdString = JSON.stringify(structuredData).replace(/</g, '\\u003c');
 
 /**
  * Content-Security-Policy (SEC-02).

@@ -13,7 +13,7 @@ import { strict as assert } from 'node:assert';
 import { describe, it } from 'node:test';
 
 import { projectSlug } from '../src/lib/projects.ts';
-import { normalizeHref } from '../src/lib/urls.ts';
+import { normalizeHref, safeHref } from '../src/lib/urls.ts';
 import { isPublished, renderArticle, forbiddenTags } from '../src/lib/content.ts';
 
 describe('projectSlug (slug)', () => {
@@ -67,6 +67,28 @@ describe('normalizeHref (urls)', () => {
   it('upgrades bare domains to https', () => {
     assert.equal(normalizeHref('github.com/IndopenSource'), 'https://github.com/IndopenSource');
     assert.equal(normalizeHref('example.org'), 'https://example.org');
+  });
+});
+
+describe('safeHref (urls)', () => {
+  it('allows http/https/mailto', () => {
+    assert.equal(safeHref('https://example.com/x'), 'https://example.com/x');
+    assert.equal(safeHref('http://example.com'), 'http://example.com');
+    assert.equal(safeHref('mailto:a@b.com'), 'mailto:a@b.com');
+  });
+
+  it('drops javascript:/data:/vbscript: and unparseable hrefs', () => {
+    assert.equal(safeHref('javascript:alert(1)'), '');
+    assert.equal(safeHref('JavaScript:alert(1)'), '');
+    assert.equal(safeHref('data:text/html,<script>x</script>'), '');
+    assert.equal(safeHref('vbscript:msgbox(1)'), '');
+    assert.equal(safeHref('/relative/path'), '');
+  });
+
+  it('returns empty string for empty/nullish', () => {
+    assert.equal(safeHref(''), '');
+    assert.equal(safeHref(undefined), '');
+    assert.equal(safeHref(null), '');
   });
 });
 

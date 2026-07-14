@@ -2,7 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PageHeader from '../../components/PageHeader.astro';
 import blogPosts from '../../data/blog-posts.json';
-import { withBase } from '../../lib/urls';
+import { withBase, safeHref } from '../../lib/urls';
 import { isPublished, renderArticle, type BlogPost } from '../../lib/content';
 
 export function getStaticPaths() {
@@ -16,6 +16,8 @@ export function getStaticPaths() {
 const { post } = Astro.props;
 // Render Markdown through the shared sanitizing pipeline (no raw `set:html`).
 const html = renderArticle(post.content);
+// Author link comes from frontmatter/git — allowlist the scheme before href.
+const authorUrl = safeHref(post.author?.url);
 const authorDate = post.author?.committedAt
   ? new Intl.DateTimeFormat('id-ID', { dateStyle: 'long' }).format(new Date(post.author.committedAt))
   : '';
@@ -41,7 +43,7 @@ const jsonLd = {
   ...(post.releasedAt ? { datePublished: post.releasedAt } : {}),
   ...(post.lastModifiedAt ? { dateModified: post.lastModifiedAt } : {}),
   ...(post.author?.name
-    ? { author: { '@type': 'Person', name: post.author.name, ...(post.author.url ? { url: post.author.url } : {}) } }
+    ? { author: { '@type': 'Person', name: post.author.name, ...(authorUrl ? { url: authorUrl } : {}) } }
     : {}),
   publisher: { '@type': 'Organization', name: 'IndopenSource' }
 };
@@ -84,8 +86,8 @@ const jsonLd = {
           )
         }
         <div class="min-w-0">
-          {post.author?.url
-            ? <a class="display-sm text-brand underline decoration-2 underline-offset-2 hover:text-accent" href={post.author.url}>{post.author?.name}</a>
+          {authorUrl
+            ? <a class="display-sm text-brand underline decoration-2 underline-offset-2 hover:text-accent" href={authorUrl}>{post.author?.name}</a>
             : <span class="display-sm text-brand">{post.author?.name}</span>}
           <p class="mt-1 font-body text-sm leading-6 text-muted">{authorByline}</p>
         </div>

@@ -86,6 +86,8 @@ function parseFrontmatter(raw) {
 
     const arrayItem = line.match(/^\s+-\s+(.*)$/);
     if (arrayItem && activeArray) {
+      // First item promotes the placeholder scalar to an array (see below).
+      if (!Array.isArray(data[activeArray])) data[activeArray] = [];
       const value = arrayItem[1].trim();
       if (value.includes(':')) {
         const item = {};
@@ -109,7 +111,11 @@ function parseFrontmatter(raw) {
     }
 
     if (!rawValue.trim()) {
-      data[key] = [];
+      // Empty value is ambiguous: an empty scalar (`status:`) or the head of a
+      // block sequence (`authors:` then `  - x`). Keep it a scalar for now and
+      // let the first `- item` promote it to an array — so a lone `status:`
+      // stays `''` instead of corrupting into `[]`.
+      data[key] = '';
       activeArray = key;
       continue;
     }

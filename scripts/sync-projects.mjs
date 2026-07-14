@@ -93,7 +93,15 @@ function absolutizeReadmeHtml(html, linkBase, assetBase) {
   const resolve = (value, base) => {
     if (!value || value.startsWith('#') || /^(https?:|mailto:)/i.test(value)) return value;
     try {
-      const url = new URL(value, base);
+      // GitHub treats a root-relative README path (`/docs/x`) as repo-root, not
+      // host-root. `new URL('/docs/x', readmeUrl)` would collapse it to
+      // github.com/docs/x, so rebase root-relative paths onto the README's
+      // directory (== repo root for the top-level README). Protocol-relative
+      // (`//host`) and normal relative paths resolve against `base` as before.
+      const isRootRel = /^\/(?!\/)/.test(value);
+      const url = isRootRel
+        ? new URL(value.slice(1), new URL('.', base))
+        : new URL(value, base);
       return ['http:', 'https:'].includes(url.protocol) ? url.toString() : value;
     } catch {
       return value;
