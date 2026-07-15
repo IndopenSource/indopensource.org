@@ -12,7 +12,7 @@ const jsonLd = {
   '@type': 'Person',
   name: author,
   description: 'Pakar teknologi informasi, penulis, pendidik, dan advokat akses internet terbuka di Indonesia.',
-  image: new URL(onnoPhoto.src, Astro.site || Astro.url).toString(),
+  image: new URL(onnoPhoto.src, Astro.site || 'https://indopensource.org').toString(),
   alumniOf: { '@type': 'CollegeOrUniversity', name: 'Institut Teknologi Bandung' },
   award: 'Jonathan B. Postel Service Award (2020)',
   sameAs: [authorWebsite, itbProfile, isocProfile]

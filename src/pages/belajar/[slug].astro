@@ -15,7 +15,7 @@ const jsonLd = {
   author: { '@type': 'Person', name: author },
   datePublished: String(resource.year),
   description: resource.description,
-  url: Astro.url.toString()
+  url: new URL(Astro.url.pathname, Astro.site || 'https://indopensource.org').toString()
 };
 ---
 
@@ -40,6 +40,8 @@ const jsonLd = {
         src={drivePreviewUrl(resource)}
         title={`Baca ${resource.title} karya ${author}`}
         loading="eager"
+        sandbox="allow-scripts allow-same-origin allow-popups allow-forms"
+        allowfullscreen
       ></iframe>
     </div>
   </section>
