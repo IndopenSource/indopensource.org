@@ -1,0 +1,63 @@
+---
+import { Image } from 'astro:assets';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BaseButton from '../../components/BaseButton.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import onnoPhoto from '../../assets/onno-w-purbo.jpg';
+import { author, authorProfileHref, learningResources } from '../../lib/learning';
+
+const topics = [...new Set(learningResources.map((resource) => resource.topic))];
+---
+
+<BaseLayout
+  title="Ruang Belajar - IndopenSource"
+  description="Koleksi bacaan teknologi terbuka karya Onno W. Purbo yang dapat dibaca dan diunduh."
+>
+  <PageHeader eyebrow="Ruang Belajar" title="Baca, unduh, dan sebarkan pengetahuan terbuka.">
+    <p>
+      Koleksi awal karya <a class="font-semibold text-brand underline decoration-2 underline-offset-2 hover:text-accent" href={authorProfileHref}>{author}</a>, tersedia untuk dibaca langsung dari IndopenSource atau diunduh dari sumbernya.
+    </p>
+    <div class="meta-row mt-5 flex flex-wrap gap-2 font-semibold text-brand-dark">
+      {topics.map((topic) => <span class="border-2 border-ink bg-canvas px-2 py-1 text-xs">{topic}</span>)}
+    </div>
+  </PageHeader>
+
+  <section class="bg-canvas py-16 md:py-20">
+    <div class="mx-auto w-[min(1120px,calc(100%-32px))]">
+      <div class="reveal-stagger grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+        {learningResources.map((resource) => (
+          <article class="riso-hover riso-shadow flex flex-col border-2 border-ink bg-paper p-5">
+            <div class="meta-row flex items-center justify-between gap-3 font-semibold text-muted">
+              <span>{resource.topic}</span>
+              <span>{resource.year}</span>
+            </div>
+            <h2 class="display-sm mt-4 text-ink">{resource.title}</h2>
+            <p class="mt-3 font-body text-lg leading-7 text-muted">{resource.description}</p>
+            <p class="meta-row mt-5 font-semibold text-brand-dark">Karya <a class="underline decoration-2 underline-offset-2 hover:text-accent" href={authorProfileHref}>{author}</a></p>
+            <div class="mt-6">
+              <BaseButton href={`/belajar/${resource.slug}/`} variant="secondary">Baca online</BaseButton>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="border-t-[3px] border-ink bg-paper py-12 md:py-16">
+    <div class="mx-auto w-[min(1120px,calc(100%-32px))]">
+      <div class="mb-7 flex items-end justify-between gap-5 max-md:flex-col max-md:items-start">
+        <div><span class="sticker">Direktori Penulis</span><h2 class="display-md mt-4">Kenali penulisnya.</h2></div>
+        <span class="meta-row font-semibold text-muted">1 penulis</span>
+      </div>
+      <a class="riso-hover riso-shadow grid overflow-hidden border-2 border-ink bg-canvas md:grid-cols-[220px_minmax(0,1fr)]" href={authorProfileHref}>
+        <Image src={onnoPhoto} alt={`Foto ${author}`} widths={[220, 440]} sizes="(max-width: 767px) 100vw, 220px" class="h-full min-h-56 w-full object-cover" loading="lazy" />
+        <div class="p-6">
+          <p class="meta-row font-semibold text-brand-dark">Penulis · Pendidik · Penggerak internet terbuka</p>
+          <h3 class="display-sm mt-3 text-ink">{author}</h3>
+          <p class="mt-3 max-w-2xl font-body text-lg leading-7 text-muted">Pakar teknologi informasi yang dikenal lewat perjuangan open source, jaringan komunitas, dan akses internet terjangkau di Indonesia.</p>
+          <span class="mt-5 inline-block font-mono text-sm font-bold uppercase tracking-[0.04em] text-brand-dark">Buka profil →</span>
+        </div>
+      </a>
+    </div>
+  </section>
+</BaseLayout>
