@@ -132,10 +132,10 @@
     "url": "https://github.com/jipraks/yt-short-clipper",
     "homepage": "",
     "language": "Python",
-    "stars": 884,
+    "stars": 886,
     "forks": 278,
     "topics": [],
-    "updatedAt": "2026-07-15T03:13:39Z",
+    "updatedAt": "2026-07-16T01:12:35Z",
     "pushedAt": "2026-07-04T05:05:52Z",
     "latestRelease": {
       "name": "YT Short Clipper v2.0.3-beta",
@@ -180,7 +180,7 @@
     "url": "https://github.com/rayasabari/joko-ui",
     "homepage": "https://jokoui.web.id",
     "language": "TypeScript",
-    "stars": 413,
+    "stars": 414,
     "forks": 27,
     "topics": [
       "css",
@@ -190,7 +190,7 @@
       "ui-framework",
       "uikit"
     ],
-    "updatedAt": "2026-07-13T14:33:49Z",
+    "updatedAt": "2026-07-15T22:39:21Z",
     "pushedAt": "2026-06-06T06:51:25Z",
     "latestRelease": {
       "name": "v0.8.0",
@@ -243,7 +243,7 @@
     "url": "https://github.com/fajarhide/omni",
     "homepage": "https://omni.weekndlabs.com",
     "language": "Rust",
-    "stars": 301,
+    "stars": 302,
     "forks": 29,
     "topics": [
       "ai-agents",
@@ -265,7 +265,7 @@
       "token-reduction",
       "token-savings"
     ],
-    "updatedAt": "2026-07-15T09:30:24Z",
+    "updatedAt": "2026-07-15T22:11:48Z",
     "pushedAt": "2026-06-24T15:49:08Z",
     "latestRelease": {
       "name": "v0.6.1",
@@ -299,7 +299,7 @@
       "tiptap-editor"
     ],
     "updatedAt": "2026-07-13T14:09:00Z",
-    "pushedAt": "2026-07-15T15:31:21Z",
+    "pushedAt": "2026-07-16T02:02:19Z",
     "latestRelease": {
       "name": "v3.1.3",
       "tagName": "v3.1.3",
@@ -336,8 +336,8 @@
       "terminal-emulator",
       "workspace-manager"
     ],
-    "updatedAt": "2026-07-15T13:37:33Z",
-    "pushedAt": "2026-07-15T13:36:16Z",
+    "updatedAt": "2026-07-16T01:32:34Z",
+    "pushedAt": "2026-07-16T01:32:30Z",
     "latestRelease": {
       "name": "Termul Manager v0.4.8",
       "tagName": "v0.4.8",
@@ -357,10 +357,10 @@
     "url": "https://github.com/mallexibra-dev/clipforge",
     "homepage": "",
     "language": "Python",
-    "stars": 150,
+    "stars": 151,
     "forks": 36,
     "topics": [],
-    "updatedAt": "2026-07-14T22:32:42Z",
+    "updatedAt": "2026-07-16T01:10:42Z",
     "pushedAt": "2026-06-26T05:38:51Z",
     "latestRelease": null,
     "archived": false,
@@ -412,8 +412,8 @@
       "sqlite",
       "vector-database"
     ],
-    "updatedAt": "2026-07-15T15:35:30Z",
-    "pushedAt": "2026-07-15T13:22:14Z",
+    "updatedAt": "2026-07-16T03:28:09Z",
+    "pushedAt": "2026-07-16T03:18:08Z",
     "latestRelease": {
       "name": "Release v0.7.3",
       "tagName": "v0.7.3",
@@ -462,7 +462,7 @@
     "homepage": "",
     "language": "TypeScript",
     "stars": 106,
-    "forks": 55,
+    "forks": 56,
     "topics": [],
     "updatedAt": "2026-07-15T10:26:27Z",
     "pushedAt": "2026-07-13T00:57:27Z",
@@ -1140,7 +1140,7 @@
     "homepage": "https://warungos.vercel.app",
     "language": "TypeScript",
     "stars": 17,
-    "forks": 5,
+    "forks": 6,
     "topics": [],
     "updatedAt": "2026-06-25T07:10:45Z",
     "pushedAt": "2026-05-21T16:51:06Z",
