@@ -7,7 +7,9 @@ import { withBase } from '../lib/urls';
 import { isPublished, type BlogPost } from '../lib/content';
 
 // Feature the first *published* post, never a draft (index 0 may be a draft).
-const featuredPost = (blogPosts as BlogPost[]).find(isPublished);
+const publishedPosts = (blogPosts as BlogPost[]).filter(isPublished);
+const featuredPost = publishedPosts[0];
+const otherPosts = publishedPosts.slice(1);
 const featuredThumbnail = featuredPost?.thumbnail || '/brand/indopensource-hero.jpg';
 const featuredThumbnailUrl = /^https?:\/\//.test(featuredThumbnail) ? featuredThumbnail : withBase(featuredThumbnail);
 const featuredAlt = featuredPost
@@ -109,6 +111,23 @@ const statusLegend = [
             />
           </div>
         </article>
+      </div>
+    </section>
+  )}
+
+  {otherPosts.length > 0 && (
+    <section class="border-b-[3px] border-ink bg-paper py-12 md:py-16">
+      <div class="mx-auto w-[min(1120px,calc(100%-32px))]">
+        <div class="mb-6 flex items-center gap-3"><span class="sticker">Artikel lainnya</span><span class="rule grow"></span></div>
+        <div class="grid gap-3 md:grid-cols-2">
+          {otherPosts.map((post) => (
+            <a class="riso-hover riso-shadow-sm block border-2 border-ink bg-canvas p-5" href={`/blog/${post.slug}/`}>
+              <span class="meta-row text-brand-dark">/blog/{post.slug}</span>
+              <h2 class="display-sm mt-3 text-ink">{post.title}</h2>
+              <p class="mt-2 font-body leading-7 text-muted">{post.description}</p>
+            </a>
+          ))}
+        </div>
       </div>
     </section>
   )}
