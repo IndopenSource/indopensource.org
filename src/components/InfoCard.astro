@@ -7,10 +7,10 @@ interface Props {
 const { status, title } = Astro.props;
 ---
 
-<article class="riso-hover riso-shadow flex flex-col border-2 border-ink bg-paper p-5">
+<article class="flex flex-col rounded-xl border border-line bg-paper p-6 shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-lg">
   {status && <span class="sticker self-start">{status}</span>}
   <h3 class={`display-sm text-ink ${status ? 'mt-3' : ''}`}>{title}</h3>
-  <div class="mt-1 font-body leading-7 text-muted">
+  <div class="mt-2 leading-7 text-muted">
     <slot />
   </div>
 </article>

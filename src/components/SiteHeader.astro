@@ -32,14 +32,14 @@ const currentPathWithoutBase = currentPath.replace(new RegExp(`^${baseUrl.replac
   paper so the bar reads as printed paper, not glass. All depth via design-system
   utilities (.rule, .riso-shadow-sm, .sticker, .meta-row) — no inline styles.
 */}
-<header class="sticky top-0 z-20 bg-paper/92 backdrop-blur-md">
+<header class="sticky top-0 z-20 border-b border-line bg-paper/90 backdrop-blur-xl">
   <nav
-    class="mx-auto flex min-h-16 w-[min(1120px,calc(100%-32px))] flex-wrap items-center justify-between gap-x-6 gap-y-3 py-3 max-sm:flex-col max-sm:items-start"
+    class="mx-auto flex min-h-16 w-[min(1120px,calc(100%-32px))] items-center justify-between gap-6 py-3"
     aria-label="Navigasi utama"
   >
     {/* Wordmark = stamped logo tile + editorial display name + mono kicker */}
     <a
-      class="riso-hover group inline-flex items-center gap-3 border-2 border-ink bg-paper px-2.5 py-1.5 riso-shadow-sm"
+      class="group inline-flex items-center gap-3 rounded-xl focus-visible:outline-offset-4"
       href={withBase('/')}
     >
       <Picture
@@ -51,22 +51,22 @@ const currentPathWithoutBase = currentPath.replace(new RegExp(`^${baseUrl.replac
         height={36}
         alt=""
         loading="eager"
-        class="size-9 border border-ink/20 object-contain"
+        class="size-9 rounded-lg border border-line bg-paper object-contain shadow-sm"
       />
       <span class="flex flex-col leading-none">
         <span class="font-display text-xl font-extrabold tracking-tight text-ink"><span class="text-brand">Indo</span>penSource</span>
-        <span class="meta-row mt-0.5 text-muted">Komunitas Open Source Indonesia</span>
+        <span class="meta-row mt-0.5 text-muted max-sm:hidden">Komunitas Open Source Indonesia</span>
       </span>
     </a>
 
     {/* Desktop nav — mono uppercase labels, riso-underline reveal, sticker active state */}
-    <div class="flex flex-wrap items-center justify-end gap-x-1 gap-y-2 max-md:hidden">
+    <div class="flex items-center justify-end gap-1 rounded-xl border border-line bg-canvas p-1 max-md:hidden">
       {
         navItems.map(([label, href]) => {
           const isCurrent = currentPathWithoutBase === href;
           return isCurrent ? (
             <a
-              class="riso-hover inline-flex items-center border-2 border-ink bg-brand px-3 py-1.5 font-mono text-xs font-semibold uppercase tracking-[0.06em] text-white riso-shadow-sm"
+              class="inline-flex items-center rounded-lg bg-paper px-3 py-2 text-sm font-semibold text-brand-dark shadow-sm ring-1 ring-line"
               href={withBase(href)}
               aria-current="page"
             >
@@ -74,7 +74,7 @@ const currentPathWithoutBase = currentPath.replace(new RegExp(`^${baseUrl.replac
             </a>
           ) : (
             <a
-              class="inline-flex items-center border-2 border-transparent px-3 py-1.5 font-mono text-xs font-semibold uppercase tracking-[0.06em] text-muted transition-colors hover:border-ink hover:bg-sun hover:text-ink"
+              class="inline-flex items-center rounded-lg px-3 py-2 text-sm font-medium text-muted transition-colors hover:bg-paper hover:text-ink"
               href={withBase(href)}
             >
               {label}
@@ -84,15 +84,13 @@ const currentPathWithoutBase = currentPath.replace(new RegExp(`^${baseUrl.replac
       }
     </div>
   </nav>
-  {/* Signature thick ink bottom rule — the printed edge of the masthead */}
-  <hr class="rule" aria-hidden="true" />
 </header>
 
 {/*
   MOBILE DOCK — five icon-first destinations in a native bottom-tab layout.
 */}
 <nav
-  class="fixed inset-x-0 bottom-0 z-30 hidden border-t-2 border-ink bg-paper/95 pb-[env(safe-area-inset-bottom)] backdrop-blur-md max-md:grid max-md:grid-cols-5"
+  class="fixed inset-x-3 bottom-3 z-30 hidden overflow-hidden rounded-2xl border border-line bg-paper/95 shadow-[0_16px_40px_rgba(16,24,40,0.18)] backdrop-blur-xl max-md:grid max-md:grid-cols-5"
   aria-label="Navigasi mobile"
 >
   {
@@ -101,8 +99,8 @@ const currentPathWithoutBase = currentPath.replace(new RegExp(`^${baseUrl.replac
       return (
         <a
           class:list={[
-            'flex min-h-16 flex-col items-center justify-center gap-1 border-t-2 px-1 py-2 text-center font-mono text-[0.55rem] font-semibold uppercase tracking-[0.03em] transition-colors',
-            isCurrent ? '-mt-0.5 border-brand text-brand-dark' : '-mt-0.5 border-transparent text-muted hover:bg-sun/30 hover:text-ink'
+            'flex min-h-16 flex-col items-center justify-center gap-1 px-1 py-2 text-center text-[0.65rem] font-semibold transition-colors',
+            isCurrent ? 'bg-sun text-brand-dark' : 'text-muted hover:bg-canvas hover:text-ink'
           ]}
           href={withBase(href)}
           aria-current={isCurrent ? 'page' : undefined}

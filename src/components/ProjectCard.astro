@@ -21,7 +21,7 @@ const homepageUrl = project.homepage ? normalizeHref(project.homepage) : '';
 
 <article
   class:list={[
-    'project-card riso-hover riso-shadow group relative flex flex-col border-2 border-ink bg-paper p-5 transition focus-within:-translate-x-0.5 focus-within:-translate-y-0.5',
+    'project-card group relative flex flex-col rounded-xl border border-line bg-paper p-5 shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-lg focus-within:ring-2 focus-within:ring-brand/30',
     compact && 'h-full'
   ]}
   data-project-card
@@ -38,7 +38,7 @@ const homepageUrl = project.homepage ? normalizeHref(project.homepage) : '';
     {
       project.ownerAvatarUrl && (
         <img
-          class="size-11 shrink-0 border-2 border-ink bg-canvas"
+          class="size-11 shrink-0 rounded-lg border border-line bg-canvas object-cover"
           src={project.ownerAvatarUrl}
           alt=""
           width="44"
@@ -53,14 +53,14 @@ const homepageUrl = project.homepage ? normalizeHref(project.homepage) : '';
         <span class="sticker">{status}</span>
         {
           project.latestRelease ? (
-            <a class="stamp relative z-10 hover:bg-brand hover:text-paper" href={project.latestRelease.url}>
+            <a class="stamp relative z-10 transition-colors hover:bg-sun" href={project.latestRelease.url}>
               Rilis {project.latestRelease.tagName}
             </a>
           ) : null
         }
       </div>
       {project.owner && <p class="meta-row mt-3 font-semibold text-brand-dark">{project.owner}/</p>}
-      <h3 class="mt-1 font-mono text-xl font-bold text-ink">
+      <h3 class="mt-1 text-xl font-bold text-ink">
         <a
           class="hover:text-brand focus:outline-none focus-visible:underline after:absolute after:inset-0 after:z-0 focus-visible:after:ring-2 focus-visible:after:ring-accent"
           href={detailUrl}
@@ -69,7 +69,7 @@ const homepageUrl = project.homepage ? normalizeHref(project.homepage) : '';
       </h3>
     </div>
   </div>
-  <p class="mt-4 font-body leading-7 text-muted">{project.description}</p>
+  <p class="mt-4 leading-7 text-muted">{project.description}</p>
   {
     visibleTopics.length > 0 && (
       <div class="meta-row mt-4 flex flex-wrap gap-x-3 gap-y-1 font-semibold text-brand-dark">
@@ -79,17 +79,17 @@ const homepageUrl = project.homepage ? normalizeHref(project.homepage) : '';
   }
   <hr class="rule mt-auto pt-4" />
   <div class="mt-4 flex flex-wrap items-center gap-2">
-    <span class="border-2 border-ink bg-canvas px-2 py-1 font-mono text-xs font-semibold text-ink">
+    <span class="rounded-md border border-line bg-canvas px-2 py-1 font-mono text-xs font-semibold text-ink">
       ★ {project.stars.toLocaleString('id-ID')}
     </span>
-    <span class="border-2 border-ink bg-canvas px-2 py-1 font-mono text-xs font-semibold text-ink">
+    <span class="rounded-md border border-line bg-canvas px-2 py-1 font-mono text-xs font-semibold text-ink">
       ⑂ {project.forks.toLocaleString('id-ID')}
     </span>
     {updatedLabel && (
-      <span class="border-2 border-ink bg-canvas px-2 py-1 font-mono text-xs font-semibold text-muted">{updatedLabel}</span>
+      <span class="rounded-md border border-line bg-canvas px-2 py-1 font-mono text-xs font-semibold text-muted">{updatedLabel}</span>
     )}
     {homepageUrl && (
-      <a class="riso-hover relative z-10 ml-auto border-2 border-ink bg-brand px-2 py-1 font-mono text-xs font-bold uppercase tracking-[0.04em] text-paper hover:bg-brand-dark" href={homepageUrl}>
+      <a class="relative z-10 ml-auto rounded-md border border-brand bg-brand px-2.5 py-1.5 text-xs font-semibold text-paper transition-colors hover:bg-brand-dark" href={homepageUrl}>
         Situs ↗
       </a>
     )}
