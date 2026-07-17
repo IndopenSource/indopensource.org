@@ -1,6 +1,7 @@
 ---
 import ProjectCard from './ProjectCard.astro';
-import type { Project } from '../lib/projects';
+import { projectSlug, type Project } from '../lib/projects';
+import { withBase } from '../lib/urls';
 
 interface Props {
   projects: Project[];
@@ -9,6 +10,9 @@ interface Props {
 const { projects } = Astro.props;
 const languages = [...new Set(projects.map((project) => project.language).filter((language): language is string => Boolean(language)))].sort();
 const topics = [...new Set(projects.flatMap((project) => project.topics || []))].sort().slice(0, 80);
+const formatDate = (value?: string) => value
+  ? new Intl.DateTimeFormat('id-ID', { dateStyle: 'medium' }).format(new Date(value))
+  : '-';
 ---
 
 <section class="pt-10 pb-20" data-projects-directory>
@@ -58,19 +62,78 @@ const topics = [...new Set(projects.flatMap((project) => project.topics || []))]
       <p class="meta-row font-semibold text-ink" aria-live="polite">
         <span class="text-accent" data-project-count>{projects.length}</span> proyek ditemukan
       </p>
-      <div class="flex items-center gap-2">
-        <button class="rounded-lg border border-line bg-paper px-3 py-2 text-sm font-semibold text-ink shadow-sm transition hover:bg-canvas disabled:cursor-not-allowed disabled:opacity-40" type="button" data-project-prev>
-          ← Sebelumnya
-        </button>
-        <span class="meta-row font-bold text-ink" data-project-page>1 / 1</span>
-        <button class="rounded-lg border border-line bg-paper px-3 py-2 text-sm font-semibold text-ink shadow-sm transition hover:bg-canvas disabled:cursor-not-allowed disabled:opacity-40" type="button" data-project-next>
-          Berikutnya →
-        </button>
+      <div class="flex flex-wrap items-center gap-3">
+        <div class="flex rounded-lg border border-line bg-paper p-1 shadow-sm" aria-label="Tampilan proyek">
+          <button class="rounded-md bg-brand px-3 py-2 text-sm font-semibold text-paper" type="button" data-project-view="table" aria-pressed="true">Tabel</button>
+          <button class="rounded-md px-3 py-2 text-sm font-semibold text-ink hover:bg-canvas" type="button" data-project-view="card" aria-pressed="false">Kartu</button>
+        </div>
+        <div class="flex items-center gap-2">
+          <button class="rounded-lg border border-line bg-paper px-3 py-2 text-sm font-semibold text-ink shadow-sm transition hover:bg-canvas disabled:cursor-not-allowed disabled:opacity-40" type="button" data-project-prev>
+            ← Sebelumnya
+          </button>
+          <span class="meta-row font-bold text-ink" data-project-page>1 / 1</span>
+          <button class="rounded-lg border border-line bg-paper px-3 py-2 text-sm font-semibold text-ink shadow-sm transition hover:bg-canvas disabled:cursor-not-allowed disabled:opacity-40" type="button" data-project-next>
+            Berikutnya →
+          </button>
+        </div>
       </div>
     </div>
 
-    <div class="reveal-stagger grid grid-cols-2 gap-5 max-lg:grid-cols-1" data-project-list>
+    <div class="hidden reveal-stagger grid grid-cols-2 gap-5 max-lg:grid-cols-1" data-project-list>
       {projects.map((project) => <ProjectCard project={project} />)}
+    </div>
+
+    <div class="overflow-x-auto rounded-xl border border-line bg-paper shadow-sm" data-project-table>
+      <table class="w-full min-w-[640px] table-fixed border-collapse text-left md:min-w-[760px] md:table-auto">
+        <thead class="border-b border-line bg-canvas">
+          <tr class="meta-row uppercase tracking-[0.06em] text-muted">
+            <th class="w-[300px] px-3 py-3 md:w-auto md:px-4" scope="col">Proyek</th>
+            <th class="w-[90px] px-3 py-3 md:w-auto md:px-4" scope="col">Bahasa</th>
+            <th class="w-[64px] px-3 py-3 text-right md:w-auto md:px-4" scope="col">Stars</th>
+            <th class="w-[64px] px-3 py-3 text-right md:w-auto md:px-4" scope="col">Forks</th>
+            <th class="w-[120px] px-3 py-3 md:w-auto md:px-4" scope="col">Update</th>
+          </tr>
+        </thead>
+        <tbody data-project-table-body>
+          {projects.map((project) => {
+            const updatedDate = project.pushedAt || project.updatedAt;
+            const createdYear = project.createdAt ? new Date(project.createdAt).getFullYear() : null;
+            return (
+              <tr
+                class="border-b border-line last:border-0 hover:bg-canvas"
+                data-project-row
+                data-name={project.fullName.toLowerCase()}
+              >
+                <th class="px-3 py-3 md:px-4 md:py-4" scope="row">
+                  <div class="flex items-center gap-3">
+                    {project.ownerAvatarUrl
+                      ? <img class="size-9 shrink-0 rounded-md border border-line bg-canvas object-cover" src={project.ownerAvatarUrl} alt="" width="36" height="36" loading="lazy" decoding="async" />
+                      : <span class="flex size-9 shrink-0 items-center justify-center rounded-md border border-line bg-canvas font-mono text-sm text-brand" aria-hidden="true">{'{}'}</span>}
+                    <span class="min-w-0">
+                      <a class="break-words font-semibold text-ink hover:text-brand hover:underline" href={withBase(`/projects/${projectSlug(project.fullName)}/`)}>{project.fullName}</a>
+                      <span class="mt-1 block max-w-xl truncate font-body text-sm font-normal text-muted">{project.description}</span>
+                      {!project.syncFailed && (
+                        <span class="meta-row mt-2 flex flex-wrap gap-x-2 gap-y-1 font-normal text-muted">
+                          <span>Lisensi {project.licenseSpdx || '—'}</span>
+                          <span>{project.openIssues ?? 0} issue</span>
+                          <span>{project.openPullRequests ?? 0} PR</span>
+                          <span>{project.subscribers ?? 0} watcher</span>
+                          <span>Health {project.communityHealth ?? '—'}%</span>
+                          {createdYear && <span>Sejak {createdYear}</span>}
+                        </span>
+                      )}
+                    </span>
+                  </div>
+                </th>
+                <td class="px-3 py-3 md:px-4 md:py-4"><span class="sticker">{project.archived ? 'Archived' : project.language || '—'}</span></td>
+                <td class="px-3 py-3 text-right font-mono text-sm font-semibold text-ink md:px-4 md:py-4">{project.stars.toLocaleString('id-ID')}</td>
+                <td class="px-3 py-3 text-right font-mono text-sm font-semibold text-ink md:px-4 md:py-4">{project.forks.toLocaleString('id-ID')}</td>
+                <td class="px-3 py-3 font-mono text-sm text-muted md:px-4 md:py-4">{formatDate(updatedDate)}</td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
     </div>
 
     <div class="mt-8 hidden rounded-xl border border-line bg-paper p-6 text-center shadow-sm" data-project-empty role="status">
@@ -108,8 +171,14 @@ const topics = [...new Set(projects.flatMap((project) => project.topics || []))]
     const pageOutputs = Array.from(root.querySelectorAll('[data-project-page]'));
     const prevButtons = Array.from(root.querySelectorAll<HTMLButtonElement>('[data-project-prev]'));
     const nextButtons = Array.from(root.querySelectorAll<HTMLButtonElement>('[data-project-next]'));
+    const viewButtons = Array.from(root.querySelectorAll<HTMLButtonElement>('[data-project-view]'));
     const emptyState = root.querySelector('[data-project-empty]');
-    const list = root.querySelector('[data-project-list]');
+    const list = root.querySelector<HTMLElement>('[data-project-list]');
+    const table = root.querySelector<HTMLElement>('[data-project-table]');
+    const tableBody = root.querySelector('[data-project-table-body]');
+    const rows = Array.from(root.querySelectorAll<HTMLElement>('[data-project-row]'));
+    const rowsByName = new Map(rows.map((row) => [row.dataset.name || '', row]));
+    let view = 'table';
 
     const getValue = (element: Element | null) => element instanceof HTMLInputElement || element instanceof HTMLSelectElement ? element.value.toLowerCase() : '';
     const toTime = (value?: string) => value ? new Date(value).getTime() || 0 : 0;
@@ -146,12 +215,28 @@ const topics = [...new Set(projects.flatMap((project) => project.topics || []))]
       page = Math.min(page, totalPages);
       const start = (page - 1) * pageSize;
       const visible = new Set(filtered.slice(start, start + pageSize));
+      const visibleNames = new Set([...visible].map((card) => card.dataset.name || ''));
 
       cards.forEach((card) => {
         card.classList.toggle('hidden', !visible.has(card));
       });
+      rows.forEach((row) => row.classList.toggle('hidden', !visibleNames.has(row.dataset.name || '')));
 
-      filtered.forEach((card) => list?.appendChild(card));
+      filtered.forEach((card) => {
+        list?.appendChild(card);
+        const row = rowsByName.get(card.dataset.name || '');
+        if (row) tableBody?.appendChild(row);
+      });
+
+      list?.classList.toggle('hidden', view !== 'card');
+      table?.classList.toggle('hidden', view !== 'table');
+      viewButtons.forEach((button) => {
+        const active = button.dataset.projectView === view;
+        button.setAttribute('aria-pressed', String(active));
+        button.classList.toggle('bg-brand', active);
+        button.classList.toggle('text-paper', active);
+        button.classList.toggle('text-ink', !active);
+      });
 
       countOutputs.forEach((output) => output.textContent = String(filtered.length));
       pageOutputs.forEach((output) => output.textContent = `${page} / ${totalPages}`);
@@ -174,6 +259,11 @@ const topics = [...new Set(projects.flatMap((project) => project.topics || []))]
 
     nextButtons.forEach((button) => button.addEventListener('click', () => {
       page += 1;
+      render();
+    }));
+
+    viewButtons.forEach((button) => button.addEventListener('click', () => {
+      view = button.dataset.projectView || 'table';
       render();
     }));
 

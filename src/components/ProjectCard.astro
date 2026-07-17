@@ -17,6 +17,7 @@ const visibleTopics = (project.topics || []).slice(0, 4);
 const detailUrl = withBase(`/projects/${projectSlug(project.fullName)}/`);
 const repoName = project.fullName.split('/').at(-1) || project.fullName;
 const homepageUrl = project.homepage ? normalizeHref(project.homepage) : '';
+const createdYear = project.createdAt ? new Date(project.createdAt).getFullYear() : null;
 ---
 
 <article
@@ -77,6 +78,16 @@ const homepageUrl = project.homepage ? normalizeHref(project.homepage) : '';
       </div>
     )
   }
+  {!project.syncFailed && (
+    <div class="meta-row mt-4 flex flex-wrap gap-x-3 gap-y-1 text-muted">
+      <span>Lisensi {project.licenseSpdx || '—'}</span>
+      <span>{project.openIssues ?? 0} issue</span>
+      <span>{project.openPullRequests ?? 0} PR</span>
+      <span>{project.subscribers ?? 0} watcher</span>
+      <span>Health {project.communityHealth ?? '—'}%</span>
+      {createdYear && <span>Sejak {createdYear}</span>}
+    </div>
+  )}
   <hr class="rule mt-auto pt-4" />
   <div class="mt-4 flex flex-wrap items-center gap-2">
     <span class="rounded-md border border-line bg-canvas px-2 py-1 font-mono text-xs font-semibold text-ink">

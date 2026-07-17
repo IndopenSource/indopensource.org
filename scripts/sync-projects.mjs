@@ -16,7 +16,7 @@ const META_DESCRIPTION_MAX = 155;
 
 const token = process.env.GITHUB_TOKEN || process.env.GH_TOKEN;
 
-async function requestJson(url) {
+async function request(url) {
   const response = await fetch(url, {
     headers: {
       Accept: 'application/vnd.github+json',
@@ -32,7 +32,18 @@ async function requestJson(url) {
     throw new Error(`Request failed ${response.status} for ${url}`);
   }
 
-  return response.json();
+  return response;
+}
+
+async function requestJson(url) {
+  return (await request(url)).json();
+}
+
+async function requestCollectionCount(url) {
+  const response = await request(`${url}${url.includes('?') ? '&' : '?'}per_page=1`);
+  const items = await response.json();
+  const lastPage = response.headers.get('link')?.match(/[?&]page=(\d+)>; rel="last"/);
+  return lastPage ? Number(lastPage[1]) : items.length;
 }
 
 function parseRepo(fullName) {
@@ -169,6 +180,12 @@ function fallbackProject(fullName) {
     pushedAt: '',
     latestRelease: null,
     archived: false,
+    licenseSpdx: '',
+    createdAt: '',
+    openIssues: 0,
+    openPullRequests: 0,
+    subscribers: 0,
+    communityHealth: null,
     readmeHtml: '',
     syncFailed: true,
     partial: true
@@ -193,12 +210,36 @@ async function getLatestRelease(fullName) {
   }
 }
 
+async function getOpenPullRequestCount(fullName) {
+  try {
+    return await requestCollectionCount(`https://api.github.com/repos/${fullName}/pulls?state=open`);
+  } catch (error) {
+    if (error.message.startsWith('RATE_LIMITED:')) throw error;
+    return 0;
+  }
+}
+
+async function getCommunityHealth(fullName) {
+  try {
+    const profile = await requestJson(`https://api.github.com/repos/${fullName}/community/profile`);
+    return profile.health_percentage ?? null;
+  } catch (error) {
+    if (error.message.startsWith('RATE_LIMITED:')) throw error;
+    return null;
+  }
+}
+
 async function getRepo(fullName) {
   try {
     const repo = await requestJson(`https://api.github.com/repos/${fullName}`);
-    const latestRelease = await getLatestRelease(fullName);
-    const readmeHtml = await getReadmeHtml(fullName);
+    const [latestRelease, readmeHtml, openPullRequests, communityHealth] = await Promise.all([
+      getLatestRelease(fullName),
+      getReadmeHtml(fullName),
+      getOpenPullRequestCount(fullName),
+      getCommunityHealth(fullName)
+    ]);
     const description = repo.description || 'Proyek dari daftar awesome-indonesia.';
+    const licenseSpdx = repo.license?.spdx_id === 'NOASSERTION' ? '' : repo.license?.spdx_id || '';
 
     return {
       fullName: repo.full_name,
@@ -217,6 +258,12 @@ async function getRepo(fullName) {
       pushedAt: repo.pushed_at || '',
       latestRelease,
       archived: Boolean(repo.archived),
+      licenseSpdx,
+      createdAt: repo.created_at || '',
+      openIssues: Math.max(0, (repo.open_issues_count || 0) - openPullRequests),
+      openPullRequests,
+      subscribers: repo.subscribers_count || 0,
+      communityHealth,
       readmeHtml
     };
   } catch (error) {

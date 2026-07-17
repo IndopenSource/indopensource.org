@@ -8,15 +8,15 @@
 const items = [
   ['Milestone 1', 'Foundation website', 'Setup repo, desain halaman inti, SEO dasar, dan build statis.', 'Selesai'],
   ['Milestone 2', 'Project directory', 'Sinkronisasi dari awesome-indonesia, filter, pencarian, dan detail proyek.', 'Berjalan'],
-  ['Milestone 3', 'Knowledge dan forum', 'Blog repo, editorial flow, dan integrasi GitHub Discussions.', 'Direncanakan']
+  ['Milestone 3', 'Knowledge dan komunitas', 'Blog, Ruang Belajar, halaman organisasi, dan GitHub Discussions sebagai ruang kerja terbuka.', 'Berjalan']
 ];
 ---
 
-<ol class="reveal-stagger grid list-none gap-4 p-0">
+<ol class="reveal-stagger grid list-none gap-0 p-0">
   {
     items.map(([milestone, title, description, status], index) => (
-      <li class="group grid grid-cols-[auto_minmax(0,1fr)] gap-5 rounded-xl border border-line bg-paper p-6 shadow-sm max-md:gap-4 max-sm:grid-cols-1">
-        <span class="flex size-12 items-center justify-center rounded-full bg-sun font-mono text-sm font-bold tabular-nums text-brand-dark" aria-hidden="true">
+      <li class="group grid grid-cols-[auto_minmax(0,1fr)] gap-6 border-t-[3px] border-ink py-7 max-md:gap-4 max-sm:grid-cols-1">
+        <span class="section-number tabular-nums leading-none" aria-hidden="true">
           {String(index + 1).padStart(2, '0')}
         </span>
         <div class="min-w-0">
@@ -25,9 +25,10 @@ const items = [
             <span class="sticker">{status}</span>
           </div>
           <h3 class="display-sm mt-2 text-ink">{title}</h3>
-          <p class="mt-3 max-w-2xl text-lg leading-7 text-muted">{description}</p>
+          <p class="mt-3 max-w-2xl font-body text-lg leading-7 text-muted">{description}</p>
         </div>
       </li>
     ))
   }
+  <li class="border-t-[3px] border-ink" aria-hidden="true"></li>
 </ol>
