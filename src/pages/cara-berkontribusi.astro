@@ -1,0 +1,95 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseButton from '../components/BaseButton.astro';
+import PageHeader from '../components/PageHeader.astro';
+
+const steps = [
+  { no: '01', title: 'Temukan proyek', desc: 'Jelajahi direktori proyek open source Indonesia. Pilih yang sesuai minat atau keahlianmu.', link: '/projects/', label: 'Buka direktori' },
+  { no: '02', title: 'Baca dokumentasi', desc: 'Pelajari cara kontribusi di repo tersebut. Cek CONTRIBUTING.md, README, dan issue yang tersedia.', link: 'https://github.com/IndopenSource/awesome-indonesia', label: 'Lihat contoh' },
+  { no: '03', title: 'Fork & clone', desc: 'Fork repository ke akun GitHub-mu, lalu clone ke lokal. Buat branch baru untuk perubahanmu.', link: 'https://docs.github.com/en/get-started/quickstart/fork-a-repo', label: 'Panduan GitHub' },
+  { no: '04', title: 'Buat perubahan', desc: 'Mulai dari yang kecil: fix typo, tambah dokumentasi, atau kerjakan issue "good first issue".', link: 'https://github.com/IndopenSource/awesome-indonesia/issues', label: 'Cari issue' },
+  { no: '05', title: 'Commit & push', desc: 'Commit perubahan dengan pesan yang jelas. Push ke branch-mu di GitHub.', link: 'https://docs.github.com/en/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/about-commits', label: 'Panduan commit' },
+  { no: '06', title: 'Buka Pull Request', desc: 'Buka PR dari branch-mu ke repo utama. Jelaskan perubahanmu dan tunggu review dari maintainer.', link: 'https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request', label: 'Panduan PR' }
+];
+
+const contributionTypes = [
+  { icon: 'ph-code', title: 'Kode', desc: 'Fix bug, tambah fitur, refactor, optimasi performa' },
+  { icon: 'ph-article', title: 'Dokumentasi', desc: 'Tulis tutorial, perbaiki README, terjemahan' },
+  { icon: 'ph-bug', title: 'Testing', desc: 'Laporkan bug, tulis test case, review kode' },
+  { icon: 'ph-paint-brush', title: 'Desain', desc: 'UI/UX, logo, ilustrasi, branding' },
+  { icon: 'ph-translate', title: 'Lokalisasi', desc: 'Terjemahan konten, adaptasi budaya' },
+  { icon: 'ph-megaphone', title: 'Komunitas', desc: 'Jawab pertanyaan, moderasi, organisasi event' }
+];
+---
+
+<BaseLayout title="Cara Berkontribusi - IndopenSource" description="Panduan lengkap berkontribusi di ekosistem open source Indonesia melalui IndopenSource.">
+  <PageHeader eyebrow="Kontribusi" title="Mulai dari langkah pertama.">
+    <p>Kontribusi open source tidak harus besar. Yang penting terbuka, terawat, dan bermanfaat. Ikuti alur sederhana ini untuk mulai berkontribusi.</p>
+  </PageHeader>
+
+  <section class="grain border-b-[3px] border-ink bg-brand-dark py-16 text-paper md:py-20">
+    <div class="mx-auto w-[min(1120px,calc(100%-32px))]">
+      <span class="sticker">Alur kontribusi</span>
+      <p class="pull-quote mt-5 max-w-4xl text-paper">Setiap kontribusi, <span class="text-sun">sekecil apapun</span>, adalah jejak yang bisa diteruskan orang lain.</p>
+    </div>
+  </section>
+
+  <section class="bg-paper py-16 md:py-20">
+    <div class="mx-auto w-[min(1120px,calc(100%-32px))]">
+      <div class="mb-10 flex items-end justify-between gap-5 max-md:flex-col max-md:items-start">
+        <div>
+          <span class="sticker">Enam langkah</span>
+          <h2 class="display-md mt-4">Dari nol sampai pull request.</h2>
+        </div>
+        <span class="meta-row">tidak perlu menunggu ahli</span>
+      </div>
+      <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+        {steps.map((step) => (
+          <article class="riso-shadow border-2 border-ink bg-canvas p-6">
+            <span class="section-number text-brand-dark">{step.no}</span>
+            <h3 class="display-sm mt-5 text-ink">{step.title}</h3>
+            <p class="mt-3 font-body leading-7 text-muted">{step.desc}</p>
+            <a class="meta-row mt-6 inline-block font-semibold text-brand underline decoration-2 underline-offset-4 hover:text-accent" href={step.link}>{step.label} →</a>
+          </article>
+        ))}
+      </div>
+      <div class="mt-10 flex flex-wrap gap-3">
+        <BaseButton href="https://github.com/IndopenSource">Lihat repository</BaseButton>
+        <BaseButton href="https://github.com/orgs/IndopenSource/discussions" variant="secondary">Tanya di forum</BaseButton>
+      </div>
+    </div>
+  </section>
+
+  <section class="border-y-[3px] border-ink bg-canvas py-16 md:py-20">
+    <div class="mx-auto w-[min(1120px,calc(100%-32px))]">
+      <div class="mb-10">
+        <span class="sticker">Banyak jalur</span>
+        <h2 class="display-md mt-4">Kontribusi bukan cuma kode.</h2>
+        <p class="mt-3 max-w-2xl font-body text-lg leading-8 text-muted">Pilih jalur yang sesuai dengan keahlian dan minatmu. Semua sama berharganya.</p>
+      </div>
+      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {contributionTypes.map((type) => (
+          <article class="riso-shadow border-2 border-ink bg-paper p-6">
+            <i class:list={['ph-fill text-3xl text-brand', type.icon]} aria-hidden="true"></i>
+            <h3 class="display-sm mt-4 text-ink">{type.title}</h3>
+            <p class="mt-3 font-body leading-7 text-muted">{type.desc}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-paper py-16 md:py-20">
+    <div class="mx-auto w-[min(1120px,calc(100%-32px))]">
+      <div class="riso-shadow border-2 border-ink bg-sun p-8 md:p-12">
+        <span class="sticker">Butuh bantuan?</span>
+        <h2 class="display-md mt-4 text-ink">Jangan ragu bertanya.</h2>
+        <p class="mt-4 max-w-2xl font-body text-lg leading-8 text-ink">Komunitas siap membantu. Tanyakan apapun di Discussions atau langsung ke maintainer proyek.</p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <BaseButton href="https://github.com/orgs/IndopenSource/discussions">Buka Discussions</BaseButton>
+          <BaseButton href="/kode-etik/" variant="secondary">Baca Kode Etik</BaseButton>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
