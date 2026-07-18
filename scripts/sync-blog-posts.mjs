@@ -177,10 +177,10 @@ async function getCommitMeta(path) {
 }
 
 /**
- * Prefer the author declared in frontmatter `authors[]` over git committer
- * metadata (CQ-6). Items may be plain strings (the author name) or objects
+ * Parse frontmatter `authors[]` into an author object.
+ * Items may be plain strings (the author name) or objects
  * like `{ name, url, avatarUrl }`. Returns `null` when no usable frontmatter
- * author is present, so callers fall back to commit metadata.
+ * author is present.
  */
 function authorFromFrontmatter(authors) {
   if (!Array.isArray(authors) || authors.length === 0) return null;
@@ -205,6 +205,28 @@ function authorFromFrontmatter(authors) {
   return null;
 }
 
+/**
+ * Prefer git commit author over frontmatter `authors[]`.
+ * Git commit metadata reflects actual contribution, while frontmatter may
+ * contain placeholder values like "IndopenSource Maintainers". Returns the
+ * commit author when available, otherwise falls back to frontmatter.
+ */
+function resolveAuthor(commitAuthor, frontmatterAuthors) {
+  // Prefer git commit author (actual contributor)
+  if (commitAuthor && commitAuthor.name && commitAuthor.name !== 'IndopenSource Maintainers') {
+    return { author: commitAuthor, fromFrontmatter: false };
+  }
+
+  // Fall back to frontmatter if commit author is placeholder
+  const frontmatterAuthor = authorFromFrontmatter(frontmatterAuthors);
+  if (frontmatterAuthor) {
+    return { author: frontmatterAuthor, fromFrontmatter: true };
+  }
+
+  // Final fallback: commit author (even if placeholder)
+  return { author: commitAuthor, fromFrontmatter: false };
+}
+
 const defaultBranch = await getDefaultBranch();
 
 const tree = await requestJson(`https://api.github.com/repos/${BLOG_REPO}/git/trees/${defaultBranch}?recursive=1`);
@@ -220,8 +242,8 @@ for (const path of articleFiles) {
   const { data, content } = parseFrontmatter(raw);
   const [year, month] = path.split('/').slice(1, 3);
   const commitMeta = await getCommitMeta(path);
-  const frontmatterAuthor = authorFromFrontmatter(data.authors);
   const editorialDate = (data.date || '').trim();
+  const resolvedAuthor = resolveAuthor(commitMeta.author, data.authors);
 
   posts.push({
     slug: slugFromPath(path),
@@ -242,8 +264,8 @@ for (const path of articleFiles) {
     // edit timestamp separately for provenance (CC-9).
     releasedAt: editorialDate || commitMeta.author.committedAt || commitMeta.lastModifiedAt,
     lastModifiedAt: commitMeta.lastModifiedAt,
-    author: frontmatterAuthor || commitMeta.author,
-    authorFromFrontmatter: Boolean(frontmatterAuthor)
+    author: resolvedAuthor.author,
+    authorFromFrontmatter: resolvedAuthor.fromFrontmatter
   });
 }
 

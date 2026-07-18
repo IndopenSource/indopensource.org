@@ -4,8 +4,12 @@ import PageHeader from '../components/PageHeader.astro';
 import ProjectsDirectory from '../components/ProjectsDirectory.astro';
 import type { Project } from '../lib/projects';
 import projectsData from '../data/projects.json';
+import legacyData from '../data/legacy.json';
+import revivalData from '../data/revival.json';
 
 const projects = projectsData as Project[];
+const legacyProjects = legacyData as any[];
+const revivalProjects = revivalData as any[];
 
 // Stars/forks of `syncFailed` stubs are placeholder zeros, not real counts
 // (CC-10). Aggregate only over successfully refreshed repos so the totals are
@@ -60,4 +64,74 @@ const latestUpdateLabel = latestUpdate
     </div>
   </PageHeader>
   <ProjectsDirectory projects={projects} />
+
+  {legacyProjects.length > 0 && (
+    <section class="border-t border-line bg-canvas py-16 md:py-20">
+      <div class="mx-auto w-[min(1120px,calc(100%-32px))]">
+        <div class="mb-10">
+          <span class="sticker">Legacy</span>
+          <h2 class="display-md mt-4">Proyek warisan.</h2>
+          <p class="mt-3 max-w-2xl font-body text-lg leading-8 text-muted">
+            Resource dan proyek non-app open source Indonesia yang masih relevan sebagai referensi pembelajaran.
+          </p>
+        </div>
+        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {legacyProjects.map((repo) => (
+            <a
+              class="riso-hover riso-shadow block border-2 border-ink bg-paper p-5"
+              href={repo.url}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="flex items-start justify-between gap-3">
+                <h3 class="font-display text-lg font-bold text-ink">{repo.name}</h3>
+                <i class="ph ph-arrow-square-out text-xl text-muted" aria-hidden="true"></i>
+              </div>
+              <p class="mt-2 font-body text-sm leading-6 text-muted line-clamp-2">{repo.description || 'Tidak ada deskripsi'}</p>
+              <div class="mt-4 flex flex-wrap items-center gap-3 font-mono text-xs text-muted">
+                {repo.language && <span class="flex items-center gap-1"><i class="ph ph-code text-sm" aria-hidden="true"></i>{repo.language}</span>}
+                <span class="flex items-center gap-1"><i class="ph ph-star text-sm" aria-hidden="true"></i>{repo.stars.toLocaleString('id-ID')}</span>
+                <span class="flex items-center gap-1"><i class="ph ph-git-fork text-sm" aria-hidden="true"></i>{repo.forks.toLocaleString('id-ID')}</span>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  {revivalProjects.length > 0 && (
+    <section class="border-t border-line bg-paper py-16 md:py-20">
+      <div class="mx-auto w-[min(1120px,calc(100%-32px))]">
+        <div class="mb-10">
+          <span class="sticker">Revival</span>
+          <h2 class="display-md mt-4">Proyek potensial untuk dihidupkan kembali.</h2>
+          <p class="mt-3 max-w-2xl font-body text-lg leading-8 text-muted">
+            Proyek open source Indonesia yang butuh kontribusi untuk aktif kembali.
+          </p>
+        </div>
+        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {revivalProjects.map((repo) => (
+            <a
+              class="riso-hover riso-shadow block border-2 border-ink bg-canvas p-5"
+              href={repo.url}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="flex items-start justify-between gap-3">
+                <h3 class="font-display text-lg font-bold text-ink">{repo.name}</h3>
+                <i class="ph ph-arrow-square-out text-xl text-muted" aria-hidden="true"></i>
+              </div>
+              <p class="mt-2 font-body text-sm leading-6 text-muted line-clamp-2">{repo.description || 'Tidak ada deskripsi'}</p>
+              <div class="mt-4 flex flex-wrap items-center gap-3 font-mono text-xs text-muted">
+                {repo.language && <span class="flex items-center gap-1"><i class="ph ph-code text-sm" aria-hidden="true"></i>{repo.language}</span>}
+                <span class="flex items-center gap-1"><i class="ph ph-star text-sm" aria-hidden="true"></i>{repo.stars.toLocaleString('id-ID')}</span>
+                <span class="flex items-center gap-1"><i class="ph ph-git-fork text-sm" aria-hidden="true"></i>{repo.forks.toLocaleString('id-ID')}</span>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
 </BaseLayout>
