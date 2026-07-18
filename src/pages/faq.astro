@@ -1,0 +1,96 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseButton from '../components/BaseButton.astro';
+import PageHeader from '../components/PageHeader.astro';
+import { withBase } from '../lib/urls';
+
+const faqs = [
+  {
+    category: 'Umum',
+    items: [
+      { q: 'Apa itu IndopenSource?', a: 'IndopenSource adalah komunitas open source Indonesia yang fokus pada kurasi, dokumentasi, dan kolaborasi proyek open source buatan anak bangsa. Kami menyediakan direktori proyek, panduan kontribusi, dan ruang diskusi untuk ekosistem OSS Indonesia.' },
+      { q: 'Siapa yang bisa bergabung?', a: 'Semua orang! Tidak perlu jadi programmer ahli. Kontributor dokumentasi, desainer, penerjemah, tester, dan komunitas sama berharganya dengan developer.' },
+      { q: 'Apakah ini organisasi nirlaba?', a: 'IndopenSource adalah inisiatif komunitas yang dijalankan secara sukarela. Kami terbuka untuk sponsorship dan dukungan dari organisasi yang sejalan dengan misi open source.' },
+      { q: 'Apa bedanya dengan komunitas OSS lain?', a: 'Kami fokus pada kurasi dan keberlanjutan. Bukan sekadar membuat proyek, tapi merawat agar proyek OSS Indonesia tetap aktif, terdokumentasi, dan bermanfaat jangka panjang.' }
+    ]
+  },
+  {
+    category: 'Proyek',
+    items: [
+      { q: 'Bagaimana cara mendaftarkan proyek saya?', a: 'Buka issue di repository awesome-indonesia dengan template yang tersedia. Tim kurasi akan mereview dan membantu menambahkan proyek Anda ke direktori.' },
+      { q: 'Apa syarat proyek bisa masuk direktori?', a: 'Proyek harus open source (lisensi OSI-approved), dibuat atau dipelihara oleh orang Indonesia, dan memiliki dokumentasi dasar (README, cara install). Tidak harus besar atau populer.' },
+      { q: 'Proyek saya tidak aktif, apakah bisa dihapus?', a: 'Kami memiliki kategori "revival" untuk proyek potensial yang perlu dihidupkan kembali. Jika proyek benar-benar tidak relevan, kami bisa memindahkannya ke arsip.' },
+      { q: 'Bolehkah proyek komersial masuk?', a: 'Boleh, selama ada komponen open source yang jelas dan lisensinya transparan. Kami juga menerima proyek dengan model open-core.' }
+    ]
+  },
+  {
+    category: 'Kontribusi',
+    items: [
+      { q: 'Saya pemula, bisa mulai dari mana?', a: 'Cari issue berlabel "good first issue" di repository yang menarik. Atau mulai dari kontribusi non-kode: perbaiki dokumentasi, laporkan bug, atau bantu terjemahan.' },
+      { q: 'Bagaimana cara menjadi maintainer?', a: 'Mulai dengan kontribusi konsisten di satu proyek. Setelah beberapa PR di-merge dan Anda memahami kodebase, maintainer existing bisa mengundang Anda menjadi co-maintainer.' },
+      { q: 'PR saya tidak di-review, harus bagaimana?', a: 'Bisa mention maintainer di PR atau tanya di Discussions. Kadang review tertunda karena maintainer sibuk. Bersabar dan sopan selalu membantu.' },
+      { q: 'Apakah ada mentoring untuk kontributor baru?', a: 'Ya! Kami memiliki program mentoring melalui Discussions. Anda bisa meminta guidance dari maintainer berpengalaman atau kontributor senior.' }
+    ]
+  },
+  {
+    category: 'Teknis',
+    items: [
+      { q: 'Lisensi apa yang direkomendasikan?', a: 'Untuk proyek software: MIT, Apache 2.0, atau GPL. Untuk dokumentasi: CC-BY-SA. Pilih yang sesuai dengan tujuan dan komunitas target Anda.' },
+      { q: 'Bagaimana cara menangani security vulnerability?', a: 'Laporkan secara privat ke maintainer atau via halaman Security kami. Jangan buka issue publik untuk vulnerability sebelum ada patch.' },
+      { q: 'Apakah ada CI/CD yang bisa dipakai?', a: 'GitHub Actions tersedia gratis untuk repository publik. Kami juga menyediakan template workflow untuk testing, linting, dan deployment.' },
+      { q: 'Bagaimana cara hosting dokumentasi?', a: 'GitHub Pages, Netlify, atau Vercel menyediakan hosting gratis untuk static site. Astro (yang kami pakai) bisa di-deploy ke mana saja.' }
+    ]
+  }
+];
+---
+
+<BaseLayout title="FAQ - IndopenSource" description="Pertanyaan yang sering diajukan tentang IndopenSource, kontribusi, dan ekosistem open source Indonesia.">
+  <PageHeader eyebrow="FAQ" title="Pertanyaan yang sering muncul.">
+    <p>Jawaban untuk pertanyaan umum seputar IndopenSource, cara berkontribusi, dan ekosistem open source Indonesia. Tidak menemukan jawaban? Tanya di Discussions.</p>
+  </PageHeader>
+
+  <section class="grain border-b-[3px] border-ink bg-brand-dark py-16 text-paper md:py-20">
+    <div class="mx-auto w-[min(1120px,calc(100%-32px))]">
+      <span class="sticker">Pertanyaan umum</span>
+      <p class="pull-quote mt-5 max-w-4xl text-paper">Jawaban untuk yang <span class="text-sun">sering ditanyakan</span>, agar Anda bisa langsung mulai berkontribusi.</p>
+    </div>
+  </section>
+
+  {faqs.map((section) => (
+    <section class="bg-paper py-16 md:py-20 border-b border-ink">
+      <div class="mx-auto w-[min(1120px,calc(100%-32px))]">
+        <div class="mb-10">
+          <span class="sticker">{section.category}</span>
+          <h2 class="display-md mt-4">Pertanyaan {section.category.toLowerCase()}.</h2>
+        </div>
+        <div class="grid gap-4">
+          {section.items.map((item) => (
+            <details class="riso-shadow border-2 border-ink bg-canvas group">
+              <summary class="flex cursor-pointer items-center justify-between gap-4 p-6 font-display text-xl font-bold text-ink list-none">
+                <span>{item.q}</span>
+                <i class="ph ph-caret-down text-2xl text-brand transition-transform group-open:rotate-180" aria-hidden="true"></i>
+              </summary>
+              <div class="border-t-2 border-ink px-6 py-5 font-body text-lg leading-8 text-muted">
+                {item.a}
+              </div>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+  ))}
+
+  <section class="bg-sun py-16 md:py-20">
+    <div class="mx-auto w-[min(1120px,calc(100%-32px))]">
+      <div class="riso-shadow border-2 border-ink bg-paper p-8 md:p-12">
+        <span class="sticker">Masih ada pertanyaan?</span>
+        <h2 class="display-md mt-4 text-ink">Tanya langsung di komunitas.</h2>
+        <p class="mt-4 max-w-2xl font-body text-lg leading-8 text-muted">Jika pertanyaan Anda belum terjawab, buka diskusi baru atau hubungi maintainer. Kami siap membantu.</p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <BaseButton href="https://github.com/orgs/IndopenSource/discussions">Buka Discussion</BaseButton>
+          <BaseButton href={withBase('/cara-berkontribusi/')} variant="secondary">Panduan kontribusi</BaseButton>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

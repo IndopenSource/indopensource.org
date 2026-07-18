@@ -1,0 +1,156 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseButton from '../components/BaseButton.astro';
+import PageHeader from '../components/PageHeader.astro';
+import { withBase } from '../lib/urls';
+
+const brandAssets = [
+  { name: 'Logo Utama (SVG)', desc: 'Format vektor untuk print & digital', icon: 'ph-file-svg', link: '/brand/indopensource-logo.svg', available: false },
+  { name: 'Logo Utama (PNG)', desc: 'Resolusi tinggi, background transparan', icon: 'ph-file-png', link: '/brand/indopensource-logo.png', available: true },
+  { name: 'Icon Only', desc: 'Mark tanpa teks untuk avatar & favicon', icon: 'ph-image', link: '/brand/indopensource-icon.svg', available: false },
+  { name: 'Brand Guidelines', desc: 'Panduan penggunaan logo & warna', icon: 'ph-book-open', link: '/brand/brand-guidelines.pdf', available: false }
+];
+
+const colorPalette = [
+  { name: 'Brand Green', hex: '#4d7c0f', tailwind: 'bg-[#4d7c0f]', usage: 'Primary brand color' },
+  { name: 'Brand Dark', hex: '#365314', tailwind: 'bg-[#365314]', usage: 'Dark variant' },
+  { name: 'Sun', hex: '#ecfccb', tailwind: 'bg-[#ecfccb]', usage: 'Highlight & accent' },
+  { name: 'Ink', hex: '#101828', tailwind: 'bg-[#101828]', usage: 'Text & dark backgrounds' },
+  { name: 'Paper', hex: '#ffffff', tailwind: 'bg-[#ffffff]', usage: 'Light backgrounds' },
+  { name: 'Canvas', hex: '#f8fafc', tailwind: 'bg-[#f8fafc]', usage: 'Subtle backgrounds' }
+];
+
+const pressCoverage = [
+  { title: 'IndopenSource: Menghidupkan Kembali Proyek Open Source Indonesia', source: 'Tech in Asia', date: '2025', link: '#' },
+  { title: 'Kolaborasi Komunitas OSS Indonesia Melalui IndopenSource', source: 'Kompas Tech', date: '2025', link: '#' },
+  { title: 'Direktori Proyek Open Source Buatan Anak Bangsa', source: 'IDN Times', date: '2025', link: '#' }
+];
+
+const keyFacts = [
+  { label: 'Didirikan', value: 'Maret 2025' },
+  { label: 'Proyek terkurasi', value: '69+' },
+  { label: 'Total bintang GitHub', value: '5.361' },
+  { label: 'Fork komunitas', value: '2.017' },
+  { label: 'Kontributor aktif', value: '100+' },
+  { label: 'Website', value: 'indopensource.org' }
+];
+
+const contact = [
+  { type: 'Umum', email: 'admin@indopensource.org', desc: 'Pertanyaan umum & kemitraan' },
+  { type: 'Media', email: 'press@indopensource.org', desc: 'Wawancara, liputan, press release' },
+  { type: 'Sponsor', email: 'sponsor@indopensource.org', desc: 'Sponsorship & dukungan finansial' }
+];
+---
+
+<BaseLayout title="Press & Media Kit - IndopenSource" description="Resource media, brand assets, dan informasi untuk jurnalis dan partner IndopenSource.">
+  <PageHeader eyebrow="Press" title="Resource untuk media & partner.">
+    <p>Halaman ini menyediakan brand assets, fakta kunci, dan informasi kontak untuk jurnalis, blogger, dan organisasi yang ingin meliput atau bermitra dengan IndopenSource.</p>
+  </PageHeader>
+
+  <section class="grain border-b-[3px] border-ink bg-brand-dark py-16 text-paper md:py-20">
+    <div class="mx-auto w-[min(1120px,calc(100%-32px))]">
+      <span class="sticker">Media kit</span>
+      <p class="pull-quote mt-5 max-w-4xl text-paper">Semua yang Anda butuhkan untuk <span class="text-sun">memberitakan</span> IndopenSource.</p>
+    </div>
+  </section>
+
+  <section class="bg-paper py-16 md:py-20">
+    <div class="mx-auto w-[min(1120px,calc(100%-32px))]">
+      <div class="mb-10">
+        <span class="sticker">Brand assets</span>
+        <h2 class="display-md mt-4">Logo & identitas visual.</h2>
+        <p class="mt-3 max-w-2xl font-body text-lg leading-8 text-muted">Gunakan asset ini sesuai brand guidelines. Untuk penggunaan khusus, hubungi tim media.</p>
+      </div>
+      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        {brandAssets.map((asset) => (
+          <article class="riso-shadow border-2 border-ink bg-canvas p-6">
+            <div class="flex h-16 w-16 items-center justify-center rounded-lg border-2 border-ink bg-sun">
+              <i class:list={['ph-fill text-3xl text-brand', asset.icon]} aria-hidden="true"></i>
+            </div>
+            <h3 class="mt-4 font-display text-lg font-bold text-ink">{asset.name}</h3>
+            <p class="mt-2 font-body text-sm leading-6 text-muted">{asset.desc}</p>
+            {asset.available ? (
+              <a class="meta-row mt-4 inline-block font-semibold text-brand underline decoration-2 underline-offset-4 hover:text-accent" href={withBase(asset.link)}>Download →</a>
+            ) : (
+              <span class="meta-row mt-4 inline-block font-semibold text-muted italic">Segera hadir</span>
+            )}
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="border-y-[3px] border-ink bg-canvas py-16 md:py-20">
+    <div class="mx-auto w-[min(1120px,calc(100%-32px))]">
+      <div class="mb-10">
+        <span class="sticker">Color palette</span>
+        <h2 class="display-md mt-4">Warna brand IndopenSource.</h2>
+      </div>
+      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {colorPalette.map((color) => (
+          <article class="riso-shadow border-2 border-ink bg-paper p-5">
+            <div class:list={['h-20 rounded-lg border-2 border-ink', color.tailwind]}></div>
+            <div class="mt-4">
+              <h3 class="font-display text-lg font-bold text-ink">{color.name}</h3>
+              <p class="font-mono text-sm text-brand-dark">{color.hex}</p>
+              <p class="mt-1 font-body text-sm text-muted">{color.usage}</p>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-paper py-16 md:py-20">
+    <div class="mx-auto w-[min(1120px,calc(100%-32px))]">
+      <div class="mb-10">
+        <span class="sticker">Fakta kunci</span>
+        <h2 class="display-md mt-4">Angka & informasi penting.</h2>
+      </div>
+      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {keyFacts.map((fact) => (
+          <article class="riso-shadow border-2 border-ink bg-sun p-6">
+            <p class="font-mono text-sm font-bold uppercase tracking-wider text-brand-dark">{fact.label}</p>
+            <p class="mt-2 display-sm text-ink">{fact.value}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="border-y-[3px] border-ink bg-canvas py-16 md:py-20">
+    <div class="mx-auto w-[min(1120px,calc(100%-32px))]">
+      <div class="mb-10">
+        <span class="sticker">Liputan media</span>
+        <h2 class="display-md mt-4">IndopenSource di berita.</h2>
+      </div>
+      <div class="grid gap-4 md:grid-cols-3">
+        {pressCoverage.map((item) => (
+          <article class="riso-shadow border-2 border-ink bg-paper p-6">
+            <p class="font-mono text-sm text-muted">{item.source} · {item.date}</p>
+            <h3 class="mt-3 font-display text-lg font-bold text-ink">{item.title}</h3>
+            <a class="meta-row mt-4 inline-block font-semibold text-brand underline decoration-2 underline-offset-4 hover:text-accent" href={item.link}>Baca artikel →</a>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-paper py-16 md:py-20">
+    <div class="mx-auto w-[min(1120px,calc(100%-32px))]">
+      <div class="mb-10">
+        <span class="sticker">Kontak media</span>
+        <h2 class="display-md mt-4">Hubungi tim kami.</h2>
+      </div>
+      <div class="grid gap-4 md:grid-cols-3">
+        {contact.map((c) => (
+          <article class="riso-shadow border-2 border-ink bg-canvas p-6">
+            <h3 class="font-display text-xl font-bold text-ink">{c.type}</h3>
+            <p class="mt-2 font-body text-muted">{c.desc}</p>
+            <a class="meta-row mt-4 inline-block font-semibold text-brand underline decoration-2 underline-offset-4 hover:text-accent" href={`mailto:${c.email}`}>{c.email} →</a>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>
