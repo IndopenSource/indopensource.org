@@ -90,8 +90,8 @@ const latestUpdateLabel = latestUpdate
               <p class="mt-2 font-body text-sm leading-6 text-muted line-clamp-2">{repo.description || 'Tidak ada deskripsi'}</p>
               <div class="mt-4 flex flex-wrap items-center gap-3 font-mono text-xs text-muted">
                 {repo.language && <span class="flex items-center gap-1"><i class="ph ph-code text-sm" aria-hidden="true"></i>{repo.language}</span>}
-                <span class="flex items-center gap-1"><i class="ph ph-star text-sm" aria-hidden="true"></i>{repo.stars.toLocaleString('id-ID')}</span>
-                <span class="flex items-center gap-1"><i class="ph ph-git-fork text-sm" aria-hidden="true"></i>{repo.forks.toLocaleString('id-ID')}</span>
+                <span class="flex items-center gap-1"><i class="ph ph-star text-sm" aria-hidden="true"></i>{(repo.stars ?? 0).toLocaleString('id-ID')}</span>
+                <span class="flex items-center gap-1"><i class="ph ph-git-fork text-sm" aria-hidden="true"></i>{(repo.forks ?? 0).toLocaleString('id-ID')}</span>
               </div>
             </a>
           ))}
@@ -125,8 +125,8 @@ const latestUpdateLabel = latestUpdate
               <p class="mt-2 font-body text-sm leading-6 text-muted line-clamp-2">{repo.description || 'Tidak ada deskripsi'}</p>
               <div class="mt-4 flex flex-wrap items-center gap-3 font-mono text-xs text-muted">
                 {repo.language && <span class="flex items-center gap-1"><i class="ph ph-code text-sm" aria-hidden="true"></i>{repo.language}</span>}
-                <span class="flex items-center gap-1"><i class="ph ph-star text-sm" aria-hidden="true"></i>{repo.stars.toLocaleString('id-ID')}</span>
-                <span class="flex items-center gap-1"><i class="ph ph-git-fork text-sm" aria-hidden="true"></i>{repo.forks.toLocaleString('id-ID')}</span>
+                <span class="flex items-center gap-1"><i class="ph ph-star text-sm" aria-hidden="true"></i>{(repo.stars ?? 0).toLocaleString('id-ID')}</span>
+                <span class="flex items-center gap-1"><i class="ph ph-git-fork text-sm" aria-hidden="true"></i>{(repo.forks ?? 0).toLocaleString('id-ID')}</span>
               </div>
             </a>
           ))}

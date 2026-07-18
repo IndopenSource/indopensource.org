@@ -45,7 +45,7 @@ async function fetchRepoMetadata(fullName) {
     return {
       fullName: repo.full_name,
       name: repo.name,
-      owner: repo.owner.login,
+      owner: repo.owner?.login || '',
       description: repo.description || '',
       url: repo.html_url,
       homepage: repo.homepage || '',
@@ -61,6 +61,9 @@ async function fetchRepoMetadata(fullName) {
       disabled: repo.disabled
     };
   } catch (error) {
+    if (error.message?.startsWith('RATE_LIMITED')) {
+      throw error;
+    }
     console.warn(`Could not fetch metadata for ${fullName}: ${error.message}`);
     return null;
   }
