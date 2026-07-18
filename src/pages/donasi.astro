@@ -1,0 +1,173 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseButton from '../components/BaseButton.astro';
+import PageHeader from '../components/PageHeader.astro';
+import InfoCard from '../components/InfoCard.astro';
+import { withBase } from '../lib/urls';
+
+const highlights = [
+  {
+    title: 'Open Source',
+    desc: 'Sawer App adalah perangkat donasi yang source code-nya terbuka — bisa diaudit, difork, dan dipasang mandiri oleh proyek mana pun.'
+  },
+  {
+    title: 'Untuk Komunitas',
+    desc: 'Dirancang khusus untuk kebutuhan ekosistem open source Indonesia. Ringan, transparan, tanpa iklan.'
+  },
+  {
+    title: 'Bisa Dipasang Mandiri',
+    desc: 'Setiap proyek yang listing di IndopenSource nantinya bisa menggunakan Sawer App sebagai kanal donasi resmi proyek mereka.'
+  }
+];
+---
+
+<BaseLayout
+  title="Donasi & Sponsor - IndopenSource"
+  description="Dukung ekosistem open source Indonesia lewat donasi individu atau sponsor organisasi. Sawer App — platform donasi terbuka untuk komunitas."
+>
+  <PageHeader eyebrow="Donasi & Sponsor" title="Dukung open source Indonesia.">
+    <p>
+      IndopenSource adalah inisiatif komunitas yang dijalankan secara sukarela.
+      Ada dua cara untuk mendukung — <strong>donasi</strong> dari individu lewat Sawer App,
+      atau <strong>sponsor</strong> dari organisasi yang sejalan dengan misi open source Indonesia.
+    </p>
+  </PageHeader>
+
+  {/* PREVIEW — banner mencolok, semua fitur masih preview */}
+  <section class="grain border-y-[3px] border-ink bg-sun py-14 md:py-20">
+    <div class="mx-auto w-[min(1120px,calc(100%-32px))]">
+      <div class="reveal flex flex-col items-start gap-6 md:flex-row md:items-center md:justify-between">
+        <div class="min-w-0">
+          <span class="sticker mb-4">Preview</span>
+          <h2 class="display-md text-ink">Halaman dukungan masih tahap awal.</h2>
+          <p class="mt-3 max-w-2xl font-body text-lg leading-8 text-ink/80">
+            Baik kanal donasi lewat <strong>Sawer App</strong> maupun paket sponsor
+            organisasi masih dalam persiapan. Yang bisa kamu lihat sekarang adalah
+            preview awal — pantau terus untuk info selanjutnya.
+          </p>
+        </div>
+        <BaseButton href="https://sawer.indopensource.org" variant="secondary">
+          Kunjungi Sawer App →
+        </BaseButton>
+      </div>
+    </div>
+  </section>
+
+  {/* DUA JALUR — donasi individu ⬄ sponsor organisasi */}
+  <section class="bg-paper py-16 md:py-24">
+    <div class="mx-auto w-[min(1120px,calc(100%-32px))]">
+      <div class="reveal mb-10">
+        <span class="sticker">Dua jalur dukungan</span>
+        <span class="meta-row ml-3">// donasi & sponsor</span>
+        <h2 class="display-md mt-4 max-w-3xl text-ink">
+          Individu <span class="text-brand">sawer</span>, organisasi <span class="text-brand">sponsor</span>.
+        </h2>
+        <p class="mt-4 max-w-2xl font-body text-lg leading-8 text-muted">
+          Baik kamu kontributor individu yang ingin menyawer proyek favorit,
+          maupun organisasi yang ingin berpartner secara resmi — ada jalurnya.
+          Dua bentuk dukungan ini menjaga IndopenSource tetap independen dan terbuka.
+        </p>
+      </div>
+
+      <div class="reveal-stagger grid gap-4 md:grid-cols-2">
+        <article class="riso-shadow border-2 border-ink bg-paper p-6 md:p-8">
+          <i class="ph-fill ph-hand-coins text-3xl text-brand" aria-hidden="true"></i>
+          <h3 class="display-sm mt-4 text-ink">Donasi individu</h3>
+          <p class="mt-3 font-body leading-7 text-muted">
+            Lewat <strong>Sawer App</strong>, kamu bisa mendukung proyek open source
+            secara langsung. Sawer App adalah platform donasi terbuka — source code-nya
+            publik, bisa dipasang mandiri, dan dirancang untuk ekosistem Indonesia.
+          </p>
+          <div class="mt-6">
+            <BaseButton href="https://sawer.indopensource.org" variant="primary">
+              Coba Sawer App
+            </BaseButton>
+          </div>
+        </article>
+
+        <article class="riso-shadow border-2 border-ink bg-canvas p-6 md:p-8">
+          <i class="ph-fill ph-buildings text-3xl text-brand" aria-hidden="true"></i>
+          <h3 class="display-sm mt-4 text-ink">Sponsor organisasi</h3>
+          <p class="mt-3 font-body leading-7 text-muted">
+            Organisasi bisa menjadi sponsor resmi IndopenSource — dukungan finansial
+            untuk infrastruktur, event komunitas, dan program pengembangan.
+            Tersedia beberapa tingkat sponsorship dengan benefit masing-masing.
+          </p>
+          <div class="mt-6">
+            <BaseButton href={withBase('/sponsors/')} variant="secondary">
+              Lihat paket sponsor
+            </BaseButton>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  {/* TENTANG SAWER — app open source untuk proyek yang listing */}
+  <section class="border-t-[3px] border-ink bg-canvas py-16 md:py-20">
+    <div class="mx-auto w-[min(1120px,calc(100%-32px))]">
+      <div class="reveal mb-10">
+        <span class="sticker">Sawer App</span>
+        <span class="meta-row ml-3">// platform donasi terbuka</span>
+        <h2 class="display-md mt-4 max-w-3xl text-ink">
+          Sawer dulu, baru <span class="text-brand">saweran</span>.
+        </h2>
+        <p class="mt-4 max-w-2xl font-body text-lg leading-8 text-muted">
+          Sawer App adalah aplikasi donasi yang source code-nya terbuka untuk umum.
+          Bukan sekadar platform — ini adalah perangkat yang bisa dipakai ulang
+          oleh proyek open source Indonesia untuk menerima dukungan dari komunitas.
+        </p>
+      </div>
+
+      <div class="reveal-stagger grid gap-4 md:grid-cols-3">
+        {highlights.map((h) => (
+          <InfoCard title={h.title}>
+            <p>{h.desc}</p>
+          </InfoCard>
+        ))}
+      </div>
+
+      <div class="reveal mt-10 flex flex-col gap-6 rounded-xl border-2 border-ink bg-paper p-6 md:flex-row md:items-center md:justify-between md:p-8">
+        <div class="min-w-0">
+          <p class="font-mono text-sm leading-6 text-muted">
+            <span class="font-bold text-ink">Sawer App</span> — open source, MIT license.
+            Setiap proyek yang listing di IndopenSource nantinya bisa menggunakan Sawer
+            sebagai kanal donasi resmi langsung dari halaman proyek mereka.
+          </p>
+          <p class="mt-2 font-mono text-xs text-muted/60">
+            Repositori sedang disiapkan · pantau GitHub IndopenSource
+          </p>
+        </div>
+        <BaseButton href="https://github.com/IndopenSource/awesome-indonesia/issues/new?template=project-submission.yml">
+          Daftarkan proyekmu
+        </BaseButton>
+      </div>
+    </div>
+  </section>
+
+  {/* CLOSING — coming soon dengan tiga aksi */}
+  <section class="bg-brand-dark py-16 text-paper md:py-20">
+    <div class="mx-auto flex w-[min(1120px,calc(100%-32px))] flex-col items-center text-center">
+      <span class="sticker mb-4">Coming soon</span>
+      <h2 class="display-md max-w-2xl text-paper">
+        Siap-siap. <span class="text-sun">Sawer & Sponsor</span> segera hadir.
+      </h2>
+      <p class="mt-4 max-w-xl font-body text-lg leading-8 text-paper/80">
+        Halaman ini masih preview — baik donasi individu lewat Sawer App
+        maupun paket sponsor organisasi sedang disiapkan.
+        Pantau GitHub dan website untuk info selanjutnya.
+      </p>
+      <div class="mt-8 flex flex-wrap justify-center gap-4">
+        <BaseButton href="https://sawer.indopensource.org" variant="light">
+          Coba Sawer App →
+        </BaseButton>
+        <BaseButton href={withBase('/sponsors/')} variant="secondary">
+          Info sponsor
+        </BaseButton>
+        <BaseButton href="/blog/" variant="secondary">
+          Ikuti blog
+        </BaseButton>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
