@@ -1,0 +1,17 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseButton from '../components/BaseButton.astro';
+import PageHeader from '../components/PageHeader.astro';
+
+const rules = [
+  ['Terbuka', 'Usulan, keputusan, dan perubahan penting diupayakan memiliki jejak publik.'],
+  ['Terbatas seperlunya', 'Privasi, keamanan, dan laporan sensitif ditangani melalui jalur yang tidak membuka risiko baru.'],
+  ['Bertahap', 'Aturan formal ditambah saat kebutuhan nyata muncul, bukan dibuat untuk organisasi yang belum ada.']
+];
+---
+
+<BaseLayout title="Tata Kelola - IndopenSource" description="Prinsip kerja dan tata kelola awal IndopenSource.">
+  <PageHeader eyebrow="Tata Kelola" title="Keputusan yang dapat ditelusuri."><p>Tata kelola IndopenSource masih dalam tahap awal. Halaman ini menjadi komitmen kerja: terbuka secara default, jelas tentang batas, dan dapat dikoreksi komunitas.</p></PageHeader>
+  <section class="grain border-b-[3px] border-ink bg-brand py-16 text-paper md:py-20"><div class="mx-auto w-[min(1120px,calc(100%-32px))]"><span class="sticker">Draf kerja</span><p class="pull-quote mt-5 max-w-4xl text-paper">Bukan soal siapa paling keras, melainkan bagaimana keputusan bisa <span class="text-sun">dibaca ulang</span>.</p></div></section>
+  <section class="bg-paper py-16 md:py-20"><div class="mx-auto w-[min(1120px,calc(100%-32px))]"><div class="mb-10 grid gap-5 border-b-[3px] border-ink pb-7 md:grid-cols-[minmax(0,1fr)_320px]"><div><span class="sticker">Cara kerja</span><h2 class="display-md mt-4">Usul → jejak → keputusan.</h2><p class="mt-4 max-w-2xl font-body text-lg leading-8 text-muted">Diskusi terbuka menjadi titik awal. Keputusan yang memengaruhi ruang bersama perlu menyisakan konteks agar dapat diperiksa dan diperbaiki.</p></div><div class="font-mono text-sm font-bold uppercase tracking-[0.06em] text-brand-dark"><p>dokumen hidup</p><p class="mt-3 text-ink">Code of Conduct</p><p class="mt-1 text-ink">Security Policy</p><p class="mt-1 text-ink">Contributing Guide</p></div></div><div class="grid gap-4 md:grid-cols-3">{rules.map(([title, body]) => <article class="riso-shadow border-2 border-ink bg-canvas p-6"><h2 class="display-sm text-ink">{title}</h2><p class="mt-3 font-body leading-7 text-muted">{body}</p></article>)}</div><div class="mt-10 flex flex-wrap gap-3"><BaseButton href="https://github.com/IndopenSource/indopensource.org/blob/main/CODE_OF_CONDUCT.md" variant="secondary">Code of Conduct</BaseButton><BaseButton href="https://github.com/orgs/IndopenSource/discussions">Beri masukan</BaseButton></div></div></section>
+</BaseLayout>

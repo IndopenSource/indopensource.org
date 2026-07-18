@@ -15,7 +15,6 @@
   "dependencies": {
     "@astrojs/check": "^0.9.4",
     "@fontsource-variable/bricolage-grotesque": "^5.2.10",
-    "@fontsource-variable/newsreader": "^5.2.10",
     "@fontsource-variable/spline-sans-mono": "^5.2.8",
     "@phosphor-icons/web": "^2.1.2",
     "@tailwindcss/vite": "^4.3.1",

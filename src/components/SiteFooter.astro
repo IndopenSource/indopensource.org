@@ -1,8 +1,16 @@
 ---
-const links = [
-  ['GitHub', 'https://github.com/IndopenSource'],
-  ['Discussions', 'https://github.com/orgs/IndopenSource/discussions'],
-  ['Roadmap', 'https://github.com/orgs/IndopenSource/projects']
+import { withBase } from '../lib/urls';
+
+const links: { label: string; href: string; external?: boolean }[] = [
+  { label: 'Tentang', href: '/tentang/' },
+  { label: 'Komunitas', href: '/komunitas/' },
+  { label: 'Program', href: '/program/' },
+  { label: 'Tata Kelola', href: '/tata-kelola/' },
+  { label: 'Event', href: '/events/' },
+  { label: 'Security', href: '/security/' },
+  { label: 'GitHub', href: 'https://github.com/IndopenSource', external: true },
+  { label: 'Discussions', href: 'https://github.com/orgs/IndopenSource/discussions', external: true },
+  { label: 'Roadmap', href: 'https://github.com/orgs/IndopenSource/projects', external: true }
 ];
 
 const year = new Date().getFullYear();
@@ -53,18 +61,17 @@ const year = new Date().getFullYear();
       </dl>
 
       <nav aria-label="Tautan komunitas" class="flex flex-col items-start gap-3">
-        <span class="meta-row uppercase tracking-[0.12em] text-paper/60">// gabung</span>
+        <span class="meta-row uppercase tracking-[0.12em] text-paper/60">// ruang organisasi</span>
         <div class="flex flex-wrap gap-3">
           {
-            links.map(([label, href]) => (
+            links.map(({ label, href, external }) => (
               <a
                 class="sticker riso-hover no-underline"
-                href={href}
-                rel="noopener noreferrer"
+                href={external ? href : withBase(href)}
+                rel={external ? 'noopener noreferrer' : undefined}
               >
                 {label}
-                <span aria-hidden="true">↗</span>
-                <span class="sr-only"> (situs eksternal)</span>
+                {external && <><span aria-hidden="true">↗</span><span class="sr-only"> (situs eksternal)</span></>}
               </a>
             ))
           }
@@ -75,7 +82,7 @@ const year = new Date().getFullYear();
     {/* Footer baseline: thin printed credit row in mono */}
     <hr class="mt-10 rule" aria-hidden="true" />
     <p class="meta-row mt-6 text-paper/60">
-      Dicetak dengan tinta riso digital · dibikin di Indonesia
+      Dibuat dengan Joko UI · dibikin di Indonesia
     </p>
   </div>
 </footer>

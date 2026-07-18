@@ -1,6 +1,5 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import LightSvgMotion from '../components/LightSvgMotion.astro';
 import PageHeader from '../components/PageHeader.astro';
 import ProjectsDirectory from '../components/ProjectsDirectory.astro';
 import type { Project } from '../lib/projects';
@@ -36,8 +35,8 @@ const latestUpdateLabel = latestUpdate
       <a class="font-semibold text-brand underline decoration-2 underline-offset-2 hover:text-accent" href="https://github.com/IndopenSource/awesome-indonesia">IndopenSource/awesome-indonesia</a>.
     </p>
     <div class="meta-row mt-5 flex flex-wrap items-center gap-x-3 gap-y-2 font-semibold text-ink">
-      <span class="border-2 border-ink bg-canvas px-2 py-1 text-xs">{projects.length} proyek</span>
-      <span class="border-2 border-ink bg-canvas px-2 py-1 text-xs">★ {totalStars.toLocaleString('id-ID')}</span>
+      <span class="rounded-md border border-line bg-canvas px-2.5 py-1 text-xs">{projects.length} proyek</span>
+      <span class="rounded-md border border-line bg-canvas px-2.5 py-1 text-xs">★ {totalStars.toLocaleString('id-ID')}</span>
       {languages.map((language) => <span class="text-brand-dark">{language}</span>)}
     </div>
     {unavailableCount > 0 && (
@@ -46,22 +45,19 @@ const latestUpdateLabel = latestUpdate
       </p>
     )}
     <div class="mt-8 grid gap-4 sm:grid-cols-3">
-      <div class="border-2 border-ink bg-canvas riso-shadow-brand p-4">
+      <div class="rounded-xl border border-line bg-paper p-5 shadow-sm">
         <span class="meta-row block font-bold uppercase tracking-[0.06em] text-muted">Akumulasi stars</span>
         <strong class="mt-2 block font-mono text-3xl font-bold text-ink">{totalStars.toLocaleString('id-ID')}</strong>
       </div>
-      <div class="border-2 border-ink bg-canvas riso-shadow-brand p-4">
+      <div class="rounded-xl border border-line bg-paper p-5 shadow-sm">
         <span class="meta-row block font-bold uppercase tracking-[0.06em] text-muted">Akumulasi forks</span>
         <strong class="mt-2 block font-mono text-3xl font-bold text-ink">{totalForks.toLocaleString('id-ID')}</strong>
       </div>
-      <div class="border-2 border-ink bg-canvas riso-shadow-brand p-4">
+      <div class="rounded-xl border border-line bg-paper p-5 shadow-sm">
         <span class="meta-row block font-bold uppercase tracking-[0.06em] text-muted">Update terbaru</span>
         <strong class="mt-2 block font-mono text-xl font-bold text-ink">{latestUpdateLabel || '-'}</strong>
       </div>
     </div>
   </PageHeader>
-  <div class="relative h-0 overflow-visible">
-    <LightSvgMotion variant="steps" class="text-brand" />
-  </div>
   <ProjectsDirectory projects={projects} />
 </BaseLayout>
