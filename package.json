@@ -10,6 +10,7 @@
     "preview": "astro preview",
     "sync:projects": "node scripts/sync-projects.mjs",
     "sync:blog": "node scripts/sync-blog-posts.mjs",
+    "sync:legacy-revival": "node scripts/sync-legacy-revival.mjs",
     "test": "node --test test/*.test.mjs"
   },
   "dependencies": {

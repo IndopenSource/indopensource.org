@@ -105,7 +105,11 @@ const impact = [
           <article class="riso-shadow border-2 border-ink bg-paper p-6">
             <div class="flex items-center gap-4">
               <div class="flex h-16 w-16 items-center justify-center rounded-lg border-2 border-ink bg-canvas overflow-hidden">
-                <i class="ph-fill ph-buildings text-3xl text-brand" aria-hidden="true"></i>
+                {s.logo ? (
+                  <img src={withBase(s.logo)} alt={s.name + " logo"} class="h-full w-full object-contain" />
+                ) : (
+                  <i class="ph-fill ph-buildings text-3xl text-brand" aria-hidden="true"></i>
+                )}
               </div>
               <div>
                 <h3 class="font-display text-xl font-bold text-ink">{s.name}</h3>
