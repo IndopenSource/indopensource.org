@@ -3,6 +3,14 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import BaseButton from '../components/BaseButton.astro';
 import PageHeader from '../components/PageHeader.astro';
 import { withBase } from '../lib/urls';
+import projectsData from '../data/projects.json';
+import legacyData from '../data/legacy.json';
+import revivalData from '../data/revival.json';
+
+const allProjects = [...(projectsData as any[]), ...(legacyData as any[]), ...(revivalData as any[])];
+const totalProjects = allProjects.length;
+const totalStars = allProjects.reduce((sum, p) => sum + (p.stars ?? 0), 0);
+const totalForks = allProjects.reduce((sum, p) => sum + (p.forks ?? 0), 0);
 
 const brandAssets = [
   { name: 'Logo Utama (SVG)', desc: 'Format vektor untuk print & digital', icon: 'ph-file-svg', link: '/brand/indopensource-logo.svg', available: false },
@@ -28,9 +36,9 @@ const pressCoverage = [
 
 const keyFacts = [
   { label: 'Didirikan', value: 'Maret 2025' },
-  { label: 'Proyek terkurasi', value: '69+' },
-  { label: 'Total bintang GitHub', value: '5.361' },
-  { label: 'Fork komunitas', value: '2.017' },
+  { label: 'Proyek terkurasi', value: `${totalProjects}+` },
+  { label: 'Total bintang GitHub', value: totalStars.toLocaleString('id-ID') },
+  { label: 'Fork komunitas', value: totalForks.toLocaleString('id-ID') },
   { label: 'Kontributor aktif', value: '100+' },
   { label: 'Website', value: 'indopensource.org' }
 ];
