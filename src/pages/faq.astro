@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import BaseButton from '../components/BaseButton.astro';
 import PageHeader from '../components/PageHeader.astro';
+import { withBase } from '../lib/urls';
 
 const faqs = [
   {
@@ -87,7 +88,7 @@ const faqs = [
         <p class="mt-4 max-w-2xl font-body text-lg leading-8 text-muted">Jika pertanyaan Anda belum terjawab, buka diskusi baru atau hubungi maintainer. Kami siap membantu.</p>
         <div class="mt-6 flex flex-wrap gap-3">
           <BaseButton href="https://github.com/orgs/IndopenSource/discussions">Buka Discussion</BaseButton>
-          <BaseButton href="/cara-berkontribusi/" variant="secondary">Panduan kontribusi</BaseButton>
+          <BaseButton href={withBase('/cara-berkontribusi/')} variant="secondary">Panduan kontribusi</BaseButton>
         </div>
       </div>
     </div>

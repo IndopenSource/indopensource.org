@@ -2,21 +2,22 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import BaseButton from '../components/BaseButton.astro';
 import PageHeader from '../components/PageHeader.astro';
+import { withBase } from '../lib/urls';
 
 const brandAssets = [
-  { name: 'Logo Utama (SVG)', desc: 'Format vektor untuk print & digital', icon: 'ph-file-svg', link: '/brand/indopensource-logo.svg' },
-  { name: 'Logo Utama (PNG)', desc: 'Resolusi tinggi, background transparan', icon: 'ph-file-png', link: '/brand/indopensource-logo.png' },
-  { name: 'Icon Only', desc: 'Mark tanpa teks untuk avatar & favicon', icon: 'ph-image', link: '/brand/indopensource-icon.svg' },
-  { name: 'Brand Guidelines', desc: 'Panduan penggunaan logo & warna', icon: 'ph-book-open', link: '/brand/brand-guidelines.pdf' }
+  { name: 'Logo Utama (SVG)', desc: 'Format vektor untuk print & digital', icon: 'ph-file-svg', link: '/brand/indopensource-logo.svg', available: false },
+  { name: 'Logo Utama (PNG)', desc: 'Resolusi tinggi, background transparan', icon: 'ph-file-png', link: '/brand/indopensource-logo.png', available: true },
+  { name: 'Icon Only', desc: 'Mark tanpa teks untuk avatar & favicon', icon: 'ph-image', link: '/brand/indopensource-icon.svg', available: false },
+  { name: 'Brand Guidelines', desc: 'Panduan penggunaan logo & warna', icon: 'ph-book-open', link: '/brand/brand-guidelines.pdf', available: false }
 ];
 
 const colorPalette = [
-  { name: 'Brand Green', hex: '#4d7c0f', usage: 'Primary brand color' },
-  { name: 'Brand Dark', hex: '#365314', usage: 'Dark variant' },
-  { name: 'Sun', hex: '#ecfccb', usage: 'Highlight & accent' },
-  { name: 'Ink', hex: '#101828', usage: 'Text & dark backgrounds' },
-  { name: 'Paper', hex: '#ffffff', usage: 'Light backgrounds' },
-  { name: 'Canvas', hex: '#f8fafc', usage: 'Subtle backgrounds' }
+  { name: 'Brand Green', hex: '#4d7c0f', tailwind: 'bg-[#4d7c0f]', usage: 'Primary brand color' },
+  { name: 'Brand Dark', hex: '#365314', tailwind: 'bg-[#365314]', usage: 'Dark variant' },
+  { name: 'Sun', hex: '#ecfccb', tailwind: 'bg-[#ecfccb]', usage: 'Highlight & accent' },
+  { name: 'Ink', hex: '#101828', tailwind: 'bg-[#101828]', usage: 'Text & dark backgrounds' },
+  { name: 'Paper', hex: '#ffffff', tailwind: 'bg-[#ffffff]', usage: 'Light backgrounds' },
+  { name: 'Canvas', hex: '#f8fafc', tailwind: 'bg-[#f8fafc]', usage: 'Subtle backgrounds' }
 ];
 
 const pressCoverage = [
@@ -68,7 +69,11 @@ const contact = [
             </div>
             <h3 class="mt-4 font-display text-lg font-bold text-ink">{asset.name}</h3>
             <p class="mt-2 font-body text-sm leading-6 text-muted">{asset.desc}</p>
-            <a class="meta-row mt-4 inline-block font-semibold text-brand underline decoration-2 underline-offset-4 hover:text-accent" href={asset.link}>Download →</a>
+            {asset.available ? (
+              <a class="meta-row mt-4 inline-block font-semibold text-brand underline decoration-2 underline-offset-4 hover:text-accent" href={withBase(asset.link)}>Download →</a>
+            ) : (
+              <span class="meta-row mt-4 inline-block font-semibold text-muted italic">Segera hadir</span>
+            )}
           </article>
         ))}
       </div>
@@ -84,7 +89,7 @@ const contact = [
       <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {colorPalette.map((color) => (
           <article class="riso-shadow border-2 border-ink bg-paper p-5">
-            <div class="h-20 rounded-lg border-2 border-ink" style={`background-color: ${color.hex}`}></div>
+            <div class:list={['h-20 rounded-lg border-2 border-ink', color.tailwind]}></div>
             <div class="mt-4">
               <h3 class="font-display text-lg font-bold text-ink">{color.name}</h3>
               <p class="font-mono text-sm text-brand-dark">{color.hex}</p>

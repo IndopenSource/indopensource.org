@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import BaseButton from '../components/BaseButton.astro';
 import PageHeader from '../components/PageHeader.astro';
+import { withBase } from '../lib/urls';
 
 const tiers = [
   {
@@ -103,7 +104,7 @@ const impact = [
         {currentSponsors.map((s) => (
           <article class="riso-shadow border-2 border-ink bg-paper p-6">
             <div class="flex items-center gap-4">
-              <div class="flex h-16 w-16 items-center justify-center rounded-lg border-2 border-ink bg-canvas">
+              <div class="flex h-16 w-16 items-center justify-center rounded-lg border-2 border-ink bg-canvas overflow-hidden">
                 <i class="ph-fill ph-buildings text-3xl text-brand" aria-hidden="true"></i>
               </div>
               <div>
@@ -152,7 +153,7 @@ const impact = [
         <p class="mt-4 max-w-2xl font-body text-lg leading-8 text-muted">Kami terbuka untuk paket kustom, sponsorship event, atau bentuk kolaborasi lain yang sejalan dengan misi open source.</p>
         <div class="mt-6 flex flex-wrap gap-3">
           <BaseButton href="mailto:sponsor@indopensource.org">Hubungi Tim Sponsor</BaseButton>
-          <BaseButton href="/press/" variant="secondary">Media Kit</BaseButton>
+          <BaseButton href={withBase('/press/')} variant="secondary">Media Kit</BaseButton>
         </div>
       </div>
     </div>
