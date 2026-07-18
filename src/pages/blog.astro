@@ -85,6 +85,7 @@ const statusLegend = [
             <div class="meta-row flex flex-wrap items-center gap-x-3 gap-y-1 font-semibold text-muted uppercase tracking-[0.06em]">
               <span class="text-brand-dark">/blog/{featuredPost.slug}</span>
               {featuredDate && <><span aria-hidden="true">·</span><span>{featuredDate}</span></>}
+              {featuredPost.author?.name && <><span aria-hidden="true">·</span><span class="text-brand-dark">oleh {featuredPost.author.name}</span></>}
             </div>
             <h2 class="display-md mt-4 max-w-2xl text-ink">{featuredPost.title}</h2>
             <p class="mt-4 max-w-xl font-body text-lg leading-8 text-muted">{featuredPost.description}</p>
@@ -125,6 +126,9 @@ const statusLegend = [
               <span class="meta-row text-brand-dark">/blog/{post.slug}</span>
               <h2 class="display-sm mt-3 text-ink">{post.title}</h2>
               <p class="mt-2 font-body leading-7 text-muted">{post.description}</p>
+              {post.author?.name && (
+                <p class="meta-row mt-3 text-brand-dark">oleh {post.author.name}</p>
+              )}
             </a>
           ))}
         </div>
