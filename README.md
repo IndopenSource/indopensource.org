@@ -63,7 +63,9 @@ URL produksi setelah custom domain aktif adalah `https://indopensource.org/`.
 
 ## Deployment
 
-GitHub Pages memakai workflow `.github/workflows/deploy-pages.yml`.
+Deployment saat ini masih memakai GitHub Pages melalui workflow
+`.github/workflows/deploy-pages.yml`. Cloudflare production berikutnya akan
+dibangun dari branch `release`.
 
 - Build command: `npm run build`
 - Output directory: `dist`
@@ -71,8 +73,9 @@ GitHub Pages memakai workflow `.github/workflows/deploy-pages.yml`.
 - Custom domain: `indopensource.org`
 - Pages base path: `/`
 
-Aktifkan Pages di repository settings dengan source `GitHub Actions`, lalu push ke
-`main` atau jalankan workflow `Deploy to GitHub Pages` secara manual.
+Semua kontribusi tetap masuk ke `main`. Rilis produksi dipromosikan oleh anggota
+organisasi melalui pull request dari `main` ke `release`; jangan membuka pull
+request kontribusi langsung ke `release`.
 
 ## Project Sync
 
