@@ -1,3 +1,5 @@
+![IndopenSource — Komunitas Open Source Indonesia](docs/assets/indopensource-banner.png)
+
 # IndopenSource.org
 
 [![CI](https://github.com/IndopenSource/indopensource.org/actions/workflows/ci.yml/badge.svg)](https://github.com/IndopenSource/indopensource.org/actions/workflows/ci.yml)
