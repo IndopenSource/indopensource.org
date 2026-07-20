@@ -93,7 +93,8 @@ Gunakan `GITHUB_TOKEN` atau `GH_TOKEN` untuk rate limit yang lebih lega.
 `npm run sync:blog` membaca artikel Markdown dari
 `IndopenSource/Blog-IndopenSource`, mengambil tanggal commit pertama, commit
 terbaru, dan seluruh kontributor unik setiap artikel, lalu menulis hasilnya ke
-`src/data/blog-posts.json`.
+`src/data/blog-posts.json`. Halaman artikel menautkan commit terbaru tersebut
+agar riwayat sumber dapat diperiksa langsung.
 
 ## Auto Sync
 

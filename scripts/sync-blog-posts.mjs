@@ -184,6 +184,8 @@ async function getCommitMeta(path) {
       committedAt: firstCommit?.commit?.author?.date || ''
     },
     authors,
+    latestCommitSha: latestCommit?.sha || '',
+    latestCommitUrl: latestCommit?.html_url || '',
     // The latest commit timestamp is the date of the most recent EDIT, not a
     // publication/release event (CC-9). Name it honestly as "last modified" so
     // the rendered label can stop calling an edit timestamp a release date.
@@ -279,6 +281,8 @@ for (const path of articleFiles) {
     // edit timestamp separately for provenance (CC-9).
     releasedAt: editorialDate || commitMeta.author.committedAt || commitMeta.lastModifiedAt,
     lastModifiedAt: commitMeta.lastModifiedAt,
+    latestCommitSha: commitMeta.latestCommitSha,
+    latestCommitUrl: commitMeta.latestCommitUrl,
     author: resolvedAuthor.author,
     authors: commitMeta.authors.length ? commitMeta.authors : [resolvedAuthor.author],
     authorFromFrontmatter: resolvedAuthor.fromFrontmatter

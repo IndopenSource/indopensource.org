@@ -23,6 +23,7 @@ const authorDate = post.author?.committedAt
 const modifiedDate = post.lastModifiedAt
   ? new Intl.DateTimeFormat('id-ID', { dateStyle: 'long' }).format(new Date(post.lastModifiedAt))
   : '';
+const latestCommitUrl = safeHref(post.latestCommitUrl);
 const releaseDate = post.releasedAt
   ? new Intl.DateTimeFormat('id-ID', { dateStyle: 'long' }).format(new Date(post.releasedAt))
   : '';
@@ -94,6 +95,11 @@ const jsonLd = {
         })}
       </div>
       <p class="mt-4 font-body text-sm leading-6 text-muted">{authorByline}</p>
+      {latestCommitUrl && post.latestCommitSha && (
+        <a class="meta-row mt-2 inline-block font-semibold text-brand underline decoration-2 underline-offset-4 hover:text-accent" href={latestCommitUrl} target="_blank" rel="noopener noreferrer">
+          Commit terbaru {post.latestCommitSha.slice(0, 7)} ↗
+        </a>
+      )}
       <hr class="rule my-6" />
       <div class="flex flex-wrap gap-3">
         <a
