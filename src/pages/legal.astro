@@ -67,7 +67,7 @@ const disclaimers = [
                 <div class="flex-1">
                   <h3 class="font-display text-xl font-bold text-ink">{p.title}</h3>
                   <p class="mt-3 font-body leading-7 text-muted">{p.desc}</p>
-                  <a class="meta-row mt-4 inline-block font-semibold text-brand underline decoration-2 underline-offset-4 hover:text-accent" href={href}>Selengkapnya →</a>
+                  <a class="meta-row mt-4 inline-block font-semibold text-brand underline decoration-2 underline-offset-4 hover:text-accent" href={href} target={p.isExternal ? '_blank' : undefined} rel={p.isExternal ? 'noopener noreferrer' : undefined}>Selengkapnya →</a>
                 </div>
               </div>
             </article>

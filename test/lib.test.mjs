@@ -12,7 +12,7 @@
 import { strict as assert } from 'node:assert';
 import { describe, it } from 'node:test';
 
-import { projectSlug } from '../src/lib/projects.ts';
+import { projectSlug, rankProjectOwners } from '../src/lib/projects.ts';
 import { normalizeHref, safeHref } from '../src/lib/urls.ts';
 import { isPublished, renderArticle, forbiddenTags } from '../src/lib/content.ts';
 
@@ -47,6 +47,22 @@ describe('projectSlug (slug)', () => {
     const slug = projectSlug('-weird-/.repo.-');
     assert.doesNotMatch(slug, /^-/);
     assert.doesNotMatch(slug, /--$/);
+  });
+});
+
+describe('rankProjectOwners (project ranking)', () => {
+  it('groups case-insensitive owners and ignores failed sync records', () => {
+    const users = rankProjectOwners([
+      { owner: 'Example', stars: 2, forks: 1, fullName: 'Example/a', description: '', url: '' },
+      { owner: 'example', stars: 3, forks: 2, fullName: 'example/b', description: '', url: '' },
+      { owner: 'Other', stars: 99, forks: 99, fullName: 'Other/c', description: '', url: '', syncFailed: true }
+    ]);
+
+    assert.equal(users.length, 1);
+    assert.deepEqual(
+      { owner: users[0].owner, repositories: users[0].repositories, stars: users[0].stars, forks: users[0].forks },
+      { owner: 'Example', repositories: 2, stars: 5, forks: 3 }
+    );
   });
 });
 

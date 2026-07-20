@@ -1,39 +1,11 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PageHeader from '../components/PageHeader.astro';
-import type { Project } from '../lib/projects';
+import { rankProjectOwners, type Project } from '../lib/projects';
 import projectsData from '../data/projects.json';
 
-interface UserRanking {
-  owner: string;
-  avatarUrl: string;
-  repositories: number;
-  stars: number;
-  forks: number;
-}
-
 const projects = (projectsData as Project[]).filter((project) => !project.syncFailed && project.owner);
-const usersByOwner = new Map<string, UserRanking>();
-
-for (const project of projects) {
-  const owner = project.owner as string;
-  const current = usersByOwner.get(owner) || {
-    owner,
-    avatarUrl: project.ownerAvatarUrl || `https://avatars.githubusercontent.com/${encodeURIComponent(owner)}?size=160`,
-    repositories: 0,
-    stars: 0,
-    forks: 0
-  };
-
-  current.repositories += 1;
-  current.stars += project.stars;
-  current.forks += project.forks;
-  usersByOwner.set(owner, current);
-}
-
-const users = [...usersByOwner.values()].sort((a, b) =>
-  b.stars - a.stars || b.repositories - a.repositories || a.owner.localeCompare(b.owner)
-);
+const users = rankProjectOwners(projects);
 const topUsers = users.slice(0, 3);
 const totalStars = users.reduce((sum, user) => sum + user.stars, 0);
 const formatNumber = (value: number) => value.toLocaleString('id-ID');

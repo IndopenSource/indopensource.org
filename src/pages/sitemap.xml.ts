@@ -35,12 +35,23 @@ const staticPages: SitemapEntry[] = [
   { path: '/' },
   { path: '/falsafah/' },
   { path: '/projects/' },
+  { path: '/users/' },
+  { path: '/belajar/' },
   { path: '/blog/' },
   { path: '/forum/' },
+  { path: '/faq/' },
+  { path: '/cara-berkontribusi/' },
+  { path: '/kode-etik/' },
   { path: '/roadmap/' },
   { path: '/tentang/' },
   { path: '/komunitas/' },
+  { path: '/program/' },
+  { path: '/tata-kelola/' },
+  { path: '/events/' },
   { path: '/donasi/' },
+  { path: '/press/' },
+  { path: '/legal/' },
+  { path: '/security/' },
   { path: '/contact/' }
 ];
 

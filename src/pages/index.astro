@@ -10,29 +10,14 @@ import LightSvgMotion from '../components/LightSvgMotion.astro';
 import projectsData from '../data/projects.json';
 import { roadmapPeriods } from '../data/roadmap';
 import { heroImage, HERO_PRELOAD_WIDTH, HERO_QUALITY } from '../lib/hero';
-import type { Project } from '../lib/projects';
+import { rankProjectOwners, type Project } from '../lib/projects';
 import { withBase } from '../lib/urls';
 
 const projects = projectsData as Project[];
 const totalProjects = projects.length;
 const topProjects = projects.slice(0, 5);
 const roadmapPreview = roadmapPeriods.slice(0, 2);
-const usersByOwner = new Map<string, { owner: string; avatarUrl: string; repositories: number; stars: number }>();
-for (const project of projects.filter((item) => !item.syncFailed && item.owner)) {
-  const owner = project.owner as string;
-  const user = usersByOwner.get(owner) || {
-    owner,
-    avatarUrl: project.ownerAvatarUrl || `https://avatars.githubusercontent.com/${encodeURIComponent(owner)}?size=80`,
-    repositories: 0,
-    stars: 0
-  };
-  user.repositories += 1;
-  user.stars += project.stars;
-  usersByOwner.set(owner, user);
-}
-const topUsers = [...usersByOwner.values()]
-  .sort((a, b) => b.stars - a.stars || b.repositories - a.repositories || a.owner.localeCompare(b.owner))
-  .slice(0, 5);
+const topUsers = rankProjectOwners(projects).slice(0, 5);
 
 // Pre-generate the AVIF the hero <Image> will paint as its LCP candidate so we
 // can <link rel="preload"> the exact same /_astro/* file from <head>. Same src,
