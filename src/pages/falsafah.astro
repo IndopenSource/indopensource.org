@@ -3,31 +3,42 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import PageHeader from '../components/PageHeader.astro';
 import LightSvgMotion from '../components/LightSvgMotion.astro';
 
-// Three pillars, numbered editorial-style. The page logic is purely
-// presentational (static content) so the restyle is the whole job; an array
-// keeps the numbered rhythm consistent and easy to read.
 const prinsip = [
   {
     no: '01',
-    tag: 'Terbuka',
-    title: 'Kode, jejak, dan keputusan dibuka.',
-    body: 'Kode, diskusi, keputusan, dan roadmap dibuat mudah ditemukan oleh publik — bukan rahasia tim, tapi catatan bersama yang bisa dibaca siapa saja.',
-    meta: '// transparansi default'
+    tag: 'Kebebasan',
+    title: 'Boleh dipelajari, diubah, dan dibagikan.',
+    body: 'Akses ke kode sumber bukan tujuan akhir. Orang perlu punya ruang nyata untuk memahami cara kerja perangkat lunak, menyesuaikannya dengan kebutuhan, dan meneruskan perbaikan kepada orang lain.',
+    meta: '// pengguna juga pelaku'
   },
   {
     no: '02',
-    tag: 'Terawat',
-    title: 'Daftar yang dijaga, bukan ditumpuk.',
-    body: 'Daftar proyek perlu kurasi, metadata yang jelas, dan ritme pembaruan yang sehat. Yang dirawat tetap berguna; yang ditinggalkan jadi beban.',
-    meta: '// kurasi > akumulasi'
+    tag: 'Terbuka',
+    title: 'Kerja terlihat, agar orang bisa ikut.',
+    body: 'Kode, diskusi, keputusan, dokumentasi, dan roadmap sebaiknya meninggalkan jejak publik. Keterbukaan membuat masalah lebih mudah ditemukan, pengetahuan tidak berhenti pada satu orang, dan kontribusi dapat diperiksa bersama.',
+    meta: '// catatan adalah infrastruktur'
   },
   {
     no: '03',
-    tag: 'Bermanfaat',
-    title: 'Dipakai orang Indonesia, hari ini.',
-    body: 'Fokus pada perangkat, pustaka, data, dan praktik yang membantu pengguna Indonesia secara nyata — bukan demo yang mengkilap lalu terlupakan.',
-    meta: '// manfaat lokal nyata'
+    tag: 'Terawat',
+    title: 'Rilis bukan garis akhir.',
+    body: 'Proyek yang berguna memerlukan kurasi, dokumentasi, review, keamanan, dan regenerasi pengelola. Merawat pekerjaan lama sama berharganya dengan memulai repository baru.',
+    meta: '// keberlanjutan adalah kerja'
+  },
+  {
+    no: '04',
+    tag: 'Berakar',
+    title: 'Terbuka untuk kebutuhan Indonesia.',
+    body: 'Open source memberi ruang untuk membangun kemampuan sendiri, memakai ulang pengetahuan, dan menyesuaikan teknologi dengan bahasa serta kebutuhan lokal. Kemandirian tidak berarti bekerja sendirian; ia tumbuh lewat gotong royong lintas proyek dan komunitas.',
+    meta: '// lokal, bukan terisolasi'
   }
+];
+
+const references = [
+  { title: 'History of the Open Source Initiative', note: 'sejarah istilah dan gerakan open source', href: 'https://opensource.org/about/history-of-the-open-source-initiative' },
+  { title: 'GNU Manifesto', note: 'kebebasan mempelajari, mengubah, dan membagikan perangkat lunak', href: 'https://web.cs.ucdavis.edu/~rogaway/classes/188/materials/gnu-manifesto.pdf' },
+  { title: 'The Cathedral and the Bazaar', note: 'pengembangan terbuka, umpan balik, dan kolaborasi publik', href: 'https://firstmonday.org/ojs/index.php/fm/article/download/578/499?inline=1' },
+  { title: 'Indonesia, Go Open Source', note: 'jejak gerakan dan kemandirian teknologi di Indonesia', href: 'https://id.wikipedia.org/wiki/Indonesia,_Go_Open_Source' }
 ];
 ---
 
@@ -60,15 +71,15 @@ const prinsip = [
     </div>
   </section>
 
-  {/* Three numbered principles — editorial grid, asymmetric: oversized index +
+  {/* Numbered principles — editorial grid, asymmetric: oversized index +
        sticker tag on the left rail, the statement and body on the right. Thick
        ink rule separates each entry. */}
   <section class="relative overflow-hidden bg-paper py-16 md:py-24">
     <div class="relative mx-auto w-[min(1120px,calc(100%-32px))]">
       <div class="reveal reveal-1 mb-10 flex items-center gap-3">
-        <span class="sticker">Tiga prinsip</span>
+        <span class="sticker">Empat prinsip</span>
         <span class="rule grow"></span>
-        <span class="meta-row hidden shrink-0 sm:block">03 / pegangan kurasi</span>
+        <span class="meta-row hidden shrink-0 sm:block">04 / pegangan kerja</span>
       </div>
 
       <div class="reveal-stagger flex flex-col">
@@ -94,6 +105,39 @@ const prinsip = [
           ))
         }
       </div>
+    </div>
+  </section>
+
+  <section class="border-t-[3px] border-ink bg-paper py-16 md:py-20">
+    <div class="mx-auto w-[min(1120px,calc(100%-32px))]">
+      <span class="sticker">Bacaan dasar</span>
+      <h2 class="display-md mt-4 text-ink">Falsafah yang bisa ditelusuri.</h2>
+      <p class="mt-4 max-w-3xl font-body text-lg leading-8 text-muted">Prinsip di atas dirumuskan untuk konteks IndopenSource dari sejarah dan praktik gerakan open source. Ini bukan kutipan atau definisi hukum lisensi, melainkan pegangan kerja komunitas.</p>
+      <div class="mt-8 grid gap-4 md:grid-cols-2">
+        {references.map((reference) => (
+          <a class="riso-hover riso-shadow border-2 border-ink bg-canvas p-5" href={reference.href} target="_blank" rel="noopener noreferrer">
+            <h3 class="font-display text-xl font-bold text-ink">{reference.title}</h3>
+            <p class="mt-2 font-body leading-7 text-muted">{reference.note}</p>
+            <span class="meta-row mt-4 block font-bold text-brand">Baca sumber ↗</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="border-t-[3px] border-ink bg-sun py-16 md:py-20">
+    <div class="mx-auto w-[min(1120px,calc(100%-32px))]">
+      <article class="riso-shadow grid overflow-hidden border-2 border-ink bg-paper md:grid-cols-[180px_minmax(0,1fr)]">
+        <div class="flex min-h-48 items-center justify-center border-ink bg-brand-dark text-paper max-md:border-b-2 md:border-r-2" aria-hidden="true">
+          <i class="ph-fill ph-book-open text-7xl"></i>
+        </div>
+        <div class="p-6 md:p-9">
+          <span class="sticker">Segera hadir</span>
+          <h2 class="display-md mt-4 text-ink">Buku Manifesto Perangkat Terbuka.</h2>
+          <p class="mt-4 max-w-2xl font-body text-lg leading-8 text-muted">Sebuah buku yang sedang disiapkan untuk merangkum gagasan, praktik, dan arah gerakan perangkat terbuka dalam konteks Indonesia.</p>
+          <p class="meta-row mt-5 text-brand-dark">COMING SOON · belum ada tanggal terbit</p>
+        </div>
+      </article>
     </div>
   </section>
 

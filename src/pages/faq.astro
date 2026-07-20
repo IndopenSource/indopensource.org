@@ -17,28 +17,28 @@ const faqs = [
   {
     category: 'Proyek',
     items: [
-      { q: 'Bagaimana cara mendaftarkan proyek saya?', a: 'Buka issue di repository awesome-indonesia dengan template yang tersedia. Tim kurasi akan mereview dan membantu menambahkan proyek Anda ke direktori.' },
-      { q: 'Apa syarat proyek bisa masuk direktori?', a: 'Proyek harus open source (lisensi OSI-approved), dibuat atau dipelihara oleh orang Indonesia, dan memiliki dokumentasi dasar (README, cara install). Tidak harus besar atau populer.' },
-      { q: 'Proyek saya tidak aktif, apakah bisa dihapus?', a: 'Kami memiliki kategori "revival" untuk proyek potensial yang perlu dihidupkan kembali. Jika proyek benar-benar tidak relevan, kami bisa memindahkannya ke arsip.' },
-      { q: 'Bolehkah proyek komersial masuk?', a: 'Boleh, selama ada komponen open source yang jelas dan lisensinya transparan. Kami juga menerima proyek dengan model open-core.' }
+      { q: 'Bagaimana cara mendaftarkan proyek saya?', a: 'Tambahkan nama repository ke repos.json di repository awesome-indonesia, jalankan validasi, lalu kirim pull request dengan ringkasan proyek.' },
+      { q: 'Apa syarat proyek bisa masuk direktori?', a: 'Repository harus publik, relevan dengan ekosistem Indonesia, aktif atau fresh pada 2026, dan bukan duplikasi entri yang sudah ada.' },
+      { q: 'Di mana resource dan proyek lama ditempatkan?', a: 'Resource non-app dan materi belajar masuk ke Awesome Indonesia Legacy. Proyek lama atau kandidat yang potensial dihidupkan kembali masuk ke Awesome Indonesia Revival.' },
+      { q: 'Apakah metadata README harus diedit manual?', a: 'Tidak. Contributor cukup mengubah repos.json. Metadata README akan dibuat dari GitHub API melalui workflow setelah perubahan digabungkan.' }
     ]
   },
   {
     category: 'Kontribusi',
     items: [
       { q: 'Saya pemula, bisa mulai dari mana?', a: 'Cari issue berlabel "good first issue" di repository yang menarik. Atau mulai dari kontribusi non-kode: perbaiki dokumentasi, laporkan bug, atau bantu terjemahan.' },
-      { q: 'Bagaimana cara menjadi maintainer?', a: 'Mulai dengan kontribusi konsisten di satu proyek. Setelah beberapa PR di-merge dan Anda memahami kodebase, maintainer existing bisa mengundang Anda menjadi co-maintainer.' },
-      { q: 'PR saya tidak di-review, harus bagaimana?', a: 'Bisa mention maintainer di PR atau tanya di Discussions. Kadang review tertunda karena maintainer sibuk. Bersabar dan sopan selalu membantu.' },
-      { q: 'Apakah ada mentoring untuk kontributor baru?', a: 'Ya! Kami memiliki program mentoring melalui Discussions. Anda bisa meminta guidance dari maintainer berpengalaman atau kontributor senior.' }
+      { q: 'Bagaimana cara membantu repository lain?', a: 'Baca panduan kontribusi repository tersebut, pilih issue yang sesuai, lalu kirim perubahan kecil yang mudah ditinjau.' },
+      { q: 'PR saya belum ditinjau, harus bagaimana?', a: 'Tambahkan konteks yang kurang di PR lalu tanyakan dengan sopan kepada maintainer. Setiap repository memiliki ritme review berbeda.' },
+      { q: 'Apakah ada program mentoring?', a: 'Belum ada program mentoring resmi. Pertanyaan dan usulan bantuan dapat dibuka melalui GitHub Discussions.' }
     ]
   },
   {
     category: 'Teknis',
     items: [
-      { q: 'Lisensi apa yang direkomendasikan?', a: 'Untuk proyek software: MIT, Apache 2.0, atau GPL. Untuk dokumentasi: CC-BY-SA. Pilih yang sesuai dengan tujuan dan komunitas target Anda.' },
+      { q: 'Lisensi apa yang sebaiknya dipilih?', a: 'Pilih lisensi yang sesuai dengan tujuan proyek dan pahami kewajibannya. Direktori menampilkan lisensi dari metadata repository, tetapi tidak memberikan nasihat hukum.' },
       { q: 'Bagaimana cara menangani security vulnerability?', a: 'Laporkan secara privat ke maintainer atau via halaman Security kami. Jangan buka issue publik untuk vulnerability sebelum ada patch.' },
-      { q: 'Apakah ada CI/CD yang bisa dipakai?', a: 'GitHub Actions tersedia gratis untuk repository publik. Kami juga menyediakan template workflow untuk testing, linting, dan deployment.' },
-      { q: 'Bagaimana cara hosting dokumentasi?', a: 'GitHub Pages, Netlify, atau Vercel menyediakan hosting gratis untuk static site. Astro (yang kami pakai) bisa di-deploy ke mana saja.' }
+      { q: 'Apakah IndopenSource menyediakan template CI/CD?', a: 'Belum ada template CI/CD resmi. Lihat workflow repository IndopenSource sebagai referensi, lalu sesuaikan dengan kebutuhan proyek.' },
+      { q: 'Bagaimana website ini dibuat?', a: 'Website ini menggunakan Astro. Kode dan workflow deployment tersedia di repository indopensource.org.' }
     ]
   }
 ];

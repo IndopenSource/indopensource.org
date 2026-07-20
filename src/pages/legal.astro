@@ -6,55 +6,33 @@ import { withBase } from '../lib/urls';
 
 const policies = [
   {
-    icon: 'ph-copyright',
-    title: 'Lisensi Konten',
-    desc: 'Konten di website IndopenSource (artikel, dokumentasi, kurasi) dilisensikan di bawah Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0). Anda bebas membagikan dan mengadaptasi konten dengan syarat atribusi dan lisensi yang sama.',
-    link: 'https://creativecommons.org/licenses/by-sa/4.0/',
-    isExternal: true
-  },
-  {
     icon: 'ph-code',
     title: 'Lisensi Kode',
-    desc: 'Kode sumber website ini dan repository komunitas dilisensikan di bawah MIT License. Proyek yang terkurasi di direktori memiliki lisensi masing-masing yang tercantum di metadata proyek.',
+    desc: 'Kode sumber website ini dilisensikan di bawah MIT License. Setiap proyek dalam direktori memiliki lisensinya sendiri seperti tercantum pada metadata repository asal.',
     link: 'https://github.com/IndopenSource/indopensource.org/blob/main/LICENSE',
     isExternal: true
   },
   {
     icon: 'ph-shield-warning',
     title: 'Pelaporan Kerentanan',
-    desc: 'Jika Anda menemukan kerentanan keamanan di website atau proyek komunitas, laporkan secara bertanggung jawab melalui halaman Security atau email ke security@indopensource.org. Jangan buka issue publik.',
+    desc: 'Jangan membuka issue publik untuk laporan sensitif. Ikuti halaman Security atau kirim detail melalui kanal privat yang tersedia.',
     link: '/security/',
     isExternal: false
   },
   {
-    icon: 'ph-gavel',
-    title: 'DMCA & Hak Cipta',
-    desc: 'Kami menghormati hak kekayaan intelektual. Jika Anda yakin konten di platform kami melanggar hak cipta, kirimkan notifikasi DMCA ke legal@indopensource.org dengan informasi lengkap.',
-    link: 'mailto:legal@indopensource.org',
-    isExternal: true
-  },
-  {
-    icon: 'ph-trademark',
-    title: 'Merek Dagang',
-    desc: 'Nama "IndopenSource", logo, dan identitas visual adalah merek komunitas. Penggunaan harus mendapat izin tertulis. Proyek yang terkurasi tetap memegang merek mereka sendiri.',
-    link: 'mailto:admin@indopensource.org',
-    isExternal: true
-  },
-  {
     icon: 'ph-user-circle',
     title: 'Privasi & Data',
-    desc: 'Kami tidak mengumpulkan data pribadi beyond yang diperlukan untuk operasional (GitHub username untuk kontribusi). Tidak ada tracking analytics pihak ketiga. Cookie hanya untuk fungsionalitas dasar.',
-    link: '#',
-    isExternal: false
+    desc: 'Website publik ini dapat dibaca tanpa akun atau formulir data pribadi. Saat mengikuti tautan ke GitHub atau layanan lain, kebijakan layanan tersebut berlaku.',
+    link: 'https://github.com/IndopenSource/indopensource.org',
+    isExternal: true
   }
 ];
 
 const disclaimers = [
-  'IndopenSource adalah inisiatif komunitas, bukan entitas hukum formal.',
   'Konten yang dikurasi adalah tanggung jawab masing-masing maintainer proyek.',
   'Kami tidak memberikan nasihat hukum atau lisensi profesional.',
   'Tautan ke proyek eksternal tidak merupakan endorsement.',
-  'Komunitas berhak menolak atau menghapus konten yang melanggar kode etik.'
+  'Entri direktori dapat diperbarui atau dihapus jika tidak lagi memenuhi aturan kontribusi.'
 ];
 ---
 
@@ -89,7 +67,7 @@ const disclaimers = [
                 <div class="flex-1">
                   <h3 class="font-display text-xl font-bold text-ink">{p.title}</h3>
                   <p class="mt-3 font-body leading-7 text-muted">{p.desc}</p>
-                  <a class="meta-row mt-4 inline-block font-semibold text-brand underline decoration-2 underline-offset-4 hover:text-accent" href={href}>Selengkapnya →</a>
+                  <a class="meta-row mt-4 inline-block font-semibold text-brand underline decoration-2 underline-offset-4 hover:text-accent" href={href} target={p.isExternal ? '_blank' : undefined} rel={p.isExternal ? 'noopener noreferrer' : undefined}>Selengkapnya →</a>
                 </div>
               </div>
             </article>

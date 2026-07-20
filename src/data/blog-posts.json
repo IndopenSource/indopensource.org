@@ -19,12 +19,22 @@
     "sourceUrl": "https://github.com/IndopenSource/Blog-IndopenSource/blob/main/content/2026/07/bagaimana-open-source-mampu-bertahan.md",
     "releasedAt": "2026-07-16",
     "lastModifiedAt": "2026-07-16T11:08:44Z",
+    "latestCommitSha": "95d3147d541c05b1ab6f683ccddd6b84d816aabd",
+    "latestCommitUrl": "https://github.com/IndopenSource/Blog-IndopenSource/commit/95d3147d541c05b1ab6f683ccddd6b84d816aabd",
     "author": {
       "name": "wauputr4",
       "avatarUrl": "https://avatars.githubusercontent.com/u/103489788?v=4",
       "url": "https://github.com/wauputr4",
       "committedAt": "2026-07-16T11:02:36Z"
     },
+    "authors": [
+      {
+        "name": "wauputr4",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/103489788?v=4",
+        "url": "https://github.com/wauputr4",
+        "committedAt": "2026-07-16T11:02:36Z"
+      }
+    ],
     "authorFromFrontmatter": false
   },
   {
@@ -45,12 +55,22 @@
     "sourceUrl": "https://github.com/IndopenSource/Blog-IndopenSource/blob/main/content/2026/06/memperkenalkan-blog-indopensource.md",
     "releasedAt": "2026-06-14",
     "lastModifiedAt": "2026-07-16T11:02:50Z",
+    "latestCommitSha": "a411deee259a2d8b9a8b1150d17f5dd5e2d6aab1",
+    "latestCommitUrl": "https://github.com/IndopenSource/Blog-IndopenSource/commit/a411deee259a2d8b9a8b1150d17f5dd5e2d6aab1",
     "author": {
       "name": "wauputr4",
       "avatarUrl": "https://avatars.githubusercontent.com/u/103489788?v=4",
       "url": "https://github.com/wauputr4",
       "committedAt": "2026-06-13T17:37:55Z"
     },
+    "authors": [
+      {
+        "name": "wauputr4",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/103489788?v=4",
+        "url": "https://github.com/wauputr4",
+        "committedAt": "2026-06-13T17:37:55Z"
+      }
+    ],
     "authorFromFrontmatter": false
   }
 ]

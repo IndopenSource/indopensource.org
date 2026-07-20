@@ -19,7 +19,7 @@ const jsonLd = {
 };
 ---
 
-<BaseLayout title={`${resource.title} - Ruang Belajar`} description={resource.description} image={resource.ogImage.src} type="article" jsonLd={jsonLd}>
+<BaseLayout title={`${resource.seoTitle || resource.title} - IndopenSource`} description={resource.description} image={resource.ogImage.src} type="article" jsonLd={jsonLd}>
   <section class="border-b-[3px] border-ink bg-paper py-12 md:py-16">
     <div class="mx-auto w-[min(1120px,calc(100%-32px))]">
       <div class="mb-5 flex items-center gap-3"><span class="sticker">Ruang Belajar</span><span class="rule grow"></span></div>
