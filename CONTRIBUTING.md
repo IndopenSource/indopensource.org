@@ -43,4 +43,4 @@ Use `GITHUB_TOKEN` or `GH_TOKEN` to avoid low GitHub API rate limits.
 
 The `release` branch is reserved for Cloudflare production deployments. Only
 IndopenSource organization members may update it, through a pull request from
-`main` that passes CI and receives approval.
+`main` that passes CI.
