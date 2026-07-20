@@ -74,10 +74,8 @@ Semua kontribusi masuk ke `main`. Anggota organisasi mempromosikan versi yang
 sudah diuji melalui pull request dari `main` ke `release`; jangan membuka pull
 request kontribusi langsung ke `release`.
 
-Workflow GitHub Pages lama masih berada di `.github/workflows/deploy-pages.yml`
-dan bukan sumber deployment production Cloudflare. Putuskan penghapusan atau
-perannya sebagai fallback sebelum release publik agar tidak ada dua jalur deploy
-yang dianggap aktif.
+GitHub Pages sudah tidak digunakan. Deployment dan preview website ditangani
+oleh Cloudflare; workflow sinkronisasi konten hanya memperbarui data di `main`.
 
 Lihat [checklist release](docs/release-checklist.md) sebelum mempromosikan
 `main` ke `release`.
@@ -115,8 +113,8 @@ Workflow `.github/workflows/sync-content.yml` memperbarui data secara otomatis.
 
 Jika data berubah, workflow membuat commit `Sync content data`. Setelah commit
 masuk `main`, perubahan mengikuti validasi dan alur promosi `main` ke `release`.
-Workflow ini masih memuat langkah deployment GitHub Pages lama; jangan menganggap
-hasil tersebut sebagai production Cloudflare.
+Cloudflare kemudian membuat preview `main`; production tetap dipromosikan lewat
+pull request ke `release`.
 
 ## Analytics & Search Verification
 

@@ -264,7 +264,9 @@ for (const path of articleFiles) {
   const resolvedAuthors = resolvedAuthor.fromFrontmatter
     ? [
         resolvedAuthor.author,
-        ...commitMeta.authors.filter((author) => author.name.toLowerCase() !== resolvedAuthor.author.name.toLowerCase())
+        ...commitMeta.authors.filter(
+          (author) => author.name.toLowerCase() !== (resolvedAuthor.author?.name || '').toLowerCase()
+        )
       ]
     : commitMeta.authors.length ? commitMeta.authors : [resolvedAuthor.author];
 

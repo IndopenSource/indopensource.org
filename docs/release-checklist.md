@@ -15,7 +15,6 @@ an IndopenSource organization member.
 - [ ] DNS, custom domain, TLS, and the Cloudflare production branch are correct.
 - [ ] Cloudflare build variables for the Web Analytics token and Google
       Analytics Measurement ID are configured.
-- [ ] The role of the legacy GitHub Pages workflows has been decided.
 
 ## Promote
 

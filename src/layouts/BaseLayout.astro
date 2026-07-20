@@ -265,9 +265,12 @@ const csp = [
         tag.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(googleAnalyticsId)}`;
         document.head.append(tag);
 
-        const analyticsWindow = window as typeof window & { dataLayer?: unknown[][] };
+        const analyticsWindow = window as typeof window & {
+          dataLayer?: unknown[][];
+          gtag?: (...args: unknown[]) => void;
+        };
         const dataLayer = analyticsWindow.dataLayer ||= [];
-        const gtag = (...args: unknown[]) => dataLayer.push(args);
+        const gtag = analyticsWindow.gtag ||= (...args: unknown[]) => dataLayer.push(args);
         gtag('js', new Date());
         gtag('config', googleAnalyticsId);
       }
