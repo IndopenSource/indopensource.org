@@ -112,6 +112,17 @@ masuk `main`, perubahan mengikuti validasi dan alur promosi `main` ke `release`.
 Workflow ini masih memuat langkah deployment GitHub Pages lama; jangan menganggap
 hasil tersebut sebagai production Cloudflare.
 
+## Analytics & Search Verification
+
+Analytics aktif saat build Cloudflare menerima environment variable berikut:
+
+- `PUBLIC_CLOUDFLARE_WEB_ANALYTICS_TOKEN`
+- `PUBLIC_GOOGLE_ANALYTICS_ID` (format `G-XXXXXXXXXX`)
+- `PUBLIC_GOOGLE_SITE_VERIFICATION` (opsional)
+
+Nilainya merupakan identifier publik dan tidak perlu dimasukkan ke Git. Isi di
+pengaturan build Cloudflare untuk production dan preview sesuai kebutuhan.
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md).

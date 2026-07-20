@@ -59,7 +59,7 @@ const blogPages: SitemapEntry[] = blogPosts
   .filter((post) => isPublished(post))
   .map((post) => ({
     path: `/blog/${post.slug}/`,
-    lastmod: toLastmod(post.releasedAt) ?? toLastmod(post.date)
+    lastmod: toLastmod(post.lastModifiedAt) ?? toLastmod(post.releasedAt) ?? toLastmod(post.date)
   }));
 
 const projectPages: SitemapEntry[] = projects.map((project) => ({

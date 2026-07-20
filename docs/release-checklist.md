@@ -13,6 +13,8 @@ an IndopenSource organization member.
 - [ ] `admin@`, `press@`, `sponsor@`, and `legal@indopensource.org` can receive
       mail, or links to inactive addresses have been removed.
 - [ ] DNS, custom domain, TLS, and the Cloudflare production branch are correct.
+- [ ] Cloudflare build variables for the Web Analytics token and Google
+      Analytics Measurement ID are configured.
 - [ ] The role of the legacy GitHub Pages workflows has been decided.
 
 ## Promote
@@ -26,5 +28,7 @@ an IndopenSource organization member.
 
 - [ ] Smoke-test `https://indopensource.org/` and the primary navigation.
 - [ ] Confirm canonical URLs, robots, sitemap, favicon, and social previews.
+- [ ] Confirm Cloudflare Web Analytics and Google Analytics receive a test page
+      view without CSP errors.
 - [ ] Send a test message to each published email address.
 - [ ] Record the production commit or tag as the rollback point.

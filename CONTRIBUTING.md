@@ -54,6 +54,15 @@ add one object containing:
 Keep one community per pull request and explain your relationship to it or add a
 source that reviewers can verify. Do not add inferred or inactive communities.
 
+## Content Quality
+
+- Lead with a direct summary before background detail.
+- Cite primary sources for factual claims and include the relevant date.
+- Use descriptive headings and stable internal links to related pages.
+- Identify authors and keep publication and update dates traceable.
+- Do not add speculative facts, generated statistics, or special AI-search
+  markup that is not supported by search-engine documentation.
+
 ## Production Release
 
 The `release` branch is reserved for Cloudflare production deployments. Only

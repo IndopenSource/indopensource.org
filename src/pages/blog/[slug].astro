@@ -24,6 +24,9 @@ const modifiedDate = post.lastModifiedAt
   ? new Intl.DateTimeFormat('id-ID', { dateStyle: 'long' }).format(new Date(post.lastModifiedAt))
   : '';
 const latestCommitUrl = safeHref(post.latestCommitUrl);
+const seoTitle = post.slug === 'bagaimana-open-source-mampu-bertahan'
+  ? 'Mengapa Open Source Bertahan Puluhan Tahun - IndopenSource'
+  : `${post.title} - IndopenSource`;
 const releaseDate = post.releasedAt
   ? new Intl.DateTimeFormat('id-ID', { dateStyle: 'long' }).format(new Date(post.releasedAt))
   : '';
@@ -52,7 +55,7 @@ const jsonLd = {
 };
 ---
 
-<BaseLayout title={`${post.title} - IndopenSource`} description={post.description} image={thumbnailUrl} type="article" jsonLd={jsonLd}>
+<BaseLayout title={seoTitle} description={post.description} image={thumbnailUrl} type="article" publishedAt={post.releasedAt} modifiedAt={post.lastModifiedAt} jsonLd={jsonLd}>
   <PageHeader eyebrow="Blog" title={post.title}>
     <p>{post.description}</p>
     <div class="meta-row mt-5 flex flex-wrap items-center gap-x-3 gap-y-2 font-semibold text-ink uppercase tracking-[0.05em]">
