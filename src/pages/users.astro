@@ -1,0 +1,120 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHeader from '../components/PageHeader.astro';
+import type { Project } from '../lib/projects';
+import projectsData from '../data/projects.json';
+
+interface UserRanking {
+  owner: string;
+  avatarUrl: string;
+  repositories: number;
+  stars: number;
+  forks: number;
+}
+
+const projects = (projectsData as Project[]).filter((project) => !project.syncFailed && project.owner);
+const usersByOwner = new Map<string, UserRanking>();
+
+for (const project of projects) {
+  const owner = project.owner as string;
+  const current = usersByOwner.get(owner) || {
+    owner,
+    avatarUrl: project.ownerAvatarUrl || `https://avatars.githubusercontent.com/${encodeURIComponent(owner)}?size=160`,
+    repositories: 0,
+    stars: 0,
+    forks: 0
+  };
+
+  current.repositories += 1;
+  current.stars += project.stars;
+  current.forks += project.forks;
+  usersByOwner.set(owner, current);
+}
+
+const users = [...usersByOwner.values()].sort((a, b) =>
+  b.stars - a.stars || b.repositories - a.repositories || a.owner.localeCompare(b.owner)
+);
+const topUsers = users.slice(0, 3);
+const totalStars = users.reduce((sum, user) => sum + user.stars, 0);
+const formatNumber = (value: number) => value.toLocaleString('id-ID');
+---
+
+<BaseLayout
+  title="Top User - IndopenSource"
+  description="Peringkat pemilik proyek open source Indonesia berdasarkan akumulasi stars, forks, dan jumlah repo di direktori IndopenSource."
+>
+  <PageHeader eyebrow="Top User" title="Penggerak proyek Indonesia.">
+    <p>
+      Peringkat pemilik dan organisasi berdasarkan akumulasi repo yang tercatat di direktori IndopenSource.
+      Angka ini bukan peringkat seluruh aktivitas GitHub.
+    </p>
+    <div class="mt-8 grid gap-4 sm:grid-cols-3">
+      <div class="rounded-xl border border-line bg-paper p-5 shadow-sm">
+        <span class="meta-row block font-bold uppercase tracking-[0.06em] text-muted">User & organisasi</span>
+        <strong class="mt-2 block font-mono text-3xl font-bold text-ink">{formatNumber(users.length)}</strong>
+      </div>
+      <div class="rounded-xl border border-line bg-paper p-5 shadow-sm">
+        <span class="meta-row block font-bold uppercase tracking-[0.06em] text-muted">Repo terhitung</span>
+        <strong class="mt-2 block font-mono text-3xl font-bold text-ink">{formatNumber(projects.length)}</strong>
+      </div>
+      <div class="rounded-xl border border-line bg-paper p-5 shadow-sm">
+        <span class="meta-row block font-bold uppercase tracking-[0.06em] text-muted">Akumulasi stars</span>
+        <strong class="mt-2 block font-mono text-3xl font-bold text-ink">{formatNumber(totalStars)}</strong>
+      </div>
+    </div>
+  </PageHeader>
+
+  <section class="border-t border-line bg-canvas py-14 md:py-20">
+    <div class="mx-auto w-[min(1120px,calc(100%-32px))]">
+      <div class="mb-10">
+        <span class="sticker">Podium</span>
+        <h2 class="display-md mt-4">Tiga teratas.</h2>
+      </div>
+      <div class="grid gap-5 md:grid-cols-3">
+        {topUsers.map((user, index) => (
+          <a class="riso-hover riso-shadow relative border-2 border-ink bg-paper p-6" href={`https://github.com/${user.owner}`} target="_blank" rel="noopener noreferrer">
+            <span class="absolute right-4 top-2 font-display text-7xl font-black leading-none text-brand/10" aria-hidden="true">{index + 1}</span>
+            <img class="size-16 rounded-xl border-2 border-ink bg-canvas object-cover" src={user.avatarUrl} alt="" width="64" height="64" loading={index === 0 ? 'eager' : 'lazy'} decoding="async" />
+            <h3 class="mt-5 break-words font-display text-2xl font-bold text-ink">{user.owner}</h3>
+            <div class="meta-row mt-4 flex flex-wrap gap-x-4 gap-y-2 text-muted">
+              <span>★ {formatNumber(user.stars)}</span>
+              <span>⑂ {formatNumber(user.forks)}</span>
+              <span>{formatNumber(user.repositories)} repo</span>
+            </div>
+          </a>
+        ))}
+      </div>
+
+      <div class="mt-14 overflow-x-auto rounded-xl border border-line bg-paper shadow-sm">
+        <table class="w-full min-w-[620px] border-collapse text-left">
+          <thead class="border-b border-line bg-canvas">
+            <tr class="meta-row uppercase tracking-[0.06em] text-muted">
+              <th class="w-16 px-4 py-3 text-center" scope="col">#</th>
+              <th class="px-4 py-3" scope="col">User / organisasi</th>
+              <th class="px-4 py-3 text-right" scope="col">Repo</th>
+              <th class="px-4 py-3 text-right" scope="col">Stars</th>
+              <th class="px-4 py-3 text-right" scope="col">Forks</th>
+            </tr>
+          </thead>
+          <tbody>
+            {users.map((user, index) => (
+              <tr class="border-b border-line last:border-0 hover:bg-canvas">
+                <td class="px-4 py-4 text-center font-mono font-bold text-brand">{index + 1}</td>
+                <th class="px-4 py-4" scope="row">
+                  <a class="inline-flex items-center gap-3 font-semibold text-ink hover:text-brand hover:underline" href={`https://github.com/${user.owner}`} target="_blank" rel="noopener noreferrer">
+                    <img class="size-10 shrink-0 rounded-lg border border-line bg-canvas object-cover" src={user.avatarUrl} alt="" width="40" height="40" loading="lazy" decoding="async" />
+                    <span class="break-words">{user.owner}</span>
+                  </a>
+                </th>
+                <td class="px-4 py-4 text-right font-mono font-semibold text-ink">{formatNumber(user.repositories)}</td>
+                <td class="px-4 py-4 text-right font-mono font-semibold text-ink">{formatNumber(user.stars)}</td>
+                <td class="px-4 py-4 text-right font-mono font-semibold text-ink">{formatNumber(user.forks)}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="meta-row mt-5 text-muted">Dihitung dari snapshot data direktori terbaru · repo yang gagal disinkronkan tidak disertakan.</p>
+    </div>
+  </section>
+</BaseLayout>

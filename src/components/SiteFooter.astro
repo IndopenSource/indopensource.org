@@ -2,8 +2,14 @@
 import { withBase } from '../lib/urls';
 
 const links: { label: string; href: string; external?: boolean }[] = [
+  { label: 'Proyek', href: '/projects/' },
+  { label: 'Belajar', href: '/belajar/' },
   { label: 'Tentang', href: '/tentang/' },
+  { label: 'Falsafah', href: '/falsafah/' },
   { label: 'Komunitas', href: '/komunitas/' },
+  { label: 'Top User', href: '/users/' },
+  { label: 'Blog', href: '/blog/' },
+  { label: 'Forum', href: '/forum/' },
   { label: 'Cara Berkontribusi', href: '/cara-berkontribusi/' },
   { label: 'Kode Etik', href: '/kode-etik/' },
   { label: 'Donasi', href: '/donasi/' },
@@ -11,13 +17,13 @@ const links: { label: string; href: string; external?: boolean }[] = [
   { label: 'Program', href: '/program/' },
   { label: 'Tata Kelola', href: '/tata-kelola/' },
   { label: 'Event', href: '/events/' },
-  { label: 'Sponsors', href: '/sponsors/' },
+  { label: 'Kontak', href: '/contact/' },
   { label: 'Press', href: '/press/' },
   { label: 'Legal', href: '/legal/' },
   { label: 'Security', href: '/security/' },
+  { label: 'Roadmap', href: '/roadmap/' },
   { label: 'GitHub', href: 'https://github.com/IndopenSource', external: true },
   { label: 'Discussions', href: 'https://github.com/orgs/IndopenSource/discussions', external: true },
-  { label: 'Roadmap', href: 'https://github.com/orgs/IndopenSource/projects', external: true }
 ];
 
 const year = new Date().getFullYear();
@@ -44,7 +50,7 @@ const year = new Date().getFullYear();
           bareng, dirawat bareng.
         </p>
       </div>
-      <span class="stamp border-sun text-sun">Open Source ID</span>
+      <span class="stamp border-paper bg-sun text-ink">Open source · Indonesia</span>
     </div>
 
     {/* Thick rule between mission and the colophon grid */}

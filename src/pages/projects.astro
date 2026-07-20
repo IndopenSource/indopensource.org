@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import PageHeader from '../components/PageHeader.astro';
 import ProjectsDirectory from '../components/ProjectsDirectory.astro';
 import type { Project } from '../lib/projects';
+import { withBase } from '../lib/urls';
 import projectsData from '../data/projects.json';
 import legacyData from '../data/legacy.json';
 import revivalData from '../data/revival.json';
@@ -27,6 +28,25 @@ const latestUpdate = refreshedProjects
 const latestUpdateLabel = latestUpdate
   ? new Intl.DateTimeFormat('id-ID', { dateStyle: 'medium' }).format(new Date(latestUpdate))
   : '';
+const ownerAvatarUrl = (owner: string) => `https://avatars.githubusercontent.com/${encodeURIComponent(owner)}?size=80`;
+const usersByOwner = new Map<string, { owner: string; avatarUrl: string; repositories: number; stars: number; forks: number }>();
+for (const project of refreshedProjects) {
+  if (!project.owner) continue;
+  const user = usersByOwner.get(project.owner) || {
+    owner: project.owner,
+    avatarUrl: project.ownerAvatarUrl || ownerAvatarUrl(project.owner),
+    repositories: 0,
+    stars: 0,
+    forks: 0
+  };
+  user.repositories += 1;
+  user.stars += project.stars;
+  user.forks += project.forks;
+  usersByOwner.set(project.owner, user);
+}
+const topUsers = [...usersByOwner.values()]
+  .sort((a, b) => b.stars - a.stars || b.repositories - a.repositories || a.owner.localeCompare(b.owner))
+  .slice(0, 5);
 ---
 
 <BaseLayout
@@ -63,6 +83,34 @@ const latestUpdateLabel = latestUpdate
       </div>
     </div>
   </PageHeader>
+
+  <section class="border-b border-line bg-paper py-10">
+    <div class="mx-auto w-[min(1120px,calc(100%-32px))]">
+      <div class="mb-4 flex flex-wrap items-end justify-between gap-3">
+        <div>
+          <span class="sticker">Top user</span>
+          <h2 class="display-sm mt-3 text-ink">Lima penggerak teratas.</h2>
+        </div>
+        <a class="inline-flex items-center gap-2 font-semibold text-brand underline decoration-2 underline-offset-4 hover:text-brand-dark" href={withBase('/users/')}>
+          Lihat semua <span aria-hidden="true">→</span>
+        </a>
+      </div>
+      <div class="overflow-x-auto pb-4 [scrollbar-width:thin]">
+        <div class="flex w-max min-w-full snap-x snap-mandatory gap-3">
+          {topUsers.map((user, index) => (
+            <a class="riso-hover flex w-[min(260px,78vw)] shrink-0 snap-start items-center gap-3 border-2 border-ink bg-canvas p-3" href={`https://github.com/${user.owner}`} target="_blank" rel="noopener noreferrer">
+              <span class="font-mono text-sm font-bold text-brand">{index + 1}</span>
+              <img class="size-10 shrink-0 rounded-lg border border-line bg-paper object-cover" src={user.avatarUrl} alt="" width="40" height="40" loading="lazy" decoding="async" />
+              <span class="min-w-0">
+                <strong class="block truncate font-display text-sm text-ink">{user.owner}</strong>
+                <span class="meta-row block text-muted">★ {user.stars.toLocaleString('id-ID')}</span>
+              </span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
   <ProjectsDirectory projects={projects} />
 
   {legacyProjects.length > 0 && (
@@ -74,6 +122,7 @@ const latestUpdateLabel = latestUpdate
           <p class="mt-3 max-w-2xl font-body text-lg leading-8 text-muted">
             Resource dan proyek non-app open source Indonesia yang masih relevan sebagai referensi pembelajaran.
           </p>
+          <a class="mt-4 inline-flex items-center gap-2 font-semibold text-brand underline decoration-2 underline-offset-4 hover:text-brand-dark" href="https://github.com/IndopenSource/awesome-indonesia-legacy" target="_blank" rel="noopener noreferrer">Buka repository Legacy <span aria-hidden="true">↗</span></a>
         </div>
         <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {legacyProjects.map((repo) => (
@@ -84,7 +133,13 @@ const latestUpdateLabel = latestUpdate
               rel="noopener noreferrer"
             >
               <div class="flex items-start justify-between gap-3">
-                <h3 class="font-display text-lg font-bold text-ink">{repo.name}</h3>
+                <div class="flex min-w-0 items-center gap-3">
+                  <img class="size-10 shrink-0 rounded-lg border border-line bg-canvas object-cover" src={ownerAvatarUrl(repo.owner)} alt="" width="40" height="40" loading="lazy" decoding="async" />
+                  <div class="min-w-0">
+                    <h3 class="break-words font-display text-lg font-bold text-ink">{repo.name}</h3>
+                    <span class="meta-row mt-0.5 block text-brand-dark">oleh {repo.owner}</span>
+                  </div>
+                </div>
                 <i class="ph ph-arrow-square-out text-xl text-muted" aria-hidden="true"></i>
               </div>
               <p class="mt-2 font-body text-sm leading-6 text-muted line-clamp-2">{repo.description || 'Tidak ada deskripsi'}</p>
@@ -109,6 +164,7 @@ const latestUpdateLabel = latestUpdate
           <p class="mt-3 max-w-2xl font-body text-lg leading-8 text-muted">
             Proyek open source Indonesia yang butuh kontribusi untuk aktif kembali.
           </p>
+          <a class="mt-4 inline-flex items-center gap-2 font-semibold text-brand underline decoration-2 underline-offset-4 hover:text-brand-dark" href="https://github.com/IndopenSource/awesome-indonesia-revival" target="_blank" rel="noopener noreferrer">Buka repository Revival <span aria-hidden="true">↗</span></a>
         </div>
         <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {revivalProjects.map((repo) => (
@@ -119,7 +175,13 @@ const latestUpdateLabel = latestUpdate
               rel="noopener noreferrer"
             >
               <div class="flex items-start justify-between gap-3">
-                <h3 class="font-display text-lg font-bold text-ink">{repo.name}</h3>
+                <div class="flex min-w-0 items-center gap-3">
+                  <img class="size-10 shrink-0 rounded-lg border border-line bg-paper object-cover" src={ownerAvatarUrl(repo.owner)} alt="" width="40" height="40" loading="lazy" decoding="async" />
+                  <div class="min-w-0">
+                    <h3 class="break-words font-display text-lg font-bold text-ink">{repo.name}</h3>
+                    <span class="meta-row mt-0.5 block text-brand-dark">oleh {repo.owner}</span>
+                  </div>
+                </div>
                 <i class="ph ph-arrow-square-out text-xl text-muted" aria-hidden="true"></i>
               </div>
               <p class="mt-2 font-body text-sm leading-6 text-muted line-clamp-2">{repo.description || 'Tidak ada deskripsi'}</p>

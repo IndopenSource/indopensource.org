@@ -2,77 +2,72 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import BaseButton from '../components/BaseButton.astro';
 import PageHeader from '../components/PageHeader.astro';
-import LightSvgMotion from '../components/LightSvgMotion.astro';
+import communitiesData from '../data/communities.json';
 
-const paths = [
-  { no: '01', tag: 'Temukan', title: 'Kurasi satu proyek.', body: 'Tambahkan proyek Indonesia yang layak dipakai, atau rapikan informasi proyek yang sudah ada.', href: '/projects/', action: 'Buka direktori' },
-  { no: '02', tag: 'Tulis', title: 'Bagikan yang dipelajari.', body: 'Tulis catatan teknis, pengalaman merawat proyek, atau panduan praktis untuk pembaca berikutnya.', href: '/blog/', action: 'Baca dan kirim artikel' },
-  { no: '03', tag: 'Diskusikan', title: 'Bawa pertanyaan ke ruang terbuka.', body: 'Mulai dari ide kecil, kendala kontribusi, atau usulan kolaborasi lintas komunitas.', href: 'https://github.com/orgs/IndopenSource/discussions', action: 'Buka Discussions' },
-  { no: '04', tag: 'Rawat', title: 'Bantu pekerjaan yang sering tak terlihat.', body: 'Dokumentasi, terjemahan, pengujian, desain, dan review sama pentingnya dengan menulis kode.', href: 'https://github.com/IndopenSource', action: 'Lihat repository' }
-];
+interface Community {
+  name: string;
+  description: string;
+  focus?: string;
+  location?: string;
+  url: string;
+}
 
-const spaces = [
-  { label: 'Proyek', note: 'direktori dan metadata', href: '/projects/' },
-  { label: 'Blog', note: 'catatan dan pembelajaran', href: '/blog/' },
-  { label: 'Discussions', note: 'tanya, usul, koordinasi', href: 'https://github.com/orgs/IndopenSource/discussions' },
-  { label: 'Roadmap', note: 'pekerjaan yang sedang dibuka', href: 'https://github.com/orgs/IndopenSource/projects' }
-];
+const communities = communitiesData as Community[];
 ---
 
 <BaseLayout
-  title="Komunitas & Kontribusi - IndopenSource"
-  description="Pintu masuk untuk menemukan proyek, menulis, berdiskusi, dan merawat open source Indonesia bersama IndopenSource."
+  title="Direktori Komunitas Open Source Indonesia - IndopenSource"
+  description="Direktori terbuka komunitas open source Indonesia yang dapat ditambahkan melalui pull request."
 >
-  <PageHeader eyebrow="Komunitas" title="Tidak harus mulai dari kode.">
-    <p>IndopenSource adalah ruang kerja terbuka. Pilih kontribusi yang sesuai dengan waktu, pengalaman, dan rasa ingin tahu Anda—lalu tinggalkan jejak yang bisa diteruskan orang lain.</p>
+  <PageHeader eyebrow="Komunitas" title="Direktori komunitas open source Indonesia.">
+    <p>Tempat menemukan komunitas, kelompok pengguna, dan ruang belajar terbuka dari berbagai daerah dan bidang. Daftarnya sedang kami siapkan bersama.</p>
   </PageHeader>
 
-  <section class="grain relative overflow-hidden border-b-[3px] border-ink bg-brand-dark py-16 text-paper md:py-24">
-    <LightSvgMotion variant="network" />
-    <div class="relative mx-auto w-[min(1120px,calc(100%-32px))]">
-      <span class="sticker">Mulai di sini</span>
-      <p class="pull-quote mt-5 max-w-4xl text-paper">Kontribusi kecil yang <span class="text-sun">terbuka</span> lebih berguna daripada ide besar yang tidak pernah dibagikan.</p>
-      <div class="mt-8 flex flex-wrap gap-3">
-        <BaseButton href="https://github.com/orgs/IndopenSource/discussions">Mulai diskusi</BaseButton>
-        <BaseButton href="/projects/" variant="secondary">Cari proyek</BaseButton>
-      </div>
-    </div>
-  </section>
-
-  <section class="bg-paper py-16 md:py-20">
+  <section class="border-b-[3px] border-ink bg-paper py-16 md:py-20">
     <div class="mx-auto w-[min(1120px,calc(100%-32px))]">
-      <div class="mb-9 flex items-end justify-between gap-5 max-md:flex-col max-md:items-start">
-        <div><span class="sticker">Empat jalur</span><h2 class="display-md mt-4">Pilih pintu yang paling dekat.</h2></div>
-        <span class="meta-row">tidak perlu menunggu undangan</span>
-      </div>
-      <div class="grid gap-4 md:grid-cols-2">
-        {paths.map((path) => (
-          <article class="riso-shadow border-2 border-ink bg-canvas p-6">
-            <div class="flex items-center justify-between gap-4"><span class="section-number text-brand-dark">{path.no}</span><span class="sticker">{path.tag}</span></div>
-            <h3 class="display-sm mt-6 text-ink">{path.title}</h3>
-            <p class="mt-3 font-body text-lg leading-8 text-muted">{path.body}</p>
-            <a class="meta-row mt-6 inline-block font-semibold text-brand underline decoration-2 underline-offset-4 hover:text-accent" href={path.href}>{path.action} →</a>
-          </article>
-        ))}
-      </div>
+      {communities.length === 0 ? (
+        <div class="riso-shadow border-2 border-ink bg-canvas p-8 md:p-12">
+          <span class="sticker">Segera hadir</span>
+          <h2 class="display-md mt-5 text-ink">Belum ada komunitas yang ditampilkan.</h2>
+          <p class="mt-4 max-w-2xl font-body text-lg leading-8 text-muted">Kami sengaja memulai dari daftar kosong agar setiap entri punya sumber, tautan aktif, dan diajukan secara terbuka—bukan hasil asumsi.</p>
+        </div>
+      ) : (
+        <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+          {communities.map((community) => (
+            <a class="riso-hover riso-shadow border-2 border-ink bg-canvas p-6" href={community.url} target="_blank" rel="noopener noreferrer">
+              <h2 class="display-sm text-ink">{community.name}</h2>
+              <p class="mt-3 font-body leading-7 text-muted">{community.description}</p>
+              <div class="meta-row mt-5 flex flex-wrap gap-3 text-brand-dark">
+                {community.focus && <span>{community.focus}</span>}
+                {community.location && <span>{community.location}</span>}
+              </div>
+            </a>
+          ))}
+        </div>
+      )}
     </div>
   </section>
 
-  <section class="border-y-[3px] border-ink bg-canvas py-16 md:py-20">
-    <div class="mx-auto grid w-[min(1120px,calc(100%-32px))] gap-8 lg:grid-cols-[minmax(0,1fr)_420px]">
+  <section class="bg-canvas py-16 md:py-20">
+    <div class="mx-auto grid w-[min(1120px,calc(100%-32px))] gap-8 lg:grid-cols-[minmax(0,1fr)_380px]">
       <div>
-        <span class="sticker">Ritme sederhana</span>
-        <h2 class="display-md mt-4">Baca, bicara, lalu buat perubahan.</h2>
+        <span class="sticker">Tambahkan komunitas</span>
+        <h2 class="display-md mt-4 text-ink">Buka pull request di repository website.</h2>
+        <p class="mt-4 max-w-2xl font-body text-lg leading-8 text-muted">Pengurus atau anggota komunitas boleh mengusulkan entri. Sertakan informasi yang bisa diverifikasi dan pastikan Anda memang berwenang membagikan profil tersebut.</p>
         <ol class="mt-7 grid gap-4 font-body text-lg leading-8 text-muted">
-          <li><strong class="font-display text-ink">01 — Pilih satu hal.</strong> Temukan proyek, tulisan, atau percakapan yang benar-benar ingin Anda bantu.</li>
-          <li><strong class="font-display text-ink">02 — Tinggalkan konteks.</strong> Ajukan pertanyaan atau usulan secara publik agar orang lain dapat menambahkan pengetahuan.</li>
-          <li><strong class="font-display text-ink">03 — Kirim kontribusi kecil.</strong> Mulai dari koreksi, tautan, contoh penggunaan, atau pull request yang mudah ditinjau.</li>
+          <li><strong class="font-display text-ink">01 — Fork repository.</strong> Buka <code class="rounded bg-paper px-1.5 py-0.5 font-mono text-sm">IndopenSource/indopensource.org</code> lalu buat branch baru.</li>
+          <li><strong class="font-display text-ink">02 — Tambahkan data.</strong> Edit <code class="rounded bg-paper px-1.5 py-0.5 font-mono text-sm">src/data/communities.json</code> dengan nama, deskripsi, wilayah atau fokus, dan tautan resmi.</li>
+          <li><strong class="font-display text-ink">03 — Verifikasi lokal.</strong> Jalankan <code class="rounded bg-paper px-1.5 py-0.5 font-mono text-sm">npm test</code> dan <code class="rounded bg-paper px-1.5 py-0.5 font-mono text-sm">npm run build</code>.</li>
+          <li><strong class="font-display text-ink">04 — Buka PR ke main.</strong> Jelaskan hubungan Anda dengan komunitas serta sumber yang dapat dipakai reviewer untuk memeriksa entri.</li>
         </ol>
       </div>
       <aside class="riso-shadow border-2 border-ink bg-paper p-6">
-        <span class="meta-row text-brand-dark">// ruang kerja</span>
-        <div class="mt-5 grid gap-3">
-          {spaces.map((space) => <a class="riso-hover border-2 border-ink bg-canvas p-4" href={space.href}><strong class="font-display text-xl text-ink">{space.label}</strong><span class="mt-1 block font-body text-sm text-muted">{space.note}</span></a>)}
+        <i class="ph-fill ph-git-pull-request text-4xl text-brand" aria-hidden="true"></i>
+        <h3 class="display-sm mt-4 text-ink">Siap menambahkan?</h3>
+        <p class="mt-3 font-body leading-7 text-muted">Mulai dari perubahan kecil: satu komunitas, satu sumber resmi, satu pull request yang mudah diperiksa.</p>
+        <div class="mt-6 flex flex-col items-start gap-3">
+          <BaseButton href="https://github.com/IndopenSource/indopensource.org">Buka repository</BaseButton>
+          <a class="font-semibold text-brand underline decoration-2 underline-offset-4" href="https://github.com/IndopenSource/indopensource.org/compare" target="_blank" rel="noopener noreferrer">Buka halaman compare ↗</a>
         </div>
       </aside>
     </div>

@@ -82,11 +82,12 @@ for (const byte of new Uint8Array(jsonLdDigest)) {
   jsonLdBinary += String.fromCharCode(byte);
 }
 const jsonLdHash = btoa(jsonLdBinary);
+const styleSrc = import.meta.env.DEV ? "style-src 'self' 'unsafe-inline'" : "style-src 'self'";
 const csp = [
   "default-src 'self'",
   "base-uri 'self'",
   `script-src 'self' 'sha256-${jsonLdHash}'`,
-  "style-src 'self'",
+  styleSrc,
   // First-party + GitHub avatar/raw image hosts only — no third-party beacons.
   "img-src 'self' data: https://raw.githubusercontent.com https://avatars.githubusercontent.com",
   "font-src 'self' data:",

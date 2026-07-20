@@ -20,11 +20,6 @@ const unacceptable = [
   'Perilaku lain yang secara wajar dapat dianggap tidak pantas dalam lingkungan profesional'
 ];
 
-const enforcement = [
-  { level: 'Koreksi', desc: 'Peringatan tertulis dari maintainer. Permintaan untuk menghentikan perilaku.', action: 'Peringatan verbal/written' },
-  { level: 'Peringatan', desc: 'Pelanggaran serius atau berulang. Dilarang berpartisipasi di ruang komunitas untuk periode tertentu.', action: 'Suspend sementara' },
-  { level: 'Larangan', desc: 'Pelanggaran berat atau berkelanjutan. Dilarang permanen dari semua ruang komunitas.', action: 'Ban permanen' }
-];
 ---
 
 <BaseLayout title="Kode Etik - IndopenSource" description="Kode etik komunitas IndopenSource untuk menciptakan lingkungan yang aman, inklusif, dan produktif.">
@@ -85,15 +80,9 @@ const enforcement = [
         <h2 class="display-md mt-4">Tindakan untuk pelanggaran.</h2>
         <p class="mt-3 max-w-2xl font-body text-lg leading-8 text-muted">Maintainer komunitas berhak mengambil tindakan yang sesuai untuk menegakkan kode etik ini.</p>
       </div>
-      <div class="grid gap-4 md:grid-cols-3">
-        {enforcement.map((e, i) => (
-          <article class="riso-shadow border-2 border-ink bg-sun p-6">
-            <span class="meta-row text-brand-dark">Level {i + 1}</span>
-            <h3 class="display-sm mt-4 text-ink">{e.level}</h3>
-            <p class="mt-3 font-body leading-7 text-ink">{e.desc}</p>
-            <p class="mt-4 font-mono text-sm font-bold text-brand-dark">{e.action}</p>
-          </article>
-        ))}
+      <div class="riso-shadow border-2 border-ink bg-sun p-6 md:p-8">
+        <p class="max-w-3xl font-body text-lg leading-8 text-ink">Maintainer dapat memoderasi issue, Discussions, pull request, dan ruang komunitas lain agar kolaborasi tetap sehat dan berguna. Tindakan disesuaikan dengan konteks pelanggaran.</p>
+        <a class="meta-row mt-5 inline-block font-semibold text-brand-dark underline decoration-2 underline-offset-4" href="https://github.com/IndopenSource/indopensource.org/blob/main/CODE_OF_CONDUCT.md" target="_blank" rel="noopener noreferrer">Baca dokumen sumber →</a>
       </div>
     </div>
   </section>
@@ -103,7 +92,7 @@ const enforcement = [
       <div class="riso-shadow border-2 border-ink bg-paper p-8 md:p-12">
         <span class="sticker">Laporan</span>
         <h2 class="display-md mt-4 text-ink">Melaporkan pelanggaran.</h2>
-        <p class="mt-4 max-w-2xl font-body text-lg leading-8 text-muted">Jika Anda mengalami atau menyaksikan pelanggaran kode etik, silakan laporkan kepada tim maintainer. Semua laporan akan ditangani secara rahasia dan serius.</p>
+        <p class="mt-4 max-w-2xl font-body text-lg leading-8 text-muted">Jika Anda mengalami atau menyaksikan pelanggaran kode etik, laporkan melalui kanal privat atau kepada maintainer IndopenSource yang Anda percaya.</p>
         <div class="mt-6 flex flex-wrap gap-3">
           <BaseButton href="mailto:admin@indopensource.org">Laporkan via Email</BaseButton>
           <BaseButton href="https://github.com/orgs/IndopenSource/discussions" variant="secondary">Diskusi publik</BaseButton>

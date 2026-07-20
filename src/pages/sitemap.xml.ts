@@ -37,6 +37,10 @@ const staticPages: SitemapEntry[] = [
   { path: '/projects/' },
   { path: '/blog/' },
   { path: '/forum/' },
+  { path: '/roadmap/' },
+  { path: '/tentang/' },
+  { path: '/komunitas/' },
+  { path: '/donasi/' },
   { path: '/contact/' }
 ];
 
