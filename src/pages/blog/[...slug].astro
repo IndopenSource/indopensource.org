@@ -6,21 +6,29 @@ import { withBase, safeHref } from '../../lib/urls';
 import { isPublished, renderArticle, type BlogPost } from '../../lib/content';
 
 export function getStaticPaths() {
-  // Only build pages for published posts so drafts are never reachable.
-  return (blogPosts as BlogPost[]).filter(isPublished).map((post) => ({
-    params: { slug: post.slug },
+  // Drafts use a distinct preview route and stay out of listings and the sitemap.
+  return (blogPosts as BlogPost[]).map((post) => ({
+    params: { slug: isPublished(post) ? post.slug : `preview/${post.slug}` },
     props: { post }
   }));
 }
 
 const { post } = Astro.props;
+const published = isPublished(post);
+const articlePath = published ? `/blog/${post.slug}` : `/blog/preview/${post.slug}`;
 // Render Markdown through the shared sanitizing pipeline (no raw `set:html`).
 const html = renderArticle(post.content);
-// Author link comes from frontmatter/git — allowlist the scheme before href.
-const authorUrl = safeHref(post.author?.url);
+const authors = post.authors?.length ? post.authors : post.author ? [post.author] : [];
 const authorDate = post.author?.committedAt
   ? new Intl.DateTimeFormat('id-ID', { dateStyle: 'long' }).format(new Date(post.author.committedAt))
   : '';
+const modifiedDate = post.lastModifiedAt
+  ? new Intl.DateTimeFormat('id-ID', { dateStyle: 'long' }).format(new Date(post.lastModifiedAt))
+  : '';
+const latestCommitUrl = safeHref(post.latestCommitUrl);
+const seoTitle = post.slug === 'bagaimana-open-source-mampu-bertahan'
+  ? 'Mengapa Open Source Bertahan Puluhan Tahun - IndopenSource'
+  : `${post.title} - IndopenSource`;
 const releaseDate = post.releasedAt
   ? new Intl.DateTimeFormat('id-ID', { dateStyle: 'long' }).format(new Date(post.releasedAt))
   : '';
@@ -30,7 +38,7 @@ const heroAlt = `Thumbnail artikel: ${post.title}`;
 // Provenance-aware author byline: frontmatter `authors[]` vs git commit metadata.
 const authorByline = post.authorFromFrontmatter
   ? `Disebutkan di frontmatter artikel${authorDate ? ` (commit pertama ${authorDate})` : ''}.`
-  : `Diambil otomatis dari commit pertama file artikel${authorDate ? ` pada ${authorDate}` : ''}.`;
+  : `Kontributor diambil dari riwayat commit sumber Markdown${authorDate ? published ? `. Terbit ${authorDate}` : `. Commit pertama ${authorDate}` : ''}${modifiedDate ? ` · diperbarui ${modifiedDate}` : ''}.`;
 
 // BlogPosting structured data (passed to BaseLayout's hashed jsonLd prop so it
 // is CSP-allow-listed in <head>, not a separate inline script).
@@ -40,22 +48,27 @@ const jsonLd = {
   headline: post.title,
   description: post.description,
   image: thumbnailUrl,
-  ...(post.releasedAt ? { datePublished: post.releasedAt } : {}),
+  ...(published && post.releasedAt ? { datePublished: post.releasedAt } : {}),
   ...(post.lastModifiedAt ? { dateModified: post.lastModifiedAt } : {}),
-  ...(post.author?.name
-    ? { author: { '@type': 'Person', name: post.author.name, ...(authorUrl ? { url: authorUrl } : {}) } }
+  ...(authors.length
+    ? { author: authors.map((author) => ({ '@type': 'Person', name: author.name, ...(safeHref(author.url) ? { url: safeHref(author.url) } : {}) })) }
     : {}),
   publisher: { '@type': 'Organization', name: 'IndopenSource' }
 };
 ---
 
-<BaseLayout title={`${post.title} - IndopenSource`} description={post.description} image={thumbnailUrl} type="article" jsonLd={jsonLd}>
+<BaseLayout title={seoTitle} description={post.description} image={thumbnailUrl} type="article" robots={published ? undefined : 'noindex, nofollow, noarchive'} publishedAt={published ? post.releasedAt : undefined} modifiedAt={post.lastModifiedAt} jsonLd={jsonLd}>
   <PageHeader eyebrow="Blog" title={post.title}>
+    {!published && (
+      <div class="mb-6 border-2 border-ink bg-sun p-4 font-body text-ink riso-shadow-sm" role="status">
+        <strong class="font-display">Preview draf.</strong> Artikel ini masih ditinjau, belum diterbitkan, dan tidak diindeks mesin pencari.
+      </div>
+    )}
     <p>{post.description}</p>
     <div class="meta-row mt-5 flex flex-wrap items-center gap-x-3 gap-y-2 font-semibold text-ink uppercase tracking-[0.05em]">
-      <span class="text-brand-dark">/blog/{post.slug}</span>
-      {releaseDate && <><span aria-hidden="true">·</span><span>Rilis {releaseDate}</span></>}
-      {post.author?.name && <><span aria-hidden="true">·</span><span class="text-brand-dark">oleh {post.author.name}</span></>}
+      <span class="text-brand-dark">{articlePath}</span>
+      {releaseDate && <><span aria-hidden="true">·</span><span>{published ? 'Rilis' : 'Tanggal draf'} {releaseDate}</span></>}
+      {authors.length > 0 && <><span aria-hidden="true">·</span><span class="text-brand-dark">oleh {authors.map((author) => author.name).join(' & ')}</span></>}
     </div>
     <div class="mt-5 flex flex-wrap items-center gap-2">
       <span class="sticker">{post.status}</span>
@@ -74,19 +87,29 @@ const jsonLd = {
         <span class="sticker">Penulis</span>
         <span class="rule grow"></span>
       </div>
-      <div class="flex items-center gap-4">
-        {
-          post.author?.avatarUrl && (
-            <img class="size-14 shrink-0 border-2 border-ink bg-paper riso-shadow-sm" src={post.author.avatarUrl} alt={`${post.author.name} avatar`} width="56" height="56" loading="lazy" decoding="async" />
-          )
-        }
-        <div class="min-w-0">
-          {authorUrl
-            ? <a class="display-sm text-brand underline decoration-2 underline-offset-2 hover:text-accent" href={authorUrl}>{post.author?.name}</a>
-            : <span class="display-sm text-brand">{post.author?.name}</span>}
-          <p class="mt-1 font-body text-sm leading-6 text-muted">{authorByline}</p>
-        </div>
+      <div class="grid gap-4 sm:grid-cols-2">
+        {authors.map((author) => {
+          const authorUrl = safeHref(author.url);
+          return (
+            <div class="flex items-center gap-4">
+              {author.avatarUrl && (
+                <img class="size-14 shrink-0 border-2 border-ink bg-paper riso-shadow-sm" src={author.avatarUrl} alt="" width="56" height="56" loading="lazy" decoding="async" />
+              )}
+              <div class="min-w-0">
+                {authorUrl
+                  ? <a class="display-sm text-brand underline decoration-2 underline-offset-2 hover:text-accent" href={authorUrl}>{author.name}</a>
+                  : <span class="display-sm text-brand">{author.name}</span>}
+              </div>
+            </div>
+          );
+        })}
       </div>
+      <p class="mt-4 font-body text-sm leading-6 text-muted">{authorByline}</p>
+      {latestCommitUrl && post.latestCommitSha && (
+        <a class="meta-row mt-2 inline-block font-semibold text-brand underline decoration-2 underline-offset-4 hover:text-accent" href={latestCommitUrl} target="_blank" rel="noopener noreferrer">
+          Commit terbaru {post.latestCommitSha.slice(0, 7)} ↗
+        </a>
+      )}
       <hr class="rule my-6" />
       <div class="flex flex-wrap gap-3">
         <a

@@ -1,34 +1,41 @@
+![IndopenSource — Komunitas Open Source Indonesia](docs/assets/indopensource-banner.png)
+
 # IndopenSource.org
 
-[![Deploy to GitHub Pages](https://github.com/IndopenSource/indopensource.org/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/IndopenSource/indopensource.org/actions/workflows/deploy-pages.yml)
+[![CI](https://github.com/IndopenSource/indopensource.org/actions/workflows/ci.yml/badge.svg)](https://github.com/IndopenSource/indopensource.org/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-Website roadmap untuk `https://indopensource.org`.
+Website komunitas dan direktori open source Indonesia di `https://indopensource.org`.
 
 ## Tech Stack
 
 - Astro
 - Tailwind CSS
 - TypeScript
-- GitHub Pages
 - GitHub Actions
+- Cloudflare Workers Static Assets
 
 ## Pages
 
-- Home: ringkasan roadmap dan arah website.
+- Home: pintu masuk ke direktori, roadmap, pembelajaran, dan kontribusi.
 - Falsafah: prinsip komunitas dan kurasi open source Indonesia.
-- Projects: direktori dari `IndopenSource/awesome-indonesia`.
-- Blog: placeholder untuk repo khusus `IndopenSource/Blog-IndopenSource`.
-- Forum: rencana integrasi `https://github.com/orgs/IndopenSource/discussions`.
-- Contact: kanal GitHub organization, projects, dan discussions.
+- Projects: direktori proyek dari `IndopenSource/awesome-indonesia`.
+- Top User: peringkat pemilik repository berdasarkan akumulasi stars.
+- Komunitas: direktori komunitas yang diusulkan melalui pull request.
+- Roadmap: rencana kerja publik 2026–2027.
+- Belajar dan Blog: materi serta artikel yang disinkronkan dari repository sumber.
+- Donasi: informasi OpenSawer, sponsorship, CSR, dan dukungan non-dana.
+- Forum dan Kontak: GitHub Discussions serta kanal resmi IndopenSource.
 
 ## Development
 
 ```bash
 npm install
-npm run sync:projects
 npm run dev
 ```
+
+Sinkronisasi data bersifat opsional untuk pengembangan UI. File hasil sinkronisasi
+yang diperlukan sudah tersedia di `src/data/`.
 
 ## Project Structure
 
@@ -45,37 +52,33 @@ src/
 ## Checks
 
 ```bash
+npm test
 npm run check
 npm run build
 ```
 
-## MVP Pre-release
-
-MVP awal berfokus pada homepage sebagai pintu masuk roadmap IndopenSource:
-
-- Home menjelaskan posisi `indopensource.org`.
-- Projects sudah punya data awal dari `awesome-indonesia`.
-- Falsafah, Blog, Forum, dan Contact tersedia sebagai halaman roadmap.
-- Deployment memakai GitHub Pages bawaan repo lewat GitHub Actions.
-
-Rilis pre-release bisa dibuat dari tag `v0.1.0-mvp` setelah workflow Pages hijau.
-URL produksi setelah custom domain aktif adalah `https://indopensource.org/`.
-
 ## Deployment
 
-Deployment saat ini masih memakai GitHub Pages melalui workflow
-`.github/workflows/deploy-pages.yml`. Cloudflare production berikutnya akan
-dibangun dari branch `release`.
+Cloudflare terhubung langsung ke repository dan membuat preview untuk pull
+request atau branch non-production. Production hanya dibangun dari branch
+`release`.
 
 - Build command: `npm run build`
+- Deploy command: `npx wrangler deploy`
 - Output directory: `dist`
-- Source: GitHub Actions
+- Konfigurasi Worker: `wrangler.jsonc`
+- Production branch: `release`
 - Custom domain: `indopensource.org`
-- Pages base path: `/`
 
-Semua kontribusi tetap masuk ke `main`. Rilis produksi dipromosikan oleh anggota
-organisasi melalui pull request dari `main` ke `release`; jangan membuka pull
+Semua kontribusi masuk ke `main`. Anggota organisasi mempromosikan versi yang
+sudah diuji melalui pull request dari `main` ke `release`; jangan membuka pull
 request kontribusi langsung ke `release`.
+
+GitHub Pages sudah tidak digunakan. Deployment dan preview website ditangani
+oleh Cloudflare; workflow sinkronisasi konten hanya memperbarui data di `main`.
+
+Lihat [checklist release](docs/release-checklist.md) sebelum mempromosikan
+`main` ke `release`.
 
 ## Project Sync
 
@@ -88,8 +91,14 @@ Gunakan `GITHUB_TOKEN` atau `GH_TOKEN` untuk rate limit yang lebih lega.
 ## Blog Sync
 
 `npm run sync:blog` membaca artikel Markdown dari
-`IndopenSource/Blog-IndopenSource`, mengambil metadata commit penulis/rilis,
-dan menulis hasilnya ke `src/data/blog-posts.json`.
+`IndopenSource/Blog-IndopenSource`, mengambil tanggal commit pertama, commit
+terbaru, dan seluruh kontributor unik setiap artikel, lalu menulis hasilnya ke
+`src/data/blog-posts.json`. Halaman artikel menautkan commit terbaru tersebut
+agar riwayat sumber dapat diperiksa langsung.
+
+Artikel berstatus `draft` tetap dibangun pada URL `/blog/preview/{slug}/`,
+tetapi tidak ditampilkan di indeks blog, tidak masuk sitemap, dan memakai
+`noindex, nofollow, noarchive` sampai statusnya diterbitkan.
 
 ## Auto Sync
 
@@ -103,8 +112,20 @@ Workflow `.github/workflows/sync-content.yml` memperbarui data secara otomatis.
   - `sync-content`
 
 Jika data berubah, workflow membuat commit `Sync content data`. Setelah commit
-masuk `main`, workflow yang sama akan upload artifact dan deploy ulang GitHub
-Pages agar perubahan data langsung tayang.
+masuk `main`, perubahan mengikuti validasi dan alur promosi `main` ke `release`.
+Cloudflare kemudian membuat preview `main`; production tetap dipromosikan lewat
+pull request ke `release`.
+
+## Analytics & Search Verification
+
+Analytics aktif saat build Cloudflare menerima environment variable berikut:
+
+- `PUBLIC_CLOUDFLARE_WEB_ANALYTICS_TOKEN`
+- `PUBLIC_GOOGLE_ANALYTICS_ID` (format `G-XXXXXXXXXX`)
+- `PUBLIC_GOOGLE_SITE_VERIFICATION` (opsional)
+
+Nilainya merupakan identifier publik dan tidak perlu dimasukkan ke Git. Isi di
+pengaturan build Cloudflare untuk production dan preview sesuai kebutuhan.
 
 ## Contributing
 

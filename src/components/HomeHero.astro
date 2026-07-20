@@ -19,25 +19,23 @@ import { heroImage, HERO_PRELOAD_WIDTH, HERO_QUALITY } from '../lib/hero';
       </h1>
 
       <p class="mt-7 max-w-2xl text-[clamp(1.05rem,1.7vw,1.25rem)] leading-8 text-muted">
-        Rumah terbuka untuk merawat daftar proyek, mendokumentasikan falsafah,
-        menulis pembelajaran, dan menghubungkan kontributor open source Indonesia.
+        Rumah terbuka untuk merawat daftar proyek, menulis pembelajaran,
+        dan menghubungkan kontributor open source Indonesia.
       </p>
 
       <div class="mt-8 flex flex-wrap gap-3">
         <BaseButton href="/projects/">Lihat proyek</BaseButton>
-        <BaseButton href="https://github.com/orgs/IndopenSource/projects" variant="secondary">Roadmap GitHub</BaseButton>
       </div>
 
-      <dl class="mt-10 grid max-w-2xl grid-cols-2 gap-3 max-sm:grid-cols-1">
-        <div class="rounded-xl border border-line bg-paper p-4 shadow-sm">
-          <dt class="meta-row uppercase tracking-[0.08em]">Direktori</dt>
-          <dd class="mt-1 font-semibold text-ink">Awesome ID</dd>
-        </div>
-        <div class="rounded-xl border border-line bg-paper p-4 shadow-sm">
-          <dt class="meta-row uppercase tracking-[0.08em]">Lisensi</dt>
-          <dd class="mt-1 font-semibold text-ink">Open / Publik</dd>
-        </div>
-      </dl>
+      <a
+        class="riso-hover mt-10 block max-w-xs rounded-xl border border-line bg-paper p-4 shadow-sm"
+        href="https://github.com/IndopenSource/indopensource.org"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span class="meta-row uppercase tracking-[0.08em]">Lisensi</span>
+        <span class="mt-1 block font-semibold text-ink">Open / Publik ↗</span>
+      </a>
     </div>
 
     <div class="reveal reveal-2 relative mx-auto w-full max-w-xl lg:mx-0">

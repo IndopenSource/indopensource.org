@@ -4,15 +4,20 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import HomeHero from '../components/HomeHero.astro';
 import InfoCard from '../components/InfoCard.astro';
 import ProjectCard from '../components/ProjectCard.astro';
-import RoadmapTimeline from '../components/RoadmapTimeline.astro';
 import SectionHeader from '../components/SectionHeader.astro';
 import BaseButton from '../components/BaseButton.astro';
 import LightSvgMotion from '../components/LightSvgMotion.astro';
-import projects from '../data/projects.json';
+import projectsData from '../data/projects.json';
+import { roadmapPeriods } from '../data/roadmap';
 import { heroImage, HERO_PRELOAD_WIDTH, HERO_QUALITY } from '../lib/hero';
+import { rankProjectOwners, type Project } from '../lib/projects';
+import { withBase } from '../lib/urls';
 
+const projects = projectsData as Project[];
 const totalProjects = projects.length;
 const topProjects = projects.slice(0, 5);
+const roadmapPreview = roadmapPeriods.slice(0, 2);
+const topUsers = rankProjectOwners(projects).slice(0, 5);
 
 // Pre-generate the AVIF the hero <Image> will paint as its LCP candidate so we
 // can <link rel="preload"> the exact same /_astro/* file from <head>. Same src,
@@ -69,11 +74,13 @@ const heroPreload = await getImage({
         <span class="meta-row text-sun">// kenapa kami ada</span>
       </div>
       <blockquote class="reveal max-w-4xl border-l-[5px] border-sun pl-6 font-display text-[clamp(1.7rem,3.6vw,3rem)] font-semibold leading-[1.08] tracking-[-0.015em] text-paper">
-        Open source bukan cuma kode di GitHub — ini soal merawat catatan,
-        membuka pintu kontribusi, dan menulis ulang cerita teknologi Indonesia
-        secara terbuka.
+        Open source Indonesia itu soal merawat catatan, membuka pintu kontribusi,
+        kolaborasi dan menulis ulang cerita teknologi Indonesia secara terbuka.
       </blockquote>
-      <p class="reveal meta-row mt-6 text-sun">— IndopenSource · komunitas terbuka</p>
+      <div class="reveal mt-6 flex flex-wrap items-center gap-4">
+        <p class="meta-row text-sun">— IndopenSource · komunitas terbuka</p>
+        <BaseButton href="/falsafah/" variant="light">Baca falsafah</BaseButton>
+      </div>
     </div>
   </section>
 
@@ -101,7 +108,7 @@ const heroPreload = await getImage({
           Semua orang boleh ikut menulis catatannya
         </h2>
         <div class="reveal shrink-0 max-md:mt-2">
-          <BaseButton href="/contact/" variant="light">Mulai kontribusi</BaseButton>
+          <BaseButton href="/cara-berkontribusi/" variant="light">Mulai kontribusi</BaseButton>
         </div>
       </div>
       <p class="reveal mt-6 max-w-2xl font-body text-lg leading-7 text-paper">
@@ -119,13 +126,26 @@ const heroPreload = await getImage({
       <span class="section-number reveal reveal-1 mb-1 block leading-none" aria-hidden="true">02</span>
       <div class="flex items-start justify-between gap-6 max-md:flex-col max-md:items-start">
         <div class="min-w-0 grow">
-          <SectionHeader eyebrow="Roadmap" title="Urutan pekerjaan" />
+          <SectionHeader eyebrow="Roadmap" title="Dua langkah terdekat" />
         </div>
         <div class="shrink-0 max-md:mb-8">
-          <BaseButton href="/contact/">Gabung diskusi</BaseButton>
+          <BaseButton href="/roadmap/">Lihat selengkapnya</BaseButton>
         </div>
       </div>
-      <RoadmapTimeline />
+      <div class="grid gap-4 md:grid-cols-2">
+        {roadmapPreview.map((item, index) => (
+          <article class="riso-shadow border-2 border-ink bg-paper p-6">
+            <div class="flex items-start justify-between gap-4">
+              <span class="sticker">{item.period}</span>
+              <span class="font-display text-5xl font-black leading-none text-brand/15" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
+            </div>
+            <h3 class="display-sm mt-5 text-ink">{item.title}</h3>
+            <ul class="mt-5 space-y-3 font-body leading-7 text-muted">
+              {item.items.map((entry) => <li class="flex gap-2"><span class="font-bold text-brand" aria-hidden="true">→</span><span>{entry}</span></li>)}
+            </ul>
+          </article>
+        ))}
+      </div>
     </div>
   </section>
 
@@ -149,7 +169,9 @@ const heroPreload = await getImage({
       <span class="section-number reveal reveal-1 mb-1 block leading-none" aria-hidden="true">03</span>
       <div class="flex items-start justify-between gap-6 max-md:flex-col max-md:items-start">
         <div class="min-w-0 grow">
-          <SectionHeader eyebrow="Contoh proyek" title="Dari awesome-indonesia" />
+          <SectionHeader eyebrow="Awesome Indonesia" title="Repository proyek lokal" >
+            Pilihan proyek dari katalog awesome-indonesia.
+          </SectionHeader>
         </div>
         <div class="shrink-0 max-md:mb-8">
           <BaseButton href="/projects/" variant="secondary">Buka semua</BaseButton>
@@ -165,6 +187,59 @@ const heroPreload = await getImage({
             ))
           }
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="relative overflow-hidden border-t-[3px] border-ink bg-canvas py-18">
+    <div class="relative mx-auto w-[min(1120px,calc(100%-32px))]">
+      <div class="flex items-start justify-between gap-6 max-md:flex-col max-md:items-start">
+        <div class="min-w-0 grow">
+          <SectionHeader eyebrow="Top User" title="Penggerak proyek lokal" >
+            Peringkat berdasarkan akumulasi stars pada repository yang tercatat di direktori.
+          </SectionHeader>
+        </div>
+        <div class="shrink-0 max-md:mb-8"><BaseButton href="/users/" variant="secondary">Lihat semua</BaseButton></div>
+      </div>
+      <div class="-mx-4 overflow-x-auto px-4 pb-4 [scrollbar-width:thin]">
+        <div class="flex min-w-full snap-x snap-mandatory gap-4">
+          {topUsers.map((user, index) => (
+            <a class="riso-hover riso-shadow relative w-[min(280px,78vw)] shrink-0 snap-start border-2 border-ink bg-paper p-5" href={`https://github.com/${user.owner}`} target="_blank" rel="noopener noreferrer">
+              <span class="absolute right-4 top-2 font-display text-6xl font-black leading-none text-brand/10" aria-hidden="true">{index + 1}</span>
+              <img class="size-14 rounded-xl border-2 border-ink bg-canvas object-cover" src={user.avatarUrl} alt="" width="56" height="56" loading="lazy" decoding="async" />
+              <h3 class="mt-4 break-words font-display text-xl font-bold text-ink">{user.owner}</h3>
+              <p class="meta-row mt-3 flex flex-wrap gap-3 text-muted"><span>★ {user.stars.toLocaleString('id-ID')}</span><span>{user.repositories} repo</span></p>
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="border-t-[3px] border-ink bg-canvas py-16 md:py-20">
+    <div class="mx-auto w-[min(1120px,calc(100%-32px))]">
+      <SectionHeader eyebrow="Jelajahi" title="Ikuti ekosistemnya" >
+        Baca perkembangannya, kenali penggeraknya, atau bantu menjaga ruang terbuka ini.
+      </SectionHeader>
+      <div class="grid gap-4 md:grid-cols-3">
+        <a class="riso-hover riso-shadow border-2 border-ink bg-paper p-6" href={withBase('/blog/')}>
+          <i class="ph-fill ph-article text-3xl text-brand" aria-hidden="true"></i>
+          <h3 class="display-sm mt-4 text-ink">Blog</h3>
+          <p class="mt-2 font-body leading-7 text-muted">Kabar, gagasan, dan catatan dari komunitas.</p>
+          <span class="meta-row mt-5 block font-bold text-brand">Baca tulisan →</span>
+        </a>
+        <a class="riso-hover riso-shadow border-2 border-ink bg-paper p-6" href={withBase('/users/')}>
+          <i class="ph-fill ph-users-three text-3xl text-brand" aria-hidden="true"></i>
+          <h3 class="display-sm mt-4 text-ink">Top User</h3>
+          <p class="mt-2 font-body leading-7 text-muted">Lihat pemilik proyek dan akumulasi dampaknya.</p>
+          <span class="meta-row mt-5 block font-bold text-brand">Lihat peringkat →</span>
+        </a>
+        <a class="riso-hover riso-shadow border-2 border-ink bg-[#fbe9f1] p-6" href={withBase('/donasi/')}>
+          <i class="ph-fill ph-heart text-3xl text-[#bf3989]" aria-hidden="true"></i>
+          <h3 class="display-sm mt-4 text-ink">Donasi, sponsor & CSR</h3>
+          <p class="mt-2 font-body leading-7 text-muted">Dukung infrastruktur, pengetahuan, event, dan proyek potensial.</p>
+          <span class="meta-row mt-5 block font-bold text-[#9e2f73]">Lihat bentuk dukungan →</span>
+        </a>
       </div>
     </div>
   </section>

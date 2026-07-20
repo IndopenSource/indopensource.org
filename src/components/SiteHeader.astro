@@ -4,24 +4,20 @@ import { withBase } from '../lib/urls';
 import brandIcon from '../assets/brand/icon-192.png';
 
 const navItems = [
-  ['Home', '/'],
-  ['Falsafah', '/falsafah/'],
-  ['Proyek', '/projects/'],
-  ['Belajar', '/belajar/'],
-  ['Kontribusi', '/cara-berkontribusi/'],
-  ['Blog', '/blog/'],
-  ['Forum', '/forum/'],
-  ['FAQ', '/faq/'],
-  ['Donasi', '/donasi/'],
-  ['Kontak', '/contact/']
+  ['Home', '/', 'ph-house'],
+  ['Proyek', '/projects/', 'ph-grid-four'],
+  ['Blog', '/blog/', 'ph-article'],
+  ['Belajar', '/belajar/', 'ph-books'],
+  ['FAQ', '/faq/', 'ph-question'],
+  ['Donasi', '/donasi/', 'ph-heart']
 ];
 
 const mobileNavItems = [
   ['Home', '/', 'ph-house'],
   ['Proyek', '/projects/', 'ph-grid-four'],
-  ['Belajar', '/belajar/', 'ph-books'],
   ['Blog', '/blog/', 'ph-article'],
-  ['Forum', '/forum/', 'ph-chats-circle']
+  ['Belajar', '/belajar/', 'ph-books'],
+  ['Top User', '/users/', 'ph-ranking']
 ];
 
 const currentPath = Astro.url.pathname;
@@ -65,26 +61,44 @@ const currentPathWithoutBase = currentPath.replace(new RegExp(`^${baseUrl.replac
     {/* Desktop nav — mono uppercase labels, riso-underline reveal, sticker active state */}
     <div class="flex items-center justify-end gap-1 rounded-xl border border-line bg-canvas p-1 max-md:hidden">
       {
-        navItems.map(([label, href]) => {
+        navItems.map(([label, href, icon]) => {
           const isCurrent = currentPathWithoutBase === href;
+          const isDonation = href === '/donasi/';
           return isCurrent ? (
             <a
-              class="inline-flex items-center rounded-lg bg-paper px-3 py-2 text-sm font-semibold text-brand-dark shadow-sm ring-1 ring-line"
+              class:list={[
+                'inline-flex items-center gap-1.5 rounded-lg px-3 py-2 text-sm font-semibold shadow-sm ring-1',
+                isDonation ? 'bg-[#fbe9f1] text-[#bf3989] ring-[#f3b4d2]' : 'bg-paper text-brand-dark ring-line'
+              ]}
               href={withBase(href)}
               aria-current="page"
             >
+              <i class:list={['ph-fill text-base', icon]} aria-hidden="true"></i>
               {label}
             </a>
           ) : (
             <a
-              class="inline-flex items-center rounded-lg px-3 py-2 text-sm font-medium text-muted transition-colors hover:bg-paper hover:text-ink"
+              class:list={[
+                'inline-flex items-center gap-1.5 rounded-lg px-3 py-2 text-sm font-medium transition-colors',
+                isDonation ? 'text-[#bf3989] hover:bg-[#fbe9f1]' : 'text-muted hover:bg-paper hover:text-ink'
+              ]}
               href={withBase(href)}
             >
+              <i class:list={['ph-fill text-base', icon]} aria-hidden="true"></i>
               {label}
             </a>
           );
         })
       }
+      <a
+        class="inline-flex size-9 items-center justify-center rounded-lg text-ink transition-colors hover:bg-ink hover:text-paper"
+        href="https://github.com/IndopenSource"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="GitHub IndopenSource (situs eksternal)"
+      >
+        <i class="ph-fill ph-github-logo text-xl" aria-hidden="true"></i>
+      </a>
     </div>
   </nav>
 </header>

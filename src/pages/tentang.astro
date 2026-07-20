@@ -17,5 +17,11 @@ const focus = [
   <section class="grain border-b-[3px] border-ink bg-brand-dark py-16 text-paper md:py-20">
     <div class="mx-auto w-[min(1120px,calc(100%-32px))]"><span class="sticker">Arah kerja</span><p class="pull-quote mt-5 max-w-4xl text-paper">Open source menjadi lebih kuat ketika <span class="text-sun">jejak kerjanya</span> mudah ditemukan dan diteruskan.</p></div>
   </section>
-  <section class="bg-paper py-16 md:py-20"><div class="mx-auto w-[min(1120px,calc(100%-32px))]"><div class="mb-10 grid gap-4 border-y-[3px] border-ink py-5 font-mono text-sm font-bold uppercase tracking-[0.06em] text-brand-dark md:grid-cols-3"><span>01 / peta proyek</span><span>02 / pengetahuan terbuka</span><span>03 / kerja komunitas</span></div><div class="grid gap-4 md:grid-cols-3">{focus.map(([title, body], index) => <article class="riso-shadow border-2 border-ink bg-canvas p-6"><span class="section-number text-brand-dark">0{index + 1}</span><h2 class="display-sm mt-5 text-ink">{title}</h2><p class="mt-3 font-body leading-7 text-muted">{body}</p></article>)}</div><div class="mt-10"><BaseButton href="/komunitas/">Masuk ke komunitas</BaseButton></div></div></section>
+  <section class="bg-paper py-16 md:py-20">
+    <div class="mx-auto w-[min(1120px,calc(100%-32px))]">
+      <div class="mb-10 grid gap-4 border-y-[3px] border-ink py-5 font-mono text-sm font-bold uppercase tracking-[0.06em] text-brand-dark md:grid-cols-3"><span>01 / peta proyek</span><span>02 / pengetahuan terbuka</span><span>03 / kerja komunitas</span></div>
+      <div class="grid gap-4 md:grid-cols-3">{focus.map(([title, body], index) => <article class="riso-shadow border-2 border-ink bg-canvas p-6"><span class="section-number text-brand-dark">0{index + 1}</span><h2 class="display-sm mt-5 text-ink">{title}</h2><p class="mt-3 font-body leading-7 text-muted">{body}</p></article>)}</div>
+      <div class="mt-10 flex flex-wrap gap-3"><BaseButton href="/komunitas/">Lihat direktori komunitas</BaseButton><BaseButton href="/roadmap/" variant="secondary">Lihat roadmap</BaseButton><BaseButton href="/contact/" variant="secondary">Hubungi kami</BaseButton></div>
+    </div>
+  </section>
 </BaseLayout>

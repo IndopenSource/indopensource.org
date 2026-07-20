@@ -35,8 +35,23 @@ const staticPages: SitemapEntry[] = [
   { path: '/' },
   { path: '/falsafah/' },
   { path: '/projects/' },
+  { path: '/users/' },
+  { path: '/belajar/' },
   { path: '/blog/' },
   { path: '/forum/' },
+  { path: '/faq/' },
+  { path: '/cara-berkontribusi/' },
+  { path: '/kode-etik/' },
+  { path: '/roadmap/' },
+  { path: '/tentang/' },
+  { path: '/komunitas/' },
+  { path: '/program/' },
+  { path: '/tata-kelola/' },
+  { path: '/events/' },
+  { path: '/donasi/' },
+  { path: '/press/' },
+  { path: '/legal/' },
+  { path: '/security/' },
   { path: '/contact/' }
 ];
 
@@ -44,7 +59,7 @@ const blogPages: SitemapEntry[] = blogPosts
   .filter((post) => isPublished(post))
   .map((post) => ({
     path: `/blog/${post.slug}/`,
-    lastmod: toLastmod(post.releasedAt) ?? toLastmod(post.date)
+    lastmod: toLastmod(post.lastModifiedAt) ?? toLastmod(post.releasedAt) ?? toLastmod(post.date)
   }));
 
 const projectPages: SitemapEntry[] = projects.map((project) => ({

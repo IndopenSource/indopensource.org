@@ -161,6 +161,20 @@ async function getCommitMeta(path) {
   const firstCommit = commits.at(-1);
   const latestCommit = commits.at(0);
   const author = firstCommit?.author;
+  const authors = [];
+  const seenAuthors = new Set();
+
+  for (const item of commits.toReversed()) {
+    const name = item.author?.login || item.commit?.author?.name;
+    if (!name || seenAuthors.has(name.toLowerCase())) continue;
+    seenAuthors.add(name.toLowerCase());
+    authors.push({
+      name,
+      avatarUrl: item.author?.avatar_url || '',
+      url: item.author?.html_url || '',
+      committedAt: item.commit?.author?.date || ''
+    });
+  }
 
   return {
     author: {
@@ -169,6 +183,9 @@ async function getCommitMeta(path) {
       url: author?.html_url || firstCommit?.html_url || `https://github.com/${BLOG_REPO}`,
       committedAt: firstCommit?.commit?.author?.date || ''
     },
+    authors,
+    latestCommitSha: latestCommit?.sha || '',
+    latestCommitUrl: latestCommit?.html_url || '',
     // The latest commit timestamp is the date of the most recent EDIT, not a
     // publication/release event (CC-9). Name it honestly as "last modified" so
     // the rendered label can stop calling an edit timestamp a release date.
@@ -244,6 +261,14 @@ for (const path of articleFiles) {
   const commitMeta = await getCommitMeta(path);
   const editorialDate = (data.date || '').trim();
   const resolvedAuthor = resolveAuthor(commitMeta.author, data.authors);
+  const resolvedAuthors = resolvedAuthor.fromFrontmatter
+    ? [
+        resolvedAuthor.author,
+        ...commitMeta.authors.filter(
+          (author) => author.name.toLowerCase() !== (resolvedAuthor.author?.name || '').toLowerCase()
+        )
+      ]
+    : commitMeta.authors.length ? commitMeta.authors : [resolvedAuthor.author];
 
   posts.push({
     slug: slugFromPath(path),
@@ -264,7 +289,10 @@ for (const path of articleFiles) {
     // edit timestamp separately for provenance (CC-9).
     releasedAt: editorialDate || commitMeta.author.committedAt || commitMeta.lastModifiedAt,
     lastModifiedAt: commitMeta.lastModifiedAt,
+    latestCommitSha: commitMeta.latestCommitSha,
+    latestCommitUrl: commitMeta.latestCommitUrl,
     author: resolvedAuthor.author,
+    authors: resolvedAuthors,
     authorFromFrontmatter: resolvedAuthor.fromFrontmatter
   });
 }

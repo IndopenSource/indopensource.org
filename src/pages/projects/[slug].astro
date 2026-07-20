@@ -22,7 +22,10 @@ const repoName = project.fullName.split('/').at(-1) || project.fullName;
 // no longer fetches GitHub or parses Markdown.
 const readmeHtml = project.readmeHtml || '';
 // Snippet-clamped description for <meta>/OG, falling back to the raw one (SEO-6).
-const metaDescription = project.metaDescription || project.description;
+const sourceDescription = project.metaDescription || project.description;
+const metaDescription = sourceDescription === 'Proyek dari daftar awesome-indonesia.'
+  ? `${repoName} adalah proyek open source Indonesia yang terdaftar di direktori IndopenSource.`
+  : sourceDescription;
 const topics = project.topics ?? [];
 
 // SoftwareSourceCode structured data so search engines understand each project
@@ -48,10 +51,11 @@ const jsonLd = {
 ---
 
 <BaseLayout
-  title={`${project.fullName} - Project IndopenSource`}
+  title={`${repoName} - IndopenSource`}
   description={metaDescription}
   image={project.ownerAvatarUrl || undefined}
   type="article"
+  modifiedAt={updatedDate}
   jsonLd={jsonLd}
 >
   <section class="relative overflow-hidden border-b-[3px] border-ink bg-paper py-14 md:py-16">

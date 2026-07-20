@@ -10,6 +10,7 @@ interface Props {
 const { projects } = Astro.props;
 const languages = [...new Set(projects.map((project) => project.language).filter((language): language is string => Boolean(language)))].sort();
 const topics = [...new Set(projects.flatMap((project) => project.topics || []))].sort().slice(0, 80);
+const repoName = (fullName: string) => fullName.split('/').at(-1) || fullName;
 const formatDate = (value?: string) => value
   ? new Intl.DateTimeFormat('id-ID', { dateStyle: 'medium' }).format(new Date(value))
   : '-';
@@ -110,7 +111,8 @@ const formatDate = (value?: string) => value
                       ? <img class="size-9 shrink-0 rounded-md border border-line bg-canvas object-cover" src={project.ownerAvatarUrl} alt="" width="36" height="36" loading="lazy" decoding="async" />
                       : <span class="flex size-9 shrink-0 items-center justify-center rounded-md border border-line bg-canvas font-mono text-sm text-brand" aria-hidden="true">{'{}'}</span>}
                     <span class="min-w-0">
-                      <a class="break-words font-semibold text-ink hover:text-brand hover:underline" href={withBase(`/projects/${projectSlug(project.fullName)}/`)}>{project.fullName}</a>
+                      <a class="break-words font-semibold text-ink hover:text-brand hover:underline" href={withBase(`/projects/${projectSlug(project.fullName)}/`)}>{repoName(project.fullName)}</a>
+                      {project.owner && <span class="meta-row mt-0.5 block font-normal text-brand-dark">oleh {project.owner}</span>}
                       <span class="mt-1 block max-w-xl truncate font-body text-sm font-normal text-muted">{project.description}</span>
                       {!project.syncFailed && (
                         <span class="meta-row mt-2 flex flex-wrap gap-x-2 gap-y-1 font-normal text-muted">

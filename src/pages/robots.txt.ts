@@ -10,7 +10,16 @@ export const GET: APIRoute = ({ site }) => {
   const origin = site ?? new URL('https://indopensource.org');
   const sitemapUrl = new URL('/sitemap.xml', origin).toString();
 
-  return new Response(`User-agent: *
+  return new Response(`User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: *
 Allow: /
 
 Sitemap: ${sitemapUrl}

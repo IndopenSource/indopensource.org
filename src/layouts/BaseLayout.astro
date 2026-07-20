@@ -10,6 +10,11 @@ interface Props {
   image?: string;
   /** Open Graph `og:type` (e.g. `website`, `article`). */
   type?: string;
+  /** Search-engine indexing policy for this page. */
+  robots?: string;
+  /** ISO timestamps used by article Open Graph metadata. */
+  publishedAt?: string;
+  modifiedAt?: string;
   /**
    * Structured data injected as a JSON-LD `<script>`. Pass a plain object
    * (schema.org graph) and the layout serialises + hashes it for CSP. (SEO-4)
@@ -30,6 +35,9 @@ const {
   description = 'Roadmap website IndopenSource untuk proyek open source Indonesia.',
   image = '/brand/indopensource-hero.jpg',
   type = 'website',
+  robots = 'index, follow',
+  publishedAt,
+  modifiedAt,
   jsonLd,
   heroPreloadHref
 } = Astro.props as Props;
@@ -39,15 +47,48 @@ const SITE_ORIGIN = Astro.site || new URL('https://indopensource.org');
 const baseUrl = import.meta.env.BASE_URL.replace(/\/?$/, '/');
 const canonicalUrl = new URL(Astro.url.pathname.replace(baseUrl, '/'), SITE_ORIGIN).toString();
 const imageUrl = new URL(image, SITE_ORIGIN).toString();
+const cloudflareBeaconToken = import.meta.env.PUBLIC_CLOUDFLARE_WEB_ANALYTICS_TOKEN;
+const googleAnalyticsId = import.meta.env.PUBLIC_GOOGLE_ANALYTICS_ID;
+const googleSiteVerification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION;
 
-// Default site-level structured data so every page advertises the
-// organisation/site even when a page does not pass its own graph. (SEO-4)
-const structuredData = jsonLd ?? {
+const siteUrl = new URL('/', SITE_ORIGIN).toString();
+const organizationId = `${siteUrl}#organization`;
+const websiteId = `${siteUrl}#website`;
+const suppliedNodes = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [{
+  '@type': 'WebPage',
+  '@id': `${canonicalUrl}#webpage`,
+  url: canonicalUrl,
+  name: title,
+  description,
+  inLanguage: 'id-ID',
+  isPartOf: { '@id': websiteId },
+  about: { '@id': organizationId }
+}];
+const structuredData = {
   '@context': 'https://schema.org',
-  '@type': 'WebSite',
-  name: 'IndopenSource',
-  url: new URL('/', SITE_ORIGIN).toString(),
-  description
+  '@graph': [
+    {
+      '@type': 'Organization',
+      '@id': organizationId,
+      name: 'IndopenSource',
+      url: siteUrl,
+      logo: new URL('/brand/indopensource-logo.png', SITE_ORIGIN).toString(),
+      sameAs: [
+        'https://github.com/IndopenSource',
+        'https://www.instagram.com/indopensource',
+        'https://www.threads.com/@indopensource'
+      ]
+    },
+    {
+      '@type': 'WebSite',
+      '@id': websiteId,
+      name: 'IndopenSource',
+      url: siteUrl,
+      inLanguage: 'id-ID',
+      publisher: { '@id': organizationId }
+    },
+    ...suppliedNodes.map(({ '@context': _context, ...node }) => node)
+  ]
 };
 // Escape `<` so a `</script>` inside synced data (repo description, post
 // title) can't terminate the inline block. Escaped before hashing, so the CSP
@@ -82,15 +123,16 @@ for (const byte of new Uint8Array(jsonLdDigest)) {
   jsonLdBinary += String.fromCharCode(byte);
 }
 const jsonLdHash = btoa(jsonLdBinary);
+const styleSrc = import.meta.env.DEV ? "style-src 'self' 'unsafe-inline'" : "style-src 'self'";
 const csp = [
   "default-src 'self'",
   "base-uri 'self'",
-  `script-src 'self' 'sha256-${jsonLdHash}'`,
-  "style-src 'self'",
+  `script-src 'self' 'sha256-${jsonLdHash}'${cloudflareBeaconToken ? ' https://static.cloudflareinsights.com' : ''}${googleAnalyticsId ? ' https://www.googletagmanager.com' : ''}`,
+  styleSrc,
   // First-party + GitHub avatar/raw image hosts only — no third-party beacons.
-  "img-src 'self' data: https://raw.githubusercontent.com https://avatars.githubusercontent.com",
+  `img-src 'self' data: https://raw.githubusercontent.com https://avatars.githubusercontent.com${googleAnalyticsId ? ' https://*.google-analytics.com https://*.googletagmanager.com' : ''}`,
   "font-src 'self' data:",
-  "connect-src 'self'",
+  `connect-src 'self'${cloudflareBeaconToken ? ' https://cloudflareinsights.com' : ''}${googleAnalyticsId ? ' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com' : ''}`,
   "frame-src https://drive.google.com",
   "form-action 'self'",
   "frame-ancestors 'none'",
@@ -108,7 +150,8 @@ const csp = [
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="theme-color" content="#4d7c0f" />
-    <meta name="robots" content="index, follow" />
+    <meta name="robots" content={robots} />
+    {googleSiteVerification && <meta name="google-site-verification" content={googleSiteVerification} />}
     <!-- Warm up TLS to the GitHub hosts that serve project avatars and blog thumbnails (PERF-4). -->
     <link rel="preconnect" href="https://avatars.githubusercontent.com" crossorigin />
     <link rel="preconnect" href="https://raw.githubusercontent.com" crossorigin />
@@ -124,15 +167,18 @@ const csp = [
       )
     }
     <link rel="icon" href={`${baseUrl}brand/favicon.ico`} sizes="any" />
-    <link rel="icon" href={`${baseUrl}brand/favicon-32.png`} type="image/png" />
+    <link rel="icon" href={`${baseUrl}brand/favicon-96.png`} type="image/png" sizes="96x96" />
     <link rel="apple-touch-icon" href={`${baseUrl}brand/apple-touch-icon.png`} />
     <meta property="og:site_name" content="IndopenSource" />
+    <meta property="og:locale" content="id_ID" />
     <meta property="og:type" content={type} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalUrl} />
     <meta property="og:image" content={imageUrl} />
     <meta property="og:image:alt" content={title} />
+    {type === 'article' && publishedAt && <meta property="article:published_time" content={publishedAt} />}
+    {type === 'article' && modifiedAt && <meta property="article:modified_time" content={modifiedAt} />}
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
@@ -201,6 +247,32 @@ const csp = [
         for (const el of targets) {
           observer.observe(el);
         }
+      }
+
+      const cloudflareBeaconToken = import.meta.env.PUBLIC_CLOUDFLARE_WEB_ANALYTICS_TOKEN;
+      if (cloudflareBeaconToken) {
+        const beacon = document.createElement('script');
+        beacon.defer = true;
+        beacon.src = 'https://static.cloudflareinsights.com/beacon.min.js';
+        beacon.dataset.cfBeacon = JSON.stringify({ token: cloudflareBeaconToken });
+        document.head.append(beacon);
+      }
+
+      const googleAnalyticsId = import.meta.env.PUBLIC_GOOGLE_ANALYTICS_ID;
+      if (googleAnalyticsId) {
+        const tag = document.createElement('script');
+        tag.async = true;
+        tag.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(googleAnalyticsId)}`;
+        document.head.append(tag);
+
+        const analyticsWindow = window as typeof window & {
+          dataLayer?: unknown[][];
+          gtag?: (...args: unknown[]) => void;
+        };
+        const dataLayer = analyticsWindow.dataLayer ||= [];
+        const gtag = analyticsWindow.gtag ||= (...args: unknown[]) => dataLayer.push(args);
+        gtag('js', new Date());
+        gtag('config', googleAnalyticsId);
       }
     </script>
   </body>

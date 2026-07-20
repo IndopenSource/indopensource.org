@@ -9,6 +9,7 @@ import smartDigitalEnergyOg from '../assets/og/learning/smart-digital-energy.jpg
 export interface LearningResource {
   slug: string;
   title: string;
+  seoTitle?: string;
   year: number;
   topic: string;
   description: string;
@@ -38,6 +39,7 @@ export const learningResources: LearningResource[] = [
   {
     slug: 'ai-yang-proaktif',
     title: 'AI yang Proaktif: Memahami Agentic AI dengan Contoh Sederhana',
+    seoTitle: 'Agentic AI Proaktif dengan Contoh Sederhana',
     year: 2025,
     topic: 'Agentic AI',
     description: 'Pengenalan agentic AI melalui contoh yang mudah diikuti.',
@@ -47,6 +49,7 @@ export const learningResources: LearningResource[] = [
   {
     slug: 'menulis-jurnal-dibantu-ai',
     title: 'Menulis Jurnal Dibantu AI: Data-First Anti-Halusinasi',
+    seoTitle: 'Menulis Jurnal dengan AI Tanpa Halusinasi',
     year: 2025,
     topic: 'Literasi AI',
     description: 'Panduan menggunakan AI secara berbasis data untuk penulisan jurnal.',
@@ -56,6 +59,7 @@ export const learningResources: LearningResource[] = [
   {
     slug: 'roadmap-ai-gotong-royong',
     title: 'Roadmap AI Gotong Royong bagi Bangsa Indonesia',
+    seoTitle: 'Roadmap AI Gotong Royong Indonesia',
     year: 2025,
     topic: 'Transformasi Digital',
     description: 'Pandangan tentang arah pengembangan AI yang kolaboratif di Indonesia.',
@@ -65,6 +69,7 @@ export const learningResources: LearningResource[] = [
   {
     slug: 'smart-digital-energy',
     title: 'Smart Digital Energy: Inovasi Teknologi Open Source untuk Pencapaian Target Produksi Migas',
+    seoTitle: 'Smart Digital Energy dengan Open Source',
     year: 2025,
     topic: 'Energi',
     description: 'Contoh pemanfaatan teknologi open source untuk sektor energi.',
