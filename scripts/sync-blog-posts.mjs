@@ -262,7 +262,10 @@ for (const path of articleFiles) {
   const editorialDate = (data.date || '').trim();
   const resolvedAuthor = resolveAuthor(commitMeta.author, data.authors);
   const resolvedAuthors = resolvedAuthor.fromFrontmatter
-    ? [resolvedAuthor.author]
+    ? [
+        resolvedAuthor.author,
+        ...commitMeta.authors.filter((author) => author.name.toLowerCase() !== resolvedAuthor.author.name.toLowerCase())
+      ]
     : commitMeta.authors.length ? commitMeta.authors : [resolvedAuthor.author];
 
   posts.push({
