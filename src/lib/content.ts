@@ -46,6 +46,8 @@ export interface BlogPost {
   /** ISO timestamp of the most recent edit commit; distinct from `releasedAt`. */
   lastModifiedAt?: string;
   author: PostAuthor;
+  /** Unique contributors derived from the Markdown file's commit history. */
+  authors?: PostAuthor[];
   /**
    * Whether `author` was taken from frontmatter `authors[]` (true) or
    * derived from git commit metadata (false/undefined). Lets the UI label

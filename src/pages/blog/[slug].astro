@@ -16,10 +16,12 @@ export function getStaticPaths() {
 const { post } = Astro.props;
 // Render Markdown through the shared sanitizing pipeline (no raw `set:html`).
 const html = renderArticle(post.content);
-// Author link comes from frontmatter/git — allowlist the scheme before href.
-const authorUrl = safeHref(post.author?.url);
+const authors = post.authors?.length ? post.authors : post.author ? [post.author] : [];
 const authorDate = post.author?.committedAt
   ? new Intl.DateTimeFormat('id-ID', { dateStyle: 'long' }).format(new Date(post.author.committedAt))
+  : '';
+const modifiedDate = post.lastModifiedAt
+  ? new Intl.DateTimeFormat('id-ID', { dateStyle: 'long' }).format(new Date(post.lastModifiedAt))
   : '';
 const releaseDate = post.releasedAt
   ? new Intl.DateTimeFormat('id-ID', { dateStyle: 'long' }).format(new Date(post.releasedAt))
@@ -30,7 +32,7 @@ const heroAlt = `Thumbnail artikel: ${post.title}`;
 // Provenance-aware author byline: frontmatter `authors[]` vs git commit metadata.
 const authorByline = post.authorFromFrontmatter
   ? `Disebutkan di frontmatter artikel${authorDate ? ` (commit pertama ${authorDate})` : ''}.`
-  : `Diambil otomatis dari commit pertama file artikel${authorDate ? ` pada ${authorDate}` : ''}.`;
+  : `Kontributor diambil dari riwayat commit sumber Markdown${authorDate ? `. Terbit ${authorDate}` : ''}${modifiedDate ? ` · diperbarui ${modifiedDate}` : ''}.`;
 
 // BlogPosting structured data (passed to BaseLayout's hashed jsonLd prop so it
 // is CSP-allow-listed in <head>, not a separate inline script).
@@ -42,8 +44,8 @@ const jsonLd = {
   image: thumbnailUrl,
   ...(post.releasedAt ? { datePublished: post.releasedAt } : {}),
   ...(post.lastModifiedAt ? { dateModified: post.lastModifiedAt } : {}),
-  ...(post.author?.name
-    ? { author: { '@type': 'Person', name: post.author.name, ...(authorUrl ? { url: authorUrl } : {}) } }
+  ...(authors.length
+    ? { author: authors.map((author) => ({ '@type': 'Person', name: author.name, ...(safeHref(author.url) ? { url: safeHref(author.url) } : {}) })) }
     : {}),
   publisher: { '@type': 'Organization', name: 'IndopenSource' }
 };
@@ -55,7 +57,7 @@ const jsonLd = {
     <div class="meta-row mt-5 flex flex-wrap items-center gap-x-3 gap-y-2 font-semibold text-ink uppercase tracking-[0.05em]">
       <span class="text-brand-dark">/blog/{post.slug}</span>
       {releaseDate && <><span aria-hidden="true">·</span><span>Rilis {releaseDate}</span></>}
-      {post.author?.name && <><span aria-hidden="true">·</span><span class="text-brand-dark">oleh {post.author.name}</span></>}
+      {authors.length > 0 && <><span aria-hidden="true">·</span><span class="text-brand-dark">oleh {authors.map((author) => author.name).join(' & ')}</span></>}
     </div>
     <div class="mt-5 flex flex-wrap items-center gap-2">
       <span class="sticker">{post.status}</span>
@@ -74,19 +76,24 @@ const jsonLd = {
         <span class="sticker">Penulis</span>
         <span class="rule grow"></span>
       </div>
-      <div class="flex items-center gap-4">
-        {
-          post.author?.avatarUrl && (
-            <img class="size-14 shrink-0 border-2 border-ink bg-paper riso-shadow-sm" src={post.author.avatarUrl} alt={`${post.author.name} avatar`} width="56" height="56" loading="lazy" decoding="async" />
-          )
-        }
-        <div class="min-w-0">
-          {authorUrl
-            ? <a class="display-sm text-brand underline decoration-2 underline-offset-2 hover:text-accent" href={authorUrl}>{post.author?.name}</a>
-            : <span class="display-sm text-brand">{post.author?.name}</span>}
-          <p class="mt-1 font-body text-sm leading-6 text-muted">{authorByline}</p>
-        </div>
+      <div class="grid gap-4 sm:grid-cols-2">
+        {authors.map((author) => {
+          const authorUrl = safeHref(author.url);
+          return (
+            <div class="flex items-center gap-4">
+              {author.avatarUrl && (
+                <img class="size-14 shrink-0 border-2 border-ink bg-paper riso-shadow-sm" src={author.avatarUrl} alt={`${author.name} avatar`} width="56" height="56" loading="lazy" decoding="async" />
+              )}
+              <div class="min-w-0">
+                {authorUrl
+                  ? <a class="display-sm text-brand underline decoration-2 underline-offset-2 hover:text-accent" href={authorUrl}>{author.name}</a>
+                  : <span class="display-sm text-brand">{author.name}</span>}
+              </div>
+            </div>
+          );
+        })}
       </div>
+      <p class="mt-4 font-body text-sm leading-6 text-muted">{authorByline}</p>
       <hr class="rule my-6" />
       <div class="flex flex-wrap gap-3">
         <a
