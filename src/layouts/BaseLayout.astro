@@ -10,6 +10,8 @@ interface Props {
   image?: string;
   /** Open Graph `og:type` (e.g. `website`, `article`). */
   type?: string;
+  /** Search-engine indexing policy for this page. */
+  robots?: string;
   /** ISO timestamps used by article Open Graph metadata. */
   publishedAt?: string;
   modifiedAt?: string;
@@ -33,6 +35,7 @@ const {
   description = 'Roadmap website IndopenSource untuk proyek open source Indonesia.',
   image = '/brand/indopensource-hero.jpg',
   type = 'website',
+  robots = 'index, follow',
   publishedAt,
   modifiedAt,
   jsonLd,
@@ -47,7 +50,6 @@ const imageUrl = new URL(image, SITE_ORIGIN).toString();
 const cloudflareBeaconToken = import.meta.env.PUBLIC_CLOUDFLARE_WEB_ANALYTICS_TOKEN;
 const googleAnalyticsId = import.meta.env.PUBLIC_GOOGLE_ANALYTICS_ID;
 const googleSiteVerification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION;
-const analyticsEnabled = Boolean(cloudflareBeaconToken || googleAnalyticsId);
 
 const siteUrl = new URL('/', SITE_ORIGIN).toString();
 const organizationId = `${siteUrl}#organization`;
@@ -125,7 +127,7 @@ const styleSrc = import.meta.env.DEV ? "style-src 'self' 'unsafe-inline'" : "sty
 const csp = [
   "default-src 'self'",
   "base-uri 'self'",
-  `script-src 'self' 'sha256-${jsonLdHash}'${analyticsEnabled ? ' https://static.cloudflareinsights.com https://www.googletagmanager.com' : ''}`,
+  `script-src 'self' 'sha256-${jsonLdHash}'${cloudflareBeaconToken ? ' https://static.cloudflareinsights.com' : ''}${googleAnalyticsId ? ' https://www.googletagmanager.com' : ''}`,
   styleSrc,
   // First-party + GitHub avatar/raw image hosts only — no third-party beacons.
   `img-src 'self' data: https://raw.githubusercontent.com https://avatars.githubusercontent.com${googleAnalyticsId ? ' https://*.google-analytics.com https://*.googletagmanager.com' : ''}`,
@@ -148,7 +150,7 @@ const csp = [
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="theme-color" content="#4d7c0f" />
-    <meta name="robots" content="index, follow" />
+    <meta name="robots" content={robots} />
     {googleSiteVerification && <meta name="google-site-verification" content={googleSiteVerification} />}
     <!-- Warm up TLS to the GitHub hosts that serve project avatars and blog thumbnails (PERF-4). -->
     <link rel="preconnect" href="https://avatars.githubusercontent.com" crossorigin />
@@ -165,7 +167,7 @@ const csp = [
       )
     }
     <link rel="icon" href={`${baseUrl}brand/favicon.ico`} sizes="any" />
-    <link rel="icon" href={`${baseUrl}brand/favicon-32.png`} type="image/png" />
+    <link rel="icon" href={`${baseUrl}brand/favicon-96.png`} type="image/png" sizes="96x96" />
     <link rel="apple-touch-icon" href={`${baseUrl}brand/apple-touch-icon.png`} />
     <meta property="og:site_name" content="IndopenSource" />
     <meta property="og:locale" content="id_ID" />

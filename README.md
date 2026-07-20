@@ -96,6 +96,10 @@ terbaru, dan seluruh kontributor unik setiap artikel, lalu menulis hasilnya ke
 `src/data/blog-posts.json`. Halaman artikel menautkan commit terbaru tersebut
 agar riwayat sumber dapat diperiksa langsung.
 
+Artikel berstatus `draft` tetap dibangun pada URL `/blog/preview/{slug}/`,
+tetapi tidak ditampilkan di indeks blog, tidak masuk sitemap, dan memakai
+`noindex, nofollow, noarchive` sampai statusnya diterbitkan.
+
 ## Auto Sync
 
 Workflow `.github/workflows/sync-content.yml` memperbarui data secara otomatis.

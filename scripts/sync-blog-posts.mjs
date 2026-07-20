@@ -261,6 +261,9 @@ for (const path of articleFiles) {
   const commitMeta = await getCommitMeta(path);
   const editorialDate = (data.date || '').trim();
   const resolvedAuthor = resolveAuthor(commitMeta.author, data.authors);
+  const resolvedAuthors = resolvedAuthor.fromFrontmatter
+    ? [resolvedAuthor.author]
+    : commitMeta.authors.length ? commitMeta.authors : [resolvedAuthor.author];
 
   posts.push({
     slug: slugFromPath(path),
@@ -284,7 +287,7 @@ for (const path of articleFiles) {
     latestCommitSha: commitMeta.latestCommitSha,
     latestCommitUrl: commitMeta.latestCommitUrl,
     author: resolvedAuthor.author,
-    authors: commitMeta.authors.length ? commitMeta.authors : [resolvedAuthor.author],
+    authors: resolvedAuthors,
     authorFromFrontmatter: resolvedAuthor.fromFrontmatter
   });
 }
