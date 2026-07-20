@@ -156,10 +156,10 @@
     "url": "https://github.com/jipraks/yt-short-clipper",
     "homepage": "",
     "language": "Python",
-    "stars": 895,
+    "stars": 896,
     "forks": 279,
     "topics": [],
-    "updatedAt": "2026-07-20T02:08:17Z",
+    "updatedAt": "2026-07-20T13:29:52Z",
     "pushedAt": "2026-07-18T02:05:39Z",
     "latestRelease": {
       "name": "YT Short Clipper v2.0.5-beta",
@@ -200,7 +200,7 @@
     "archived": false,
     "licenseSpdx": "MIT",
     "createdAt": "2016-07-15T09:39:20Z",
-    "openIssues": 1,
+    "openIssues": 2,
     "openPullRequests": 1,
     "subscribers": 22,
     "communityHealth": 37,
@@ -291,7 +291,7 @@
     "url": "https://github.com/fajarhide/omni",
     "homepage": "https://omni.weekndlabs.com",
     "language": "Rust",
-    "stars": 308,
+    "stars": 309,
     "forks": 29,
     "topics": [
       "ai-agents",
@@ -313,8 +313,8 @@
       "token-reduction",
       "token-savings"
     ],
-    "updatedAt": "2026-07-20T08:00:03Z",
-    "pushedAt": "2026-07-17T11:39:55Z",
+    "updatedAt": "2026-07-20T12:02:08Z",
+    "pushedAt": "2026-07-20T13:01:34Z",
     "latestRelease": {
       "name": "v0.6.2",
       "tagName": "v0.6.2",
@@ -324,8 +324,8 @@
     "archived": false,
     "licenseSpdx": "MIT",
     "createdAt": "2026-03-15T03:38:04Z",
-    "openIssues": 0,
-    "openPullRequests": 0,
+    "openIssues": 13,
+    "openPullRequests": 2,
     "subscribers": 4,
     "communityHealth": 71,
     "readmeHtml": "<div>\n  <img src=\"https://raw.githubusercontent.com/fajarhide/omni/main/media/logo.png\" alt=\"OMNI Logo\" width=\"300\" /><h2>OMNI</h2>\n<p>\n    <em>Noise-canceling context and long-term memory for your AI agent. Stop paying Claude to read 10,000 lines of terminal noise like a headphone for AI agent</em>\n</p><p><a href=\"https://github.com/fajarhide/omni/blob/main/README.md\" rel=\"noopener noreferrer\">🇺🇸 English</a> | <a href=\"https://github.com/fajarhide/omni/blob/main/i18n/README-ja.md\" rel=\"noopener noreferrer\">🇯🇵 日本語</a> | <a href=\"https://github.com/fajarhide/omni/blob/main/i18n/README-zh.md\" rel=\"noopener noreferrer\">🇨🇳 简体中文</a> | <a href=\"https://github.com/fajarhide/omni/blob/main/i18n/README-ar.md\" rel=\"noopener noreferrer\">🇸🇦 العربية</a> | <a href=\"https://github.com/fajarhide/omni/blob/main/i18n/README-id.md\" rel=\"noopener noreferrer\">🇮🇩 Bahasa Indonesia</a> | <a href=\"https://github.com/fajarhide/omni/blob/main/i18n/README-vi.md\" rel=\"noopener noreferrer\">🇻🇳 Tiếng Việt</a> | <a href=\"https://github.com/fajarhide/omni/blob/main/i18n/README-ko.md\" rel=\"noopener noreferrer\">🇰🇷 한국어</a></p>\n<p><a href=\"https://github.com/fajarhide/omni/actions/workflows/ci.yml\" rel=\"noopener noreferrer\"><img src=\"https://github.com/fajarhide/omni/actions/workflows/ci.yml/badge.svg\" alt=\"CI\" /></a>\n<a href=\"https://github.com/fajarhide/omni/releases\" rel=\"noopener noreferrer\"><img src=\"https://img.shields.io/github/v/release/fajarhide/omni\" alt=\"Release\" /></a>\n  <a href=\"https://www.rust-lang.org/\" rel=\"noopener noreferrer\"><img src=\"https://img.shields.io/badge/built_with-Rust-dca282.svg\" alt=\"Rust\" /></a>\n  <a href=\"https://modelcontextprotocol.io/\" rel=\"noopener noreferrer\"><img src=\"https://img.shields.io/badge/MCP-compatible-green.svg?style=flat-square\" alt=\"MCP\" /></a>\n  <a href=\"https://github.com/fajarhide/omni/blob/main/LICENSE\" rel=\"noopener noreferrer\"><img src=\"https://img.shields.io/github/license/fajarhide/omni\" alt=\"License: MIT\" /></a>\n  <a href=\"https://hits.sh/github.com/fajarhide/omni/\" rel=\"noopener noreferrer\"><img src=\"https://hits.sh/github.com/fajarhide/omni.svg\" alt=\"Hits\" /></a>\n<br /><br />\n<b>\nUp to 85% less tokens · Cross-Session Memory · ~40% faster · Zero hallucination triggers </b></p>\n</div><hr />\n<p>Every AI coding assistant has two massive problems.</p>\n<p><strong>1. They read everything.</strong><br />Build logs.<br />Docker logs.<br />CI logs.<br />Progress bars.<br />ANSI colors.<br />Thousands of tokens... to find one line. Claude isn't expensive. Your terminal is.</p>\n<p><strong>2. They forget everything.</strong><br />Every time you restart Cursor, or switch from Claude Code to Windsurf, your agent gets amnesia. You have to re-explain the project goal. You have to remind them of the same framework gotchas over and over again.</p>\n<p>OMNI fixes both.</p>\n<hr />\n<h2>The Difference</h2>\n<p><strong>Problem 1: Your terminal drowns out the signal</strong></p>\n<h3><code>npm install</code></h3>\n<p><strong>Without OMNI:</strong> 10,000 lines of \"Downloading...\", \"Extracting...\", and warnings. AI reads everything.<br /><strong>With OMNI:</strong> Package conflict. Node 20 required.</p>\n<h3><code>terraform apply</code></h3>\n<p><strong>Without OMNI:</strong> 4,500 lines of unchanged execution plans.<br /><strong>With OMNI:</strong> The 3 resources that failed IAM permissions.</p>\n<h3><code>docker build</code></h3>\n<p><strong>Without OMNI:</strong> Endless cache hits, layer hashes, and download progress bars.<br /><strong>With OMNI:</strong> Missing dependency <code>libpq-dev</code> at layer 12.</p>\n<h3><code>pytest</code></h3>\n<p><strong>Without OMNI:</strong> 500 passing tests and verbose setup logs.<br /><strong>With OMNI:</strong> Only the 2 failed assertions and their stack traces.</p>\n<h3><code>cargo build</code></h3>\n<p><strong>Without OMNI:</strong> 300 lines of compiling dependencies and warnings.<br /><strong>With OMNI:</strong> The exact line where the borrow checker failed.</p>\n<h3><code>kubectl logs</code></h3>\n<p><strong>Without OMNI:</strong> Thousands of successful health checks and normal traffic logs.<br /><strong>With OMNI:</strong> The crash loop and panic stack trace.</p>\n<h3><code>git diff</code></h3>\n<p><strong>Without OMNI:</strong> Formatting tweaks, generated lockfiles, and whitespace changes.<br /><strong>With OMNI:</strong> Only the core business logic changes.</p>\n<h3><code>go test</code></h3>\n<p><strong>Without OMNI:</strong> Pages of standard output from passing packages.<br /><strong>With OMNI:</strong> The single nil pointer dereference.</p>\n<h3><code>mvn package</code></h3>\n<p><strong>Without OMNI:</strong> Megabytes of \"Downloading from maven central\".<br /><strong>With OMNI:</strong> Compilation error in <code>UserService.java</code>.</p>\n<h3><code>pip install</code></h3>\n<p><strong>Without OMNI:</strong> Resolution logs and wheel building outputs.<br /><strong>With OMNI:</strong> Dependency conflict with <code>numpy</code>.</p>\n<h3><code>webpack / vite</code></h3>\n<p><strong>Without OMNI:</strong> 2,000 chunk asset lists and build times.<br /><strong>With OMNI:</strong> Missing module resolution in <code>App.tsx</code>.</p>\n<h3><code>helm install</code></h3>\n<p><strong>Without OMNI:</strong> Entire rendered YAML output of all templates.<br /><strong>With OMNI:</strong> Pod scheduling failure due to missing secret.</p>\n<h3><code>ansible-playbook</code></h3>\n<p><strong>Without OMNI:</strong> \"ok\" and \"skipped\" statuses for 50 servers.<br /><strong>With OMNI:</strong> The single \"failed\" task on <code>web-03</code>.</p>\n<h3>GitHub Actions (CI/CD)</h3>\n<p><strong>Without OMNI:</strong> Complete workflow logs including environment setup.<br /><strong>With OMNI:</strong> Only the specific step that exited with code 1.</p>\n<p><strong>Problem 2: Your agent forgets everything overnight</strong></p>\n<h3>Starting a new session</h3>\n<p><strong>Without OMNI:</strong> \"Please re-explain the project structure, the auth module is broken, and we use Postgres not MySQL.\"<br /><strong>With OMNI:</strong> The agent already knows. It picks up where you left off.</p>\n<h3>Fixing the same bug twice</h3>\n<p><strong>Without OMNI:</strong> Agent hits the same framework gotcha it already solved yesterday because it has no memory.<br /><strong>With OMNI:</strong> The fix is already stored. <code>omni recall</code> surfaces the exact solution in under 10ms.</p>\n<h3>Multi-IDE workflows (Cursor → Claude Code)</h3>\n<p><strong>Without OMNI:</strong> New IDE, new agent, zero context. You're starting from scratch.<br /><strong>With OMNI:</strong> Session summary is injected automatically. New agent is immediately up to speed.</p>\n<hr />\n<h2>Why This Matters</h2>\n<p>The code you <em>don't</em> send to the AI is just as important as the code you do.</p>\n<p>When you feed an AI megabytes of terminal noise, it suffers from context bloat—hallucinating fixes for the wrong warnings and burning your API budget on irrelevant output.</p>\n<p>When you restart an agent and it has no memory, you lose hours re-establishing context that should have been preserved automatically.</p>\n<p>OMNI solves both, invisibly:</p>\n<ul>\n<li><strong>Less noise</strong> → lower cost, faster responses, zero hallucination triggers.</li>\n<li><strong>Persistent memory</strong> → no more re-explaining your project, no more repeating fixes.</li>\n<li><strong>One install</strong> → works silently with every agent you already use.</li>\n</ul>\n<hr />\n<h2>Benchmarks</h2>\n<p>The honest headline, measured on the release binary against <strong>1,810 real command\nexecutions</strong> replayed from one developer's actual usage:</p>\n<ul>\n<li><strong>58.9% fewer bytes</strong> reaching the model across the whole mix (15.0 MB → 6.2 MB).</li>\n<li><strong>63.6% of those calls saved nothing at all.</strong> OMNI handed the output straight\nback, adding <strong>zero</strong> bytes. Every byte of the saving comes from the other 36.4%,\nwhere there was real noise to cut.</li>\n<li><strong>Structured output is never touched.</strong> JSON, YAML, NDJSON and CSV pass through\nbyte-for-byte, because a corrupted payload costs more than a missed compression.</li>\n</ul>\n<p>That second bullet is the number most tools in this category do not print. A tool\nthat claims to save 90% of every command is telling you it summarises output you\nneeded.</p>\n<div>\n<img src=\"https://omni.weekndlabs.com/media/performance.png\" alt=\"OMNI\" width=\"600\" />\n</div><p>Where the saving actually comes from, over the same 1,810 executions:</p>\n<table>\n<thead>\n<tr>\n<th>Command</th>\n<th>Calls</th>\n<th>Input</th>\n<th>Output</th>\n<th>Saved</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><code>cargo</code></td>\n<td>29</td>\n<td>424 KB</td>\n<td>13 KB</td>\n<td><strong>96.8%</strong></td>\n</tr>\n<tr>\n<td><code>git</code></td>\n<td>256</td>\n<td>5.9 MB</td>\n<td>509 KB</td>\n<td><strong>91.3%</strong></td>\n</tr>\n<tr>\n<td><code>ls</code></td>\n<td>52</td>\n<td>71 KB</td>\n<td>29 KB</td>\n<td><strong>59.5%</strong></td>\n</tr>\n<tr>\n<td><code>kubectl</code></td>\n<td>212</td>\n<td>4.4 MB</td>\n<td>2.3 MB</td>\n<td><strong>48.0%</strong></td>\n</tr>\n<tr>\n<td><code>find</code></td>\n<td>39</td>\n<td>83 KB</td>\n<td>53 KB</td>\n<td><strong>36.2%</strong></td>\n</tr>\n<tr>\n<td><code>grep</code></td>\n<td>184</td>\n<td>534 KB</td>\n<td>385 KB</td>\n<td><strong>27.8%</strong></td>\n</tr>\n<tr>\n<td><code>cat</code></td>\n<td>85</td>\n<td>515 KB</td>\n<td>468 KB</td>\n<td><strong>9.1%</strong></td>\n</tr>\n</tbody></table>\n<p><code>git</code> and <code>cargo</code> carry the result; <code>cat</code> and <code>grep</code> are close to a no-op. OMNI\nearns its place on noisy, repetitive tooling output and gets out of the way\neverywhere else.</p>\n<p>Single fixtures from <code>tests/fixtures/</code>, if you want to reproduce one by hand:</p>\n<table>\n<thead>\n<tr>\n<th>Command / Context</th>\n<th>Input</th>\n<th>Output</th>\n<th>Saved</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><code>cargo build</code> (large, successful)</td>\n<td>3,220 B</td>\n<td>9 B</td>\n<td><strong>99.7%</strong></td>\n</tr>\n<tr>\n<td><code>cargo test</code> (490 passed, 10 failed)</td>\n<td>16.5 KB</td>\n<td>1,100 B</td>\n<td><strong>93.3%</strong></td>\n</tr>\n<tr>\n<td><code>pytest</code> (failures)</td>\n<td>730 B</td>\n<td>136 B</td>\n<td><strong>81.4%</strong></td>\n</tr>\n<tr>\n<td><code>git status</code> (dirty)</td>\n<td>496 B</td>\n<td>113 B</td>\n<td><strong>77.2%</strong></td>\n</tr>\n<tr>\n<td><code>git diff</code> (multi-file)</td>\n<td>397 B</td>\n<td>220 B</td>\n<td><strong>44.6%</strong></td>\n</tr>\n<tr>\n<td><code>docker build</code> (heavy noise)</td>\n<td>9.2 KB</td>\n<td>5.8 KB</td>\n<td><strong>37.2%</strong></td>\n</tr>\n<tr>\n<td><code>kubectl get pods</code> (mixed)</td>\n<td>840 B</td>\n<td>762 B</td>\n<td><strong>9.3%</strong></td>\n</tr>\n</tbody></table>\n<p><strong>Latency is a real cost, not zero.</strong> OMNI runs on every hooked command, and the\nprice grows with your history: a 496-byte <code>git status</code> takes ~82 ms against a\nfresh database and ~308 ms against a 97 MB one. A 16.5 KB <code>cargo test</code> takes\n~276 ms. Budget for it.</p>\n<p><em>To see your own actual token savings, just run <code>omni stats</code> after a few days of usage.</em></p>\n<hr />\n<h2>Quick Start &amp; Installation</h2>\n<p>Omni is incredibly easy to set up. It natively integrates into your terminal.</p>\n<p><strong>macOS / Linux:</strong></p>\n<pre><code class=\"language-bash\"># 1. Install via Homebrew\nbrew install fajarhide/tap/omni\n\n# 2. Setup Omni (Interactive Menu for Claude, VS Code, OpenCode, Codex, Antigravity)\nomni init\n\n# 3. Verify it's working\nomni doctor\n\n# 4. Or auto-fix any issues\nomni doctor --fix\n\n# 5. Check Current Status\nomni init --status\n</code></pre>\n<p><strong>Universal Installer (macOS / Linux / WSL):</strong></p>\n<pre><code class=\"language-bash\">curl -fsSL omni.weekndlabs.com/install | bash\n</code></pre>\n<p><strong>Windows (PowerShell):</strong></p>\n<pre><code class=\"language-powershell\">irm omni.weekndlabs.com/install.ps1 | iex\n</code></pre>\n<hr />\n<h2>Integrations</h2>\n<p>OMNI works seamlessly with the agentic tools you already use. It intercepts their terminal executions automatically.</p>\n<ul>\n<li>Claude Code</li>\n<li>Cursor</li>\n<li>Windsurf</li>\n<li>Roo Code</li>\n<li>OpenAI Codex</li>\n<li>Antigravity CLI</li>\n</ul>\n<hr />\n<h2>Adaptive Memory OS</h2>\n<p>OMNI isn't just a terminal filter—it's a cure for AI amnesia.</p>\n<p>If you've ever worked with an AI agent for more than an hour, you know the pain of context loss. You restart the agent, and suddenly it forgets what you were working on. It forgets the project goal. It starts making the exact same mistakes it made yesterday because it forgot the repository's undocumented quirks.</p>\n<p>OMNI's Memory OS runs silently in the background to solve this:</p>\n<ul>\n<li><strong>Stop Re-Explaining the Goal (<code>omni goal</code>)</strong>: Set your North Star objective once. OMNI will relentlessly remind the agent of this exact priority on every single prompt, preventing it from drifting off-task.</li>\n<li><strong>Never Lose Your Train of Thought (Session Continuity)</strong>: If Cursor crashes or you switch to Claude Code, OMNI instantly injects a compressed summary of your last session. The new agent knows exactly which files were hot and what the last active error was, picking up right where you left off.</li>\n<li><strong>Teach It Once (<code>omni remember</code>)</strong>: Stop fixing the same hallucination. Agents can save project-specific rules, gotchas, and architecture decisions directly into OMNI's local SQLite backend. When they get stuck later, they automatically pull the exact answer back out via semantic search.</li>\n</ul>\n<p>Your agent gets smarter about your codebase every single day, and you never have to repeat yourself again.</p>\n<hr />\n<h2>How it works</h2>\n<p>Omni operates purely locally using a deterministic <code>Read → Guard → Score → Collapse → Distill → Persist</code> pipeline.</p>\n<pre><code class=\"language-mermaid\">flowchart LR\n    Command[Raw Tool Output] --&gt; Hook[Omni Hook]\n    Hook --&gt; Score[Scorer Engine]\n    Score --&gt;|Critical=1.0, Noise=0.1| Distill[Content Distiller]\n    Distill --&gt; Clean[Clean Context]\n    Command --&gt; SQLite[(RewindStore SQLite)]\n</code></pre>\n<p>If the AI <em>really</em> needs the dropped noise, OMNI's local SQLite <strong>RewindStore</strong> keeps the full uncompressed log safely hashed, allowing the agent to retrieve it anytime.</p>\n<hr />\n<h2>Architecture</h2>\n<div>\n  <img src=\"https://raw.githubusercontent.com/fajarhide/omni/main/media/architecture.svg\" alt=\"OMNI Architecture Diagram\" width=\"100%\" />\n</div><p>Built in Rust for imperceptible latency.</p>\n<ul>\n<li><strong>Pipeline Latency</strong>: &lt; 10ms overhead.</li>\n<li><strong>Memory</strong>: Operates via efficient streams, keeping memory usage flat even on 20,000-line logs.</li>\n<li><strong>Fail Open</strong>: If OMNI panics, it fails silently and passes the raw output through. It will never crash your host agent.</li>\n</ul>\n<pre><code class=\"language-bash\"># Development\ncargo build --release\ncargo test --all\nmake fmt &amp;&amp; make clippy\n</code></pre>\n<hr />\n<h2>FAQ</h2>\n<p><strong>Does Omni permanently delete my logs?</strong><br />No. The raw logs are compressed and stored locally in the SQLite RewindStore. The AI receives a hash and can retrieve the full log if needed.</p>\n<p><strong>Will this slow down my terminal?</strong><br />No. OMNI is written in Rust and executes the distillation pipeline in under 10ms.</p>\n<p><strong>Can I add my own filters?</strong><br />Yes. You can teach OMNI to strip noise specific to your internal tools using TOML:</p>\n<pre><code class=\"language-toml\"># ~/.omni/signals/custom.toml\n[filters.my_tool]\nmatch_command = \"^internal-tool\\\\b\"\nstrip_lines_matching = [\"^DEBUG\", \"syncing...\"]\n</code></pre>\n<h2>Contributing &amp; License</h2>\n<p>This is a passion project built for the era of Agentic AI. Whether you're here to save money on tokens, test out free models, or help build the ultimate agentic toolbelt, contributions are always welcome!</p>\n<ul>\n<li><strong>Development</strong>: Want to build from source? Run <code>make ci</code> and <code>cargo build</code>. Read our <a href=\"https://github.com/fajarhide/omni/blob/main/CONTRIBUTING.md\" rel=\"noopener noreferrer\">CONTRIBUTING.md</a> for details.</li>\n<li><strong>License</strong>: <a href=\"https://github.com/fajarhide/omni/blob/main/LICENSE\" rel=\"noopener noreferrer\">MIT License</a></li>\n</ul>\n\n<p>\n  <a href=\"https://star-history.com/#fajarhide/omni&amp;Date\" rel=\"noopener noreferrer\">\n    \n      \n      \n      <img alt=\"Star History Chart\" src=\"https://api.star-history.com/svg?repos=fajarhide/omni&amp;type=Date\" width=\"600\" />\n    \n  </a>\n</p>\n\nBuild with ❤️ by [Fajar Hidayat](https://github.com/fajarhide)\n"
@@ -340,7 +340,7 @@
     "url": "https://github.com/hadziqmtqn/erd-builder-pro",
     "homepage": "https://www.erdbuilderpro.com",
     "language": "TypeScript",
-    "stars": 168,
+    "stars": 169,
     "forks": 32,
     "topics": [
       "coding",
@@ -352,8 +352,8 @@
       "productivity",
       "tiptap-editor"
     ],
-    "updatedAt": "2026-07-18T14:00:08Z",
-    "pushedAt": "2026-07-20T00:13:11Z",
+    "updatedAt": "2026-07-20T09:52:59Z",
+    "pushedAt": "2026-07-20T13:51:15Z",
     "latestRelease": {
       "name": "v3.1.3",
       "tagName": "v3.1.3",
@@ -396,7 +396,7 @@
       "terminal-emulator",
       "workspace-manager"
     ],
-    "updatedAt": "2026-07-19T15:08:06Z",
+    "updatedAt": "2026-07-20T13:04:18Z",
     "pushedAt": "2026-07-20T02:15:44Z",
     "latestRelease": {
       "name": "Termul Manager v0.4.8",
@@ -449,7 +449,7 @@
     "homepage": "",
     "language": "Java",
     "stars": 132,
-    "forks": 97,
+    "forks": 98,
     "topics": [],
     "updatedAt": "2026-07-13T09:56:33Z",
     "pushedAt": "2026-07-01T22:57:27Z",
@@ -473,7 +473,7 @@
     "url": "https://github.com/codecoradev/uteke",
     "homepage": "https://codecora.dev",
     "language": "Rust",
-    "stars": 120,
+    "stars": 121,
     "forks": 14,
     "topics": [
       "ai",
@@ -490,7 +490,7 @@
       "sqlite",
       "vector-database"
     ],
-    "updatedAt": "2026-07-20T08:45:17Z",
+    "updatedAt": "2026-07-20T09:55:38Z",
     "pushedAt": "2026-07-20T01:24:13Z",
     "latestRelease": {
       "name": "Release v0.8.0",
@@ -1042,7 +1042,7 @@
     "url": "https://github.com/rahmanef63/os-vps",
     "homepage": "",
     "language": "TypeScript",
-    "stars": 40,
+    "stars": 41,
     "forks": 7,
     "topics": [
       "browser-shell",
@@ -1065,7 +1065,7 @@
       "web-desktop",
       "web-terminal"
     ],
-    "updatedAt": "2026-07-19T15:00:07Z",
+    "updatedAt": "2026-07-20T12:46:27Z",
     "pushedAt": "2026-07-18T00:55:36Z",
     "latestRelease": null,
     "archived": false,
@@ -1362,8 +1362,8 @@
       "pmtiles",
       "wildlife"
     ],
-    "updatedAt": "2026-07-19T10:57:46Z",
-    "pushedAt": "2026-07-19T10:57:43Z",
+    "updatedAt": "2026-07-20T10:31:49Z",
+    "pushedAt": "2026-07-20T10:31:33Z",
     "latestRelease": {
       "name": "Mandum Rimba v1.0.0",
       "tagName": "v1.0.0",
@@ -1633,8 +1633,8 @@
       "windows-app",
       "windows-desktop"
     ],
-    "updatedAt": "2026-07-20T01:25:17Z",
-    "pushedAt": "2026-07-20T09:10:11Z",
+    "updatedAt": "2026-07-20T14:10:16Z",
+    "pushedAt": "2026-07-20T14:11:33Z",
     "latestRelease": {
       "name": "v0.3.2",
       "tagName": "v0.3.2",
@@ -1644,7 +1644,7 @@
     "archived": false,
     "licenseSpdx": "MIT",
     "createdAt": "2026-02-23T13:59:12Z",
-    "openIssues": 3,
+    "openIssues": 1,
     "openPullRequests": 0,
     "subscribers": 0,
     "communityHealth": 75,
@@ -2454,8 +2454,8 @@
     "stars": 1,
     "forks": 0,
     "topics": [],
-    "updatedAt": "2026-07-17T08:16:56Z",
-    "pushedAt": "2026-07-17T08:16:32Z",
+    "updatedAt": "2026-07-20T13:35:57Z",
+    "pushedAt": "2026-07-20T13:35:09Z",
     "latestRelease": {
       "name": "v1.1.0",
       "tagName": "v1.1.0",
