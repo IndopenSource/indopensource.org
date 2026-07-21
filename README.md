@@ -105,7 +105,7 @@ tetapi tidak ditampilkan di indeks blog, tidak masuk sitemap, dan memakai
 Workflow `.github/workflows/sync-content.yml` memperbarui data secara otomatis.
 
 - Manual: jalankan workflow `Sync content data`.
-- Schedule: berjalan setiap 6 jam.
+- Schedule: berjalan setiap jam pada menit ke-17.
 - Dispatch dari repo lain:
   - `sync-projects`
   - `sync-blog`

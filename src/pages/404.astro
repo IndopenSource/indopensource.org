@@ -1,0 +1,19 @@
+---
+import BaseButton from '../components/BaseButton.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHeader from '../components/PageHeader.astro';
+---
+
+<BaseLayout
+  title="Halaman tidak ditemukan - IndopenSource"
+  description="Halaman yang Anda cari tidak ditemukan."
+  robots="noindex, nofollow"
+>
+  <PageHeader eyebrow="404" title="Halaman tidak ditemukan." centered>
+    <p>Alamatnya mungkin berubah, salah ketik, atau halaman tersebut sudah tidak tersedia.</p>
+    <div class="mt-8 flex flex-wrap justify-center gap-3">
+      <BaseButton href="/">Kembali ke beranda</BaseButton>
+      <BaseButton href="/projects/" variant="secondary">Lihat proyek</BaseButton>
+    </div>
+  </PageHeader>
+</BaseLayout>
