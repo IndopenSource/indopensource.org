@@ -75,7 +75,7 @@ const statusLegend = [
             const thumbnail = post.thumbnail || '/brand/indopensource-hero.jpg';
             const thumbnailUrl = /^https?:\/\//.test(thumbnail) ? thumbnail : withBase(thumbnail);
             const publishedDate = post.releasedAt
-              ? new Intl.DateTimeFormat('id-ID', { dateStyle: 'long' }).format(new Date(post.releasedAt))
+              ? new Intl.DateTimeFormat('id-ID', { dateStyle: 'long', timeZone: 'UTC' }).format(new Date(post.releasedAt))
               : '';
 
             return (

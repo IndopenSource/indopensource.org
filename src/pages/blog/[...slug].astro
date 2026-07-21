@@ -30,7 +30,7 @@ const seoTitle = post.slug === 'bagaimana-open-source-mampu-bertahan'
   ? 'Mengapa Open Source Bertahan Puluhan Tahun - IndopenSource'
   : `${post.title} - IndopenSource`;
 const releaseDate = post.releasedAt
-  ? new Intl.DateTimeFormat('id-ID', { dateStyle: 'long' }).format(new Date(post.releasedAt))
+  ? new Intl.DateTimeFormat('id-ID', { dateStyle: 'long', timeZone: 'UTC' }).format(new Date(post.releasedAt))
   : '';
 const thumbnail = post.thumbnail || '/brand/indopensource-hero.jpg';
 const thumbnailUrl = /^https?:\/\//.test(thumbnail) ? thumbnail : withBase(thumbnail);
