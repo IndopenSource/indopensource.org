@@ -1,5 +1,43 @@
 [
   {
+    "slug": "it-camp-2026-open-source-ai-lokal",
+    "path": "content/2026/07/it-camp-2026-open-source-ai-lokal.md",
+    "year": "2026",
+    "month": "07",
+    "title": "IT Camp 2026: Open Source dan AI Lokal Dipelajari lewat Praktik Langsung",
+    "description": "Catatan dari IT Camp 2026 tentang AI lokal, SymbiotOS, keamanan siber, dan pentingnya belajar teknologi secara mandiri.",
+    "date": "2026-07-21",
+    "tags": [
+      "event",
+      "open-source",
+      "artificial-intelligence",
+      "teknologi-lokal"
+    ],
+    "status": "published",
+    "thumbnail": "https://raw.githubusercontent.com/IndopenSource/Blog-IndopenSource/main/content/2026/07/assets/it-camp-2026.jpg",
+    "content": "Sebanyak 122 peserta mengikuti IT Camp 2026 pada 18–19 Juli 2026 di Villa\nZanara, Bogor. Peserta termudanya berusia 15 tahun. Penyelenggaraan tahun ini\nsekaligus menandai 17 tahun IT Camp digelar setiap tahun.\n\nAcara diselenggarakan oleh [Yayasan Onno Center\nInternational](https://onnocenter.or.id/) bersama Pusat Siber TNI Angkatan\nDarat (Pussiberad). Sebagai peserta, saya melihat satu pola yang terasa kuat\nsepanjang acara: teknologi tidak berhenti sebagai bahan presentasi. Para\npemateri memperlihatkan hasil kerja mereka dan mempraktikkannya di hadapan\npeserta.\n\n> “Kalau kalian sadar, pemateri-pemateri ini tidak hanya berteori. Mereka semua\n> langsung demo dan praktik, sesuatu yang jarang sekali kalian temukan di\n> tempat lain.” — Prof. Onno W. Purbo, pendiri Onno Center\n\nPendekatan tersebut membuat peserta tidak hanya mengenal istilah baru, tetapi\njuga melihat bahwa teknologi dapat dipelajari, dibongkar, dan dikembangkan\nsecara mandiri.\n\n## AI lokal sebagai jalan untuk belajar mandiri\n\nSalah satu pokok pembahasan IT Camp 2026 adalah membangun AI yang dapat\ndijalankan pada perangkat dan infrastruktur sendiri. Dzaq R. Purbo\nmempraktikkan penggunaan Ollama, Open WebUI, dan *Retrieval-Augmented\nGeneration* (RAG) untuk mengolah pengetahuan dari dokumen lokal.\n\nAI lokal memberi ruang belajar yang berbeda dari layanan siap pakai. Peserta\ndapat memahami bagaimana model dijalankan, bagaimana data diberikan, serta\nbagaimana sebuah jawaban dihasilkan. Data juga tidak harus dikirim ke layanan\neksternal, sehingga pengguna memiliki kontrol lebih besar atas prosesnya.\n\nSemangat ini dekat dengan open source, dimana alat dapat dipelajari dari dalam,\ndisesuaikan dengan kebutuhan, dan dikembangkan bersama. Kemandirian bukan\nberarti mengerjakan semuanya sendirian, melainkan memiliki kemampuan untuk\nmemahami dan menentukan teknologi yang digunakan.\n\n## SymbiotOS dan sistem operasi yang dekat dengan pengguna\n\nPada 19 Juli, Ahmad Haris memperkenalkan SymbiotOS, sistem operasi *mobile*\nberbasis open source yang dirancang tanpa aplikasi bawaan berlebihan dan\nmemberi perhatian pada privasi pengguna.\n\nBagian yang paling menarik adalah dukungan bahasa dan aksara Jawa. Contoh ini\nmenunjukkan bahwa sistem operasi lokal bukan hanya mengganti nama atau\ntampilan. Teknologi dapat disesuaikan dengan bahasa, kebiasaan, dan kebutuhan\nmasyarakat yang sering tidak menjadi prioritas produk global.\n\nKarena kode dan perkakasnya dapat dipelajari, pengembangan sistem seperti\nSymbiotOS juga membuka peluang bagi pelajar dan pengembang Indonesia untuk\nmemahami sistem operasi melalui praktik nyata.\n\n## AI untuk Infrastruktur dan keamanan siber\n\nDimaz Arno, yang juga tampil pada 19 Juli, mendemonstrasikan bagaimana *AI\nagent* dapat membantu proses *penetration testing*. Dalam salah satu\ndemonstrasi, AI digunakan untuk menguji keamanan sebuah aplikasi permainan\nAndroid.\n\nDemo tersebut memperlihatkan bahwa AI dapat menjalankan tahapan teknis dengan\ncepat. Namun, kemudahan itu juga menegaskan pentingnya etika, izin, dan\npemahaman keamanan. Perkakas keamanan seharusnya dipakai pada sistem yang\nmemang memberi izin untuk diuji.\n\nProf. Onno W. Purbo turut membahas penggunaan AI untuk *Security Operation\nCenter* dan *Open Source Intelligence*. Wilson Lisan CEO Efison juga menjelaskan kebutuhan\ninfrastruktur *high-performance computing* dan menjelaskan bagaimana pengalamannya\nmembangun oprek hardware sampai membangun HPC di Indonesia, sementara sesi-sesi lain\nmemperlihatkan penerapan AI pada pengolahan informasi dan pekerjaan teknis.\n\n## Lebih penting dari mengikuti tren\n\nIT Camp 2026 menunjukkan bahwa pembicaraan mengenai AI di Indonesia tidak\nharus berhenti pada pemakaian produk dari luar. Model AI dapat dijalankan\nsecara lokal, sistem operasi dapat disesuaikan dengan bahasa daerah, dan\nsoftware open source dapat menjadi tempat belajar yang bermanfaat.\n\nBagi saya, kekuatan acara ini bukan hanya banyaknya teknologi yang\ndiperlihatkan. Hal yang lebih penting adalah keberanian para pemateri untuk\nmembuka proses kerja mereka. Peserta dapat melihat kegagalan, penyesuaian, dan\ncara sebuah sistem dibangun dengan pengalaman yang sulit diperoleh bila teknologi\nhanya diperkenalkan melalui teori.\n\nOpen source menyediakan jalur untuk melanjutkan pembelajaran tersebut setelah\nacara selesai. Peserta dapat mencoba alat alat yang sama, membaca dokumentasi,\nmempelajari kode, lalu membagikan kembali temuannya kepada orang lain.",
+    "sourceUrl": "https://github.com/IndopenSource/Blog-IndopenSource/blob/main/content/2026/07/it-camp-2026-open-source-ai-lokal.md",
+    "releasedAt": "2026-07-21",
+    "lastModifiedAt": "2026-07-21T07:08:39Z",
+    "latestCommitSha": "9ec313751f9d2050819b98606c9918a3ab592360",
+    "latestCommitUrl": "https://github.com/IndopenSource/Blog-IndopenSource/commit/9ec313751f9d2050819b98606c9918a3ab592360",
+    "author": {
+      "name": "wauputr4",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/103489788?v=4",
+      "url": "https://github.com/wauputr4",
+      "committedAt": "2026-07-21T06:39:04Z"
+    },
+    "authors": [
+      {
+        "name": "wauputr4",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/103489788?v=4",
+        "url": "https://github.com/wauputr4",
+        "committedAt": "2026-07-21T06:39:04Z"
+      }
+    ],
+    "authorFromFrontmatter": false
+  },
+  {
     "slug": "bagaimana-open-source-mampu-bertahan",
     "path": "content/2026/07/bagaimana-open-source-mampu-bertahan.md",
     "year": "2026",
