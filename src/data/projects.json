@@ -9,7 +9,7 @@
     "url": "https://github.com/faisalman/ua-parser-js",
     "homepage": "https://uaparser.dev/",
     "language": "JavaScript",
-    "stars": 10166,
+    "stars": 10167,
     "forks": 1220,
     "topics": [
       "analytics",
@@ -21,7 +21,7 @@
       "user-agent",
       "user-agent-parser"
     ],
-    "updatedAt": "2026-07-20T20:25:02Z",
+    "updatedAt": "2026-07-21T11:48:35Z",
     "pushedAt": "2026-07-20T18:03:11Z",
     "latestRelease": {
       "name": "v2.0.10",
@@ -140,7 +140,7 @@
     "archived": false,
     "licenseSpdx": "",
     "createdAt": "2016-05-21T10:55:38Z",
-    "openIssues": 352,
+    "openIssues": 353,
     "openPullRequests": 6,
     "subscribers": 110,
     "communityHealth": 50,
@@ -253,7 +253,7 @@
     "url": "https://github.com/Drenzzz/ADBKit",
     "homepage": "",
     "language": "TypeScript",
-    "stars": 326,
+    "stars": 327,
     "forks": 38,
     "topics": [
       "adb",
@@ -264,7 +264,7 @@
       "wails",
       "wails-app"
     ],
-    "updatedAt": "2026-07-15T07:04:27Z",
+    "updatedAt": "2026-07-21T11:20:49Z",
     "pushedAt": "2026-07-15T07:04:13Z",
     "latestRelease": {
       "name": "v1.3",
@@ -313,8 +313,8 @@
       "token-reduction",
       "token-savings"
     ],
-    "updatedAt": "2026-07-21T10:05:21Z",
-    "pushedAt": "2026-07-21T10:21:32Z",
+    "updatedAt": "2026-07-21T10:37:52Z",
+    "pushedAt": "2026-07-21T10:37:02Z",
     "latestRelease": {
       "name": "v0.6.3",
       "tagName": "v0.6.3",
@@ -324,7 +324,7 @@
     "archived": false,
     "licenseSpdx": "MIT",
     "createdAt": "2026-03-15T03:38:04Z",
-    "openIssues": 10,
+    "openIssues": 9,
     "openPullRequests": 0,
     "subscribers": 4,
     "communityHealth": 71,
@@ -352,13 +352,13 @@
       "productivity",
       "tiptap-editor"
     ],
-    "updatedAt": "2026-07-20T09:52:59Z",
-    "pushedAt": "2026-07-21T10:29:22Z",
+    "updatedAt": "2026-07-21T12:20:47Z",
+    "pushedAt": "2026-07-21T12:21:09Z",
     "latestRelease": {
-      "name": "v3.1.3",
-      "tagName": "v3.1.3",
-      "url": "https://github.com/hadziqmtqn/erd-builder-pro/releases/tag/v3.1.3",
-      "publishedAt": "2026-07-10T01:05:20Z"
+      "name": "v3.1.4",
+      "tagName": "v3.1.4",
+      "url": "https://github.com/hadziqmtqn/erd-builder-pro/releases/tag/v3.1.4",
+      "publishedAt": "2026-07-21T12:21:09Z"
     },
     "archived": false,
     "licenseSpdx": "",
@@ -841,7 +841,7 @@
     "licenseSpdx": "MIT",
     "createdAt": "2026-06-11T13:28:54Z",
     "openIssues": 3,
-    "openPullRequests": 3,
+    "openPullRequests": 2,
     "subscribers": 0,
     "communityHealth": 100,
     "readmeHtml": "<h2>bansos.dev</h2>\n<p><a href=\"https://www.npmjs.com/package/bansosdev\" rel=\"noopener noreferrer\"><img src=\"https://img.shields.io/npm/v/bansosdev?label=bansosdev&amp;color=10b981\" alt=\"npm bansosdev\" /></a>\n<a href=\"https://github.com/wauputr4/bansos/blob/main/LICENSE\" rel=\"noopener noreferrer\"><img src=\"https://img.shields.io/badge/License-MIT-10b981.svg\" alt=\"License: MIT\" /></a>\n<a href=\"https://kit.svelte.dev/\" rel=\"noopener noreferrer\"><img src=\"https://img.shields.io/badge/Built%20with-SvelteKit-ff3e00\" alt=\"Built with SvelteKit\" /></a>\n<a href=\"https://bansos.dev/\" rel=\"noopener noreferrer\"><img src=\"https://img.shields.io/badge/Deploy-Cloudflare%20Pages-F38020?logo=cloudflare&amp;logoColor=white\" alt=\"Deploy: Cloudflare Pages\" /></a>\n<a href=\"https://discord.gg/m4WFaQpNGs\" rel=\"noopener noreferrer\"><img src=\"https://img.shields.io/badge/Discord-Join%20Server-5865F2?logo=discord&amp;logoColor=white\" alt=\"Discord\" /></a>\n<a href=\"https://t.me/bansos_dev\" rel=\"noopener noreferrer\"><img src=\"https://img.shields.io/badge/Telegram-Join%20Channel-0088cc?logo=telegram&amp;logoColor=white\" alt=\"Telegram\" /></a>\n<a href=\"https://whatsapp.com/channel/0029Vb8ZXgW1Hsq7j1uhRm0G\" rel=\"noopener noreferrer\"><img src=\"https://img.shields.io/badge/WhatsApp-Follow%20Channel-25D366?logo=whatsapp&amp;logoColor=white\" alt=\"WhatsApp\" /></a></p>\n<p><img src=\"https://raw.githubusercontent.com/wauputr4/bansos/main/static/og-banner.png\" alt=\"Bansos Developer Banner\" /></p>\n<p><a href=\"https://github.com/wauputr4/bansos/blob/main/README.md\" rel=\"noopener noreferrer\"><strong>🇮🇩 Indonesia (Default)</strong></a> · <a href=\"https://github.com/wauputr4/bansos/blob/main/README.en.md\" rel=\"noopener noreferrer\"><strong>🌐 English</strong></a></p>\n<hr />\n<h2>🌏 Bahasa Indonesia (Default)</h2>\n<p><code>Bantuan sosial untuk developer jelata</code></p>\n<p><strong>bansos.dev</strong> adalah open-source katalog info bagi-bagi berkah, promo gratisan, dan diskonan tools coding paling legit khusus untuk developer jelata di Indonesia. Dibuat biar portofolio kita-kita tetep menyala walau dompet lagi sekarat. Nyari domain gratis, hosting free-tier, cloud credits, API credits, database gratisan, atau startup credits? Di sini tempat ngumpulnya! 100% Gratisan, No Clickbait, No Ribet. fr fr 🚀</p>\n<p>Situs ini dibangun sebagai static SvelteKit site yang super SEO-friendly, data-driven, aman di mode terang/gelap, dan gampang banget buat dikontribusikan lewat email atau merge request.</p>\n<h2>Keyword cepat</h2>\n<p><code>bansos developer</code>, <code>promo developer Indonesia</code>, <code>domain gratis</code>, <code>cloud credits gratis</code>, <code>API credits</code>, <code>hosting free tier</code>, <code>startup credits</code>, <code>developer tools gratis</code>, <code>open source Indonesia</code>, <code>SvelteKit static site</code>.</p>\n<h2>Fitur utama</h2>\n<ul>\n<li>Katalog bansos developer yang crawlable dan mudah dicari.</li>\n<li>Listing domain gratis, cloud gratis, hosting free-tier, API credits, database credits, dan benefit startup.</li>\n<li>Halaman detail dengan provider, benefit, syarat klaim, masa berlaku, status aktif/expired, dan link resmi.</li>\n<li>Filter tag dan highlight rekomendasi/terbaru.</li>\n<li>Data terstruktur di <a href=\"https://github.com/wauputr4/bansos/blob/main/src/lib/data/bansos.json\" rel=\"noopener noreferrer\"><code>src/lib/data/bansos.json</code></a>.</li>\n<li>SEO metadata untuk halaman publik, termasuk meta description dan social card pattern.</li>\n<li>Workflow kontribusi publik via email dan Git clone.</li>\n<li>Halaman kontribusi publik: <a href=\"https://bansos.dev/contribute\" rel=\"noopener noreferrer\">bansos.dev/contribute</a>.</li>\n<li>Terms and conditions: <a href=\"https://bansos.dev/terms\" rel=\"noopener noreferrer\">bansos.dev/terms</a>.</li>\n</ul>\n<h2>Deploy dan Hosting</h2>\n<p>Situs ini di-deploy dan di-hosting menggunakan <strong>Cloudflare Pages</strong> dengan adapter <code>@sveltejs/adapter-cloudflare</code>. Setiap kali ada merge request atau push ke branch <code>main</code>, Cloudflare secara otomatis memicu build dan mendistribusikan situs statis super cepat beserta seluruh dynamic OG image yang sudah di-prerender.</p>\n<h2>Menjalankan proyek</h2>\n<pre><code class=\"language-bash\">npm install\nnpm run dev\nnpm run build\n</code></pre>\n<p>Validasi lokal:</p>\n<pre><code class=\"language-bash\">npm run check\nnpm run lint\n</code></pre>\n<h2>Struktur penting</h2>\n<pre><code class=\"language-text\">src/lib/data/bansos.json       # data utama listing bansos\nsrc/lib/data/bansos.ts         # helper selector, sorting, dan contributor stats\nsrc/lib/components/            # komponen UI reusable\nsrc/routes/list/               # halaman list dan detail bansos\nsrc/routes/contribute/         # panduan kontribusi publik\nscripts/add-bansos.mjs         # script lokal tambah data\npackages/bansosdev-cli/        # CLI bansosdev (disabled untuk submit publik)\n</code></pre>\n<h2>Cara Menambah Bansos</h2>\n<p>Untuk saat ini, submit publik yang aktif adalah via email dan Git clone. Jalur form, npx CLI, dan bot dinonaktifkan sementara karena spam.</p>\n<blockquote>\n<p>[!TIP]\n<strong>Soon: Submisi via Discord &amp; Telegram Bot!</strong>\nKami sedang membangun integrasi bot agar kamu bisa mengirimkan bansos baru secara otomatis langsung dari server Discord atau channel Telegram.\nSembari menunggu, yuk gabung ke komunitas kami:</p>\n<ul>\n<li><strong><a href=\"https://discord.gg/m4WFaQpNGs\" rel=\"noopener noreferrer\">Discord Server</a></strong> untuk ngobrol, diskusi, dan submit via chat (coming soon).</li>\n<li><strong><a href=\"https://t.me/bansos_dev\" rel=\"noopener noreferrer\">Telegram Channel</a></strong> untuk dapetin update instan promo developer terbaru langsung di HP-mu.</li>\n</ul>\n</blockquote>\n<h3>1. Opsi 1: Lewat Email</h3>\n<p>Opsi ini sangat cocok buat kamu yang ingin berbagi info dengan cepat tanpa perlu menyentuh terminal.</p>\n<ol>\n<li>Buka halaman kontribusi di browser: <strong><a href=\"https://bansos.dev/contribute\" rel=\"noopener noreferrer\">bansos.dev/contribute</a></strong>.</li>\n<li>Pilih tab <strong>Email</strong>.</li>\n<li>Kirim usulan ke <strong><a href=\"mailto:submit@bansos.dev\" rel=\"noopener noreferrer\">submit@bansos.dev</a></strong> memakai template yang tersedia.</li>\n<li>Pastikan semua field penting terisi: judul, provider, benefit, syarat klaim, link resmi, status, sumber, dan kontributor.</li>\n</ol>\n<hr />\n<h3>2. Opsi 2: Lewat Command Line (npx CLI) - Dinonaktifkan</h3>\n<p>Submit publik via <code>npx bansosdev add</code> sedang dinonaktifkan sementara karena spam. Dokumentasi CLI tetap disimpan untuk maintainer dan pengujian lokal, tetapi jangan dipakai untuk submit publik saat ini.</p>\n<pre><code class=\"language-bash\">npx bansosdev add\n</code></pre>\n<p>CLI akan menuntunmu mengisi field demi field untuk menyiapkan data lokal.</p>\n<p><em>Kamu juga bisa mengirimkan data langsung menggunakan argumen CLI:</em></p>\n<pre><code class=\"language-bash\">npx bansosdev add \\\n  --id contoh-bansos \\\n  --title \"Contoh Bansos Developer\" \\\n  --provider \"Example Provider\" \\\n  --description \"Deskripsi singkat bansos.\" \\\n  --benefits \"Benefit satu|Benefit dua\" \\\n  --validity-type fixed \\\n  --validity-date 2026-06-30 \\\n  --validity-desc \"Berlaku khusus pelajar\" \\\n  --published-at 2026-06-13 \\\n  --requirements \"Buat akun|Klaim program\" \\\n  --cta-link \"https://example.com\" \\\n  --contributor-name \"Nama Kamu\" \\\n  --contributor-url \"https://example.com\" \\\n  --tags \"Cloud,Gratisan\"\n</code></pre>\n<h3>Parameter validity</h3>\n<ul>\n<li><code>--validity-type</code> wajib: pilih <code>fixed</code>, <code>uncertain</code>, atau <code>forever</code>.</li>\n<li><code>--validity-date</code> wajib jika <code>--validity-type fixed</code>, memakai format <code>YYYY-MM-DD</code> (Berfungsi sebagai Tanggal Berakhir).</li>\n<li><code>--validity-desc</code> opsional untuk catatan masa berlaku, kuota, atau syarat khusus.</li>\n<li><code>--published-at</code> opsional untuk tanggal mulai berlaku (start date) dalam format <code>YYYY-MM-DD</code>. Default adalah hari ini.</li>\n<li><code>--source</code> opsional untuk sumber verifikasi; bisa berupa URL atau teks biasa.</li>\n</ul>\n<blockquote>\n<p><strong>Catatan Otomatisasi:</strong></p>\n<ul>\n<li>Parameter <code>provider</code> akan diekstrak secara otomatis dari domain <code>cta-link</code>.</li>\n<li>Parameter <code>status</code> akan dihitung otomatis (<code>active</code>, <code>upcoming</code>, atau <code>expired</code>) berdasarkan tanggal <code>published-at</code> dan <code>validity-date</code>.</li>\n</ul>\n</blockquote>\n<h3>Cek payload JSON</h3>\n<pre><code class=\"language-bash\">npx bansosdev add ... --mode json\n</code></pre>\n<hr />\n<h3>3. Opsi 3: Lewat Git Clone (Manual Merge Request)</h3>\n<p>Opsi ini bagi kamu yang ingin menguji kode secara lokal atau memodifikasi file secara langsung.</p>\n<ol>\n<li><p>Clone repositori ini ke komputermu:</p>\n<pre><code class=\"language-bash\">git clone https://gitlab.com/wauputr4/bansos.git\ncd bansos\nnpm install\n</code></pre>\n</li>\n<li><p>Tambahkan data secara lokal menggunakan helper script:</p>\n<pre><code class=\"language-bash\">npm run add:bansos -- \\\n  --id contoh-bansos \\\n  --title \"Contoh Bansos Developer\" \\\n  --provider \"Example Provider\" \\\n  --description \"Deskripsi singkat bansos.\" \\\n  --benefits \"Benefit satu|Benefit dua\" \\\n  --validity-type fixed \\\n  --validity-date 2026-06-30 \\\n  --requirements \"Buat akun|Klaim program\" \\\n  --cta-link \"https://example.com\" \\\n  --contributor-name \"Nama Kamu\" \\\n  --contributor-url \"https://example.com\" \\\n  --tags \"Cloud,Gratisan\"\n</code></pre>\n<p>Script ini akan memvalidasi data dan menyimpannya di file data terstruktur <code>src/lib/data/bansos.json</code>.</p>\n<p>Argumen <code>--benefits</code> dan <code>--requirements</code> dipisahkan dengan <code>|</code>.\nArgumen <code>--tags</code> dipisahkan dengan koma.</p>\n</li>\n<li><p>Buat branch baru, tambahkan commit, push ke fork, dan kirim merge request ke repositori utama.</p>\n</li>\n</ol>\n<hr />\n<h3>Maintainer mode (Khusus Admin / Maintainer)</h3>\n<p>Mode direct untuk submit otomatis sedang dinonaktifkan. Untuk perubahan maintainer, gunakan Git clone, commit manual, dan merge request ke <code>main</code>.</p>\n<pre><code class=\"language-bash\">npx bansosdev add ... --mode json\n</code></pre>\n<p>Perintah di atas hanya untuk mengecek payload JSON secara lokal.</p>\n<p>Detail lengkap CLI lihat <a href=\"https://github.com/wauputr4/bansos/blob/main/docs/bansosdev-cli.md\" rel=\"noopener noreferrer\">docs/bansosdev-cli.md</a>.</p>\n<h2>Panduan kualitas listing</h2>\n<p>Listing yang baik sebaiknya menyertakan:</p>\n<ul>\n<li>Link resmi provider atau halaman program.</li>\n<li>Benefit yang spesifik, misalnya nominal credit, durasi, atau batas kuota.</li>\n<li>Syarat klaim yang jelas.</li>\n<li>Status aktif, expired, atau upcoming.</li>\n<li>Tag yang membantu pencarian, misalnya <code>Cloud</code>, <code>Domain</code>, <code>AI Credits</code>, <code>Startup</code>, atau <code>No Credit Card</code>.</li>\n<li>Nama dan URL kontributor.</li>\n</ul>\n<h2>Kontribusi</h2>\n<ul>\n<li>Kirim data lewat email ke <a href=\"mailto:submit@bansos.dev\" rel=\"noopener noreferrer\">submit@bansos.dev</a>.</li>\n<li>Jika lebih nyaman, tambahkan melalui branch dan merge request manual.</li>\n<li>Baca panduan kontribusi lengkap di <a href=\"https://gitlab.com/wauputr4/bansos?tab=contributing-ov-file\" rel=\"noopener noreferrer\">CONTRIBUTING</a>.</li>\n</ul>\n<h2>Kode etik komunitas</h2>\n<p>Ikuti <a href=\"https://github.com/wauputr4/bansos/blob/main/CODE_OF_CONDUCT.md\" rel=\"noopener noreferrer\">Code of Conduct</a>.</p>\n<h2>Sponsor &amp; Dukungan</h2>\n<p>Proyek <code>bansos.dev</code> dibangun secara gratis oleh komunitas. Jika proyek ini membantumu menghemat budget developer-mu, silakan kirim dukungan via email ke <a href=\"mailto:me@wau.my.id\" rel=\"noopener noreferrer\">me@wau.my.id</a>.</p>\n<blockquote>\n<p>[!NOTE]\n<strong>Soon:</strong> Kami berencana menghadirkan fitur di mana donatur/pengunjung bisa mengirimkan dukungan (donasi) langsung ke masing-masing kontributor yang mendaftarkan/menulis listing bansos tersebut.</p>\n</blockquote>\n<h2>Lisensi</h2>\n<p>MIT. Lihat <a href=\"https://github.com/wauputr4/bansos/blob/main/LICENSE\" rel=\"noopener noreferrer\">LICENSE</a>.</p>\n<h2>Disclaimer</h2>\n<p>bansos.dev adalah <strong>platform komunitas open-source</strong> yang bertujuan membantu sesama developer Indonesia menemukan program bantuan sosial yang sah dan legal dari provider resmi. Kami tidak terafiliasi dengan provider mana pun.</p>\n<p><strong>Kami dengan tegas melarang:</strong></p>\n<ul>\n<li>Penyalahgunaan informasi bansos untuk tujuan <strong>abuse</strong> atau mengeksploitasi celah kebijakan provider.</li>\n<li>Pelanggaran terhadap <strong>ketentuan layanan (ToS)</strong> platform atau provider pihak ketiga.</li>\n<li>Tindakan yang melanggar <strong>privasi data</strong> individu atau organisasi.</li>\n<li>Segala bentuk <strong>tindakan ilegal</strong> atau melanggar hukum yang berlaku.</li>\n<li>Submit informasi bansos yang <strong>palsu, menyesatkan, atau tidak bisa diklaim</strong>.</li>\n</ul>\n<p>Semua informasi yang ditampilkan bersifat <strong>referensi</strong>. Selalu verifikasi langsung ke situs resmi provider sebelum melakukan klaim. Kami tidak bertanggung jawab atas perubahan kebijakan sepihak dari provider, interpretasi manfaat yang keliru, ataupun penyalahgunaan informasi oleh pihak tidak bertanggung jawab.</p>\n<p>Dengan menggunakan bansos.dev, Anda menyetujui bahwa platform ini hanyalah <strong>katalog komunitas</strong> dan segala klaim, transaksi, atau interaksi dengan provider sepenuhnya merupakan tanggung jawab pribadi masing-masing pengguna.</p>\n"
@@ -1091,7 +1091,7 @@
     "forks": 4,
     "topics": [],
     "updatedAt": "2026-07-21T05:26:01Z",
-    "pushedAt": "2026-07-21T09:06:02Z",
+    "pushedAt": "2026-07-21T12:23:04Z",
     "latestRelease": {
       "name": "Tycho v0.7.4",
       "tagName": "v0.7.4",
@@ -1399,8 +1399,8 @@
       "linux",
       "omarchy"
     ],
-    "updatedAt": "2026-07-21T02:40:15Z",
-    "pushedAt": "2026-07-21T02:40:10Z",
+    "updatedAt": "2026-07-21T12:07:06Z",
+    "pushedAt": "2026-07-21T12:06:23Z",
     "latestRelease": {
       "name": "v0.2.2",
       "tagName": "v0.2.2",
