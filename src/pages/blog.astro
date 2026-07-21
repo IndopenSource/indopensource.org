@@ -6,18 +6,7 @@ import blogPosts from '../data/blog-posts.json';
 import { withBase } from '../lib/urls';
 import { isPublished, type BlogPost } from '../lib/content';
 
-// Feature the first *published* post, never a draft (index 0 may be a draft).
 const publishedPosts = (blogPosts as BlogPost[]).filter(isPublished);
-const featuredPost = publishedPosts[0];
-const otherPosts = publishedPosts.slice(1);
-const featuredThumbnail = featuredPost?.thumbnail || '/brand/indopensource-hero.jpg';
-const featuredThumbnailUrl = /^https?:\/\//.test(featuredThumbnail) ? featuredThumbnail : withBase(featuredThumbnail);
-const featuredAlt = featuredPost
-  ? `Thumbnail artikel: ${featuredPost.title}`
-  : 'Ilustrasi sampul Blog IndopenSource';
-const featuredDate = featuredPost?.releasedAt
-  ? new Intl.DateTimeFormat('id-ID', { dateStyle: 'long' }).format(new Date(featuredPost.releasedAt))
-  : '';
 
 const contributionSteps = [
   {
@@ -68,69 +57,62 @@ const statusLegend = [
     </div>
   </PageHeader>
 
-  {featuredPost && (
+  {publishedPosts.length > 0 && (
     <section class="border-b-[3px] border-ink bg-canvas py-16 md:py-20">
       <div class="mx-auto w-[min(1120px,calc(100%-32px))]">
         <div class="reveal reveal-1 mb-7 flex items-center gap-3">
           <span class="section-number" aria-hidden="true">01</span>
           <div class="min-w-0">
-            <span class="sticker">Artikel utama</span>
-            <p class="meta-row mt-2 font-semibold text-brand-dark uppercase tracking-[0.06em]">Artikel terbaru</p>
+            <span class="sticker">Artikel</span>
+            <p class="meta-row mt-2 font-semibold text-brand-dark uppercase tracking-[0.06em]">Terbaru lebih dulu</p>
           </div>
           <span class="rule grow"></span>
         </div>
 
-        <article class="riso-hover riso-shadow grid overflow-hidden border-2 border-ink bg-paper md:grid-cols-[minmax(0,1fr)_minmax(280px,400px)]">
-          <div class="reveal reveal-2 flex flex-col p-6 md:p-8">
-            <div class="meta-row flex flex-wrap items-center gap-x-3 gap-y-1 font-semibold text-muted uppercase tracking-[0.06em]">
-              <span class="text-brand-dark">/blog/{featuredPost.slug}</span>
-              {featuredDate && <><span aria-hidden="true">·</span><span>{featuredDate}</span></>}
-              {featuredPost.author?.name && <><span aria-hidden="true">·</span><span class="text-brand-dark">oleh {featuredPost.author.name}</span></>}
-            </div>
-            <h2 class="display-md mt-4 max-w-2xl text-ink">{featuredPost.title}</h2>
-            <p class="mt-4 max-w-xl font-body text-lg leading-8 text-muted">{featuredPost.description}</p>
-            {featuredPost.tags?.length > 0 && (
-              <div class="mt-5 flex flex-wrap gap-2">
-                {featuredPost.tags.map((tag) => <span class="stamp">{tag}</span>)}
-              </div>
-            )}
-            <div class="mt-7">
-              <BaseButton href={`/blog/${featuredPost.slug}/`} variant="secondary">
-                Baca artikel
-              </BaseButton>
-            </div>
-          </div>
-          <div class="relative min-h-64 border-ink bg-ink max-md:border-t-2 md:border-l-2">
-            <img
-              class="h-full min-h-64 w-full object-cover mix-blend-luminosity opacity-95"
-              src={featuredThumbnailUrl}
-              alt={featuredAlt}
-              width="1280"
-              height="720"
-              loading="lazy"
-              decoding="async"
-            />
-          </div>
-        </article>
-      </div>
-    </section>
-  )}
+        <div class="grid gap-6">
+          {publishedPosts.map((post) => {
+            const articleUrl = `/blog/${post.slug}/`;
+            const thumbnail = post.thumbnail || '/brand/indopensource-hero.jpg';
+            const thumbnailUrl = /^https?:\/\//.test(thumbnail) ? thumbnail : withBase(thumbnail);
+            const publishedDate = post.releasedAt
+              ? new Intl.DateTimeFormat('id-ID', { dateStyle: 'long' }).format(new Date(post.releasedAt))
+              : '';
 
-  {otherPosts.length > 0 && (
-    <section class="border-b-[3px] border-ink bg-paper py-12 md:py-16">
-      <div class="mx-auto w-[min(1120px,calc(100%-32px))]">
-        <div class="mb-6 flex items-center gap-3"><span class="sticker">Artikel lainnya</span><span class="rule grow"></span></div>
-        <div class="grid gap-3 md:grid-cols-2">
-          {otherPosts.map((post) => (
-            <a class="riso-hover riso-shadow-sm block border-2 border-ink bg-canvas p-5" href={`/blog/${post.slug}/`}>
-              <span class="meta-row text-brand-dark">/blog/{post.slug}</span>
-              <h2 class="display-sm mt-3 text-ink">{post.title}</h2>
-              <p class="mt-2 font-body leading-7 text-muted">{post.description}</p>
-              {post.author?.name && (
-                <p class="meta-row mt-3 text-brand-dark">oleh {post.author.name}</p>
-              )}
-            </a>
-          ))}
+            return (
+              <article class="riso-hover riso-shadow grid overflow-hidden border-2 border-ink bg-paper md:grid-cols-[minmax(0,1fr)_minmax(280px,400px)]">
+                <div class="flex flex-col p-6 md:p-8">
+                  <div class="meta-row flex flex-wrap items-center gap-x-3 gap-y-1 font-semibold text-muted uppercase tracking-[0.06em]">
+                    <span class="text-brand-dark">/blog/{post.slug}</span>
+                    {publishedDate && <><span aria-hidden="true">·</span><span>{publishedDate}</span></>}
+                    {post.author?.name && <><span aria-hidden="true">·</span><span class="text-brand-dark">oleh {post.author.name}</span></>}
+                  </div>
+                  <h2 class="display-md mt-4 max-w-2xl text-ink">
+                    <a class="hover:text-brand" href={articleUrl}>{post.title}</a>
+                  </h2>
+                  <p class="mt-4 max-w-xl font-body text-lg leading-8 text-muted">{post.description}</p>
+                  {post.tags?.length > 0 && (
+                    <div class="mt-5 flex flex-wrap gap-2">
+                      {post.tags.map((tag) => <span class="stamp">{tag}</span>)}
+                    </div>
+                  )}
+                  <div class="mt-7">
+                    <BaseButton href={articleUrl} variant="secondary">Baca artikel</BaseButton>
+                  </div>
+                </div>
+                <a class="relative min-h-64 border-ink bg-ink max-md:border-t-2 md:border-l-2" href={articleUrl} aria-label={`Baca ${post.title}`}>
+                  <img
+                    class="h-full min-h-64 w-full object-cover mix-blend-luminosity opacity-95"
+                    src={thumbnailUrl}
+                    alt={`Thumbnail artikel: ${post.title}`}
+                    width="1280"
+                    height="720"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </a>
+              </article>
+            );
+          })}
         </div>
       </div>
     </section>
