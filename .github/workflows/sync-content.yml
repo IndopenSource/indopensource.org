@@ -14,7 +14,7 @@ on:
           - blog
           - legacy-revival
   schedule:
-    - cron: "17 */6 * * *"
+    - cron: "17 * * * *"
   repository_dispatch:
     types:
       - sync-projects
