@@ -156,10 +156,10 @@
     "url": "https://github.com/jipraks/yt-short-clipper",
     "homepage": "",
     "language": "Python",
-    "stars": 899,
+    "stars": 900,
     "forks": 279,
     "topics": [],
-    "updatedAt": "2026-07-22T11:22:16Z",
+    "updatedAt": "2026-07-22T22:15:38Z",
     "pushedAt": "2026-07-18T02:05:39Z",
     "latestRelease": {
       "name": "YT Short Clipper v2.0.5-beta",
@@ -473,7 +473,7 @@
     "url": "https://github.com/codecoradev/uteke",
     "homepage": "https://codecora.dev",
     "language": "Rust",
-    "stars": 125,
+    "stars": 126,
     "forks": 15,
     "topics": [
       "ai",
@@ -490,7 +490,7 @@
       "sqlite",
       "vector-database"
     ],
-    "updatedAt": "2026-07-22T09:23:15Z",
+    "updatedAt": "2026-07-22T21:07:11Z",
     "pushedAt": "2026-07-21T23:43:24Z",
     "latestRelease": {
       "name": "Release v0.10.0",
