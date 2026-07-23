@@ -1,0 +1,154 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHeader from './PageHeader.astro';
+import { withBase, safeHref } from '../lib/urls';
+import { articleHref, articleLanguage, isPublished, renderArticle, type BlogPost } from '../lib/content';
+
+interface Props {
+  post: BlogPost;
+  translations: BlogPost[];
+}
+
+const { post, translations } = Astro.props;
+const language = articleLanguage(post);
+const english = language === 'en';
+const locale = english ? 'en-US' : 'id-ID';
+const published = isPublished(post);
+const articlePath = articleHref(post).replace(/\/$/, '');
+const html = renderArticle(post.content);
+const authors = post.authors?.length ? post.authors : post.author ? [post.author] : [];
+const authorDate = post.author?.committedAt
+  ? new Intl.DateTimeFormat(locale, { dateStyle: 'long' }).format(new Date(post.author.committedAt))
+  : '';
+const modifiedDate = post.lastModifiedAt
+  ? new Intl.DateTimeFormat(locale, { dateStyle: 'long' }).format(new Date(post.lastModifiedAt))
+  : '';
+const latestCommitUrl = safeHref(post.latestCommitUrl);
+const seoTitle = post.slug === 'bagaimana-open-source-mampu-bertahan'
+  ? 'Mengapa Open Source Bertahan Puluhan Tahun - IndopenSource'
+  : `${post.title} - IndopenSource`;
+const releaseDate = post.releasedAt
+  ? new Intl.DateTimeFormat(locale, { dateStyle: 'long', timeZone: 'UTC' }).format(new Date(post.releasedAt))
+  : '';
+const thumbnail = post.thumbnail || '/brand/indopensource-hero.jpg';
+const thumbnailUrl = /^https?:\/\//.test(thumbnail) ? thumbnail : withBase(thumbnail);
+const heroAlt = english ? `Article thumbnail: ${post.title}` : `Thumbnail artikel: ${post.title}`;
+const authorByline = post.authorFromFrontmatter
+  ? english
+    ? `Named in the article frontmatter${authorDate ? ` (first commit ${authorDate})` : ''}.`
+    : `Disebutkan di frontmatter artikel${authorDate ? ` (commit pertama ${authorDate})` : ''}.`
+  : english
+    ? `Contributors are derived from the Markdown source history${authorDate ? published ? `. Published ${authorDate}` : `. First commit ${authorDate}` : ''}${modifiedDate ? ` · updated ${modifiedDate}` : ''}.`
+    : `Kontributor diambil dari riwayat commit sumber Markdown${authorDate ? published ? `. Terbit ${authorDate}` : `. Commit pertama ${authorDate}` : ''}${modifiedDate ? ` · diperbarui ${modifiedDate}` : ''}.`;
+const alternates = [post, ...translations].map((translation) => ({
+  lang: articleLanguage(translation),
+  href: articleHref(translation)
+}));
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: post.title,
+  description: post.description,
+  image: thumbnailUrl,
+  inLanguage: locale,
+  ...(published && post.releasedAt ? { datePublished: post.releasedAt } : {}),
+  ...(post.lastModifiedAt ? { dateModified: post.lastModifiedAt } : {}),
+  ...(authors.length
+    ? { author: authors.map((author) => ({ '@type': 'Person', name: author.name, ...(safeHref(author.url) ? { url: safeHref(author.url) } : {}) })) }
+    : {}),
+  publisher: { '@type': 'Organization', name: 'IndopenSource' }
+};
+---
+
+<BaseLayout
+  title={seoTitle}
+  description={post.description}
+  image={thumbnailUrl}
+  type="article"
+  robots={published ? undefined : 'noindex, nofollow, noarchive'}
+  publishedAt={published ? post.releasedAt : undefined}
+  modifiedAt={post.lastModifiedAt}
+  language={language}
+  alternates={alternates}
+  jsonLd={jsonLd}
+>
+  <PageHeader eyebrow="Blog" title={post.title} centered>
+    {!published && (
+      <div class="mb-6 border-2 border-ink bg-sun p-4 font-body text-ink riso-shadow-sm" role="status">
+        <strong class="font-display">{english ? 'Draft preview.' : 'Preview draf.'}</strong>
+        {' '}
+        {english
+          ? 'This article is under review, unpublished, and excluded from search indexing.'
+          : 'Artikel ini masih ditinjau, belum diterbitkan, dan tidak diindeks mesin pencari.'}
+      </div>
+    )}
+    <p>{post.description}</p>
+    <div class="meta-row mt-5 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 font-semibold text-ink uppercase tracking-[0.05em]">
+      <span class="text-brand-dark">{articlePath}</span>
+      {releaseDate && <><span aria-hidden="true">·</span><span>{published ? english ? 'Published' : 'Rilis' : english ? 'Draft date' : 'Tanggal draf'} {releaseDate}</span></>}
+      {authors.length > 0 && <><span aria-hidden="true">·</span><span class="text-brand-dark">{english ? 'by' : 'oleh'} {authors.map((author) => author.name).join(' & ')}</span></>}
+    </div>
+    <div class="mt-5 flex flex-wrap items-center justify-center gap-2">
+      <span class="sticker">{post.status}</span>
+      {post.tags.map((tag) => <span class="stamp">{tag}</span>)}
+      {translations.map((translation) => (
+        <a class="sticker riso-hover no-underline" href={articleHref(translation)} hreflang={articleLanguage(translation)}>
+          {articleLanguage(translation) === 'en' ? 'Read in English' : 'Baca dalam Bahasa Indonesia'}
+        </a>
+      ))}
+    </div>
+    <figure class="riso-hover riso-shadow mt-8 overflow-hidden border-2 border-ink bg-ink">
+      <img class="aspect-[16/9] w-full object-cover" src={thumbnailUrl} alt={heroAlt} width="1280" height="720" loading="eager" fetchpriority="high" decoding="async" />
+    </figure>
+  </PageHeader>
+
+  <article class="mx-auto w-[min(760px,calc(100%-32px))] pt-12 pb-16">
+    <div class="reveal reveal-1 article-body" set:html={html} />
+
+    <footer class="reveal reveal-2 mt-14 border-2 border-ink bg-canvas riso-shadow p-6 md:p-7">
+      <div class="mb-5 flex items-center gap-3">
+        <span class="sticker">{english ? 'Authors' : 'Penulis'}</span>
+        <span class="rule grow"></span>
+      </div>
+      <div class="grid gap-4 sm:grid-cols-2">
+        {authors.map((author) => {
+          const authorUrl = safeHref(author.url);
+          return (
+            <div class="flex items-center gap-4">
+              {author.avatarUrl && (
+                <img class="size-14 shrink-0 border-2 border-ink bg-paper riso-shadow-sm" src={author.avatarUrl} alt="" width="56" height="56" loading="lazy" decoding="async" />
+              )}
+              <div class="min-w-0">
+                {authorUrl
+                  ? <a class="display-sm text-brand underline decoration-2 underline-offset-2 hover:text-accent" href={authorUrl}>{author.name}</a>
+                  : <span class="display-sm text-brand">{author.name}</span>}
+              </div>
+            </div>
+          );
+        })}
+      </div>
+      <p class="mt-4 font-body text-sm leading-6 text-muted">{authorByline}</p>
+      {latestCommitUrl && post.latestCommitSha && (
+        <a class="meta-row mt-2 inline-block font-semibold text-brand underline decoration-2 underline-offset-4 hover:text-accent" href={latestCommitUrl} target="_blank" rel="noopener noreferrer">
+          {english ? 'Latest commit' : 'Commit terbaru'} {post.latestCommitSha.slice(0, 7)} ↗
+        </a>
+      )}
+      <hr class="rule my-6" />
+      <div class="flex flex-wrap gap-3">
+        <a
+          class="riso-hover riso-shadow-sm inline-flex min-h-11 items-center justify-center border-2 border-ink bg-paper px-4 font-mono text-xs font-bold uppercase tracking-[0.04em] text-ink hover:bg-sun"
+          href={post.sourceUrl}
+        >
+          {english ? 'View Markdown source' : 'Lihat sumber Markdown'}
+        </a>
+        <a
+          class="riso-hover riso-shadow-sm inline-flex min-h-11 items-center justify-center border-2 border-ink bg-paper px-4 font-mono text-xs font-bold uppercase tracking-[0.04em] text-ink hover:bg-sun"
+          href="https://github.com/IndopenSource/Blog-IndopenSource"
+        >
+          {english ? 'Blog repository' : 'Repo blog'}
+        </a>
+      </div>
+    </footer>
+  </article>
+</BaseLayout>

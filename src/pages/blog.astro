@@ -4,9 +4,9 @@ import BaseButton from '../components/BaseButton.astro';
 import PageHeader from '../components/PageHeader.astro';
 import blogPosts from '../data/blog-posts.json';
 import { withBase } from '../lib/urls';
-import { isPublished, type BlogPost } from '../lib/content';
+import { articleHref, articleLanguage, isPublished, type BlogPost } from '../lib/content';
 
-const publishedPosts = (blogPosts as BlogPost[]).filter(isPublished);
+const publishedPosts = (blogPosts as BlogPost[]).filter((post) => isPublished(post) && articleLanguage(post) === 'id');
 
 const contributionSteps = [
   {
@@ -39,6 +39,10 @@ const statusLegend = [
 <BaseLayout
   title="Blog - IndopenSource"
   description="Catatan kerja, project spotlight, dan learning notes komunitas open source Indonesia dari repo Blog-IndopenSource."
+  alternates={[
+    { lang: 'id', href: '/blog/' },
+    { lang: 'en', href: '/en/blog/' }
+  ]}
 >
   <PageHeader eyebrow="Blog" title="Catatan kerja open source Indonesia.">
     <p>
@@ -54,6 +58,7 @@ const statusLegend = [
     <div class="mt-7 flex flex-wrap gap-3 text-ink">
       <BaseButton href="https://github.com/IndopenSource/Blog-IndopenSource">Buka repo blog</BaseButton>
       <BaseButton href="https://github.com/IndopenSource/Blog-IndopenSource/blob/main/templates/article.md" variant="secondary">Lihat template</BaseButton>
+      <BaseButton href="/en/blog/" variant="secondary">English articles</BaseButton>
     </div>
   </PageHeader>
 
@@ -71,7 +76,7 @@ const statusLegend = [
 
         <div class="grid gap-6">
           {publishedPosts.map((post) => {
-            const articleUrl = `/blog/${post.slug}/`;
+            const articleUrl = articleHref(post);
             const thumbnail = post.thumbnail || '/brand/indopensource-hero.jpg';
             const thumbnailUrl = /^https?:\/\//.test(thumbnail) ? thumbnail : withBase(thumbnail);
             const publishedDate = post.releasedAt

@@ -38,6 +38,10 @@ export interface BlogPost {
   tags: string[];
   /** Publication state. Anything other than `"draft"` is considered published. */
   status: string;
+  /** Article language. Existing articles default to Indonesian. */
+  lang?: 'id' | 'en';
+  /** Shared key used to connect translated versions of one article. */
+  translationKey?: string;
   thumbnail: string;
   content: string;
   sourceUrl: string;
@@ -64,6 +68,26 @@ export interface BlogPost {
  */
 export function isPublished(post: Pick<BlogPost, 'status'>): boolean {
   return post.status !== 'draft';
+}
+
+export function articleLanguage(post: Pick<BlogPost, 'lang'>): 'id' | 'en' {
+  return post.lang === 'en' ? 'en' : 'id';
+}
+
+export function articleHref(post: Pick<BlogPost, 'lang' | 'slug' | 'status'>): string {
+  const prefix = articleLanguage(post) === 'en' ? '/en' : '';
+  const preview = isPublished(post) ? '' : '/preview';
+  return `${prefix}/blog${preview}/${post.slug}/`;
+}
+
+export function articleTranslations(posts: BlogPost[], post: BlogPost): BlogPost[] {
+  if (!post.translationKey) return [];
+  return posts.filter(
+    (candidate) =>
+      candidate.translationKey === post.translationKey
+      && articleLanguage(candidate) !== articleLanguage(post)
+      && isPublished(candidate) === isPublished(post)
+  );
 }
 
 /**
