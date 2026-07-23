@@ -32,7 +32,7 @@
     "archived": false,
     "licenseSpdx": "AGPL-3.0",
     "createdAt": "2012-02-01T01:11:49Z",
-    "openIssues": 12,
+    "openIssues": 13,
     "openPullRequests": 2,
     "subscribers": 130,
     "communityHealth": 100,
@@ -48,7 +48,7 @@
     "url": "https://github.com/laravolt/avatar",
     "homepage": "",
     "language": "PHP",
-    "stars": 1983,
+    "stars": 1984,
     "forks": 186,
     "topics": [
       "avatar",
@@ -57,7 +57,7 @@
       "php",
       "php-library"
     ],
-    "updatedAt": "2026-07-21T15:58:34Z",
+    "updatedAt": "2026-07-23T12:59:10Z",
     "pushedAt": "2026-07-21T15:58:49Z",
     "latestRelease": {
       "name": "7.0.0",
@@ -313,8 +313,8 @@
       "token-reduction",
       "token-savings"
     ],
-    "updatedAt": "2026-07-23T11:38:23Z",
-    "pushedAt": "2026-07-23T11:38:11Z",
+    "updatedAt": "2026-07-23T12:22:53Z",
+    "pushedAt": "2026-07-23T12:22:48Z",
     "latestRelease": {
       "name": "v0.6.3",
       "tagName": "v0.6.3",
@@ -324,7 +324,7 @@
     "archived": false,
     "licenseSpdx": "MIT",
     "createdAt": "2026-03-15T03:38:04Z",
-    "openIssues": 23,
+    "openIssues": 22,
     "openPullRequests": 1,
     "subscribers": 4,
     "communityHealth": 71,
@@ -340,7 +340,7 @@
     "url": "https://github.com/hadziqmtqn/erd-builder-pro",
     "homepage": "https://www.erdbuilderpro.com",
     "language": "TypeScript",
-    "stars": 174,
+    "stars": 175,
     "forks": 33,
     "topics": [
       "coding",
@@ -352,7 +352,7 @@
       "productivity",
       "tiptap-editor"
     ],
-    "updatedAt": "2026-07-22T14:50:59Z",
+    "updatedAt": "2026-07-23T14:21:04Z",
     "pushedAt": "2026-07-22T07:01:42Z",
     "latestRelease": {
       "name": "v3.2.1",
@@ -657,7 +657,7 @@
     "url": "https://github.com/mydisha/keirouter",
     "homepage": "https://keirouter.app",
     "language": "Go",
-    "stars": 92,
+    "stars": 93,
     "forks": 33,
     "topics": [
       "ai",
@@ -679,8 +679,8 @@
       "rtk",
       "zai"
     ],
-    "updatedAt": "2026-07-22T15:09:52Z",
-    "pushedAt": "2026-07-16T08:27:50Z",
+    "updatedAt": "2026-07-23T14:33:13Z",
+    "pushedAt": "2026-07-23T13:47:34Z",
     "latestRelease": {
       "name": "v0.1.26",
       "tagName": "v0.1.26",
@@ -1087,11 +1087,11 @@
     "url": "https://github.com/firewalker06/tycho",
     "homepage": "",
     "language": "Ruby",
-    "stars": 39,
+    "stars": 40,
     "forks": 4,
     "topics": [],
-    "updatedAt": "2026-07-21T12:51:10Z",
-    "pushedAt": "2026-07-21T12:52:14Z",
+    "updatedAt": "2026-07-23T13:50:28Z",
+    "pushedAt": "2026-07-23T13:03:15Z",
     "latestRelease": {
       "name": "Tycho v0.8.0",
       "tagName": "v0.8.0",
@@ -1440,8 +1440,8 @@
       "linux",
       "omarchy"
     ],
-    "updatedAt": "2026-07-21T12:07:06Z",
-    "pushedAt": "2026-07-23T12:01:44Z",
+    "updatedAt": "2026-07-23T12:16:41Z",
+    "pushedAt": "2026-07-23T12:16:35Z",
     "latestRelease": {
       "name": "v0.2.2",
       "tagName": "v0.2.2",
@@ -1452,7 +1452,7 @@
     "licenseSpdx": "",
     "createdAt": "2025-10-04T10:27:45Z",
     "openIssues": 0,
-    "openPullRequests": 1,
+    "openPullRequests": 0,
     "subscribers": 1,
     "communityHealth": 28,
     "readmeHtml": "<h2>hyprsimple</h2>\n<p>Minimal Hyprland dotfiles for Arch Linux. Clean, functional, no bloat.</p>\n<blockquote>\n<p>[!Note]\nThis dotfile have builtin <a href=\"https://github.com/rizukirr/muslimtify\" rel=\"noopener noreferrer\">muslimtify</a>. A prayer time notification daemon for Linux. Run <code>muslimtify-remove</code> to uninstall it (package, daemon, waybar module, and CSS). Run <code>muslimtify-add</code> to re-enable it later. Both commands are idempotent and back up your waybar config to <code>.bak</code> before editing.</p>\n</blockquote>\n<p><img src=\"https://raw.githubusercontent.com/rizukirr/hyprsimple/main/assets/image1.png\" alt=\"Home Screen\" /></p>\n<table>\n<thead>\n<tr>\n<th>Power Menu</th>\n<th>Terminal</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><img src=\"https://raw.githubusercontent.com/rizukirr/hyprsimple/main/assets/image5.png\" alt=\"Power Menu\" /></td>\n<td><img src=\"https://raw.githubusercontent.com/rizukirr/hyprsimple/main/assets/image2.png\" alt=\"Terminal\" /></td>\n</tr>\n</tbody></table>\n<table>\n<thead>\n<tr>\n<th>Menu Launcher</th>\n<th>Theme Switcher</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><img src=\"https://raw.githubusercontent.com/rizukirr/hyprsimple/main/assets/image3.png\" alt=\"Menu Launcher\" /></td>\n<td><img src=\"https://raw.githubusercontent.com/rizukirr/hyprsimple/main/assets/image4.png\" alt=\"Theme Switcher\" /></td>\n</tr>\n</tbody></table>\n<h2>Features</h2>\n<ul>\n<li><strong>17 themes</strong> with one-key switching, all apps update at once (waybar, rofi, ghostty, hyprlock, dunst, btop)</li>\n<li><strong>Per-theme wallpapers</strong> with picker and cycle support</li>\n<li><strong>Per-theme backgrounds</strong> for app launcher and power menu</li>\n<li><strong>Hardware auto-detection</strong> at install (NVIDIA, Vulkan, Intel iGPU, WiFi, battery)</li>\n<li><strong>Wayland-native</strong> session via uwsm, no X11 dependencies</li>\n<li><strong>Modular Hyprland config</strong> split into focused files</li>\n<li><strong>GTK/QT theming</strong> with auto light/dark mode per theme</li>\n<li><strong>Smart battery</strong> with auto brightness and power profiles</li>\n<li><strong>Screen recording</strong> with mic, system audio, or silent modes</li>\n<li><strong>Screenshot</strong> for monitor, window, region, or clipboard</li>\n<li><strong>Clipboard history</strong> via cliphist + rofi</li>\n<li><strong>Nightlight toggle</strong> for warm screen temperature</li>\n<li><strong>Audio output switching</strong> with one key</li>\n<li><strong>Prayer times</strong> on waybar via muslimtify</li>\n<li><strong>Firewall</strong> (UFW) configured out of the box</li>\n</ul>\n<h2>Install</h2>\n<pre><code class=\"language-bash\">git clone https://github.com/rizukirr/hyprsimple.git\ncd hyprsimple\n./install.sh\n</code></pre>\n<blockquote>\n<p>[!WARNING]\nThese dotfiles have only been tested on a fresh Arch Linux install where Hyprland was selected\nas the desktop during installation. Coming from another desktop environment or compositor\n(KDE, GNOME, etc.) is untested and may require manual cleanup.</p>\n</blockquote>\n<p>If you run into a problem installing hyprsimple, please <a href=\"https://github.com/rizukirr/hyprsimple/issues\" rel=\"noopener noreferrer\">open an issue</a> — thank you!</p>\n<h2>Network</h2>\n<p>To see the available network interfaces, run <code>wifi</code>. To connect to a network, run <code>wifi &lt;network name&gt;</code> for example <code>wifi \"MY NETWORK\"</code></p>\n<h2>Keybindings</h2>\n<p>Press <strong><code>SUPER + /</code></strong> for interactive viewer with fuzzy search.</p>\n<h3>Applications</h3>\n<table>\n<thead>\n<tr>\n<th>Key</th>\n<th>Action</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><code>SUPER + T</code></td>\n<td>Open terminal (Ghostty)</td>\n</tr>\n<tr>\n<td><code>SUPER + B</code></td>\n<td>Open browser (Brave)</td>\n</tr>\n<tr>\n<td><code>SUPER + A</code></td>\n<td>App launcher (Rofi)</td>\n</tr>\n<tr>\n<td><code>SUPER + F</code></td>\n<td>File manager (Nautilus)</td>\n</tr>\n<tr>\n<td><code>SUPER + O</code></td>\n<td>Notes (Obsidian)</td>\n</tr>\n<tr>\n<td><code>SUPER + S</code></td>\n<td>Android Studio</td>\n</tr>\n<tr>\n<td><code>SUPER + E</code></td>\n<td>Emoji picker</td>\n</tr>\n<tr>\n<td><code>SUPER + V</code></td>\n<td>Clipboard history</td>\n</tr>\n<tr>\n<td><code>SUPER + M</code></td>\n<td>Color picker</td>\n</tr>\n</tbody></table>\n<h3>Window Management</h3>\n<table>\n<thead>\n<tr>\n<th>Key</th>\n<th>Action</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><code>SUPER + Q</code></td>\n<td>Kill active window</td>\n</tr>\n<tr>\n<td><code>SUPER + W</code></td>\n<td>Toggle floating</td>\n</tr>\n<tr>\n<td><code>SUPER + SHIFT + J</code></td>\n<td>Toggle split (dwindle)</td>\n</tr>\n<tr>\n<td><code>SUPER + H / J / K / L</code></td>\n<td>Move focus left / down / up / right</td>\n</tr>\n<tr>\n<td><code>SUPER + SHIFT + Arrow</code></td>\n<td>Resize window</td>\n</tr>\n<tr>\n<td><code>SUPER + LMB drag</code></td>\n<td>Move window</td>\n</tr>\n<tr>\n<td><code>SUPER + RMB drag</code></td>\n<td>Resize window</td>\n</tr>\n</tbody></table>\n<h3>Workspaces</h3>\n<table>\n<thead>\n<tr>\n<th>Key</th>\n<th>Action</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><code>SUPER + [1-9, 0]</code></td>\n<td>Switch to workspace 1-10</td>\n</tr>\n<tr>\n<td><code>SUPER + SHIFT + [1-9, 0]</code></td>\n<td>Move window to workspace 1-10</td>\n</tr>\n<tr>\n<td><code>SUPER + SHIFT + S</code></td>\n<td>Move window to scratchpad</td>\n</tr>\n<tr>\n<td><code>SUPER + Scroll</code></td>\n<td>Cycle through workspaces</td>\n</tr>\n</tbody></table>\n<h3>Theming &amp; Wallpaper</h3>\n<table>\n<thead>\n<tr>\n<th>Key</th>\n<th>Action</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><code>SUPER + SHIFT + T</code></td>\n<td>Switch theme</td>\n</tr>\n<tr>\n<td><code>SUPER + SHIFT + W</code></td>\n<td>Pick wallpaper from current theme</td>\n</tr>\n<tr>\n<td><code>SUPER + ALT + W</code></td>\n<td>Cycle to next wallpaper</td>\n</tr>\n</tbody></table>\n<h3>Screenshot</h3>\n<table>\n<thead>\n<tr>\n<th>Key</th>\n<th>Action</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><code>Print</code></td>\n<td>Screenshot current monitor</td>\n</tr>\n<tr>\n<td><code>SUPER + Print</code></td>\n<td>Screenshot active window</td>\n</tr>\n<tr>\n<td><code>SUPER + ALT + Print</code></td>\n<td>Screenshot selected region</td>\n</tr>\n<tr>\n<td><code>SUPER + CTRL + Print</code></td>\n<td>Screenshot region to clipboard</td>\n</tr>\n</tbody></table>\n<h3>Screen Recording</h3>\n<table>\n<thead>\n<tr>\n<th>Key</th>\n<th>Action</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><code>SUPER + R</code></td>\n<td>Record region with mic audio</td>\n</tr>\n<tr>\n<td><code>SUPER + SHIFT + R</code></td>\n<td>Record fullscreen with mic audio</td>\n</tr>\n<tr>\n<td><code>SUPER + ALT + R</code></td>\n<td>Record region with system audio</td>\n</tr>\n<tr>\n<td><code>SUPER + SHIFT + ALT + R</code></td>\n<td>Record fullscreen with system audio</td>\n</tr>\n<tr>\n<td><code>SUPER + CTRL + R</code></td>\n<td>Record region without audio</td>\n</tr>\n<tr>\n<td><code>SUPER + CTRL + SHIFT + R</code></td>\n<td>Record fullscreen without audio</td>\n</tr>\n</tbody></table>\n<h3>Media &amp; Brightness</h3>\n<table>\n<thead>\n<tr>\n<th>Key</th>\n<th>Action</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><code>Volume Up / Down</code></td>\n<td>Adjust volume</td>\n</tr>\n<tr>\n<td><code>Mute</code></td>\n<td>Toggle mute</td>\n</tr>\n<tr>\n<td><code>Mic Mute</code></td>\n<td>Toggle microphone mute</td>\n</tr>\n<tr>\n<td><code>Play / Pause</code></td>\n<td>Media play/pause</td>\n</tr>\n<tr>\n<td><code>Next / Prev</code></td>\n<td>Media next/previous track</td>\n</tr>\n<tr>\n<td><code>Brightness Up / Down</code></td>\n<td>Adjust screen brightness</td>\n</tr>\n<tr>\n<td><code>Kbd Brightness Up / Down</code></td>\n<td>Adjust keyboard backlight</td>\n</tr>\n</tbody></table>\n<h3>System</h3>\n<table>\n<thead>\n<tr>\n<th>Key</th>\n<th>Action</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><code>SUPER + ESC</code></td>\n<td>Power menu</td>\n</tr>\n<tr>\n<td><code>SUPER + SHIFT + L</code></td>\n<td>Lock screen</td>\n</tr>\n<tr>\n<td><code>SUPER + X</code></td>\n<td>Exit Hyprland</td>\n</tr>\n<tr>\n<td><code>CTRL + ESC</code></td>\n<td>Toggle waybar</td>\n</tr>\n<tr>\n<td><code>SUPER + N</code></td>\n<td>Toggle nightlight</td>\n</tr>\n<tr>\n<td><code>SUPER + D</code></td>\n<td>Dismiss notifications</td>\n</tr>\n<tr>\n<td><code>SUPER + SHIFT + I</code></td>\n<td>Toggle idle lock</td>\n</tr>\n<tr>\n<td><code>SUPER + F10</code></td>\n<td>Switch audio output</td>\n</tr>\n<tr>\n<td><code>SUPER + SHIFT + M</code></td>\n<td>Toggle monitor mirroring</td>\n</tr>\n<tr>\n<td><code>SUPER + CTRL + V</code></td>\n<td>Toggle virtual mirror</td>\n</tr>\n<tr>\n<td><code>SUPER + /</code></td>\n<td>Show all keybindings</td>\n</tr>\n</tbody></table>\n<h2>Scripts</h2>\n<p>Helper scripts live in <a href=\"https://github.com/rizukirr/hyprsimple/blob/main/.local/bin\" rel=\"noopener noreferrer\"><code>.local/bin</code></a> (installed to <code>~/.local/bin</code>, which is on <code>PATH</code>).\nMost are wired to keybindings or waybar; all can also be run directly from a terminal.</p>\n<h3>Audio</h3>\n<table>\n<thead>\n<tr>\n<th>Script</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><code>audio-switch.sh</code></td>\n<td>Cycle through available audio output devices</td>\n</tr>\n<tr>\n<td><code>volume-notify.sh</code></td>\n<td>Show the current PipeWire volume via a dunst notification</td>\n</tr>\n<tr>\n<td><code>record-audio.sh</code></td>\n<td>Record audio from the default input to <code>~/Music</code></td>\n</tr>\n</tbody></table>\n<h3>Display, Theme &amp; Wallpaper</h3>\n<table>\n<thead>\n<tr>\n<th>Script</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><code>brightness-notify.sh</code></td>\n<td>Show the current screen brightness via a dunst notification</td>\n</tr>\n<tr>\n<td><code>keyboard-brightness.sh</code></td>\n<td>Control the keyboard backlight (<code>up</code> / <code>down</code> / <code>cycle</code>)</td>\n</tr>\n<tr>\n<td><code>toggle-nightlight.sh</code></td>\n<td>Toggle a warm screen temperature via hyprsunset</td>\n</tr>\n<tr>\n<td><code>theme-switcher.sh</code></td>\n<td>Switch theme via rofi picker, or apply one directly by name</td>\n</tr>\n<tr>\n<td><code>theme-apply-templates.sh</code></td>\n<td>Generate themed app configs from a theme's <code>colors.toml</code></td>\n</tr>\n<tr>\n<td><code>wallpaper-switcher.sh</code></td>\n<td>Switch or cycle wallpaper within the current theme</td>\n</tr>\n<tr>\n<td><code>live-wallpaper-toggle.sh</code></td>\n<td>Toggle live wallpaper (cycle backgrounds vs. static)</td>\n</tr>\n<tr>\n<td><code>monitor-mirror-toggle.sh</code></td>\n<td>Toggle extend vs. mirror mode for an external monitor</td>\n</tr>\n<tr>\n<td><code>virtual-mirror-toggle.sh</code></td>\n<td>Mirror a monitor into a window (via wl-mirror) for screen sharing</td>\n</tr>\n</tbody></table>\n<h3>Screenshot &amp; Recording</h3>\n<table>\n<thead>\n<tr>\n<th>Script</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><code>screenshot.sh</code></td>\n<td>Take a screenshot (<code>clipboard</code> / <code>window</code> / <code>region</code> / <code>monitor</code>)</td>\n</tr>\n<tr>\n<td><code>screen-record.sh</code></td>\n<td>Start/stop screen recording (region or output; mic, internal, or no audio)</td>\n</tr>\n<tr>\n<td><code>screen-record-active.sh</code></td>\n<td>Report whether a screen recording is currently running</td>\n</tr>\n</tbody></table>\n<h3>Network</h3>\n<table>\n<thead>\n<tr>\n<th>Script</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><code>wifi.sh</code></td>\n<td>List and connect to WiFi networks</td>\n</tr>\n<tr>\n<td><code>wifi-powersave.sh</code></td>\n<td>Toggle WiFi power saving (<code>on</code> / <code>off</code>)</td>\n</tr>\n<tr>\n<td><code>hotspot.sh</code></td>\n<td>Create a WiFi hotspot with internet sharing</td>\n</tr>\n<tr>\n<td><code>setup-dns.sh</code></td>\n<td>Configure the DNS provider (Cloudflare / Google / DHCP)</td>\n</tr>\n</tbody></table>\n<h3>System &amp; Power</h3>\n<table>\n<thead>\n<tr>\n<th>Script</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><code>battery-monitor.sh</code></td>\n<td>Low-battery notifications and automatic brightness reduction</td>\n</tr>\n<tr>\n<td><code>bluetooth-toggle.sh</code></td>\n<td>Toggle Bluetooth adapter power</td>\n</tr>\n<tr>\n<td><code>toggle_cpu_mode.sh</code></td>\n<td>Switch CPU governor between performance and powersave</td>\n</tr>\n<tr>\n<td><code>toggle-idle.sh</code></td>\n<td>Toggle hypridle (lock-on-idle) on/off</td>\n</tr>\n<tr>\n<td><code>hypr-logout.sh</code></td>\n<td>Gracefully close all windows and stop the Hyprland session</td>\n</tr>\n</tbody></table>\n<h3>Input &amp; Notifications</h3>\n<table>\n<thead>\n<tr>\n<th>Script</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><code>capslock-notify.sh</code></td>\n<td>Notify on Caps Lock state changes</td>\n</tr>\n<tr>\n<td><code>notification-dismiss.sh</code></td>\n<td>Dismiss all dunst notifications</td>\n</tr>\n</tbody></table>\n<h3>Search &amp; Keybindings</h3>\n<table>\n<thead>\n<tr>\n<th>Script</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><code>search.sh</code></td>\n<td>Fuzzy file finder (ripgrep + fzf) that opens the result in nvim</td>\n</tr>\n<tr>\n<td><code>search_by_keyword.sh</code></td>\n<td>Fuzzy content search (ripgrep + fzf) that opens the match in nvim</td>\n</tr>\n<tr>\n<td><code>show-keybindings.sh</code></td>\n<td>Show all Hyprland keybindings in a rofi fuzzy-search menu</td>\n</tr>\n</tbody></table>\n<h3>Integrations</h3>\n<table>\n<thead>\n<tr>\n<th>Script</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><code>hyprsimple-muslimtify.sh</code></td>\n<td>Add or remove the <a href=\"https://github.com/rizukirr/muslimtify\" rel=\"noopener noreferrer\">muslimtify</a> prayer-times integration</td>\n</tr>\n<tr>\n<td><code>waybar-muslimtify.sh</code></td>\n<td>Provide the waybar module output (next prayer + tooltip) for muslimtify</td>\n</tr>\n</tbody></table>\n<h3>Shell init &amp; internal helpers</h3>\n<p>These are sourced by other files rather than run directly.</p>\n<table>\n<thead>\n<tr>\n<th>Script</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><code>bashrc.sh</code> / <code>zsh.sh</code> / <code>fish.fish</code></td>\n<td>Per-shell init (zoxide, fzf, starship, aliases) sourced from your shell's rc file</td>\n</tr>\n<tr>\n<td><code>terminal.sh</code></td>\n<td>Detect your login shell and wire the matching init script into its rc file</td>\n</tr>\n<tr>\n<td><code>hypr-helpers.sh</code></td>\n<td>Shared hyprpaper helper functions used by the wallpaper scripts</td>\n</tr>\n</tbody></table>\n<h2>FAQ</h2>\n<p>Troubleshooting and known issues (NVIDIA boot hang, Plymouth blank-screen splash, and\nmore) are documented in <a href=\"https://github.com/rizukirr/hyprsimple/blob/main/FAQ.md\" rel=\"noopener noreferrer\">FAQ.md</a>.</p>\n<h2>License</h2>\n<p>MIT</p>\n"
