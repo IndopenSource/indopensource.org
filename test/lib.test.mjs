@@ -133,6 +133,8 @@ describe('article language routing', () => {
     const en = { slug: 'example', status: 'published', lang: 'en', translationKey: 'same' };
     const unrelated = { slug: 'other', status: 'published', lang: 'en', translationKey: 'other' };
     assert.deepEqual(articleTranslations([id, en, unrelated], id), [en]);
+    assert.deepEqual(articleTranslations([id], { ...id, translationKey: undefined }), []);
+    assert.deepEqual(articleTranslations([id, { ...en, status: 'draft' }], id), []);
   });
 });
 

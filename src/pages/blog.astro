@@ -87,7 +87,7 @@ const statusLegend = [
               <article class="riso-hover riso-shadow grid overflow-hidden border-2 border-ink bg-paper md:grid-cols-[minmax(0,1fr)_minmax(280px,400px)]">
                 <div class="flex flex-col p-6 md:p-8">
                   <div class="meta-row flex flex-wrap items-center gap-x-3 gap-y-1 font-semibold text-muted uppercase tracking-[0.06em]">
-                    <span class="text-brand-dark">/blog/{post.slug}</span>
+                    <span class="text-brand-dark">{articleUrl}</span>
                     {publishedDate && <><span aria-hidden="true">·</span><span>{publishedDate}</span></>}
                     {post.author?.name && <><span aria-hidden="true">·</span><span class="text-brand-dark">oleh {post.author.name}</span></>}
                   </div>

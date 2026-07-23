@@ -90,6 +90,15 @@ export function articleTranslations(posts: BlogPost[], post: BlogPost): BlogPost
   );
 }
 
+export function articleStaticPaths(posts: BlogPost[], lang: 'id' | 'en') {
+  return posts
+    .filter((post) => articleLanguage(post) === lang)
+    .map((post) => ({
+      params: { slug: isPublished(post) ? post.slug : `preview/${post.slug}` },
+      props: { post, translations: articleTranslations(posts, post) }
+    }));
+}
+
 /**
  * Reusable sanitize-html allowlist for untrusted Markdown-derived HTML.
  *

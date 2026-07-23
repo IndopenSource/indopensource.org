@@ -55,6 +55,7 @@ const canonicalUrl = new URL(Astro.url.pathname.replace(baseUrl, '/'), SITE_ORIG
 const imageUrl = new URL(image, SITE_ORIGIN).toString();
 const locale = language === 'en' ? 'en_US' : 'id_ID';
 const languageTag = language === 'en' ? 'en-US' : 'id-ID';
+const defaultAlternate = alternates.find((alternate) => alternate.lang === 'id');
 const cloudflareBeaconToken = import.meta.env.PUBLIC_CLOUDFLARE_WEB_ANALYTICS_TOKEN;
 const googleAnalyticsId = import.meta.env.PUBLIC_GOOGLE_ANALYTICS_ID;
 const googleSiteVerification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION;
@@ -177,6 +178,9 @@ const csp = [
     {alternates.map((alternate) => (
       <link rel="alternate" hreflang={alternate.lang} href={new URL(alternate.href, SITE_ORIGIN).toString()} />
     ))}
+    {defaultAlternate && (
+      <link rel="alternate" hreflang="x-default" href={new URL(defaultAlternate.href, SITE_ORIGIN).toString()} />
+    )}
     {
       /* Preload the above-the-fold LCP image (homepage hero) at high priority so
          it downloads before the renderer reaches its <img>. astro:assets emits
@@ -225,12 +229,12 @@ const csp = [
   <body>
     <!-- Skip past the header/primary nav to the content (WCAG 2.4.1). Must be
          the first focusable element in the DOM. (A11Y-1) -->
-    <a href="#main-content" class="skip-link">Lewati ke konten</a>
-    <SiteHeader />
+    <a href="#main-content" class="skip-link">{language === 'en' ? 'Skip to content' : 'Lewati ke konten'}</a>
+    <SiteHeader language={language} />
     <main id="main-content" tabindex="-1">
       <slot />
     </main>
-    <SiteFooter />
+    <SiteFooter language={language} />
     <!--
       SCROLL-AWARE REVEAL (MOTION). A bundled module script — Astro compiles
       this to /_astro/*, so it is covered by `script-src 'self'` (no inline

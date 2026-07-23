@@ -1,16 +1,10 @@
 ---
 import BlogArticlePage from '../../../components/BlogArticlePage.astro';
 import blogPosts from '../../../data/blog-posts.json';
-import { articleLanguage, articleTranslations, isPublished, type BlogPost } from '../../../lib/content';
+import { articleStaticPaths, type BlogPost } from '../../../lib/content';
 
 export function getStaticPaths() {
-  const posts = blogPosts as BlogPost[];
-  return posts
-    .filter((post) => articleLanguage(post) === 'en')
-    .map((post) => ({
-      params: { slug: isPublished(post) ? post.slug : `preview/${post.slug}` },
-      props: { post, translations: articleTranslations(posts, post) }
-    }));
+  return articleStaticPaths(blogPosts as BlogPost[], 'en');
 }
 
 const { post, translations } = Astro.props;
