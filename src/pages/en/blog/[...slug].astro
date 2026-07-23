@@ -1,0 +1,13 @@
+---
+import BlogArticlePage from '../../../components/BlogArticlePage.astro';
+import blogPosts from '../../../data/blog-posts.json';
+import { articleStaticPaths, type BlogPost } from '../../../lib/content';
+
+export function getStaticPaths() {
+  return articleStaticPaths(blogPosts as BlogPost[], 'en');
+}
+
+const { post, translations } = Astro.props;
+---
+
+<BlogArticlePage post={post} translations={translations} />

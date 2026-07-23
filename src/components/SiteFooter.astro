@@ -1,6 +1,13 @@
 ---
 import { withBase } from '../lib/urls';
 
+interface Props {
+  language?: 'id' | 'en';
+}
+
+const { language = 'id' } = Astro.props;
+const english = language === 'en';
+
 const links: { label: string; href: string; external?: boolean }[] = [
   { label: 'Proyek', href: '/projects/' },
   { label: 'Belajar', href: '/belajar/' },
@@ -25,6 +32,21 @@ const links: { label: string; href: string; external?: boolean }[] = [
   { label: 'GitHub', href: 'https://github.com/IndopenSource', external: true },
   { label: 'Discussions', href: 'https://github.com/orgs/IndopenSource/discussions', external: true },
 ];
+const englishLabels: Record<string, string> = {
+  Proyek: 'Projects',
+  Belajar: 'Learn',
+  Tentang: 'About',
+  Falsafah: 'Philosophy',
+  Komunitas: 'Community',
+  'Top User': 'Top Users',
+  'Cara Berkontribusi': 'Contribute',
+  'Kode Etik': 'Code of Conduct',
+  Donasi: 'Donate',
+  Program: 'Programs',
+  'Tata Kelola': 'Governance',
+  Event: 'Events',
+  Kontak: 'Contact'
+};
 
 const year = new Date().getFullYear();
 ---
@@ -46,8 +68,9 @@ const year = new Date().getFullYear();
           <span class="text-sun">Indo</span>penSource
         </p>
         <p class="mt-4 max-w-xl font-body text-lg leading-7 text-paper/90">
-          Ruang kerja terbuka untuk ekosistem open source Indonesia, dibikin
-          bareng, dirawat bareng.
+          {english
+            ? 'An open workspace for Indonesia’s open source ecosystem, built and maintained together.'
+            : 'Ruang kerja terbuka untuk ekosistem open source Indonesia, dibikin bareng, dirawat bareng.'}
         </p>
       </div>
       <span class="stamp border-paper bg-sun text-ink">Open source · Indonesia</span>
@@ -64,27 +87,27 @@ const year = new Date().getFullYear();
           <dd class="text-paper/90">github.com/IndopenSource</dd>
         </div>
         <div class="flex gap-2">
-          <dt class="text-sun">lisensi</dt>
-          <dd class="text-paper/90">open source · komunitas</dd>
+          <dt class="text-sun">{english ? 'license' : 'lisensi'}</dt>
+          <dd class="text-paper/90">open source · {english ? 'community' : 'komunitas'}</dd>
         </div>
         <div class="flex gap-2">
-          <dt class="text-sun">terbit</dt>
+          <dt class="text-sun">{english ? 'published' : 'terbit'}</dt>
           <dd class="text-paper/90">indopensource.org · {year}</dd>
         </div>
       </dl>
 
-      <nav aria-label="Tautan komunitas" class="flex flex-col items-start gap-3">
-        <span class="meta-row uppercase tracking-[0.12em] text-paper/60">// ruang organisasi</span>
+      <nav aria-label={english ? 'Community links' : 'Tautan komunitas'} class="flex flex-col items-start gap-3">
+        <span class="meta-row uppercase tracking-[0.12em] text-paper/60">// {english ? 'organization spaces' : 'ruang organisasi'}</span>
         <div class="flex flex-wrap gap-3">
           {
             links.map(({ label, href, external }) => (
               <a
                 class="sticker riso-hover no-underline"
-                href={external ? href : withBase(href)}
+                href={external ? href : withBase(english && label === 'Blog' ? '/en/blog/' : href)}
                 rel={external ? 'noopener noreferrer' : undefined}
               >
-                {label}
-                {external && <><span aria-hidden="true">↗</span><span class="sr-only"> (situs eksternal)</span></>}
+                {english ? englishLabels[label] || label : label}
+                {external && <><span aria-hidden="true">↗</span><span class="sr-only"> ({english ? 'external site' : 'situs eksternal'})</span></>}
               </a>
             ))
           }
@@ -95,7 +118,7 @@ const year = new Date().getFullYear();
     {/* Footer baseline: thin printed credit row in mono */}
     <hr class="mt-10 rule" aria-hidden="true" />
     <p class="meta-row mt-6 text-paper/60">
-      Dibuat dengan Joko UI · dibikin di Indonesia
+      {english ? 'Built with Joko UI · made in Indonesia' : 'Dibuat dengan Joko UI · dibikin di Indonesia'}
     </p>
   </div>
 </footer>

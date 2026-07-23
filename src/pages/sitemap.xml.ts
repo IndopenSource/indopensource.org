@@ -2,7 +2,7 @@ import type { APIRoute } from 'astro';
 import blogPosts from '../data/blog-posts.json';
 import projects from '../data/projects.json';
 import { projectSlug } from '../lib/projects';
-import { isPublished } from '../lib/content';
+import { articleHref, isPublished, type BlogPost } from '../lib/content';
 
 /**
  * Hand-rolled sitemap at the conventional `/sitemap.xml` path.
@@ -38,6 +38,7 @@ const staticPages: SitemapEntry[] = [
   { path: '/users/' },
   { path: '/belajar/' },
   { path: '/blog/' },
+  { path: '/en/blog/' },
   { path: '/forum/' },
   { path: '/faq/' },
   { path: '/cara-berkontribusi/' },
@@ -55,10 +56,10 @@ const staticPages: SitemapEntry[] = [
   { path: '/contact/' }
 ];
 
-const blogPages: SitemapEntry[] = blogPosts
+const blogPages: SitemapEntry[] = (blogPosts as BlogPost[])
   .filter((post) => isPublished(post))
   .map((post) => ({
-    path: `/blog/${post.slug}/`,
+    path: articleHref(post),
     lastmod: toLastmod(post.lastModifiedAt) ?? toLastmod(post.releasedAt) ?? toLastmod(post.date)
   }));
 

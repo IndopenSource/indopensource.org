@@ -14,7 +14,7 @@ import { describe, it } from 'node:test';
 
 import { projectSlug, rankProjectOwners } from '../src/lib/projects.ts';
 import { normalizeHref, safeHref } from '../src/lib/urls.ts';
-import { isPublished, renderArticle, forbiddenTags } from '../src/lib/content.ts';
+import { articleHref, articleLanguage, articleTranslations, isPublished, renderArticle, forbiddenTags } from '../src/lib/content.ts';
 
 describe('projectSlug (slug)', () => {
   it('encodes the owner/repo separator as a reserved "--" token', () => {
@@ -117,6 +117,24 @@ describe('isPublished (frontmatter)', () => {
     assert.equal(isPublished({ status: 'published' }), true);
     assert.equal(isPublished({ status: 'archived' }), true);
     assert.equal(isPublished({ status: '' }), true);
+  });
+});
+
+describe('article language routing', () => {
+  it('keeps Indonesian as the default and prefixes English routes', () => {
+    assert.equal(articleLanguage({}), 'id');
+    assert.equal(articleHref({ slug: 'contoh', status: 'published' }), '/blog/contoh/');
+    assert.equal(articleHref({ slug: 'example', status: 'published', lang: 'en' }), '/en/blog/example/');
+    assert.equal(articleHref({ slug: 'example', status: 'draft', lang: 'en' }), '/en/blog/preview/example/');
+  });
+
+  it('connects published translations through their shared key', () => {
+    const id = { slug: 'contoh', status: 'published', lang: 'id', translationKey: 'same' };
+    const en = { slug: 'example', status: 'published', lang: 'en', translationKey: 'same' };
+    const unrelated = { slug: 'other', status: 'published', lang: 'en', translationKey: 'other' };
+    assert.deepEqual(articleTranslations([id, en, unrelated], id), [en]);
+    assert.deepEqual(articleTranslations([id], { ...id, translationKey: undefined }), []);
+    assert.deepEqual(articleTranslations([id, { ...en, status: 'draft' }], id), []);
   });
 });
 

@@ -280,6 +280,8 @@ for (const path of articleFiles) {
     date: editorialDate,
     tags: data.tags || [],
     status: data.status || 'draft',
+    lang: data.lang === 'en' ? 'en' : 'id',
+    translationKey: data.translationKey || '',
     thumbnail: resolveThumbnail(data.thumbnail || data.image || data.cover || '', path, defaultBranch),
     content,
     sourceUrl: file.html_url,

@@ -3,21 +3,28 @@ import { Picture } from 'astro:assets';
 import { withBase } from '../lib/urls';
 import brandIcon from '../assets/brand/icon-192.png';
 
+interface Props {
+  language?: 'id' | 'en';
+}
+
+const { language = 'id' } = Astro.props;
+const english = language === 'en';
+
 const navItems = [
   ['Home', '/', 'ph-house'],
-  ['Proyek', '/projects/', 'ph-grid-four'],
-  ['Blog', '/blog/', 'ph-article'],
-  ['Belajar', '/belajar/', 'ph-books'],
+  [english ? 'Projects' : 'Proyek', '/projects/', 'ph-grid-four'],
+  ['Blog', english ? '/en/blog/' : '/blog/', 'ph-article'],
+  [english ? 'Learn' : 'Belajar', '/belajar/', 'ph-books'],
   ['FAQ', '/faq/', 'ph-question'],
-  ['Donasi', '/donasi/', 'ph-heart']
+  [english ? 'Donate' : 'Donasi', '/donasi/', 'ph-heart']
 ];
 
 const mobileNavItems = [
   ['Home', '/', 'ph-house'],
-  ['Proyek', '/projects/', 'ph-grid-four'],
-  ['Blog', '/blog/', 'ph-article'],
-  ['Belajar', '/belajar/', 'ph-books'],
-  ['Top User', '/users/', 'ph-ranking']
+  [english ? 'Projects' : 'Proyek', '/projects/', 'ph-grid-four'],
+  ['Blog', english ? '/en/blog/' : '/blog/', 'ph-article'],
+  [english ? 'Learn' : 'Belajar', '/belajar/', 'ph-books'],
+  [english ? 'Top Users' : 'Top User', '/users/', 'ph-ranking']
 ];
 
 const currentPath = Astro.url.pathname;
@@ -34,7 +41,7 @@ const currentPathWithoutBase = currentPath.replace(new RegExp(`^${baseUrl.replac
 <header class="sticky top-0 z-20 border-b border-line bg-paper/90 backdrop-blur-xl">
   <nav
     class="mx-auto flex min-h-16 w-[min(1120px,calc(100%-32px))] items-center justify-between gap-6 py-3"
-    aria-label="Navigasi utama"
+    aria-label={english ? 'Main navigation' : 'Navigasi utama'}
   >
     {/* Wordmark = stamped logo tile + editorial display name + mono kicker */}
     <a
@@ -54,7 +61,7 @@ const currentPathWithoutBase = currentPath.replace(new RegExp(`^${baseUrl.replac
       />
       <span class="flex flex-col leading-none">
         <span class="font-display text-xl font-extrabold tracking-tight text-ink"><span class="text-brand">Indo</span>penSource</span>
-        <span class="meta-row mt-0.5 text-muted max-sm:hidden">Komunitas Open Source Indonesia</span>
+        <span class="meta-row mt-0.5 text-muted max-sm:hidden">{english ? 'Indonesia Open Source Community' : 'Komunitas Open Source Indonesia'}</span>
       </span>
     </a>
 
@@ -95,7 +102,7 @@ const currentPathWithoutBase = currentPath.replace(new RegExp(`^${baseUrl.replac
         href="https://github.com/IndopenSource"
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="GitHub IndopenSource (situs eksternal)"
+        aria-label={english ? 'IndopenSource GitHub (external site)' : 'GitHub IndopenSource (situs eksternal)'}
       >
         <i class="ph-fill ph-github-logo text-xl" aria-hidden="true"></i>
       </a>
@@ -109,7 +116,7 @@ const currentPathWithoutBase = currentPath.replace(new RegExp(`^${baseUrl.replac
 <nav
   class="fixed inset-x-3 bottom-3 z-30 hidden overflow-hidden rounded-2xl border border-line bg-paper/95 shadow-[0_16px_40px_rgba(16,24,40,0.18)] backdrop-blur-xl max-md:grid max-md:grid-cols-5"
   style="padding-bottom: env(safe-area-inset-bottom, 0px)"
-  aria-label="Navigasi mobile"
+  aria-label={english ? 'Mobile navigation' : 'Navigasi mobile'}
 >
   {
     mobileNavItems.map(([label, href, icon]) => {
