@@ -124,7 +124,7 @@
     "homepage": "",
     "language": "PHP",
     "stars": 1213,
-    "forks": 1168,
+    "forks": 1169,
     "topics": [
       "opensid",
       "sistem-informasi-desa"
@@ -156,10 +156,10 @@
     "url": "https://github.com/jipraks/yt-short-clipper",
     "homepage": "",
     "language": "Python",
-    "stars": 900,
+    "stars": 901,
     "forks": 279,
     "topics": [],
-    "updatedAt": "2026-07-22T22:15:38Z",
+    "updatedAt": "2026-07-23T21:26:15Z",
     "pushedAt": "2026-07-18T02:05:39Z",
     "latestRelease": {
       "name": "YT Short Clipper v2.0.5-beta",
