@@ -1,5 +1,81 @@
 [
   {
+    "slug": "openclaw-jakarta-meetup-5-dari-demo-ke-agen-ai-dunia-nyata",
+    "path": "content/2026/07/openclaw-jakarta-meetup-5-dari-demo-ke-agen-ai-dunia-nyata.md",
+    "year": "2026",
+    "month": "07",
+    "title": "OpenClaw Jakarta Meetup #5: Dari Demo ke Agen AI Dunia Nyata",
+    "description": "OpenClaw Jakarta Meetup #5 pertemukan developer dan pengguna agentic AI untuk membahas praktik membangun agen yang berguna, terukur, dan bertanggung jawab.",
+    "date": "2026-07-23",
+    "tags": [
+      "community",
+      "open-source",
+      "artificial-intelligence",
+      "openclaw"
+    ],
+    "status": "published",
+    "thumbnail": "https://raw.githubusercontent.com/IndopenSource/Blog-IndopenSource/main/content/2026/07/assets/openclaw-jakarta-meetup-5-thumbnail.png",
+    "content": "OpenClaw Jakarta Meetup #5 berlangsung di Jakarta Selatan pada Kamis, 23 Juli 2026. Dengan dukungan DANA Indonesia sebagai penyedia tempat dan konsumsi, acara ini mempertemukan developer, engineer, serta pengguna OpenClaw dan *agentic AI* untuk melihat penerapan agen AI dalam kasus nyata.\n\nPara pembicara membawa pengalaman membangun produk: dari browser untuk agen AI, pencarian properti, sampai sistem penasihat keuangan. Namun, benang merah terkuat malam itu datang dari Hannes Rudolph, Community Manager OpenClaw: membangun agen yang dapat bekerja bukan berarti menyerahkan seluruh proses kepada AI.\n\n## AI untuk Pekerjaan yang Memang Membutuhkannya\n\nVince Iswara, CEO DANA Indonesia, membuka acara dengan mengingatkan bahwa penggunaan AI membutuhkan tanggung jawab. Komputasi AI tidak murah, sehingga teknologi ini sebaiknya dipakai untuk persoalan yang memang membutuhkan kemampuan tersebut, bukan tugas sederhana yang dapat diselesaikan dengan cara lebih ringan.\n\nPesan itu juga terlihat dalam sesi Raden Muhammad Hadi, Senior Data Scientist DANA Indonesia, tentang *Financial Advisory Agent Stack*. Sistem ini menggunakan sejumlah subagen dengan peran berbeda, seperti menyusun rencana eksekusi, eksekusi task, memberi konteks literasi finansial, dan meninjau hasil melalui berbagai jenis model.\n\nHadi membandingkan beberapa model agar pemilihan model sesuai dengan tugasnya. Mereka juga memakai pendekatan statistik seperti TBATS untuk kebutuhan peramalan. Presentasi ini menunjukkan bahwa sistem agentic di sektor finansial tidak cukup hanya mengandalkan satu model dan satu instruksi.\n\n## Hannes Rudolph: Mulai dari Loop Kecil\n\nDalam sesinya melalui Zoom Meeting, Hannes yang merupakan Community Manager Open Claw membuka sesi terbuka tanya jawab kepada audiens yang hadir, Menurut Hannes, Pendekatan yang lebih masuk akal dalam agentic adalah memulai dari *loop* kecil, memberi agen proses perencanaan dan pemeriksaan, lalu mempelajari hasil serta kesalahannya.\n\nEvaluasi model menjadi bagian penting dari proses tersebut. Setiap perubahan model perlu dibandingkan melalui *benchmark* agar peningkatan pada satu sisi tidak diam-diam merusak kemampuan lain. Untuk pekerjaan yang dibuat dengan pendekatan *vibe coding*, developer tetap perlu memahami proses dan memeriksa kode baris demi baris.\n\nPesannya sederhana: fokus pada hal yang ingin diselesaikan, bangun mekanisme pengecekan, dan jangan memperluas otomatisasi sebelum hasil pada lingkup kecil cukup baik.\n\n<div class=\"flex justify-center\">\n  <img src=\"https://raw.githubusercontent.com/IndopenSource/Blog-IndopenSource/main/content/2026/07/assets/openclaw-jakarta-meetup-5.png\" alt=\"Peserta OpenClaw Jakarta Meetup #5\" loading=\"lazy\">\n</div>\n\n## Tiga Gambaran Agen AI di Dunia Nyata\n\nZen Aufa Bahalwan memperkenalkan Camoufox untuk menghadapi kendala browser seperti CAPTCHA, respons *forbidden*, dan sistem deteksi bot. Camoufox memberi agen kemampuan menjelajah web dengan pendekatan *anti-detect*. Penggunaannya tetap perlu ditempatkan dalam batas yang sah dan bertanggung jawab.\n\nOkza Pradhana, dari komunitas Data Engineering Indonesia, membawa PropGen, sebuah orkestrasi agen untuk membantu pekerjaan pencarian properti. Demo ini menggambarkan bagaimana agen dapat dipekerjakan untuk mengumpulkan dan mengolah informasi yang biasanya tersebar di banyak sumber.\n\nSementara itu, sistem penasihat keuangan personal yang dibuat Hadi menunjukkan kebutuhan yang berbeda: basis pengetahuan yang kuat, pemilihan model berdasarkan kemampuan, dan lapisan peninjauan sebelum hasil sampai kepada pengguna.\n\nKetiga sesi tersebut memperlihatkan bahwa nilai agen AI tidak terletak pada banyaknya model atau panjangnya *workflow*. Nilainya muncul ketika sistem mampu menyelesaikan pekerjaan, dapat diperiksa, dan ditempatkan dalam batas tanggung jawab yang jelas.\n\nOpenClaw Jakarta Meetup #5 akhirnya menjadi ruang untuk membandingkan apa yang sudah dibangun, apa yang masih bermasalah, dan apa yang perlu diperbaiki bersama. Dukungan DANA dan kehadiran tim komunitas OpenClaw mempertemukan perspektif perusahaan dengan semangat eksperimen *open source* dalam satu ruangan.",
+    "sourceUrl": "https://github.com/IndopenSource/Blog-IndopenSource/blob/main/content/2026/07/openclaw-jakarta-meetup-5-dari-demo-ke-agen-ai-dunia-nyata.md",
+    "releasedAt": "2026-07-23",
+    "lastModifiedAt": "2026-07-23T16:37:40Z",
+    "latestCommitSha": "0d795beebea38360b047f01b40eb2f7566101d51",
+    "latestCommitUrl": "https://github.com/IndopenSource/Blog-IndopenSource/commit/0d795beebea38360b047f01b40eb2f7566101d51",
+    "author": {
+      "name": "wauputr4",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/103489788?v=4",
+      "url": "https://github.com/wauputr4",
+      "committedAt": "2026-07-23T16:37:40Z"
+    },
+    "authors": [
+      {
+        "name": "wauputr4",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/103489788?v=4",
+        "url": "https://github.com/wauputr4",
+        "committedAt": "2026-07-23T16:37:40Z"
+      }
+    ],
+    "authorFromFrontmatter": false
+  },
+  {
+    "slug": "openclaw-jakarta-meetup-5-from-demos-to-real-world-ai-agents",
+    "path": "content/2026/07/openclaw-jakarta-meetup-5-from-demos-to-real-world-ai-agents.md",
+    "year": "2026",
+    "month": "07",
+    "title": "OpenClaw Jakarta Meetup #5: From Demos to Real-World AI Agents",
+    "description": "OpenClaw Jakarta Meetup #5 brought developers and agentic AI users together to discuss useful, measurable, and responsible agents.",
+    "date": "2026-07-23",
+    "tags": [
+      "community",
+      "open-source",
+      "artificial-intelligence",
+      "openclaw"
+    ],
+    "status": "published",
+    "thumbnail": "https://raw.githubusercontent.com/IndopenSource/Blog-IndopenSource/main/content/2026/07/assets/openclaw-jakarta-meetup-5-thumbnail.png",
+    "content": "OpenClaw Jakarta Meetup #5 took place in South Jakarta on Thursday, July 23, 2026. Supported by DANA Indonesia, which provided the venue and refreshments, the event brought together developers, engineers, and users of OpenClaw and *agentic AI* to explore how AI agents are being applied to real-world problems.\n\nThe speakers shared first-hand experience building products, from browsers for AI agents and property search to financial advisory systems. The strongest thread of the evening, however, came from Hannes Rudolph, OpenClaw Community Manager: building an agent that can perform useful work does not mean handing the entire process over to AI.\n\n## Use AI Where It Is Actually Needed\n\nVince Iswara, CEO of DANA Indonesia, opened the event with a reminder that AI must be used responsibly. AI compute is not cheap, so it should be reserved for problems that genuinely benefit from it rather than simple tasks that can be solved more efficiently.\n\nThat message also appeared in a session by Raden Muhammad Hadi, Senior Data Scientist at DANA Indonesia, on a *Financial Advisory Agent Stack*. The system uses several subagents with distinct responsibilities, including planning the execution, carrying out tasks, providing financial literacy context, and reviewing results with different model types.\n\nHadi compared several models to match each task with the right capability. The system also uses statistical methods such as TBATS for forecasting. The presentation demonstrated why an agentic system in finance cannot rely on a single model and a single instruction.\n\n## Hannes Rudolph: Start with Small Loops\n\nJoining through Zoom, Hannes opened his session to questions from the audience. He argued that a more practical approach to agentic systems is to start with small loops, give the agent planning and checking steps, and then study its results and mistakes.\n\nModel evaluation is an important part of that process. Each model change should be benchmarked so that an improvement in one area does not quietly damage another capability. Even when using a *vibe coding* approach, developers still need to understand the process and inspect the code line by line.\n\nHis message was straightforward: focus on the outcome, build checks into the process, and do not expand the automation before it performs well within a smaller scope.\n\n<div class=\"flex justify-center\">\n  <img src=\"https://raw.githubusercontent.com/IndopenSource/Blog-IndopenSource/main/content/2026/07/assets/openclaw-jakarta-meetup-5.png\" alt=\"Attendees at OpenClaw Jakarta Meetup #5\" loading=\"lazy\">\n</div>\n\n## Three Real-World Views of AI Agents\n\nZen Aufa Bahalwan introduced Camoufox as a way to handle browser obstacles such as CAPTCHAs, *forbidden* responses, and bot-detection systems. Camoufox gives agents an *anti-detect* browsing capability. Its use still needs to remain within lawful and responsible boundaries.\n\nOkza Pradhana, from the Data Engineering Indonesia community, presented PropGen, an agent orchestration system for property search. The demo showed how an agent can collect and process information that would otherwise be spread across many sources.\n\nHadi's personal financial advisory system illustrated a different set of requirements: a strong knowledge base, model selection based on capability, and a review layer before results reach the user.\n\nThe three sessions showed that the value of an AI agent is not measured by the number of models it uses or the length of its *workflow*. Its value appears when the system can complete real work, be inspected, and operate within clear boundaries of responsibility.\n\nOpenClaw Jakarta Meetup #5 ultimately became a place to compare what has been built, what remains difficult, and what the community can improve together. DANA's support and the presence of the OpenClaw community brought an enterprise perspective and the experimental spirit of *open source* into the same room.",
+    "sourceUrl": "https://github.com/IndopenSource/Blog-IndopenSource/blob/main/content/2026/07/openclaw-jakarta-meetup-5-from-demos-to-real-world-ai-agents.md",
+    "releasedAt": "2026-07-23",
+    "lastModifiedAt": "2026-07-23T16:37:40Z",
+    "latestCommitSha": "0d795beebea38360b047f01b40eb2f7566101d51",
+    "latestCommitUrl": "https://github.com/IndopenSource/Blog-IndopenSource/commit/0d795beebea38360b047f01b40eb2f7566101d51",
+    "author": {
+      "name": "wauputr4",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/103489788?v=4",
+      "url": "https://github.com/wauputr4",
+      "committedAt": "2026-07-23T16:37:40Z"
+    },
+    "authors": [
+      {
+        "name": "wauputr4",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/103489788?v=4",
+        "url": "https://github.com/wauputr4",
+        "committedAt": "2026-07-23T16:37:40Z"
+      }
+    ],
+    "authorFromFrontmatter": false
+  },
+  {
     "slug": "onno-w-purbo-bapak-open-source-dan-sang-pembebas-internet-indonesia",
     "path": "content/2026/07/onno-w-purbo-bapak-open-source-dan-sang-pembebas-internet-indonesia.md",
     "year": "2026",
