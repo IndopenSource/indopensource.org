@@ -473,7 +473,7 @@
     "url": "https://github.com/codecoradev/uteke",
     "homepage": "https://codecora.dev",
     "language": "Rust",
-    "stars": 126,
+    "stars": 127,
     "forks": 15,
     "topics": [
       "ai",
@@ -490,7 +490,7 @@
       "sqlite",
       "vector-database"
     ],
-    "updatedAt": "2026-07-22T21:07:11Z",
+    "updatedAt": "2026-07-22T23:20:14Z",
     "pushedAt": "2026-07-21T23:43:24Z",
     "latestRelease": {
       "name": "Release v0.10.0",
