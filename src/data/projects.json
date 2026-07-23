@@ -130,7 +130,7 @@
       "sistem-informasi-desa"
     ],
     "updatedAt": "2026-07-22T13:40:31Z",
-    "pushedAt": "2026-07-18T13:09:40Z",
+    "pushedAt": "2026-07-23T03:19:25Z",
     "latestRelease": {
       "name": "Rilis v2607.0.0",
       "tagName": "v2607.0.0",
@@ -140,7 +140,7 @@
     "archived": false,
     "licenseSpdx": "",
     "createdAt": "2016-05-21T10:55:38Z",
-    "openIssues": 355,
+    "openIssues": 350,
     "openPullRequests": 7,
     "subscribers": 110,
     "communityHealth": 50,
@@ -424,7 +424,7 @@
     "homepage": "",
     "language": "Python",
     "stars": 154,
-    "forks": 36,
+    "forks": 37,
     "topics": [],
     "updatedAt": "2026-07-22T06:40:34Z",
     "pushedAt": "2026-06-26T05:38:51Z",
@@ -490,8 +490,8 @@
       "sqlite",
       "vector-database"
     ],
-    "updatedAt": "2026-07-22T23:20:14Z",
-    "pushedAt": "2026-07-21T23:43:24Z",
+    "updatedAt": "2026-07-23T03:40:07Z",
+    "pushedAt": "2026-07-23T03:39:52Z",
     "latestRelease": {
       "name": "Release v0.10.0",
       "tagName": "v0.10.0",
@@ -788,13 +788,13 @@
       "tauri",
       "terminal"
     ],
-    "updatedAt": "2026-07-21T12:58:32Z",
-    "pushedAt": "2026-07-21T12:58:04Z",
+    "updatedAt": "2026-07-23T01:16:57Z",
+    "pushedAt": "2026-07-23T01:16:54Z",
     "latestRelease": {
-      "name": "TEDI v0.3.93",
-      "tagName": "v0.3.93",
-      "url": "https://github.com/IlhamriSKY/TEDI/releases/tag/v0.3.93",
-      "publishedAt": "2026-07-21T13:18:57Z"
+      "name": "TEDI v0.3.94",
+      "tagName": "v0.3.94",
+      "url": "https://github.com/IlhamriSKY/TEDI/releases/tag/v0.3.94",
+      "publishedAt": "2026-07-23T01:34:36Z"
     },
     "archived": false,
     "licenseSpdx": "Apache-2.0",
@@ -1298,8 +1298,8 @@
     "stars": 24,
     "forks": 2,
     "topics": [],
-    "updatedAt": "2026-07-19T05:48:50Z",
-    "pushedAt": "2026-07-19T05:48:46Z",
+    "updatedAt": "2026-07-23T03:47:44Z",
+    "pushedAt": "2026-07-23T03:47:25Z",
     "latestRelease": null,
     "archived": false,
     "licenseSpdx": "MIT",
@@ -1850,7 +1850,7 @@
       "semantic-search"
     ],
     "updatedAt": "2026-07-03T02:36:07Z",
-    "pushedAt": "2026-07-14T09:11:34Z",
+    "pushedAt": "2026-07-23T02:39:54Z",
     "latestRelease": {
       "name": "OpenEmpiric v1.0.5",
       "tagName": "v1.0.5",
@@ -2309,17 +2309,22 @@
       "skills-sh",
       "tailscale"
     ],
-    "updatedAt": "2026-06-25T07:10:50Z",
-    "pushedAt": "2026-07-22T18:04:09Z",
-    "latestRelease": null,
+    "updatedAt": "2026-07-23T02:37:26Z",
+    "pushedAt": "2026-07-23T02:37:49Z",
+    "latestRelease": {
+      "name": "v0.1.0",
+      "tagName": "v0.1.0",
+      "url": "https://github.com/wauputr4/agent-proxmox/releases/tag/v0.1.0",
+      "publishedAt": "2026-07-23T02:37:49Z"
+    },
     "archived": false,
     "licenseSpdx": "MIT",
     "createdAt": "2026-06-06T16:32:11Z",
     "openIssues": 0,
-    "openPullRequests": 2,
+    "openPullRequests": 1,
     "subscribers": 0,
     "communityHealth": 100,
-    "readmeHtml": "<h2>Proxmox Host Operator Skill</h2>\n<p><a href=\"https://skills.sh/wauputr4/agent-proxmox/proxmox-host-operator\" rel=\"noopener noreferrer\"><img src=\"https://skills.sh/b/wauputr4/agent-proxmox\" alt=\"skills.sh\" /></a>\n<a href=\"https://github.com/wauputr4/agent-proxmox/actions/workflows/validate.yml\" rel=\"noopener noreferrer\"><img src=\"https://github.com/wauputr4/agent-proxmox/actions/workflows/validate.yml/badge.svg\" alt=\"Validate\" /></a></p>\n<p>Reusable AI agent skill for safe Proxmox VE host operations, LXC service handling, incident response, and maintenance logging.</p>\n<p>This repository packages <code>proxmox-host-operator</code>, a portable <code>SKILL.md</code> workflow for agents that operate small to medium Proxmox hosts with LXC containers, Docker Compose services, Cloudflare Tunnel, Tailscale, backups, and LVM thin storage.</p>\n<p>The skill is based on roughly two months of hands-on best practices from managing a homelab Proxmox environment that runs production workloads: public websites, staging apps, shared databases, automation, AI tools, tunnels, backups, security hardening, and incident recovery. The source lessons were generalized so the skill is not tied to any one organization, domain, IP address, or service name.</p>\n<h2>Feature Summary</h2>\n<ul>\n<li><strong>Host and LXC operations:</strong> Proxmox host inspection, LXC inventory, resource scaling, guest startup/shutdown order, Docker-in-LXC handling, and service persistence.</li>\n<li><strong>Production service management:</strong> Docker Compose, PM2, systemd, user systemd, reverse proxy, Cloudflare Tunnel, Tailscale, and public/private endpoint verification.</li>\n<li><strong>Incident response:</strong> Thin-pool exhaustion, read-only guests, disk-full events, crash loops, 502/1033 tunnel failures, DNS breakage, runaway processes, and high CPU or IO wait.</li>\n<li><strong>Backup and disaster recovery:</strong> Snapshot backup guardrails, Google Drive/rclone offsite backup, local cleanup, retention, backup-size interpretation, restore awareness, and storage safety checks.</li>\n<li><strong>Security hardening:</strong> SSH, Proxmox RBAC, scoped sudoers, secret-safe documentation, WordPress/PHP web-layer protections, Fail2Ban, Cloudflare WAF, and alerting hygiene.</li>\n<li><strong>Migration planning:</strong> Physical host relocation, subnet changes, internal bridge strategy, hardcoded IP discovery, NAT/Tailscale rebuild, Cloudflare recovery, validation, and rollback.</li>\n<li><strong>AI agent activity logging:</strong> Root changelog index, weekly changelog detail, per-LXC maintenance logs, incident notes, verification evidence, and reusable lessons.</li>\n</ul>\n<h2>What It Helps Agents Do</h2>\n<ul>\n<li>Inspect a Proxmox VE host before making changes.</li>\n<li>Manage LXC, Docker Compose, PM2, systemd, user systemd, Cloudflare Tunnel, and Tailscale workflows safely.</li>\n<li>Diagnose common Proxmox incidents such as thin-pool exhaustion, read-only LXC filesystems, crash loops, runaway agent processes, tunnel 502/1033 errors, security incidents, and IP migration failures.</li>\n<li>Apply reusable security hardening patterns for SSH, RBAC, sudoers, web-layer attacks, Fail2Ban, Cloudflare WAF, and secret-safe documentation.</li>\n<li>Design offsite backup routines with Google Drive or another rclone-compatible cloud target.</li>\n<li>Plan physical server relocation, subnet changes, internal bridge migration, DNS recovery, NAT rebuilds, and rollback.</li>\n<li>Keep AI agent activity logs with scope, problem, cause, action, verification, rollback, follow-up, and per-LXC documentation updates.</li>\n<li>Avoid leaking secrets while still documenting useful infrastructure state.</li>\n<li>Turn incident lessons into reusable runbooks and best practices.</li>\n</ul>\n<h2>Install</h2>\n<p>After publishing this repository on GitHub, install it with the skills CLI:</p>\n<pre><code class=\"language-bash\">npx skills add wauputr4/agent-proxmox\n</code></pre>\n<p>skills.sh lists GitHub-hosted skills automatically after users install them with the CLI.</p>\n<h2>Repository Layout</h2>\n<pre><code class=\"language-text\">skills/\n  proxmox-host-operator/\n    SKILL.md\n    agents/openai.yaml\n    references/\n      incident-patterns.md\n      activity-logging.md\n      migration-playbook.md\n      ops-logbook.md\n      proxmox-runbooks.md\n      security-hardening.md\n    scripts/\n      collect-proxmox-triage.sh\n      new-log-entry.py\nskills.sh.json\nREADME.md\nCONTRIBUTING.md\nCODE_OF_CONDUCT.md\nSECURITY.md\nLICENSE\n</code></pre>\n<h2>Who This Is For</h2>\n<p>Use this skill if your AI agent helps with:</p>\n<ul>\n<li>Proxmox VE home labs, edge servers, agency infrastructure, internal staging servers, or small production nodes.</li>\n<li>LXC-first deployments with Docker inside containers.</li>\n<li>Shared database containers, reverse proxies, tunnels, and VPN-only admin surfaces.</li>\n<li>Daily or weekly operational logs that need to stay accurate.</li>\n</ul>\n<h2>Design Principles</h2>\n<ul>\n<li>Read before changing.</li>\n<li>Prefer read-only diagnostics first.</li>\n<li>Keep changes scoped to one host, one LXC, or one service at a time.</li>\n<li>Record verification evidence, not vibes.</li>\n<li>Never log credential values, tokens, private keys, or full secret-bearing <code>.env</code> files.</li>\n<li>Treat storage, backups, networking, and tunnels as first-class operational surfaces.</li>\n<li>Convert every painful incident into a reusable prevention rule.</li>\n</ul>\n<h2>Contributing</h2>\n<p>Contributions are welcome. Good additions include generalized incident patterns, safer diagnostics, better rollback checklists, and examples from other Proxmox environments.</p>\n<p>Please avoid organization-specific hostnames, public IPs, credentials, or private service names in contributions. See <a href=\"https://github.com/wauputr4/agent-proxmox/blob/main/CONTRIBUTING.md\" rel=\"noopener noreferrer\">CONTRIBUTING.md</a> for the contribution workflow.</p>\n<h2>License</h2>\n<p>MIT. See <a href=\"https://github.com/wauputr4/agent-proxmox/blob/main/LICENSE\" rel=\"noopener noreferrer\">LICENSE</a>.</p>\n"
+    "readmeHtml": "<h2>Proxmox Host Operator Skill</h2>\n<p><a href=\"https://skills.sh/wauputr4/agent-proxmox/proxmox-host-operator\" rel=\"noopener noreferrer\"><img src=\"https://skills.sh/b/wauputr4/agent-proxmox\" alt=\"skills.sh\" /></a>\n<a href=\"https://github.com/wauputr4/agent-proxmox/actions/workflows/validate.yml\" rel=\"noopener noreferrer\"><img src=\"https://github.com/wauputr4/agent-proxmox/actions/workflows/validate.yml/badge.svg\" alt=\"Validate\" /></a></p>\n<p>Reusable AI agent skill for safe Proxmox VE host operations, LXC service handling, incident response, and maintenance logging.</p>\n<p>This repository packages <code>proxmox-host-operator</code>, a portable <code>SKILL.md</code> workflow for agents that operate small to medium Proxmox hosts with LXC containers, Docker Compose services, Cloudflare Tunnel, Tailscale, backups, and LVM thin storage.</p>\n<p>The skill is based on roughly two months of hands-on best practices from managing a homelab Proxmox environment that runs production workloads: public websites, staging apps, shared databases, automation, AI tools, tunnels, backups, security hardening, and incident recovery. The source lessons were generalized so the skill is not tied to any one organization, domain, IP address, or service name.</p>\n<h2>Feature Summary</h2>\n<ul>\n<li><strong>Host and LXC operations:</strong> Proxmox host inspection, LXC inventory, resource scaling, guest startup/shutdown order, Docker-in-LXC handling, and service persistence.</li>\n<li><strong>Production service management:</strong> Docker Compose, PM2, systemd, user systemd, reverse proxy, Cloudflare Tunnel, Tailscale, and public/private endpoint verification.</li>\n<li><strong>Runtime-safe releases:</strong> Off-host serial builds, checksummed artifacts, inactive-port validation, blue-green cutover, singleton workers, and runnable rollback generations.</li>\n<li><strong>Incident response:</strong> Thin-pool exhaustion, read-only guests, disk-full events, crash loops, 502/1033 tunnel failures, DNS breakage, runaway processes, and high CPU or IO wait.</li>\n<li><strong>Backup and disaster recovery:</strong> Snapshot backup guardrails, Google Drive/rclone offsite backup, local cleanup, retention, backup-size interpretation, restore awareness, and storage safety checks.</li>\n<li><strong>Security hardening:</strong> SSH, Proxmox RBAC, scoped sudoers, secret-safe documentation, WordPress/PHP web-layer protections, Fail2Ban, Cloudflare WAF, and alerting hygiene.</li>\n<li><strong>Migration planning:</strong> Physical host relocation, subnet changes, internal bridge strategy, hardcoded IP discovery, NAT/Tailscale rebuild, Cloudflare recovery, validation, and rollback.</li>\n<li><strong>AI agent activity logging:</strong> Root changelog index, weekly changelog detail, per-LXC maintenance logs, incident notes, verification evidence, and reusable lessons.</li>\n<li><strong>Monitoring safety:</strong> Dry-run defaults, maintenance windows, deduplicated and batched alerts, fail-closed backups, and delivery retry semantics.</li>\n</ul>\n<h2>What It Helps Agents Do</h2>\n<ul>\n<li>Inspect a Proxmox VE host before making changes.</li>\n<li>Manage LXC, Docker Compose, PM2, systemd, user systemd, Cloudflare Tunnel, and Tailscale workflows safely.</li>\n<li>Diagnose common Proxmox incidents such as thin-pool exhaustion, read-only LXC filesystems, crash loops, runaway agent processes, tunnel 502/1033 errors, security incidents, and IP migration failures.</li>\n<li>Apply reusable security hardening patterns for SSH, RBAC, sudoers, web-layer attacks, Fail2Ban, Cloudflare WAF, and secret-safe documentation.</li>\n<li>Design offsite backup routines with Google Drive or another rclone-compatible cloud target.</li>\n<li>Plan physical server relocation, subnet changes, internal bridge migration, DNS recovery, NAT rebuilds, and rollback.</li>\n<li>Keep AI agent activity logs with scope, problem, cause, action, verification, rollback, follow-up, and per-LXC documentation updates.</li>\n<li>Avoid leaking secrets while still documenting useful infrastructure state.</li>\n<li>Turn incident lessons into reusable runbooks and best practices.</li>\n</ul>\n<h2>Install</h2>\n<p>After publishing this repository on GitHub, install it with the skills CLI:</p>\n<pre><code class=\"language-bash\">npx skills add wauputr4/agent-proxmox\n</code></pre>\n<p>skills.sh lists GitHub-hosted skills automatically after users install them with the CLI.</p>\n<h2>Repository Layout</h2>\n<pre><code class=\"language-text\">skills/\n  proxmox-host-operator/\n    SKILL.md\n    agents/openai.yaml\n    references/\n      incident-patterns.md\n      activity-logging.md\n      migration-playbook.md\n      ops-logbook.md\n      proxmox-runbooks.md\n      security-hardening.md\n    scripts/\n      collect-proxmox-triage.sh\n      new-log-entry.py\nskills.sh.json\nREADME.md\nCONTRIBUTING.md\nCODE_OF_CONDUCT.md\nSECURITY.md\nLICENSE\n</code></pre>\n<h2>Who This Is For</h2>\n<p>Use this skill if your AI agent helps with:</p>\n<ul>\n<li>Proxmox VE home labs, edge servers, agency infrastructure, internal staging servers, or small production nodes.</li>\n<li>LXC-first deployments with Docker inside containers.</li>\n<li>Shared database containers, reverse proxies, tunnels, and VPN-only admin surfaces.</li>\n<li>Daily or weekly operational logs that need to stay accurate.</li>\n</ul>\n<h2>Design Principles</h2>\n<ul>\n<li>Read before changing.</li>\n<li>Prefer read-only diagnostics first.</li>\n<li>Keep changes scoped to one host, one LXC, or one service at a time.</li>\n<li>Record verification evidence, not vibes.</li>\n<li>Never log credential values, tokens, private keys, or full secret-bearing <code>.env</code> files.</li>\n<li>Treat storage, backups, networking, and tunnels as first-class operational surfaces.</li>\n<li>Convert every painful incident into a reusable prevention rule.</li>\n</ul>\n<h2>Contributing</h2>\n<p>Contributions are welcome. Good additions include generalized incident patterns, safer diagnostics, better rollback checklists, and examples from other Proxmox environments.</p>\n<p>Please avoid organization-specific hostnames, public IPs, credentials, or private service names in contributions. See <a href=\"https://github.com/wauputr4/agent-proxmox/blob/main/CONTRIBUTING.md\" rel=\"noopener noreferrer\">CONTRIBUTING.md</a> for the contribution workflow.</p>\n<h2>License</h2>\n<p>MIT. See <a href=\"https://github.com/wauputr4/agent-proxmox/blob/main/LICENSE\" rel=\"noopener noreferrer\">LICENSE</a>.</p>\n"
   },
   {
     "fullName": "faisalaffan/ragi-instant",
