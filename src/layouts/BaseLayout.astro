@@ -15,6 +15,10 @@ interface Props {
   /** ISO timestamps used by article Open Graph metadata. */
   publishedAt?: string;
   modifiedAt?: string;
+  /** Page language. Indonesian remains the site default. */
+  language?: 'id' | 'en';
+  /** Translated equivalents used for hreflang discovery. */
+  alternates?: Array<{ lang: 'id' | 'en'; href: string }>;
   /**
    * Structured data injected as a JSON-LD `<script>`. Pass a plain object
    * (schema.org graph) and the layout serialises + hashes it for CSP. (SEO-4)
@@ -38,6 +42,8 @@ const {
   robots = 'index, follow',
   publishedAt,
   modifiedAt,
+  language = 'id',
+  alternates = [],
   jsonLd,
   heroPreloadHref
 } = Astro.props as Props;
@@ -47,6 +53,9 @@ const SITE_ORIGIN = Astro.site || new URL('https://indopensource.org');
 const baseUrl = import.meta.env.BASE_URL.replace(/\/?$/, '/');
 const canonicalUrl = new URL(Astro.url.pathname.replace(baseUrl, '/'), SITE_ORIGIN).toString();
 const imageUrl = new URL(image, SITE_ORIGIN).toString();
+const locale = language === 'en' ? 'en_US' : 'id_ID';
+const languageTag = language === 'en' ? 'en-US' : 'id-ID';
+const defaultAlternate = alternates.find((alternate) => alternate.lang === 'id');
 const cloudflareBeaconToken = import.meta.env.PUBLIC_CLOUDFLARE_WEB_ANALYTICS_TOKEN;
 const googleAnalyticsId = import.meta.env.PUBLIC_GOOGLE_ANALYTICS_ID;
 const googleSiteVerification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION;
@@ -66,7 +75,7 @@ const suppliedNodes = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [{
   url: canonicalUrl,
   name: title,
   description,
-  inLanguage: 'id-ID',
+  inLanguage: languageTag,
   isPartOf: { '@id': websiteId },
   about: { '@id': organizationId }
 }];
@@ -90,7 +99,7 @@ const structuredData = {
       '@id': websiteId,
       name: 'IndopenSource',
       url: siteUrl,
-      inLanguage: 'id-ID',
+      inLanguage: languageTag,
       publisher: { '@id': organizationId }
     },
     ...suppliedNodes.map(({ '@context': _context, ...node }) => node)
@@ -149,7 +158,7 @@ const csp = [
 ---
 
 <!doctype html>
-<html lang="id">
+<html lang={language}>
   <head>
     <meta charset="UTF-8" />
     <!-- Content-Security-Policy + referrer hardening for a header-less SSG host (SEC-02). -->
@@ -166,6 +175,12 @@ const csp = [
     <link rel="dns-prefetch" href="https://avatars.githubusercontent.com" />
     <link rel="dns-prefetch" href="https://raw.githubusercontent.com" />
     <link rel="canonical" href={canonicalUrl} />
+    {alternates.map((alternate) => (
+      <link rel="alternate" hreflang={alternate.lang} href={new URL(alternate.href, SITE_ORIGIN).toString()} />
+    ))}
+    {defaultAlternate && (
+      <link rel="alternate" hreflang="x-default" href={new URL(defaultAlternate.href, SITE_ORIGIN).toString()} />
+    )}
     {
       /* Preload the above-the-fold LCP image (homepage hero) at high priority so
          it downloads before the renderer reaches its <img>. astro:assets emits
@@ -188,7 +203,7 @@ const csp = [
     }
     {googleAnalyticsScript && <script is:inline set:html={googleAnalyticsScript} />}
     <meta property="og:site_name" content="IndopenSource" />
-    <meta property="og:locale" content="id_ID" />
+    <meta property="og:locale" content={locale} />
     <meta property="og:type" content={type} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
@@ -214,12 +229,12 @@ const csp = [
   <body>
     <!-- Skip past the header/primary nav to the content (WCAG 2.4.1). Must be
          the first focusable element in the DOM. (A11Y-1) -->
-    <a href="#main-content" class="skip-link">Lewati ke konten</a>
-    <SiteHeader />
+    <a href="#main-content" class="skip-link">{language === 'en' ? 'Skip to content' : 'Lewati ke konten'}</a>
+    <SiteHeader language={language} />
     <main id="main-content" tabindex="-1">
       <slot />
     </main>
-    <SiteFooter />
+    <SiteFooter language={language} />
     <!--
       SCROLL-AWARE REVEAL (MOTION). A bundled module script — Astro compiles
       this to /_astro/*, so it is covered by `script-src 'self'` (no inline
