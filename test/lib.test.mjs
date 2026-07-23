@@ -10,6 +10,7 @@
 // redefining any logic here, so the tests fail if that behaviour regresses.
 
 import { strict as assert } from 'node:assert';
+import { existsSync, readFileSync } from 'node:fs';
 import { describe, it } from 'node:test';
 
 import { projectSlug, rankProjectOwners } from '../src/lib/projects.ts';
@@ -135,6 +136,21 @@ describe('article language routing', () => {
     assert.deepEqual(articleTranslations([id, en, unrelated], id), [en]);
     assert.deepEqual(articleTranslations([id], { ...id, translationKey: undefined }), []);
     assert.deepEqual(articleTranslations([id, { ...en, status: 'draft' }], id), []);
+  });
+});
+
+describe('synced article thumbnails', () => {
+  it('uses same-origin files with complete Open Graph metadata', () => {
+    const posts = JSON.parse(readFileSync(new URL('../src/data/blog-posts.json', import.meta.url), 'utf8'));
+
+    for (const post of posts) {
+      assert.match(post.thumbnail, /^\/blog-assets\//);
+      assert.ok(existsSync(new URL(`../public${post.thumbnail}`, import.meta.url)), `missing ${post.thumbnail}`);
+      assert.ok(post.thumbnailWidth > 0);
+      assert.ok(post.thumbnailHeight > 0);
+      assert.match(post.thumbnailType, /^image\//);
+      assert.doesNotMatch(post.content, /raw\.githubusercontent\.com/);
+    }
   });
 });
 

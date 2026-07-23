@@ -2,6 +2,7 @@ import { mkdir, writeFile } from 'node:fs/promises';
 
 const BLOG_REPO = 'IndopenSource/Blog-IndopenSource';
 const OUT_FILE = new URL('../src/data/blog-posts.json', import.meta.url);
+const BLOG_ASSET_DIR = new URL('../public/blog-assets/', import.meta.url);
 const token = process.env.GITHUB_TOKEN || process.env.GH_TOKEN;
 
 async function requestJson(url) {
@@ -156,6 +157,38 @@ function resolveThumbnail(value, articlePath, branch) {
   return new URL(value, `https://raw.githubusercontent.com/${BLOG_REPO}/${branch}/${articleDirectory}/`).toString();
 }
 
+async function mirrorBlogAsset(value, articlePath, branch) {
+  const resolved = resolveThumbnail(value, articlePath, branch);
+  if (!resolved.startsWith(`https://raw.githubusercontent.com/${BLOG_REPO}/`)) return resolved;
+
+  const assetName = new URL(resolved).pathname.split('/').pop()?.replace(/[^A-Za-z0-9._-]/g, '');
+  if (!assetName) return resolved;
+
+  const [year, month] = articlePath.split('/').slice(1, 3);
+  const assetDirectory = new URL(`${year}/${month}/`, BLOG_ASSET_DIR);
+  const response = await fetch(resolved);
+  if (!response.ok) {
+    console.warn(`Could not mirror blog asset ${resolved}: HTTP ${response.status}`);
+    return resolved;
+  }
+
+  await mkdir(assetDirectory, { recursive: true });
+  await writeFile(new URL(assetName, assetDirectory), Buffer.from(await response.arrayBuffer()));
+  return `/blog-assets/${year}/${month}/${assetName}`;
+}
+
+async function mirrorContentAssets(content, articlePath, branch) {
+  const rawAssetUrls = [...new Set(
+    content.match(/https:\/\/raw\.githubusercontent\.com\/IndopenSource\/Blog-IndopenSource\/[^\s"'<>)]*/g) || []
+  )];
+
+  for (const url of rawAssetUrls) {
+    content = content.replaceAll(url, await mirrorBlogAsset(url, articlePath, branch));
+  }
+
+  return content;
+}
+
 async function getCommitMeta(path) {
   const commits = await requestJson(`https://api.github.com/repos/${BLOG_REPO}/commits?path=${encodeURIComponent(path)}&per_page=100`);
   const firstCommit = commits.at(-1);
@@ -269,6 +302,8 @@ for (const path of articleFiles) {
         )
       ]
     : commitMeta.authors.length ? commitMeta.authors : [resolvedAuthor.author];
+  const thumbnail = await mirrorBlogAsset(data.thumbnail || data.image || data.cover || '', path, defaultBranch);
+  const mirroredContent = await mirrorContentAssets(content, path, defaultBranch);
 
   posts.push({
     slug: slugFromPath(path),
@@ -282,8 +317,11 @@ for (const path of articleFiles) {
     status: data.status || 'draft',
     lang: data.lang === 'en' ? 'en' : 'id',
     translationKey: data.translationKey || '',
-    thumbnail: resolveThumbnail(data.thumbnail || data.image || data.cover || '', path, defaultBranch),
-    content,
+    thumbnail,
+    thumbnailWidth: Number(data.thumbnailWidth) || 0,
+    thumbnailHeight: Number(data.thumbnailHeight) || 0,
+    thumbnailType: data.thumbnailType || '',
+    content: mirroredContent,
     sourceUrl: file.html_url,
     // The visible "release" date is the editorial frontmatter `date` (the date
     // the author intended), falling back to the first commit only when absent.

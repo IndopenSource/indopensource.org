@@ -32,6 +32,8 @@ const releaseDate = post.releasedAt
   : '';
 const thumbnail = post.thumbnail || '/brand/indopensource-hero.jpg';
 const thumbnailUrl = /^https?:\/\//.test(thumbnail) ? thumbnail : withBase(thumbnail);
+const thumbnailWidth = post.thumbnailWidth || 1280;
+const thumbnailHeight = post.thumbnailHeight || 720;
 const heroAlt = english ? `Article thumbnail: ${post.title}` : `Thumbnail artikel: ${post.title}`;
 const authorByline = post.authorFromFrontmatter
   ? english
@@ -65,6 +67,9 @@ const jsonLd = {
   title={seoTitle}
   description={post.description}
   image={thumbnailUrl}
+  imageWidth={post.thumbnailWidth}
+  imageHeight={post.thumbnailHeight}
+  imageType={post.thumbnailType}
   type="article"
   robots={published ? undefined : 'noindex, nofollow, noarchive'}
   publishedAt={published ? post.releasedAt : undefined}
@@ -99,7 +104,7 @@ const jsonLd = {
       ))}
     </div>
     <figure class="riso-hover riso-shadow mt-8 overflow-hidden border-2 border-ink bg-ink">
-      <img class="aspect-[16/9] w-full object-cover" src={thumbnailUrl} alt={heroAlt} width="1280" height="720" loading="eager" fetchpriority="high" decoding="async" />
+      <img class="aspect-[16/9] w-full object-cover" src={thumbnailUrl} alt={heroAlt} width={thumbnailWidth} height={thumbnailHeight} loading="eager" fetchpriority="high" decoding="async" />
     </figure>
   </PageHeader>
 

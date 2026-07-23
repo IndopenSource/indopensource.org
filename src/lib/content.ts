@@ -43,6 +43,9 @@ export interface BlogPost {
   /** Shared key used to connect translated versions of one article. */
   translationKey?: string;
   thumbnail: string;
+  thumbnailWidth?: number;
+  thumbnailHeight?: number;
+  thumbnailType?: string;
   content: string;
   sourceUrl: string;
   /** Editorial publication date (frontmatter `date`), falling back to commit metadata. */
