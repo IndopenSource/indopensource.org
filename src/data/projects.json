@@ -448,7 +448,7 @@
     "url": "https://github.com/codecoradev/uteke",
     "homepage": "https://codecora.dev",
     "language": "Rust",
-    "stars": 139,
+    "stars": 140,
     "forks": 15,
     "topics": [
       "ai",
@@ -465,7 +465,7 @@
       "sqlite",
       "vector-database"
     ],
-    "updatedAt": "2026-07-25T10:47:43Z",
+    "updatedAt": "2026-07-25T10:48:49Z",
     "pushedAt": "2026-07-25T02:20:06Z",
     "latestRelease": {
       "name": "v0.10.1",
@@ -983,8 +983,8 @@
     "stars": 45,
     "forks": 10,
     "topics": [],
-    "updatedAt": "2026-07-25T10:08:11Z",
-    "pushedAt": "2026-07-25T10:08:03Z",
+    "updatedAt": "2026-07-25T10:57:09Z",
+    "pushedAt": "2026-07-25T10:56:39Z",
     "latestRelease": {
       "name": "v0.15.1",
       "tagName": "v0.15.1",
@@ -1033,8 +1033,8 @@
       "web-desktop",
       "web-terminal"
     ],
-    "updatedAt": "2026-07-25T09:07:32Z",
-    "pushedAt": "2026-07-25T09:07:27Z",
+    "updatedAt": "2026-07-25T11:15:03Z",
+    "pushedAt": "2026-07-25T11:13:33Z",
     "latestRelease": null,
     "archived": false,
     "licenseSpdx": "MIT",
@@ -1295,10 +1295,10 @@
     "url": "https://github.com/maziyank/nats",
     "homepage": "https://maziyank.github.io/nats",
     "language": "TypeScript",
-    "stars": 24,
+    "stars": 25,
     "forks": 2,
     "topics": [],
-    "updatedAt": "2026-07-25T01:01:46Z",
+    "updatedAt": "2026-07-25T11:53:26Z",
     "pushedAt": "2026-07-25T01:01:41Z",
     "latestRelease": null,
     "archived": false,
