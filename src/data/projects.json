@@ -358,7 +358,7 @@
       "workspace-manager"
     ],
     "updatedAt": "2026-07-25T09:45:57Z",
-    "pushedAt": "2026-07-25T10:03:10Z",
+    "pushedAt": "2026-07-25T15:29:33Z",
     "latestRelease": {
       "name": "Termul Manager v0.4.8",
       "tagName": "v0.4.8",
@@ -397,7 +397,7 @@
       "tiptap-editor"
     ],
     "updatedAt": "2026-07-25T01:42:03Z",
-    "pushedAt": "2026-07-25T13:55:46Z",
+    "pushedAt": "2026-07-25T15:10:48Z",
     "latestRelease": {
       "name": "v3.2.1",
       "tagName": "v3.2.1",
@@ -423,10 +423,10 @@
     "url": "https://github.com/mallexibra-dev/clipforge",
     "homepage": "",
     "language": "Python",
-    "stars": 155,
+    "stars": 156,
     "forks": 37,
     "topics": [],
-    "updatedAt": "2026-07-24T12:41:18Z",
+    "updatedAt": "2026-07-25T14:30:31Z",
     "pushedAt": "2026-06-26T05:38:51Z",
     "latestRelease": null,
     "archived": false,
@@ -448,7 +448,7 @@
     "url": "https://github.com/codecoradev/uteke",
     "homepage": "https://codecora.dev",
     "language": "Rust",
-    "stars": 142,
+    "stars": 143,
     "forks": 15,
     "topics": [
       "ai",
@@ -465,7 +465,7 @@
       "sqlite",
       "vector-database"
     ],
-    "updatedAt": "2026-07-25T13:04:33Z",
+    "updatedAt": "2026-07-25T15:02:56Z",
     "pushedAt": "2026-07-25T02:20:06Z",
     "latestRelease": {
       "name": "v0.10.1",
@@ -706,7 +706,7 @@
     "url": "https://github.com/ddtamn/svelte-audio-ui",
     "homepage": "https://svelte-audio-ui.vercel.app/",
     "language": "Svelte",
-    "stars": 78,
+    "stars": 77,
     "forks": 4,
     "topics": [
       "audio",
@@ -717,7 +717,7 @@
       "svelte-components",
       "sveltekit"
     ],
-    "updatedAt": "2026-07-22T07:23:13Z",
+    "updatedAt": "2026-07-25T15:00:53Z",
     "pushedAt": "2026-07-24T14:41:49Z",
     "latestRelease": {
       "name": "svelte-audio-ui@1.0.1",
@@ -1194,7 +1194,7 @@
     "url": "https://github.com/ardli-firman/sha-print",
     "homepage": "",
     "language": "C#",
-    "stars": 34,
+    "stars": 33,
     "forks": 13,
     "topics": [
       "desktop-app",
@@ -1203,7 +1203,7 @@
       "sharing-printer",
       "windows"
     ],
-    "updatedAt": "2026-07-18T03:45:52Z",
+    "updatedAt": "2026-07-25T15:10:51Z",
     "pushedAt": "2026-07-18T03:40:27Z",
     "latestRelease": {
       "name": "ShaPrint v1.6.0 (Stable)",
@@ -1295,11 +1295,11 @@
     "url": "https://github.com/maziyank/nats",
     "homepage": "https://maziyank.github.io/nats",
     "language": "TypeScript",
-    "stars": 26,
+    "stars": 28,
     "forks": 2,
     "topics": [],
-    "updatedAt": "2026-07-25T12:51:18Z",
-    "pushedAt": "2026-07-25T01:01:41Z",
+    "updatedAt": "2026-07-25T15:29:45Z",
+    "pushedAt": "2026-07-25T14:58:07Z",
     "latestRelease": null,
     "archived": false,
     "licenseSpdx": "MIT",
@@ -1320,7 +1320,7 @@
     "url": "https://github.com/ammar-rasyidi/mandum-rimba",
     "homepage": "https://www.mandumrimba.org",
     "language": "TypeScript",
-    "stars": 23,
+    "stars": 24,
     "forks": 5,
     "topics": [
       "conservation",
@@ -1337,7 +1337,7 @@
       "pmtiles",
       "wildlife"
     ],
-    "updatedAt": "2026-07-25T06:58:10Z",
+    "updatedAt": "2026-07-25T14:21:07Z",
     "pushedAt": "2026-07-25T06:57:35Z",
     "latestRelease": {
       "name": "Mandum Rimba v1.0.0",
@@ -1440,8 +1440,8 @@
       "linux",
       "omarchy"
     ],
-    "updatedAt": "2026-07-25T07:13:58Z",
-    "pushedAt": "2026-07-25T07:13:22Z",
+    "updatedAt": "2026-07-25T14:46:16Z",
+    "pushedAt": "2026-07-25T14:45:12Z",
     "latestRelease": {
       "name": "v0.2.2",
       "tagName": "v0.2.2",
@@ -1591,8 +1591,8 @@
     "stars": 14,
     "forks": 2,
     "topics": [],
-    "updatedAt": "2026-07-25T13:52:25Z",
-    "pushedAt": "2026-07-25T13:51:34Z",
+    "updatedAt": "2026-07-25T14:37:28Z",
+    "pushedAt": "2026-07-25T14:37:24Z",
     "latestRelease": {
       "name": "v1.2.54",
       "tagName": "v1.2.54",
@@ -2090,12 +2090,12 @@
     "metaDescription": "Directory free AI credits & free tier, Indonesia-first, auto-aggregated dari sumber komunitas. Aggregator transparan (bukan verifier), anti-halusinasi…",
     "url": "https://github.com/raymondchins/tokengratis-id",
     "homepage": "https://tokengratis.id",
-    "language": "TypeScript",
+    "language": "JavaScript",
     "stars": 6,
     "forks": 0,
     "topics": [],
-    "updatedAt": "2026-07-25T14:02:15Z",
-    "pushedAt": "2026-07-25T14:01:34Z",
+    "updatedAt": "2026-07-25T15:26:32Z",
+    "pushedAt": "2026-07-25T15:26:29Z",
     "latestRelease": null,
     "archived": false,
     "licenseSpdx": "MIT",
