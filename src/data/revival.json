@@ -170,7 +170,7 @@
     "description": "Aplikasi Sistem Pendukung Keputusan Penentuan Lokasi  Mendirikan Usaha Pencucian Mobil dan Sepeda Motor dengn metode AHP - www.firstplato.com",
     "url": "https://github.com/ipang-dwi/spk-ahp-pemilihan-lokasi-usaha",
     "homepage": "https://lab.firstplato.com/ahpca",
-    "stars": 28,
+    "stars": 29,
     "forks": 13,
     "language": "HTML",
     "topics": [
@@ -188,7 +188,7 @@
     ],
     "license": "GPL-3.0",
     "createdAt": "2017-08-23T13:26:07Z",
-    "updatedAt": "2026-07-13T09:56:32Z",
+    "updatedAt": "2026-07-26T17:21:31Z",
     "pushedAt": "2020-01-09T18:55:19Z",
     "archived": false,
     "disabled": false
