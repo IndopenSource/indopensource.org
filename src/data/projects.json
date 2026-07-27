@@ -21,7 +21,7 @@
       "user-agent",
       "user-agent-parser"
     ],
-    "updatedAt": "2026-07-27T15:54:32Z",
+    "updatedAt": "2026-07-27T19:43:05Z",
     "pushedAt": "2026-07-27T15:52:17Z",
     "latestRelease": {
       "name": "v2.0.10",
@@ -156,10 +156,10 @@
     "url": "https://github.com/jipraks/yt-short-clipper",
     "homepage": "",
     "language": "Python",
-    "stars": 908,
+    "stars": 909,
     "forks": 280,
     "topics": [],
-    "updatedAt": "2026-07-27T04:25:06Z",
+    "updatedAt": "2026-07-27T19:14:56Z",
     "pushedAt": "2026-07-18T02:05:39Z",
     "latestRelease": {
       "name": "YT Short Clipper v2.0.5-beta",
@@ -1609,10 +1609,10 @@
     "url": "https://github.com/RudyCity/superagent",
     "homepage": "",
     "language": "TypeScript",
-    "stars": 14,
+    "stars": 15,
     "forks": 2,
     "topics": [],
-    "updatedAt": "2026-07-27T05:03:01Z",
+    "updatedAt": "2026-07-27T18:13:38Z",
     "pushedAt": "2026-07-27T05:02:44Z",
     "latestRelease": {
       "name": "v1.2.54",
