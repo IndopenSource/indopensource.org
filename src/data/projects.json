@@ -448,7 +448,7 @@
     "url": "https://github.com/codecoradev/uteke",
     "homepage": "https://codecora.dev",
     "language": "Rust",
-    "stars": 150,
+    "stars": 151,
     "forks": 17,
     "topics": [
       "ai",
@@ -465,7 +465,7 @@
       "sqlite",
       "vector-database"
     ],
-    "updatedAt": "2026-07-26T17:35:36Z",
+    "updatedAt": "2026-07-27T23:16:56Z",
     "pushedAt": "2026-07-26T17:35:29Z",
     "latestRelease": {
       "name": "Release v0.10.1",
@@ -1197,7 +1197,7 @@
     "url": "https://github.com/rizukirr/no-vibe",
     "homepage": "",
     "language": "Shell",
-    "stars": 35,
+    "stars": 36,
     "forks": 1,
     "topics": [
       "ai-agents",
@@ -1213,7 +1213,7 @@
       "vibe-coding",
       "vibecoding"
     ],
-    "updatedAt": "2026-07-22T05:40:25Z",
+    "updatedAt": "2026-07-27T22:19:12Z",
     "pushedAt": "2026-06-12T15:10:29Z",
     "latestRelease": {
       "name": "v2.0.3",
