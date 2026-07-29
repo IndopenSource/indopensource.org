@@ -9,7 +9,7 @@
     "url": "https://github.com/faisalman/ua-parser-js",
     "homepage": "https://uaparser.dev/",
     "language": "JavaScript",
-    "stars": 10172,
+    "stars": 10173,
     "forks": 1219,
     "topics": [
       "analytics",
@@ -21,7 +21,7 @@
       "user-agent",
       "user-agent-parser"
     ],
-    "updatedAt": "2026-07-29T04:42:34Z",
+    "updatedAt": "2026-07-29T20:11:16Z",
     "pushedAt": "2026-07-27T15:52:17Z",
     "latestRelease": {
       "name": "v2.0.10",
@@ -1079,8 +1079,8 @@
       "web-desktop",
       "web-terminal"
     ],
-    "updatedAt": "2026-07-29T19:14:15Z",
-    "pushedAt": "2026-07-29T19:13:34Z",
+    "updatedAt": "2026-07-29T20:46:36Z",
+    "pushedAt": "2026-07-29T20:46:31Z",
     "latestRelease": null,
     "archived": false,
     "licenseSpdx": "MIT",
@@ -2145,8 +2145,8 @@
     "stars": 6,
     "forks": 0,
     "topics": [],
-    "updatedAt": "2026-07-28T20:18:02Z",
-    "pushedAt": "2026-07-28T20:17:35Z",
+    "updatedAt": "2026-07-29T20:14:12Z",
+    "pushedAt": "2026-07-29T20:13:56Z",
     "latestRelease": null,
     "archived": false,
     "licenseSpdx": "MIT",
