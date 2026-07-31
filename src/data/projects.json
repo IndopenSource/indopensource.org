@@ -340,7 +340,7 @@
     "url": "https://github.com/gnoviawan/termul",
     "homepage": "https://termul.dev",
     "language": "TypeScript",
-    "stars": 202,
+    "stars": 203,
     "forks": 39,
     "topics": [
       "cross-platform",
@@ -357,7 +357,7 @@
       "terminal-emulator",
       "workspace-manager"
     ],
-    "updatedAt": "2026-07-31T17:06:00Z",
+    "updatedAt": "2026-07-31T18:43:34Z",
     "pushedAt": "2026-07-31T17:05:43Z",
     "latestRelease": {
       "name": "Termul Manager v0.4.8",
@@ -764,7 +764,7 @@
       "sveltekit"
     ],
     "updatedAt": "2026-07-26T02:42:40Z",
-    "pushedAt": "2026-07-28T06:25:09Z",
+    "pushedAt": "2026-07-31T19:33:53Z",
     "latestRelease": {
       "name": "svelte-audio-ui@1.0.1",
       "tagName": "v1.0.1",
@@ -775,7 +775,7 @@
     "licenseSpdx": "MIT",
     "createdAt": "2026-03-17T12:55:21Z",
     "openIssues": 0,
-    "openPullRequests": 9,
+    "openPullRequests": 10,
     "subscribers": 3,
     "communityHealth": 100,
     "readmeHtml": "<div>\n  <img src=\"https://raw.githubusercontent.com/ddtamn/svelte-audio-ui/main/static/ogImage.png\" alt=\"Svelte Audio UI\" width=\"100%\" />\n  <br />\n  <br />  <p>A set of accessible, composable audio UI components for Svelte.<br />Built on top of shadcn-svelte. Copy, paste, and own.</p>  <p>\n    <a href=\"https://svelte-audio-ui.vercel.app/docs\" rel=\"noopener noreferrer\">Docs</a> ·\n    <a href=\"https://svelte-audio-ui.vercel.app/particles\" rel=\"noopener noreferrer\">Particles</a> ·\n    <a href=\"https://github.com/ddtamn/svelte-audio-ui/issues\" rel=\"noopener noreferrer\">Issues</a>\n  </p>  <img src=\"https://img.shields.io/github/license/ddtamn/svelte-audio-ui?color=orange&amp;style=flat-square\" alt=\"License\" />\n  <img src=\"https://img.shields.io/github/stars/ddtamn/svelte-audio-ui?color=orange&amp;style=flat-square\" alt=\"Stars\" />\n  <img src=\"https://img.shields.io/badge/Svelte-5-ff3e00?style=flat-square&amp;logo=svelte&amp;logoColor=white\" alt=\"Svelte 5\" />\n  <img src=\"https://img.shields.io/badge/SvelteKit-app-ff3e00?style=flat-square&amp;logo=svelte&amp;logoColor=white\" alt=\"SvelteKit\" />\n  <img src=\"https://img.shields.io/badge/TypeScript-ready-3178c6?style=flat-square&amp;logo=typescript&amp;logoColor=white\" alt=\"TypeScript\" />\n  <img src=\"https://img.shields.io/badge/shadcn--svelte-compatible-black?style=flat-square\" alt=\"shadcn-svelte\" />\n  <img src=\"https://img.shields.io/badge/copy--paste-friendly-success?style=flat-square\" alt=\"Copy Paste Friendly\" />\n  <img src=\"https://img.shields.io/badge/AI-ready-8A2BE2?style=flat-square\" alt=\"AI Ready\" />\n</div><hr />\n<h2>What is this?</h2>\n<p><strong>Svelte Audio UI</strong> is a collection of audio-focused UI components that you install via the <a href=\"https://shadcn-svelte.com\" rel=\"noopener noreferrer\">shadcn-svelte</a> CLI. No npm package — you own the code.</p>\n<p>Components include: <code>AudioPlayer</code>, <code>AudioQueue</code>, <code>AudioTrack</code>, <code>AudioProvider</code>, <code>Knob</code>, <code>Fader</code>, <code>Slider</code>, <code>XYPad</code>, <code>SortableList</code>, and more.</p>\n<h2>Quick Start</h2>\n<p>Make sure you have <a href=\"https://shadcn-svelte.com/docs/installation\" rel=\"noopener noreferrer\">shadcn-svelte</a> initialized, then:</p>\n<pre><code class=\"language-sh\">npx shadcn-svelte@latest add https://svelte-audio-ui.vercel.app/r/player.json\n</code></pre>\n<p>Add <code>AudioProvider</code> to your root layout:</p>\n<pre><code class=\"language-svelte\">&lt;script lang=\"ts\"&gt;\n  import { AudioProvider } from \"$lib/components/ui/audio/provider/index.js\";\n  let { children } = $props();\n&lt;/script&gt;\n\n&lt;AudioProvider&gt;{@render children()}&lt;/AudioProvider&gt;\n</code></pre>\n<p>Use a component:</p>\n<pre><code class=\"language-svelte\">&lt;script lang=\"ts\"&gt;\n  import * as AudioPlayer from \"$lib/components/ui/audio/player/index.js\";\n&lt;/script&gt;\n\n&lt;AudioPlayer.Root&gt;\n  &lt;AudioPlayer.ControlBar&gt;\n    &lt;AudioPlayer.Play /&gt;\n    &lt;AudioPlayer.SeekBar /&gt;\n    &lt;AudioPlayer.Volume /&gt;\n  &lt;/AudioPlayer.ControlBar&gt;\n&lt;/AudioPlayer.Root&gt;\n</code></pre>\n<h2>Tech Stack</h2>\n<ul>\n<li>Svelte 5 + SvelteKit</li>\n<li>TypeScript</li>\n<li>Tailwind CSS v4</li>\n<li>bits-ui · shadcn-svelte · svelte-dnd-action</li>\n</ul>\n<h2>Contributing</h2>\n<p>See <a href=\"https://github.com/ddtamn/svelte-audio-ui/blob/main/CONTRIBUTING.md\" rel=\"noopener noreferrer\">CONTRIBUTING.md</a>.</p>\n<h2>Acknowledgements</h2>\n<p>Inspired by <a href=\"https://audio-ui.xyz\" rel=\"noopener noreferrer\">audio-ui</a>, a composable audio UI system for React.</p>\n<p>This project brings similar ideas into the Svelte ecosystem, adapting the original headless and provider-based architecture for Svelte.</p>\n<p>If you're working with React, check out the original project:\n<a href=\"https://audio-ui.xyz\" rel=\"noopener noreferrer\">audio-ui</a></p>\n<h2>License</h2>\n<p><a href=\"https://github.com/ddtamn/svelte-audio-ui/blob/main/LICENSE\" rel=\"noopener noreferrer\">MIT</a> © <a href=\"https://github.com/ddtamn\" rel=\"noopener noreferrer\">ddtamn</a></p>\n"
