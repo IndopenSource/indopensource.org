@@ -324,7 +324,7 @@
     "archived": false,
     "licenseSpdx": "MIT",
     "createdAt": "2026-03-15T03:38:04Z",
-    "openIssues": 32,
+    "openIssues": 33,
     "openPullRequests": 0,
     "subscribers": 4,
     "communityHealth": 71,
@@ -448,7 +448,7 @@
     "url": "https://github.com/codecoradev/uteke",
     "homepage": "https://codecora.dev",
     "language": "Rust",
-    "stars": 155,
+    "stars": 156,
     "forks": 18,
     "topics": [
       "ai",
@@ -465,7 +465,7 @@
       "sqlite",
       "vector-database"
     ],
-    "updatedAt": "2026-08-01T15:45:34Z",
+    "updatedAt": "2026-08-01T17:24:32Z",
     "pushedAt": "2026-08-01T15:46:11Z",
     "latestRelease": {
       "name": "Release v0.10.2",
