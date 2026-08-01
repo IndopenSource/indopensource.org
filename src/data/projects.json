@@ -140,7 +140,7 @@
     "archived": false,
     "licenseSpdx": "",
     "createdAt": "2016-05-21T10:55:38Z",
-    "openIssues": 353,
+    "openIssues": 354,
     "openPullRequests": 7,
     "subscribers": 112,
     "communityHealth": 50,
@@ -159,7 +159,7 @@
     "stars": 918,
     "forks": 283,
     "topics": [],
-    "updatedAt": "2026-08-01T04:16:37Z",
+    "updatedAt": "2026-08-01T07:38:35Z",
     "pushedAt": "2026-07-18T02:05:39Z",
     "latestRelease": {
       "name": "YT Short Clipper v2.0.5-beta",
@@ -357,8 +357,8 @@
       "terminal-emulator",
       "workspace-manager"
     ],
-    "updatedAt": "2026-08-01T05:45:44Z",
-    "pushedAt": "2026-08-01T05:45:39Z",
+    "updatedAt": "2026-08-01T07:30:59Z",
+    "pushedAt": "2026-08-01T07:30:42Z",
     "latestRelease": {
       "name": "Termul Manager v0.4.8",
       "tagName": "v0.4.8",
@@ -465,8 +465,8 @@
       "sqlite",
       "vector-database"
     ],
-    "updatedAt": "2026-07-29T12:33:04Z",
-    "pushedAt": "2026-07-28T18:53:54Z",
+    "updatedAt": "2026-08-01T09:00:45Z",
+    "pushedAt": "2026-08-01T09:00:30Z",
     "latestRelease": {
       "name": "Release v0.10.2",
       "tagName": "v0.10.2",
@@ -476,7 +476,7 @@
     "archived": false,
     "licenseSpdx": "Apache-2.0",
     "createdAt": "2026-05-29T00:27:31Z",
-    "openIssues": 3,
+    "openIssues": 2,
     "openPullRequests": 7,
     "subscribers": 0,
     "communityHealth": 75,
@@ -752,7 +752,7 @@
     "url": "https://github.com/ddtamn/svelte-audio-ui",
     "homepage": "https://svelte-audio-ui.vercel.app/",
     "language": "Svelte",
-    "stars": 78,
+    "stars": 79,
     "forks": 4,
     "topics": [
       "audio",
@@ -763,7 +763,7 @@
       "svelte-components",
       "sveltekit"
     ],
-    "updatedAt": "2026-07-26T02:42:40Z",
+    "updatedAt": "2026-08-01T09:24:34Z",
     "pushedAt": "2026-07-31T19:33:53Z",
     "latestRelease": {
       "name": "svelte-audio-ui@1.0.1",
@@ -1582,8 +1582,8 @@
       "vibe-coding",
       "vibecoding"
     ],
-    "updatedAt": "2026-07-31T23:51:40Z",
-    "pushedAt": "2026-07-31T16:51:32Z",
+    "updatedAt": "2026-08-01T07:47:45Z",
+    "pushedAt": "2026-08-01T07:47:35Z",
     "latestRelease": {
       "name": "v0.5.2",
       "tagName": "v0.5.2",
