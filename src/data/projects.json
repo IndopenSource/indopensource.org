@@ -357,8 +357,8 @@
       "terminal-emulator",
       "workspace-manager"
     ],
-    "updatedAt": "2026-08-01T21:48:41Z",
-    "pushedAt": "2026-08-01T21:48:36Z",
+    "updatedAt": "2026-08-01T23:09:50Z",
+    "pushedAt": "2026-08-01T23:09:46Z",
     "latestRelease": {
       "name": "Termul Manager v0.4.8",
       "tagName": "v0.4.8",
@@ -368,7 +368,7 @@
     "archived": false,
     "licenseSpdx": "MIT",
     "createdAt": "2026-01-13T04:36:02Z",
-    "openIssues": 21,
+    "openIssues": 20,
     "openPullRequests": 14,
     "subscribers": 0,
     "communityHealth": 71,
@@ -1491,8 +1491,8 @@
     "stars": 18,
     "forks": 2,
     "topics": [],
-    "updatedAt": "2026-08-01T15:13:33Z",
-    "pushedAt": "2026-08-01T15:13:28Z",
+    "updatedAt": "2026-08-01T22:34:13Z",
+    "pushedAt": "2026-08-01T22:34:09Z",
     "latestRelease": {
       "name": "v1.2.615",
       "tagName": "v1.2.615",
