@@ -671,7 +671,7 @@
     "url": "https://github.com/IlhamriSKY/TEDI",
     "homepage": "https://tedi.ilhamriski.com",
     "language": "TypeScript",
-    "stars": 99,
+    "stars": 100,
     "forks": 11,
     "topics": [
       "ai",
@@ -690,7 +690,7 @@
       "tauri",
       "terminal"
     ],
-    "updatedAt": "2026-08-03T19:43:43Z",
+    "updatedAt": "2026-08-03T20:56:21Z",
     "pushedAt": "2026-08-03T08:34:35Z",
     "latestRelease": {
       "name": "TEDI v0.4.8",
@@ -881,7 +881,7 @@
     "url": "https://github.com/rahmanef63/mso",
     "homepage": "https://os.rahmanef.com",
     "language": "TypeScript",
-    "stars": 49,
+    "stars": 50,
     "forks": 7,
     "topics": [
       "browser-shell",
@@ -904,8 +904,8 @@
       "web-desktop",
       "web-terminal"
     ],
-    "updatedAt": "2026-08-03T19:59:37Z",
-    "pushedAt": "2026-08-03T19:59:24Z",
+    "updatedAt": "2026-08-03T21:24:45Z",
+    "pushedAt": "2026-08-03T21:24:02Z",
     "latestRelease": {
       "name": "v0.2.0",
       "tagName": "v0.2.0",
@@ -2173,8 +2173,8 @@
     "stars": 6,
     "forks": 0,
     "topics": [],
-    "updatedAt": "2026-08-02T20:11:33Z",
-    "pushedAt": "2026-08-03T03:16:31Z",
+    "updatedAt": "2026-08-03T20:28:38Z",
+    "pushedAt": "2026-08-03T20:27:55Z",
     "latestRelease": null,
     "archived": false,
     "licenseSpdx": "MIT",
