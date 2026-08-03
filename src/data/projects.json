@@ -156,10 +156,10 @@
     "url": "https://github.com/jipraks/yt-short-clipper",
     "homepage": "",
     "language": "Python",
-    "stars": 922,
+    "stars": 923,
     "forks": 285,
     "topics": [],
-    "updatedAt": "2026-08-03T17:09:24Z",
+    "updatedAt": "2026-08-03T19:11:37Z",
     "pushedAt": "2026-07-18T02:05:39Z",
     "latestRelease": {
       "name": "YT Short Clipper v2.0.5-beta",
@@ -671,7 +671,7 @@
     "url": "https://github.com/IlhamriSKY/TEDI",
     "homepage": "https://tedi.ilhamriski.com",
     "language": "TypeScript",
-    "stars": 98,
+    "stars": 99,
     "forks": 11,
     "topics": [
       "ai",
@@ -690,7 +690,7 @@
       "tauri",
       "terminal"
     ],
-    "updatedAt": "2026-08-03T17:45:05Z",
+    "updatedAt": "2026-08-03T19:43:43Z",
     "pushedAt": "2026-08-03T08:34:35Z",
     "latestRelease": {
       "name": "TEDI v0.4.8",
@@ -904,8 +904,8 @@
       "web-desktop",
       "web-terminal"
     ],
-    "updatedAt": "2026-08-03T18:05:03Z",
-    "pushedAt": "2026-08-03T18:03:49Z",
+    "updatedAt": "2026-08-03T19:59:37Z",
+    "pushedAt": "2026-08-03T19:59:24Z",
     "latestRelease": {
       "name": "v0.2.0",
       "tagName": "v0.2.0",
