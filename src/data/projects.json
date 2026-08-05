@@ -423,7 +423,7 @@
     "url": "https://github.com/codecoradev/uteke",
     "homepage": "https://codecora.dev",
     "language": "Rust",
-    "stars": 185,
+    "stars": 186,
     "forks": 21,
     "topics": [
       "agent-memory",
@@ -447,7 +447,7 @@
       "sqlite",
       "vector-database"
     ],
-    "updatedAt": "2026-08-05T15:21:57Z",
+    "updatedAt": "2026-08-05T19:46:23Z",
     "pushedAt": "2026-08-05T17:19:33Z",
     "latestRelease": {
       "name": "v0.12.0 — Junction Tools, Full-Text Content Search & Stability Fixes",
@@ -528,7 +528,7 @@
     "forks": 59,
     "topics": [],
     "updatedAt": "2026-08-04T05:45:37Z",
-    "pushedAt": "2026-08-01T23:44:05Z",
+    "pushedAt": "2026-08-05T19:20:40Z",
     "latestRelease": null,
     "archived": false,
     "licenseSpdx": "MIT",
