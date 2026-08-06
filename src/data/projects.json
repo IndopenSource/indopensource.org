@@ -9,7 +9,7 @@
     "url": "https://github.com/faisalman/ua-parser-js",
     "homepage": "https://uaparser.dev/",
     "language": "JavaScript",
-    "stars": 10171,
+    "stars": 10172,
     "forks": 1219,
     "topics": [
       "analytics",
@@ -21,7 +21,7 @@
       "user-agent",
       "user-agent-parser"
     ],
-    "updatedAt": "2026-08-05T13:44:48Z",
+    "updatedAt": "2026-08-06T11:05:59Z",
     "pushedAt": "2026-07-27T15:52:17Z",
     "latestRelease": {
       "name": "v2.0.10",
@@ -84,8 +84,8 @@
     "url": "https://github.com/danpros/htmly",
     "homepage": "https://www.htmly.com",
     "language": "PHP",
-    "stars": 1353,
-    "forks": 305,
+    "stars": 1354,
+    "forks": 306,
     "topics": [
       "blog",
       "blog-engine",
@@ -96,7 +96,7 @@
       "php",
       "website"
     ],
-    "updatedAt": "2026-08-02T12:07:55Z",
+    "updatedAt": "2026-08-06T10:40:50Z",
     "pushedAt": "2026-01-25T01:00:57Z",
     "latestRelease": {
       "name": "HTMLy v3.1.1",
@@ -130,7 +130,7 @@
       "sistem-informasi-desa"
     ],
     "updatedAt": "2026-08-05T13:23:43Z",
-    "pushedAt": "2026-08-06T02:48:01Z",
+    "pushedAt": "2026-08-06T11:56:20Z",
     "latestRelease": {
       "name": "Rilis v2607.0.1",
       "tagName": "v2607.0.1",
@@ -340,7 +340,7 @@
     "url": "https://github.com/gnoviawan/termul",
     "homepage": "https://termul.dev",
     "language": "TypeScript",
-    "stars": 212,
+    "stars": 213,
     "forks": 40,
     "topics": [
       "cross-platform",
@@ -357,8 +357,8 @@
       "terminal-emulator",
       "workspace-manager"
     ],
-    "updatedAt": "2026-08-06T09:39:37Z",
-    "pushedAt": "2026-08-06T10:02:02Z",
+    "updatedAt": "2026-08-06T11:44:03Z",
+    "pushedAt": "2026-08-06T11:43:57Z",
     "latestRelease": {
       "name": "Termul Manager v0.4.8",
       "tagName": "v0.4.8",
@@ -408,8 +408,8 @@
       "sqlite",
       "vector-database"
     ],
-    "updatedAt": "2026-08-06T09:35:48Z",
-    "pushedAt": "2026-08-06T09:33:40Z",
+    "updatedAt": "2026-08-06T11:25:08Z",
+    "pushedAt": "2026-08-06T11:25:03Z",
     "latestRelease": {
       "name": "v0.12.0 — Junction Tools, Full-Text Content Search & Stability Fixes",
       "tagName": "v0.12.0",
@@ -419,7 +419,7 @@
     "archived": false,
     "licenseSpdx": "Apache-2.0",
     "createdAt": "2026-05-29T00:27:31Z",
-    "openIssues": 2,
+    "openIssues": 0,
     "openPullRequests": 0,
     "subscribers": 0,
     "communityHealth": 87,
@@ -448,7 +448,7 @@
       "tiptap-editor"
     ],
     "updatedAt": "2026-08-05T10:15:14Z",
-    "pushedAt": "2026-08-06T05:49:21Z",
+    "pushedAt": "2026-08-06T10:44:13Z",
     "latestRelease": {
       "name": "v3.2.5",
       "tagName": "v3.2.5",
