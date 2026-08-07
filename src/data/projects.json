@@ -48,7 +48,7 @@
     "url": "https://github.com/laravolt/avatar",
     "homepage": "",
     "language": "PHP",
-    "stars": 1982,
+    "stars": 1981,
     "forks": 186,
     "topics": [
       "avatar",
@@ -57,7 +57,7 @@
       "php",
       "php-library"
     ],
-    "updatedAt": "2026-08-04T19:21:05Z",
+    "updatedAt": "2026-08-07T16:26:07Z",
     "pushedAt": "2026-08-06T15:54:23Z",
     "latestRelease": {
       "name": "7.0.0",
@@ -313,8 +313,8 @@
       "token-efficiency",
       "token-optimization"
     ],
-    "updatedAt": "2026-08-07T15:47:31Z",
-    "pushedAt": "2026-08-07T15:45:03Z",
+    "updatedAt": "2026-08-07T16:47:36Z",
+    "pushedAt": "2026-08-07T16:47:33Z",
     "latestRelease": {
       "name": "v0.6.14",
       "tagName": "v0.6.14",
@@ -324,7 +324,7 @@
     "archived": false,
     "licenseSpdx": "MIT",
     "createdAt": "2026-03-15T03:38:04Z",
-    "openIssues": 4,
+    "openIssues": 3,
     "openPullRequests": 0,
     "subscribers": 4,
     "communityHealth": 71,
@@ -1613,7 +1613,7 @@
       "vibecoding"
     ],
     "updatedAt": "2026-08-01T07:47:45Z",
-    "pushedAt": "2026-08-07T13:23:16Z",
+    "pushedAt": "2026-08-07T16:40:38Z",
     "latestRelease": {
       "name": "v0.5.2",
       "tagName": "v0.5.2",
@@ -2439,13 +2439,13 @@
     "stars": 4,
     "forks": 1,
     "topics": [],
-    "updatedAt": "2026-08-05T17:00:38Z",
-    "pushedAt": "2026-08-05T17:00:02Z",
+    "updatedAt": "2026-08-07T17:08:04Z",
+    "pushedAt": "2026-08-07T16:58:01Z",
     "latestRelease": null,
     "archived": false,
     "licenseSpdx": "MIT",
     "createdAt": "2025-11-22T11:52:35Z",
-    "openIssues": 11,
+    "openIssues": 10,
     "openPullRequests": 0,
     "subscribers": 0,
     "communityHealth": 37,
@@ -2564,8 +2564,8 @@
     "stars": 1,
     "forks": 0,
     "topics": [],
-    "updatedAt": "2026-07-22T02:39:52Z",
-    "pushedAt": "2026-07-22T02:39:48Z",
+    "updatedAt": "2026-08-07T16:28:11Z",
+    "pushedAt": "2026-08-07T16:28:06Z",
     "latestRelease": {
       "name": "v1.1.0",
       "tagName": "v1.1.0",
