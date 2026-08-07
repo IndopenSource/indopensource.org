@@ -324,7 +324,7 @@
     "archived": false,
     "licenseSpdx": "MIT",
     "createdAt": "2026-03-15T03:38:04Z",
-    "openIssues": 2,
+    "openIssues": 3,
     "openPullRequests": 0,
     "subscribers": 4,
     "communityHealth": 71,
@@ -357,8 +357,8 @@
       "terminal-emulator",
       "workspace-manager"
     ],
-    "updatedAt": "2026-08-07T04:38:26Z",
-    "pushedAt": "2026-08-07T04:37:56Z",
+    "updatedAt": "2026-08-07T07:41:19Z",
+    "pushedAt": "2026-08-07T07:39:43Z",
     "latestRelease": {
       "name": "Termul Manager v0.4.8",
       "tagName": "v0.4.8",
@@ -447,19 +447,19 @@
       "productivity",
       "tiptap-editor"
     ],
-    "updatedAt": "2026-08-05T10:15:14Z",
-    "pushedAt": "2026-08-07T04:20:20Z",
+    "updatedAt": "2026-08-07T07:21:14Z",
+    "pushedAt": "2026-08-07T07:21:15Z",
     "latestRelease": {
-      "name": "v3.2.5",
-      "tagName": "v3.2.5",
-      "url": "https://github.com/hadziqmtqn/erd-builder-pro/releases/tag/v3.2.5",
-      "publishedAt": "2026-08-03T13:01:45Z"
+      "name": "v3.3.1",
+      "tagName": "v3.3.1",
+      "url": "https://github.com/hadziqmtqn/erd-builder-pro/releases/tag/v3.3.1",
+      "publishedAt": "2026-08-07T07:21:16Z"
     },
     "archived": false,
     "licenseSpdx": "",
     "createdAt": "2026-03-30T00:18:38Z",
     "openIssues": 0,
-    "openPullRequests": 1,
+    "openPullRequests": 0,
     "subscribers": 2,
     "communityHealth": 57,
     "readmeHtml": "<div>\n  <img width=\"400\" alt=\"ERD Builder Pro Dashboard\" src=\"https://raw.githubusercontent.com/hadziqmtqn/erd-builder-pro/master/public/img/ERD-Builder-Pro-Ori-Light.png\" />\n</div><div><p><a href=\"https://hub.docker.com/r/bekenweb/erd-builder-pro\" rel=\"noopener noreferrer\"><img src=\"https://img.shields.io/badge/docker-available-blue?logo=docker\" alt=\"Docker Hub\" /></a>\n<a href=\"https://hub.docker.com/r/bekenweb/erd-builder-pro\" rel=\"noopener noreferrer\"><img src=\"https://img.shields.io/docker/pulls/bekenweb/erd-builder-pro\" alt=\"Docker Pulls\" /></a>\n<a href=\"https://hub.docker.com/r/bekenweb/erd-builder-pro\" rel=\"noopener noreferrer\"><img src=\"https://img.shields.io/docker/image-size/bekenweb/erd-builder-pro/latest\" alt=\"Docker Image Size\" /></a></p>\n</div><p><strong>ERD Builder Pro</strong> is a database design and documentation tool for developers. Build ERDs, flowcharts, notes, and drawings — all in one workspace.</p>\n<div>\n  <img width=\"1200\" alt=\"ERD Builder Pro Dashboard\" src=\"https://raw.githubusercontent.com/hadziqmtqn/erd-builder-pro/master/public/img/erd-intro.gif\" />\n</div><blockquote>\n<p>[!WARNING]\n<strong>ERD Builder Pro</strong> is under active development and not yet stable — features and config may still change. Give the repo a Star ⭐ and Watch 👀 it to get notified the moment a release lands.</p>\n</blockquote>\n<h2>🚀 Key Features</h2>\n<ul>\n<li><strong>🎨 Visual Workspace</strong>: ERD diagrams (XYFlow), flowcharts, free-hand drawing (Excalidraw), and rich-text notes (TipTap).</li>\n<li><strong>📝 DBML Editor</strong>: Write and edit DBML (Database Markup Language) with syntax highlighting, live bidirectional sync with ERD, and auto-generated column/relationship definitions.</li>\n<li><strong>📤 Export</strong>: Generate SQL DDL (PostgreSQL, MySQL), export as images or PDF.</li>\n<li><strong>🔗 Remote Database Connection</strong>: Connect to remote PostgreSQL, MySQL, or SQLite databases — browse tables, inspect schemas, and import structures into your ERD.</li>\n<li><strong>📁 Project Management</strong>: Organize assets into projects with soft-delete trash system.</li>\n<li><strong>🤖 AI Assistant</strong>: Context-aware chat per view — generate SQL, seed data, summarize notes, create flowcharts. Streaming responses with auto-apply.</li>\n<li><strong>🔐 Security</strong>: Supabase authentication, Cloudflare R2 storage, rate limiting, Helmet middleware.</li>\n</ul>\n<h2>🛠️ Tech Stack</h2>\n<ul>\n<li><strong>Frontend</strong>: <a href=\"https://reactjs.org/\" rel=\"noopener noreferrer\">React 18</a> + <a href=\"https://vite.dev/\" rel=\"noopener noreferrer\">Vite 6</a> + <a href=\"https://tailwindcss.com/\" rel=\"noopener noreferrer\">Tailwind CSS v4</a></li>\n<li><strong>UI System</strong>: <a href=\"https://ui.shadcn.com/\" rel=\"noopener noreferrer\">Shadcn UI</a> + <a href=\"https://www.radix-ui.com/\" rel=\"noopener noreferrer\">Radix UI</a> + <a href=\"https://lucide.dev/\" rel=\"noopener noreferrer\">Lucide Icons</a></li>\n<li><strong>Canvas Engines</strong>: <a href=\"https://xyflow.com/\" rel=\"noopener noreferrer\">XYFlow</a> + <a href=\"https://excalidraw.com/\" rel=\"noopener noreferrer\">Excalidraw</a></li>\n<li><strong>Content Editor</strong>: <a href=\"https://tiptap.dev/\" rel=\"noopener noreferrer\">TipTap</a> (Rich Text Engine)</li>\n<li><strong>Backend Architecture</strong>: <a href=\"https://expressjs.com/\" rel=\"noopener noreferrer\">Express.js</a> + <a href=\"https://vercel.com/docs/functions/edge-functions\" rel=\"noopener noreferrer\">Edge Functions Support</a></li>\n<li><strong>Infrastructure</strong>: <a href=\"https://supabase.com/\" rel=\"noopener noreferrer\">Supabase</a> (DB/Auth) + <a href=\"https://www.cloudflare.com/developer-platform/r2/\" rel=\"noopener noreferrer\">Cloudflare R2</a> (Storage)</li>\n</ul>\n<hr />\n<h2>🏗️ Getting Started</h2>\n<h3>🚀 Quick Install (Recommended)</h3>\n<p>The CLI app is the fastest way to get started — no Docker, no Supabase, no config:</p>\n<pre><code class=\"language-bash\">npm install -g erdbpro\nerdbpro\n</code></pre>\n<p>Opens at <code>http://localhost:3101</code>. Data stored locally in <code>~/.erdbpro/</code>. Login with <code>admin@local.dev</code> / <code>admin123</code>.</p>\n<p>A desktop app is also available on the <a href=\"https://github.com/hadziqmtqn/erd-builder-pro/releases\" rel=\"noopener noreferrer\">releases page</a> (macOS <code>.dmg</code>, Windows <code>.msi</code>, Linux <code>.deb</code>). Note: the desktop app is not yet code-signed — macOS and Windows may show a security warning on first launch.</p>\n<h3>🐳 Docker</h3>\n<pre><code class=\"language-bash\">docker pull bekenweb/erd-builder-pro:latest\n\ndocker run -d --name erd-builder-pro -p 3000:3000 \\\n  --env-file .env \\\n  bekenweb/erd-builder-pro:latest\n</code></pre>\n<h3>🧪 Testing</h3>\n<p>The project uses <a href=\"https://vitest.dev/\" rel=\"noopener noreferrer\">Vitest</a> for unit testing with a focus on core logic — SQL parsers, schema diff engine, auto-layout algorithms, and code generators.</p>\n<p><strong>Test commands</strong>:</p>\n<pre><code class=\"language-bash\">npm test            # Run all tests once\nnpm run test:watch  # Run in watch mode during development\n</code></pre>\n<p><strong>Test structure</strong>:</p>\n<pre><code>src/lib/__tests__/\n├── sqlParser.test.ts          # SQL DDL parser (17 tests)\n├── schema-diff.test.ts        # Schema comparison engine (8 tests)\n├── autoLayoutERD.test.ts      # ERD auto-layout algorithm (12 tests)\n├── autoLayoutFlowchart.test.ts # Flowchart auto-layout algorithm (12 tests)\n├── sql-generator.test.ts      # Code generation for 7 dialects (39 tests)\n└── sql-generator-all.test.ts  # Bulk export &amp; FK extraction (19 tests)\n</code></pre>\n<p><strong>Coverage areas</strong>: SQL DDL parsing across PostgreSQL/MySQL/SQLite dialects, schema diff &amp; merge resolution, directed-graph auto-layout (BFS layering, cycle detection, diamond decision branching), and multi-dialect code generation (MySQL, PostgreSQL, Laravel, TypeScript, Prisma, Zod).</p>\n<hr />\n<h2>🤝 Sponsors</h2>\n<div>\n  <a href=\"https://www.idcloudhost.com\" target=\"_blank\" rel=\"noopener noreferrer\">\n    <img src=\"https://raw.githubusercontent.com/hadziqmtqn/erd-builder-pro/master/public/img/sponsors/IDCloudhost.png\" alt=\"IDCloudhost\" height=\"50\" />\n  </a>\n     \n  <a href=\"https://doktainer.com\" target=\"_blank\" rel=\"noopener noreferrer\">\n    <img src=\"https://raw.githubusercontent.com/hadziqmtqn/erd-builder-pro/master/public/img/sponsors/Doktainer.png\" alt=\"Doktainer\" height=\"50\" />\n  </a>\n     \n  <a href=\"https://sumopod.com\" target=\"_blank\" rel=\"noopener noreferrer\">\n    <img src=\"https://raw.githubusercontent.com/hadziqmtqn/erd-builder-pro/master/public/img/sponsors/Sumopod.png\" alt=\"SumoPod\" height=\"50\" />\n  </a>\n</div><table>\n<thead>\n<tr>\n<th>Sponsor</th>\n<th>Support</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><a href=\"https://www.idcloudhost.com\" rel=\"noopener noreferrer\"><strong>IDCloudhost</strong></a></td>\n<td>Virtual machine infrastructure for deployment and cloud hosting.</td>\n</tr>\n<tr>\n<td><a href=\"https://doktainer.com\" rel=\"noopener noreferrer\"><strong>Doktainer</strong></a></td>\n<td>App template platform with Docker panel for streamlined container management.</td>\n</tr>\n<tr>\n<td><a href=\"https://sumopod.com\" rel=\"noopener noreferrer\"><strong>SumoPod</strong></a></td>\n<td>Seamless container and application purchasing solutions for businesses of all sizes.</td>\n</tr>\n</tbody></table>\n<hr />\n<h2>💖 Support</h2>\n<p><a href=\"https://trakteer.id/khadziq_muttaqin/tip\" target=\"_blank\" rel=\"noopener noreferrer\"><img src=\"https://edge-cdn.trakteer.id/images/embed/trbtn-red-1.png?v=14-05-2025\" height=\"40\" alt=\"Trakteer Saya\" /></a></p>\n<hr />\n<h2>📄 License</h2>\n<p>This project is licensed under the <strong><a href=\"https://github.com/hadziqmtqn/erd-builder-pro/blob/master/LICENSE\" rel=\"noopener noreferrer\">PolyForm Noncommercial License 1.0.0</a></strong>. </p>\n<h3>🚫 Non-Commercial Use Only</h3>\n<p>The software is free to use, modify, and distribute for <strong>non-commercial purposes only</strong>. Any use for revenue-generating activities or within for-profit organizations is strictly prohibited under these terms.</p>\n<h3>💼 Commercial Licensing</h3>\n<p>If you wish to use ERD Builder Pro for commercial purposes, business operations, or as part of a paid service, you must obtain a separate commercial license. Please contact the author for further information.</p>\n<hr />\n<p>Built for Architects &amp; Developers ❤️</p>\n"
@@ -822,7 +822,7 @@
     "url": "https://github.com/wauputr4/bansos",
     "homepage": "https://bansos.dev",
     "language": "Svelte",
-    "stars": 57,
+    "stars": 58,
     "forks": 16,
     "topics": [
       "bansos",
@@ -836,7 +836,7 @@
       "static-site",
       "sveltekit"
     ],
-    "updatedAt": "2026-08-06T08:20:10Z",
+    "updatedAt": "2026-08-07T06:21:11Z",
     "pushedAt": "2026-08-06T08:18:43Z",
     "latestRelease": {
       "name": "Bansos v0.0.14 — Contributor Pages & Catalog Refresh",
