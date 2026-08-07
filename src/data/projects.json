@@ -124,13 +124,13 @@
     "homepage": "",
     "language": "PHP",
     "stars": 1220,
-    "forks": 1177,
+    "forks": 1176,
     "topics": [
       "opensid",
       "sistem-informasi-desa"
     ],
     "updatedAt": "2026-08-06T18:03:57Z",
-    "pushedAt": "2026-08-06T11:56:20Z",
+    "pushedAt": "2026-08-07T11:12:03Z",
     "latestRelease": {
       "name": "Rilis v2607.0.1",
       "tagName": "v2607.0.1",
@@ -324,7 +324,7 @@
     "archived": false,
     "licenseSpdx": "MIT",
     "createdAt": "2026-03-15T03:38:04Z",
-    "openIssues": 0,
+    "openIssues": 1,
     "openPullRequests": 0,
     "subscribers": 4,
     "communityHealth": 71,
