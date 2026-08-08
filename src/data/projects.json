@@ -384,7 +384,7 @@
     "url": "https://github.com/codecoradev/uteke",
     "homepage": "https://codecora.dev",
     "language": "Rust",
-    "stars": 194,
+    "stars": 195,
     "forks": 21,
     "topics": [
       "agent-memory",
@@ -408,7 +408,7 @@
       "sqlite",
       "vector-database"
     ],
-    "updatedAt": "2026-08-08T13:18:03Z",
+    "updatedAt": "2026-08-08T19:03:30Z",
     "pushedAt": "2026-08-08T17:09:22Z",
     "latestRelease": {
       "name": "v0.13.0 — Safe Memory Lifecycle",
@@ -2182,8 +2182,8 @@
     "stars": 6,
     "forks": 1,
     "topics": [],
-    "updatedAt": "2026-08-07T19:53:39Z",
-    "pushedAt": "2026-08-07T19:53:34Z",
+    "updatedAt": "2026-08-08T19:32:33Z",
+    "pushedAt": "2026-08-08T19:32:30Z",
     "latestRelease": null,
     "archived": false,
     "licenseSpdx": "MIT",
