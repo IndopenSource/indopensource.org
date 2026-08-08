@@ -9,7 +9,7 @@
     "url": "https://github.com/faisalman/ua-parser-js",
     "homepage": "https://uaparser.dev/",
     "language": "JavaScript",
-    "stars": 10174,
+    "stars": 10173,
     "forks": 1218,
     "topics": [
       "analytics",
@@ -21,7 +21,7 @@
       "user-agent",
       "user-agent-parser"
     ],
-    "updatedAt": "2026-08-08T09:27:07Z",
+    "updatedAt": "2026-08-08T20:19:54Z",
     "pushedAt": "2026-08-08T06:51:49Z",
     "latestRelease": {
       "name": "v2.0.10",
