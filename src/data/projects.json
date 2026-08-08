@@ -9,7 +9,7 @@
     "url": "https://github.com/faisalman/ua-parser-js",
     "homepage": "https://uaparser.dev/",
     "language": "JavaScript",
-    "stars": 10173,
+    "stars": 10172,
     "forks": 1218,
     "topics": [
       "analytics",
@@ -21,7 +21,7 @@
       "user-agent",
       "user-agent-parser"
     ],
-    "updatedAt": "2026-08-08T20:19:54Z",
+    "updatedAt": "2026-08-08T21:34:40Z",
     "pushedAt": "2026-08-08T06:51:49Z",
     "latestRelease": {
       "name": "v2.0.10",
@@ -156,10 +156,10 @@
     "url": "https://github.com/jipraks/yt-short-clipper",
     "homepage": "",
     "language": "Python",
-    "stars": 926,
+    "stars": 927,
     "forks": 284,
     "topics": [],
-    "updatedAt": "2026-08-06T17:28:46Z",
+    "updatedAt": "2026-08-08T21:26:36Z",
     "pushedAt": "2026-07-18T02:05:39Z",
     "latestRelease": {
       "name": "YT Short Clipper v2.0.5-beta",
