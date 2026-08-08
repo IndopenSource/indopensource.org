@@ -313,8 +313,8 @@
       "token-efficiency",
       "token-optimization"
     ],
-    "updatedAt": "2026-08-08T16:47:13Z",
-    "pushedAt": "2026-08-08T16:47:10Z",
+    "updatedAt": "2026-08-08T17:40:48Z",
+    "pushedAt": "2026-08-08T17:40:45Z",
     "latestRelease": {
       "name": "v0.6.14",
       "tagName": "v0.6.14",
@@ -409,7 +409,7 @@
       "vector-database"
     ],
     "updatedAt": "2026-08-08T13:18:03Z",
-    "pushedAt": "2026-08-08T16:53:55Z",
+    "pushedAt": "2026-08-08T17:09:22Z",
     "latestRelease": {
       "name": "v0.13.0 — Safe Memory Lifecycle",
       "tagName": "v0.13.0",
@@ -1033,7 +1033,7 @@
     "homepage": "",
     "language": "Java",
     "stars": 46,
-    "forks": 40,
+    "forks": 41,
     "topics": [
       "java",
       "kasir",
@@ -1046,7 +1046,7 @@
     "licenseSpdx": "GPL-3.0",
     "createdAt": "2017-05-22T15:52:00Z",
     "openIssues": 1,
-    "openPullRequests": 0,
+    "openPullRequests": 1,
     "subscribers": 4,
     "communityHealth": 42,
     "readmeHtml": "<h2>AndKasir</h2>\n<p>AndKasir merupakan Aplikasi Kasir yang dibangun dengan teknologi Java. Dibuat simpel dan sederhana agar mudah dalam pengoperasiannya. Aplikasi ini berawal dari project sederhana saya dalam memenuhi permintaan toko ritel dalam menangani transaksi kasir sehari-hari.</p>\n<p>Saat ini, Aplikasi ini masih dalam tahap pengembangan. Fitur-fitur yang dimiliki aplikasi ini mencakup </p>\n<ul>\n<li>Perhitungan Standart Kasir</li>\n<li>Cetak Struk</li>\n<li>Cetak Laporan PDF</li>\n</ul>\n<p>Versi Development Release Aplikasi AndKasir v0.5.7 dapat anda unduh <a href=\"https://github.com/andriawan/AndKasir/releases/tag/v0.5.7\" rel=\"noopener noreferrer\">di sini</a></p>\n<p>Screenshot:</p>\n<h2>Panel Login</h2>\n<p><img src=\"https://github.com/andriawan/AndKasir/blob/development/screenshot/login.png\" alt=\"login\" title=\"Panel Login\" /></p>\n<h2>Panel Admin</h2>\n<p><img src=\"https://github.com/andriawan/AndKasir/blob/development/screenshot/panel-admin.png\" alt=\"admin\" title=\"Panel Admin\" /></p>\n<h2>Panel Cetak Laporan ke PDF</h2>\n<p><img src=\"https://github.com/andriawan/AndKasir/blob/development/screenshot/Laporan-pdf.png\" alt=\"laporan\" title=\"Laporan\" /></p>\n<h2>Panel Kasir</h2>\n<p><img src=\"https://github.com/andriawan/AndKasir/blob/development/screenshot/panel-kasir.png\" alt=\"kasir\" title=\"Panel Kasir\" /></p>\n<h2>Tentang Aplikasi</h2>\n<p><img src=\"https://github.com/andriawan/AndKasir/blob/development/screenshot/about.png\" alt=\"tentang\" title=\"Tentang Aplikasi\" /></p>\n<h2>Migrasi Databases</h2>\n<p>Mulai versi 0.5.8, Management database version akan menggunakan migration tool flayway. Sebelum melakukan aktifitas pengembangan, diharapkan untuk mengaktifkan migrasi database terlebih dahulu. Caranya ialah melakukan eksekusi pada terminal. Pastikan anda berada pada folder root tempat aplikasi AndKasir Berada :</p>\n<pre><code>java -jar AndKasir.jar db-migrate\n</code></pre>\n<p>Untuk clean database gunakan clean atau -c directive</p>\n<pre><code>java -jar AndKasir.jar clean\n</code></pre>\n<p>Info lanjut tentang flyway dapat anda peroleh pada <a href=\"http://flywaydb.org\" rel=\"noopener noreferrer\">laman resmi flyway</a></p>\n<p>Sebelum mencoba Versi Development Pastikan</p>\n<ol>\n<li>Cek file config.properties. Konfigurasi database ada di file ini, seperti nama database, driver database dan lain-lain</li>\n<li>Cek folder lib. Semua dependensi library ada <a href=\"https://github.com/andriawan/AndKasir/releases/download/v0.5/AndKasir-v0.5.tar.gz\" rel=\"noopener noreferrer\">disini</a>.</li>\n<li>Mysql sudah terinstall pada komputer anda beserta database yang sudah disedakan pada source code</li>\n<li>Pastikan Java runtime sudah terinstall (Direkomendasikan versi 7 atau 8)</li>\n</ol>\n<p>Kontribusi:</p>\n<ul>\n<li>Anda bisa melakukan kontrbusi dengan cara fork repository ini, Kemudian buat branch baru. buat improvisasi, kemudian lakukan pull request</li>\n<li>direkomendasikan untuk menggunakan IDE Netbeans untuk kemudahan pengembangan GUI</li>\n</ul>\n<p>TODO list:</p>\n<ul>\n<li>Dokumentasi secara lengkap </li>\n<li>Release Stabil</li>\n<li>Lisensi ( Belum begitu paham. Mohon jika Anda berpengalaman dalam hal lisensi untuk melakukan pengecekan)</li>\n</ul>\n"
