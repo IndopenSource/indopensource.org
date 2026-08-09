@@ -156,10 +156,10 @@
     "url": "https://github.com/jipraks/yt-short-clipper",
     "homepage": "",
     "language": "Python",
-    "stars": 928,
+    "stars": 927,
     "forks": 284,
     "topics": [],
-    "updatedAt": "2026-08-09T05:26:34Z",
+    "updatedAt": "2026-08-09T09:09:56Z",
     "pushedAt": "2026-07-18T02:05:39Z",
     "latestRelease": {
       "name": "YT Short Clipper v2.0.5-beta",
@@ -629,7 +629,7 @@
     "url": "https://github.com/mydisha/keirouter",
     "homepage": "https://keirouter.app",
     "language": "Go",
-    "stars": 116,
+    "stars": 115,
     "forks": 41,
     "topics": [
       "ai",
@@ -651,7 +651,7 @@
       "rtk",
       "zai"
     ],
-    "updatedAt": "2026-08-06T15:59:11Z",
+    "updatedAt": "2026-08-09T09:10:26Z",
     "pushedAt": "2026-08-02T09:20:55Z",
     "latestRelease": {
       "name": "v0.1.28",
@@ -2596,8 +2596,8 @@
     "stars": 1,
     "forks": 0,
     "topics": [],
-    "updatedAt": "2026-08-09T08:53:26Z",
-    "pushedAt": "2026-08-09T08:53:10Z",
+    "updatedAt": "2026-08-09T09:57:38Z",
+    "pushedAt": "2026-08-09T09:57:35Z",
     "latestRelease": null,
     "archived": false,
     "licenseSpdx": "MIT",
