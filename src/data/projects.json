@@ -474,10 +474,10 @@
     "url": "https://github.com/mallexibra-dev/clipforge",
     "homepage": "",
     "language": "Python",
-    "stars": 166,
+    "stars": 167,
     "forks": 41,
     "topics": [],
-    "updatedAt": "2026-08-09T14:22:02Z",
+    "updatedAt": "2026-08-09T15:51:07Z",
     "pushedAt": "2026-06-26T05:38:51Z",
     "latestRelease": null,
     "archived": false,
@@ -546,10 +546,10 @@
     "updatedAt": "2026-08-09T15:32:00Z",
     "pushedAt": "2026-08-09T15:34:42Z",
     "latestRelease": {
-      "name": "TEDI v0.4.18",
-      "tagName": "v0.4.18",
-      "url": "https://github.com/IlhamriSKY/TEDI/releases/tag/v0.4.18",
-      "publishedAt": "2026-08-08T00:48:16Z"
+      "name": "TEDI v0.4.20",
+      "tagName": "v0.4.20",
+      "url": "https://github.com/IlhamriSKY/TEDI/releases/tag/v0.4.20",
+      "publishedAt": "2026-08-09T15:56:48Z"
     },
     "archived": false,
     "licenseSpdx": "Apache-2.0",
@@ -570,10 +570,10 @@
     "url": "https://github.com/jipraks/kasirgratisan",
     "homepage": "",
     "language": "TypeScript",
-    "stars": 117,
+    "stars": 118,
     "forks": 60,
     "topics": [],
-    "updatedAt": "2026-08-06T07:02:11Z",
+    "updatedAt": "2026-08-09T16:27:48Z",
     "pushedAt": "2026-08-05T19:20:40Z",
     "latestRelease": null,
     "archived": false,
@@ -629,8 +629,8 @@
     "url": "https://github.com/mydisha/keirouter",
     "homepage": "https://keirouter.app",
     "language": "Go",
-    "stars": 115,
-    "forks": 41,
+    "stars": 116,
+    "forks": 40,
     "topics": [
       "ai",
       "ai-gateway",
@@ -651,7 +651,7 @@
       "rtk",
       "zai"
     ],
-    "updatedAt": "2026-08-09T09:10:26Z",
+    "updatedAt": "2026-08-09T15:56:18Z",
     "pushedAt": "2026-08-09T12:32:55Z",
     "latestRelease": {
       "name": "v0.1.28",
@@ -678,7 +678,7 @@
     "url": "https://github.com/adenaufal/anti-slop-writing",
     "homepage": "",
     "language": "",
-    "stars": 109,
+    "stars": 110,
     "forks": 7,
     "topics": [
       "agent-skill",
@@ -697,7 +697,7 @@
       "writing",
       "writing-style"
     ],
-    "updatedAt": "2026-08-06T14:28:39Z",
+    "updatedAt": "2026-08-09T15:52:03Z",
     "pushedAt": "2026-07-06T04:02:38Z",
     "latestRelease": {
       "name": "v3.0",
@@ -1116,7 +1116,7 @@
     "forks": 4,
     "topics": [],
     "updatedAt": "2026-08-08T16:34:57Z",
-    "pushedAt": "2026-08-09T15:38:55Z",
+    "pushedAt": "2026-08-09T16:27:20Z",
     "latestRelease": {
       "name": "Tycho v0.9.0",
       "tagName": "v0.9.0",
@@ -1573,8 +1573,8 @@
       "vps",
       "xterm"
     ],
-    "updatedAt": "2026-08-09T15:41:10Z",
-    "pushedAt": "2026-08-09T15:40:32Z",
+    "updatedAt": "2026-08-09T16:08:44Z",
+    "pushedAt": "2026-08-09T16:08:01Z",
     "latestRelease": {
       "name": "v2.0.0",
       "tagName": "v2.0.0",
@@ -1615,7 +1615,7 @@
       "vibecoding"
     ],
     "updatedAt": "2026-08-01T07:47:45Z",
-    "pushedAt": "2026-08-09T13:52:46Z",
+    "pushedAt": "2026-08-09T16:46:40Z",
     "latestRelease": {
       "name": "v0.5.2",
       "tagName": "v0.5.2",
