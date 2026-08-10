@@ -156,10 +156,10 @@
     "url": "https://github.com/jipraks/yt-short-clipper",
     "homepage": "",
     "language": "Python",
-    "stars": 932,
+    "stars": 933,
     "forks": 284,
     "topics": [],
-    "updatedAt": "2026-08-10T15:48:21Z",
+    "updatedAt": "2026-08-10T17:55:58Z",
     "pushedAt": "2026-07-18T02:05:39Z",
     "latestRelease": {
       "name": "YT Short Clipper v2.0.5-beta",
@@ -358,7 +358,7 @@
       "workspace-manager"
     ],
     "updatedAt": "2026-08-10T15:57:26Z",
-    "pushedAt": "2026-08-10T15:54:39Z",
+    "pushedAt": "2026-08-10T17:39:43Z",
     "latestRelease": {
       "name": "Termul Manager v0.4.10",
       "tagName": "v0.4.10",
@@ -524,7 +524,7 @@
     "url": "https://github.com/IlhamriSKY/TEDI",
     "homepage": "https://tedi.ilhamriski.com",
     "language": "TypeScript",
-    "stars": 121,
+    "stars": 122,
     "forks": 13,
     "topics": [
       "ai",
@@ -543,7 +543,7 @@
       "tauri",
       "terminal"
     ],
-    "updatedAt": "2026-08-10T13:52:23Z",
+    "updatedAt": "2026-08-10T17:21:08Z",
     "pushedAt": "2026-08-10T04:37:28Z",
     "latestRelease": {
       "name": "TEDI v0.4.22",
