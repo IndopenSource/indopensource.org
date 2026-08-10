@@ -156,10 +156,10 @@
     "url": "https://github.com/jipraks/yt-short-clipper",
     "homepage": "",
     "language": "Python",
-    "stars": 931,
+    "stars": 932,
     "forks": 284,
     "topics": [],
-    "updatedAt": "2026-08-10T14:13:43Z",
+    "updatedAt": "2026-08-10T15:48:21Z",
     "pushedAt": "2026-07-18T02:05:39Z",
     "latestRelease": {
       "name": "YT Short Clipper v2.0.5-beta",
@@ -170,7 +170,7 @@
     "archived": false,
     "licenseSpdx": "MIT",
     "createdAt": "2026-01-15T09:55:34Z",
-    "openIssues": 7,
+    "openIssues": 9,
     "openPullRequests": 1,
     "subscribers": 16,
     "communityHealth": 57,
@@ -357,8 +357,8 @@
       "terminal-emulator",
       "workspace-manager"
     ],
-    "updatedAt": "2026-08-10T12:05:10Z",
-    "pushedAt": "2026-08-10T12:04:47Z",
+    "updatedAt": "2026-08-10T15:57:26Z",
+    "pushedAt": "2026-08-10T15:54:39Z",
     "latestRelease": {
       "name": "Termul Manager v0.4.10",
       "tagName": "v0.4.10",
@@ -678,7 +678,7 @@
     "url": "https://github.com/adenaufal/anti-slop-writing",
     "homepage": "",
     "language": "",
-    "stars": 110,
+    "stars": 111,
     "forks": 7,
     "topics": [
       "agent-skill",
@@ -697,7 +697,7 @@
       "writing",
       "writing-style"
     ],
-    "updatedAt": "2026-08-09T15:52:03Z",
+    "updatedAt": "2026-08-10T15:46:30Z",
     "pushedAt": "2026-07-06T04:02:38Z",
     "latestRelease": {
       "name": "v3.0",
