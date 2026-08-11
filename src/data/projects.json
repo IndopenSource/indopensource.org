@@ -340,7 +340,7 @@
     "url": "https://github.com/gnoviawan/termul",
     "homepage": "https://termul.dev",
     "language": "TypeScript",
-    "stars": 219,
+    "stars": 220,
     "forks": 42,
     "topics": [
       "cross-platform",
@@ -357,7 +357,7 @@
       "terminal-emulator",
       "workspace-manager"
     ],
-    "updatedAt": "2026-08-11T18:14:37Z",
+    "updatedAt": "2026-08-11T20:18:41Z",
     "pushedAt": "2026-08-11T17:42:41Z",
     "latestRelease": {
       "name": "Termul Manager v0.4.10",
@@ -623,7 +623,7 @@
     "forks": 61,
     "topics": [],
     "updatedAt": "2026-08-09T16:27:48Z",
-    "pushedAt": "2026-08-05T19:20:40Z",
+    "pushedAt": "2026-08-11T20:40:48Z",
     "latestRelease": null,
     "archived": false,
     "licenseSpdx": "MIT",
@@ -2182,8 +2182,8 @@
     "stars": 6,
     "forks": 1,
     "topics": [],
-    "updatedAt": "2026-08-10T19:56:33Z",
-    "pushedAt": "2026-08-10T19:55:45Z",
+    "updatedAt": "2026-08-11T20:00:58Z",
+    "pushedAt": "2026-08-11T20:00:33Z",
     "latestRelease": null,
     "archived": false,
     "licenseSpdx": "MIT",
