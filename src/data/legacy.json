@@ -24,7 +24,7 @@
     "description": "List of All Programming Telegram Group",
     "url": "https://github.com/hendisantika/List-All-Programming-Telegram-Group",
     "homepage": "",
-    "stars": 1485,
+    "stars": 1486,
     "forks": 363,
     "language": "Crystal",
     "topics": [
@@ -44,7 +44,7 @@
     ],
     "license": "CC0-1.0",
     "createdAt": "2017-04-06T23:39:58Z",
-    "updatedAt": "2026-08-10T17:51:03Z",
+    "updatedAt": "2026-08-13T11:49:53Z",
     "pushedAt": "2025-08-03T03:05:42Z",
     "archived": false,
     "disabled": false
@@ -93,7 +93,7 @@
     "url": "https://github.com/sandhikagalih/PHP-Dasar",
     "homepage": "http://youtube.com/webprogrammingunpas",
     "stars": 243,
-    "forks": 374,
+    "forks": 373,
     "language": "CSS",
     "topics": [
       "dasar",
