@@ -84,7 +84,7 @@
     "url": "https://github.com/danpros/htmly",
     "homepage": "https://www.htmly.com",
     "language": "PHP",
-    "stars": 1356,
+    "stars": 1357,
     "forks": 308,
     "topics": [
       "blog",
@@ -96,7 +96,7 @@
       "php",
       "website"
     ],
-    "updatedAt": "2026-08-12T11:50:34Z",
+    "updatedAt": "2026-08-14T21:29:09Z",
     "pushedAt": "2026-01-25T01:00:57Z",
     "latestRelease": {
       "name": "HTMLy v3.1.1",
