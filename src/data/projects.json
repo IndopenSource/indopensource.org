@@ -156,10 +156,10 @@
     "url": "https://github.com/jipraks/yt-short-clipper",
     "homepage": "",
     "language": "Python",
-    "stars": 938,
+    "stars": 939,
     "forks": 284,
     "topics": [],
-    "updatedAt": "2026-08-13T22:46:48Z",
+    "updatedAt": "2026-08-14T08:32:06Z",
     "pushedAt": "2026-07-18T02:05:39Z",
     "latestRelease": {
       "name": "YT Short Clipper v2.0.5-beta",
@@ -291,7 +291,7 @@
     "url": "https://github.com/fajarhide/omni",
     "homepage": "https://omni.weekndlabs.com/docs",
     "language": "Rust",
-    "stars": 322,
+    "stars": 323,
     "forks": 33,
     "topics": [
       "agentic-ai",
@@ -315,7 +315,7 @@
       "token-efficiency",
       "token-optimization"
     ],
-    "updatedAt": "2026-08-14T04:50:41Z",
+    "updatedAt": "2026-08-14T08:33:43Z",
     "pushedAt": "2026-08-14T04:06:05Z",
     "latestRelease": {
       "name": "v0.7.4",
@@ -411,7 +411,7 @@
       "workspace-manager"
     ],
     "updatedAt": "2026-08-14T05:54:00Z",
-    "pushedAt": "2026-08-14T05:53:46Z",
+    "pushedAt": "2026-08-14T08:40:03Z",
     "latestRelease": {
       "name": "Termul Manager v0.4.10",
       "tagName": "v0.4.10",
