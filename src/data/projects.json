@@ -277,8 +277,8 @@
       "token-efficiency",
       "token-optimization"
     ],
-    "updatedAt": "2026-08-15T05:19:21Z",
-    "pushedAt": "2026-08-14T19:30:52Z",
+    "updatedAt": "2026-08-15T06:52:00Z",
+    "pushedAt": "2026-08-15T06:51:43Z",
     "latestRelease": {
       "name": "v0.7.5",
       "tagName": "v0.7.5",
@@ -288,7 +288,7 @@
     "archived": false,
     "licenseSpdx": "Apache-2.0",
     "createdAt": "2026-03-15T03:38:04Z",
-    "openIssues": 6,
+    "openIssues": 4,
     "openPullRequests": 0,
     "subscribers": 4,
     "communityHealth": 71,
@@ -572,7 +572,7 @@
     "url": "https://github.com/mydisha/keirouter",
     "homepage": "https://keirouter.app",
     "language": "Go",
-    "stars": 120,
+    "stars": 121,
     "forks": 41,
     "topics": [
       "ai",
@@ -594,7 +594,7 @@
       "rtk",
       "zai"
     ],
-    "updatedAt": "2026-08-13T00:59:35Z",
+    "updatedAt": "2026-08-15T06:59:27Z",
     "pushedAt": "2026-08-12T10:20:17Z",
     "latestRelease": {
       "name": "v0.1.28",
@@ -1263,7 +1263,7 @@
       "windows"
     ],
     "updatedAt": "2026-08-14T02:58:01Z",
-    "pushedAt": "2026-08-15T05:39:03Z",
+    "pushedAt": "2026-08-15T07:00:05Z",
     "latestRelease": {
       "name": "ShaPrint v1.6.3 (Stable)",
       "tagName": "v1.6.3-stable",
