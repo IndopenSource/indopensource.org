@@ -277,8 +277,8 @@
       "token-efficiency",
       "token-optimization"
     ],
-    "updatedAt": "2026-08-15T10:36:47Z",
-    "pushedAt": "2026-08-15T10:36:06Z",
+    "updatedAt": "2026-08-15T11:34:58Z",
+    "pushedAt": "2026-08-15T11:34:55Z",
     "latestRelease": {
       "name": "v0.7.5",
       "tagName": "v0.7.5",
@@ -288,7 +288,7 @@
     "archived": false,
     "licenseSpdx": "Apache-2.0",
     "createdAt": "2026-03-15T03:38:04Z",
-    "openIssues": 4,
+    "openIssues": 2,
     "openPullRequests": 0,
     "subscribers": 4,
     "communityHealth": 71,
@@ -2489,7 +2489,7 @@
     "archived": false,
     "licenseSpdx": "MIT",
     "createdAt": "2025-11-22T11:52:35Z",
-    "openIssues": 4,
+    "openIssues": 5,
     "openPullRequests": 0,
     "subscribers": 0,
     "communityHealth": 37,
