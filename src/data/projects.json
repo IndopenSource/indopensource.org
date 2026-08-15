@@ -186,10 +186,10 @@
     "url": "https://github.com/laravolt/indonesia",
     "homepage": "",
     "language": "PHP",
-    "stars": 675,
+    "stars": 676,
     "forks": 210,
     "topics": [],
-    "updatedAt": "2026-08-15T08:38:57Z",
+    "updatedAt": "2026-08-15T22:56:22Z",
     "pushedAt": "2026-03-03T06:32:45Z",
     "latestRelease": {
       "name": "v0.41",
@@ -393,7 +393,7 @@
     "url": "https://github.com/gnoviawan/termul",
     "homepage": "https://termul.dev",
     "language": "TypeScript",
-    "stars": 221,
+    "stars": 222,
     "forks": 41,
     "topics": [
       "cross-platform",
@@ -410,7 +410,7 @@
       "terminal-emulator",
       "workspace-manager"
     ],
-    "updatedAt": "2026-08-15T02:38:55Z",
+    "updatedAt": "2026-08-15T23:30:54Z",
     "pushedAt": "2026-08-15T17:17:32Z",
     "latestRelease": {
       "name": "Termul Manager v0.4.10",
