@@ -253,7 +253,7 @@
     "url": "https://github.com/fajarhide/omni",
     "homepage": "https://omni.weekndlabs.com/docs",
     "language": "Rust",
-    "stars": 351,
+    "stars": 352,
     "forks": 33,
     "topics": [
       "agentic-ai",
@@ -277,7 +277,7 @@
       "token-efficiency",
       "token-optimization"
     ],
-    "updatedAt": "2026-08-16T08:31:45Z",
+    "updatedAt": "2026-08-16T11:35:41Z",
     "pushedAt": "2026-08-16T07:20:24Z",
     "latestRelease": {
       "name": "v0.7.5",
@@ -605,7 +605,7 @@
     "archived": false,
     "licenseSpdx": "MIT",
     "createdAt": "2026-05-31T09:02:50Z",
-    "openIssues": 2,
+    "openIssues": 3,
     "openPullRequests": 2,
     "subscribers": 0,
     "communityHealth": 100,
@@ -1117,8 +1117,8 @@
     "stars": 43,
     "forks": 4,
     "topics": [],
-    "updatedAt": "2026-08-16T01:13:32Z",
-    "pushedAt": "2026-08-16T01:13:44Z",
+    "updatedAt": "2026-08-16T10:55:05Z",
+    "pushedAt": "2026-08-16T10:54:52Z",
     "latestRelease": {
       "name": "Tycho v0.10.0",
       "tagName": "v0.10.0",
