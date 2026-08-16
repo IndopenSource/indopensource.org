@@ -156,10 +156,10 @@
     "url": "https://github.com/jipraks/yt-short-clipper",
     "homepage": "",
     "language": "Python",
-    "stars": 944,
+    "stars": 945,
     "forks": 285,
     "topics": [],
-    "updatedAt": "2026-08-16T06:58:32Z",
+    "updatedAt": "2026-08-16T12:40:04Z",
     "pushedAt": "2026-07-18T02:05:39Z",
     "latestRelease": {
       "name": "YT Short Clipper v2.0.5-beta",
@@ -343,7 +343,7 @@
     "homepage": "https://codecora.dev",
     "language": "Rust",
     "stars": 225,
-    "forks": 24,
+    "forks": 25,
     "topics": [
       "agent-memory",
       "ai",
