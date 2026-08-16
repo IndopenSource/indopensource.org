@@ -253,7 +253,7 @@
     "url": "https://github.com/fajarhide/omni",
     "homepage": "https://omni.weekndlabs.com/docs",
     "language": "Rust",
-    "stars": 350,
+    "stars": 351,
     "forks": 33,
     "topics": [
       "agentic-ai",
@@ -277,7 +277,7 @@
       "token-efficiency",
       "token-optimization"
     ],
-    "updatedAt": "2026-08-16T07:21:23Z",
+    "updatedAt": "2026-08-16T08:31:45Z",
     "pushedAt": "2026-08-16T07:20:24Z",
     "latestRelease": {
       "name": "v0.7.5",
@@ -288,7 +288,7 @@
     "archived": false,
     "licenseSpdx": "Apache-2.0",
     "createdAt": "2026-03-15T03:38:04Z",
-    "openIssues": 2,
+    "openIssues": 6,
     "openPullRequests": 0,
     "subscribers": 4,
     "communityHealth": 71,
@@ -377,7 +377,7 @@
     "archived": false,
     "licenseSpdx": "Apache-2.0",
     "createdAt": "2026-05-29T00:27:31Z",
-    "openIssues": 4,
+    "openIssues": 5,
     "openPullRequests": 2,
     "subscribers": 0,
     "communityHealth": 87,
@@ -939,7 +939,7 @@
     "url": "https://github.com/abilfida/OmniDrive",
     "homepage": "",
     "language": "TypeScript",
-    "stars": 48,
+    "stars": 49,
     "forks": 12,
     "topics": [
       "cloudflare",
@@ -947,7 +947,7 @@
       "reactjs",
       "vitejs"
     ],
-    "updatedAt": "2026-08-11T10:55:48Z",
+    "updatedAt": "2026-08-16T08:39:52Z",
     "pushedAt": "2026-06-24T03:36:32Z",
     "latestRelease": {
       "name": "v0.9.7",
