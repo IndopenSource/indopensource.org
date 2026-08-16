@@ -304,7 +304,7 @@
     "url": "https://github.com/Drenzzz/ADBKit",
     "homepage": "",
     "language": "TypeScript",
-    "stars": 334,
+    "stars": 335,
     "forks": 39,
     "topics": [
       "adb",
@@ -315,7 +315,7 @@
       "wails",
       "wails-app"
     ],
-    "updatedAt": "2026-08-12T14:45:27Z",
+    "updatedAt": "2026-08-16T05:26:07Z",
     "pushedAt": "2026-08-11T06:06:06Z",
     "latestRelease": {
       "name": "v1.3",
@@ -501,7 +501,7 @@
     "url": "https://github.com/IlhamriSKY/TEDI",
     "homepage": "https://tedi.ilhamriski.com",
     "language": "TypeScript",
-    "stars": 147,
+    "stars": 148,
     "forks": 13,
     "topics": [
       "ai",
@@ -520,7 +520,7 @@
       "tauri",
       "terminal"
     ],
-    "updatedAt": "2026-08-15T01:12:53Z",
+    "updatedAt": "2026-08-16T05:04:34Z",
     "pushedAt": "2026-08-12T04:16:36Z",
     "latestRelease": {
       "name": "TEDI v0.4.23",
