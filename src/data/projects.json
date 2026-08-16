@@ -572,7 +572,7 @@
     "url": "https://github.com/mydisha/keirouter",
     "homepage": "https://keirouter.app",
     "language": "Go",
-    "stars": 121,
+    "stars": 122,
     "forks": 41,
     "topics": [
       "ai",
@@ -594,7 +594,7 @@
       "rtk",
       "zai"
     ],
-    "updatedAt": "2026-08-15T06:59:27Z",
+    "updatedAt": "2026-08-16T02:40:35Z",
     "pushedAt": "2026-08-12T10:20:17Z",
     "latestRelease": {
       "name": "v0.1.28",
@@ -2483,7 +2483,7 @@
     "stars": 4,
     "forks": 1,
     "topics": [],
-    "updatedAt": "2026-08-16T01:55:26Z",
+    "updatedAt": "2026-08-16T02:02:35Z",
     "pushedAt": "2026-08-16T01:55:18Z",
     "latestRelease": null,
     "archived": false,
