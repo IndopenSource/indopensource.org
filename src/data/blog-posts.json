@@ -145,7 +145,7 @@
     "status": "published",
     "lang": "id",
     "translationKey": "",
-    "thumbnail": "/blog-assets/2026/07/it-camp-2026.jpg",
+    "thumbnail": "https://raw.githubusercontent.com/IndopenSource/Blog-IndopenSource/main/content/2026/07/assets/it-camp-2026.jpg",
     "thumbnailWidth": 1600,
     "thumbnailHeight": 763,
     "thumbnailType": "image/jpeg",
