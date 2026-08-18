@@ -200,7 +200,7 @@
     "description": "Unofficial Python 3 API wrapper to retrieve data from PDDIKTI Kemdikbudristek.",
     "url": "https://github.com/IlhamriSKY/PDDIKTI-kemdikbud-API",
     "homepage": "https://pddikti.kemdiktisaintek.go.id/",
-    "stars": 118,
+    "stars": 119,
     "forks": 25,
     "language": "Python",
     "topics": [
@@ -210,7 +210,7 @@
     ],
     "license": "NOASSERTION",
     "createdAt": "2021-04-21T07:59:57Z",
-    "updatedAt": "2026-08-15T01:12:46Z",
+    "updatedAt": "2026-08-18T08:06:57Z",
     "pushedAt": "2026-08-02T14:59:26Z",
     "archived": false,
     "disabled": false
