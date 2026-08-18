@@ -437,7 +437,7 @@
     "url": "https://github.com/hadziqmtqn/erd-builder-pro",
     "homepage": "https://www.erdbuilderpro.com",
     "language": "TypeScript",
-    "stars": 202,
+    "stars": 203,
     "forks": 39,
     "topics": [
       "coding",
@@ -452,7 +452,7 @@
       "productivity",
       "tiptap-editor"
     ],
-    "updatedAt": "2026-08-17T12:35:06Z",
+    "updatedAt": "2026-08-18T22:10:03Z",
     "pushedAt": "2026-08-17T12:33:35Z",
     "latestRelease": {
       "name": "v3.3.5",
