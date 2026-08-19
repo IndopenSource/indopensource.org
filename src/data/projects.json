@@ -130,7 +130,7 @@
       "sistem-informasi-desa"
     ],
     "updatedAt": "2026-08-15T12:50:25Z",
-    "pushedAt": "2026-08-18T08:48:25Z",
+    "pushedAt": "2026-08-19T04:26:07Z",
     "latestRelease": {
       "name": "Rilis v2607.0.1",
       "tagName": "v2607.0.1",
@@ -369,10 +369,10 @@
     "updatedAt": "2026-08-19T02:15:08Z",
     "pushedAt": "2026-08-19T03:40:59Z",
     "latestRelease": {
-      "name": "v0.14.3",
-      "tagName": "v0.14.3",
-      "url": "https://github.com/codecoradev/uteke/releases/tag/v0.14.3",
-      "publishedAt": "2026-08-15T17:27:06Z"
+      "name": "v0.15.0",
+      "tagName": "v0.15.0",
+      "url": "https://github.com/codecoradev/uteke/releases/tag/v0.15.0",
+      "publishedAt": "2026-08-19T04:08:47Z"
     },
     "archived": false,
     "licenseSpdx": "Apache-2.0",
@@ -624,10 +624,10 @@
     "url": "https://github.com/jipraks/kasirgratisan",
     "homepage": "",
     "language": "TypeScript",
-    "stars": 120,
+    "stars": 121,
     "forks": 62,
     "topics": [],
-    "updatedAt": "2026-08-18T14:06:01Z",
+    "updatedAt": "2026-08-19T04:30:39Z",
     "pushedAt": "2026-08-12T01:08:52Z",
     "latestRelease": null,
     "archived": false,
