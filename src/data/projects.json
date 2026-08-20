@@ -156,7 +156,7 @@
     "url": "https://github.com/jipraks/yt-short-clipper",
     "homepage": "",
     "language": "Python",
-    "stars": 959,
+    "stars": 958,
     "forks": 294,
     "topics": [
       "ai-video",
@@ -177,7 +177,7 @@
       "youtube-shorts",
       "yt-dlp"
     ],
-    "updatedAt": "2026-08-20T09:29:57Z",
+    "updatedAt": "2026-08-20T11:19:41Z",
     "pushedAt": "2026-08-20T09:23:15Z",
     "latestRelease": {
       "name": "YT Short Clipper v2.0.6-beta",
@@ -360,7 +360,7 @@
     "url": "https://github.com/codecoradev/uteke",
     "homepage": "https://codecora.dev",
     "language": "Rust",
-    "stars": 228,
+    "stars": 229,
     "forks": 26,
     "topics": [
       "agent-memory",
@@ -384,7 +384,7 @@
       "sqlite",
       "vector-database"
     ],
-    "updatedAt": "2026-08-20T03:12:31Z",
+    "updatedAt": "2026-08-20T11:33:56Z",
     "pushedAt": "2026-08-20T03:11:36Z",
     "latestRelease": {
       "name": "v0.15.0",
@@ -1087,8 +1087,8 @@
     "stars": 45,
     "forks": 4,
     "topics": [],
-    "updatedAt": "2026-08-19T16:53:31Z",
-    "pushedAt": "2026-08-19T16:52:00Z",
+    "updatedAt": "2026-08-20T11:40:10Z",
+    "pushedAt": "2026-08-20T11:36:16Z",
     "latestRelease": {
       "name": "Tycho v0.10.0",
       "tagName": "v0.10.0",
