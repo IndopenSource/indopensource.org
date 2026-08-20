@@ -1375,7 +1375,7 @@
     "url": "https://github.com/ammar-rasyidi/mandum-rimba",
     "homepage": "https://www.mandumrimba.org",
     "language": "TypeScript",
-    "stars": 26,
+    "stars": 27,
     "forks": 6,
     "topics": [
       "conservation",
@@ -1392,7 +1392,7 @@
       "pmtiles",
       "wildlife"
     ],
-    "updatedAt": "2026-08-18T08:10:56Z",
+    "updatedAt": "2026-08-20T15:27:57Z",
     "pushedAt": "2026-08-10T04:07:20Z",
     "latestRelease": {
       "name": "Mandum Rimba v1.0.0",
