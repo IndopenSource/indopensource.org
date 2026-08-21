@@ -9,7 +9,7 @@
     "url": "https://github.com/faisalman/ua-parser-js",
     "homepage": "https://uaparser.dev/",
     "language": "JavaScript",
-    "stars": 10179,
+    "stars": 10180,
     "forks": 1216,
     "topics": [
       "analytics",
@@ -21,7 +21,7 @@
       "user-agent",
       "user-agent-parser"
     ],
-    "updatedAt": "2026-08-20T21:20:08Z",
+    "updatedAt": "2026-08-21T10:54:03Z",
     "pushedAt": "2026-08-20T08:31:28Z",
     "latestRelease": {
       "name": "v2.0.10",
@@ -1088,7 +1088,7 @@
     "forks": 4,
     "topics": [],
     "updatedAt": "2026-08-21T08:32:45Z",
-    "pushedAt": "2026-08-21T09:22:20Z",
+    "pushedAt": "2026-08-21T11:33:41Z",
     "latestRelease": {
       "name": "Tycho v0.10.0",
       "tagName": "v0.10.0",
