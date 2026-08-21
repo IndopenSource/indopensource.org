@@ -156,7 +156,7 @@
     "url": "https://github.com/jipraks/yt-short-clipper",
     "homepage": "",
     "language": "TypeScript",
-    "stars": 961,
+    "stars": 962,
     "forks": 293,
     "topics": [
       "ai-video",
@@ -177,7 +177,7 @@
       "youtube-shorts",
       "yt-dlp"
     ],
-    "updatedAt": "2026-08-21T20:22:17Z",
+    "updatedAt": "2026-08-21T23:35:23Z",
     "pushedAt": "2026-08-21T01:38:36Z",
     "latestRelease": {
       "name": "YT Short Clipper v2.0.6-beta",
