@@ -85,7 +85,7 @@
     "homepage": "https://www.htmly.com",
     "language": "PHP",
     "stars": 1358,
-    "forks": 308,
+    "forks": 309,
     "topics": [
       "blog",
       "blog-engine",
@@ -1087,8 +1087,8 @@
     "stars": 45,
     "forks": 4,
     "topics": [],
-    "updatedAt": "2026-08-21T07:49:50Z",
-    "pushedAt": "2026-08-21T07:49:02Z",
+    "updatedAt": "2026-08-21T08:32:45Z",
+    "pushedAt": "2026-08-21T08:31:37Z",
     "latestRelease": {
       "name": "Tycho v0.10.0",
       "tagName": "v0.10.0",
