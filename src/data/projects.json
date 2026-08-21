@@ -471,7 +471,7 @@
       "tiptap-editor"
     ],
     "updatedAt": "2026-08-21T02:18:18Z",
-    "pushedAt": "2026-08-21T04:36:35Z",
+    "pushedAt": "2026-08-21T06:54:47Z",
     "latestRelease": {
       "name": "v3.4.2",
       "tagName": "v3.4.2",
@@ -667,14 +667,14 @@
     "url": "https://github.com/IlhamriSKY/PDDIKTI-kemdikbud-API",
     "homepage": "https://pddikti.kemdiktisaintek.go.id/",
     "language": "Python",
-    "stars": 119,
+    "stars": 120,
     "forks": 25,
     "topics": [
       "api-wrapper",
       "package",
       "python3"
     ],
-    "updatedAt": "2026-08-18T08:06:57Z",
+    "updatedAt": "2026-08-21T06:27:01Z",
     "pushedAt": "2026-08-02T14:59:26Z",
     "latestRelease": {
       "name": "v2.1.1",
@@ -1088,7 +1088,7 @@
     "forks": 4,
     "topics": [],
     "updatedAt": "2026-08-21T04:49:35Z",
-    "pushedAt": "2026-08-21T05:02:44Z",
+    "pushedAt": "2026-08-21T06:43:24Z",
     "latestRelease": {
       "name": "Tycho v0.10.0",
       "tagName": "v0.10.0",
@@ -2594,8 +2594,8 @@
     "stars": 1,
     "forks": 0,
     "topics": [],
-    "updatedAt": "2026-08-21T03:55:49Z",
-    "pushedAt": "2026-08-21T03:55:20Z",
+    "updatedAt": "2026-08-21T07:08:10Z",
+    "pushedAt": "2026-08-21T07:07:34Z",
     "latestRelease": {
       "name": "v1.1.0",
       "tagName": "v1.1.0",
