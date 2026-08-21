@@ -124,7 +124,7 @@
     "homepage": "",
     "language": "PHP",
     "stars": 1221,
-    "forks": 1179,
+    "forks": 1180,
     "topics": [
       "opensid",
       "sistem-informasi-desa"
@@ -361,7 +361,7 @@
     "homepage": "https://codecora.dev",
     "language": "Rust",
     "stars": 229,
-    "forks": 26,
+    "forks": 25,
     "topics": [
       "agent-memory",
       "ai",
