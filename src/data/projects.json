@@ -271,7 +271,7 @@
     "url": "https://github.com/fajarhide/omni",
     "homepage": "https://omni.weekndlabs.com/docs",
     "language": "Rust",
-    "stars": 354,
+    "stars": 355,
     "forks": 34,
     "topics": [
       "agentic-ai",
@@ -295,7 +295,7 @@
       "token-efficiency",
       "token-optimization"
     ],
-    "updatedAt": "2026-08-21T13:28:26Z",
+    "updatedAt": "2026-08-21T21:54:39Z",
     "pushedAt": "2026-08-20T05:19:12Z",
     "latestRelease": {
       "name": "v0.7.6",
