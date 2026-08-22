@@ -124,7 +124,7 @@
     "homepage": "",
     "language": "PHP",
     "stars": 1221,
-    "forks": 1180,
+    "forks": 1181,
     "topics": [
       "opensid",
       "sistem-informasi-desa"
@@ -156,7 +156,7 @@
     "url": "https://github.com/jipraks/yt-short-clipper",
     "homepage": "",
     "language": "TypeScript",
-    "stars": 962,
+    "stars": 963,
     "forks": 293,
     "topics": [
       "ai-video",
@@ -177,7 +177,7 @@
       "youtube-shorts",
       "yt-dlp"
     ],
-    "updatedAt": "2026-08-21T23:35:23Z",
+    "updatedAt": "2026-08-22T04:24:07Z",
     "pushedAt": "2026-08-21T01:38:36Z",
     "latestRelease": {
       "name": "YT Short Clipper v2.0.6-beta",
@@ -2505,12 +2505,12 @@
     "forks": 1,
     "topics": [],
     "updatedAt": "2026-08-22T02:23:51Z",
-    "pushedAt": "2026-08-22T02:23:45Z",
+    "pushedAt": "2026-08-22T04:07:42Z",
     "latestRelease": {
-      "name": "2026.08.21",
-      "tagName": "2026.08.21",
-      "url": "https://github.com/muslimtify-org/libmuslim/releases/tag/2026.08.21",
-      "publishedAt": "2026-08-21T12:32:55Z"
+      "name": "2026.08.22",
+      "tagName": "2026.08.22",
+      "url": "https://github.com/muslimtify-org/libmuslim/releases/tag/2026.08.22",
+      "publishedAt": "2026-08-22T04:07:43Z"
     },
     "archived": false,
     "licenseSpdx": "MIT",
@@ -2594,8 +2594,8 @@
     "stars": 1,
     "forks": 0,
     "topics": [],
-    "updatedAt": "2026-08-21T13:37:23Z",
-    "pushedAt": "2026-08-21T13:35:37Z",
+    "updatedAt": "2026-08-22T04:33:58Z",
+    "pushedAt": "2026-08-22T04:34:20Z",
     "latestRelease": {
       "name": "v1.1.0",
       "tagName": "v1.1.0",
