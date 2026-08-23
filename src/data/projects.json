@@ -295,8 +295,8 @@
       "token-efficiency",
       "token-optimization"
     ],
-    "updatedAt": "2026-08-23T12:28:31Z",
-    "pushedAt": "2026-08-23T12:55:39Z",
+    "updatedAt": "2026-08-23T13:32:37Z",
+    "pushedAt": "2026-08-23T13:40:50Z",
     "latestRelease": {
       "name": "v0.7.6",
       "tagName": "v0.7.6",
@@ -306,7 +306,7 @@
     "archived": false,
     "licenseSpdx": "Apache-2.0",
     "createdAt": "2026-03-15T03:38:04Z",
-    "openIssues": 13,
+    "openIssues": 11,
     "openPullRequests": 1,
     "subscribers": 3,
     "communityHealth": 71,
@@ -845,7 +845,7 @@
     "url": "https://github.com/rahmanef63/mso",
     "homepage": "https://mso.rahmanef.com",
     "language": "TypeScript",
-    "stars": 67,
+    "stars": 68,
     "forks": 10,
     "topics": [
       "browser-shell",
@@ -867,7 +867,7 @@
       "web-desktop",
       "web-terminal"
     ],
-    "updatedAt": "2026-08-23T09:41:10Z",
+    "updatedAt": "2026-08-23T13:25:46Z",
     "pushedAt": "2026-08-23T09:40:56Z",
     "latestRelease": {
       "name": "v0.2.0",
