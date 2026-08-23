@@ -360,7 +360,7 @@
     "url": "https://github.com/codecoradev/uteke",
     "homepage": "https://codecora.dev",
     "language": "Rust",
-    "stars": 231,
+    "stars": 232,
     "forks": 25,
     "topics": [
       "agent-memory",
@@ -384,7 +384,7 @@
       "sqlite",
       "vector-database"
     ],
-    "updatedAt": "2026-08-23T19:42:21Z",
+    "updatedAt": "2026-08-23T22:02:01Z",
     "pushedAt": "2026-08-22T09:18:40Z",
     "latestRelease": {
       "name": "v0.15.0",
