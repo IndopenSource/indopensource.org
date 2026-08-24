@@ -21,7 +21,7 @@
       "user-agent",
       "user-agent-parser"
     ],
-    "updatedAt": "2026-08-24T02:06:48Z",
+    "updatedAt": "2026-08-24T16:03:06Z",
     "pushedAt": "2026-08-24T15:56:44Z",
     "latestRelease": {
       "name": "v2.0.10",
@@ -701,7 +701,7 @@
     "url": "https://github.com/adenaufal/anti-slop-writing",
     "homepage": "",
     "language": "",
-    "stars": 115,
+    "stars": 116,
     "forks": 7,
     "topics": [
       "agent-skill",
@@ -720,7 +720,7 @@
       "writing",
       "writing-style"
     ],
-    "updatedAt": "2026-08-24T12:58:10Z",
+    "updatedAt": "2026-08-24T16:16:35Z",
     "pushedAt": "2026-07-06T04:02:38Z",
     "latestRelease": {
       "name": "v3.0",
