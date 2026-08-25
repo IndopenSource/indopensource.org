@@ -140,7 +140,7 @@
     "archived": false,
     "licenseSpdx": "",
     "createdAt": "2016-05-21T10:55:38Z",
-    "openIssues": 351,
+    "openIssues": 354,
     "openPullRequests": 5,
     "subscribers": 110,
     "communityHealth": 50,
@@ -384,8 +384,8 @@
       "sqlite",
       "vector-database"
     ],
-    "updatedAt": "2026-08-25T01:45:11Z",
-    "pushedAt": "2026-08-25T01:47:41Z",
+    "updatedAt": "2026-08-25T01:55:44Z",
+    "pushedAt": "2026-08-25T03:13:48Z",
     "latestRelease": {
       "name": "v0.15.0",
       "tagName": "v0.15.0",
@@ -395,7 +395,7 @@
     "archived": false,
     "licenseSpdx": "Apache-2.0",
     "createdAt": "2026-05-29T00:27:31Z",
-    "openIssues": 7,
+    "openIssues": 6,
     "openPullRequests": 1,
     "subscribers": 0,
     "communityHealth": 87,
