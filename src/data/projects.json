@@ -9,7 +9,7 @@
     "url": "https://github.com/faisalman/ua-parser-js",
     "homepage": "https://uaparser.dev/",
     "language": "JavaScript",
-    "stars": 10180,
+    "stars": 10181,
     "forks": 1215,
     "topics": [
       "analytics",
@@ -21,7 +21,7 @@
       "user-agent",
       "user-agent-parser"
     ],
-    "updatedAt": "2026-08-24T16:03:06Z",
+    "updatedAt": "2026-08-25T23:36:11Z",
     "pushedAt": "2026-08-24T15:56:44Z",
     "latestRelease": {
       "name": "v2.0.10",
@@ -271,7 +271,7 @@
     "url": "https://github.com/fajarhide/omni",
     "homepage": "https://omni.weekndlabs.com/docs",
     "language": "Rust",
-    "stars": 359,
+    "stars": 360,
     "forks": 34,
     "topics": [
       "agentic-ai",
@@ -295,7 +295,7 @@
       "token-efficiency",
       "token-optimization"
     ],
-    "updatedAt": "2026-08-25T18:19:43Z",
+    "updatedAt": "2026-08-25T22:53:40Z",
     "pushedAt": "2026-08-25T18:16:51Z",
     "latestRelease": {
       "name": "v0.7.8",
