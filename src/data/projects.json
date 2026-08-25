@@ -140,7 +140,7 @@
     "archived": false,
     "licenseSpdx": "",
     "createdAt": "2016-05-21T10:55:38Z",
-    "openIssues": 396,
+    "openIssues": 402,
     "openPullRequests": 5,
     "subscribers": 110,
     "communityHealth": 50,
@@ -156,7 +156,7 @@
     "url": "https://github.com/jipraks/yt-short-clipper",
     "homepage": "",
     "language": "TypeScript",
-    "stars": 969,
+    "stars": 970,
     "forks": 295,
     "topics": [
       "ai-video",
@@ -177,7 +177,7 @@
       "youtube-shorts",
       "yt-dlp"
     ],
-    "updatedAt": "2026-08-25T09:25:01Z",
+    "updatedAt": "2026-08-25T11:06:04Z",
     "pushedAt": "2026-08-21T01:38:36Z",
     "latestRelease": {
       "name": "YT Short Clipper v2.0.6-beta",
@@ -541,13 +541,13 @@
       "tauri",
       "terminal"
     ],
-    "updatedAt": "2026-08-24T08:42:18Z",
+    "updatedAt": "2026-08-25T10:53:41Z",
     "pushedAt": "2026-08-25T10:49:46Z",
     "latestRelease": {
-      "name": "TEDI v0.4.28",
-      "tagName": "v0.4.28",
-      "url": "https://github.com/IlhamriSKY/TEDI/releases/tag/v0.4.28",
-      "publishedAt": "2026-08-25T07:07:34Z"
+      "name": "TEDI v0.4.29",
+      "tagName": "v0.4.29",
+      "url": "https://github.com/IlhamriSKY/TEDI/releases/tag/v0.4.29",
+      "publishedAt": "2026-08-25T11:04:49Z"
     },
     "archived": false,
     "licenseSpdx": "Apache-2.0",
@@ -1637,8 +1637,8 @@
       "vibe-coding",
       "vibecoding"
     ],
-    "updatedAt": "2026-08-22T17:32:39Z",
-    "pushedAt": "2026-08-25T10:53:01Z",
+    "updatedAt": "2026-08-25T10:59:33Z",
+    "pushedAt": "2026-08-25T11:43:25Z",
     "latestRelease": {
       "name": "v0.6.2",
       "tagName": "v0.6.2",
@@ -1649,7 +1649,7 @@
     "licenseSpdx": "MIT",
     "createdAt": "2026-04-21T15:17:02Z",
     "openIssues": 0,
-    "openPullRequests": 0,
+    "openPullRequests": 1,
     "subscribers": 0,
     "communityHealth": 42,
     "readmeHtml": "<h2>vibekit</h2>\n<p>A guardrailed pipeline for coding agents. It turns a one-line intent into a design you approved, a plan you approved, code written by an agent that never saw the plan being written, and a verdict backed by output you can read. Dependency free: bare Node and whichever agent CLI you already use.</p>\n<p>The problem it solves is not bad code. It is the claim of being done. vibekit puts a gate in front of every such claim and makes the evidence part of the answer.</p>\n<h2>How it works</h2>\n<p>Six skills, each one a gate. Every stage hands to the next, and no stage can skip the one before it.</p>\n<pre><code>/vibekit:vibe \"add a dark mode toggle\"\n        │\n        ▼\n  brainstorm ──► plan ──► exec ──► verify ──► merge or PR\n   (design)    (tasks)  (agents)  (evidence)\n        ▲                   │         │\n        └───── debug ◄──────┴─────────┘\n              (a check failed)\n</code></pre>\n<ul>\n<li><strong><code>brainstorm</code></strong> asks questions one at a time, pushes back on your framing once, offers alternatives, and writes a spec with observable success criteria. No code before you approve it.</li>\n<li><strong><code>plan</code></strong> turns the approved spec into numbered tasks. Every task carries a <code>→ verify:</code> clause that is checkable before anything runs, and a plan may not state a value nobody has observed.</li>\n<li><strong><code>exec</code></strong> dispatches one fresh agent per task. The author of a plan reads past its own contradictions. A fresh context reads it literally and stops. Every plan defect this project has found was found by a dispatched agent.</li>\n<li><strong><code>verify</code></strong> runs the checks no single task could: the whole suite, the scope of the diff, every goal against its evidence. It returns <code>ready</code> or <code>not ready</code>, and unmeasured counts as not satisfied.</li>\n<li><strong><code>debug</code></strong> takes over on a failed check. It finds one falsifiable cause, sends a read-only agent to refute it, and stops after two refutations rather than guessing a third time. It never edits.</li>\n<li><strong><code>lazy</code></strong> and <strong><code>terse</code></strong> stay on once invoked. One governs how much you build, the other how much you say.</li>\n</ul>\n<p>Two rules run through all of it. <strong>Evidence or it did not happen</strong>, because a check with no output to show is not a check. <strong>You may not write a value you have not observed</strong>, because a guess in a plan is a defect a later agent pays for.</p>\n<h2>Features</h2>\n\n<table>\n<thead>\n<tr>\n<th>Skill</th>\n<th>What it does</th>\n<th>Gate</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><code>brainstorm</code></td>\n<td>Use before any creative or implementation work: features, components, behavior changes. Hard gate, no code before an approved design.</td>\n<td>hard</td>\n</tr>\n<tr>\n<td><code>debug</code></td>\n<td>Use when a check fails: a red test, a broken build, a failed clause, or a bug you can point at. Finds a root cause and gets it refuted before anything is fixed. Diagnosis is the product. This skill never edits.</td>\n<td>hard</td>\n</tr>\n<tr>\n<td><code>exec</code></td>\n<td>Use when a plan is approved and implementation has not started: dispatches one fresh subagent per task, runs each task's verify clause, and routes failures back instead of repairing them. One task, one commit.</td>\n<td>hard</td>\n</tr>\n<tr>\n<td><code>lazy</code></td>\n<td>Use at the start of any coding work: writing, adding, refactoring, fixing, designing. The laziness ladder, stdlib and native features before new code, one line before fifty. Stays on after.</td>\n<td>none</td>\n</tr>\n<tr>\n<td><code>plain</code></td>\n<td>Use before writing any text, in chat or into a file. Three typography rules that hold in every string you emit, including code comments, commit messages, PR bodies and docs. No em dash, no semicolon, no hard wrapping inside a paragraph. Stays on after.</td>\n<td>none</td>\n</tr>\n<tr>\n<td><code>plan</code></td>\n<td>Use when a spec is approved and implementation has not started: turns it into a task-by-task plan with exact paths and checkable verification. No code here.</td>\n<td>hard</td>\n</tr>\n<tr>\n<td><code>quick</code></td>\n<td>Use when the user types /vibekit:quick: writes the change immediately under lazy's ladder, no spec, no plan, no subagents. Reports what it skipped.</td>\n<td>none</td>\n</tr>\n<tr>\n<td><code>terse</code></td>\n<td>Use at the start of every session. Compress narration, never artifacts. Questions, evidence, specs, plans and warnings stay verbatim. Stays on after.</td>\n<td>none</td>\n</tr>\n<tr>\n<td><code>using-vibekit</code></td>\n<td>Use when starting any conversation: establishes the auto-trigger discipline so guardrail skills fire instead of being silently skipped.</td>\n<td>none</td>\n</tr>\n<tr>\n<td><code>verify</code></td>\n<td>Use before claiming a change is done, fixed or passing: checks the whole change against its spec, runs the checks no single task could, and returns ready or not ready. Evidence or it did not happen.</td>\n<td>hard</td>\n</tr>\n<tr>\n<td><code>vibe</code></td>\n<td>Run a short intent through the pipeline. Invoked as /vibekit:vibe. Hands off to brainstorm and does nothing else.</td>\n<td>none</td>\n</tr>\n</tbody></table>\n<p>A <code>hard</code> gate refuses to proceed until its condition is met. <code>none</code> means the skill shapes behaviour without blocking anything.</p>\n<p>Skills are discovered by globbing <code>skills/*/SKILL.md</code>. There is no registry anywhere in the repo, which is what makes registration drift impossible rather than merely detectable. Every derived file, including the runtime manifests, the command files, the trigger tables and this table, is generated by <code>npm run generate</code> and verified by <code>npm run check</code>.</p>\n<h2>Install</h2>\n<p>Each runtime installs separately. Installing for one does not affect any other.</p>\n<p><strong>Claude Code</strong></p>\n<pre><code>/plugin marketplace add rizukirr/vibekit\n/plugin install vibekit@vibekit-marketplace\n</code></pre>\n<p><strong>Codex</strong></p>\n<pre><code>codex plugin marketplace add rizukirr/vibekit\ncodex plugin add vibekit@vibekit\n</code></pre>\n<p>Verify with <code>codex plugin list</code>.</p>\n<p><strong>opencode</strong></p>\n<p>Add it to the <code>plugin</code> array in your <code>opencode.json</code>, global or project level:</p>\n<pre><code class=\"language-json\">{\n  \"plugin\": [\"vibekit@git+https://github.com/rizukirr/vibekit.git\"]\n}\n</code></pre>\n<p>Verify with <code>opencode debug skill</code>.</p>\n<p><strong>Antigravity</strong></p>\n<pre><code>agy plugin install https://github.com/rizukirr/vibekit\n</code></pre>\n<p><strong>Pi</strong></p>\n<pre><code>pi install git:github.com/rizukirr/vibekit\n</code></pre>\n<h3>What has actually been checked</h3>\n<table>\n<thead>\n<tr>\n<th>Runtime</th>\n<th>Emitter</th>\n<th>Verified</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>Claude Code</td>\n<td><code>runtimes/claude-code.mjs</code></td>\n<td>SessionStart hook smoke-tested in CI on Linux and Windows</td>\n</tr>\n<tr>\n<td>Codex</td>\n<td><code>runtimes/codex.mjs</code></td>\n<td>installed and listed as enabled by <code>codex plugin list</code>, against codex-cli 0.147.0</td>\n</tr>\n<tr>\n<td>opencode</td>\n<td><code>runtimes/opencode.mjs</code></td>\n<td>all skills listed by <code>opencode debug skill</code>, against opencode 1.18.16</td>\n</tr>\n<tr>\n<td>Antigravity</td>\n<td><code>runtimes/antigravity.mjs</code></td>\n<td>installed with <code>agy plugin install</code>, a print-mode session confirmed the auto-trigger map was in context and reproduced a table row, and the CLI log showed no skill parse failures, against agy 1.1.20</td>\n</tr>\n<tr>\n<td>Pi</td>\n<td><code>runtimes/pi.mjs</code></td>\n<td>not verified, tool not installed</td>\n</tr>\n</tbody></table>\n<p>Three runtimes were probed against the real CLI and one was not. That distinction is kept per row because unit tests assert what we decided to emit, which says nothing about whether a host accepts it. That gap hid four integration defects until they were probed.</p>\n<h2>Evals</h2>\n<p>Skills are behaviour-shaping prompts, so the only way to know one works is to watch it fire in a real session.</p>\n<pre><code>npm run eval                                       # candidate only, deterministic\nnpm run eval -- --baseline v2 --candidate HEAD     # A/B two refs\nnpm run eval -- --dry-run                          # print the plan and cost, spawn nothing\nnpm run eval -- --judge                            # also grade whether the skill was followed\n</code></pre>\n<p>Variants are git refs materialised as throwaway worktrees, so there is never a second <code>skills/</code> tree to drift. Sessions run in a disposable temp directory.</p>\n<p>Run A/B rather than candidate-only whenever a rate is the point. A candidate rate of 1.00 once looked like a new rule working. Its baseline arm was also 1.00, because the model already did it.</p>\n<p>This costs real money and needs an authenticated <code>claude</code> CLI, so it is a manual gate, not part of the free CI (<code>check</code>, <code>test</code>, <code>check:hook</code>).</p>\n<h2>Development</h2>\n<pre><code>npm run generate    # regenerate every derived file\nnpm run check       # fail if any generated file is out of date\nnpm test            # unit tests\n</code></pre>\n<p>Adding a skill is creating one directory under <code>skills/</code> with a <code>SKILL.md</code>, then running <code>npm run generate</code>. Never hand-edit a generated file.</p>\n<h2>License</h2>\n<p>MIT. Copyright (c) 2026 Rizki Rakasiwi. See <a href=\"https://github.com/rizukirr/vibekit/blob/main/LICENSE\" rel=\"noopener noreferrer\">LICENSE</a>.</p>\n"
