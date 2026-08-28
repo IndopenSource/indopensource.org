@@ -9,7 +9,7 @@
     "url": "https://github.com/faisalman/ua-parser-js",
     "homepage": "https://uaparser.dev/",
     "language": "JavaScript",
-    "stars": 10181,
+    "stars": 10184,
     "forks": 1215,
     "topics": [
       "analytics",
@@ -21,7 +21,7 @@
       "user-agent",
       "user-agent-parser"
     ],
-    "updatedAt": "2026-08-25T23:36:11Z",
+    "updatedAt": "2026-08-28T02:12:58Z",
     "pushedAt": "2026-08-24T15:56:44Z",
     "latestRelease": {
       "name": "v2.0.10",
@@ -107,7 +107,7 @@
     "archived": false,
     "licenseSpdx": "GPL-2.0",
     "createdAt": "2013-12-25T01:35:51Z",
-    "openIssues": 39,
+    "openIssues": 40,
     "openPullRequests": 13,
     "subscribers": 71,
     "communityHealth": 71,
@@ -140,7 +140,7 @@
     "archived": false,
     "licenseSpdx": "",
     "createdAt": "2016-05-21T10:55:38Z",
-    "openIssues": 368,
+    "openIssues": 357,
     "openPullRequests": 5,
     "subscribers": 110,
     "communityHealth": 50,
@@ -156,8 +156,8 @@
     "url": "https://github.com/jipraks/yt-short-clipper",
     "homepage": "",
     "language": "TypeScript",
-    "stars": 974,
-    "forks": 294,
+    "stars": 975,
+    "forks": 293,
     "topics": [
       "ai-video",
       "content-creation",
@@ -177,7 +177,7 @@
       "youtube-shorts",
       "yt-dlp"
     ],
-    "updatedAt": "2026-08-27T20:27:18Z",
+    "updatedAt": "2026-08-28T02:44:44Z",
     "pushedAt": "2026-08-21T01:38:36Z",
     "latestRelease": {
       "name": "YT Short Clipper v2.0.6-beta",
@@ -256,7 +256,7 @@
     "licenseSpdx": "MIT",
     "createdAt": "2026-01-04T12:18:23Z",
     "openIssues": 8,
-    "openPullRequests": 0,
+    "openPullRequests": 1,
     "subscribers": 2,
     "communityHealth": 71,
     "readmeHtml": "<h2>Joko UI</h2>\n<p><img src=\"https://img.shields.io/github/stars/rayasabari/joko-ui?style=social\" alt=\"\" /> \n<img src=\"https://img.shields.io/github/issues/rayasabari/joko-ui\" alt=\"\" />\n<img src=\"https://img.shields.io/github/license/rayasabari/joko-ui\" alt=\"\" />\n<a href=\"https://discord.gg/QQFBGkkdV8\" rel=\"noopener noreferrer\"><img src=\"https://img.shields.io/badge/Discord-Join%20Server-5865F2?logo=discord&amp;logoColor=white\" alt=\"Join Discord\" /></a></p>\n<p>Joko UI is a collection of free Tailwind CSS components that can be used in your next project. With a range of copy-paste ready components, you can build your next marketing website, admin dashboard, eCommerce store and much more without installing any heavy dependencies.</p>\n<p><strong><a href=\"https://www.jokoui.web.id/\" rel=\"noopener noreferrer\">📚 View Documentation</a></strong></p>\n<h2>Table of Contents</h2>\n<ul>\n<li><a href=\"#getting-started\" rel=\"noopener noreferrer\">Getting Started</a></li>\n<li><a href=\"#usage\" rel=\"noopener noreferrer\">Usage</a></li>\n<li><a href=\"#components\" rel=\"noopener noreferrer\">Components</a><ul>\n<li><a href=\"#application\" rel=\"noopener noreferrer\">📱 Application</a></li>\n<li><a href=\"#marketing\" rel=\"noopener noreferrer\">📣 Marketing</a></li>\n</ul>\n</li>\n<li><a href=\"#roadmap\" rel=\"noopener noreferrer\">Roadmap</a></li>\n<li><a href=\"#contributing\" rel=\"noopener noreferrer\">Contributing</a></li>\n<li><a href=\"#license\" rel=\"noopener noreferrer\">License</a></li>\n</ul>\n<h2>Getting Started</h2>\n<p>There is no Joko UI installation. If you have a Tailwind CSS project, you can simply copy the code and paste it into your project.</p>\n<p>It is designed to be:</p>\n<ul>\n<li><strong>No Config</strong>: Works with standard Tailwind setup.</li>\n<li><strong>No Install</strong>: No npm packages to manage.</li>\n<li><strong>No Setup</strong>: Just copy, paste, and customize.</li>\n</ul>\n<h2>Usage</h2>\n<p>Browse the website for the components you need, copy the code and paste it into your project.</p>\n<ol>\n<li>Browse the website for a component you like.</li>\n<li>Preview the component at different breakpoints (Mobile, Tablet, Desktop).</li>\n<li>Toggle <strong>Dark Mode</strong> to see how it looks in dark themes.</li>\n<li>Click on the <strong>'Code'</strong> tab or the <strong>'Copy Code'</strong> button to get the source.</li>\n<li>Paste the copied code into your project.</li>\n</ol>\n<blockquote>\n<p>[!NOTE]\nAll components support both Light and Dark modes out of the box using Tailwind's <code>dark:</code> modifier.</p>\n</blockquote>\n<h2>Components</h2>\n<p>Joko UI has a growing collection of freely available components:</p>\n<h3><a href=\"https://github.com/rayasabari/joko-ui/blob/main/components/application\" rel=\"noopener noreferrer\">📱 Application</a></h3>\n<p>UI components for building functional web applications:</p>\n<ul>\n<li> Accordions</li>\n<li> Alerts</li>\n<li> Avatars</li>\n<li> Badges</li>\n<li> Breadcrumbs</li>\n<li> Buttons</li>\n<li> Cards</li>\n<li> Carousels</li>\n<li> Checkboxes</li>\n<li> Date Pickers</li>\n<li> Drawers</li>\n<li> Dropdowns</li>\n<li> Forms</li>\n<li> Inputs</li>\n<li> Loaders</li>\n<li> Modals</li>\n<li> Navbars</li>\n<li> Paginations</li>\n<li> Progress</li>\n<li> Radios</li>\n<li> Selects</li>\n<li> Sidebars</li>\n<li> Skeletons</li>\n<li> Tables</li>\n<li> Tabs</li>\n<li> Toasts</li>\n<li> Toggles</li>\n<li> Tooltips</li>\n</ul>\n<h3><a href=\"https://github.com/rayasabari/joko-ui/blob/main/components/marketing\" rel=\"noopener noreferrer\">📣 Marketing</a></h3>\n<p>Components for building high-converting landing pages:</p>\n<ul>\n<li> Author Cards</li>\n<li> Banners</li>\n<li> Blog Cards</li>\n<li> Brand Lists</li>\n<li> CTAs</li>\n<li> Description Lists</li>\n<li> Error Pages</li>\n<li> FAQ</li>\n<li> Feature Sections</li>\n<li> Footers</li>\n<li> Headers</li>\n<li> Heroes</li>\n<li> Newsletter</li>\n<li> Pricing</li>\n<li> Stats</li>\n<li> Steppers</li>\n<li> Teams</li>\n<li> Testimonials</li>\n</ul>\n<h2>Roadmap</h2>\n<p>We are actively developing new components. Here is our prioritized list of upcoming additions. If you'd like to contribute, feel free to pick any unchecked item and submit a PR!</p>\n<h3>📱 Application UI</h3>\n<ul>\n<li> Textareas</li>\n<li> Sliders (input)</li>\n<li> File Uploads</li>\n<li> Dividers</li>\n<li> Containers</li>\n<li> Grid (Stack)</li>\n<li> Headings</li>\n<li> Labels</li>\n<li> Captions (helper text)</li>\n<li> Code (inline code)</li>\n<li> Error States</li>\n<li> Empty States</li>\n<li> Data Grid</li>\n<li> Lists</li>\n<li> Timelines</li>\n<li> Tree View</li>\n</ul>\n<h3>📣 Marketing UI</h3>\n<ul>\n<li> Ratings (Review)</li>\n<li> Lead Forms</li>\n<li> Mega Menus</li>\n</ul>\n<h2>Contributing</h2>\n<p>You can contribute by adding new components, fixing bugs or improving the documentation. Please read <strong><a href=\"https://github.com/rayasabari/joko-ui/blob/main/CONTRIBUTING.md\" rel=\"noopener noreferrer\">CONTRIBUTING.md</a></strong> before opening an issue or Pull Request.</p>\n<h2>License</h2>\n<p>Joko UI is an open source project licensed under the <a href=\"https://github.com/rayasabari/joko-ui/blob/main/LICENSE\" rel=\"noopener noreferrer\">MIT license</a>.</p>\n"
@@ -411,7 +411,7 @@
     "url": "https://github.com/gnoviawan/termul",
     "homepage": "https://termul.dev",
     "language": "TypeScript",
-    "stars": 227,
+    "stars": 228,
     "forks": 44,
     "topics": [
       "cross-platform",
@@ -428,8 +428,8 @@
       "terminal-emulator",
       "workspace-manager"
     ],
-    "updatedAt": "2026-08-27T17:22:25Z",
-    "pushedAt": "2026-08-27T15:03:20Z",
+    "updatedAt": "2026-08-28T03:22:24Z",
+    "pushedAt": "2026-08-27T20:58:51Z",
     "latestRelease": {
       "name": "Termul Manager v0.4.15",
       "tagName": "v0.4.15",
@@ -541,13 +541,13 @@
       "tauri",
       "terminal"
     ],
-    "updatedAt": "2026-08-27T03:14:10Z",
-    "pushedAt": "2026-08-27T03:15:10Z",
+    "updatedAt": "2026-08-28T02:47:16Z",
+    "pushedAt": "2026-08-28T02:47:09Z",
     "latestRelease": {
-      "name": "TEDI v0.4.33",
-      "tagName": "v0.4.33",
-      "url": "https://github.com/IlhamriSKY/TEDI/releases/tag/v0.4.33",
-      "publishedAt": "2026-08-27T03:31:08Z"
+      "name": "TEDI v0.4.34",
+      "tagName": "v0.4.34",
+      "url": "https://github.com/IlhamriSKY/TEDI/releases/tag/v0.4.34",
+      "publishedAt": "2026-08-28T03:02:50Z"
     },
     "archived": false,
     "licenseSpdx": "Apache-2.0",
@@ -615,13 +615,13 @@
       "rtk",
       "zai"
     ],
-    "updatedAt": "2026-08-27T15:33:49Z",
-    "pushedAt": "2026-08-27T15:12:40Z",
+    "updatedAt": "2026-08-28T02:35:25Z",
+    "pushedAt": "2026-08-28T02:35:20Z",
     "latestRelease": {
-      "name": "v0.1.28",
-      "tagName": "v0.1.28",
-      "url": "https://github.com/mydisha/keirouter/releases/tag/v0.1.28",
-      "publishedAt": "2026-07-30T10:08:35Z"
+      "name": "v0.1.29",
+      "tagName": "v0.1.29",
+      "url": "https://github.com/mydisha/keirouter/releases/tag/v0.1.29",
+      "publishedAt": "2026-08-28T02:35:18Z"
     },
     "archived": false,
     "licenseSpdx": "MIT",
@@ -642,10 +642,10 @@
     "url": "https://github.com/jipraks/kasirgratisan",
     "homepage": "",
     "language": "TypeScript",
-    "stars": 124,
+    "stars": 125,
     "forks": 63,
     "topics": [],
-    "updatedAt": "2026-08-26T16:39:46Z",
+    "updatedAt": "2026-08-28T01:19:12Z",
     "pushedAt": "2026-08-20T22:39:49Z",
     "latestRelease": null,
     "archived": false,
@@ -701,7 +701,7 @@
     "url": "https://github.com/adenaufal/anti-slop-writing",
     "homepage": "",
     "language": "",
-    "stars": 118,
+    "stars": 119,
     "forks": 7,
     "topics": [
       "agent-skill",
@@ -720,7 +720,7 @@
       "writing",
       "writing-style"
     ],
-    "updatedAt": "2026-08-27T03:47:37Z",
+    "updatedAt": "2026-08-28T04:12:44Z",
     "pushedAt": "2026-07-06T04:02:38Z",
     "latestRelease": {
       "name": "v3.0",
@@ -2287,8 +2287,8 @@
     "stars": 6,
     "forks": 1,
     "topics": [],
-    "updatedAt": "2026-08-26T22:00:12Z",
-    "pushedAt": "2026-08-26T21:42:36Z",
+    "updatedAt": "2026-08-28T02:26:54Z",
+    "pushedAt": "2026-08-28T02:26:46Z",
     "latestRelease": null,
     "archived": false,
     "licenseSpdx": "MIT",
