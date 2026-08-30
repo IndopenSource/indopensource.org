@@ -412,7 +412,7 @@
     "homepage": "https://termul.dev",
     "language": "TypeScript",
     "stars": 230,
-    "forks": 44,
+    "forks": 45,
     "topics": [
       "cross-platform",
       "desktop-app",
@@ -1138,18 +1138,18 @@
     "stars": 45,
     "forks": 4,
     "topics": [],
-    "updatedAt": "2026-08-29T18:49:53Z",
-    "pushedAt": "2026-08-29T11:45:59Z",
+    "updatedAt": "2026-08-29T23:01:49Z",
+    "pushedAt": "2026-08-29T23:02:16Z",
     "latestRelease": {
-      "name": "Tycho v0.10.1",
-      "tagName": "v0.10.1",
-      "url": "https://github.com/firewalker06/tycho/releases/tag/v0.10.1",
-      "publishedAt": "2026-08-27T04:46:12Z"
+      "name": "Tycho v0.10.2",
+      "tagName": "v0.10.2",
+      "url": "https://github.com/firewalker06/tycho/releases/tag/v0.10.2",
+      "publishedAt": "2026-08-29T23:02:31Z"
     },
     "archived": false,
     "licenseSpdx": "MIT",
     "createdAt": "2026-05-23T01:58:17Z",
-    "openIssues": 2,
+    "openIssues": 0,
     "openPullRequests": 0,
     "subscribers": 2,
     "communityHealth": 100,
@@ -1463,7 +1463,7 @@
     "url": "https://github.com/rizukirr/hyprsimple",
     "homepage": "",
     "language": "Shell",
-    "stars": 26,
+    "stars": 25,
     "forks": 4,
     "topics": [
       "arch-linux",
@@ -1473,7 +1473,7 @@
       "linux",
       "omarchy"
     ],
-    "updatedAt": "2026-08-29T16:42:31Z",
+    "updatedAt": "2026-08-29T22:48:32Z",
     "pushedAt": "2026-08-29T16:41:32Z",
     "latestRelease": {
       "name": "v0.2.3",
