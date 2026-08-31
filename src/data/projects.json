@@ -9,7 +9,7 @@
     "url": "https://github.com/faisalman/ua-parser-js",
     "homepage": "https://uaparser.dev/",
     "language": "JavaScript",
-    "stars": 10185,
+    "stars": 10184,
     "forks": 1215,
     "topics": [
       "analytics",
@@ -21,7 +21,7 @@
       "user-agent",
       "user-agent-parser"
     ],
-    "updatedAt": "2026-08-31T05:52:49Z",
+    "updatedAt": "2026-08-31T20:57:02Z",
     "pushedAt": "2026-08-24T15:56:44Z",
     "latestRelease": {
       "name": "v2.0.10",
@@ -272,7 +272,7 @@
     "homepage": "https://omni.weekndlabs.com/docs",
     "language": "Rust",
     "stars": 360,
-    "forks": 34,
+    "forks": 33,
     "topics": [
       "agentic-ai",
       "ai-agents",
@@ -429,7 +429,7 @@
       "workspace-manager"
     ],
     "updatedAt": "2026-08-31T16:27:06Z",
-    "pushedAt": "2026-08-31T17:31:35Z",
+    "pushedAt": "2026-08-31T23:48:05Z",
     "latestRelease": {
       "name": "Termul Manager v0.4.15",
       "tagName": "v0.4.15",
@@ -2287,8 +2287,8 @@
     "stars": 6,
     "forks": 1,
     "topics": [],
-    "updatedAt": "2026-08-30T21:51:26Z",
-    "pushedAt": "2026-08-30T21:51:18Z",
+    "updatedAt": "2026-08-31T23:09:14Z",
+    "pushedAt": "2026-08-31T23:09:08Z",
     "latestRelease": null,
     "archived": false,
     "licenseSpdx": "MIT",
