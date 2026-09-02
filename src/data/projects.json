@@ -140,7 +140,7 @@
     "archived": false,
     "licenseSpdx": "",
     "createdAt": "2016-05-21T10:55:38Z",
-    "openIssues": 353,
+    "openIssues": 350,
     "openPullRequests": 5,
     "subscribers": 110,
     "communityHealth": 50,
@@ -156,7 +156,7 @@
     "url": "https://github.com/jipraks/yt-short-clipper",
     "homepage": "",
     "language": "TypeScript",
-    "stars": 978,
+    "stars": 979,
     "forks": 294,
     "topics": [
       "ai-video",
@@ -177,7 +177,7 @@
       "youtube-shorts",
       "yt-dlp"
     ],
-    "updatedAt": "2026-09-01T15:11:36Z",
+    "updatedAt": "2026-09-02T07:01:25Z",
     "pushedAt": "2026-08-21T01:38:36Z",
     "latestRelease": {
       "name": "YT Short Clipper v2.0.6-beta",
@@ -411,7 +411,7 @@
     "url": "https://github.com/gnoviawan/termul",
     "homepage": "https://termul.dev",
     "language": "TypeScript",
-    "stars": 231,
+    "stars": 232,
     "forks": 44,
     "topics": [
       "cross-platform",
@@ -428,7 +428,7 @@
       "terminal-emulator",
       "workspace-manager"
     ],
-    "updatedAt": "2026-09-02T03:46:44Z",
+    "updatedAt": "2026-09-02T06:24:55Z",
     "pushedAt": "2026-09-01T17:19:30Z",
     "latestRelease": {
       "name": "Termul Manager v0.4.15",
@@ -471,7 +471,7 @@
       "tiptap-editor"
     ],
     "updatedAt": "2026-08-28T07:49:56Z",
-    "pushedAt": "2026-09-02T02:14:55Z",
+    "pushedAt": "2026-09-02T10:54:27Z",
     "latestRelease": {
       "name": "v3.4.3",
       "tagName": "v3.4.3",
@@ -541,13 +541,13 @@
       "tauri",
       "terminal"
     ],
-    "updatedAt": "2026-09-02T03:06:55Z",
-    "pushedAt": "2026-09-02T02:09:36Z",
+    "updatedAt": "2026-09-02T07:00:57Z",
+    "pushedAt": "2026-09-02T06:59:47Z",
     "latestRelease": {
-      "name": "TEDI v0.4.38",
-      "tagName": "v0.4.38",
-      "url": "https://github.com/IlhamriSKY/TEDI/releases/tag/v0.4.38",
-      "publishedAt": "2026-09-02T02:24:45Z"
+      "name": "TEDI v0.4.39",
+      "tagName": "v0.4.39",
+      "url": "https://github.com/IlhamriSKY/TEDI/releases/tag/v0.4.39",
+      "publishedAt": "2026-09-02T07:16:42Z"
     },
     "archived": false,
     "licenseSpdx": "Apache-2.0",
@@ -782,7 +782,7 @@
     "url": "https://github.com/ddtamn/svelte-audio-ui",
     "homepage": "https://svelte-audio-ui.vercel.app/",
     "language": "Svelte",
-    "stars": 88,
+    "stars": 89,
     "forks": 5,
     "topics": [
       "audio",
@@ -793,7 +793,7 @@
       "svelte-components",
       "sveltekit"
     ],
-    "updatedAt": "2026-08-25T15:24:54Z",
+    "updatedAt": "2026-09-02T07:06:06Z",
     "pushedAt": "2026-09-02T01:37:31Z",
     "latestRelease": {
       "name": "svelte-audio-ui@1.0.1",
@@ -1380,8 +1380,8 @@
       "linux",
       "omarchy"
     ],
-    "updatedAt": "2026-09-01T18:06:00Z",
-    "pushedAt": "2026-09-01T18:04:12Z",
+    "updatedAt": "2026-09-02T11:22:26Z",
+    "pushedAt": "2026-09-02T11:21:29Z",
     "latestRelease": {
       "name": "v0.3.0",
       "tagName": "v0.3.0",
@@ -1435,8 +1435,8 @@
     "stars": 20,
     "forks": 2,
     "topics": [],
-    "updatedAt": "2026-09-02T05:49:43Z",
-    "pushedAt": "2026-09-02T05:49:37Z",
+    "updatedAt": "2026-09-02T06:23:30Z",
+    "pushedAt": "2026-09-02T06:23:13Z",
     "latestRelease": {
       "name": "v1.2.615",
       "tagName": "v1.2.615",
