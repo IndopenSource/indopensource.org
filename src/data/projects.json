@@ -124,7 +124,7 @@
     "homepage": "",
     "language": "PHP",
     "stars": 1222,
-    "forks": 1188,
+    "forks": 1189,
     "topics": [
       "opensid",
       "sistem-informasi-desa"
@@ -667,7 +667,7 @@
     "url": "https://github.com/adenaufal/anti-slop-writing",
     "homepage": "",
     "language": "",
-    "stars": 122,
+    "stars": 123,
     "forks": 7,
     "topics": [
       "agent-skill",
@@ -686,7 +686,7 @@
       "writing",
       "writing-style"
     ],
-    "updatedAt": "2026-09-03T12:11:31Z",
+    "updatedAt": "2026-09-03T23:31:40Z",
     "pushedAt": "2026-07-06T04:02:38Z",
     "latestRelease": {
       "name": "v3.0",
@@ -1435,8 +1435,8 @@
     "stars": 20,
     "forks": 2,
     "topics": [],
-    "updatedAt": "2026-09-03T06:57:13Z",
-    "pushedAt": "2026-09-03T06:55:41Z",
+    "updatedAt": "2026-09-03T22:57:38Z",
+    "pushedAt": "2026-09-03T22:57:33Z",
     "latestRelease": {
       "name": "v1.2.615",
       "tagName": "v1.2.615",
