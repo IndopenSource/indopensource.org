@@ -568,7 +568,7 @@
     "url": "https://github.com/mydisha/keirouter",
     "homepage": "https://keirouter.app",
     "language": "Go",
-    "stars": 136,
+    "stars": 137,
     "forks": 53,
     "topics": [
       "ai",
@@ -590,7 +590,7 @@
       "rtk",
       "zai"
     ],
-    "updatedAt": "2026-09-09T02:38:20Z",
+    "updatedAt": "2026-09-09T18:19:28Z",
     "pushedAt": "2026-09-08T08:09:35Z",
     "latestRelease": {
       "name": "v0.1.29",
@@ -667,7 +667,7 @@
     "url": "https://github.com/adenaufal/anti-slop-writing",
     "homepage": "",
     "language": "",
-    "stars": 128,
+    "stars": 127,
     "forks": 7,
     "topics": [
       "agent-skill",
@@ -686,7 +686,7 @@
       "writing",
       "writing-style"
     ],
-    "updatedAt": "2026-09-09T11:11:12Z",
+    "updatedAt": "2026-09-09T16:54:14Z",
     "pushedAt": "2026-07-06T04:02:38Z",
     "latestRelease": {
       "name": "v3.0",
@@ -842,8 +842,8 @@
       "web-desktop",
       "web-terminal"
     ],
-    "updatedAt": "2026-09-09T16:39:04Z",
-    "pushedAt": "2026-09-09T16:19:34Z",
+    "updatedAt": "2026-09-09T17:48:19Z",
+    "pushedAt": "2026-09-09T17:47:19Z",
     "latestRelease": {
       "name": "v0.2.0",
       "tagName": "v0.2.0",
@@ -2262,8 +2262,8 @@
     "stars": 7,
     "forks": 1,
     "topics": [],
-    "updatedAt": "2026-09-08T21:42:45Z",
-    "pushedAt": "2026-09-08T21:41:02Z",
+    "updatedAt": "2026-09-09T17:05:40Z",
+    "pushedAt": "2026-09-09T17:02:45Z",
     "latestRelease": null,
     "archived": false,
     "licenseSpdx": "MIT",
