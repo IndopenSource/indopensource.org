@@ -601,7 +601,7 @@
     "archived": false,
     "licenseSpdx": "MIT",
     "createdAt": "2026-05-31T09:02:50Z",
-    "openIssues": 0,
+    "openIssues": 1,
     "openPullRequests": 4,
     "subscribers": 0,
     "communityHealth": 100,
@@ -667,7 +667,7 @@
     "url": "https://github.com/adenaufal/anti-slop-writing",
     "homepage": "",
     "language": "",
-    "stars": 127,
+    "stars": 128,
     "forks": 9,
     "topics": [
       "agent-skill",
@@ -686,7 +686,7 @@
       "writing",
       "writing-style"
     ],
-    "updatedAt": "2026-09-12T06:36:54Z",
+    "updatedAt": "2026-09-12T20:32:57Z",
     "pushedAt": "2026-07-06T04:02:38Z",
     "latestRelease": {
       "name": "v3.0",
@@ -2265,8 +2265,8 @@
     "stars": 7,
     "forks": 1,
     "topics": [],
-    "updatedAt": "2026-09-11T21:35:38Z",
-    "pushedAt": "2026-09-11T21:35:35Z",
+    "updatedAt": "2026-09-12T21:29:06Z",
+    "pushedAt": "2026-09-12T21:18:15Z",
     "latestRelease": null,
     "archived": false,
     "licenseSpdx": "MIT",
