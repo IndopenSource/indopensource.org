@@ -140,7 +140,7 @@
     "archived": false,
     "licenseSpdx": "",
     "createdAt": "2016-05-21T10:55:38Z",
-    "openIssues": 352,
+    "openIssues": 350,
     "openPullRequests": 5,
     "subscribers": 110,
     "communityHealth": 50,
@@ -439,7 +439,7 @@
     "archived": false,
     "licenseSpdx": "Apache-2.0",
     "createdAt": "2026-05-29T00:27:31Z",
-    "openIssues": 6,
+    "openIssues": 8,
     "openPullRequests": 0,
     "subscribers": 1,
     "communityHealth": 87,
@@ -568,7 +568,7 @@
     "url": "https://github.com/mydisha/keirouter",
     "homepage": "https://keirouter.app",
     "language": "Go",
-    "stars": 139,
+    "stars": 140,
     "forks": 53,
     "topics": [
       "ai",
@@ -590,7 +590,7 @@
       "rtk",
       "zai"
     ],
-    "updatedAt": "2026-09-11T09:01:00Z",
+    "updatedAt": "2026-09-12T03:00:52Z",
     "pushedAt": "2026-09-11T00:23:51Z",
     "latestRelease": {
       "name": "v0.1.29",
@@ -820,7 +820,7 @@
     "url": "https://github.com/rahmanef63/mso",
     "homepage": "https://mso.rahmanef.com",
     "language": "TypeScript",
-    "stars": 77,
+    "stars": 78,
     "forks": 11,
     "topics": [
       "browser-shell",
@@ -842,7 +842,7 @@
       "web-desktop",
       "web-terminal"
     ],
-    "updatedAt": "2026-09-12T00:21:07Z",
+    "updatedAt": "2026-09-12T05:37:46Z",
     "pushedAt": "2026-09-11T21:48:57Z",
     "latestRelease": {
       "name": "v0.2.0",
