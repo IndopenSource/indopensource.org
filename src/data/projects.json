@@ -85,7 +85,7 @@
     "homepage": "https://www.htmly.com",
     "language": "PHP",
     "stars": 1362,
-    "forks": 309,
+    "forks": 308,
     "topics": [
       "blog",
       "blog-engine",
@@ -360,7 +360,7 @@
     "url": "https://github.com/gnoviawan/termul",
     "homepage": "https://termul.dev",
     "language": "TypeScript",
-    "stars": 240,
+    "stars": 241,
     "forks": 45,
     "topics": [
       "cross-platform",
@@ -377,7 +377,7 @@
       "terminal-emulator",
       "workspace-manager"
     ],
-    "updatedAt": "2026-09-07T23:15:30Z",
+    "updatedAt": "2026-09-12T17:07:10Z",
     "pushedAt": "2026-09-01T17:19:30Z",
     "latestRelease": {
       "name": "Termul Manager v0.4.15",
@@ -522,7 +522,7 @@
     "url": "https://github.com/IlhamriSKY/TEDI",
     "homepage": "https://tedi.ilhamriski.com",
     "language": "TypeScript",
-    "stars": 167,
+    "stars": 168,
     "forks": 14,
     "topics": [
       "ai",
@@ -541,7 +541,7 @@
       "tauri",
       "terminal"
     ],
-    "updatedAt": "2026-09-12T09:26:55Z",
+    "updatedAt": "2026-09-12T15:26:24Z",
     "pushedAt": "2026-09-11T07:56:12Z",
     "latestRelease": {
       "name": "TEDI v0.4.55",
@@ -842,8 +842,8 @@
       "web-desktop",
       "web-terminal"
     ],
-    "updatedAt": "2026-09-12T14:07:40Z",
-    "pushedAt": "2026-09-12T14:01:24Z",
+    "updatedAt": "2026-09-12T15:21:13Z",
+    "pushedAt": "2026-09-12T15:21:10Z",
     "latestRelease": {
       "name": "v0.2.0",
       "tagName": "v0.2.0",
