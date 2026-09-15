@@ -360,7 +360,7 @@
     "url": "https://github.com/codecoradev/uteke",
     "homepage": "https://codecora.dev",
     "language": "Rust",
-    "stars": 245,
+    "stars": 246,
     "forks": 27,
     "topics": [
       "agent-memory",
@@ -384,7 +384,7 @@
       "sqlite",
       "vector-database"
     ],
-    "updatedAt": "2026-09-14T20:40:05Z",
+    "updatedAt": "2026-09-15T00:11:33Z",
     "pushedAt": "2026-09-14T14:15:22Z",
     "latestRelease": {
       "name": "v0.18.0",
@@ -412,7 +412,7 @@
     "homepage": "https://termul.dev",
     "language": "TypeScript",
     "stars": 242,
-    "forks": 45,
+    "forks": 46,
     "topics": [
       "cross-platform",
       "desktop-app",
@@ -1085,7 +1085,7 @@
     "homepage": "",
     "language": "Ruby",
     "stars": 48,
-    "forks": 4,
+    "forks": 5,
     "topics": [],
     "updatedAt": "2026-09-14T22:43:43Z",
     "pushedAt": "2026-09-13T09:01:11Z",
@@ -1901,8 +1901,8 @@
     "stars": 12,
     "forks": 6,
     "topics": [],
-    "updatedAt": "2026-09-14T20:40:32Z",
-    "pushedAt": "2026-09-14T20:40:26Z",
+    "updatedAt": "2026-09-14T23:33:27Z",
+    "pushedAt": "2026-09-14T23:33:21Z",
     "latestRelease": {
       "name": "NAEOS 3.5.0",
       "tagName": "v3.5.0",
