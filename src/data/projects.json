@@ -9,7 +9,7 @@
     "url": "https://github.com/faisalman/ua-parser-js",
     "homepage": "https://uaparser.dev/",
     "language": "JavaScript",
-    "stars": 10189,
+    "stars": 10190,
     "forks": 1217,
     "topics": [
       "analytics",
@@ -21,7 +21,7 @@
       "user-agent",
       "user-agent-parser"
     ],
-    "updatedAt": "2026-09-16T15:09:41Z",
+    "updatedAt": "2026-09-16T17:16:19Z",
     "pushedAt": "2026-09-01T14:34:53Z",
     "latestRelease": {
       "name": "v2.0.10",
@@ -429,7 +429,7 @@
       "workspace-manager"
     ],
     "updatedAt": "2026-09-16T15:20:24Z",
-    "pushedAt": "2026-09-16T15:20:18Z",
+    "pushedAt": "2026-09-16T17:30:33Z",
     "latestRelease": {
       "name": "Termul Manager v0.4.15",
       "tagName": "v0.4.15",
@@ -842,8 +842,8 @@
       "web-desktop",
       "web-terminal"
     ],
-    "updatedAt": "2026-09-16T16:26:43Z",
-    "pushedAt": "2026-09-16T16:26:39Z",
+    "updatedAt": "2026-09-16T20:09:39Z",
+    "pushedAt": "2026-09-16T20:09:34Z",
     "latestRelease": {
       "name": "v0.2.0",
       "tagName": "v0.2.0",
@@ -1901,8 +1901,8 @@
     "stars": 12,
     "forks": 6,
     "topics": [],
-    "updatedAt": "2026-09-16T15:42:13Z",
-    "pushedAt": "2026-09-16T15:42:08Z",
+    "updatedAt": "2026-09-16T19:10:53Z",
+    "pushedAt": "2026-09-16T19:10:46Z",
     "latestRelease": {
       "name": "NAEOS 3.5.0",
       "tagName": "v3.5.0",
