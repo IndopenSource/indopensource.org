@@ -157,7 +157,7 @@
     "homepage": "",
     "language": "TypeScript",
     "stars": 994,
-    "forks": 300,
+    "forks": 301,
     "topics": [
       "ai-video",
       "content-creation",
@@ -1901,8 +1901,8 @@
     "stars": 12,
     "forks": 6,
     "topics": [],
-    "updatedAt": "2026-09-16T22:14:33Z",
-    "pushedAt": "2026-09-16T22:14:28Z",
+    "updatedAt": "2026-09-17T00:41:52Z",
+    "pushedAt": "2026-09-17T00:41:47Z",
     "latestRelease": {
       "name": "NAEOS 3.5.0",
       "tagName": "v3.5.0",
