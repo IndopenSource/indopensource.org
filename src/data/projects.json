@@ -271,7 +271,7 @@
     "url": "https://github.com/fajarhide/omni",
     "homepage": "https://omni.weekndlabs.com/docs",
     "language": "Rust",
-    "stars": 372,
+    "stars": 370,
     "forks": 34,
     "topics": [
       "agentic-ai",
@@ -295,7 +295,7 @@
       "token-efficiency",
       "token-optimization"
     ],
-    "updatedAt": "2026-09-18T03:59:49Z",
+    "updatedAt": "2026-09-18T16:57:33Z",
     "pushedAt": "2026-09-16T22:17:04Z",
     "latestRelease": {
       "name": "v0.7.9",
@@ -361,7 +361,7 @@
     "homepage": "https://codecora.dev",
     "language": "Rust",
     "stars": 257,
-    "forks": 28,
+    "forks": 29,
     "topics": [
       "agent-memory",
       "ai",
@@ -429,7 +429,7 @@
       "workspace-manager"
     ],
     "updatedAt": "2026-09-18T13:05:59Z",
-    "pushedAt": "2026-09-18T13:05:53Z",
+    "pushedAt": "2026-09-18T17:27:05Z",
     "latestRelease": {
       "name": "Termul Manager v0.4.15",
       "tagName": "v0.4.15",
@@ -1901,8 +1901,8 @@
     "stars": 12,
     "forks": 6,
     "topics": [],
-    "updatedAt": "2026-09-18T13:58:08Z",
-    "pushedAt": "2026-09-18T13:58:04Z",
+    "updatedAt": "2026-09-18T17:27:45Z",
+    "pushedAt": "2026-09-18T17:27:40Z",
     "latestRelease": {
       "name": "NAEOS 3.5.0",
       "tagName": "v3.5.0",
