@@ -156,7 +156,7 @@
     "url": "https://github.com/jipraks/yt-short-clipper",
     "homepage": "",
     "language": "TypeScript",
-    "stars": 1004,
+    "stars": 1005,
     "forks": 303,
     "topics": [
       "ai-video",
@@ -177,7 +177,7 @@
       "youtube-shorts",
       "yt-dlp"
     ],
-    "updatedAt": "2026-09-21T12:57:07Z",
+    "updatedAt": "2026-09-22T21:16:09Z",
     "pushedAt": "2026-09-20T13:44:04Z",
     "latestRelease": {
       "name": "YT Short Clipper v2.0.7-beta",
@@ -522,7 +522,7 @@
     "url": "https://github.com/IlhamriSKY/TEDI",
     "homepage": "https://tedi.ilhamriski.com",
     "language": "TypeScript",
-    "stars": 168,
+    "stars": 167,
     "forks": 14,
     "topics": [
       "ai",
@@ -541,7 +541,7 @@
       "tauri",
       "terminal"
     ],
-    "updatedAt": "2026-09-22T02:58:08Z",
+    "updatedAt": "2026-09-22T19:23:50Z",
     "pushedAt": "2026-09-22T02:58:04Z",
     "latestRelease": {
       "name": "TEDI v0.4.66",
@@ -843,7 +843,7 @@
       "web-terminal"
     ],
     "updatedAt": "2026-09-22T17:11:03Z",
-    "pushedAt": "2026-09-22T18:28:52Z",
+    "pushedAt": "2026-09-22T19:19:07Z",
     "latestRelease": {
       "name": "v0.2.0",
       "tagName": "v0.2.0",
@@ -1197,7 +1197,7 @@
     "url": "https://github.com/rizukirr/no-vibe",
     "homepage": "",
     "language": "Shell",
-    "stars": 39,
+    "stars": 40,
     "forks": 1,
     "topics": [
       "ai-agents",
@@ -1213,7 +1213,7 @@
       "vibe-coding",
       "vibecoding"
     ],
-    "updatedAt": "2026-09-20T15:56:06Z",
+    "updatedAt": "2026-09-22T19:32:05Z",
     "pushedAt": "2026-06-12T15:10:29Z",
     "latestRelease": {
       "name": "v2.0.3",
@@ -1942,8 +1942,8 @@
     "stars": 11,
     "forks": 6,
     "topics": [],
-    "updatedAt": "2026-09-22T18:47:45Z",
-    "pushedAt": "2026-09-22T18:47:43Z",
+    "updatedAt": "2026-09-22T20:17:10Z",
+    "pushedAt": "2026-09-22T20:17:05Z",
     "latestRelease": {
       "name": "NAEOS 3.6.0",
       "tagName": "v3.6.0",
@@ -2295,8 +2295,8 @@
     "stars": 7,
     "forks": 1,
     "topics": [],
-    "updatedAt": "2026-09-21T22:30:39Z",
-    "pushedAt": "2026-09-21T22:30:35Z",
+    "updatedAt": "2026-09-22T21:52:18Z",
+    "pushedAt": "2026-09-22T21:52:14Z",
     "latestRelease": null,
     "archived": false,
     "licenseSpdx": "MIT",
