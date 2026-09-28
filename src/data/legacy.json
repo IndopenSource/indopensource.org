@@ -24,7 +24,7 @@
     "description": "List of All Programming Telegram Group",
     "url": "https://github.com/hendisantika/List-All-Programming-Telegram-Group",
     "homepage": "",
-    "stars": 1490,
+    "stars": 1491,
     "forks": 363,
     "language": "Crystal",
     "topics": [
@@ -44,7 +44,7 @@
     ],
     "license": "CC0-1.0",
     "createdAt": "2017-04-06T23:39:58Z",
-    "updatedAt": "2026-09-27T02:07:28Z",
+    "updatedAt": "2026-09-28T08:52:49Z",
     "pushedAt": "2025-08-03T03:05:42Z",
     "archived": false,
     "disabled": false
@@ -115,7 +115,7 @@
     "url": "https://github.com/wauputr4/awesome-llm-gateways",
     "homepage": "",
     "stars": 3,
-    "forks": 13,
+    "forks": 14,
     "language": null,
     "topics": [],
     "license": "NOASSERTION",
