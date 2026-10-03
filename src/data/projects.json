@@ -129,7 +129,7 @@
       "opensid",
       "sistem-informasi-desa"
     ],
-    "updatedAt": "2026-10-01T10:26:38Z",
+    "updatedAt": "2026-10-03T16:05:53Z",
     "pushedAt": "2026-09-06T06:59:28Z",
     "latestRelease": {
       "name": "Rilis v2607.0.1",
@@ -306,7 +306,7 @@
     "archived": false,
     "licenseSpdx": "Apache-2.0",
     "createdAt": "2026-03-15T03:38:04Z",
-    "openIssues": 14,
+    "openIssues": 15,
     "openPullRequests": 3,
     "subscribers": 3,
     "communityHealth": 71,
@@ -428,8 +428,8 @@
       "terminal-emulator",
       "workspace-manager"
     ],
-    "updatedAt": "2026-10-03T12:19:04Z",
-    "pushedAt": "2026-10-03T12:23:43Z",
+    "updatedAt": "2026-10-03T14:28:40Z",
+    "pushedAt": "2026-10-03T17:48:07Z",
     "latestRelease": {
       "name": "Termul Manager v0.4.18",
       "tagName": "v0.4.18",
@@ -471,7 +471,7 @@
       "tiptap-editor"
     ],
     "updatedAt": "2026-10-03T02:32:42Z",
-    "pushedAt": "2026-10-03T02:35:00Z",
+    "pushedAt": "2026-10-03T15:44:19Z",
     "latestRelease": {
       "name": "v3.4.6",
       "tagName": "v3.4.6",
@@ -1503,8 +1503,8 @@
     "stars": 26,
     "forks": 3,
     "topics": [],
-    "updatedAt": "2026-10-03T07:13:38Z",
-    "pushedAt": "2026-10-03T07:13:34Z",
+    "updatedAt": "2026-10-03T15:06:14Z",
+    "pushedAt": "2026-10-03T15:06:10Z",
     "latestRelease": {
       "name": "v1.2.615",
       "tagName": "v1.2.615",
@@ -1942,8 +1942,8 @@
     "stars": 11,
     "forks": 6,
     "topics": [],
-    "updatedAt": "2026-10-02T11:43:37Z",
-    "pushedAt": "2026-10-03T10:39:33Z",
+    "updatedAt": "2026-10-03T17:59:22Z",
+    "pushedAt": "2026-10-03T18:00:02Z",
     "latestRelease": {
       "name": "NAEOS 3.6.0",
       "tagName": "v3.6.0",
