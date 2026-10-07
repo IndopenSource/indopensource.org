@@ -135,7 +135,7 @@
     "description": "Sistem Informasi Geografis (SIG) / GIS Wisata Kota Surabaya Berbasis Web - www.firstplato.com",
     "url": "https://github.com/ipang-dwi/sigsby",
     "homepage": "",
-    "stars": 32,
+    "stars": 31,
     "forks": 26,
     "language": "PHP",
     "topics": [
@@ -158,7 +158,7 @@
     ],
     "license": "GPL-3.0",
     "createdAt": "2017-11-06T12:44:26Z",
-    "updatedAt": "2026-07-13T09:56:33Z",
+    "updatedAt": "2026-10-07T06:47:15Z",
     "pushedAt": "2022-06-30T16:34:06Z",
     "archived": false,
     "disabled": false
