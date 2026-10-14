@@ -156,8 +156,8 @@
     "url": "https://github.com/jipraks/yt-short-clipper",
     "homepage": "",
     "language": "TypeScript",
-    "stars": 1038,
-    "forks": 308,
+    "stars": 1039,
+    "forks": 309,
     "topics": [
       "ai-video",
       "content-creation",
@@ -177,7 +177,7 @@
       "youtube-shorts",
       "yt-dlp"
     ],
-    "updatedAt": "2026-10-14T02:44:40Z",
+    "updatedAt": "2026-10-14T10:44:46Z",
     "pushedAt": "2026-09-20T13:44:04Z",
     "latestRelease": {
       "name": "YT Short Clipper v2.0.7-beta",
@@ -428,8 +428,8 @@
       "terminal-emulator",
       "workspace-manager"
     ],
-    "updatedAt": "2026-10-14T05:32:14Z",
-    "pushedAt": "2026-10-14T06:41:56Z",
+    "updatedAt": "2026-10-14T12:17:59Z",
+    "pushedAt": "2026-10-14T12:17:52Z",
     "latestRelease": {
       "name": "Termul Manager v0.4.21",
       "tagName": "v0.4.21",
@@ -439,7 +439,7 @@
     "archived": false,
     "licenseSpdx": "MIT",
     "createdAt": "2026-01-13T04:36:02Z",
-    "openIssues": 31,
+    "openIssues": 27,
     "openPullRequests": 29,
     "subscribers": 0,
     "communityHealth": 71,
@@ -470,8 +470,8 @@
       "productivity",
       "tiptap-editor"
     ],
-    "updatedAt": "2026-10-13T05:29:17Z",
-    "pushedAt": "2026-10-13T06:21:37Z",
+    "updatedAt": "2026-10-14T12:03:47Z",
+    "pushedAt": "2026-10-14T12:04:50Z",
     "latestRelease": {
       "name": "v3.4.6",
       "tagName": "v3.4.6",
@@ -482,7 +482,7 @@
     "licenseSpdx": "",
     "createdAt": "2026-03-30T00:18:38Z",
     "openIssues": 0,
-    "openPullRequests": 4,
+    "openPullRequests": 3,
     "subscribers": 2,
     "communityHealth": 57,
     "readmeHtml": "<div>\n  \n    \n    \n    <img width=\"400\" alt=\"ERD Builder Pro\" src=\"https://raw.githubusercontent.com/hadziqmtqn/erd-builder-pro/master/public/img/ERD-Builder-Pro-Light.svg\" />\n  \n</div><h2>ERD Builder Pro</h2>\n<p>Design database schemas and document how your systems work.</p><p>\n  <a href=\"https://hub.docker.com/r/bekenweb/erd-builder-pro\" rel=\"noopener noreferrer\">\n    <img alt=\"Docker Hub\" src=\"https://img.shields.io/badge/docker-available-blue?logo=docker\" />\n  </a>\n  <a href=\"https://hub.docker.com/r/bekenweb/erd-builder-pro\" rel=\"noopener noreferrer\">\n    <img alt=\"Docker pulls\" src=\"https://img.shields.io/docker/pulls/bekenweb/erd-builder-pro\" />\n  </a>\n  <a href=\"https://hub.docker.com/r/bekenweb/erd-builder-pro/tags\" rel=\"noopener noreferrer\">\n    <img alt=\"Docker image size\" src=\"https://img.shields.io/docker/image-size/bekenweb/erd-builder-pro/latest\" />\n  </a>\n</p><p>\n  <a href=\"https://docs.erdbuilderpro.com\" rel=\"noopener noreferrer\">Documentation</a> ·\n  <a href=\"https://github.com/hadziqmtqn/erd-builder-pro/releases\" rel=\"noopener noreferrer\">Desktop releases</a> ·\n  <a href=\"https://hub.docker.com/r/bekenweb/erd-builder-pro\" rel=\"noopener noreferrer\">Docker image</a>\n</p><div>\n  <img width=\"1100\" alt=\"ERD Builder Pro workspace\" src=\"https://raw.githubusercontent.com/hadziqmtqn/erd-builder-pro/master/public/img/erd-intro.gif\" />\n</div><p>ERD Builder Pro combines an ERD canvas and DBML editor with flowcharts, notes, and drawings. Desktop and CLI builds also include DB Client for working with existing PostgreSQL, MySQL, and SQLite databases.</p>\n<h2>Features</h2>\n<ul>\n<li>Model schemas in the ERD canvas or DBML editor, then export SQL DDL for PostgreSQL and MySQL.</li>\n<li>Keep flowcharts, rich-text notes, and drawings alongside project files.</li>\n<li>Use DB Client in the Desktop and CLI apps to inspect connected database schemas, browse data, and run queries.</li>\n<li>Ask the AI assistant to draft SQL, sample data, or flowcharts. Review generated content before applying it. AI features require a configured provider.</li>\n</ul>\n<h2>Install</h2>\n<h3>CLI</h3>\n<p>Requires Node.js 18 or later.</p>\n<pre><code class=\"language-bash\">npm install -g erdbpro\nerdbpro start --open\n</code></pre>\n<p>The CLI opens the web interface at <code>http://localhost:3101</code>, binds its server to <code>127.0.0.1</code>, and stores its SQLite database at <code>~/.erdbpro/data.db</code>. See the <a href=\"https://github.com/hadziqmtqn/erd-builder-pro/blob/master/cli/README.md\" rel=\"noopener noreferrer\">CLI guide</a> for other commands, MCP, and schema checks.</p>\n<h3>Desktop</h3>\n<p>Download a macOS, Windows, or Linux build from <a href=\"https://github.com/hadziqmtqn/erd-builder-pro/releases\" rel=\"noopener noreferrer\">GitHub Releases</a>. macOS and Windows builds are not registered with Apple or Microsoft, so Gatekeeper or SmartScreen may show a warning on first launch. Check the release notes for installation instructions.</p>\n<h3>Docker</h3>\n<p>The published image listens on port <code>3000</code> and uses SQLite when <code>DATABASE_URL</code> is unset. The database is stored under <code>/app/data</code>; mount that path to a persistent volume. Web deployments also require a stable <code>ERD_ENCRYPTION_KEY</code>.</p>\n<p>Generate a key once with <code>openssl rand -hex 32</code>. Save the result in an untracked <code>.env</code> file as <code>ERD_ENCRYPTION_KEY=&lt;generated-value&gt;</code>. Leave <code>DATABASE_URL</code> unset for the default SQLite setup. Keep the same key when restarting or replacing the container; changing it can make previously encrypted values unreadable.</p>\n<pre><code class=\"language-bash\">docker run -d \\\n  --name erd-builder-pro \\\n  --restart unless-stopped \\\n  --publish 3000:3000 \\\n  --volume erd-data:/app/data \\\n  --env-file .env \\\n  bekenweb/erd-builder-pro:latest\n</code></pre>\n<p>Keep the <code>erd-data</code> volume and <code>.env</code> backed up. Removing the volume deletes the SQLite database. PostgreSQL and Supabase deployments need additional environment settings; see <a href=\"https://github.com/hadziqmtqn/erd-builder-pro/blob/master/.env.example\" rel=\"noopener noreferrer\"><code>.env.example</code></a>.</p>\n<h2>MCP support (experimental)</h2>\n<p>Run <code>erdbpro mcp</code> to use CLI data or <code>erdbpro mcp --desktop</code> to use Desktop data. The Desktop command runs the bundled MCP server without opening another GUI window. Local MCP includes selected write operations for Notes and history, so review those requests before approving them.</p>\n<p>A configured Web deployment can expose an OAuth-protected Streamable HTTP endpoint. The Web MCP surface is read-only and limited to workspace documents and history. It does not expose DB Client data, credentials, SQL execution, filesystem access, or write operations. See the <a href=\"https://docs.erdbuilderpro.com/configuration/mcp\" rel=\"noopener noreferrer\">MCP setup guide</a>.</p>\n<h2>Development</h2>\n<p>For local PostgreSQL development, set <code>DATABASE_URL</code> in <code>.env</code> to a development database, then run:</p>\n<pre><code class=\"language-bash\">npm install\nnpm run dev:pg:local\n</code></pre>\n<p><code>dev:pg:local</code> pushes the Prisma schema before starting the server. Do not point it at production data. Run the checks with:</p>\n<pre><code class=\"language-bash\">npm test\nnpm run lint\n</code></pre>\n<h2>License</h2>\n<p>This repository uses the <a href=\"https://github.com/hadziqmtqn/erd-builder-pro/blob/master/LICENSE\" rel=\"noopener noreferrer\">PolyForm Noncommercial License 1.0.0</a>. It does not grant commercial-use rights, including internal use by for-profit organizations. Contact the licensor for separate permission before commercial use.</p>\n<h2>Sponsors</h2>\n<p>\n  <a href=\"https://www.idcloudhost.com\" rel=\"noopener noreferrer\"><img src=\"https://raw.githubusercontent.com/hadziqmtqn/erd-builder-pro/master/public/img/sponsors/IDCloudhost.png\" alt=\"IDCloudhost\" height=\"50\" /></a>\n    \n  <a href=\"https://doktainer.com\" rel=\"noopener noreferrer\"><img src=\"https://raw.githubusercontent.com/hadziqmtqn/erd-builder-pro/master/public/img/sponsors/Doktainer.png\" alt=\"Doktainer\" height=\"50\" /></a>\n    \n  <a href=\"https://sumopod.com\" rel=\"noopener noreferrer\"><img src=\"https://raw.githubusercontent.com/hadziqmtqn/erd-builder-pro/master/public/img/sponsors/Sumopod.png\" alt=\"SumoPod\" height=\"50\" /></a>\n</p><p>Support development through <a href=\"https://trakteer.id/khadziq_muttaqin/tip\" rel=\"noopener noreferrer\">Trakteer</a>.</p>\n"
@@ -842,8 +842,8 @@
       "web-desktop",
       "web-terminal"
     ],
-    "updatedAt": "2026-10-13T00:36:20Z",
-    "pushedAt": "2026-10-13T06:46:54Z",
+    "updatedAt": "2026-10-14T10:25:07Z",
+    "pushedAt": "2026-10-14T10:25:02Z",
     "latestRelease": {
       "name": "v0.2.0",
       "tagName": "v0.2.0",
@@ -894,7 +894,7 @@
     "url": "https://github.com/wauputr4/bansos",
     "homepage": "https://bansos.dev",
     "language": "Svelte",
-    "stars": 69,
+    "stars": 70,
     "forks": 19,
     "topics": [
       "bansos",
@@ -908,7 +908,7 @@
       "static-site",
       "sveltekit"
     ],
-    "updatedAt": "2026-10-13T12:46:40Z",
+    "updatedAt": "2026-10-14T09:43:55Z",
     "pushedAt": "2026-10-12T10:13:34Z",
     "latestRelease": {
       "name": "Bansos v0.0.14 — Contributor Pages & Catalog Refresh",
@@ -993,8 +993,8 @@
     "stars": 51,
     "forks": 7,
     "topics": [],
-    "updatedAt": "2026-10-14T04:14:26Z",
-    "pushedAt": "2026-10-14T04:14:21Z",
+    "updatedAt": "2026-10-14T11:24:05Z",
+    "pushedAt": "2026-10-14T11:24:01Z",
     "latestRelease": {
       "name": "v1.2.615",
       "tagName": "v1.2.615",
@@ -1205,8 +1205,8 @@
       "sharing-printer",
       "windows"
     ],
-    "updatedAt": "2026-10-14T07:10:24Z",
-    "pushedAt": "2026-10-14T07:10:21Z",
+    "updatedAt": "2026-10-14T09:39:56Z",
+    "pushedAt": "2026-10-14T09:39:51Z",
     "latestRelease": {
       "name": "ShaPrint v3.4.0",
       "tagName": "v3.4.0",
@@ -1232,7 +1232,7 @@
     "url": "https://github.com/rizukirr/no-vibe",
     "homepage": "",
     "language": "Shell",
-    "stars": 42,
+    "stars": 43,
     "forks": 1,
     "topics": [
       "ai-agents",
@@ -1248,7 +1248,7 @@
       "vibe-coding",
       "vibecoding"
     ],
-    "updatedAt": "2026-10-07T13:38:26Z",
+    "updatedAt": "2026-10-14T12:31:27Z",
     "pushedAt": "2026-06-12T15:10:29Z",
     "latestRelease": {
       "name": "v2.0.3",
