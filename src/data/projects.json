@@ -378,7 +378,7 @@
       "workspace-manager"
     ],
     "updatedAt": "2026-10-18T17:40:19Z",
-    "pushedAt": "2026-10-18T18:37:06Z",
+    "pushedAt": "2026-10-18T21:26:29Z",
     "latestRelease": {
       "name": "Termul Manager v0.4.50",
       "tagName": "v0.4.50",
@@ -993,8 +993,8 @@
     "stars": 51,
     "forks": 7,
     "topics": [],
-    "updatedAt": "2026-10-18T10:31:10Z",
-    "pushedAt": "2026-10-18T10:31:06Z",
+    "updatedAt": "2026-10-18T21:09:00Z",
+    "pushedAt": "2026-10-18T21:08:56Z",
     "latestRelease": {
       "name": "v1.2.615",
       "tagName": "v1.2.615",
@@ -1981,8 +1981,8 @@
     "stars": 11,
     "forks": 6,
     "topics": [],
-    "updatedAt": "2026-10-18T18:29:26Z",
-    "pushedAt": "2026-10-18T18:29:24Z",
+    "updatedAt": "2026-10-18T18:52:51Z",
+    "pushedAt": "2026-10-18T19:10:12Z",
     "latestRelease": {
       "name": "v3.7.0",
       "tagName": "v3.7.0",
@@ -2366,8 +2366,8 @@
     "stars": 7,
     "forks": 1,
     "topics": [],
-    "updatedAt": "2026-10-17T21:19:45Z",
-    "pushedAt": "2026-10-17T21:19:41Z",
+    "updatedAt": "2026-10-18T21:19:10Z",
+    "pushedAt": "2026-10-18T21:19:06Z",
     "latestRelease": null,
     "archived": false,
     "licenseSpdx": "MIT",
