@@ -360,7 +360,7 @@
     "url": "https://github.com/gnoviawan/termul",
     "homepage": "https://termul.dev",
     "language": "TypeScript",
-    "stars": 284,
+    "stars": 285,
     "forks": 56,
     "topics": [
       "cross-platform",
@@ -377,8 +377,8 @@
       "terminal-emulator",
       "workspace-manager"
     ],
-    "updatedAt": "2026-10-23T15:15:12Z",
-    "pushedAt": "2026-10-23T17:50:18Z",
+    "updatedAt": "2026-10-23T19:27:59Z",
+    "pushedAt": "2026-10-23T22:17:08Z",
     "latestRelease": {
       "name": "Termul Manager v0.4.52",
       "tagName": "v0.4.52",
@@ -1613,8 +1613,8 @@
       "vps",
       "xterm"
     ],
-    "updatedAt": "2026-10-19T15:02:53Z",
-    "pushedAt": "2026-09-11T22:00:32Z",
+    "updatedAt": "2026-10-23T19:53:33Z",
+    "pushedAt": "2026-10-23T19:53:29Z",
     "latestRelease": {
       "name": "v2.0.0",
       "tagName": "v2.0.0",
@@ -1807,8 +1807,8 @@
     "stars": 12,
     "forks": 1,
     "topics": [],
-    "updatedAt": "2026-10-23T18:08:51Z",
-    "pushedAt": "2026-10-23T18:08:47Z",
+    "updatedAt": "2026-10-23T21:55:50Z",
+    "pushedAt": "2026-10-23T21:55:46Z",
     "latestRelease": null,
     "archived": false,
     "licenseSpdx": "MIT",
