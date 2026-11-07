@@ -32,7 +32,7 @@
     "archived": false,
     "licenseSpdx": "AGPL-3.0",
     "createdAt": "2012-02-01T01:11:49Z",
-    "openIssues": 15,
+    "openIssues": 16,
     "openPullRequests": 3,
     "subscribers": 129,
     "communityHealth": 100,
@@ -48,8 +48,8 @@
     "url": "https://github.com/miqdadbadjuber/anti-slop",
     "homepage": "https://antislop.ai.id",
     "language": "JavaScript",
-    "stars": 8587,
-    "forks": 578,
+    "stars": 8597,
+    "forks": 580,
     "topics": [
       "accessibility",
       "agent-skills",
@@ -62,7 +62,7 @@
       "design-rules",
       "ui-design"
     ],
-    "updatedAt": "2026-11-07T20:03:04Z",
+    "updatedAt": "2026-11-07T23:40:15Z",
     "pushedAt": "2026-11-05T11:11:47Z",
     "latestRelease": {
       "name": "v3.2.26: three copywriting tells now have names",
@@ -254,8 +254,8 @@
       "automation",
       "openai"
     ],
-    "updatedAt": "2026-11-07T19:43:12Z",
-    "pushedAt": "2026-11-07T19:44:49Z",
+    "updatedAt": "2026-11-07T20:52:16Z",
+    "pushedAt": "2026-11-07T20:52:39Z",
     "latestRelease": {
       "name": "v0.4.71",
       "tagName": "v0.4.71",
@@ -266,7 +266,7 @@
     "licenseSpdx": "MIT",
     "createdAt": "2026-05-23T06:02:30Z",
     "openIssues": 41,
-    "openPullRequests": 16,
+    "openPullRequests": 13,
     "subscribers": 2,
     "communityHealth": 85,
     "readmeHtml": "<p>\n  \n    \n    <img alt=\"Nakama logo\" src=\"https://raw.githubusercontent.com/ahmadrosid/nakama/main/assets/nakama-logo.svg\" width=\"220\" />\n  \n</p><p>\n  <a href=\"https://github.com/ahmadrosid/nakama/releases\" rel=\"noopener noreferrer\"><img src=\"https://img.shields.io/github/v/release/ahmadrosid/nakama?display_name=tag&amp;sort=semver\" alt=\"Latest release\" /></a>\n  <a href=\"https://github.com/ahmadrosid/nakama/graphs/contributors\" rel=\"noopener noreferrer\"><img src=\"https://img.shields.io/github/contributors/ahmadrosid/nakama?style=flat-square\" alt=\"Contributors\" /></a>\n  <a href=\"https://github.com/ahmadrosid/nakama/pkgs/container/nakama\" rel=\"noopener noreferrer\"><img src=\"https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgithub.com%2Fipitio%2Fbackage%2Fraw%2Findex%2Fahmadrosid%2Fnakama%2Fnakama.json&amp;query=%24.downloads&amp;label=pulls&amp;logo=docker&amp;logoColor=white&amp;style=flat-square\" alt=\"Container pulls\" /></a>\n  <a href=\"https://discord.gg/wG6FY4cKRx\" rel=\"noopener noreferrer\"><img src=\"https://img.shields.io/badge/Discord-5865F2?style=flat-square&amp;logo=discord&amp;logoColor=white\" alt=\"Discord\" /></a>\n</p><p>\n  <a href=\"https://trendshift.io/repositories/109713?utm_source=repository-badge&amp;utm_medium=badge&amp;utm_campaign=badge-repository-109713\" target=\"_blank\" rel=\"noopener noreferrer\"><img src=\"https://trendshift.io/api/badge/repositories/109713\" alt=\"ahmadrosid%2Fnakama | Trendshift\" width=\"250\" height=\"55\" /></a>\n</p><p>\n  <sub>Sponsors</sub><br />\n  <a href=\"https://netra.sh\" rel=\"noopener noreferrer\">\n    \n      \n      <img src=\"https://raw.githubusercontent.com/ahmadrosid/nakama/main/assets/netra-logo.svg\" alt=\"Netra\" height=\"28\" />\n    \n  </a><br />\n  <sub>Thanks for supporting Nakama and the open source community.</sub>\n</p><h2>Nakama</h2>\n<p><a href=\"https://ahmadrosid.github.io/nakama/\" rel=\"noopener noreferrer\">Documentation</a> · <a href=\"https://getnakama.cloud/\" rel=\"noopener noreferrer\">Managed hosting</a></p>\n<blockquote>\n<p>Your next hire will still be human.\nNakama runs the agents. Your team keeps the important work.</p>\n</blockquote>\n<p>Nakama is an AI agent platform for your team. You chat in a dashboard that feels like ChatGPT. Behind that, each agent can use tools, skills, memory, and channels (Telegram, WhatsApp, Discord, and Slack) — with its own identity and permissions.</p>\n<p>It was built for teams from day one: one server, many orgs, invites and roles, agents isolated from each other. Set it up with managed cloud or one Docker container.</p>\n<p>Coming from <a href=\"https://github.com/openclaw/openclaw\" rel=\"noopener noreferrer\">OpenClaw</a> or <a href=\"https://github.com/nousresearch/hermes-agent\" rel=\"noopener noreferrer\">Hermes Agent</a>? Same class of capability, without the setup maze, and not limited to one operator on one machine.</p>\n\n  \n  <img alt=\"Nakama dashboard: start a chat with an agent, with the agent rail, navigation, and recent chats on the left\" src=\"https://raw.githubusercontent.com/ahmadrosid/nakama/main/assets/screenshots/chat-light.png\" />\n<p>Pick an agent from the rail on the left and start a chat. Every agent has its own prompt files, tools, skills, and memory.</p>\n<table>\n<thead>\n<tr>\n<th>Agent</th>\n<th>Control center</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><img alt=\"Agent page with the system prompt, SOUL, STYLE, INSTRUCTIONS and MEMORY files, and tabs for channels, tools, MCP and skills\" src=\"https://raw.githubusercontent.com/ahmadrosid/nakama/main/assets/screenshots/agent.png\" /></td>\n<td><img alt=\"Control center with workspace settings, AI providers, tools, skills, MCP, plugins and integrations\" src=\"https://raw.githubusercontent.com/ahmadrosid/nakama/main/assets/screenshots/control-center.png\" /></td>\n</tr>\n</tbody></table>\n<p>Open <a href=\"https://github.com/ahmadrosid/nakama/blob/main/ARCHITECTURE.md\" rel=\"noopener noreferrer\">ARCHITECTURE.md</a> for the system design.\nOpen the <a href=\"https://ahmadrosid.github.io/nakama/\" rel=\"noopener noreferrer\">docs site</a> for the full guide.</p>\n<h2>Desktop downloads</h2>\n<p>macOS downloads are available in <a href=\"https://github.com/ahmadrosid/nakama/releases?q=desktop-v\" rel=\"noopener noreferrer\">desktop releases</a>. Windows has no published installation link here yet; unsigned MSIX files in older releases are Partner Center uploads, not installable downloads. See <a href=\"https://github.com/ahmadrosid/nakama/blob/main/apps/desktop/README.md#windows-installation\" rel=\"noopener noreferrer\">Windows installation</a> for availability and alternatives.</p>\n<h2>Quick start</h2>\n<h3>Managed hosting</h3>\n<p>Use <a href=\"https://getnakama.cloud/\" rel=\"noopener noreferrer\">Nakama Cloud</a> to try Nakama with the least work.</p>\n<ol>\n<li>Create an account.</li>\n<li>Provision an instance.</li>\n<li>Complete the first-time setup wizard in the browser.</li>\n</ol>\n<p>You do not need Bun, Docker, or a VPS.</p>\n<h3>Run locally</h3>\n<p>You need <a href=\"https://bun.sh\" rel=\"noopener noreferrer\">Bun</a>.</p>\n<pre><code class=\"language-bash\"># Install dependencies\nbun install\n\n# Start the web (starts the server automatically if needed)\nbun run dev:web\n</code></pre>\n<p>Open the web dashboard: <a href=\"http://localhost:3003\" rel=\"noopener noreferrer\">http://localhost:3003</a></p>\n<p>Or start the server alone:</p>\n<pre><code class=\"language-bash\">bun run dev:server\n</code></pre>\n<h3>Run with PM2</h3>\n<p>For a bare host, you need <a href=\"https://bun.sh\" rel=\"noopener noreferrer\">Bun</a> and <a href=\"https://nodejs.org\" rel=\"noopener noreferrer\">Node.js</a> 22.12 or later. PM2 and the web build run on Node.</p>\n<ol>\n<li><p>Install PM2, build Nakama, and copy the example config:</p>\n<pre><code class=\"language-bash\">npm install --global pm2\nbun install\nbun run build\ncp ecosystem.config.cjs.example ecosystem.config.cjs\n</code></pre>\n</li>\n<li><p>In <code>ecosystem.config.cjs</code>, set <code>cwd</code>, <code>script</code>, <code>NAKAMA_SECRETS_KEY</code>, and <code>NAKAMA_WEB_PUBLIC_URL</code>. Keep a copy of <code>NAKAMA_SECRETS_KEY</code>: secrets saved in Settings need it, and backups do not include it.</p>\n</li>\n<li><p>Start Nakama and set it to start after a reboot:</p>\n<pre><code class=\"language-bash\">pm2 start ecosystem.config.cjs\npm2 startup\npm2 save\n</code></pre>\n</li>\n<li><p>Run the startup command that PM2 prints to enable the system service.</p>\n</li>\n</ol>\n<p>The dashboard and API listen on <code>http://127.0.0.1:4310</code>. Put an HTTPS proxy in front for <code>NAKAMA_WEB_PUBLIC_URL</code>. After an update, run <code>bun run build</code> again, then <code>pm2 restart nakama</code>.</p>\n<h3>Docker</h3>\n<p>You can also run Nakama with Docker. It runs as one container and needs about\n200 MB idle, so 1 vCPU and 1 GB is enough for the server on its own. See\n<a href=\"https://ahmadrosid.github.io/nakama/docker#requirements\" rel=\"noopener noreferrer\">Requirements</a> before\nenabling channel workers.</p>\n<p><strong>On a server, use Compose.</strong> It pins the version, keeps a daily encrypted backup, and can turn on the Update button in Settings. Set <code>NAKAMA_VERSION</code> to the <a href=\"https://github.com/ahmadrosid/nakama/releases/latest\" rel=\"noopener noreferrer\">latest release</a> and put an HTTPS proxy in front (<a href=\"https://ahmadrosid.github.io/nakama/deployment-hardening\" rel=\"noopener noreferrer\">Deployment hardening</a>).</p>\n<pre><code class=\"language-bash\">curl -O https://raw.githubusercontent.com/ahmadrosid/nakama/main/docker-compose.yaml\numask 077\nprintf 'NAKAMA_SECRETS_KEY=%s\\n' \"$(openssl rand -base64 32)\" &gt; nakama-secrets.env\necho NAKAMA_VERSION=0.4.65 &gt; .env\ndocker compose up -d\n</code></pre>\n<p>See <a href=\"https://ahmadrosid.github.io/nakama/docker#upgrade\" rel=\"noopener noreferrer\">Upgrade</a>.</p>\n<p><strong>To try it on your own machine:</strong></p>\n<pre><code class=\"language-bash\"># Pull and run the latest image\ndocker pull ghcr.io/ahmadrosid/nakama:latest\numask 077\nprintf 'NAKAMA_SECRETS_KEY=%s\\n' \"$(openssl rand -base64 32)\" &gt; nakama-secrets.env\ndocker run -d -p 4310:4310 -v nakama-data:/nakama/data --env-file nakama-secrets.env --name nakama ghcr.io/ahmadrosid/nakama:latest\n</code></pre>\n<p><strong>Build from source:</strong></p>\n<pre><code class=\"language-bash\">./scripts/docker-build-run.sh\n</code></pre>\n<p><strong>Fresh start (destroys data):</strong></p>\n<pre><code class=\"language-bash\">./scripts/docker-destroy.sh\n./scripts/docker-build-run.sh\n</code></pre>\n<p>The reset script also removes every container publishing port 4310, including\nunrelated containers. It does not remove the cached\n<code>ghcr.io/ahmadrosid/nakama:latest</code> image. See the\n<a href=\"https://ahmadrosid.github.io/nakama/docker#reset-a-local-docker-install\" rel=\"noopener noreferrer\">Docker reset documentation</a>\nfor the complete cleanup scope.</p>\n<p>Open the dashboard at <a href=\"http://localhost:4310\" rel=\"noopener noreferrer\">http://localhost:4310</a>.</p>\n<h3>Integrations</h3>\n<p>Nakama connects to <strong>Telegram</strong>, <strong>WhatsApp</strong>, <strong>Discord</strong>, <strong>Slack</strong>, and\n<strong>Composio</strong>. With Composio, you can connect to more than 1,000 external apps.\nEnable them in the web app under <strong>Integrations</strong>.</p>\n<p>On the first run, the server asks for a provider and an API key if none is configured.\nThe server saves settings to <code>~/.nakama/config.ini</code>.</p>\n<p>The server listens on <code>http://127.0.0.1:4310</code> by default.\nInteractive API docs are at <code>http://127.0.0.1:4310/docs</code>.</p>\n<h2>License</h2>\n<p>MIT</p>\n<h2>Maintainers</h2>\n<p>\n  <a href=\"https://github.com/ahmadrosid\" rel=\"noopener noreferrer\"><img src=\"https://images.weserv.nl/?url=github.com/ahmadrosid.png&amp;mask=circle&amp;w=96&amp;h=96\" width=\"96\" alt=\"ahmadrosid\" /></a>\n  <a href=\"https://github.com/fajarhide\" rel=\"noopener noreferrer\"><img src=\"https://images.weserv.nl/?url=github.com/fajarhide.png&amp;mask=circle&amp;w=96&amp;h=96\" width=\"96\" alt=\"fajarhide\" /></a>\n</p><p>\n  <a href=\"https://github.com/ahmadrosid\" rel=\"noopener noreferrer\">@ahmadrosid</a> and <a href=\"https://github.com/fajarhide\" rel=\"noopener noreferrer\">@fajarhide</a>\n</p><h2>Contributors</h2>\n<p>Thanks to everyone who helps make Nakama better.</p>\n<p>\n  <a href=\"https://github.com/ahmadrosid/nakama/graphs/contributors\" rel=\"noopener noreferrer\">\n    <img src=\"https://contrib.rocks/image?repo=ahmadrosid/nakama\" alt=\"Nakama contributors\" width=\"812\" />\n  </a>\n</p><h2>Star History</h2>\n<p><a href=\"https://www.star-history.com/?repos=ahmadrosid%2Fnakama&amp;type=date&amp;legend=top-left\" rel=\"noopener noreferrer\"><img src=\"https://api.star-history.com/chart?repos=ahmadrosid/nakama&amp;type=date&amp;legend=top-left\" alt=\"Star History Chart\" /></a></p>\n"
@@ -454,8 +454,8 @@
       "terminal-emulator",
       "workspace-manager"
     ],
-    "updatedAt": "2026-11-07T19:42:42Z",
-    "pushedAt": "2026-11-07T20:04:48Z",
+    "updatedAt": "2026-11-07T22:51:55Z",
+    "pushedAt": "2026-11-07T23:21:55Z",
     "latestRelease": {
       "name": "Termul Manager v0.4.60",
       "tagName": "v0.4.60",
@@ -1516,8 +1516,8 @@
     "stars": 29,
     "forks": 5,
     "topics": [],
-    "updatedAt": "2026-11-06T23:40:32Z",
-    "pushedAt": "2026-11-06T23:40:28Z",
+    "updatedAt": "2026-11-07T22:31:30Z",
+    "pushedAt": "2026-11-07T22:31:26Z",
     "latestRelease": null,
     "archived": false,
     "licenseSpdx": "MIT",
