@@ -48,8 +48,8 @@
     "url": "https://github.com/miqdadbadjuber/anti-slop",
     "homepage": "https://antislop.ai.id",
     "language": "JavaScript",
-    "stars": 8652,
-    "forks": 583,
+    "stars": 8665,
+    "forks": 584,
     "topics": [
       "accessibility",
       "agent-skills",
@@ -62,7 +62,7 @@
       "design-rules",
       "ui-design"
     ],
-    "updatedAt": "2026-11-08T18:25:37Z",
+    "updatedAt": "2026-11-08T22:52:47Z",
     "pushedAt": "2026-11-08T08:22:03Z",
     "latestRelease": {
       "name": "v3.2.26: three copywriting tells now have names",
@@ -245,7 +245,7 @@
     "url": "https://github.com/ahmadrosid/nakama",
     "homepage": "https://ahmadrosid.github.io/nakama",
     "language": "TypeScript",
-    "stars": 789,
+    "stars": 790,
     "forks": 134,
     "topics": [
       "agents",
@@ -254,8 +254,8 @@
       "automation",
       "openai"
     ],
-    "updatedAt": "2026-11-08T17:49:23Z",
-    "pushedAt": "2026-11-08T18:04:21Z",
+    "updatedAt": "2026-11-08T21:50:04Z",
+    "pushedAt": "2026-11-08T20:38:13Z",
     "latestRelease": {
       "name": "v0.4.71",
       "tagName": "v0.4.71",
@@ -265,8 +265,8 @@
     "archived": false,
     "licenseSpdx": "MIT",
     "createdAt": "2026-05-23T06:02:30Z",
-    "openIssues": 40,
-    "openPullRequests": 15,
+    "openIssues": 37,
+    "openPullRequests": 12,
     "subscribers": 2,
     "communityHealth": 85,
     "readmeHtml": "<p>\n  \n    \n    <img alt=\"Nakama logo\" src=\"https://raw.githubusercontent.com/ahmadrosid/nakama/main/assets/nakama-logo.svg\" width=\"220\" />\n  \n</p><p>\n  <a href=\"https://github.com/ahmadrosid/nakama/releases\" rel=\"noopener noreferrer\"><img src=\"https://img.shields.io/github/v/release/ahmadrosid/nakama?display_name=tag&amp;sort=semver\" alt=\"Latest release\" /></a>\n  <a href=\"https://github.com/ahmadrosid/nakama/graphs/contributors\" rel=\"noopener noreferrer\"><img src=\"https://img.shields.io/github/contributors/ahmadrosid/nakama?style=flat-square\" alt=\"Contributors\" /></a>\n  <a href=\"https://github.com/ahmadrosid/nakama/pkgs/container/nakama\" rel=\"noopener noreferrer\"><img src=\"https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgithub.com%2Fipitio%2Fbackage%2Fraw%2Findex%2Fahmadrosid%2Fnakama%2Fnakama.json&amp;query=%24.downloads&amp;label=pulls&amp;logo=docker&amp;logoColor=white&amp;style=flat-square\" alt=\"Container pulls\" /></a>\n  <a href=\"https://discord.gg/wG6FY4cKRx\" rel=\"noopener noreferrer\"><img src=\"https://img.shields.io/badge/Discord-5865F2?style=flat-square&amp;logo=discord&amp;logoColor=white\" alt=\"Discord\" /></a>\n</p><p>\n  <a href=\"https://trendshift.io/repositories/109713?utm_source=repository-badge&amp;utm_medium=badge&amp;utm_campaign=badge-repository-109713\" target=\"_blank\" rel=\"noopener noreferrer\"><img src=\"https://trendshift.io/api/badge/repositories/109713\" alt=\"ahmadrosid%2Fnakama | Trendshift\" width=\"250\" height=\"55\" /></a>\n</p><p>\n  <sub>Sponsors</sub><br />\n  <a href=\"https://netra.sh\" rel=\"noopener noreferrer\">\n    \n      \n      <img src=\"https://raw.githubusercontent.com/ahmadrosid/nakama/main/assets/netra-logo.svg\" alt=\"Netra\" height=\"28\" />\n    \n  </a><br />\n  <sub>Thanks for supporting Nakama and the open source community.</sub>\n</p><h2>Nakama</h2>\n<p><a href=\"https://ahmadrosid.github.io/nakama/\" rel=\"noopener noreferrer\">Documentation</a> · <a href=\"https://getnakama.cloud/\" rel=\"noopener noreferrer\">Managed hosting</a></p>\n<blockquote>\n<p>Your next hire will still be human.\nNakama runs the agents. Your team keeps the important work.</p>\n</blockquote>\n<p>Nakama is an AI agent platform for your team. You chat in a dashboard that feels like ChatGPT. Behind that, each agent can use tools, skills, memory, and channels (Telegram, WhatsApp, Discord, and Slack) — with its own identity and permissions.</p>\n<p>It was built for teams from day one: one server, many orgs, invites and roles, agents isolated from each other. Set it up with managed cloud or one Docker container.</p>\n<p>Coming from <a href=\"https://github.com/openclaw/openclaw\" rel=\"noopener noreferrer\">OpenClaw</a> or <a href=\"https://github.com/nousresearch/hermes-agent\" rel=\"noopener noreferrer\">Hermes Agent</a>? Same class of capability, without the setup maze, and not limited to one operator on one machine.</p>\n\n  \n  <img alt=\"Nakama dashboard: start a chat with an agent, with the agent rail, navigation, and recent chats on the left\" src=\"https://raw.githubusercontent.com/ahmadrosid/nakama/main/assets/screenshots/chat-light.png\" />\n<p>Pick an agent from the rail on the left and start a chat. Every agent has its own prompt files, tools, skills, and memory.</p>\n<table>\n<thead>\n<tr>\n<th>Agent</th>\n<th>Control center</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><img alt=\"Agent page with the system prompt, SOUL, STYLE, INSTRUCTIONS and MEMORY files, and tabs for channels, tools, MCP and skills\" src=\"https://raw.githubusercontent.com/ahmadrosid/nakama/main/assets/screenshots/agent.png\" /></td>\n<td><img alt=\"Control center with workspace settings, AI providers, tools, skills, MCP, plugins and integrations\" src=\"https://raw.githubusercontent.com/ahmadrosid/nakama/main/assets/screenshots/control-center.png\" /></td>\n</tr>\n</tbody></table>\n<p>Open <a href=\"https://github.com/ahmadrosid/nakama/blob/main/ARCHITECTURE.md\" rel=\"noopener noreferrer\">ARCHITECTURE.md</a> for the system design.\nOpen the <a href=\"https://ahmadrosid.github.io/nakama/\" rel=\"noopener noreferrer\">docs site</a> for the full guide.</p>\n<h2>Desktop downloads</h2>\n<p>macOS downloads are available in <a href=\"https://github.com/ahmadrosid/nakama/releases?q=desktop-v\" rel=\"noopener noreferrer\">desktop releases</a>. Windows has no published installation link here yet; unsigned MSIX files in older releases are Partner Center uploads, not installable downloads. See <a href=\"https://github.com/ahmadrosid/nakama/blob/main/apps/desktop/README.md#windows-installation\" rel=\"noopener noreferrer\">Windows installation</a> for availability and alternatives.</p>\n<h2>Quick start</h2>\n<p>Installing with Claude Code, Codex, Cursor, or OpenCode? Paste a prompt from <a href=\"https://ahmadrosid.github.io/nakama/quickstart#install-with-an-ai-agent\" rel=\"noopener noreferrer\">Install with an AI agent</a>.</p>\n<h3>Managed hosting</h3>\n<p>Use <a href=\"https://getnakama.cloud/\" rel=\"noopener noreferrer\">Nakama Cloud</a> to try Nakama with the least work.</p>\n<ol>\n<li>Create an account.</li>\n<li>Provision an instance.</li>\n<li>Complete the first-time setup wizard in the browser.</li>\n</ol>\n<p>You do not need Bun, Docker, or a VPS.</p>\n<h3>Run locally</h3>\n<p>You need <a href=\"https://bun.sh\" rel=\"noopener noreferrer\">Bun</a>.</p>\n<pre><code class=\"language-bash\"># Install dependencies\nbun install\n\n# Start the web (starts the server automatically if needed)\nbun run dev:web\n</code></pre>\n<p>Open the web dashboard: <a href=\"http://localhost:3003\" rel=\"noopener noreferrer\">http://localhost:3003</a></p>\n<p>Or start the server alone:</p>\n<pre><code class=\"language-bash\">bun run dev:server\n</code></pre>\n<h3>Run with PM2</h3>\n<p>For a bare host, you need <a href=\"https://bun.sh\" rel=\"noopener noreferrer\">Bun</a> and <a href=\"https://nodejs.org\" rel=\"noopener noreferrer\">Node.js</a> 22.12 or later. PM2 and the web build run on Node.</p>\n<ol>\n<li><p>Install PM2, build Nakama, and copy the example config:</p>\n<pre><code class=\"language-bash\">npm install --global pm2\nbun install\nbun run build\ncp ecosystem.config.cjs.example ecosystem.config.cjs\n</code></pre>\n</li>\n<li><p>In <code>ecosystem.config.cjs</code>, set <code>cwd</code>, <code>script</code>, <code>NAKAMA_SECRETS_KEY</code>, and <code>NAKAMA_WEB_PUBLIC_URL</code>. Keep a copy of <code>NAKAMA_SECRETS_KEY</code>: secrets saved in Settings need it, and backups do not include it.</p>\n</li>\n<li><p>Start Nakama and set it to start after a reboot:</p>\n<pre><code class=\"language-bash\">pm2 start ecosystem.config.cjs\npm2 startup\npm2 save\n</code></pre>\n</li>\n<li><p>Run the startup command that PM2 prints to enable the system service.</p>\n</li>\n</ol>\n<p>The dashboard and API listen on <code>http://127.0.0.1:4310</code>. Put an HTTPS proxy in front for <code>NAKAMA_WEB_PUBLIC_URL</code>. After an update, run <code>bun run build</code> again, then <code>pm2 restart nakama</code>.</p>\n<h3>Docker</h3>\n<p>You can also run Nakama with Docker. It runs as one container and needs about\n200 MB idle, so 1 vCPU and 1 GB is enough for the server on its own. See\n<a href=\"https://ahmadrosid.github.io/nakama/docker#requirements\" rel=\"noopener noreferrer\">Requirements</a> before\nenabling channel workers.</p>\n<p><strong>On a server, use Compose.</strong> It pins the version, keeps a daily encrypted backup, and can turn on the Update button in Settings. Set <code>NAKAMA_VERSION</code> to the <a href=\"https://github.com/ahmadrosid/nakama/releases/latest\" rel=\"noopener noreferrer\">latest release</a> and put an HTTPS proxy in front (<a href=\"https://ahmadrosid.github.io/nakama/deployment-hardening\" rel=\"noopener noreferrer\">Deployment hardening</a>).</p>\n<pre><code class=\"language-bash\">curl -O https://raw.githubusercontent.com/ahmadrosid/nakama/main/docker-compose.yaml\numask 077\nprintf 'NAKAMA_SECRETS_KEY=%s\\n' \"$(openssl rand -base64 32)\" &gt; nakama-secrets.env\necho NAKAMA_VERSION=0.4.65 &gt; .env\ndocker compose up -d\n</code></pre>\n<p>See <a href=\"https://ahmadrosid.github.io/nakama/docker#upgrade\" rel=\"noopener noreferrer\">Upgrade</a>.</p>\n<p><strong>To try it on your own machine:</strong></p>\n<pre><code class=\"language-bash\"># Pull and run the latest image\ndocker pull ghcr.io/ahmadrosid/nakama:latest\numask 077\nprintf 'NAKAMA_SECRETS_KEY=%s\\n' \"$(openssl rand -base64 32)\" &gt; nakama-secrets.env\ndocker run -d -p 4310:4310 -v nakama-data:/nakama/data --env-file nakama-secrets.env --name nakama ghcr.io/ahmadrosid/nakama:latest\n</code></pre>\n<p><strong>Build from source:</strong></p>\n<pre><code class=\"language-bash\">./scripts/docker-build-run.sh\n</code></pre>\n<p><strong>Fresh start (destroys data):</strong></p>\n<pre><code class=\"language-bash\">./scripts/docker-destroy.sh\n./scripts/docker-build-run.sh\n</code></pre>\n<p>The reset script also removes every container publishing port 4310, including\nunrelated containers. It does not remove the cached\n<code>ghcr.io/ahmadrosid/nakama:latest</code> image. See the\n<a href=\"https://ahmadrosid.github.io/nakama/docker#reset-a-local-docker-install\" rel=\"noopener noreferrer\">Docker reset documentation</a>\nfor the complete cleanup scope.</p>\n<p>Open the dashboard at <a href=\"http://localhost:4310\" rel=\"noopener noreferrer\">http://localhost:4310</a>.</p>\n<h3>Integrations</h3>\n<p>Nakama connects to <strong>Telegram</strong>, <strong>WhatsApp</strong>, <strong>Discord</strong>, <strong>Slack</strong>, and\n<strong>Composio</strong>. With Composio, you can connect to more than 1,000 external apps.\nEnable them in the web app under <strong>Integrations</strong>.</p>\n<p>On the first run, the server asks for a provider and an API key if none is configured.\nThe server saves settings to <code>~/.nakama/config.ini</code>.</p>\n<p>The server listens on <code>http://127.0.0.1:4310</code> by default.\nInteractive API docs are at <code>http://127.0.0.1:4310/docs</code>.</p>\n<h2>License</h2>\n<p>MIT</p>\n<h2>Maintainers</h2>\n<p>\n  <a href=\"https://github.com/ahmadrosid\" rel=\"noopener noreferrer\"><img src=\"https://images.weserv.nl/?url=github.com/ahmadrosid.png&amp;mask=circle&amp;w=96&amp;h=96\" width=\"96\" alt=\"ahmadrosid\" /></a>\n  <a href=\"https://github.com/fajarhide\" rel=\"noopener noreferrer\"><img src=\"https://images.weserv.nl/?url=github.com/fajarhide.png&amp;mask=circle&amp;w=96&amp;h=96\" width=\"96\" alt=\"fajarhide\" /></a>\n</p><p>\n  <a href=\"https://github.com/ahmadrosid\" rel=\"noopener noreferrer\">@ahmadrosid</a> and <a href=\"https://github.com/fajarhide\" rel=\"noopener noreferrer\">@fajarhide</a>\n</p><h2>Contributors</h2>\n<p>Thanks to everyone who helps make Nakama better.</p>\n<p>\n  <a href=\"https://github.com/ahmadrosid/nakama/graphs/contributors\" rel=\"noopener noreferrer\">\n    <img src=\"https://contrib.rocks/image?repo=ahmadrosid/nakama\" alt=\"Nakama contributors\" width=\"812\" />\n  </a>\n</p><h2>Star History</h2>\n<p><a href=\"https://www.star-history.com/?repos=ahmadrosid%2Fnakama&amp;type=date&amp;legend=top-left\" rel=\"noopener noreferrer\"><img src=\"https://api.star-history.com/chart?repos=ahmadrosid/nakama&amp;type=date&amp;legend=top-left\" alt=\"Star History Chart\" /></a></p>\n"
@@ -348,7 +348,7 @@
     "url": "https://github.com/fajarhide/contexere",
     "homepage": "https://omni.weekndlabs.com/docs",
     "language": "Rust",
-    "stars": 378,
+    "stars": 377,
     "forks": 36,
     "topics": [
       "agentic-ai",
@@ -372,7 +372,7 @@
       "token-efficiency",
       "token-optimization"
     ],
-    "updatedAt": "2026-11-08T16:36:08Z",
+    "updatedAt": "2026-11-08T22:29:34Z",
     "pushedAt": "2026-11-08T16:36:05Z",
     "latestRelease": {
       "name": "v0.8.6",
@@ -719,14 +719,14 @@
     "url": "https://github.com/IlhamriSKY/PDDIKTI-kemdikbud-API",
     "homepage": "https://pddikti.kemdiktisaintek.go.id/",
     "language": "Python",
-    "stars": 139,
+    "stars": 140,
     "forks": 29,
     "topics": [
       "api-wrapper",
       "package",
       "python3"
     ],
-    "updatedAt": "2026-11-08T18:18:04Z",
+    "updatedAt": "2026-11-08T21:26:21Z",
     "pushedAt": "2026-08-24T02:52:54Z",
     "latestRelease": {
       "name": "v2.1.3",
@@ -778,7 +778,7 @@
     "url": "https://github.com/rahmanef63/mso",
     "homepage": "https://mso.rahmanef.com",
     "language": "TypeScript",
-    "stars": 105,
+    "stars": 106,
     "forks": 16,
     "topics": [
       "browser-shell",
@@ -800,8 +800,8 @@
       "web-desktop",
       "web-terminal"
     ],
-    "updatedAt": "2026-11-04T16:13:24Z",
-    "pushedAt": "2026-11-04T16:13:19Z",
+    "updatedAt": "2026-11-08T19:50:15Z",
+    "pushedAt": "2026-11-08T21:44:14Z",
     "latestRelease": {
       "name": "v0.2.0",
       "tagName": "v0.2.0",
@@ -827,7 +827,7 @@
     "url": "https://github.com/ddtamn/svelte-audio-ui",
     "homepage": "https://svelte-audio-ui.vercel.app/",
     "language": "Svelte",
-    "stars": 100,
+    "stars": 101,
     "forks": 4,
     "topics": [
       "audio",
@@ -838,7 +838,7 @@
       "svelte-components",
       "sveltekit"
     ],
-    "updatedAt": "2026-11-02T01:30:38Z",
+    "updatedAt": "2026-11-08T21:55:26Z",
     "pushedAt": "2026-09-06T00:39:22Z",
     "latestRelease": {
       "name": "svelte-audio-ui@1.0.1",
@@ -849,7 +849,7 @@
     "archived": false,
     "licenseSpdx": "MIT",
     "createdAt": "2026-03-17T12:55:21Z",
-    "openIssues": 0,
+    "openIssues": 1,
     "openPullRequests": 15,
     "subscribers": 3,
     "communityHealth": 100,
@@ -925,7 +925,7 @@
     "url": "https://github.com/wauputr4/bansos",
     "homepage": "https://bansos.dev",
     "language": "Svelte",
-    "stars": 69,
+    "stars": 70,
     "forks": 21,
     "topics": [
       "bansos",
@@ -939,7 +939,7 @@
       "static-site",
       "sveltekit"
     ],
-    "updatedAt": "2026-11-04T11:41:37Z",
+    "updatedAt": "2026-11-08T20:45:10Z",
     "pushedAt": "2026-10-27T15:16:43Z",
     "latestRelease": {
       "name": "v0.0.15 — Dynamic D1 catalog and GitHub moderation",
@@ -969,8 +969,8 @@
     "stars": 64,
     "forks": 7,
     "topics": [],
-    "updatedAt": "2026-11-06T07:56:33Z",
-    "pushedAt": "2026-11-06T07:56:26Z",
+    "updatedAt": "2026-11-08T22:20:25Z",
+    "pushedAt": "2026-11-08T22:20:20Z",
     "latestRelease": {
       "name": "v1.2.615",
       "tagName": "v1.2.615",
@@ -1522,8 +1522,8 @@
     "stars": 29,
     "forks": 5,
     "topics": [],
-    "updatedAt": "2026-11-07T22:31:30Z",
-    "pushedAt": "2026-11-07T22:31:26Z",
+    "updatedAt": "2026-11-08T22:41:54Z",
+    "pushedAt": "2026-11-08T22:41:50Z",
     "latestRelease": null,
     "archived": false,
     "licenseSpdx": "MIT",
@@ -2007,7 +2007,7 @@
       "system-programming-control-systems"
     ],
     "updatedAt": "2026-11-08T18:18:27Z",
-    "pushedAt": "2026-11-08T18:18:25Z",
+    "pushedAt": "2026-11-08T19:50:47Z",
     "latestRelease": {
       "name": "NAEOS 3.7.1",
       "tagName": "v3.7.1",
@@ -2018,7 +2018,7 @@
     "licenseSpdx": "Apache-2.0",
     "createdAt": "2026-07-09T15:14:16Z",
     "openIssues": 30,
-    "openPullRequests": 31,
+    "openPullRequests": 32,
     "subscribers": 1,
     "communityHealth": 100,
     "readmeHtml": "<h2>NAEOS</h2>\n<p><strong>Nusantara AI Engineering Operating System</strong></p>\n<blockquote>\n<p><strong>The Engineering Control Plane for AI Coding Agents.</strong></p>\n<p>Build software with AI agents under explicit <strong>architecture, policy, execution, evidence, and verification</strong> controls.</p>\n</blockquote>\n<p>\n  <a href=\"https://github.com/NAEOS-foundation/naeos/actions/workflows/ci.yml\" rel=\"noopener noreferrer\"><img src=\"https://github.com/NAEOS-foundation/naeos/actions/workflows/ci.yml/badge.svg\" alt=\"CI status\" /></a>\n  <a href=\"https://img.shields.io/badge/go-1.26.10+-00ADD8\" rel=\"noopener noreferrer\"><img src=\"https://img.shields.io/badge/go-1.26.10+-00ADD8?logo=go&amp;logoColor=white\" alt=\"Go 1.26.10+\" /></a>\n  <a href=\"https://img.shields.io/github/v/release/NAEOS-foundation/naeos\" rel=\"noopener noreferrer\"><img src=\"https://img.shields.io/github/v/release/NAEOS-foundation/naeos\" alt=\"Latest release\" /></a>\n  <a href=\"https://github.com/NAEOS-foundation/naeos/blob/main/LICENSE\" rel=\"noopener noreferrer\"><img src=\"https://img.shields.io/badge/license-Apache%202.0-blue.svg\" alt=\"Apache 2.0\" /></a>\n</p><p>NAEOS is an open-source engineering framework for building production software with AI coding agents. It provides the engineering layer between <strong>what a team intends</strong>, <strong>what an agent proposes</strong>, <strong>what is authorized to execute</strong>, and <strong>what can be independently verified afterward</strong>.</p>\n<p>It is not another AI coding assistant. NAEOS is the control plane around the agent.</p>\n<h2>Why NAEOS?</h2>\n<p>AI coding agents can generate code quickly. Production engineering still requires explicit answers to harder questions:</p>\n<ul>\n<li>What architecture is the agent operating within?</li>\n<li>Which actions are allowed?</li>\n<li>Who or what authorizes an external side effect?</li>\n<li>What actually happened during execution?</li>\n<li>What evidence proves the result?</li>\n<li>Can another system independently verify the claim?</li>\n<li>Can the same engineering intent be carried across different AI agents?</li>\n</ul>\n<p>NAEOS treats these as engineering-system concerns rather than prompt-writing concerns.</p>\n<h2>The model</h2>\n<p>Without an engineering control plane:</p>\n<pre><code class=\"language-text\">Prompt → AI Agent → Code / Action → ?\n</code></pre>\n<p>With NAEOS:</p>\n<pre><code class=\"language-text\">Specification\n      ↓\nNEIR\n      ↓\nValidation + Policy\n      ↓\nAgent Context / Intent\n      ↓\nAuthorized Execution\n      ↓\nObservation → Evidence\n      ↓\nIndependent Verification\n</code></pre>\n<p>Two architectural views describe the same system:</p>\n<p><strong>Engineering model</strong></p>\n<pre><code class=\"language-text\">Specification → NEIR → Validation → Policy → AI Context → Generation\n</code></pre>\n<p><strong>AI Engineering control plane</strong></p>\n<pre><code class=\"language-text\">Agent Intent → Policy Decision → Authorized Execution\n            → Observation → Evidence → Independent Verification\n</code></pre>\n<p>The first describes how engineering knowledge moves through NAEOS. The second describes how agent actions are controlled and made auditable.</p>\n<h2>Core concepts</h2>\n<table>\n<thead>\n<tr>\n<th>Concept</th>\n<th>Role</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><strong>Specification</strong></td>\n<td>Declares system intent and engineering requirements</td>\n</tr>\n<tr>\n<td><strong>NEIR</strong></td>\n<td>Canonical engineering representation derived from specifications</td>\n</tr>\n<tr>\n<td><strong>Policy</strong></td>\n<td>Determines which proposed actions are permitted</td>\n</tr>\n<tr>\n<td><strong>Runtime</strong></td>\n<td>Executes only within the authorized boundary</td>\n</tr>\n<tr>\n<td><strong>Evidence</strong></td>\n<td>Records observable results and integrity-relevant metadata</td>\n</tr>\n<tr>\n<td><strong>Verification</strong></td>\n<td>Independently checks claims about outputs or side effects</td>\n</tr>\n<tr>\n<td><strong>Handoffs</strong></td>\n<td>Carries explicit contracts between agents, tools, and execution boundaries</td>\n</tr>\n<tr>\n<td><strong>AI Compiler</strong></td>\n<td>Translates engineering context into agent-specific instructions</td>\n</tr>\n<tr>\n<td><strong>Extensions</strong></td>\n<td>Adds profiles, plugins, adapters, and integrations without changing the core model</td>\n</tr>\n</tbody></table>\n<h2>See it run</h2>\n<p>The fastest way to understand NAEOS is the CLI control-plane demo:</p>\n<pre><code class=\"language-bash\">git clone https://github.com/NAEOS-foundation/naeos.git\ncd naeos\n\ngo build -o naeos ./cmd/naeos\n./examples/demo-cli/run-demo.sh\n</code></pre>\n<p>The demo exercises the specification-first pipeline and produces traceable run metadata.</p>\n<p><strong>Golden Path:</strong> <a href=\"https://github.com/NAEOS-foundation/naeos/blob/main/docs/GOLDEN-PATH.md\" rel=\"noopener noreferrer\">docs/GOLDEN-PATH.md</a> defines the reproducible five-minute flow, acceptance criteria, and evidence map used for technical evaluation and regression testing.</p>\n<p><strong>Reference Demo &amp; Evidence Story:</strong> <a href=\"https://github.com/NAEOS-foundation/naeos/blob/main/docs/REFERENCE-DEMO.md\" rel=\"noopener noreferrer\">docs/REFERENCE-DEMO.md</a> turns the same run into an independent reviewer checklist, traceability narrative, and partner-pilot evidence format.</p>\n<p><strong>External Validation:</strong> <a href=\"https://github.com/NAEOS-foundation/naeos/blob/main/docs/EXTERNAL-VALIDATION.md\" rel=\"noopener noreferrer\">docs/EXTERNAL-VALIDATION.md</a> provides a reproducible third-party runbook and evaluation record.\n<strong>Engineering Note #001:</strong> <a href=\"https://github.com/NAEOS-foundation/naeos/blob/main/docs/ENGINEERING-NOTE-001-EXTERNAL-VALIDATION.md\" rel=\"noopener noreferrer\">docs/ENGINEERING-NOTE-001-EXTERNAL-VALIDATION.md</a> explains the engineering rationale and evidence boundary for independent external validation.</p>\n<p><strong>External Validator Program:</strong> <a href=\"https://github.com/NAEOS-foundation/naeos/blob/main/docs/EXTERNAL-VALIDATOR-BRIEF.md\" rel=\"noopener noreferrer\">docs/EXTERNAL-VALIDATOR-BRIEF.md</a> is the public entry point for Cohort #001; see <a href=\"https://github.com/NAEOS-foundation/naeos/blob/main/docs/EXTERNAL-VALIDATOR-PROGRAM.md\" rel=\"noopener noreferrer\">Program</a> and <a href=\"https://github.com/NAEOS-foundation/naeos/blob/main/docs/EXTERNAL-VALIDATION-MISSIONS.md\" rel=\"noopener noreferrer\">Missions</a> for the program protocol.</p>\n<p>For the Todo API demonstration:</p>\n<pre><code class=\"language-bash\">go build -o naeos ./cmd/naeos\n./examples/todo-api/run-demo.sh\n</code></pre>\n<p>See <a href=\"https://github.com/NAEOS-foundation/naeos/blob/main/START-HERE.md\" rel=\"noopener noreferrer\">START-HERE.md</a> for the supported onboarding path.</p>\n<h2>A concrete run</h2>\n<p>The <code>naeos run</code> path exposes structured engineering-run metadata, including identifiers such as:</p>\n<pre><code class=\"language-text\">run_id\nspecification_hash\nneir_hash\nvalidation_state\npolicy_evaluation\ngenerated_context\nartifacts\nevidence\n</code></pre>\n<p>The goal is not merely to generate code. The goal is to preserve enough engineering context and evidence to understand <strong>what was intended, what was authorized, what happened, and what can be verified</strong>.</p>\n<h2>AI coding agents</h2>\n<p>NAEOS is designed to remain vendor-neutral at the engineering layer.</p>\n<p>NAEOS targets Go <strong>1.26.10 or later</strong> and can produce agent-specific instruction/context artifacts for tools such as:</p>\n<ul>\n<li>GitHub Copilot</li>\n<li>Claude Code</li>\n<li>OpenAI Codex</li>\n<li>Cursor</li>\n<li>Gemini CLI</li>\n<li>OpenCode</li>\n<li>Windsurf</li>\n</ul>\n<p>The engineering model remains upstream of the individual agent. Changing agents should not require rebuilding the project's engineering rules from scratch.</p>\n<h2>Evidence and verification</h2>\n<p>NAEOS includes engineering experiments and implementation paths around:</p>\n<ul>\n<li>policy boundaries and authorization</li>\n<li>durable audit/evidence records</li>\n<li>tamper detection</li>\n<li>handoff contracts</li>\n<li>independent verification</li>\n<li>artifact signing and verification</li>\n<li>SBOM generation</li>\n<li>security and vulnerability checks</li>\n<li>benchmark and fuzz gates</li>\n</ul>\n<p>These experiments are evidence of specific mechanisms and behaviors. They should not be interpreted as blanket proof of every production property.</p>\n<p>See <a href=\"https://github.com/NAEOS-foundation/naeos/blob/main/experiments/\" rel=\"noopener noreferrer\">experiments/</a> for the current experiment suite, including the <strong>Evidence V5.6</strong> milestone.</p>\n<h2>Trust model</h2>\n<p>NAEOS is built around explicit boundaries:</p>\n<ol>\n<li><strong>Intent is not authorization.</strong></li>\n<li><strong>Policy decisions are distinct from runtime execution.</strong></li>\n<li><strong>Observations are distinct from claims.</strong></li>\n<li><strong>Evidence should outlive an agent's conversational memory.</strong></li>\n<li><strong>Verification should not depend solely on the component making the claim.</strong></li>\n<li><strong>Untrusted handoff input must not silently become downstream authority.</strong></li>\n<li><strong>Controllable boundaries must be revalidated before consequential external actions.</strong></li>\n<li><strong>Version and contract mismatches should fail closed where required by the governing specification.</strong></li>\n</ol>\n<p>These are engineering principles, not guarantees that every integration is automatically safe.</p>\n<h2>Architecture authority</h2>\n<p>NAEOS uses a normative documentation hierarchy:</p>\n<pre><code class=\"language-text\">Constitution\n    ↓\nReference Architecture\n    ↓\nMaster Technical Specification\n    ↓\nEngineering Specifications / ADRs\n    ↓\nImplementation\n    ↓\nExperiments\n</code></pre>\n<p>Public guides such as README, START-HERE, and GETTING-STARTED explain and navigate the system; they do not override normative specifications.</p>\n<p>Start with <a href=\"https://github.com/NAEOS-foundation/naeos/blob/main/DOCUMENTATION-AUTHORITY.md\" rel=\"noopener noreferrer\">DOCUMENTATION-AUTHORITY.md</a>, then review:</p>\n<ul>\n<li><a href=\"https://github.com/NAEOS-foundation/naeos/blob/main/Reference%20Architecture/NAEOS-NRA-001.md\" rel=\"noopener noreferrer\">NAEOS Reference Architecture</a></li>\n<li><a href=\"https://github.com/NAEOS-foundation/naeos/blob/main/NAEOS-MTS-001.md\" rel=\"noopener noreferrer\">NAEOS Master Technical Specification</a></li>\n<li><a href=\"https://github.com/NAEOS-foundation/naeos/blob/main/specification/NAEOS-SPEC-001.md\" rel=\"noopener noreferrer\">NAEOS Specification</a></li>\n<li><a href=\"https://github.com/NAEOS-foundation/naeos/blob/main/docs/NES-023-NEIR.md\" rel=\"noopener noreferrer\">NEIR</a></li>\n<li><a href=\"https://github.com/NAEOS-foundation/naeos/blob/main/docs/NES-028-CLI-Reference.md\" rel=\"noopener noreferrer\">CLI Reference</a></li>\n</ul>\n<p><strong>Architecture Drives Engineering.</strong></p>\n<h2>Repository map</h2>\n<pre><code class=\"language-text\">naeos/\n├── cmd/naeos/          # CLI\n├── internal/\n│   ├── specification/  # parsing, normalization, resolution\n│   ├── neir/           # engineering representation\n│   ├── compiler/       # AI instruction compilation\n│   ├── governance/     # policy and governance\n│   ├── runtime/        # execution gateway\n│   ├── evidence/       # evidence storage\n│   ├── verification/   # independent verification\n│   ├── audit/          # audit trail\n│   ├── signing/        # artifact signing\n│   ├── pluginsdk/      # plugin SDK\n│   └── ...             # supporting subsystems\n├── pkg/                 # public Go packages\n├── docs/                # engineering specifications\n├── experiments/         # executable engineering experiments\n├── constitution/        # project constitution\n├── governance/          # governance material\n└── examples/            # runnable examples\n</code></pre>\n<h2>Current release</h2>\n<p><strong>NAEOS 3.7.1</strong> is the current documented software release.</p>\n<p>NAEOS software releases and experiment milestones use different version sequences. For example, <strong>NAEOS 3.7.1</strong> is a software release, while <strong>Evidence V5.6</strong> identifies an engineering experiment milestone.</p>\n<p>For release history and changes, see <a href=\"https://github.com/NAEOS-foundation/naeos/blob/main/CHANGELOG.md\" rel=\"noopener noreferrer\">CHANGELOG.md</a>.</p>\n<h2>Documentation</h2>\n<ul>\n<li><a href=\"https://github.com/NAEOS-foundation/naeos/blob/main/START-HERE.md\" rel=\"noopener noreferrer\">START-HERE.md</a> — onboarding and first contribution path</li>\n<li><a href=\"https://github.com/NAEOS-foundation/naeos/blob/main/GETTING-STARTED.md\" rel=\"noopener noreferrer\">GETTING-STARTED.md</a> — developer setup</li>\n<li><a href=\"https://github.com/NAEOS-foundation/naeos/blob/main/DOCUMENTATION-AUTHORITY.md\" rel=\"noopener noreferrer\">DOCUMENTATION-AUTHORITY.md</a> — normative documentation model</li>\n<li><a href=\"https://github.com/NAEOS-foundation/naeos/blob/main/WHITEPAPER-EN.md\" rel=\"noopener noreferrer\">WHITEPAPER-EN.md</a> — English whitepaper</li>\n<li><a href=\"https://github.com/NAEOS-foundation/naeos/blob/main/WHITEPAPER.md\" rel=\"noopener noreferrer\">WHITEPAPER.md</a> — official English whitepaper</li>\n<li><a href=\"https://github.com/NAEOS-foundation/naeos/blob/main/DOCUMENTATION-INDEX.md\" rel=\"noopener noreferrer\">DOCUMENTATION-INDEX.md</a> — document index</li>\n<li><a href=\"https://github.com/NAEOS-foundation/naeos/blob/main/docs/\" rel=\"noopener noreferrer\">docs/</a> — NAEOS engineering specifications</li>\n<li><a href=\"https://github.com/NAEOS-foundation/naeos/blob/main/CHANGELOG.md\" rel=\"noopener noreferrer\">CHANGELOG.md</a> — release history</li>\n</ul>\n<h2>Contributing</h2>\n<p>NAEOS is built in the open. Contributions are welcome across the engineering stack:</p>\n<table>\n<thead>\n<tr>\n<th>Track</th>\n<th>Examples</th>\n</tr>\n</thead>\n<tbody><tr>\n<td><strong>Policy</strong></td>\n<td>authorization, governance, policy evaluation</td>\n</tr>\n<tr>\n<td><strong>Runtime</strong></td>\n<td>execution boundaries, lifecycle, runtime controls</td>\n</tr>\n<tr>\n<td><strong>Evidence</strong></td>\n<td>audit, receipts, integrity, evidence storage</td>\n</tr>\n<tr>\n<td><strong>Handoffs</strong></td>\n<td>agent/tool contracts and boundary revalidation</td>\n</tr>\n<tr>\n<td><strong>Verification</strong></td>\n<td>independent checks and trust mechanisms</td>\n</tr>\n<tr>\n<td><strong>Plugins</strong></td>\n<td>SDK, adapters, profiles, extensions</td>\n</tr>\n<tr>\n<td><strong>Experiments</strong></td>\n<td>reproducible engineering experiments and benchmarks</td>\n</tr>\n<tr>\n<td><strong>Documentation</strong></td>\n<td>specifications, architecture, guides</td>\n</tr>\n</tbody></table>\n<p>Read <a href=\"https://github.com/NAEOS-foundation/naeos/blob/main/CONTRIBUTING.md\" rel=\"noopener noreferrer\">CONTRIBUTING.md</a>, then start with <a href=\"https://github.com/NAEOS-foundation/naeos/blob/main/START-HERE.md\" rel=\"noopener noreferrer\">START-HERE.md</a>.</p>\n<h2>Slack + GitHub community</h2>\n<p>NAEOS uses Slack for real-time engineering coordination and GitHub as the durable engineering source of truth.</p>\n<ul>\n<li><a href=\"https://naeos.slack.com\" rel=\"noopener noreferrer\">NAEOS Slack Community</a> — real-time engineering discussion</li>\n<li><a href=\"https://github.com/NAEOS-foundation/naeos\" rel=\"noopener noreferrer\">GitHub repository</a> — source code, issues, pull requests, and evidence</li>\n</ul>\n<p>For workspace administrators, install the official <a href=\"https://slack.com/apps/A01BP7R4KNY-github\" rel=\"noopener noreferrer\">GitHub integration for Slack</a>, then subscribe the relevant channels to repository activity. The integration supports GitHub notifications, issue and pull-request collaboration, rich link previews, and GitHub actions from Slack. See <a href=\"https://docs.github.com/en/integrations/how-tos/slack\" rel=\"noopener noreferrer\">GitHub's Slack integration documentation</a>.</p>\n<p>Recommended operating model:</p>\n<pre><code class=\"language-text\">Slack coordinates → GitHub records → CI verifies → Evidence closes the loop\n</code></pre>\n<p>For public community acquisition, use the workspace's Slack shared-invite URL rather than the workspace home URL. Keep that invite URL configurable in the website deployment so it can be rotated without changing repository code.</p>\n<h2>Community and partnerships</h2>\n<ul>\n<li><a href=\"https://github.com/NAEOS-foundation/naeos/discussions\" rel=\"noopener noreferrer\">GitHub Discussions</a> — technical discussion and ideas</li>\n<li><a href=\"https://discord.gg/naeos\" rel=\"noopener noreferrer\">Discord</a> — community discussion</li>\n<li><a href=\"https://github.com/NAEOS-foundation/naeos/blob/main/PARTNER-PROGRAM.md\" rel=\"noopener noreferrer\">NAEOS Partner Program</a> — technology, infrastructure, AI, academic, community, pilot, and strategic collaboration</li>\n</ul>\n<h2>Social identity and distribution</h2>\n<p><a href=\"https://github.com/NAEOS-foundation/naeos/blob/main/docs/SOCIAL-IDENTITY.md\" rel=\"noopener noreferrer\">Social Identity Source of Truth</a> defines the canonical public positioning, channel roles, profile copy, visual rules, and verification status for NAEOS social distribution.</p>\n<h2>Security and governance</h2>\n<ul>\n<li><a href=\"https://github.com/NAEOS-foundation/naeos/blob/main/SECURITY.md\" rel=\"noopener noreferrer\">SECURITY.md</a> — supported release lines and security reporting</li>\n<li><a href=\"https://github.com/NAEOS-foundation/naeos/blob/main/constitution/\" rel=\"noopener noreferrer\">Engineering Constitution</a> — project-level engineering principles</li>\n<li><a href=\"https://github.com/NAEOS-foundation/naeos/blob/main/governance/\" rel=\"noopener noreferrer\">Governance</a> — project governance material</li>\n<li><a href=\"https://github.com/NAEOS-foundation/naeos/blob/main/docs/ai-provenance.md\" rel=\"noopener noreferrer\">AI-assisted provenance policy</a> — guidance for AI-assisted contributions</li>\n<li><a href=\"https://github.com/NAEOS-foundation/naeos/blob/main/docs/open-core.md\" rel=\"noopener noreferrer\">Open-core boundary</a> — relationship between NAEOS Core and future offerings</li>\n<li><a href=\"https://github.com/NAEOS-foundation/naeos/blob/main/legal/README.md\" rel=\"noopener noreferrer\">Legal Architecture</a> — IP provenance, trademarks, third-party licensing, and release legal controls</li>\n</ul>\n<h2>License</h2>\n<p>NAEOS is released under the <a href=\"https://github.com/NAEOS-foundation/naeos/blob/main/LICENSE\" rel=\"noopener noreferrer\">Apache License 2.0</a>. See <a href=\"https://github.com/NAEOS-foundation/naeos/blob/main/NOTICE\" rel=\"noopener noreferrer\">NOTICE</a> for attribution and branding information.</p>\n<p>Contributions are accepted under the <a href=\"https://developercertificate.org/\" rel=\"noopener noreferrer\">Developer Certificate of Origin</a> as described in <a href=\"https://github.com/NAEOS-foundation/naeos/blob/main/CONTRIBUTING.md\" rel=\"noopener noreferrer\">CONTRIBUTING.md</a>.</p>\n<p>The <strong>NAEOS</strong>, <strong>NEIR</strong>, and NAEOS logo names are branding of the NAEOS OSS. The Apache License grants no trademark rights; see <a href=\"https://github.com/NAEOS-foundation/naeos/blob/main/NOTICE\" rel=\"noopener noreferrer\">NOTICE</a> for the current branding and trademark policy.</p>\n<hr />\n<p><strong>Active development · NAEOS 3.7.1</strong></p>\n<p><strong>Architecture Drives Engineering.</strong></p>\n"
@@ -2164,8 +2164,8 @@
       "rest-api",
       "rust"
     ],
-    "updatedAt": "2026-11-08T12:51:53Z",
-    "pushedAt": "2026-11-08T09:33:19Z",
+    "updatedAt": "2026-11-08T22:42:40Z",
+    "pushedAt": "2026-11-08T22:43:21Z",
     "latestRelease": {
       "name": "v1.0.0",
       "tagName": "v1.0.0",
